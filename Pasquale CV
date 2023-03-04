@@ -1,0 +1,27 @@
+Perfil GitHub https://github.com/pvvgoku4
+
+# Curriculum Vitae
+## _Pasquale Valletta Valente_
+
+**Especialidades**
+*. Instalacion de Software.
+*. Ensamble de Equipos.
+*. Electronica.
+
+## Lista de Comandos del Terminal
+
+| COMANDO | PARA QUE SE UTILIZA |
+| ------ | ------ |
+| Date | Muestra la fecha y hora del sistema actual. |
+| Uptime | Muestra el tiempo transcurrido desde que inicio el equipo por ultima vez.|
+| Cal | Muestra un calendario del mes actual. |
+| Df | Muestra el espacio libre actual en el disco duro.|
+| Whoami | Muestra el nombre del usuario actual.  |
+
+
+## Lista de Comandos del Alias
+
+| COMANDO | PARA QUE SE UTILIZA |
+| ------ | ------ |
+| Ls/Grep | Filtra las carpetas de un directorio de usuario dada una palabra. Ej. ls ~/ │ grep <palabra> |
+| Rm | Evita eliminar archivos permanentemente y envialos mejor a la papelera. Ej. alias rm="trash".|
