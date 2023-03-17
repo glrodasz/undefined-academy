@@ -79,3 +79,12 @@ button:active {
 	background: #ca8a04;
 	box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
 }
+
+form {
+	accent-color: #eab308;
+}
+
+input:focus-visible, textarea:focus-visible {
+	border: 1px solid #eab308;
+	outline: 3px solid #facc15;
+}
