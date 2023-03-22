@@ -532,9 +532,9 @@ video {
   font-weight: 700;
 }
 
-.text-teal-600 {
+.text-teal-900 {
   --tw-text-opacity: 1;
-  color: rgb(13 148 136 / var(--tw-text-opacity));
+  color: rgb(19 78 74 / var(--tw-text-opacity));
 }
 
 .underline {

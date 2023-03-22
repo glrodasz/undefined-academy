@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev:css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-    "dev:src": "vite dev src",
+    "dev:src": "vite src",
     "dev": "concurrently \"npm run dev:css\" \"npm run dev:src\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
