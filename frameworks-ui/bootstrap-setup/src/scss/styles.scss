@@ -1,0 +1,12 @@
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+body {
+	background: whitesmoke;
+}
+
+@include media-breakpoint-up(lg) {
+	body {
+		background: tomato;
+	}
+}
