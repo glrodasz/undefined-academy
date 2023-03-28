@@ -1,4 +1,4 @@
-// TODO: Import lodash
+import _ from "lodash"
 
 const entries = [
   {
@@ -58,3 +58,45 @@ const entries = [
     tags: ["Diseño", "Web", "Desarrollo"],
   },
 ];
+
+const entriesGrouppedByAuthor = _.groupBy(entries, "autor") 
+// console.log(entriesByAuthor)
+
+function filterByCss3Tag(entry) {
+  return _.includes(entry.tags, "CSS3")
+}
+
+const entriesFilteredByCss3Tag = _.filter(entries, filterByCss3Tag)
+// console.log(entriesFilteredByCss3Tag)
+
+const entriesMappedByTitle = _.map(entries, "titulo")
+// console.log(entriesMappedByTitle)
+
+const entriesOrderedByDate = _.orderBy(entries, ["fecha", "titulo"], ["desc", "asc"])
+// console.log(entriesOrderedByDate)
+
+function countTags(acc, entry) {
+  return acc + entry.tags.length
+}
+
+const countEntriesTags = _.reduce(entries, countTags, 0)
+// console.log(countEntriesTags)
+
+const mergedEntries = _.merge(entries[0], entries[1])
+// console.log(mergedEntries)
+
+const pickedTitleTagsEntry = _.pick(entries[0], ["titulo", "tags"])
+// console.log(pickedTitleTagsEntry)
+
+const omittedDescriptionEntry = _.omit(entries[1], ["descripcion"])
+// console.log(omittedDescriptionEntry)
+
+const hasDate = _.has(entries[2], "fecha")
+// console.log(hasDate)
+
+function mapFirstTitle (entries) {
+  return _.first(_.map(entries, "titulo"))
+}
+
+const invertedTitleByEntry = _.invert(_.mapValues(_.groupBy(entries, "autor"), mapFirstTitle))
+// console.log(invertedTitleByEntry)
