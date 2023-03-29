@@ -1,0 +1,7 @@
+$desktop-media-query: 980px;
+
+@media screen and (min-width: $desktop-media-query) {
+	.item, .grid-item {
+		background: lightblue;
+	}
+}
