@@ -1,0 +1,33 @@
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 24px;
+}
+
+// TODO: Move to component (?)
+.tags-filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px 0;
+}
+
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 560px 430px;
+  gap: 80px 24px;
+}
+
+.post-list article:nth-child(4n) {
+  grid-column: 1 / 4;
+  background: var(--color-aquarius-100);
+}
+
+.post-list article {
+	background: var(--color-white);
+}

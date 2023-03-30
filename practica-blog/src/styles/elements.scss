@@ -1,0 +1,36 @@
+@use "tools";
+
+body {
+  font-family: Inter;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--color-black-pearl-50);
+
+  @include tools.container-width;
+}
+
+// TODO: Move to objects
+.main-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 19.5px 0;
+
+  @include tools.container-width;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  @include tools.container-width;
+}
+
+// TODO: Move to reset file
+a {
+  text-decoration: none;
+}
