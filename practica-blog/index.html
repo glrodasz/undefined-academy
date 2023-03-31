@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<!-- Googlear como puede afectar esto <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	<!-- TODO: Googlear como puede afectar esto <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
 
@@ -22,10 +22,10 @@
 		<img src="src/images/logos/undefined-shell.svg" alt="Logo de Undefined Shell">
 		<nav>
 			<ul class="nav-list">
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Suscribirse</a></li>
-				<li><button>Undefined Academy</button></li>
-				<li><button>Discord</button></li>
+				<li><a href="#" class="text-button text-button-md font-bold is-active">Inicio</a></li>
+				<li><a href="#" class="text-button text-button-md font-bold">Suscribirse</a></li>
+				<li><button class="button button-primary">Undefined Academy</button></li>
+				<li><button class="button button-secondary">Discord</button></li>
 			</ul>
 		</nav>
 	</header>
@@ -35,15 +35,18 @@
 		</section>
 		<section class="post-list-container">
 			<nav class="tags-filter">
-				<ul class="nav-list">
-					<li><a href="#">Todos</a></li>
-					<li><a href="#">HTML</a></li>
-					<li><a href="#">CSS</a></li>
-					<li><a href="#">Javascript</a></li>
-					<li><a href="#">Web components</a></li>
-					<li><a href="#">Sistemas de diseño</a></li>
-				</ul>
-				<input type="text" placeholder="Buscar">
+				<div class="filter-list-scroll-hider">
+				<ul class="nav-list filter-list">
+						<li class="is-active-filter"><a class="filter paragraph paragraph-sm font-bold"
+								href="#">Todos</a></li>
+						<li><a class="filter paragraph paragraph-sm font-bold" href="#">HTML</a></li>
+						<li><a class="filter paragraph paragraph-sm font-bold" href="#">CSS</a></li>
+						<li><a class="filter paragraph paragraph-sm font-bold" href="#">Javascript</a></li>
+						<li><a class="filter paragraph paragraph-sm font-bold" href="#">Web components</a></li>
+						<li><a class="filter paragraph paragraph-sm font-bold" href="#">Sistemas de diseño</a></li>
+					</ul>
+				</div>
+				<input class="input" type="search" placeholder="Buscar">
 			</nav>
 			<div class="post-list">
 				<article class="card">
@@ -54,23 +57,74 @@
 								<span class="tag"><a href="#">Web Components</a></span>
 								<span class="tag"><a href="#">CSS</a></span>
 							</div>
-							<h2>Estático, dinámico, single-page, multiple-page y JAMstack</h2>
+							<h2 class="heading heading-sm font-bold">Estático, dinámico, single-page, multiple-page y
+								JAMstack</h2>
 						</header>
-						<p>Hoy en día escuchamos términos como páginas estáticas, dinámicas, SPA, Muti-páginas y,
+						<p class="paragraph paragraph-sm font-regular">Hoy en día escuchamos términos como páginas
+							estáticas, dinámicas, SPA, Muti-páginas y,
 							recientemente, el término JAMStack. ¿Qué significa todo esto?...</p>
 					</section>
 					<footer>
 						<div class="author">
 							<img src="https://i.pravatar.cc/300" alt="Avatar de un autor">
-							<span>Guillermo Rodas</span>
+							<span class="paragraph paragraph-xs font-bold">Guillermo Rodas</span>
 						</div>
-						<span class="reading-time">
+						<span class="reading-time paragraph paragraph-xs font-regular">
 							7 min lectura
 						</span>
 					</footer>
 				</article>
-				<article class="card"></article>
-				<article class="card"></article>
+				<article class="card">
+					<div>
+						<header>
+							<img src="https://source.unsplash.com/VPkkplpaLLI" alt="Imagen de un post">
+							<div class="tags">
+								<span class="tag"><a href="#">Web Components</a></span>
+								<span class="tag"><a href="#">CSS</a></span>
+							</div>
+							<h2 class="heading heading-sm font-bold">Estático, dinámico, single-page, multiple-page y
+								JAMstack</h2>
+						</header>
+						<p class="paragraph paragraph-sm font-regular">Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Laborum minima placeat quisquam
+							voluptas voluptatibus recusandae voluptatem quia aliquid vel labore praesentium maiores
+							velit consequuntur, magni et temporibus, libero dicta dolores!</p>
+					</div>
+					<footer>
+						<div class="author">
+							<img src="https://i.pravatar.cc/300" alt="Avatar de un autor">
+							<span class="paragraph paragraph-xs font-bold">Guillermo Rodas</span>
+						</div>
+						<span class="reading-time paragraph paragraph-xs font-regular">
+							7 min lectura
+						</span>
+					</footer>
+				</article>
+				<article class="card">
+					<section>
+						<header>
+							<img src="https://source.unsplash.com/VPkkplpaLLI" alt="Imagen de un post">
+							<div class="tags">
+								<span class="tag"><a href="#">Web Components</a></span>
+								<span class="tag"><a href="#">CSS</a></span>
+							</div>
+							<h2 class="heading heading-sm font-bold">Estático, dinámico, single-page, multiple-page y
+								JAMstack</h2>
+						</header>
+						<p class="paragraph paragraph-sm font-regular">Hoy en día escuchamos términos como páginas
+							estáticas, dinámicas, SPA, Muti-páginas y,
+							recientemente, el término JAMStack. ¿Qué significa todo esto?...</p>
+					</section>
+					<footer>
+						<div class="author">
+							<img src="https://i.pravatar.cc/300" alt="Avatar de un autor">
+							<span class="paragraph paragraph-xs font-bold">Guillermo Rodas</span>
+						</div>
+						<span class="reading-time paragraph paragraph-xs font-regular">
+							7 min lectura
+						</span>
+					</footer>
+				</article>
 				<article class="card"></article>
 				<article class="card"></article>
 				<article class="card"></article>

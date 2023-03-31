@@ -1,6 +1,15 @@
-@use "components/card";
-@use "components/tag";
+// Atoms
 @use "components/heading";
 @use "components/paragraph";
-@use "components/avatar";
+@use "components/link";
 @use "components/picture";
+@use "components/avatar";
+@use "components/input";
+
+// Molecules
+@use "components/tag";
+@use "components/button";
+
+// Organisms
+@use "components/card";
+@use "components/tags-filter";
