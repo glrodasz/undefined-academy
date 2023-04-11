@@ -3,25 +3,34 @@
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 16px 0;
-  padding: 16px;
+  padding: 16px 16px 32px;
   box-shadow: 0px 6px 16px rgba(27, 91, 100, 0.25);
   background: var(--color-white);
 }
 
-.card:nth-child(4n) {
-  background: var(--color-aquarius-100);
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px 0;
+}
+
+.card img {
+  object-fit: cover;
+  aspect-ratio: 2/1;
+  height: 200px;
 
   @include tools.desktop {
-    grid-column: 1 / 4;
+    height: 220px;
   }
 }
 
 .card section {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 8px 0;
+  height: 100%;
 }
 
 .card header {
@@ -37,23 +46,31 @@
   align-items: center;
 }
 
-.author {
-  display: flex;
-  gap: 0 12px;
-  align-items: center;
-}
-
-.author img {
-  width: 100%;
-  max-width: 32px;
-  max-height: 32px;
-  border-radius: 50%;
-}
-
-.author span {
-  color: var(--color-black-pearl-900);
-}
-
 .reading-time {
   color: var(--color-black-pearl-400);
+}
+
+// FIXME: card-extended, review how can we implement
+// this with container queries or be explicit about it.
+@include tools.desktop {
+  .card-extended:nth-child(4n) {
+    background: var(--color-aquarius-100);
+    flex-direction: row;
+    grid-column: 1 / 4;
+    padding: 48px;
+    gap: 48px;
+
+    & > img {
+      width: 660px;
+      height: auto;
+    }
+
+    & > section {
+      gap: 12px 0;
+    }
+  }
+
+  .card-extended:nth-child(8n) {
+    flex-direction: row-reverse;
+  }
 }
