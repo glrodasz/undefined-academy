@@ -46,14 +46,15 @@
   align-items: center;
 }
 
-.reading-time {
+.help-text {
   color: var(--color-black-pearl-400);
 }
 
 // FIXME: card-extended, review how can we implement
 // this with container queries or be explicit about it.
 @include tools.desktop {
-  .card-extended:nth-child(4n) {
+  // .card-extended
+  .card:nth-child(4n) {
     background: var(--color-aquarius-100);
     flex-direction: row;
     grid-column: 1 / 4;
@@ -70,7 +71,8 @@
     }
   }
 
-  .card-extended:nth-child(8n) {
+  //.card-extended.is-reversed
+  .card:nth-child(8n){
     flex-direction: row-reverse;
   }
 }

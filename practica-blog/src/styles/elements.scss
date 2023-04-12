@@ -7,15 +7,10 @@ body {
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  padding: var(--container-padding);
   background-color: var(--color-black-pearl-50);
-
-  @include tools.container-width;
 }
 
 main {
   display: flex;
   flex-direction: column;
-
-  @include tools.container-width;
 }
