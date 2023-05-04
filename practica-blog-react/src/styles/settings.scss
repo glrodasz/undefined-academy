@@ -1,0 +1,25 @@
+// Custom properties (CSS Variables)
+:root {
+  --color-white: #fff;
+
+  --color-black-pearl-50: #e4ebee;
+  --color-black-pearl-100: #c9d6de;
+  --color-black-pearl-400: #7799ac;
+  --color-black-pearl-700: #3c5562;
+  --color-black-pearl-800: #2c3d47;
+  --color-black-pearl-900: #1b262c;
+
+  --color-aquarius-50: #e2f5f7;
+  --color-aquarius-100: #c5eaf0;
+  --color-aquarius-700: #288996;
+  --color-aquarius-600: #35b6c8;
+  --color-aquarius-900: #0d2e32;
+
+  --color-morrocan-blue-100: #b5dbf5;
+
+  --container-max-width: 1180px;
+  --container-padding: 0 24px;
+}
+
+// SASS Variables
+$breakpoint-large: 992px;
