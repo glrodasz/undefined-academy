@@ -1,0 +1,82 @@
+[
+  {
+    "unsplashId": "JSQkuSalhH4",
+    "unsplashAlt": "Imagen de un post",
+    "tags": ["Design", "Tokens"],
+    "title": "La evolución de los Design Tokens",
+    "extract": "Han pasado muchos meses desde que escribí mi primer artículo en ,español sobre Design Tokens, y desde entonces no solo han evolucionado, sino que cada vez se adaptan y se vuelven una parte fundamental de un sistema de diseño. Hoy les quiero compartir los puntos clave de esta evolución.",
+    "author": "Guillermo Rodas",
+    "readTime": "7 min",
+    "date": "2023-05-04"
+  },
+  {
+    "unsplashId": "VPkkplpaLLI",
+    "unsplashAlt": "Imagen de un post",
+    "tags": ["Web Components", "JavaScript"],
+    "title": "Estático, dinámico, single-page, multiple-page y JAMstack",
+    "extract": "\n\t  Hoy en día escuchamos términos como páginas estáticas, dinámicas, SPA, Muti-páginas y, recientemente, el término JAMStack. ¿Qué significa todo esto? ¿Por qué es importante entender las diferencias? A medida que se va adquiriendo experiencia, nos damos cuenta de que no existe una \"navaja suiza\" para la web.\n\t  ",
+    "author": "Guillermo Rodas",
+    "readTime": "7 min",
+    "date": "2023-05-04"
+  },
+  {
+    "unsplashId": "JSQkuSalhH4",
+    "unsplashAlt": "Imagen de un post",
+    "tags": ["Web Components", "JavaScript"],
+    "title": "La evolución de los Design Tokens",
+    "extract": "Han pasado muchos meses desde que escribí mi primer artículo en ,español sobre Design Tokens, y desde entonces no solo han evolucionado, sino que cada vez se adaptan y se vuelven una parte fundamental de un sistema de diseño. Hoy les quiero compartir los puntos clave de esta evolución.",
+    "author": "Guillermo Rodas",
+    "readTime": "7 min",
+    "date": "2023-05-04"
+  },
+  {
+    "unsplashId": "VPkkplpaLLI",
+    "unsplashAlt": "Imagen de un post",
+    "tags": ["Web Components", "JavaScript"],
+    "title": "Estático, dinámico, single-page, multiple-page y JAMstack",
+    "extract": "\n\t  Hoy en día escuchamos términos como páginas estáticas, dinámicas, SPA, Muti-páginas y, recientemente, el término JAMStack. ¿Qué significa todo esto? ¿Por qué es importante entender las diferencias? A medida que se va adquiriendo experiencia, nos damos cuenta de que no existe una \"navaja suiza\" para la web.\n\t  ",
+    "author": "Guillermo Rodas",
+    "readTime": "7 min",
+    "date": "2023-05-04"
+  },
+  {
+    "unsplashId": "JSQkuSalhH4",
+    "unsplashAlt": "Imagen de un post",
+    "tags": ["Web Components", "JavaScript"],
+    "title": "La evolución de los Design Tokens",
+    "extract": "Han pasado muchos meses desde que escribí mi primer artículo en ,español sobre Design Tokens, y desde entonces no solo han evolucionado, sino que cada vez se adaptan y se vuelven una parte fundamental de un sistema de diseño. Hoy les quiero compartir los puntos clave de esta evolución.",
+    "author": "Guillermo Rodas",
+    "readTime": "7 min",
+    "date": "2023-05-04"
+  },
+  {
+    "unsplashId": "VPkkplpaLLI",
+    "unsplashAlt": "Imagen de un post",
+    "tags": ["Web Components", "JavaScript"],
+    "title": "Estático, dinámico, single-page, multiple-page y JAMstack",
+    "extract": "\n\t  Hoy en día escuchamos términos como páginas estáticas, dinámicas, SPA, Muti-páginas y, recientemente, el término JAMStack. ¿Qué significa todo esto? ¿Por qué es importante entender las diferencias? A medida que se va adquiriendo experiencia, nos damos cuenta de que no existe una \"navaja suiza\" para la web.\n\t  ",
+    "author": "Guillermo Rodas",
+    "readTime": "7 min",
+    "date": "2023-05-04"
+  },
+  {
+    "unsplashId": "JSQkuSalhH4",
+    "unsplashAlt": "Imagen de un post",
+    "tags": ["Web Components", "JavaScript"],
+    "title": "La evolución de los Design Tokens",
+    "extract": "Han pasado muchos meses desde que escribí mi primer artículo en ,español sobre Design Tokens, y desde entonces no solo han evolucionado, sino que cada vez se adaptan y se vuelven una parte fundamental de un sistema de diseño. Hoy les quiero compartir los puntos clave de esta evolución.",
+    "author": "Guillermo Rodas",
+    "readTime": "7 min",
+    "date": "2023-05-04"
+  },
+  {
+    "unsplashId": "VPkkplpaLLI",
+    "unsplashAlt": "Imagen de un post",
+    "tags": ["Web Components", "JavaScript"],
+    "title": "Estático, dinámico, single-page, multiple-page y JAMstack",
+    "extract": "\n\t  Hoy en día escuchamos términos como páginas estáticas, dinámicas, SPA, Muti-páginas y, recientemente, el término JAMStack. ¿Qué significa todo esto? ¿Por qué es importante entender las diferencias? A medida que se va adquiriendo experiencia, nos damos cuenta de que no existe una \"navaja suiza\" para la web.\n\t  ",
+    "author": "Guillermo Rodas",
+    "readTime": "7 min",
+    "date": "2023-05-04"
+  }
+]
