@@ -1,11 +1,14 @@
-import classNames from "classnames";
+import classNames from "classnames/bind";
 
 import Tag from "@/components/Tag";
-import Author from "@/components/Author/Author";
-import Paragraph from "@/components/Paragraph/Paragraph";
-import Time from "@/components/Time/Time";
+import Author from "@/components/Author";
+import Paragraph from "@/components/Paragraph";
+import Time from "@/components/Time";
+import Heading from "@/components/Heading"
 
 import styles from "./Card.module.scss";
+
+const cx = classNames.bind(styles);
 
 const Card = ({
   unsplashId,
@@ -21,9 +24,9 @@ const Card = ({
 }) => {
   return (
     <article
-      className={classNames(styles["card"], {
-        [styles["is-extended"]]: isExtended,
-        [styles["is-reversed"]]: isReversed,
+      className={cx("card", {
+        "is-extended": isExtended,
+        "is-reversed": isReversed,
       })}
     >
       <img
@@ -40,7 +43,7 @@ const Card = ({
                 </Tag>
               ))}
             </div>
-            <h2 className="heading heading-sm font-bold">{title}</h2>
+            <Heading>{title}</Heading>
             <Time>{date}</Time>
           </header>
           <Paragraph>{extract}</Paragraph>

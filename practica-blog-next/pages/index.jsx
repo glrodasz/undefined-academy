@@ -1,15 +1,28 @@
+import { useState, useEffect } from "react";
+
 import Card from "@/components/Card/Card";
 import Link from "@/components/Link/Link";
 import Button from "@/components/Button";
 import TagsFilter from "@/components/TagsFilter";
 
-import articles from "@/data/articles.json";
 import filters from "@/data/filters.json";
 
 const isExtended = (index) => (index + 1) % 4 === 0;
 const isReversed = (index) => (index + 1) % 8 === 0;
 
 function Home() {
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    async function fetchPosts() {
+      const jsonResponse = await fetch("/api/posts").then((data) => data.json());
+
+      setArticles(jsonResponse);
+    }
+
+    fetchPosts();
+  }, []);
+
   return (
     <>
       <div className="main-container">
