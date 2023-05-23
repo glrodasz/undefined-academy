@@ -48,7 +48,8 @@
 
 .card-tags {
   display: flex;
-  gap: 0 12px;
+  flex-wrap: wrap;
+  gap: 10px 12px;
 }
 
 @include desktop {
