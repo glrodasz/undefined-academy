@@ -30,7 +30,16 @@ postRouter.get("/:permalink", async (req, res) => {
 });
 
 // Update
-postRouter.patch("/:permalink", async (req, res) => {});
+postRouter.patch("/:permalink", async (req, res) => {
+  const permalink = req.params.permalink;
+  const data = req.body;
+
+  const updatedPost = await postModel.findOneAndUpdate({ permalink }, data, {
+    new: true,
+  });
+
+  res.status(200).json({ post: updatedPost });
+});
 
 // Delete
 postRouter.delete("/:permalink", async (req, res) => {
