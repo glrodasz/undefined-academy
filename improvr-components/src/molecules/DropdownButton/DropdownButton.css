@@ -1,0 +1,38 @@
+.dropdown-button-container {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.dropdown-button {
+	position: relative;
+	user-select: none;
+}
+
+.dropdown-button-select {
+	right: 0;
+	top: 0;
+	bottom: 0;
+	cursor: pointer;
+	width: 25px
+}
+
+.dropdown-button-arrow {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	height: 100%;
+	background: mediumblue;
+	width: 30px;
+	pointer-events: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0 4px 4px 0;
+}
+
+.dropdown-button-arrow:hover {
+	background: color-mix(in srgb, mediumblue 80%, black 20%);
+}

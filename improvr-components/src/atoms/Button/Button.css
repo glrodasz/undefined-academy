@@ -2,6 +2,15 @@
 	border: 1px solid transparent;
 	border-radius: 4px;
 	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background: color-mix(in srgb, mediumblue 80%, black 20%);
+}
+
+.button:active {
+	background: color-mix(in srgb, mediumblue 50%, black 50%);
 }
 
 .type-primary {
