@@ -1,0 +1,16 @@
+.button {
+	border: 1px solid transparent;
+	border-radius: 4px;
+	padding: 5px 10px;
+}
+
+.type-primary {
+	background: mediumblue;
+	color: white;
+}
+
+.type-secondary {
+	background: white;
+	color: mediumblue;
+	border: 1px solid mediumblue;
+}
