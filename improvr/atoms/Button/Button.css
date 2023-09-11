@@ -1,0 +1,41 @@
+.button {
+	border: 1px solid transparent;
+	border-radius: 4px;
+	padding: 5px 10px;
+	cursor: pointer;
+	display: inline-flex;
+	gap: 5px;
+	align-items: center;
+	height: 34px;
+}
+
+.type-primary {
+	background: mediumblue;
+	color: white;
+}
+
+.type-primary:hover {
+	background: color-mix(in srgb, mediumblue 80%, black 20%);
+}
+
+.type-primary:active {
+	background: color-mix(in srgb, mediumblue 50%, black 50%);
+}
+
+.type-secondary {
+	background: white;
+	color: mediumblue;
+	border: 1px solid mediumblue;
+}
+
+.type-secondary:hover {
+	--hover-color: color-mix(in srgb, mediumblue 80%, black 20%);
+	color: var(--hover-color);
+	border: 1px solid var(--hover-color);
+}
+
+.type-secondary:active {
+	--active-color: color-mix(in srgb, mediumblue 50%, black 50%);
+	color: var(--active-color);
+	border: 1px solid var(--active-color);
+}

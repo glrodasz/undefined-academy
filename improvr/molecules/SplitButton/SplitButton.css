@@ -1,0 +1,36 @@
+.split-button-container {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.split-button {
+	position: relative;
+	user-select: none;
+}
+
+.split-button-select {
+	right: 0;
+	top: 0;
+	bottom: 0;
+	cursor: pointer;
+	width: 25px;
+	height: 34px;
+}
+
+.split-button-arrow {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	height: 100%;
+	background: mediumblue;
+	width: 30px;
+	pointer-events: none;
+	border-radius: 0 4px 4px 0;
+}
+
+.split-button-arrow:hover {
+	background: color-mix(in srgb, mediumblue 80%, black 20%);
+}
