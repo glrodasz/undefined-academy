@@ -1,0 +1,10 @@
+.icon-label {
+	display: flex;
+	align-items: baseline;
+	gap: 8px;
+}
+
+.icon-label-text {
+	text-decoration: underline;
+	color: mediumblue;
+}

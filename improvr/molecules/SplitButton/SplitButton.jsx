@@ -5,7 +5,7 @@ import Icon from "../../atoms/Icon";
 
 import "./SplitButton.css";
 
-const SplitButton = ({ onClick }) => {
+const SplitButton = ({ onClick, onChange }) => {
   const [lang, setLang] = useState("english");
   const [letter, ...word] = lang;
 
@@ -18,7 +18,11 @@ const SplitButton = ({ onClick }) => {
       <select
         id="lang"
         className="split-button-select"
-        onChange={(event) => setLang(event.currentTarget.value)}
+        onChange={(event) => {
+          const { value } = event.currentTarget;
+          setLang(value);
+          onChange(value);
+        }}
       >
         <option value="english">English</option>
         <option value="spanish">Spanish</option>
@@ -33,6 +37,7 @@ const SplitButton = ({ onClick }) => {
 
 SplitButton.propTypes = {
   onClick: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 
 export default SplitButton;

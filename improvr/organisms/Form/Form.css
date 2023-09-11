@@ -1,0 +1,13 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 800px;
+}
+
+.form-buttons {
+	display: flex;
+	gap: 10px;
+	justify-content: flex-end;
+	margin-top: 10px;
+}
