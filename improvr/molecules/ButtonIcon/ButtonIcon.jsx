@@ -4,12 +4,10 @@ import Icon from "../../atoms/Icon";
 
 const ButtonIcon = ({ children, type, icon, onClick }) => {
   return (
-    <div className="button-icon">
-      <Button type={type} onClick={onClick}>
-        <Icon name={icon} />
-        {children}{" "}
-      </Button>
-    </div>
+    <Button type={type} onClick={onClick}>
+      <Icon name={icon} />
+      {children}{" "}
+    </Button>
   );
 };
 

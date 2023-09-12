@@ -3,6 +3,7 @@
 	flex-direction: column;
 	gap: 10px;
 	position: relative;
+	width: 800px;
 }
 
 .result-buttons {
