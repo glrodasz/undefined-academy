@@ -1,0 +1,16 @@
+{
+  "name": "passport",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.18.2",
+    "passport": "^0.6.0",
+    "passport-http": "^0.3.0"
+  }
+}
