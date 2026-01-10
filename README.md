@@ -1,11 +1,11 @@
-# Undefined Academy
+# Undefined Academy 🚀
 
 > Conviértete en un/una Full-stack JavaScript Developer en 16 semanas, completamente gratis y online.
 
 [![Website](https://img.shields.io/badge/Website-undefined.academy-blue)](https://undefined.academy)
-[![Twitch](https://img.shields.io/badge/Twitch-undefinedshell-purple)](https://twitch.tv/undefinedshell)
+[![Twitch](https://img.shields.io/badge/Twitch-guillermorodas-purple)](https://twitch.tv/guillermorodas)
 
-## Acerca del Bootcamp
+## 🎓 Acerca del Bootcamp
 
 **Undefined Academy** es un bootcamp intensivo de desarrollo web Full-stack con JavaScript. Nuestro programa está diseñado para equiparte con las habilidades necesarias para convertirte en un desarrollador Full-stack, mientras te conectas con una comunidad apasionada de profesionales y entusiastas.
 
@@ -21,7 +21,7 @@ El bootcamp es impartido por **Guillermo Rodas**, un desarrollador Full-stack en
 - Mentor del Bootcamp Full-stack con World Tech Makers
 - Más de 50 charlas en diferentes meetups y conferencias
 
-## Cómo Empezar
+## ▶️ Cómo Empezar
 
 Para comenzar con el bootcamp, visita [undf.sh/empezar](https://undf.sh/empezar) donde encontrarás toda la información necesaria para inscribirte y prepararte para el programa.
 
@@ -33,7 +33,7 @@ Si no puedes asistir a las sesiones en vivo, puedes acceder al contenido en dife
 
 El material base del bootcamp está disponible en [undf.sh/base](https://undf.sh/base). Aquí encontrarás los recursos fundamentales para seguir el programa.
 
-## Contenido del Programa
+## 📚 Contenido del Programa
 
 El bootcamp cubre un currículo completo que incluye:
 
@@ -71,7 +71,7 @@ El bootcamp cubre un currículo completo que incluye:
 - Snapshot testing en React
 - Tests funcionales
 
-## Proyectos del Repositorio
+## 📂 Proyectos del Repositorio
 
 Este repositorio contiene todos los proyectos prácticos del bootcamp, organizados por categoría:
 
@@ -133,7 +133,7 @@ Este repositorio contiene todos los proyectos prácticos del bootcamp, organizad
 |----------|-------------|
 | [scripts](./scripts) | Scripts de Bash para mantenimiento del repositorio |
 
-## Tecnologías Utilizadas
+## 🛠️ Tecnologías Utilizadas
 
 - **Frontend:** React 18, Next.js 13, Vite, Sass, Bootstrap 5, Tailwind CSS
 - **Backend:** Node.js, Express 4.18, Passport.js
@@ -141,11 +141,11 @@ Este repositorio contiene todos los proyectos prácticos del bootcamp, organizad
 - **Herramientas:** Storybook 7, ESLint, Babel
 - **Utilidades:** DayJS, Lodash, Bcrypt
 
-## Comunidad
+## 👥 Comunidad
 
-Únete a nuestra comunidad y participa en las sesiones en vivo a través de [Twitch](https://twitch.tv/undefinedshell).
+Únete a nuestra comunidad y participa en las sesiones en vivo a través de [Twitch](https://twitch.tv/guillermorodas).
 
-## Enlaces Importantes
+## 🔗 Enlaces Importantes
 
 - [Página Principal](https://undefined.academy)
 - [Cómo Empezar](https://undf.sh/empezar)
