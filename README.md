@@ -93,6 +93,9 @@ Este repositorio está organizado en tres carpetas principales:
 | [`content/`](./content) | Material de estudio y proyectos prácticos del bootcamp |
 | [`website/`](./website) | Código fuente del sitio web de Undefined Academy |
 | [`exercises/`](./exercises) | Ejercicios semanales resueltos por los estudiantes (semana-1 a semana-9) |
+| [`projects/`](./projects) | Proyectos finales del bootcamp enviados por los estudiantes |
+
+> Si quieres enviar tu proyecto del bootcamp, revisa el ejemplo en el [README.md](./projects/README.md) dentro de la carpeta `projects`.
 
 ## 📂 Proyectos del Bootcamp
 
