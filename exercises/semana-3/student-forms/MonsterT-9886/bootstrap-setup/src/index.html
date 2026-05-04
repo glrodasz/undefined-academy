@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact me</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles2.css">
+	<script async defer type="module" src="main.mjs"></script>
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="card">
+			<div class="card-header">
+				<h1>Contact me</h1>
+			</div>
+			<div class="card-body">
+				<form onsubmit="event.preventDefault()">
+					<div class="form-group">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" class="form-control" required>
+					</div>
+
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" class="form-control" required>
+					</div>
+
+					<div class="form-group">
+						<label for="budget">Budget:</label>
+						<div class="form-check">
+							<input type="radio" id="budget-less-than-1000" name="budget" value="Less than $1000" class="form-check-input" required>
+							<label for="budget-less-than-1000" class="form-check-label">Menos de $1000</label>
+						</div>
+
+						<div class="form-check">
+							<input type="radio" id="budget-1000-5000" name="budget" value="$1000 - $5000" class="form-check-input" required>
+							<label for="budget-1000-5000" class="form-check-label">$1000 - $5000</label>
+						</div>
+
+						<div class="form-check">
+							<input type="radio" id="budget-5000-10000" name="budget" value="$5000 - $10,000" class="form-check-input" required>
+							<label for="budget-5000-10000" class="form-check-label">$5000 - $10,000</label>
+						</div>
+
+						<div class="form-check">
+							<input type="radio" id="budget-more-than-10000" name="budget" value="$10,000+" class="form-check-input" required>
+							<label for="budget-more-than-10000" class="form-check-label">Más de $10,000</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="project-type">Project type:</label>
+						<select id="project-type" name="project-type" class="form-control">
+							<option value="web-site">Sitio Web</option>
+							<option value="application">Aplicación</option>
+							<option value="mobile">Mobile</option>
+							<option value="data-analytics">Data Analytics</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="description">Description:</label>
+						<textarea id="description" name="description" rows="5" cols="85" class="form-control"></textarea>
+					</div>
+
+					<div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+            <label class="form-check-label" for="terms">Acepto los términos y condiciones.</label>
+            <div>
+            <input type="submit" value="Enviar">
+          </div>
+        </form>
+      </body>
+      </html>
+      

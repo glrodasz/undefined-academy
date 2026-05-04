@@ -1,0 +1,13 @@
+// Import all of Bootstrap's CSS
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+
+$theme-colors: (
+  purple-500: #4b0d49,
+  purple-900: #171321,
+  pink: #ff17e4,
+  white: #ffffff,
+  cyan: #86fbfb,
+);
+
+@import '~bootstrap/scss/bootstrap';

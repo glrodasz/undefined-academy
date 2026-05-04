@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <a href="/index.html">Volver</a>
+    <main class="page"> 
+        <h1>Contacto</h1>
+        <form onsubmit="event.preventDefault();">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input name="name" id="name" type="text" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input name="email" type="email" id="email" placeholder="Ingrese su correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="tel">Teléfono</label>
+                <input name="tel" type="tel" id="tel" placeholder="Ingrese su teléfono de contacto" required>
+            </div>
+            <div class="form-group">
+                <label for="type">Asunto</label>
+                <select name="type" id="type" required>
+                    <option value="" disabled selected>Seleccionar...</option>
+                    <option value="consult">Consulta</option>
+                    <option value="colab">Colaboración</option>
+                    <option value="work">Oferta laboral</option>
+                    <option value="other">Otro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción</label>
+                <textarea name="description" id="description" cols="10" rows="8" placeholder="Escriba su mensaje" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input name="terms" type="checkbox" id="terms" required>
+                    <span>Acepto los terminos y condiciones</span>
+                </label>
+            </div>
+            <button>Enviar</button>
+        </form>
+        
+    </main>
+</body>
+</html>

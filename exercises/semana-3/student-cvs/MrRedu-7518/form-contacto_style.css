@@ -1,0 +1,228 @@
+body {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 50em;
+    background-color: #282828;
+    font-family: sans-serif;
+    color: #d1d1d1;
+}
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+
+h2, h3, h4 {
+    font-size: 16px;
+}
+.header h1 {
+    text-align: center;
+    margin-top: 42px;
+    margin-bottom: 42px;
+}
+.header h1 strong {
+    color: rgb(136,108,228);
+    text-shadow: 2px 2px 10px black;
+}
+.header h1:hover em {
+    color: #282828;
+}
+
+
+.form {
+    background-color: rgb(49,49,49);
+    box-shadow: 0 0 5px rgba(136,108,228, 0.3);
+    border-radius: 10px;
+
+    max-width: 800px;
+    margin: 0 auto 20px;
+    padding: 20px 40px;
+}
+.form:hover {
+    box-shadow: 0 0 10px rgba(136,108,228, 0.6);
+}
+.form h1 {
+    font-size: 26px;
+    color: rgb(136,108,228);
+}
+.form:hover h1 {
+    text-shadow: 2px 2px 10px black;
+}
+form {
+    padding: 0 10px;
+}
+.form-content {
+    margin: 15px 0;
+}
+.form-content label, legend {
+    font-weight: bold;
+    /* color: ; */
+}
+.form-content input, select, textarea {
+    color: rgb(136,108,228);
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.form-content input[type="text"], input[type="email"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(66, 66, 66);
+    width: 100%;
+    margin: 5px 0;
+}
+.form-content input[type="text"]:focus, input[type="email"]:focus {
+    box-shadow: 0 0 4px rgba(136,108,228, 0.8);
+}
+
+.form-content select {
+    padding: 8px 24px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(66, 66, 66);
+}
+.form-content select:focus {
+    box-shadow: 0 0 4px rgba(136,108,228, 0.8);
+}
+
+.form-content input[type="number"] {
+    padding: 8px 24px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(66, 66, 66);
+}
+.form-content input[type="number"]:focus {
+    box-shadow: 0 0 4px rgba(136,108,228, 0.8);
+}
+
+.form-content fieldset {
+    border: 1px solid rgb(66, 66, 66);
+    border-radius: 10px;
+    background-color: rgb(66, 66, 66);
+}
+.form-content .opciones {
+    display: flex;
+    justify-content: space-around;
+}
+.form-content .opcion {
+    margin: 8px;
+}
+.form-content .opcion:hover {
+    color: rgb(144, 129, 194);
+    text-shadow: 0 0 10px black;
+}
+.form-content input[type="radio"], input[type="checkbox"]{
+    accent-color: rgb(136,108,228);
+}
+.form-content .opciones .opcion input[type="radio"]:checked + label {
+    color: rgb(136,108,228);
+    text-shadow: 0 0 10px black;
+}
+.form-content .opcion label {
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.form-content .description, textarea  {
+    display: block;
+}
+.form-content textarea {
+    width: 100%;
+    background-color: rgb(66, 66, 66);
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 5px 0;
+
+    resize: vertical;
+}
+.form-content textarea:focus {
+    box-shadow: 0 0 4px rgba(136,108,228, 0.8);
+}
+.form-content .help {
+    color: rgba(136,108,228, 0.4);
+    font-size: 14px;
+}
+.form-content textarea:focus + .help {
+    color: rgba(136,108,228, 0.8);
+}
+.form-content label[for="terms"]{
+    color: #7c7c7c;
+}
+.form-content label[for="terms"]:hover {
+    color: rgb(136,108,228);
+}
+
+
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: end;
+    margin: 40px 0 20px;
+}
+
+.form form .botones .enviar, .cancelar {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(136,108,228, 0.8);
+    color: #d1d1d1;
+    box-shadow: 1px 1px 4px black;
+    width: 100%;
+}
+.form form .botones .cancelar {
+    background-color: #424242;
+}
+.form form .enviar:hover {
+    background-color: rgba(136,108,228, 1);
+    box-shadow: -1px -1px 2px black;
+}
+.form form .botones .cancelar:hover {
+    background-color: #383838;
+    box-shadow: -1px -1px 2px black;
+}
+.form form .enviar:active {
+    background-color: rgba(136,108,228, 0.3);
+    outline: 1px solid rgb(22, 22, 22);
+    box-shadow: none;
+}
+.form form .botones .cancelar:active {
+    background-color: #333333;
+    outline: 1px solid rgb(22, 22, 22);
+    box-shadow: none;
+}
+
+
+
+.boton {
+    /* border: 2px dashed tomato; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 40px 0;
+}
+/* .boton h4 {
+
+} */
+.boton h4 a {
+    text-decoration: none;
+    padding: 20px 40px;
+    background-color: rgb(49,49,49);
+    border-radius: 10px;
+    color: rgb(151, 151, 151);
+    box-shadow: 0 0 5px rgba(136,108,228, 0.3);
+
+}
+.boton h4:hover a {
+    color: #d1d1d1;
+    box-shadow: 0 0 5px rgba(136,108,228, 0.6);
+}

@@ -1,0 +1,181 @@
+@use "variables";
+
+@media screen and (max-width:900px){
+    .container-cards{
+        justify-content: space-evenly;
+    }
+
+    .card{
+        width: 45%;
+    }
+
+    .background{
+        width: 52%;
+    }
+
+    .card{
+        width: 42%;
+    }
+    
+    .check__item{
+        width: 45%;
+        margin-bottom: 35px;
+    }
+    
+    .newsletter{
+        width: 80%;
+    }
+
+    .download{
+        width: 100%;
+    }
+
+    .download__app{
+        justify-content: space-evenly;
+    }
+
+    .download__item{
+        width: 45%;
+    }
+
+    .get--email{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .socialmedia__icon{
+        font-size: 18px;
+    }
+
+    .socialmedia__legend{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main .container,
+    .footer .container{
+        padding: 60px 0;
+    }
+
+    .nav__container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .nav__hero{
+        height: auto;
+    }
+
+    .logo{
+        padding: 15px 0 ;
+        text-align: center;
+    }
+
+    .links{
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .link{
+        padding: 7px 10px;
+    }
+
+    
+
+    .title{
+        font-size: 35px;
+    }
+
+    .copy{
+        font-size: 20px;
+    }
+    
+    .subtitle{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .copy__section{
+        font-size: 20px;
+        text-align: center;
+    }
+
+   .container-bg{
+        justify-content: space-evenly;
+    }
+
+    .card{
+        margin-bottom: 40px;
+        width: 65%;
+    }
+
+    .card__title{
+        font-size: 35px;
+    }
+
+    .card__button{
+        width: 100%;
+    }
+
+    .background{
+        width: 65%;
+        margin-bottom: 40px;
+    }
+
+    .background__copy{
+        display: none;
+    }
+
+    .container--modifier{
+        width: 80%;
+    }
+
+    .item__contact{
+        width: 100%;
+        padding: 30px 0 ;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .card{
+        width: 95%;
+    }
+
+    .background{
+        width: 95%;
+    }
+
+    container--modifier{
+        width: 90%;
+    }
+
+
+    .newsletter{
+        width: 100%;
+    }
+
+    .newsletter--modifier{
+        display: block;
+    }
+
+    .check__item{
+        width: 100%;
+        border: none;
+        padding: none;
+        justify-content: center;
+    }
+
+    .download__item{
+        width: 49%;
+    }
+
+    .download__title{
+        font-size: 16px;
+    }
+
+    .download__logo{
+        font-size: 30px;
+    }
+}

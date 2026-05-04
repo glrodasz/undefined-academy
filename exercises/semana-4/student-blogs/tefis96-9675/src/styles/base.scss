@@ -1,0 +1,149 @@
+@import './variables.scss';
+
+    html {
+        width: 100%;
+        height: 100%;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: $Non-Photo-Blue;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    .containerHeader {
+        width: 100%;
+        height: 200px;
+    }
+
+    .headerImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-around;
+        background-color: $Cyan-Cornflower-Blue ;
+        height: 3rem;
+
+        &>ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &>ul>li>a {
+            text-decoration: none;
+            color: white;
+            font-size: large;
+            font-weight: bolder;
+            padding: 1rem 1rem;
+        }
+    }
+    .containerPost {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        width: 100%;
+        height: 100%;
+        padding: 2rem 10px;
+        gap: 10px;
+
+        .cardPost {
+            width: 100%;
+            height: 650px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $Moonstone-Blue;
+            border: 4px solid $Dark-Charcoal;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+
+
+            .infoCard {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+
+                & > .first {
+                    width: 100%;
+                    height: 50%;
+
+                    & > .tittlePost {
+                        height: 10%;
+                        color: white;
+                        font-size: x-large;
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    & > .imgPostCont {
+                        display: flex;
+                        width: 100%;
+                        height: 80%;
+                        padding: 0 0.5rem;
+
+                        & > .imgPost {
+                            width: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+
+                &>.secondInfo {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    padding: 10px;
+                }
+
+                &>.descPost {
+                    padding: 1rem;
+                    font-size: 1rem;
+                    &>.description {
+                        display: flex;
+                        height: 50%;
+                    }
+                }
+
+                .datePostCont {
+                    display: flex;
+                    justify-content: end;
+                    font-style: oblique;
+                    font-weight: bold;
+                    padding: 0.5rem 0;
+                }
+
+            }
+            }
+        }
+
+        .containerFooter{
+            display: flex;
+            width: 100%;
+            background-color: $Cyan-Cornflower-Blue;
+            justify-content: center;
+            
+            &>h3{
+                font-size: xx-large;
+                color: white;
+            }
+        }

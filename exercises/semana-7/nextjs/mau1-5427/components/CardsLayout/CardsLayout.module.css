@@ -1,0 +1,14 @@
+.title {
+  color: var(--clr-brown);
+  font-size: 32px;
+  font-weight: bold;
+  margin: 20px auto;
+}
+.cards-layout {
+  max-width: 1015px;
+  display: grid;
+  place-content: center;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
+  padding-bottom: 32px;
+}

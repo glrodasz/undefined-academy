@@ -1,0 +1,19 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+.conta {
+    background: #0699A6;
+    border: 1px solid #9E8C6C;
+    letter-spacing: 2px;
+}
+
+.btn {
+    background: #0699A6;
+    border: 1px solid #9E8C6C;
+    letter-spacing: 2px;
+}
+
+.btn:hover {
+    background: #09b5c5;
+    border: 1px solid #9E8C6C;
+}

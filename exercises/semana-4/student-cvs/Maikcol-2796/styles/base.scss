@@ -1,0 +1,32 @@
+@media screen and (max-width: 500px) {
+  
+  .container-grid {
+    grid-template-areas:
+    "principal principal principal principal"
+    "project-a project-a project-a project-a" 
+    "project-b project-b project-b project-b";  
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 1em;
+    
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+  
+  .nav-links.show {
+    display: flex;
+  }
+  
+  .nav-button {
+    display: inline-block;
+  }
+  
+  }

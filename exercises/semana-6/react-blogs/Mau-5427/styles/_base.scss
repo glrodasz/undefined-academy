@@ -1,0 +1,178 @@
+@use "./variables";
+
+//tools
+@mixin centered-background-position {
+  background-size: 100%;
+  background-position: center;
+}
+
+@mixin mobile-post-layout {
+  display: grid;
+  gap: variables.$main-gap;
+}
+
+//* Generic
+a {
+  text-decoration: none;
+}
+
+//* elements
+html {
+  font-size: 90%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  max-width: 1180px;
+  padding: 0 variables.$main-gap;
+  margin: 0 auto;
+  background-color: variables.$merino;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: variables.$main-gap;
+}
+
+//* objects
+
+.nav-list {
+  width: 100%;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.intro-posts {
+  @include mobile-post-layout();
+}
+
+.aside-cards {
+  display: flex;
+  flex-direction: column;
+  gap: variables.$main-gap;
+}
+
+.posts-list {
+  @include mobile-post-layout();
+  padding-bottom: variables.$main-gap;
+}
+
+//* components
+
+// navigation buttons
+.nav-btn {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  color: variables.$dove-gray;
+  overflow: hidden;
+}
+
+.nav-btn img {
+  position: absolute;
+  object-fit: 100%;
+  object-position: center;
+  z-index: -1;
+}
+
+.nav-btn span {
+  display: block;
+  text-align: center;
+  width: 100%;
+  background-color: variables.$westar-09;
+}
+
+// post cards
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 10px;
+  background-color: variables.$white;
+}
+.card header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: variables.$cod-gray;
+}
+.card div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.heading-sm {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.emphasis-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: variables.$main-gap;
+  padding: 20px;
+  color: variables.$white;
+  background-color: variables.$cod-gray-06;
+  z-index: 0;
+  overflow: hidden;
+}
+.emphasis-card > img {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  object-position: right;
+  mix-blend-mode: multiply;
+  z-index: -1;
+}
+.emphasis-card header {
+  color: variables.$white;
+}
+.emphasis-card p {
+  color: variables.$white;
+}
+
+//* atoms
+
+.nav-link-sm {
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+.font-bold {
+  font-weight: 700;
+}
+
+.paragraph {
+  color: variables.$dove-gray;
+}
+
+.paragraph-xs {
+  font-size: 0.8125rem;
+  line-height: 1.1875rem;
+}
+.paragraph-sm {
+  font-size: 1rem;
+}
+
+.date {
+  color: variables.$calico;
+}

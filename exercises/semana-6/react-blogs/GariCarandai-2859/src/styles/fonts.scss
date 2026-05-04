@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Verdana';
+  src: url('../assets/fonts/verdana/Verdana-BoldItalic.eot');
+  src: local('../assets/fonts/verdana/Verdana Bold Italic'), local('Verdana-BoldItalic'),
+      url('../assets/fonts/verdana/Verdana-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/verdana/Verdana-BoldItalic.woff2') format('woff2'),
+      url('../assets/fonts/verdana/Verdana-BoldItalic.woff') format('woff'),
+      url('../assets/fonts/verdana/Verdana-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Verdana';
+  src: url('../assets/fonts/verdana/Verdana-Italic.eot');
+  src: local('Verdana Italic'), local('Verdana-Italic'),
+      url('../assets/fonts/verdana/Verdana-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/verdana/Verdana-Italic.woff2') format('woff2'),
+      url('../assets/fonts/verdana/Verdana-Italic.woff') format('woff'),
+      url('../assets/fonts/verdana/Verdana-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Verdana';
+  src: url('../assets/fonts/verdana/Verdana.eot');
+  src: local('Verdana'),
+      url('../assets/fonts/verdana/Verdana.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/verdana/Verdana.woff2') format('woff2'),
+      url('../assets/fonts/verdana/Verdana.woff') format('woff'),
+      url('../assets/fonts/verdana/Verdana.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Verdana';
+  src: url('../assets/fonts/verdana/Verdana-Bold.eot');
+  src: local('Verdana Bold'), local('Verdana-Bold'),
+      url('../assets/fonts/verdana/Verdana-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/verdana/Verdana-Bold.woff2') format('woff2'),
+      url('../assets/fonts/verdana/Verdana-Bold.woff') format('woff'),
+      url('../assets/fonts/verdana/Verdana-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

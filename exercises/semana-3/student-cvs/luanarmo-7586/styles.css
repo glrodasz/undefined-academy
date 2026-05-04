@@ -1,0 +1,134 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+
+body {
+    margin: 0 auto;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #566b78;
+    background-color: #fafafa;
+}
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+h1,
+h2,
+strong {
+    color: #333;
+}
+
+a {
+    color: #e81c4f;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+label,
+input:not([type="radio"], [type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+}
+
+label,
+input {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+label,
+legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: 444;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.help {
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+}
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #713f12;
+    background: #eab308;
+    color: #333;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 50%;
+}
+
+button:hover {
+    background: #facc15;
+}
+
+button:active {
+    background: #ca8a04;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+    ;
+}
+
+form {
+    accent-color: #eab308;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-button {
+    display: grid;
+    place-items: center;
+}
+
+
+input:focus-visible,
+textarea:focus-visible {
+    border: 1px solid #eab308;
+    outline: 2px solid #facc15;
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        max-width: 50em;
+    }
+
+}

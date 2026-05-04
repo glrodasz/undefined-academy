@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"
+    />
+    <link rel="stylesheet" href="main.scss" />
+    <script defer type="module" src="./main.mjs"></script>
+    <title>Práctica de Layout</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-list">
+        <li><a class="decor-btn nav-btn nav-link-sm font-medium" href="#"><span>Decor</span></a></li>
+        <li><a class="lifestyle-btn nav-btn nav-link-sm font-medium" href="#"><span>Lifestyle</span></a></li>
+        <li><a class="food-btn nav-btn nav-link-sm font-medium" href="#"><span>Food</span></a></li>
+        <li><a class="travel-btn nav-btn nav-link-sm font-medium" href="#"><span>Travel</span></a></li>
+        <li><a class="interior-btn nav-btn nav-link-sm font-medium" href="#"><span>Interior</span></a></li>
+        <li><a class="design-btn nav-btn nav-link-sm font-medium" href="#"><span>Design</span></a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="intro-posts">
+        <article class="card">
+          <div>
+            <header>
+              <img class="card-img" src="https://source.unsplash.com/-YHSwy6uqvk" alt="portada de artículo">
+              <h2 class="heading-sm font-bold">Nunc Volutpat Venenatis</h2>
+              <time class="date card-date" datetime="2023-01-11">May 9, 2014</time>
+            </header>
+              <p class="paragraph paragraph-xs">Nulla a odio sed magna congue condimentum. Pellentesque convallis enim nec libero vulputate, et rhoncus urna placerat. Phasellus mattis, diam vel vehicula facilisis, erat leo dapibus augue, at mollis tellus ex non nisi. Ut faucibus fringilla semper. Aenean nunc ex,...</p>
+          </div>
+            <a href="">read more</a>
+        </article>
+        <article class="card emphasis-card first-emphasis-card">
+          <header>
+            <h2 class="heading-sm font-bold">Nunc Volutpat Venenatis</h2>
+            <time datetime="2023-03-02" class="card-date">Jun 9, 2015</time>
+          </header>
+          <p class="paragraph-xs">Nulla a odio sed magna congue condimentum. Pellentesque convallis enim nec libero vulputate, et rhoncus urna placerat. Phasellus mattis, diam vel vehicula facilisis, erat leo dapibus augue, at mollis tellus ex non nisi. Ut faucibus fringilla semper. Aenean nunc ex,...</p>
+          <a href="">Read More</a>
+        </article>
+        <div class="aside-cards">
+          <article class="card">
+            <div>
+              <header>
+                <h2 class="heading-sm font-bold">Nunc Volutpat Venenatis</h2>
+                <time class="date card-date" datetime="2020-11-26">May 9, 2014</time>
+              </header>
+              <p class="paragraph paragraph-xs">Nulla a odio sed magna congue condimentum. Pellentesque convallis enim nec libero vulputate, et...</p>
+            </div>
+            <a href="">read more</a>
+          </article>
+          <article class="card">
+            <div>
+              <header>
+                <h2 class="heading-sm font-bold">Nunc Volutpat Venenatis</h2>
+                <time class="date card-date" datetime="2021-03-07">May 9, 2014</time>
+              </header>
+              <p class="paragraph paragraph-xs">Nulla a odio sed magna congue condimentum. Pellentesque convallis enim nec libero vulputate, et...</p>
+            </div>
+            <a href="">read more</a>
+          </article>
+        </div>
+      </section>
+      <section class="posts-list">
+        <article class="card">
+          <div>
+            <header>
+              <img class="card-img" src="https://source.unsplash.com/W9OKrxBqiZA" alt="portada de artículo">
+              <h2 class="heading-sm font-bold">Nunc Volutpat Venenatis</h2>
+              <time class="date card-date" datetime="2023-04-01">May 9, 2014</time>
+            </header>
+            <p class="paragraph paragraph-xs">Nulla a odio sed magna congue condimentum. Pellentesque convallis enim nec libero vulputate, et rhoncus urna placerat. Phasellus mattis, diam vel vehicula facilisis, erat leo dapibus augue, at mollis tellus ex non nisi. Ut faucibus fringilla semper. Aenean nunc ex,...</p>
+          </div>
+          <a href="">read more</a>
+        </article><article class="card">
+          <div>
+            <header>
+              <img class="card-img" src="https://source.unsplash.com/7tOV35hnkao" alt="portada de artículo">
+              <h2 class="heading-sm font-bold">Nunc Volutpat Venenatis</h2>
+              <time class="date card-date" datetime="2023-02-01">May 9, 2014</time>
+            </header>
+            <p class="paragraph paragraph-xs">Nulla a odio sed magna congue condimentum. Pellentesque convallis enim nec libero vulputate, et rhoncus urna placerat. Phasellus mattis, diam vel vehicula facilisis, erat leo dapibus augue, at mollis tellus ex non nisi. Ut faucibus fringilla semper. Aenean nunc ex,...</p>
+          </div>
+          <a href="">read more</a>
+        </article><article class="card">
+          <div>
+            <header>
+              <img class="card-img" src="https://source.unsplash.com/98WPMlTl5xo" alt="portada de artículo">
+              <h2 class="heading-sm font-bold">Nunc Volutpat Venenatis</h2>
+              <time class="date card-date" datetime="2023-01-01">May 9, 2014</time>
+            </header>
+            <p class="paragraph paragraph-xs">Nulla a odio sed magna congue condimentum. Pellentesque convallis enim nec libero vulputate, et rhoncus urna placerat. Phasellus mattis, diam vel vehicula facilisis, erat leo dapibus augue, at mollis tellus ex non nisi. Ut faucibus fringilla semper. Aenean nunc ex,...</p>
+          </div>
+          <a href="">read more</a>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

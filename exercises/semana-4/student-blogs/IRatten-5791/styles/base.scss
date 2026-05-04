@@ -1,0 +1,264 @@
+@use "./variables.scss" as var;
+
+@mixin boxShadow($after,$offset-x, $offset-y, $blur-radius, $color){
+  @if $after == ' '{
+    box-shadow: $offset-x $offset-y $blur-radius rgba(0,0,0,$color);
+  } @else {
+    box-shadow: $after $offset-x $offset-y $blur-radius rgba(0,0,0,$color);
+  }
+}
+
+*{
+  box-sizing: border-box;
+  word-wrap: normal;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  margin: auto;
+  max-width: 50em;
+  font-family: var.$font-family;
+  line-height: 1.5;
+  background-color: var.$background-color;
+  font-size: 1.1em;
+  min-width: 250px;
+}
+
+button{
+  border: 1px solid;
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: var.$btn-color;
+  text-shadow: -1px -1px 0 var.$text-shadow;
+  float: right;
+  cursor: pointer;
+  width: 25%;  
+  min-width: 60px;
+  padding: 0.5em 0;
+
+  @include boxShadow(' ',1px, 1px, 3px, 0.5);
+
+  &:hover{
+    @include boxShadow(' ',1px, 1px, 3px, 0.5);
+    background-color: var.$btn-hover-color;
+    text-shadow: none;
+    font-weight: bold;
+  }
+
+  &:active{
+    @include boxShadow(inset,1px, 1px, 3px, 0.5);
+    background-color: var.$btn-active-color;
+  }
+}
+
+figure{
+  margin: 0;
+}
+
+form{
+  margin: 0 2em 2em 2em;
+}
+
+h3{
+  font-size: 1.3em;
+}
+
+h5{
+  padding: 0 1em;
+}
+
+header h1{
+  text-align: center;
+}
+
+img{
+  max-width: 100%;
+  min-width: 30px;
+}
+
+input{
+  padding: 0.5em;
+  border: 1px solid var.$border-input-color;
+  border-radius: 4px;
+  @include boxShadow(inset,0, 1px, 1px, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  width: 100%;
+}
+
+label{
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+label, input{
+  width: 100%;
+}
+
+li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 1em;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(1.3);
+    font-weight: bold;
+    padding: 0 1em;
+  }
+}
+
+p{
+  font-weight: 300;
+  margin: 0;
+}
+
+main > section{
+  margin-bottom: 2em;
+}
+
+textarea{
+  width: 100%;
+  height: 10em;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  @include boxShadow(inset,0, 1px, 1px, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  resize: vertical;
+}
+
+ul{
+  padding: 0px;
+}
+
+.header-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.profile{
+  padding: 0 1em;
+
+  &-contact{
+    & img{
+      max-width: 60px;
+      width: 100%;
+      height: 95%;
+    }
+
+    & figure{
+      margin: 0;
+      height: 100%;
+    }
+
+    &_container{
+      text-align: center;
+      & a{
+        height: 60px;
+        display: inline-block;
+        margin: 0 0.5em;
+      }
+  
+      & div{
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  &-skills{
+    &_container{
+      & p{
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &_show{
+      padding: 0 1em;
+
+      & img{
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  }
+
+  &-githubstats{
+    &_container{
+      display: flex;
+      justify-content: center;
+
+      & img{
+        width: 100%;
+        max-width: 475px;
+      }
+    }
+  }
+}
+
+.form-group{
+  margin-top: 1em;
+}
+
+.humanize-date:hover{
+  transform: none;
+  padding: 0px;
+}
+
+.header{
+  &-item_description{
+    padding: 1em;
+    color: darkslategray;
+  }
+
+  &-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5em 0 3em 0;
+
+    &_item{
+      display: inline-block;
+      margin: 0 1.2em;
+      text-align: center;
+      cursor: pointer;
+      background-color: #e1e1e1;
+      border-radius: 8px;
+      @include boxShadow(2px,7px, 6px, 3px, 0.5);
+  
+      & a{
+        color: #000;
+        display: grid;
+        grid-template-rows: 1fr 0.5fr;
+        height: 100%;
+      }
+  
+      & figure{
+        margin: 1em 40px 1em 40px;
+      }
+
+      & img{
+        max-width: 100%;
+        min-width: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: var.$breakpoint){
+  .header-list{ 
+    &_item {
+      width: 50%;
+      margin: 30px auto;
+  
+      img{
+        width: 20px;
+      }
+    }
+  }
+}

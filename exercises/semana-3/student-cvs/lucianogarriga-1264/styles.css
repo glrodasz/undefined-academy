@@ -1,0 +1,403 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+/* BODY */
+body{ 
+    background: rgb(255, 239, 239);
+    color: rgb(86, 79, 79);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact-body{ 
+    line-height: 1.5; 
+}
+/* MAIN */
+main{
+    display: flex; 
+    flex-direction: column;
+}  
+/*  NAV */
+
+nav{ 
+    place-items: center;
+    background: rgb(53, 54, 54);  
+}
+nav ul{
+    display: flex; 
+    justify-content: space-evenly;
+    font-size: 0.9rem;
+    margin: 0.7rem;
+    padding: 0.2rem; 
+    list-style: none;
+    text-decoration: none; 
+    color: aliceblue; 
+} 
+nav ul li:hover {
+    color: rgb(50, 123, 186);
+}
+nav ul li a{
+    list-style: none;
+    text-decoration: none; 
+    font-weight: bold;
+    color: aliceblue; 
+}
+
+/*  HEADER  */
+
+header{
+    background-image: url("img/bg-main.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;   
+}
+
+/* Body Pages */
+ 
+p{
+    font-size: 1rem;
+    font-weight: bold; 
+    text-align: justify;
+    line-height: 1.5;
+    margin: 1rem;
+}
+p a{ 
+    list-style: none;
+    text-decoration: none; 
+    color: rgb(23, 85, 138);
+    font-weight: bolder;
+}
+h1{
+    font-size: 2.5rem;      
+}
+h1 span{
+    font-size: 22px;
+    text-align: left;
+}
+h1 a{
+    list-style: none;
+    text-decoration: none; 
+    color: rgb(23, 85, 138);
+    transition: 250ms; 
+}
+h1 a:hover{
+    color: #d3dbe3;
+    background: #166ab8;
+    padding: 5px;
+    border-radius: 12px;
+}
+h3{
+    font-size: 1.2rem;    
+    text-align: center;
+}
+h1, h3{
+    padding: 0 12px;
+    margin: 12px;
+} 
+h2{
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.7rem;
+}
+.sub{
+    color: rgb(23, 85, 138);
+}
+.personal-profile{ 
+    font-size: 28px;
+} 
+section, header{  
+    justify-content: center;
+    align-items: center;
+} 
+header,
+.languages,
+.content,
+.signup {    
+    min-height: 350px;
+}
+
+/*  CONTENT  */
+.main-article{
+    font-size: 2rem;
+    font-weight: bold;
+}    
+.feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+.feature-h5{
+    color: rgb(43, 42, 42);  
+} 
+.feature div p{
+    text-align: left;  
+    margin: 0.3rem;
+    padding: 0.3rem;
+}
+.feature{ 
+    padding: 1rem;
+}
+.features{
+    margin: 2rem;
+}
+i{
+    font-size:6rem;
+    color:rgb(43, 42, 42)
+}
+section h3 a{ 
+    text-decoration: none;
+    color: #166ab8;
+}
+.section-title{
+    color: rgb(23, 85, 138);
+}
+
+
+/* FOOTER */
+.footer{
+    background: rgb(46, 44, 44); 
+    color: rgb(179, 184, 188);   
+    padding: 20px; 
+} 
+footer p, footer address{
+    font-size: 0.8rem;
+    text-align: center;
+}
+footer a {  
+    color: aliceblue;
+    font-weight: bold;
+}
+footer p a:hover,
+footer address a:hover,
+section h3 a:hover{
+    color: #d3dbe3;
+    background: #166ab8;
+    padding: 5px;
+    border-radius: 9px;
+}
+h5{
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* SECTION PAGES */
+.section-pages{
+    display: block;
+}
+.sections-sub{
+    font-size: 1.5rem;
+    color: rgb(23, 85, 138);
+}
+.l-about{
+    font-size: 1rem;
+    line-height: 1.5; 
+    text-align: justify;
+    margin: 0 2rem 0 7px;
+
+}
+.sections-h3{
+    text-align: left;
+}
+.content{
+    margin: 1rem 0.2rem 1.5rem;
+}
+
+
+/* CONTACT PAGE STYLES */ 
+.contact{
+    font-size: 2rem; 
+    text-align: center;
+}  
+
+.links{ 
+    display: flex;
+    justify-content: space-evenly; 
+    margin: 8px 1rem;
+}
+.terms{
+    font-size: 1rem;
+}
+h3 a {
+    font-size: 1rem;
+}
+.form-group{ 
+    margin: 10px;
+}
+
+label, input[type="text"], input[type="email"]{
+    width: 100%; 
+}
+label, input{ 
+    vertical-align: middle;
+}
+label, legend{
+    font-weight: bold; 
+    font-size: 1.2rem;
+    color: #444;
+}
+div fieldset label{
+    font-size: 14px;
+}
+input[type="text"], input[type="email"], textarea{
+    background: rgb(243, 239, 239);
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+textarea{
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+.help{
+    font-size: 13px;
+    margin: 10px 0; 
+} 
+button{
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: 1px solid rgb(61, 63, 66);
+    background: #83b4e2;
+    color: rgb(73, 74, 75);
+    border-radius: 8px; 
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+button:hover{
+    color: rgb(217, 221, 226);
+    background: #144c81;
+    transition: 0.3s;
+}
+button:active{
+    box-shadow: none;
+}
+.center-button{
+    text-align: center;  
+    padding-top: 1em;
+}
+form{
+    accent-color: #6c9cc8;
+    padding-bottom: 3rem;
+}
+input:focus-visible,
+textarea:focus-visible{
+    outline: 2.5px solid #76a2cb;
+}
+
+
+
+
+@media screen and (min-width: 768px) { 
+    p{
+        font-size: 1.2rem;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    h1 span{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.7rem;
+    }
+    h4{
+        font-size: 3rem;
+    }
+    header{
+        min-height: 580px;
+    }
+    nav ul{
+        font-size: 1.1rem;
+    }
+    .l-about li{
+        font-size: 1.2rem;
+    }
+    .personal-profile{
+        margin: 2rem 0;
+        font-size: 3rem;
+    } 
+    .feature{ 
+        padding: 1rem;
+    }
+    form{
+        min-width: auto; 
+    }
+    footer{   
+        min-height: 100px;
+        padding-bottom: 1.5rem; 
+    }   
+    footer p, footer address, h5{
+        font-size: 1.2rem; 
+    }
+    .contact{
+        font-size: 2.8rem; 
+    } 
+    .formulario {
+        max-width: 780px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 992px){
+    p{
+        font-size: 1.4rem;
+        padding: 1.2rem;
+    }
+    h1{
+        font-size: 4.5rem; 
+        padding: 1rem;
+    }
+    h1 span{
+        font-size: 2.7rem;
+    }
+    header{
+        min-height: 850px;
+    }
+    h3{
+        font-size: 1.5rem; 
+        margin: 1rem;
+    }
+    h1{
+        margin: 2rem;
+    }
+    h4{
+        font-size: 4rem;
+        margin: 3rem;
+    }
+    nav ul{
+        font-size: 1.4rem;
+        margin: 1.2rem;  
+    } 
+    .features{
+        display: flex;
+        order: 1;
+    } 
+    .feature{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .signup{
+        height: 150px;
+        min-height: 150px;
+        order: 2;
+    }
+    content{
+        order: 3;
+    }
+
+    footer{   
+        min-height: 100px;
+        padding-bottom: 1.5rem; 
+    }   
+    footer p, footer address, h5{
+        font-size: 1.4rem; 
+    }
+}

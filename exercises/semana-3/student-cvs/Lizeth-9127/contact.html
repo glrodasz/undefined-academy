@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <title>Contact</title>
+    <script type="module" src="/main.mjs"></script> 
+    <style>
+        body{
+            width:65%;
+            min-width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+            <section>
+                <header>
+                    <h1 class="form-heading center">Contact Page</h1>
+                </header>
+            </section>
+
+            <section>
+                <form action="/server" method="get" class="form center">
+                <p class="caption">Enter the following information to leave a message:</p>
+
+                <label for="name" class="center input-style">Enter your name:
+
+                    <input type="text" name="name" id="name" required class="center input-style" />
+                </label>
+
+                <label for="email" class="input-style">Enter your email:
+                    <input type="email" name="email" id="email" required class="input-style">
+                </label>
+
+                <label for="message" class="input-style">Enter your message:
+                    <textarea name="message" id="message"  rows="5" required class="center input-style">
+                    </textarea>
+                </label>
+
+                <button type="submit">
+                    Send message
+                </button>
+            </form>
+        </section>
+            </div>
+</body>
+</html>

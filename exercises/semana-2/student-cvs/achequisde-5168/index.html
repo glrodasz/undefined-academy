@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="block-center">
+      <header class="page-header">
+        <h1>Humberto José, programmer</h1>
+        <p>Programming at the speed of thought</p>
+      </header>
+      <article>
+        <h1>About me</h1>
+        <section class="preface">
+          <h2>Who I am</h2>
+          <figure>
+            <img
+              src="./assets/daft-punk.jpg"
+              alt="Man with a leather jacket and a robot mask."
+            />
+            <figcaption>
+              Thomas Bangalter, part of the House duo Daft Punk, and one of my
+              inspirations
+            </figcaption>
+          </figure>
+          <div>
+            <p>
+              Hi, my name is Humberto José, I am a programmer from
+              <strong>Venezuela</strong>,
+            </p>
+            <ul>
+              <li>
+                🧑‍🎓 studying to become a <strong>full-stack developer</strong>
+              </li>
+              <li>
+                📓🏫 enrolled in the
+                <strong> <em>Undefined Shell</em> bootcamp </strong>
+              </li>
+            </ul>
+          </div>
+          <p class="favorites">
+            My favorite programming languages are
+            <strong>JavaScript</strong> and <strong>Go</strong>, my favorite
+            series is <strong>Avatar: The Last Airbender</strong> and my
+            favorite bands are <strong>Red Hot Chili Peppers</strong> and
+            <strong>Daft Punk</strong>.
+          </p>
+          <p>
+            <a href="https://github.com/achequisde"><em>Click here</em></a>
+            to visit my <strong>GitHub</strong> profile.
+          </p>
+        </section>
+        <section class="commands">
+          <h2>Some terminal commands I didn't know about</h2>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td><code>uptime</code></td>
+              <td>Tells how long the system has been running</td>
+            </tr>
+            <tr>
+              <td><code>df</code></td>
+              <td>Shows available disk space</td>
+            </tr>
+            <tr>
+              <td><code>cp -r</code></td>
+              <td>Copies a whole directory</td>
+            </tr>
+            <tr>
+              <td><code>cd -</code></td>
+              <td>Goes to the last visited directory</td>
+            </tr>
+            <tr>
+              <td><code>more</code></td>
+              <td>File viewer</td>
+            </tr>
+          </table>
+        </section>
+        <section class="aliases">
+          <h2>Aliases I use often</h2>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td><code>..</code></td>
+              <td>Expands to <code>cd ..</code> for quick navigation</td>
+            </tr>
+            <tr>
+              <td><code>ins</code></td>
+              <td>
+                Expands to <code>sudo apt install</code> to save a lot of typing
+                💀
+              </td>
+            </tr>
+          </table>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <section class="form block-center">
+        <h2>Contact me</h2>
+        <p>If you wish to contact me, please use the form below:</p>
+        <form action="get" name="contact-form">
+          <label for="user-name">name</label>
+          <input type="text" name="" id="user-name" placeholder="lovecats123" />
+          <label for="user-email">email</label>
+          <input
+            type="email"
+            name=""
+            id="user-email"
+            placeholder="yourname@domain.com"
+          />
+          <label for="user-area">In which area you work?</label>
+          <select name="" id="user-area" required>
+            <option value="" hidden disabled selected>
+              Select your tech area...
+            </option>
+            <option value="fullstack">Frontend/Backend</option>
+            <option value="it">IT Consulting</option>
+            <option value="design">Graphic Designer</option>
+          </select>
+          <label for="user-comment">comment</label>
+          <textarea name="" id="user-comment" cols="60" rows="10"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <section class="block-center">
+        <h2 class="invisible">Copyright</h2>
+        <p class="text-small text-center">2023, All rights reserved...</p>
+      </section>
+    </footer>
+    <script>
+      let submitBtn = document.querySelector("form button").addEventListener(
+        "click",
+        (e) => {
+          e.preventDefault();
+        },
+        false
+      );
+    </script>
+  </body>
+</html>

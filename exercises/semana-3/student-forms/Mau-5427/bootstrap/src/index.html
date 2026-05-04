@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="min-vh-100 d-flex flex-column justify-content-center align-items-center">
+      <h2 class="mb-3 fw-bold text-secondary">Contacto</h2>
+      <form class="col-10 col-md-4 p-4 bg-secondary bg-opacity-10 border border-3 border-secondary border-opacity-50 rounded-4">
+        <div class="mb-3">
+          <label for="name" class="form-label fw-bold text-secondary">Nombre</label>
+          <input type="text" class="form-control rounded-4" id="name" name="name" placeholder="ej. Mauricio Bedoya" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label fw-bold text-secondary">Email</label>
+          <input type="email" class="form-control rounded-4" id="email" name="email" placeholder="ej. example@gmail.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="subject" class="form-label fw-bold text-secondary">Asunto</label>
+          <input type="text" class="form-control rounded-4" id="subject" name="subject" placeholder="ej. Nuevo proyecto" required>
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label fw-bold text-secondary">Descripción</label>
+          <textarea class="form-control rounded-4" id="description" name="description" cols="30" rows="3" placeholder="Detalles del asunto" required style="resize:none"></textarea>
+        </div>
+        <div class="d-grid col-6 mx-auto">
+          <button type="submit" class="btn btn-outline-success rounded-5 fw-bold">Enviar</button>
+          <!--para jugar con el fondo -> bg-success bg-opacity-75 text-white -->
+        </div>
+      </form>
+    </div>
+
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

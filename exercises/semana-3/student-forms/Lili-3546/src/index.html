@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact form</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <div class="container m-3">
+      <h1>Contact me</h1>
+      <form class="mt-3 p-4" action="" method="get">
+          <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input id="name" name="name" type="text" class="form-control" placeholder="Full name" required>
+          </div>
+          <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" name="email" type="email" class="form-control" placeholder="example@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="genre" class="form-label">Genre</label>
+            <div class="form-check">
+              <input class="form-check-input" id="fem" name="flexRadioDefault" type="radio">
+              <label class="form-check-label" for="fem">Female</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" id="masc" name="flexRadioDefault" type="radio">
+              <label class="form-check-label" for="masc">Male</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" id="nb" name="flexRadioDefault" type="radio">
+              <label class="form-check-label" for="nb">Non-binary</label>
+            </div>
+          </div>
+          <div class="mb-3">
+              <label class="mb-2" for="location">Location</label>
+              <select class="form-select" name="location" id="location" aria-label="Default select example">
+                  <option disabled selected value="">Select one</option>
+                  <option value="America">America</option>
+                  <option value="Europe">Europe</option>
+                  <option value="Africa">Africa</option>
+                  <option value="Asia">Asia</option>
+                  <option value="Antarctica">Antarctica</option>
+              </select>
+          </div>
+          <div class="input-group my-3">
+              <span class="input-group-text bg-light" for="message">Message</span>
+              <textarea class="form-control" aria-label="With textarea" name="message" id="message"></textarea>
+          </div>
+          <div class="form-check mb-3">
+              <label class="form-check-label" for="subscribe">
+                  <input class="form-check-input" id="subscribe" name="subscribe" type="checkbox">
+                  <span>I want to subscribe to the newsletter</span>
+              </label>
+          </div>
+          <button type="submit" class="btn btn-dark">Send</button>
+      </form>
+    </div>
+  </body>
+</html>

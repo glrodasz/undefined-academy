@@ -1,0 +1,74 @@
+.cards {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 100%;
+    width: auto;
+}
+
+.card {
+    border-radius: 6px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+    height: auto;
+    max-height: 250px;
+    max-width: 250px;
+    overflow: hidden;
+    position: relative;
+    transition: all .5s ease;
+    width: auto;
+}
+
+.image {
+    object-fit: cover;
+    transition: all .5s ease;
+}
+
+.card:hover .image {
+    transform: scale(1.5);
+}
+
+.breedDescription {
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    transition: all ease-in-out .5s;
+}
+
+.card:hover .breedDescription {
+    opacity: 1;
+}
+
+.breed {
+    color: #ffffff;
+    padding: 0.5rem 0;
+    text-transform: capitalize;
+}
+
+@media (prefers-color-scheme: dark) {
+    .card {
+        box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.3);
+    }
+
+    .breedDescription {
+        background-color: rgba(255, 255, 255, .5);
+    }
+
+    .breed {
+        color: #1a1a1a;
+    }
+}
+  
+
+@media screen and (min-width: 1920px) {
+    .cards {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

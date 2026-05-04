@@ -1,0 +1,115 @@
+@import "styles/variables.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+//Estilos CV
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 0 40px;
+    font-size: 13px;
+    @include style-body
+}
+
+h1, h2 {
+    color: $jordyblue;
+    font-size: 17px;
+}
+
+strong {
+    color: $logan;
+}
+
+.titlelearning{
+    margin-bottom: 20px;
+}
+
+.learning {
+    @include style-learning;
+    padding: 24px 5px 2px 5px;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+.hrnormal {
+    @include style-hr
+}
+
+.courses {
+    padding-top: 10px;
+}
+
+.certificates {
+    font-size: 13px;
+    padding: 0 10px 0 20px;
+}
+
+a {
+    font-size: 12px;
+    @include style-link;
+}
+
+h4 {
+    color: $waterloo;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.networks {
+    display: flex;
+}
+
+//Estilos form
+
+
+form {
+    max-width: 400px;
+}
+
+.form-group {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    outline: none;
+}
+
+fieldset {
+    border-color: $gunpowder;
+    width: 230px;
+}
+
+textarea {
+    @include style-textarea;
+    width: 230px;
+}
+
+button {
+    padding: 10px 15px;
+    @include style-button;
+}
+
+button:hover {
+    @include style-buttonhover
+}
+
+button:active {
+    @include style-buttonactive
+}
+
+.back {
+    margin-top: 25px;
+}

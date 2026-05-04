@@ -1,0 +1,70 @@
+@use "variables.scss" as v;
+
+
+@media (min-width: 768px) {
+  .main {
+  
+    .contenedor-main {
+      
+      .blog {
+  
+        .articulos {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+  
+    .contenedor-main {
+      
+      .blog {
+  
+        .articulos {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header{
+
+    .navegacion {
+      .contenedor-navegacion {
+        flex-direction: row;
+    
+        .barra-navegacion {
+          width: 100%;
+        }
+    
+        .links-navegacion {
+          flex-direction: row;
+          justify-content: flex-end;
+    
+          .link-navegacion {
+            width: auto;
+            border: none;
+            padding: 0 2rem;
+          }
+        }
+      }
+    }
+
+    .hero {
+      height: 50rem;
+  
+      .contenedor-hero {
+        h1 {
+          font-size: 10rem;
+        }
+      }
+    }
+
+  }
+
+}

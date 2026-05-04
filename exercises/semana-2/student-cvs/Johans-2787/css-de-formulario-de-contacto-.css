@@ -1,0 +1,112 @@
+html {
+    box-sizing: border-box;
+}
+
+*  {
+    box-sizing: inherit;
+}
+
+.tittle {
+    text-align: center;
+}
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 0 40px;
+    border: 2px solid black;
+    outline-style: outset;
+    outline-color: grey;
+    border-radius: 4px;
+    background-color: #1e272e;
+    height: 700px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:mintcream;
+    max-width:auto;
+    background-image: url(https://images.unsplash.com/photo-1604964432806-254d07c11f32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
+    background-repeat:repeat;
+}
+
+.group {
+    border: 1px solid;
+    border-color: transparent;
+    margin: 20px 0;
+    border-style: dashed;
+    padding: 10px;
+}
+
+label {
+    font-weight: bold;
+    padding: 4px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    
+}
+
+input {
+
+    width: 100%;
+    border-radius: 4px;
+    padding: 8px;
+    font-style: italic;
+    font-weight: lighter;
+    border-width: 1px;
+    background-color: rgb(242, 240, 240);
+
+}
+
+textarea {
+    display: block;
+    resize: vertical;
+    width: 100%;
+    border-radius: 4px;
+    padding: 0 40px;
+}
+
+
+.msg {
+    font-size: 10px; 
+    text-transform: uppercase;
+    font-weight: bold;
+}
+button, a {
+    margin: 12px;
+    display: inline-block;
+    padding: 8px 32px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+    color: #333;
+    background-color: #f8fafc;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 9px #999;
+}
+
+button:hover, a:hover {
+    color: white;
+    background-color: #2d3436
+}
+
+button:active, a:active {
+    color: white;
+    background-color: #2d3436;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}  
+
+a {
+    margin: -3px;
+}
+

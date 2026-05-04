@@ -1,0 +1,16 @@
+@use "./styles/base.scss";
+@use "./styles/desktop.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0px;
+  font-family: "Viga", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}

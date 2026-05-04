@@ -1,0 +1,333 @@
+// mobile first
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&family=Titillium+Web:wght@200;300;400;600&display=swap");
+// reset
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: inherit;
+  font-family: "Titillium web";
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+//
+.section {
+  background-color: $Black;
+  color: $Cardinal-Pink;
+}
+.section__div {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  padding: 0 10px;
+}
+.div__header {
+  padding: 30px;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: $Cardinal-Pink;
+}
+.nav__a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  color: $White;
+}
+.header__logo {
+  font-weight: bold;
+  font-size: 3.5rem;
+  font-family: "Russo One", sans-serif;
+  color: $White;
+  text-shadow: 0 0 35px $White;
+}
+.logo__color {
+  font-family: "Russo One", sans-serif;
+  color: $Jazzberry-Jam;
+}
+.info {
+  padding-bottom: 130px;
+}
+.info__h1 {
+  font-size: 3rem;
+  letter-spacing: 4px;
+  text-shadow: 0 0 55px $White;
+  color: $Alabaster;
+}
+.info__h2 {
+  font-size: 20px;
+  margin-top: -10px;
+  letter-spacing: 2px;
+}
+.socials {
+  margin: 20px 0;
+}
+.socials__a {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 35%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 5px;
+  transition: 0.3s;
+  background-color: $Black;
+  color: $Cardinal-Pink;
+  border: 2px solid $Cardinal-Pink;
+  &:hover {
+    color: $White;
+    background-color: $Cardinal-Pink;
+    box-shadow: 0 0 20px $White;
+  }
+}
+.photo {
+  position: relative;
+}
+.photo__img {
+  max-width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+  transform: translateX(-50%);
+  border: 2px solid $Cardinal-Pink;
+}
+.aboutme {
+  padding: 140px 0 100px 0;
+  text-align: center;
+  background-color: $Mercury;
+}
+.aboutme__div {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+.div__h2 {
+  font-family: "Russo One", sans-serif;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.div__h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.div__p {
+  font-weight: bold;
+  margin-top: 15px;
+  color: $Cardinal-Pink;
+}
+.div__p--mod {
+  max-width: 700px;
+  margin: auto;
+  color: $Dove-Gray;
+}
+.row {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.row__div {
+  width: 30%;
+}
+.row__div-i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  color: $Cardinal-Pink;
+  border: 2px solid $Cardinal-Pink;
+}
+.row__div-span {
+  display: block;
+  font-weight: bold;
+  margin: 8px 0;
+}
+//
+.education {
+  padding: 100px 0 100px 0;
+  text-align: center;
+  background-color: $Mercury;
+  color: $Black;
+  border: 1px dotted $Gray;
+}
+.education__div {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+.education__div-h2 {
+  margin-top: 30px;
+  font-family: "Russo One", sans-serif;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.education__div-h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.education__div-div {
+  text-align: left;
+  margin-top: 30px;
+}
+.div-div__tablediv {
+  width: auto;
+}
+.tablediv__span {
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 20px;
+  color: $Cardinal-Pink;
+  border: 2px solid $Cardinal-Pink;
+  background-color: $Black;
+}
+.tablediv__table {
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+.table__td {
+  width: 40%;
+  border-bottom: 1px solid $Silver;
+}
+.table__description {
+  border-left: 1px solid $Silver;
+  padding-left: 20px;
+}
+.td__h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.td__h4 {
+  margin-top: 10px;
+}
+.td__p {
+  font-size: 14px;
+}
+.td__span {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: $Cardinal-Pink;
+}
+//
+.contact {
+  padding: 140px 0 100px 0;
+  text-align: center;
+  background-color: $Black;
+  color: $Cardinal-Pink;
+}
+.contact__div {
+  width: 30em;
+}
+.formulary__h3 {
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-top: 15px;
+}
+.formulary__form {
+  accent-color: $Jazzberry-Jam;
+}
+.container__div-div {
+  margin-top: 50px;
+  background-color: $Alto;
+  border: 1px solid $Mine-Shaft;
+}
+.div-div__formulary {
+  padding: 25px 40px;
+}
+.form__input {
+  width: 100%;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  margin-bottom: 1.1rem;
+  transition: 0.3s;
+  text-indent: 10px;
+
+  border: 1px solid $Black;
+  &:hover {
+    background-color: $Pompadour;
+    color: $White;
+    outline: 1px solid $Cardinal-Pink;
+    border: 1px solid $Cardinal-Pink;
+  }
+  &:focus-visible {
+    border: 1px dotted $Black;
+  }
+}
+.area {
+  min-height: 100px;
+  resize: vertical;
+  //
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+.form__button {
+  width: 40%;
+  padding: 0.5rem;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: $Cardinal-Pink;
+  color: $White;
+  text-shadow: -1px -1px 0 $White;
+  box-shadow: 1px 1px 3px $Black;
+  &:hover {
+    background-color: $Jazzberry-Jam;
+  }
+  &:active {
+    background: $Pompadour;
+  }
+}
+.form__label,
+.form__input {
+  vertical-align: middle;
+}
+.form__label,
+.form__input:not([type="checkbox"]) {
+  width: 100%;
+}
+.form__label {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: $Black-Rock;
+}
+.date {
+  color: $Cardinal-Pink;
+  text-transform: capitalize;
+}

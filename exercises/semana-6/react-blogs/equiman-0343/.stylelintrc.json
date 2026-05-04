@@ -1,0 +1,19 @@
+{
+    "extends": [
+        "stylelint-config-standard",
+        "stylelint-config-idiomatic-order"
+    ],
+    "customSyntax": "postcss-syntax",
+    "rules": {
+        "declaration-colon-newline-after": "always-multi-line"
+    },
+    "ignoreFiles": [
+        "build/**",
+        "coverage/**",
+        "dist/**",
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.ts",
+        "**/*.tsx"
+    ]
+}

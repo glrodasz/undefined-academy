@@ -1,0 +1,137 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+/* Design Mobile first */
+
+body {
+  margin: 0 auto;
+  max-width: 60em;
+  line-height: 1.2;
+  padding: 1.5em; 
+  background-color: #fefefe;
+  color: #555;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+header {
+  line-height: 1.2;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  background-color: #f1c93b;
+}
+
+h1,
+h2 {
+  display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+p {
+  align-items: baseline;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2,
+strong {
+  color: #333;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.card {
+  flex-direction: row;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+.form-group {
+  margin: 20px 0;
+}
+
+label,
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  height: 40px;
+  margin-top: -10px;
+  display: inline-block;
+  color: #333;
+  
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+button {
+  padding: 16px 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #fbd85d;
+  border: 1px solid #fae392;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f1c93b;
+}
+
+button:active {
+  background: #ca8a04;
+  box-shadow: none;
+}
+
+/* Design desktop */
+@media only screen and (min-width: 600px) {
+  .cards {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 10px;
+  }
+
+  .card h2 {
+    margin-top: 0;
+  }
+
+  .card p {
+    margin-bottom: 0;
+  }
+}

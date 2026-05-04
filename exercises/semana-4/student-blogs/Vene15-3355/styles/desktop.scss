@@ -1,0 +1,84 @@
+@use "./variables.scss" as *;
+
+@media screen and (min-width: 992px) {
+
+  /*Estilos del header*/
+  header {
+    width: 95%;
+    margin: 15px auto;
+    min-height: 250px;
+    background: $roseFog;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  header>img {
+    display: flex;
+    justify-content: flex-start;
+    width: 20%;
+    margin: 20px 20px 20px 35px;
+    border-radius: 50%;
+  }
+
+  header>div {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 35px 20px 20px;
+  }
+
+  .header-text h1,
+  h2,
+  p {
+    margin: 5px;
+  }
+
+  /*Estilos de las secciones blog*/
+  .blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr;
+    gap: 10px;
+  }
+
+  .img-blog {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /*Estilos sección max-blog*/
+  .max-blog {
+    grid-column: 1 / 4;
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  .img-max-blog {
+    width: 40%;
+    padding: 10px;
+  }
+
+  .max-blog>img {
+    display: flex;
+    justify-content: flex-start;
+    width: 40%;
+    max-height: 400px;
+    margin: 10px 10px 10px 10px;
+  }
+
+  .max-blog>div {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 35px 20px 10px;
+  }
+
+  /*Estilos footer*/
+  footer {
+    margin: 15px;
+    margin: auto;
+  }
+}

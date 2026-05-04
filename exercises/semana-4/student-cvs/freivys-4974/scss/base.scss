@@ -1,0 +1,229 @@
+@use 'variables.scss' as v;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: v.$athensGray;
+  color: v.$cuttySark;
+  font-family: v.$fontFamily;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 0 0 2em;
+  width: 100%;
+}
+
+hr {
+  background-image: linear-gradient(
+    to right,
+    v.$gallery,
+    v.$amaranth,
+    v.$cuttySark,
+    v.$gallery
+  );
+  border: 0;
+  height: 1px;
+  margin: 10px 0;
+}
+
+.Header {
+  background-image: url('../header2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: v.$white;
+  line-height: 1.2;
+  padding: 5vh 0.5em;
+  text-align: center;
+  max-width: 100%;
+
+  &-logo {
+    display: inline-block;
+    height: 60px;
+    vertical-align: top;
+    width: 60px;
+  }
+
+  &-title {
+    font-size: 3em;
+    font-weight: 300;
+    margin: 20px 0;
+  }
+
+  &-subtitle {
+    margin: 30px 0;
+  }
+
+  &-github {
+    border: 1px solid v.$amaranth;
+    border-radius: 20px;
+    color: v.$white;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+
+    &:hover {
+      background: v.$amaranth;
+    }
+  }
+}
+
+.Subtitle {
+  color: v.$mineShaft;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin: 1em auto;
+  padding: 1em 0;
+}
+
+.Main,
+.Footer {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.About {
+  line-height: 1.7;
+  min-height: 40vh;
+
+  &-paragraph {
+    font-size: 1.25em;
+    line-height: 1.7;
+  }
+}
+
+.Stack {
+  &-img {
+    text-align: center;
+  }
+
+  &-logo {
+    height: 40px;
+    margin: 5px;
+  }
+}
+
+.Form {
+  border: 2px solid v.$amaranth;
+  border-radius: 10px;
+  padding: 10px 5px;
+  width: 100%;
+
+  &-group {
+    margin: 20px 0;
+  }
+
+  &-title,
+  &-input,
+  &-select,
+  &-textarea {
+    color: v.$cuttySark;
+    vertical-align: middle;
+    padding: 8px 4px;
+    width: 100%;
+  }
+
+  &-title {
+    color: v.$mineShaft;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &-input:focus,
+  &-select:focus,
+  &-description:focus,
+  &-textarea:focus {
+    border: 1px solid v.$amaranth;
+    border-radius: 4px;
+    outline: 0 none;
+  }
+
+  &-select {
+    background: v.$white;
+  }
+
+  &-description {
+    display: block;
+    resize: vertical;
+    width: 100%;
+  }
+
+  &-textarea {
+    text-align: left;
+  }
+
+  &-help {
+    color: v.$cuttySark;
+    font-size: 13px;
+  }
+
+  &-btn {
+    text-align: center;
+  }
+}
+
+.Btn {
+  border: 1px solid v.$amaranth;
+  border-radius: 8px;
+  background: none;
+  color: v.$mineShaft;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 64px;
+
+  &:hover {
+    background-color: v.$amaranth;
+    color: v.$white;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+  }
+
+  &:active {
+    background-color: v.$shiraz;
+  }
+}
+
+.Footer {
+  margin: 20px auto 5px;
+  padding: 2.5px 0;
+  text-align: center;
+
+  &-paragraph {
+    margin: 5px 0;
+  }
+
+  &-anchor {
+    color: v.$amaranth;
+    padding: 2.5px;
+    text-decoration: none;
+  }
+
+  &-anchor:hover {
+    background: v.$amaranth;
+    border-radius: 5px;
+    color: v.$white;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+  }
+}

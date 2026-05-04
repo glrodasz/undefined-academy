@@ -1,0 +1,81 @@
+:root {
+  --hint-of-green: #f6fff8;
+  --mine-shaft: #353535;
+  --maroon: #780000;
+  --thunderbird: #c1121f;
+  --prussian-blue: #003049;
+  --green-vogue: #023047;
+  --aqua-island: #a4d2db;
+  --san-juan: #284b63;
+  --black-squeeze: #dff3f3;
+  --persian-green: #00989b;
+  --regent-gray: #959da533;
+  --orient: #005e78;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: var(--hint-of-green);
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  color: var(--mine-shaft);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+strong {
+  color: var(--maroon);
+  text-decoration: dashed;
+}
+
+a {
+  color: var(--thunderbird);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.title-1,
+.title-2,
+.title-3 {
+  color: var(--san-juan);
+  font-weight: bold;
+}
+
+.title-1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: var(--hint-of-green);
+}
+
+.title-2 {
+  font-size: 1.5rem;
+}
+
+.title-3 {
+  font-size: 1.125rem;
+}
+
+@media screen and (min-width: 768px) {
+  .title-1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .title-2 {
+    font-size: 2rem;
+  }
+
+  .title-3 {
+    font-size: 1.5rem;
+  }
+}

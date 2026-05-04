@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tittle & Favicon -->
+  <title>Christian Flórez - QA Analyst</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles/main.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yeseva+One&display=swap" rel="stylesheet">
+  <!-- Google Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- JS -->
+  <script type="module" src="./main.mjs" defer></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+
+    <div class="nav-logo">
+      <i class="material-icons check-logo">fact_check</i>
+      <a class="text-logo" href="#">Christian F.</a>
+    </div>
+
+    <div class="nav-items" id="_items">
+      <a class="nav-link" href="#about-me" aria-current="page">About me</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </div>
+
+    <div class="nav-toggle" id="_toggle">
+      <span class="top-line"></span>
+      <span class="mid-line"></span>
+      <span class="bottom-line"></span>
+    </div>
+
+  </nav>
+  <div class="h-line"></div>
+  <!-- Header -->
+  <header>
+
+    <section class="hero">
+      <img class="image-profile" src="./images/profile-image.svg" alt="Profile Picture">
+      <h1>Hi, i'm Christian Florez</h1>
+      <h2>a dedicated QA analyst with a passion for ensuring software quality.</h2>
+    </section>
+
+  </header>
+  <div class="h-line"></div>
+  <!-- About -->
+  <section id="about-me" class="about-me">
+
+    <p>
+      I am a self-taught QA with an unbridled passion for software testing and
+      quality assurance.
+    </p>
+    <p>
+      My motivation for pursuing this field comes from my desire to ensure that
+      software operates seamlessly and meets the needs of its users.
+    </p>
+    <p>
+      With a dedication to delivering products that are both reliable and user-friendly,
+      I take great pride in my ability to conduct rigorous testing and identify
+      areas for improvement.
+    </p>
+    <p>
+      As an enthusiastic and driven individual, I am eager to collaborate with a
+      dynamic team and learn from experienced professionals to enhance my
+      capabilities and achieve personal and professional growth. I am confident
+      that my skills, knowledge, and unwavering commitment to quality assurance
+      will make a valuable contribution to any organization.
+    </p>
+    <div class="humanized-div">
+      <i class="material-icons">watch_later</i>
+      <time class="creation-date" datetime="2023-03-01">2023-02-05</time>
+    </div>
+
+  </section>
+  <div class="h-line"></div>
+  <article class="cards-container">
+    <!-- Skills -->
+    <section class="skills cards">
+
+      <h2>Technical Skills</h2>
+
+      <ul>
+        <li>Manual testing methodologies</li>
+        <li>Test plan development and execution</li>
+        <li>Bug tracking and reporting (JIRA)</li>
+        <li>Automated testing (Selenium)</li>
+        <li>API testing (Postman)</li>
+        <li>SQL, HTML, CSS, JavaScript</li>
+        <li>Git & GitHub</li>
+      </ul>
+
+    </section>
+    <!-- Experience -->
+    <section class="experience cards">
+
+      <h2>Experience</h2>
+
+      <ul>
+        <li>Developed and executed test plans for various software applications</li>
+        <li>Worked closely with developers to identify and resolve bugs</li>
+        <li>Collaborated with team members to ensure software met user requirements</li>
+      </ul>
+
+    </section>
+    <!-- Languages -->
+    <section class="languages cards">
+
+      <h2>Languages</h2>
+
+      <ul>
+        <li>Spanish</li>
+        <li>English</li>
+      </ul>
+
+    </section>
+    <!-- Interests -->
+    <section class="interests cards">
+
+      <h2>Interests</h2>
+
+      <ul>
+        <li>Web Development</li>
+        <li>Learning new programming languages and tools</li>
+        <li>Reading about software testing and quality assurance</li>
+      </ul>
+
+    </section>
+  </article>
+  <!-- Form -->
+  <section id="contact" class="contact">
+
+    <h2>Lets Talk</h2>
+
+    <p>
+      If you are interested in my work or have any questions,
+      do not hesitate to contact me.
+    </p>
+
+    <form class="form" action="/server" method="get">
+
+      <fieldset class="fieldset fs-top">
+
+        <div class="label-input input-name">
+          <label class="" for="name">Name: </label>
+          <input class="" type="text" id="name" name="name" placeholder="Name" required>
+        </div>
+
+        <div class="label-input input-email">
+          <label class="" for="email">E-mail: </label>
+          <input class="" type="email" id="email" name="email" placeholder="name@mail.com" required>
+        </div>
+
+        <div class="label-input input-phone">
+          <label class="" for="phone">Phone: </label>
+          <input class="" type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+        </div>
+
+      </fieldset>
+
+      <fieldset class="fieldset fs-bottom">
+        <div class="message-description">
+          <label class="message-label" for="message-description">Message</label>
+          <textarea class="" id="message-description" name="project-description" maxlength="1000" rows="5"
+            placeholder="" required></textarea>
+        </div>
+        <div class="agree-input">
+          <input class="agree-checkbox" type="checkbox" id="terms" name="terms" required>
+          <label class="agree-label" for="terms">I agree to the terms and conditions</label>
+        </div>
+
+        <button class="send" type="submit">Send</button>
+
+      </fieldset>
+    </form>
+
+  </section>
+  <div class="h-line"></div>
+  <!-- Footer -->
+  <footer>
+
+    <div class="icon-rrss">
+
+      <a href="https://twitter.com/home" target="_blank" rel="noopener noreferrence">
+        <img src="./images/twitter-icon.svg" class="">
+      </a>
+
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrence">
+        <img src="./images/github-icon.svg" class="">
+      </a>
+
+      <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrence">
+        <img src="./images/linkedin-icon.svg" class="">
+      </a>
+
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrence">
+        <img src="./images/instagram-icon.svg" class="">
+      </a>
+
+      <a href="mailto:christianjfr@gmail.com" target="_blank" rel="noopener noreferrence">
+        <img src="./images/mail-icon.svg" class="">
+      </a>
+
+    </div>
+
+    <span class="copy-right">&#169; 2023 Christian</span>
+
+  </footer>
+
+</body>
+
+</html>

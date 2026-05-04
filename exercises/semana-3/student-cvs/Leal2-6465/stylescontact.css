@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+body {
+    background-color: rgba(118, 130, 130, 0.895);
+    margin: 0 auto;
+    max-width: 50em;
+    line-height: 1.4;
+    padding: 4em 1em;
+    color: #231f1f;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+
+label, legend {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.form-group {
+    padding: 4px 0px 10px 0px;
+  }
+.prince_range {
+    width: 290px;
+    
+}
+
+textarea {
+    resize: none;
+    border-radius: 4px;
+}
+
+button {
+    padding: 12px 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 6px;
+    background:  #dce2ea;
+    margin-bottom: 10px;
+    color: #333;
+    box-shadow: 2px 2px 2px ;
+    cursor: pointer;
+}
+
+button:hover {
+    background:#DBEAFE ;
+}
+
+button:active{
+    background: #BFDBFE;
+
+}
+
+.help{
+    font-size: 12px;
+}

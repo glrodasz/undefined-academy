@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./js/main.js"></script>
+
+</head>
+
+<body class="container">
+    <header class="container">
+        <h1 class="d-flex justify-content-center align-items-center">Contacto</h1>
+        
+    </header>
+    <section class="container ">
+        <div class="formulario d-flex flex-direction-column justify-content-center align-items-center">
+        <fieldset>
+            <legend>Datos de contacto: </legend>
+                <form class="needs-validation " method="post" autocomplete="off">
+                    <div class="input-group">
+                        <span class="form-control">Nombre y Apellido</span>
+                        <input type="text" aria-label="First name" class="form-control " required placeholder="Nombre">
+                        <input type="text" aria-label="Last name" class="form-control " required placeholder="Apellido">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email1" class="form-label" >Email</label>
+                        <input type="email" class="form-control was-validated" id="email1" aria-describedby="emailHelp" required placeholder="E-mail">
+                        <div id="emailHelp" class="form-text">No compartiremos tu dirección de E-mail</div>
+                    </div>
+                        <label for="motivo" class="form-label">Motivo del mensaje</label>
+                        <select class="form-select" id="motivo" required>
+                            <option selected >Seleccione Uno</option>
+                            <option value="1">Consulta</option>
+                            <option value="2">Sugerencia</option>
+                            <option value="3">Oferta de colaboración</option>
+                            <option value="3">Otro</option>
+                        </select>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Escribe un mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Deje un mensaje y nos comunicaremos a la brevedad"></textarea>
+                    </div>
+                     <div class="mb-3 form-check">
+                       <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                       <label class="form-check-label" for="exampleCheck1">Acepto los términos y condiciones.</label>
+                    </div>
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+        </fieldset>
+        </div>
+    </section>
+    <footer>
+        
+    </footer>
+    
+
+  
+</body>
+</html>

@@ -1,0 +1,33 @@
+extends ../layout
+
+block content
+  .container
+    h2.my-5 Detalles del #{producto.nombre}
+    table.table.table-striped
+        thead
+            tr
+            th Código
+            th Nombre
+            th Descripción
+            th Categoría
+            th Marca
+            th Modelo
+            th Precio de compra
+            th Precio de venta
+            th Fecha de creación
+            th Vigente
+        tbody
+            td= producto.codigo
+            td= producto.nombre
+            td= producto.descripcion
+            td= producto.categoria
+            td= producto.marca
+            td= producto.modelo
+            td= producto.precio_compra
+            td= producto.precio_venta
+            td= producto.fecha_creacion.toLocaleDateString('es-ES')
+            td= producto.vigente
+
+    a.btn.btn-info.my-5(href="/products") Volver al listado
+    br
+    a.btn.btn-danger(href=`/forms/products/delete/${producto._id}/${producto.nombre}`) Eliminar Producto

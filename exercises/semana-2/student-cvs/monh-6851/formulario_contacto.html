@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios html</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="page">
+        <h1>Contacto</h1>
+        <form action="/server" method="get">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" placeholder="Ingrese su nombre" required>
+            </div>
+                <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Ingrese email" required>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <input id="10000" name="budget" type="radio" value="10000" required>
+                    <label for="10000">$10000</label>
+
+                    <input id="5000" name="budget" type="radio" value="5000" required>
+                    <label for="10000">$5000</label>
+
+                    <input id="1000" name="budget" type="radio" value="1000" required>
+                    <label for="1000">$1000</label>
+                </fieldset>
+                <div class="help">Este presupuesto es la base no el total.</div>
+            </div>
+            <div class="form-group">
+                <label for="type">Tipo de proyecto</label>
+                <select id="type" name="type" required>
+                    <option disabled selected value="">Seleccione uno</option>
+                    <option value="website">Website</option>
+                    <option value="webapp">Webapp</option>
+                    <option value="mobile">Mobile app</option>
+                    <option value="design">Diseño</option>
+                </select>
+            </div> <!-- .form-group + enter -->
+            <div class="form-group">
+                <label for="description">Descripción</label>
+                <textarea id="description" name="description" required rows="5"></textarea>
+                <div class="help">
+                    Escribe una descripción del proyecto
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input id="terms" name="terms" type="checkbox" required>
+                    <span>Acepto los términos y condiciones</span>
+                </label>
+            </div>
+            <button>Enviar</button>
+        </form>
+    </main>
+</body>
+</html>

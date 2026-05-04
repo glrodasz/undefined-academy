@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bootcamp Guillermo Rodas, alumno Juan Miguel Fernández</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">🚀  Semana 1</a></li>
+                <li><a href="#">🚀 Semana 2</a></li>
+                <li><a href="#">🚀 Semana 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <header>
+            <h2>📈 Datos de la Semana 1</h2>
+            <p>Alumno Juan Miguel Fernández realizado con 14 commit el <time datetime="2023-03-10">10 de 
+                Marzo de 2023
+            </time></p>
+        </header>
+        
+        <article>
+            <header>
+                <h3>Markdown</h3>
+            </header>
+            <p>Realizamos la introducción al bootcamp, hablamos del markdown como forma de interpretar un texto.</p>
+            <p>Tuvimos las nociones basicas para poder trabajar con Git y Git Hub, en cuanto a control de versiones.
+            </p>                
+        </article>
+            
+        <article>
+            <header>
+                <h3>Html y CSS</h3>
+            </header>
+            <p>Vimos una breve introducción a HTML y CSS.</p>
+            <p>Pasamos nuestro archivo Markdown a html y le dimos estilos con un fichero css.</p>
+        
+            <p>las prácticas se han realizado en git y están en git Hub <a href="https://github.com/Juanmi72">https://github.com/Juanmi72</a></p>
+        </article>
+        
+        <figure>
+            <img src="semana1.png" alt="Resultado en Github de la semana 1">
+        </figure>
+    </section>
+    <section>
+        <header>
+            <h2>📈 Datos de la Semana 2</h2>
+            
+        </header>
+        
+        <article>
+            <header>
+                <h3>JavaScript</h3>
+            </header>
+            
+            <p>Realizamos la introducción a los tipos de datos, expresiones, bucles.</p>
+            
+        </article>    
+        <article>
+            <header>
+                <h3>Formularios, JSON, DOM y CSSOM</h3>
+            </header>
+            <p>Vimos como construir un formulario con diferentes tipos de datos.</p>
+            <p>Realizamos la introducción a JSON, al DOM y al CSSOM.</p>
+        </article>
+
+    </section>
+    <section>
+        <header>
+            <h2>📈 Datos de la Semana 3</h2>
+            <p>Alumno Juan Miguel Fernández realizado con xx commit el <time datetime="2023-03-20">20 de 
+                Marzo de 2023
+            </time></p>
+        </header>
+    </section>
+
+    <section class="form-section">
+        <h2>Formulario de Contacto</h2>
+        <form action="/server" method="get">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" placeholder="Introduce tu nombre" required>
+                <label for="apellidos">Apellidos</label>
+                <input id="apellidos" name="apellidos" type="text" placeholder="Introduce tus apellidos" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>   
+                <input id="email" name="email" type="email" placeholder="Introduce tu correo electrónico" required> 
+            </div>
+            <button class="enviar">Enviar</button>
+        </form>
+        
+    </section>
+    <footer>
+        <p>&copy; 2023</p>
+    </footer>
+</body>
+</html>
+<script type="text/JavaScript">
+    
+    const $buttonEnviar = document.querySelector('.enviar');
+    console.log($buttonEnviar);
+    $buttonEnviar.addEventListener("click", (e)=>{
+        e.preventDefault();
+        console.log("Hola");
+    });
+</script>

@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100dvh;
+}
+
+body {
+    /* font-size: clamp(1.5rem, 8vw - 2rem, 3rem); */
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+* {
+    line-height: calc(1em + 0.5rem);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+    font-size: 1rem;
+}

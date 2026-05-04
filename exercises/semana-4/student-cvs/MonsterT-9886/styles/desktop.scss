@@ -1,0 +1,83 @@
+@media screen and (min-width: 600px) {
+    @import 'variables';
+    aside {background-color: $color-primary;
+      }
+    body {
+      margin: 0 auto;
+      padding: 100px;
+      max-width: 1200px;
+      justify-content: center;
+    }
+    h2 h1{ 
+        justify-content: center;
+    }
+  
+    /* Flexbox */
+    .about-me-section,
+    .work-section,
+    .education-section,
+    .tools-section {
+      display: flex;
+      flex-wrap: wrap;
+      
+    }
+    
+    .about-me-card,
+    .work-card,
+    .education-card,
+    .tools-card {
+      width: calc((100% / 3) - 20px);
+      margin-bottom: 20px;
+      background-color: $color-background;
+      box-shadow: 0px 0px 5px $color-primary(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 5px;
+    }
+    
+    /* Grid */
+    .about-me-section-grid,
+    .work-section-grid,
+    .education-section-grid,
+    .tools-section-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+    
+    .about-me-card-grid,
+    .work-card-grid,
+    .education-card-grid,
+    .tools-card-grid {
+      width: 100%;
+      background-color: $color-background;
+      box-shadow: 0px 0px 5px $color-primary(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 5px;
+      justify-content: center;
+    }
+    
+    /* Media queries */
+    @media screen and (max-width: 768px) {
+      .about-me-section,
+      .work-section,
+      .education-section,
+      .tools-section {
+        flex-direction: column;
+      }
+      
+      .about-me-card,
+      .work-card,
+      .education-card,
+      .tools-card {
+        width: 100%;
+      }
+      
+      .about-me-section-grid,
+      .work-section-grid,
+      .education-section-grid,
+      .tools-section-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  

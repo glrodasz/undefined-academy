@@ -1,0 +1,117 @@
+@use "../variables.scss";
+
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+}
+
+footer {
+    background-color: variables.$blueWhale;
+    padding: 1rem 2rem;
+
+    .container-footer {
+        padding-top: 6rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+
+        .contact-me,
+        .links,
+        .social-media {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            font-size: 1.6rem;
+
+            h2 {
+                font-size: 2rem;
+                color: variables.$justWhite;
+                font-weight: 600;
+            }
+
+            li {
+                padding: 0.5rem 0;
+                color: darkgrey;
+
+                a {
+                    color: darkgrey;
+                }
+            }
+        }
+    }
+}
+
+
+.icons {
+    display: flex;
+    gap: 1.6rem;
+
+    .icono {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        outline: 2px solid variables.$justWhite;
+        transition-property: outline-offset, outline-color, background-color;
+        transition-duration: 0.25s;
+
+        &:hover {
+            outline-offset: 4px;
+
+            span {
+                animation: shake 0.25s;
+            }
+        }
+
+        span {
+            margin: auto;
+            font-size: 2.2rem;
+            color: variables.$justWhite;
+        }
+
+        &.insta:hover {
+            background-color: variables.$instagramColor;
+            outline-color: variables.$instagramColor;
+        }
+
+        &.twitter:hover {
+            background-color: variables.$twitterColor;
+            outline-color: variables.$twitterColor;
+        }
+
+        &.In:hover {
+            background-color: variables.$linkedInColor;
+            outline-color: variables.$linkedInColor;
+        }
+
+        &.github:hover {
+            background-color: variables.$githubColor;
+            outline-color: variables.$githubColor;
+        }
+    }
+}
+
+.politics {
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+
+    p {
+        color: variables.$justWhite;
+        font-size: 1.2rem;
+    }
+}

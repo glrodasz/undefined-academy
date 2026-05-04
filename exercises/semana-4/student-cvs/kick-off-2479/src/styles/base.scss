@@ -1,0 +1,149 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--color-alabaster);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: block;
+    background-image: url("/home/josofico/semana-4/student-cvs/kick-off-2479/src/assets/escuela_de_atenas.jpg");
+    background-size: 100%;
+    padding: 2em;
+    border-radius: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: large;
+}
+
+.first_title {
+    color: var(--color-cedar);
+    text-shadow: 1px 1px 1px var(--color-black);
+    font-size: 50px;
+}
+
+.second_title {
+    color: var(--color-carrot-orange);
+    text-shadow: 3.5px 3px 1px var(--color-black);
+    font-size: 30px;
+}
+
+body {
+    font-family: "Century Gothic", sans-serif;
+    line-height: 2;
+    color: var(--color-asphalt);
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: var(--color-roof-terracotta);
+    text-shadow: 1px 1px 1px var(--color-asphalt);
+}
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+    color: var(--color-asphalt);
+    text-shadow: 0px 0px 1px;
+}
+
+
+p {
+    border: 3px solid var(--color-gray);
+    border-radius: 20px;
+    border-color: var(--color-roof-terracotta);
+    text-shadow: 0.5px 1px 1px;    
+    color: var(--color-asphalt);
+    padding: 1em;
+}
+
+strong {
+    color: var(--color-roof-terracotta);
+}
+
+a {
+    color: rebeccapurple;
+}
+
+
+table,
+th,
+td {
+    border: 1px solid var(--color-roof-terracotta);
+}
+
+div {
+    margin-top: 10px;
+    border: 1px solid Gainsboro;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    height: 50%;
+    border-radius: 22px;
+}
+
+nav {
+    text-shadow: 0 0 1px;
+}
+
+input[type="search"] {
+    margin: 5px;
+    padding: 8px 20px;
+    border-radius: 4px;
+    border: 1px solid Gainsboro;
+    width: auto;
+    background: WhiteSmoke;
+}
+
+
+ul {
+    text-align: start;
+    list-style: circle;
+    gap: 30px;
+}
+
+.text-1 {
+    font-size: 15px;
+  }
+  
+  .text-2 {
+    font-size: 23px;
+  }
+  
+  .text-3 {
+    font-size: 30px;
+  }
+  
+  .text-4 {
+    font-size: 40px;
+  }
+  
+  .text-5 {
+    font-size: 50px;
+  }

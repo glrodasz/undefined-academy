@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/form-contacto_style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <title>Contáctame</title>
+</head>
+<body>
+    
+    <header class="header">
+        <h1>
+            👾 <em>Sup! </em><strong>Mr Redu</strong> <em>is here</em> 👾
+        </h1>
+    </header>
+
+    <article>
+        <main class="form">
+            <h1>Contacto</h1>
+            <form action="" method="post">
+
+                <div class="form-content">
+                    <label for="name">Nombres y apellidos</label>
+                    <input id="name" name="name" type="text" placeholder="Ingrese su nombre completo" required>
+                </div>
+
+                <div class="form-content">
+                    <label for="email">Correo eléctronico</label>
+                    <input id="email" name="email" type="email" placeholder="e-mail@abc.com" required>
+                </div>
+
+                <div class="form-content">
+                    <label for="type">Tipo de proyecto</label>
+                    <select name="type" id="type" required>
+                        <option value="" disabled selected></option>
+                        <option value="website">Website 🖥️</option>
+                        <option value="webapp">WebApp 📱</option>
+                    </select>
+                </div>
+
+                <div class="form-content">
+                    <label for="quantity">Número de proyectos</label>
+                    <input type="number" name="quantity" id="quantity" min="1" max="5" placeholder="n" required>
+                </div>
+
+                <div class="form-content">
+                    <fieldset>
+                        <legend>Presupuesto</legend>
+                        <div class="opciones">
+                            <div class="opcion">
+                                <input id="275" type="radio" name="budget" value="275" required>
+                                <label for="275">$ 275</label>
+                            </div>
+                            <div class="opcion">
+                                <input id="350" type="radio" name="budget" value="350" required>
+                                <label for="350">$ 350</label>
+                            </div>
+                            <div class="opcion">
+                                <input id="475" type="radio" name="budget" value="475" required>
+                                <label for="475">$ 475</label>
+                            </div>
+                            <div class="opcion">
+                                <input id="725" type="radio" name="budget" value="725" required>
+                                <label for="725">$ 725</label>
+                            </div>
+                            <div class="opcion">
+                                <input id="925" type="radio" name="budget" value="925" required>
+                                <label for="925">$ 925</label>
+                            </div>
+                            <div class="opcion">
+                                <input id="1200" type="radio" name="budget" value="1200" required checked>
+                                <label for="1200">$ 1200</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-content">
+                    <label for="description">Descripción</label>
+                    <textarea name="description" id="description" rows="5" placeholder="¡Buenas, buenas!..." required></textarea>
+                    <div class="help">
+                        Escribe una descripción del proyecto en al menos 500 palabras.
+                    </div>
+                </div>
+
+                <div class="form-content">
+                    <label for="terms">
+                        <input id="terms" name="terms" type="checkbox" required>
+                        <span>Acepto los términos y condiciones</span>
+                    </label>
+                </div>
+ 
+                <div class="botones">
+                    <button class="enviar" type="submit">Enviar</button>
+                    <button class="cancelar">Cancelar</button>
+                </div>
+
+            </form>
+        </main>
+    </article>
+
+    <div class="boton">
+        <h4>
+            <a href="index.html">Volver</a>
+        </h4>
+    </div>
+
+
+    <!-- <script src="form-contacto_js.js"></script> -->
+    <script type="module" src="/main.mjs"></script>
+
+</body>
+</html>

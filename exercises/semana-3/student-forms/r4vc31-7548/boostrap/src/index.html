@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+
+    <div class="container py-4 px-3 mx-auto">
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <form action="#" method="post">
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name: </label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="mail" class="form-label">E-mail: </label>
+                    <input type="email" class="form-control" id="mail" name="mail" required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="telephone" class="form-label">Phone Number: </label>
+                    <input type="tel" class="form-control" id="telephone" name="telephone" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="project-type">Project Type</label>
+                    <select name="project-type" id="project-type" required class="form-select"
+                        aria-label="Default select example">
+                        <option value="" selected disabled>Select an option</option>
+                        <option value="webSite">WebSite</option>
+                        <option value="webApp">WebApp</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <fieldset>
+                        <legend>User Type</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="user-type" id="particular"
+                                value="particular" required>
+                            <label class="form-check-label" for="particular">
+                                Particular
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="user-type" id="company" value="company">
+                            <label class="form-check-label" for="company">
+                                Company
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description: </label>
+                    <textarea name="" class="form-control" id="description" cols="30" rows="5"></textarea>
+                </div>
+
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="terms-and-conditions" required>
+                    <label class="form-check-label" for="terms-and-conditions">Accept terms and conditions</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">SEND</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+
+</html>

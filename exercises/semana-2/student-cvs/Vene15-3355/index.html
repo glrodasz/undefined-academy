@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Venecia Difilippo</title>
+  <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+  <h1 class="hidden">Bienvenidos</h1>
+  <article>
+    <h2 class="hidden">Presentación</h2>
+    <section>
+      <h2>Hola, te saludo... mi nombre es Venecia Difilippo 🙋🏻‍♀️</h2>
+      <p>Vivo en Argentina, nací el 15 de agosto de 1991, tengo 2 hermosos hijos 👦🏻👧🏻.</p>   
+      <p>Soy diseñadora gráfica y tengo el propósito de convertirme en un <strong>UNICORNIO</strong>🦄 (individuo altamente raro y difícil de encontrar con habilidades para diseñar y programar), para cumplir con esta meta comencé el bootcamp Undefined Academy para ser programadora full-stack.</p>
+    </section>
+      <section>
+      <h3>✨Aquí te muestro 5 comandos que aprendimos en el bootcamp</h3>
+       <ul>
+         <li>pwd: Muestra ubicación actual. </li>
+         <li>cd: Cambiar entre directorios.</li>
+         <li>ls: Lista de archivos en el directorio actual.</li>
+         <li>mkdir: Crea una nuevo subdirectorio o carpeta.</li>
+         <li>clear: Limpia la terminal.</li>
+       </ul>
+    </section>
+    <section>
+      <h3>✨Algunos alias que hemos visto</h3>
+       <ul class="alias">
+         <li>Filtrar carpetas dando una palabra clave: <strong>alias findd='ls~/grep'</strong></li>
+          <li>Abreviatura del comando clear: <strong>alias cl='clear'</strong></li> 
+          <li>Muestra los 10 alias más utilizados en nuestra terminal: <strong>alias mostused='history | awk '\''{print $2}'\'' | sort | uniq -c | sort -nr | head -n 10'</strong></li>
+       </ul>
+   </section>
+   <section>
+    <h3>✨Contacto</h3>
+    <form onsubmit="event.preventDefault()">
+      <div class="form-group">
+        <label for="name">Nombre</label> 
+        <input id="name" name="name" type="text" placeholder="Ingrese su nombre completo" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Ingrese su correo electrónico" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Celular</label>
+        <input id="phone" name="phone" type="tel" placeholder="Ingrese su número de celular" required>
+      </div>
+      <div class="form-group">
+        <fieldset>
+          <legend>Presupuesto</legend>
+          <input id="5000" name="budget" type="radio" value="5000" required><label for="5000">$5.000</label>
+          <input id="10000" name="budget" type="radio" value="10000"><label for="10000">$10.000</label>
+          <input id="15000" name="budget" type="radio" value="15000"><label for="15000">$15.000</label>
+        </fieldset>
+      </div>
+      <div class="form-group">
+        <label for="type">Tipo de proyecto</label>
+        <select id="type" name="type" required>
+          <option disabled selected value="">Seleccione uno</option>
+          <option value="website">Website</option>
+          <option value="webapp">Webapp</option>
+          <option value="mobile">Mobile App</option>
+          <option value="design">Diseño</option>
+        </select>
+      </div>
+      <div class="form-group">
+          <label for="description">Descripción</label>
+          <textarea id="description" name="description" required rows="5"></textarea>
+          <div class="help">Escribe una descripción del proyecto en al menos 500 palabras.</div>
+      </div>
+      <div class="form-group">
+        <label for="terms">
+          <input id="terms" name="terms" type="checkbox" required>
+          <span>Acepto los términos y condiciones.</span>
+        </label>
+      </div>
+      <button>Enviar</button>
+    </form>
+   </section>
+  </article>
+  <footer>
+    <a href="https://github.com/Vene15">Te invito a pasar por mi perfil de GitHub</a>
+    <aside>
+      <h3 class="hidden">Dibujo de unicornio</h3>
+      <img src="/unicornio.jpg" alt="Dibujo de un unicornio con auriculares, frente a una computadora">
+    </aside>
+  </footer>
+</body>
+</html>

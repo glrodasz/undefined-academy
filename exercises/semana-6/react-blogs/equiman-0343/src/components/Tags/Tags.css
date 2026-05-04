@@ -1,0 +1,108 @@
+.post .tags {
+    display: flex;
+    gap: 4px;
+    justify-self: flex-end;
+}
+
+.tag {
+    padding: 0 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    color: #0e0e0e;
+    font-weight: normal;
+
+    &-chrome {
+        border-color: #4285F4;
+        background-color: #4285F4;
+        color: #fefefe;
+    }
+
+    &-git {
+        border-color: #F05032;
+        background-color: #F05032;
+    }
+
+    &-github {
+        border-color: #181717;
+        background-color: #181717;
+        color: #fefefe;
+    }
+
+    &-edge {
+        border-color: #0078D7;
+        background-color: #0078D7;
+        color: #fefefe;
+    }
+
+    &-vscode {
+        border-color: #007ACC;
+        background-color: #007ACC;
+        color: #fefefe;
+    }
+
+    &-terminal {
+        border-color: #241F31;
+        background-color: #241F31;
+        color: #fefefe;
+    }
+
+    &-ubuntu {
+        border-color: #E95420;
+        background-color: #E95420;
+    }
+
+    &-wsl {
+        border-color: #0078D6;
+        background-color: #0078D6;
+    }
+
+    &-webdev {
+        border-color: #E34F26;
+        background-color: #E34F26;
+    }
+
+    &-css {
+        border-color: #1572B6;
+        background-color: #1572B6;
+        color: #fefefe;
+    }
+
+    &-javascript {
+        border-color: #F7DF1E;
+        background-color: #F7DF1E;
+    }
+
+    &-react {
+        border-color: #61DAFB;
+        background-color: #61DAFB;
+    }
+
+    &-node {
+        border-color: #393;
+        background-color: #393;
+        color: #fefefe;
+    }
+
+    &-vite {
+        border-color: #646CFF;
+        background-color: #646CFF;
+        color: #fefefe;
+    }
+
+    &-eslint {
+        border-color: #4B32C3;
+        background-color: #4B32C3;
+        color: #fefefe;
+    }
+
+    &-retos {
+        border-color: #01FF95;
+        background-color: #01FF95;
+    }
+
+    &-productividad {
+        border-color: #DF0067;
+        background-color: #DF0067;
+    }
+}

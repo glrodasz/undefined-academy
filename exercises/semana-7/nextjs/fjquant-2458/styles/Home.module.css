@@ -1,0 +1,11 @@
+.Title {
+  text-align: center;
+}
+
+.container{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap ;
+}
+
+

@@ -1,0 +1,74 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+html,
+body {
+    background-color: #0098b3;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0px;
+} 
+
+.my-body-class {
+    padding: 20px 60px;
+}
+
+.w-25 {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.form-check {
+    margin-top: 20px;
+}
+
+h1 {
+    font-weight: bold;
+    color: rgb(239, 239, 239);
+}
+
+h2 {
+    font-size: 17px;
+    color: rgb(239, 239, 239);
+    font-style: italic;
+}
+
+h3 {
+    padding: 5px 0px 10px 0px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.form {
+    width: 600px;
+    background-color: #f0f0f0;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+label, legend {
+    font-weight: bold;
+    font-size: 16px;
+    color: #444;
+}
+
+label, input {
+    vertical-align: middle;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+.btn {
+    margin-top: 20px;
+}
+

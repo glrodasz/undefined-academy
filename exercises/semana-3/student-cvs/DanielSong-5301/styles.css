@@ -1,0 +1,264 @@
+body{
+  margin: 0 auto;  
+  max-width: 50em;  
+  padding: 4em 1em;
+  font-family: Helvetica;
+  line-height: 1.5;
+  background: linear-gradient(#567cbd, #d4d7dc);
+  
+}
+
+
+h3{
+    line-height: 1;
+    font-size: 2em;
+    margin-top: 140px;
+    margin-bottom: 40px;
+}
+
+h4{
+    margin-bottom: 40px;
+}
+
+.name {
+  color: #e6a0a4;
+  font-size: 1.2em;
+  margin-top: 0%;
+  margin-left: 1.5em;
+
+}
+
+h2.web{
+    font-size: 6em;
+}
+
+.picture{
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto; 
+    margin-right: 1em;
+}
+.web{
+    text-align: center;
+    margin-top: 2em;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 50em;
+    margin-right: 1em;
+    
+}
+
+.navbar{
+    
+    margin-right: 1em;
+    display: block;
+    
+   
+}
+
+.menu{
+    float: right;
+    margin-top: 0%;
+    
+    
+}
+
+.menu ul li{
+    list-style: none;
+    margin-left: 2em;
+    float: left;
+    display:flex;
+    margin-top: 4%;
+    color: #e6a0a4;
+
+}
+
+
+.footernav{
+    list-style: none;
+    display:flex;
+    margin-bottom: 10px;
+
+}
+
+footer{
+    background: linear-gradient(#567cbd, #d4d7dc);
+    padding: 4%;
+    margin-top: 4em;
+    box-shadow: 1px 1px 5px #444445;
+
+}
+
+
+.header{
+    margin-bottom: 0%;
+}
+
+.tagline{
+
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 1em;
+    color: #e6a0a4;
+    font-family: karla;
+}
+ .my{
+    padding: 2em;
+    box-shadow: 1px 1px 5px #444445;
+ }
+
+ .cards{
+    display: flex;
+    gap: 20px;
+    max-width: 50em;
+    justify-content: center;
+    text-align: center;
+}
+
+.cardtech{
+
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    box-shadow: 1px 1px 5px #444445;
+
+    
+
+ }
+ .cardtech:hover{
+    border: solid #444445 1px ;
+ }
+
+ .jspick{
+    width: 250px;
+    margin-top: 30px;
+    
+ }
+
+ .pickp{
+    width: 80px;
+    box-shadow: 2px 2px 5px #444445;
+    
+  
+ }
+
+ .pickp1{
+    width: 68px;
+    padding: 6px;
+    box-shadow: 2px 2px 5px #444445;
+ }
+
+ hr{
+    width: 80%;
+    background: #567cbd;
+    height: 1px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+ }
+
+ button{
+    box-shadow: 1px 1px 2px #444445;
+    padding: 8px;   
+    background-color: #567cbd;
+    border-radius: 6px;
+    color: azure;
+    cursor: pointer;
+    min-width: 20ch;
+    min-height: 44px;
+    text-transform: uppercase;
+
+    
+ }
+
+ button:hover{
+    background: #171718;  
+ }
+
+ .experience{
+    padding: 2em;
+    box-shadow: 1px 1px 5px #444445;
+    
+ }
+
+
+/* form styles */
+.formContact{
+    margin-top: 4em;
+    background: #d4d7dc;
+    padding: 25px;
+    box-shadow: 1px 1px 5px #444445;
+    color: #171718;
+}
+.form-group{
+    margin: 20px 0;
+    border:#444445 1px;
+    background: #d4d7dc;
+    padding: 35px;
+    box-shadow: 1px 1px 5px #444445;
+}
+
+label, input:not([type="radio"],[type="checkbox"]){
+    width: 100%;
+
+}
+
+label{
+    font-weight: bolder;
+    text-transform:uppercase;
+    font-size: 13px ;
+    color: #171718
+}
+
+textarea{
+    display: block;
+    width: 98%;
+    resize: vertical;
+}
+
+input{
+    vertical-align: middle;
+}
+input[type="text"], input[type="email"] , textarea{
+    border-radius: 4px;
+    padding: 6px  ;
+}
+
+.proyect{
+    font-size: 12px ;
+}
+.selector{
+    padding: 8px;
+    margin-left: 14px;
+}
+
+/* movile first responsive */
+
+@media(max-width: 780px) {
+    
+    .cards{
+        display: block;
+
+    }
+    .cardtech{
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    h2.web{
+        font-size: 4em;
+
+    } 
+    .menu ul li{
+        margin: 0%;
+        padding: 8px;
+    }
+}

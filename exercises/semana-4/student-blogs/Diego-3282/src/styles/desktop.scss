@@ -1,0 +1,36 @@
+@media screen and   (min-width: 768px) {        
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        
+      }
+
+      div:last-child {
+        grid-column: 1 / 4;
+      }
+
+      nav {
+        display: flex;
+        
+        align-items: center;
+        grid-column: 1 /4;
+        grid-row: 1 / 2;
+       // margin-bottom: 10px;
+        max-height: 100%;
+      }
+
+      .hamb{
+        display: none;
+    }
+
+    .listNav {
+        //display: flex;
+        flex-direction: row;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+      }
+}

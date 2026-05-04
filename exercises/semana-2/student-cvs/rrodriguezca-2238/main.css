@@ -1,0 +1,61 @@
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Helvetica", "Arial", sans-serif
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #566b78;
+  }
+  
+  h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+    text-align: center;
+  }
+  
+  
+  pre {
+    background: #eee;
+  }
+  
+
+  h1 {
+    background-color: #5a8891;
+    
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2; 
+    text-align: center;
+    font-weight: 300;
+    text-align: center;
+    border: 1px solid #e81c4f;
+    border-radius: 290486px;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color;
+    text-align: center;
+  }
+  
+  .form-group {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+   textarea {
+  width: 100%;
+  vertical-align: middle;
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+}
+

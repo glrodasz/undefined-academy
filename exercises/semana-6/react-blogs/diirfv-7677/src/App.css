@@ -1,0 +1,227 @@
+.main-blog {
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+/*******************
+** Navigation bar **
+*******************/
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #a8e4ce;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 5rem;
+}
+
+.logo-image {
+  max-width: 220px;
+  padding: 1rem 1rem 0;
+}
+
+.nav-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-header li {
+  text-transform: uppercase; /*transformo las letras del nav en mayúsculas*/
+  list-style: none; /*elimino las viñetas de los li*/
+  margin: 1rem;
+}
+
+.nav-header a {
+  text-decoration: none; /*elimino el subrayado de las URL*/
+  color: #323132;
+  font-weight: bold;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 1rem 1rem;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  max-width: 150px;
+  margin-bottom: 1rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.2px solid #323132;
+}
+
+.search-bar input {
+  width: 80%;
+  margin-right: 0.5rem;
+  border: none;
+  background-color: #a8e4ce;
+  outline: none; /*Elimino el focus al estar seleccionado*/
+}
+.search-bar input::placeholder {
+  color: #323132;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/*******************
+**      Blog      **
+*******************/
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.article-card {
+  border: 1px solid rgba(114, 196, 164, 0.8235294118);
+  border-radius: 25% 10%;
+  margin: 2rem;
+  background-color: #bbf7d0;
+  overflow: hidden;
+  max-width: 250px;
+}
+.article-card:hover {
+  filter: opacity(0.7);
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+  transition-duration: 0.8s;
+  box-shadow: 1px 1px 5px #151616;
+}
+
+.article-card a {
+  text-decoration: none;
+  color: #323132;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem 0;
+}
+
+.article-card time {
+  padding: 1rem;
+  margin-right: 3rem;
+  font-size: 1.3rem;
+  align-self: flex-end;
+}
+
+/*******************
+**     Footer     **
+*******************/
+.footer {
+  height: 100px;
+  background-color: #a8e4ce;
+  border-radius: 8px 8px 0 0;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+
+.address-container {
+  display: flex;
+  align-items: center;
+}
+
+.address-container i {
+  margin: 1rem 0.5rem 1rem 1rem;
+  font-size: 1.8rem;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clicable-icon {
+  color: #323132;
+  margin: 1rem;
+  font-size: 1.8rem;
+  transition: transform 1s;
+}
+.clicable-icon:hover {
+  color: #4D8076;
+  transform: scale(1.1);
+  transition-property: color;
+  transition-duration: 0.8s;
+}
+
+@media screen and (min-width: 590px) {
+  .cards-container article:last-child {
+    max-width: 350px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  .nav-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo-image {
+    max-width: 180px;
+    padding: 0;
+  }
+  .search-bar {
+    margin-right: 1rem;
+  }
+  .nav-list {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 0 1rem 1rem;
+  }
+}
+
+@media screen and (min-width: 890px) {
+  .main-blog {
+    max-width: 900px;
+  }
+  .article-card {
+    height: 100%;
+  }
+  .cards-container article:last-child {
+    max-width: 250px;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: [uno] 1fr [dos] 1fr [tres] 1fr [cuatro];
+    grid-auto-rows: 5.5rem;
+    gap: 2rem;
+  }
+  .cards-container article:nth-child(3n+1) {
+    grid-row-end: span 9;
+  }
+  .cards-container article:nth-child(3n+2) {
+    grid-row-end: span 11;
+  }
+  .cards-container article:nth-child(3n+3) {
+    grid-row-end: span 12;
+  }
+  .article-card time {
+    position: absolute;
+    bottom: 0;
+  }
+  .image-card-container {
+    height: 20%;
+  }
+  .card-content {
+    position: relative;
+    height: 80%;
+  }
+}

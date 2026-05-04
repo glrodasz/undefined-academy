@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/style-contact.css">
+</head>
+
+<body>
+    <main class="page">
+        <h1>Contact</h1>
+        <form id="contact-form" action="" method="get">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="type">Location</label>
+                <select id="type" name="type" required>
+                    <option disabled selected value="">Where are you contacting from?</option>
+                    <option value="europe">Europe</option>
+                    <option value="southeamerica">South America</option>
+                    <option value="northamerica">North America</option>
+                    <option value="oceania">Oceania</option>
+                    <option value="asia">Asia</option>
+                    <option value="antartica">Antarctica</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Descripcion</label>
+                <textarea id="description" name="description" required rows="4"></textarea>
+                <div class="help">Please write a description of your query within 300 words.</div>
+            </div>
+            <div class="form-group">
+                <label for="terms" class="no-transform">
+                    <input id="terms" name="terms" type="checkbox" required>
+                    <span>I accept the terms and conditions.</span>
+                </label>
+            </div>
+            <button>Send</button>
+        </form>
+    </main>
+</body>
+
+<script>
+    const form = document.getElementById("contact-form");
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        form.reset();
+        alert("Request submitted");
+    });
+</script>
+
+</html>

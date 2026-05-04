@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios HTML</title>
+    <link rel="stylesheet" href="css-de-formulario-de-contacto-.css">
+    
+<body>
+    <a href="/index.html">Back</a>
+
+<main class="page">
+    <div class="tittle">
+        <h1> Contacto</h1>
+        <h4> Rellene los datos y deje un breve mensaje</h4>
+    </div>
+
+    <form action="server" method="get">
+        <div class="group">
+        <label for="name">nombre</label>
+            <input type="text" id="name" name="name" placeholder="Nombre completo. . ." required>
+    </div>
+
+    <div class="group">
+        <label for="email">email</label>
+            <input type="email" id="email" name="email" placeholder="Email. . ." required>
+    </div>
+
+    <div class="group">
+        <textarea value="description" name="description" id="description" rows="10" required></textarea>
+        <span class="msg">deja tu mensaje</span>
+    </div>
+    
+    <div>
+        <button>Enviar</button>
+    </div>
+
+            </form>
+        </main>
+    <script>
+            const contacto = document.getElementById("FormularioDeContacto");
+                form.addEventListener("submit", function(event){
+                    event.preventDefault();
+                    console.log(event);
+                }
+                )
+        </script>
+</body>

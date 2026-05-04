@@ -1,0 +1,43 @@
+.container {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.title {
+  background: ghostwhite;
+  width: auto;
+  position: relative;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  height: 50px;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.title::before,
+.title::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: -15px;
+  width: 40px;
+  height: 40px;
+  background: ghostwhite;
+  box-shadow: 0 40px 0 ghostwhite;
+}
+
+.title::before {
+  left: -20px;
+}
+.title::after {
+  right: -20px;
+}

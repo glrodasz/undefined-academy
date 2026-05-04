@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="/css/main.css">
+        <title>Contacto</title>
+    </head>
+
+    <body>
+        <h1>Contacto</h1>
+        <form action="/server" method="get">
+
+            <label id="nombre">Nombre<input type="text" name="Nombre" placeholder="Carla" required></label>
+            <label id="apellido">Apellido<input type="text" name="Apellido" placeholder="Sosa" required></label>
+            <label id="email">Email<input type="email" name="email" placeholder="tuemail@gmail.com" required></label>
+
+            <fieldset>
+                <legend>Presupuesto</legend>
+                <label id="p1"><input type="radio" name="presup" checked>10000</label>
+                <label id="p2"><input type="radio" name="presup">20000</label>
+                <label id="p3"><input type="radio" name="presup">30000</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Selecciona tu proyecto:</legend>
+                <select name="proyecto" id="proyecto">
+                    <option value="disabled">Landing page</option>
+                    <option>Tienda virtual</option>
+                    <option>Portfolio</option>
+                    <option>Otro</option>
+                </select>
+                <p>Descipción:</p>
+                <label><textarea name="desc" id="desc" cols="30" rows="10"></textarea></label>
+            </fieldset>
+
+            <label id="condiciones"><input type="checkbox" name="condiciones" id="condiciones" required>ACEPTO LOS TERMINOS
+                Y CONDICIONES</label>
+            <input type="submit" value="ENVIAR">
+        </form>
+        <script type="module" src="form.mjs"></script>
+    </body>
+
+</html>

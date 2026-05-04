@@ -1,0 +1,7 @@
+@use "settings" as settings;
+
+@include settings.tablet{
+    .cards-container article:last-child{
+        max-width: 350px;
+    }
+}

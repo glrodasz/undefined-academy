@@ -1,0 +1,118 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+@import 'https://fonts.googleapis.com/css?family=Satisfy';
+
+/*body*/
+body {
+  margin: 0 auto;
+  background-color: #333;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  color: whitesmoke;
+}
+strong {
+  font-weight: 590;
+}
+h1, h2, h3, h4 ,h5 ,h6{
+  font-weight: 200;
+}
+a:link, a:visited {
+  text-decoration: none;
+  color: whitesmoke;
+}
+li {
+  list-style: none;
+}
+.widgets {
+  max-width: 55em;
+  margin: 0 auto ;
+}
+
+
+/*header*/
+header {
+  background-image: url("./img/background.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0.5;
+}
+.fotoperfil img {
+  height: 180px;
+  width: 180px;
+}
+header h1 {
+  font-family: 'Satisfy';
+  color: whitesmoke;
+  font-size: 3em;
+  font-weight: 300;
+}
+.divrrss figure {
+  margin: 20px 0;
+}
+
+
+/*main*/
+.presentacion {
+  max-width: 50em;
+  margin: 20px auto;
+  padding: 50px 25px 0;  
+}
+article {
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 15px 25px 25px;
+}
+.cursos a {
+  color: #ec9090;
+}
+.dividiomas img {
+  height: 4rem;
+  width: 30rem;
+}
+
+
+/*footer*/
+footer {
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 0px 25px 60px;
+}
+fieldset {
+  border-color: #be7474;
+  border-radius: 5px;
+}
+input{
+  border: 0;
+  border-radius: 2px;
+  background-color: whitesmoke;
+  font-family: Arial;
+}
+textarea {
+  display: block;
+  width: 99%;
+  resize: vertical;
+  min-height: 50px;
+  font-family: Arial;
+  background-color: whitesmoke;
+  border: 0;
+  border-radius: 2px;
+}
+button {
+  border-radius: 5px;
+  border: 0;
+  margin-top: 15px;
+  height: 25px;
+  width: 80px;
+  background-color: #ec9090;
+  font-family: Arial;
+  color: #333;
+}
+button:hover{
+  background-color: #be7474;
+}
+button:active {
+  background-color: #865050;
+}

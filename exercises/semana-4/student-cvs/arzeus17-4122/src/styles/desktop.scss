@@ -1,0 +1,16 @@
+@import "variables.scss";
+
+@media screen and (min-width: 800px) {
+    article {
+        background-color: $Cararra;
+        color: $MineShaft;
+    }
+    section {
+        background-color: $Cararra;
+        color: $MineShaft;
+    }
+    footer {
+        background-color: $Cararra;
+        color: $NavyBlue;
+    }
+}

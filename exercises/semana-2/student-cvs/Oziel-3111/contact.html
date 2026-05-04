@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles_contact.css" </head>
+
+<body>
+    <header>
+    <main class="page">
+        <h1><center>Contactame</center></h1>
+    </header>
+        <form action="/server" method="get">  
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input id="name" name="name" type="text" placeholder="Ingrese su nombre completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input id="email" name="email" type="email" placeholder="Ingrese su correo electronico" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="type">Razon del contacto.</label>
+                <select id="type" name="type" required>
+                    <option disabled selected value="">Seleccione uno</option>
+                    <option value="Website">Comentario</option>
+                    <option value="Webapp">Queja</option>
+                    <option value="Mobile">Sugerencia</option>
+                    <option value="Mobile">Proyecto</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción</label>
+                <textarea id="description" name="description" required rows="5"></textarea>
+            </div>
+            <div class="help">Escribe una descripcion en al menos 500 palabras.</div>
+            
+            <div class="form-group">
+                <label for="terms">
+                    <input id="terms" name="terms" type="checkbox" required>
+                    <span>Acepto terminos y condiciones.</span>
+                </label>
+            </div>
+            <button>Enviar</button>
+            
+        </form>
+
+        <a href="index.html">
+            <button>REGRESAR</button>
+        </a>
+    </main>
+
+</body>
+
+</html>

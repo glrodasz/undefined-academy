@@ -1,0 +1,171 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+* {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #444;
+  background: #fafafa;
+}
+
+h2 {
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+h1,
+h2,
+h3,
+strong {
+  color: #333;
+}
+
+code,
+pre {
+  background: #f5f7f9;
+  border-bottom: 1px solid #d8dee9;
+  color: #a7adba;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+pre {
+  padding: 1rem;
+  border-left: 2px solid #69c;
+}
+
+.menu {
+  width: 100%;
+  margin: 0;
+  background-color: #333;
+  color: rgb(202, 201, 201);
+}
+
+.menu__list {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  list-style: none;
+}
+
+.menu__item {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.menu__item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu__item:hover {
+  color: #ffffff;
+}
+
+.menu__item--selected a {
+  color: #69c;
+  cursor: default;
+}
+
+.menu__item--selected:hover {
+  color: #69c;
+}
+
+.container--body {
+  padding: 0 1rem;
+}
+
+.main__container {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.technologies {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social {
+  margin-bottom: 1rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--justify {
+  text-align: justify;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .aboutme {
+    margin: 0 auto;
+  }
+
+  .social {
+    flex-flow: row wrap;
+  }
+
+  .menu__list {
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .menu__item {
+    padding: 0.8rem 1rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .aboutme,
+  .aboutme p {
+    text-align: center;
+  }
+
+  .main__container {
+    max-width: 70rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    flex-flow: row nowrap;
+    gap: 1rem;
+  }
+
+  .main__item {
+    width: 50%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 1.2rem;
+  }
+}

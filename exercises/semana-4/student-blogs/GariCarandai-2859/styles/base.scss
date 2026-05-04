@@ -1,0 +1,270 @@
+/*=== BASE ===*/
+@use "variables.scss" as *;
+
+/*--- General ---*/
+body {
+  width: 100%;
+  background-color: $WildSand;
+}
+
+main {
+  width: 100%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: $Black;
+}
+
+.date {
+  line-height: initial !important;
+}
+
+img {
+  box-shadow: 0 3px 6px rgba($Black, 0.1);
+  opacity: 0;
+  float: left
+}
+
+.img-box {
+  background: $Amaranth;
+  background: -webkit-linear-gradient(316deg, $Flamingo, $Amaranth, $Flamingo, $Amaranth);
+  background: linear-gradient(316deg, $Flamingo, $Amaranth, $Flamingo, $Amaranth);
+  background-repeat: no-repeat;
+  background-size: 300% 300%;
+  background-position: 0 0;
+  overflow: hidden;
+  animation: move-gradient 6s linear infinite;
+}
+
+@keyframes move-gradient{
+  to{
+    background-position: 100% 100%;
+  }
+}
+
+.container-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu,
+.header,
+.articles {
+  padding: 26px 15px;
+}
+
+/*--- Menu ---*/
+.menu {
+  width: 100%;
+  padding: 26px 30px;
+}
+
+.menu .container-row {
+  max-width: 1536px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.menu .logo {
+  width: 46px;
+  height: 46px;
+  margin-top: 10px;
+  border-radius: 0 12px 12px 12px;
+  background-color: $Black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $White;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu a {
+  color: $DoveGray;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  &.selected {
+    color: $Black;
+    font-weight: bold;
+  }
+
+  &:hover {
+    color: $Black;
+  }
+}
+
+
+/*--- Header ---*/
+.header {
+  max-width: 1172px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  padding: 0 30px;
+  box-sizing: content-box;
+}
+
+.header article {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+}
+
+.header .container-col {
+  width: 100%;
+}
+
+.header h1 {
+  margin-top: 18px;
+  font-size: 32px;
+}
+
+.header .date {
+  order: -1;
+  font-size: 14px;
+}
+
+.header p {
+  margin-top: 20px;
+  color: $DoveGray;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+
+/*--- Secctions ---*/
+.articles {
+  max-width: 1172px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: minmax(250px, auto);
+  grid-gap: 74px 33px;
+  box-sizing: content-box;
+}
+
+.articles:first-of-type {
+  margin-bottom: 74px;
+}
+
+.articles article {
+  display: flex;
+  flex-direction: column;
+}
+
+.articles h1 {
+  margin-top: 16px;
+}
+
+.articles .date {
+  order: -1;
+  font-size: 12px;
+}
+
+.articles p {
+  margin-top: 18px;
+  color: $DoveGray;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+
+.category {
+  margin: 104px 0;
+  padding: 42px 0px;
+  background-color: rgba($DoveGray, 0.1);
+  background-color: $Black;
+  display: none;
+}
+
+.category .container-col {
+  max-width: 1172px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: content-box;
+}
+
+.category h2 {
+  margin-bottom: 17px;
+  font-size: 14px;
+  color: $DoveGray;
+  text-transform: uppercase;
+}
+
+
+/*--- Footer ---*/
+.footer {
+  width: 100%;
+  margin-top: 104px;
+  padding: 50px 0;
+  background-color: $Black;
+  position: relative;
+  color: $DoveGray;
+  text-align: center;
+  font-size: 12px;
+}
+
+.arrow-top {
+  padding: 12px 22px;
+  border-radius: 0 12px 12px 12px;
+  background-color: $Black;
+  position: absolute;
+  top: -52px;
+  right: 20px;
+  color: $White;
+  font-weight: bold;
+  text-align: center;
+}
+
+.arrow-top:hover {
+  opacity: .8;
+}
+
+
+/*--- Images ---*/
+.header .img-box {
+  border-radius: 0 24px 24px 24px;
+}
+
+.header img {
+  aspect-ratio: 112/69;
+}
+
+.articles .img-box {
+  border-radius: 0 20px 20px 20px;
+}
+
+.articles img {
+  aspect-ratio: 355/219;
+}
+
+.category .img-box {
+  border-radius: 0 12px 12px 12px;
+}
+
+.category img {
+  aspect-ratio: 13/8;
+}
+
+.header img,
+.articles img,
+.articles img {
+  width: 100%;
+}

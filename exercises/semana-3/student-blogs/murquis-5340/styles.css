@@ -1,0 +1,75 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+/* Universal Box Sizing with Inheritance css-tricks.com */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5em;
+    padding: 4em 1em;
+    color: #333;
+    background-color: whitesmoke;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1em;
+    padding: 1em 1em;
+}
+
+article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(133, 133, 133);
+    box-shadow: 0px 6px 16px rgba(89, 109, 112, 0.355);
+    background-color: #e9e9e9;
+    padding: 0.5em;
+}
+article img{
+    width: 100%;
+}
+
+
+li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+li img{
+    width:100%;
+    max-width: 25px;
+    max-height: 25px;
+}
+
+button{
+    padding: 12px;
+    height: 48px;
+    width: 100%;
+    color: black;
+    border-radius: 0.4em;
+    background-color: rgb(0, 218, 84);
+    border: 1px solid transparent;
+}
+button:hover{
+    background-color: rgb(0, 99, 38);
+    cursor: pointer;
+}

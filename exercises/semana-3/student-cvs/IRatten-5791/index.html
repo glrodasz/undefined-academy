@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Github Profile</title>
+</head>
+
+<body>
+  <header>
+    <h1>Daniel Beltran Gomez</h1>
+    <nav>
+      <ul class="header-list">
+        <li class="header-list_item">
+          <a href="#aboutme">
+            About Me
+          </a>
+        </li>
+        <li class="header-list_item">
+          <a href="#contact">
+            Connect with me
+          </a>
+        </li>
+        <li class="header-list_item">
+          <a href="#skills">
+            My Tools
+          </a>
+        </li>
+        <li class="header-list_item">
+          <a href="#github-stats">
+            My Github Stats
+          </a>
+        </li>
+        <li class="header-list_item">
+          <a href="#contact-withme">
+            Contact With Me
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="profile">
+    <section id="aboutme" class="profile-about">
+      <h3 class="profile-about_subtitle">About me</h3>
+      <p class="profile-about_description">I'm a software developer from Colombia, I'm 26 years old. I'm very interested
+        in learning about new technologies</p>
+    </section>
+
+    <section id="contact" class="profile-contact">
+      <h3 class="profile-contact_subtitle">Connect with me</h3>
+      <article class="profile-contact_container">
+        <h5>Social Media</h5>
+        <div>
+          <a class="profile-contact_instagram" href="https://www.instagram.com/danielbg96_">
+            <figure>
+              <img src="./img/instagram.png" alt="Icon Instagram">
+            </figure>
+          </a>
+          <a class="profile-contact_twitter" href="https://twitter.com/DanielBeltranGo">
+            <figure>
+              <img src="./img/twitter.png" alt="Icon Twitter">
+            </figure>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills" class="profile-skills">
+      <h3 class="profile-skills_title">My Tools</h3>
+      <article class="profile-skills_container">
+        <h5 class="profile-skills_language">Programming and Markup Languages</h5>
+        <p class="profile-skills_show">
+          <img src="https://skillicons.dev/icons?i=js,php,java,html,css&theme=dark" alt="My Skills">
+        </p>
+        <h5 class="profile-skills_framework">Frameworks and Libraries</h5>
+        <p class="profile-skills_show">
+          <img src="https://skillicons.dev/icons?i=react,nodejs,jquery,redux" alt="My Skills">
+        </p>
+        <h5 class="profile-skills_database">Databases and version control</h5>
+        <p class="profile-skills_show">
+          <img src="https://skillicons.dev/icons?i=mysql,git,github,gitlab" alt="My Skills">
+        </p>
+      </article>
+    </section>
+
+    <section id="github-stats" class="profile-githubstats">
+      <h3 class="profile-githubstats_title">My Github Stats</h3>
+      <div class="profile-githubstats_container">
+        <img src="https://github-readme-stats.vercel.app/api?username=DanRev&show_icons=true&theme=dark"
+          alt="My Github Stats">
+      </div>
+    </section>
+
+    <section id="contact-withme">
+      <h3>Contact with me</h3>
+      <form id="form" action="" method="post" onsubmit="return false">
+        <div class="form-group">
+          <label for="form-name"> Name </label>
+          <input type="text" name="name" id="form-name" placeholder="Type your name" required>
+        </div>
+        <div class="form-group">
+          <label for="form-mail"> Email </label>
+          <input type="email" name="email" id="form-mail" placeholder="Type your email" required>
+        </div>
+        <div class="form-group">
+          <label for="form-message">Message</label>
+          <textarea name="message" id="form-message" rows="5" placeholder="Type your message" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Created By Ratten</p>
+  </footer>
+</body>
+
+</html>

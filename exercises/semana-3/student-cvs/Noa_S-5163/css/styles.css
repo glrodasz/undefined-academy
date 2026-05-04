@@ -1,0 +1,166 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Globals*/
+body {
+  color: #fff;
+  font-family: 'Oxygen Mono', monospace;
+  line-height: 1.5;
+}
+
+a {
+  color: #ff17e4;
+  transition: all 0.3s ease-in-out;
+}
+
+input,
+textarea {
+  border: none;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  font-size: inherit;
+}
+
+textarea {
+  font-size: 1rem;
+  resize: none;
+}
+
+label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: #86fbfb;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  border-radius: 0.8rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 23, 228, 1) 0%,
+    rgba(134, 251, 251, 1) 100%
+  );
+  color: #171321;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+
+  align-self: center;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 3rem 0;
+  width: 90%;
+  max-width: 50em;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 6rem 0;
+  }
+}
+
+.divider {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 23, 228, 1) 0%,
+    rgba(134, 251, 251, 1) 100%
+  );
+
+  height: 3px;
+}
+
+/* Header styles */
+.header {
+  background-color: #171321;
+}
+
+.main-heading {
+  font-size: 1rem;
+  margin-bottom: 1.5em;
+}
+
+.main-heading span {
+  color: #86fbfb;
+  font-size: 3.2rem;
+  display: block;
+}
+
+.secondary-heading {
+  font-size: 2.4rem;
+  margin-bottom: 0.5em;
+}
+
+.secondary-heading span {
+  color: #ff17e4;
+}
+
+/* About Me section styles */
+.about {
+  background-color: #0d314b;
+}
+
+.about__list {
+  list-style: none;
+}
+
+.about__item:not(:last-child) {
+  margin-bottom: 2em;
+}
+
+/* Social media section styles */
+.socials {
+  background-color: #4b0d49;
+}
+
+.socials__text:first-of-type {
+  margin-bottom: 2em;
+}
+
+/* Contact section styles */
+.contact {
+  background-color: #0d314b;
+}
+
+.contact__text {
+  margin-bottom: 2em;
+}
+
+.form {
+  background-color: #4b0d49;
+  border-radius: 0.8rem;
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+
+/* Footer styles */
+footer {
+  background-color: #171321;
+  font-size: 0.87rem;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+}

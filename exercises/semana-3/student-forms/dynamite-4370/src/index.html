@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./js/main.js"></script>
+    <title>Form-Bootstrap</title>
+</head>
+
+<body class="body">
+
+    <section class="container formulario">
+        <div class="container-form">
+            <h1 class="text-center">Contactame</h1>
+            <form id="myForm" class="row g-3">
+                <div class="form-group col-md-6">
+                    <div class="form-floating">
+                        <input class="form-control" id="name" type="text" placeholder="Ingrese su nombre completo"
+                            required>
+                        <label for="name" class="form-label">Nombre</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input id="email" class="form-control" type="email" placeholder="Ingrese su correo electrónico"
+                            required>
+                        <label for="email" class="form-label">Correo electronico</label>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <fieldset>
+                        <legend>Presupuesto</legend>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" id="5000" name="budge" type="radio">
+                            <label class="form-check-label" for="5000">$5.000USD</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" id="10000" name="budge" type="radio">
+                            <label class="form-check-label" for="10000">$10.000USD</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" id="15000" name="budge" type="radio">
+                            <label class="form-check-label" for="15000">$15.000USD</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="type">Tipo de proyecto</label>
+                    <select id="type" class="form-select" aria-label="Default select example" required>
+                        <option value="" disabled selected>Seleccione uno</option>
+                        <option value="website">Website</option>
+                        <option value="webapp">Aplicación web</option>
+                        <option value="mobileApp">Mobile App</option>
+                        <option value="design">Diseño web</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="description">Descripción</label>
+                    <textarea class="form-control" name="description" id="description" rows="4" required></textarea>
+                    <div class="help text-center">Escribe una descripción del proyecto en 500 palabras</div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-check centrar">
+                        <input class="form-check-input" id="terms" type="checkbox" required>
+                        <label class="form-check-label" for="terms">Acepto los terminos y condiciones</label>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>

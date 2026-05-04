@@ -1,0 +1,112 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    background-color: aliceblue;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main {
+    background: linear-gradient(90deg, lightcyan, aliceblue, lightcyan);
+    padding: 0.5rem;
+    border: 1px solid aliceblue;
+    box-shadow: 0px 0px 2px 2px lightcyan;
+    border-radius: 4px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0.1rem 1rem;
+    justify-content: center;
+    gap: 0 1rem;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, lightgray, gray, lightgray);
+    box-shadow: 0px 0px 5px black;
+}
+
+ul li button {
+    border: none;
+    background: linear-gradient(90deg, aliceblue, aqua, aliceblue);
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    height: 32px;
+}
+
+footer p {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 16px;
+}
+
+article {
+    text-align: center;
+}
+
+.card-item {
+    max-width: 350px;
+    width: 100%;
+}
+
+.card-item figure {
+    margin: 0;
+}
+
+img {
+    object-fit: cover;
+    height: 30vh;
+    border-radius: 10px;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+img:hover {
+    transform: rotate(1deg) scale(120%);
+}
+
+section h2 {
+    border-bottom: 1px solid black;
+}
+
+@media screen and (min-width:720px) {
+    .card-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .card-item {
+        height: 5%;
+        max-width: 350px;
+        width: 40%;
+    }
+}

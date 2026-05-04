@@ -1,0 +1,34 @@
+[
+    {
+      "title": "Ordinals Protocol: NFTs incorporated into Bitcoin chain",
+      "link": "https://medium.com/@lucianogarriga/ordinals-protocol-allows-nfts-to-be-incorporated-into-bitcoin-blockchain-8dbfcf06e339",
+      "src": "/img/bitcoin.jpg",
+      "alt": "Bitcoin",
+      "extract":
+        "The arrival of the Ordinals Protocol has generated a lot of repercussions, allowing the incursion of NFTs on the Bitcoin blockchain.",
+      "author": "Luciano Garriga",
+      "readTime": "3 min read",
+      "date": "2023-02-07"
+    },
+    {
+      "title": "Understanding Ethereum Blockchain Basics",
+      "link": "https://medium.com/@lucianogarriga/understanding-ethereum-blockchain-basics-a-guide-to-gas-and-transactions-1aa86e003df4",
+      "src": "/img/ethereum.jpg",
+      "alt": "Ethereum",
+      "extract":
+        "Ethereum is a decentralized blockchain platform that establishes a peer-to-peer network that executes and verifies application code: smart contracts.",
+      "author": "Luciano Garriga",
+      "readTime": "3 min read",
+      "date": "2023-02-24"
+    },
+    {
+      "title": "MINTangible introduces in IP blockchain field",
+      "link": "https://medium.com/@lucianogarriga/mintangible-revolutionizes-the-nft-intellectual-property-arena-10231b09d6a1",
+      "src": "/img/mintangible.jpg",
+      "alt": "MINTangible",
+      "extract": "The company has announced a solution that allows creators and brands the ability to link Intellectual Property licenses to NFTs.",
+      "author": "Luciano Garriga",
+      "readTime": "2 min read",
+      "date": "2023-02-08"
+    }
+]

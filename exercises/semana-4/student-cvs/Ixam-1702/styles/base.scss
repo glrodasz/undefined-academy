@@ -1,0 +1,142 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+header {
+    background-color: var(--outer-space);
+	background-image: url("../header.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:soft-light;
+    padding: 10vw 2em;
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 50em;
+    padding: 4em 1em;
+    line-height: 1.5;
+    color: var(--emperor);
+}
+
+body {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    color: var(--cutty-sark);
+    background: var(--link-water);
+}
+
+ul {
+    padding-left: 2em;
+}
+
+h1, h2, strong {
+    color: var(--mine-saft);
+}
+
+a {
+    color: var(--chesnut-rose);
+}
+
+header img {
+    height: 120px;
+    width: 120px;
+    border-radius:30%;
+}
+
+header h1 {
+    color: var(--white);
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+}
+
+header a {
+    border: 2px solid var(--east-bay);
+    border-radius: 290486px;
+    color: var(--white);
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+}
+
+header a:hover {
+    background:  var(--east-bay);
+    color: var(--white);
+}
+
+section p {
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+footer {
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+// ESTILOS PARA EL FORMULARIO
+
+input, label {
+    width: 100%;
+}
+
+.form-group {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input[type="text"], input[type="email"], textarea {
+    border: 1px solid var(--periwinkle-gray);
+    border-radius: 5px;
+    padding: 6px 8px;
+    color: var(--emperor);
+}
+
+button {
+    margin-top: 8px;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--white-lilac);
+    background: var(--san-marino);
+    border: 1px solid var(--sapphire);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--moody-blue);
+}
+
+button:active {
+    background: var(--bay-of-many);
+    box-shadow: none;
+}

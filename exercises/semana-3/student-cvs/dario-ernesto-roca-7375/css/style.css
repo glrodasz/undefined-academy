@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+
+/* A natural box layot model to all */
+html {
+  box-sizing: border-box;
+
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* General styles */
+
+body {
+  background-color: #ededed;
+  font-family: "Roboto", sans-serif;
+  line-height: 2em;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header {
+  background-color: #24292e;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.header h1 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.header h3 {
+  margin-top: 0;
+}
+
+.header ul {
+  list-style: none;
+  padding: 0;
+}
+
+.header li {
+  margin-bottom: 10px;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 40px;
+}
+
+.section {
+  margin: 50px 0;
+}
+
+.connect-list {
+  background-color: hsl(0, 0%, 93%);
+  display: flex;
+  gap: 2em;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 50px;
+}
+
+.connect-list a {
+  margin-right: 10px;
+}
+
+.connect-list > li {
+  list-style: none;
+}
+
+.languages-list {
+  background-color: hsl(0, 0%, 93%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: left;
+  align-items: center;
+  padding: 50px;
+}
+
+.languages-list img {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.languages-list img:last-child {
+  margin-right: 0;
+}
+
+.languages-list > li {
+  list-style: none;
+}
+
+.languages-list a {
+  color: #212121;
+  text-decoration: none;
+}
+
+.languages-list a:hover {
+  text-decoration: underline;
+}
+
+.main-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.profile__list__item {
+  list-style: none;
+}
+
+.profile__link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #e5766d;
+}
+
+.profile__link:visited {
+  color: #e5766d;
+}
+
+.header-paragraph {
+  max-width: 70%;
+  text-align: center;
+  padding-top: 1em;
+}
+
+/* Styles for footer */
+
+.footer {
+  background-color: #24292e;
+  color: #fff;
+  text-align: center;
+  padding: 25px 0;
+}
+
+/* Styles for contact link */
+.header-link__container {
+  align-self: flex-end;
+  border: #f0f0f0 solid 2px;
+  border-radius: 60px;
+  color: #f0f0f0;
+  padding: 0 10px;
+  background-color: hsl(5, 70%, 66%);
+  margin-right: 1.5em;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.header-link__container:hover {
+  background-color: hsl(5, 70%, 76%);
+  border-color: hsl(5, 70%, 76%);
+}
+
+.header-link__container:active {
+  background-color: hsla(5, 70%, 76%, 0.5);
+  border-color: hsl(5, 70%, 76%, 0.5);
+  color: #8b8b8bd5
+}
+
+.header-link__container .header-link {
+  text-shadow: -1px -1px #3333336e;
+  text-decoration: none;
+}
+
+.header-link__container .header-link:visited {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.header-link__container .header-link:hover {
+  text-decoration: none;
+}
+
+.header-link__container .header-link:active {
+  color: #8b8b8bd5
+}
+
+/* Styles for Contact */
+.form-group {
+  /* border: 1px solid tomato; */
+  margin: 20px 0;
+}
+
+label, input {
+  vertical-align: middle;
+}
+
+
+label, input:not([type="radio"], [type="checkbox"]) {
+  width: 100%;
+}
+
+
+textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+
+label, legend {
+  font-weight: 700;
+  font-size: 14px;
+  color: #444
+}
+
+input[type="text"], input[type="email"],textarea {
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+}
+
+.help {
+  font-size: 12px;
+  margin-top: 10px;
+  color: gray;
+}
+
+.send-button {
+  font-size: 1em;
+  font-weight: 700;
+  border: #f0f0f0 solid 2px;
+  border-radius: 60px;
+  color: #f0f0f0;
+  text-shadow: -1px -1px #3333336e;
+  padding: 10px 40px;
+  background-color: hsl(5, 70%, 66%);
+  box-shadow: 1px 1px 3px #0000008c;
+}
+
+.send-button:hover {
+  background-color: hsl(5, 70%, 76%);
+  border-color: hsl(5, 70%, 76%);
+  cursor: pointer;
+}
+
+.send-button:active {
+  background-color: hsla(5, 70%, 76%, 0.5);
+  border-color: hsl(5, 70%, 76%, 0.5);
+  color: #8b8b8bd5;
+}
+
+.button-container {
+  margin: 50px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-form {
+  accent-color: hsl(5, 70%, 90%);
+}
+
+input:focus-visible, textarea:focus-visible {
+  outline: 2px solid hsl(5, 70%, 86%);
+}

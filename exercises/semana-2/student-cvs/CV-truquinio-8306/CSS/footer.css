@@ -1,0 +1,33 @@
+footer,
+footer a {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 50px auto 0 0;
+  background: #212429;
+}
+
+footer a{
+  padding: 0 1%;
+}
+
+footer a:hover {
+  color: #e48c0d;
+  transition: 0.2s;
+}
+
+.rrss {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: inline-block;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}

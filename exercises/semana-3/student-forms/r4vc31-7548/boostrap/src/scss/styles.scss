@@ -1,0 +1,11 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 2em 1em;
+}

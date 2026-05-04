@@ -1,0 +1,117 @@
+@use "./variables.scss" as *;
+
+/*Estilos del header*/
+header {
+  width: 95%;
+  min-height: 250px;
+  background: $roseFog;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header>img {
+  width: 60%;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+header>div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.header-text h1,
+h2,
+p {
+  margin: 10px;
+}
+
+.header-text h1 {
+  font-size: 48px;
+  margin-top: 0;
+}
+
+.header-text h2 {
+  font-size: 32px;
+}
+
+.header-text p {
+  font-size: 16px;
+}
+
+main {
+  width: 95%;
+  margin: auto;
+}
+
+section {
+  min-height: 300px;
+}
+
+/*Estilos de las secciones*/
+.container {
+  display: grid;
+  grid-template-rows: 4fr;
+  gap: 10px;
+}
+
+.command-alias {
+  padding: 10px;
+  background: $wildSand;
+}
+
+.command-alias h3,
+.command-alias p {
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.command {
+  margin: 20px;
+  padding: 0 0 0 30px;
+}
+
+.command li {
+  margin: 10px 0;
+}
+
+.alias {
+  padding: 5px;
+}
+
+.alias li {
+  margin-bottom: 10px;
+  font-family: monospace;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: $roseFog;
+  padding: 10px;
+  list-style-type: none;
+}
+
+/*Estilos footer*/
+footer a {
+  display: flex;
+  justify-content: center;
+  border: 2px solid $roseFog;
+  border-radius: 10px;
+  height: 30px;
+  margin: 10px auto;
+  padding: 10px;
+  width: 95%;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $mineShaft;
+}
+
+a:hover {
+  background: $roseFog;
+  color: $wildSand;
+}

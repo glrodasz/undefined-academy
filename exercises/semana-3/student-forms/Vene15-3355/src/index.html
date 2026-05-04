@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/main.mjs"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="mx-auto p-2" style="max-width: 50em;">
+      <h1>Contacto</h1>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre completo" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingrese su email" required>
+          </div>
+          <div class="mb">    
+            <label for="phone" class="form-label">Celular</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Ingrese su número de celular" required>
+          </div>
+          <fieldset class="border border-2">
+            <legend class="float-none w-auto">Presupuesto</legend>
+            <div class="mb-2">
+              <input class="mx-2" id="5000" name="budget" type="radio" value="5000" required>
+              <label for="5000">$5.000</label>
+              <input class="mx-2" id="1000" name="budget" type="radio" value="1000" required>
+              <label for="10000">$10.000</label>
+              <input class="mx-2" id="15000" name="budget" type="radio" value="15000" required>
+              <label for="15000">$15.000</label>
+            </div>
+          </fieldset>
+          <div class="form-text" id="basic-addon4">Este presupuesto es la base no el total.</div>
+          <select class="form-select mt-3" required>
+            <option disabled selected value="" >Selecciona uno</option>
+            <option value="Website">Website</option>
+            <option value="Webapp">Webapp</option>
+            <option value="Mobile">Mobile App</option>
+            <option value="Design">Diseño</option>
+          </select>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label mt-3">Descripción</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+            <div class="form-text" id="basic-addon4">Escribe una descripción del proyecto en al menos 500 palabras.</div>
+          </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Aceptar términos y condiciones
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>

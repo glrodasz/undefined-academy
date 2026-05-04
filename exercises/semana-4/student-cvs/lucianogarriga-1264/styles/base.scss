@@ -1,0 +1,127 @@
+/*  NAV */
+
+nav{ 
+    place-items: center;
+    background: var(--color-mine-shaft);
+}
+nav ul{
+    display: flex; 
+    justify-content: space-evenly;
+    font-size: 0.9rem;
+    margin: 0.7rem;
+    padding: 0.2rem; 
+    list-style: none;
+    text-decoration: none; 
+    color: var(--color-seashell); 
+} 
+nav ul li:hover {
+    color: var(--color-azure);
+}
+nav ul li a{
+    list-style: none;
+    text-decoration: none; 
+    font-weight: bold;
+    color: var(--color-seashell); 
+}
+
+/*  HEADER  */
+
+header{
+    background-image: url("../img/bg-main.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;   
+}
+
+
+/* Body Pages */
+p, .terms{
+    font-size: 14px; 
+    text-align: justify; 
+    margin: 16px 12px;
+}
+p a{ 
+    list-style: none;
+    text-decoration: none; 
+    color: var(--color-azure);
+    font-weight: bolder;
+}
+.main-title{
+    font-size: 36px;      
+}
+.main-title span{
+    font-size: 20px;
+    text-align: left;
+}
+.main-title a{
+    list-style: none;
+    text-decoration: none; 
+    color: var(--color-azure);
+    transition: 250ms; 
+}
+.main-title a:hover{
+    color: var(--color-seashell); 
+    background: var(--color-azure);
+    padding: 5px;
+    border-radius: 12px;
+}
+.frontend-subtitle{
+    font-size: 17px;    
+    text-align: center;
+}
+.main-title, .frontend-subtitle{
+    padding: 0 12px;
+    margin: 12px;
+} 
+h2{
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.7rem;
+}
+.sub{
+    color: var(--color-azure);
+}
+.personal-profile{ 
+    font-size: 28px;
+} 
+section, header{  
+    justify-content: center;
+    align-items: center;
+} 
+header {    
+    min-height: 350px;
+}
+
+/*  CONTENT  */
+.main-article{
+    font-size: 26px;
+    font-weight: bold;
+}    
+.feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+} 
+.feature div p{
+    text-align: left;  
+    margin: 0.3rem;
+    padding: 0.3rem;
+}
+.feature{ 
+    padding: 1rem;
+}
+.features{
+    margin: 2rem;
+}
+i{
+    font-size:6rem; 
+}
+section h3 a{
+    text-decoration: none;
+    color: var(--color-azure);
+}
+.section-title{
+    color: var(--color-azure);
+}

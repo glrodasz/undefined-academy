@@ -1,0 +1,95 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+body{
+    background-color: #fafafa;
+    color: rgb(44, 41, 41);
+}
+
+main{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo{
+    max-width: 300px;
+}
+
+.form-group{
+    margin: 1rem;
+}
+
+.terms{
+    display:flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.form-check-label{
+    margin-left: 0.5rem;
+}
+
+.row{
+    display: block;
+}
+
+.col{
+    margin-bottom: 1rem;
+}
+
+.btn{
+    background-color: #bb8c8c;
+    text-transform: uppercase;
+    border-color: #6e1438;
+}
+
+.btn:hover{
+    background-color: #fafafa;
+    color: #6e1438;
+    border-color: #6e1438;
+    color: rgb(44, 41, 41);
+}
+
+.navbar:not(.footer){
+    background-color: #bb8c8c;
+    text-transform: uppercase;
+}
+
+.nav-link{
+    color: #fafafa;
+}
+
+.nav-link:hover{
+    color: rgb(44, 41, 41);
+}
+
+p{
+    margin-bottom: 30px;
+}
+
+.footer{
+    background-color: #bb8c8c;
+    margin: 2rem 0 0 !important;
+    color: #fafafa;
+}
+
+@include media-breakpoint-up(sm) {
+    .navbar{
+        justify-content: space-between;
+    }
+
+    .row{
+        display: flex;
+    }
+    
+    .col{
+        margin-bottom: 0;
+    }
+}

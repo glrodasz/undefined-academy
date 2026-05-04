@@ -1,0 +1,17 @@
+@use "variables.scss";
+
+@media screen and (min-width: variables.$tablet) {
+    main,
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .header-btn + .header-btn {
+      margin-left: 2em;
+    }
+    .header-links {
+      display: block;
+    }
+  
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+    <title>CV</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cristhian Medina</h1>
+      <p>
+        Soy <strong>diseñador gráfico</strong> y <strong>desarrollador front-end</strong> colombiano.
+      </p>
+    </header>
+    
+    <main>
+      <section class="about">
+        <h2>Algunos datos sobre mí</h2>
+        <p>Nací y soy residente en la ciudad de Cúcuta con 29 años.</p>
+        <p>En esta ciudad conocí a mi pareja y forme mi familia la cual es un pilar fundamental de mi vida.</p>
+        <p>Algunos de mis gustos son ver crecer a mis hijos, ayudar a mi pareja mientras prepara deliciosos platillos, escuchar musica y cantar alguna que otra sin tener mucha afinación pero si mucho sentimiento, reparar objetos y leer historietas.</p>
+      </section>
+
+      <section class="projects">
+        <h2>Algunos de los proyectos en los que he trabajado</h2>
+        <article>
+          <h3>proyecto 1</h3>
+          <figure>
+            <img src="image.jpg" alt="imagen del proyecto">
+          </figure>
+          <p>descripción del proyecto</p>
+          <p>
+            <a href="#" >enlace al proyecto</a>
+          </p>
+        </article>
+      </section>
+
+      <section class="social-media">
+        <h2>¿Dónde me pueden encontrar?</h2>
+        <ul>
+          <li>
+            Perfil de  
+            <a href="https://www.linkedin.com/in/cristhian-medina-c/" target="blanck">LinkedIn</a>
+          </li>
+          <li>
+            Perfil de  
+            <a href="https://github.com/Cristhian-Medina" target="blanck">GitHub</a>
+          </li>
+          <li>
+            Mi   
+            <a href="https://cris-medina.com" target="blanck">portafolio</a>
+          </li>
+          <li>
+            Algo parecido a un  
+            <a href="https://csmedinacarrillo.wordpress.com/" target="blanck">Blog</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="contact-form">
+        <h2>Si necesitas que me contacte contigo llena el siguiente formulario</h2>
+        <form>
+          <label for="name">Nombre</label>
+          <input type="text" name="name" id="name" placeholder="Ingrese su nombre completo" required>
+
+          <br>
+
+          <label for="email">Correo</label>
+          <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" required>
+
+          <fieldset>
+            <legend>¿En que te puedo ayudar?</legend>
+
+            <input type="radio" name="contact-type" id="project" value="project" required>
+            <label for="project">Proyecto</label>
+
+            <input type="radio" name="contact-type" id="job" value="job" required>
+            <label for="job">Trabajo</label>
+
+            <input type="radio" name="contact-type" id="talk" value="talk" required>
+            <label for="talk">Conferencia</label>
+          </fieldset>
+
+          <label for="lenguage">Idíoma</label>
+          <select name="lenguage" id="lenguage" required>
+            <option value="" disabled selected>Selecciona uno</option>
+            <option value="spanish">Español</option>
+            <option value="english">Ingles</option>
+            <option value="portuguese">Portugues</option>
+          </select>
+
+          <br>
+          
+          <label for="description">Descripción</label>
+          <textarea name="contact-description" id="description" rows="3" required></textarea>
+          <p>Escribe una descripción del tema a tratar.</p>
+
+          <label for="terms">
+            <input type="checkbox" name="terms" id="terms" value="termsAccepted" required>
+            Acepto los terminos y condiciones
+          </label>
+
+          <br>
+
+          <button type="submit" onclick="stopAction(event);">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Todos los derechos reservados 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

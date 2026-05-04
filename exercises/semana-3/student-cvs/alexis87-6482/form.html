@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/main.css">
+    <script async defer type="module" src="/main.mjs"></script>
+</head>
+<body>
+    <section>
+        <h3>📞 Contacto</h3>
+        <form>
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" placeholder="ingrese su nombre comleto" required >
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="ingrese su correo electronico" required >
+            </div>
+            <div class="form-group">
+                 <label for="phone">Celular</label>
+                 <input id="phone" name="phone" type="tel" placeholder="ingrese su correo electronico" required >
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <input id="5000" name="budget" type="radio" value="5000" required><label for="5000">5000</label>
+                    <input id="10000" name="budget" type="radio" value="10000"><label for="10000">10000</label>
+                    <input id="15000" name="budget" type="radio" value="15000"><label for="15000">15000</label>
+                </fieldset>
+            </div>  
+            <div class="form-group">
+                <label for="type">Tipo de proyecto</label>
+                <select id="type" name="type" required>
+                    <option disabled selected value="">Seleccione uno</option>
+                    <option value="website">Website</option>
+                    <option value="webapp">Webapp</option>
+                    <option value="mobile">Mobile app</option>
+                    <option value="diseño">Diseño</option>
+                 </select>
+            </div>
+            <div class="form-group">
+                <label for="description" >Descripcion</label>
+                <textarea id="description" name="description" required rows="5"></textarea>
+                <div class="help">Escribe una descripcion del proyecto en al menos 500 caracteres.</div>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input id="terms" name="terms" type="checkbox" required>
+                    <span>Acepto los terminos y condiciones</span>
+                </label>
+            </div>
+            <button>Enviar</button>
+         </form>
+     </section>
+</body>
+</html>

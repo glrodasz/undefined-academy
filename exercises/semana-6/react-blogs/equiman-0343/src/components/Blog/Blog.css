@@ -1,0 +1,23 @@
+.blog .post-list {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr;
+}
+
+@media only screen and (width >= 576px) {
+    .blog .post-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (width >= 768px) {
+    .blog .post-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (width >= 992px) {
+    .blog .post-list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

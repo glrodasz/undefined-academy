@@ -1,0 +1,148 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    background-color: #02a4c1;
+    color: #f8f8f8;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 50px
+}
+
+h2 {
+    margin-top: -20px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.form {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 40px;
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 2px 16px 2px;
+    /* border: 2px solid rebeccapurple; */
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 13rem;
+    margin-top: 18px;
+    margin-right: 8px;
+}
+
+.profile-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+label, input {
+    vertical-align: middle;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+}
+
+input[type="text"], input[type="email"], textarea{
+    background: white;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    padding: 8px 10px;
+    color: #6a6a6a;
+}
+
+.help {
+    font-size: 12px;
+    margin-top: 4px;
+    color: grey;
+}
+
+button {
+    width: 100%;
+    padding: 10px 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1.5px solid #075985;
+    background: #06b6d4;
+    border-radius: 4px;
+    color: #ecfeff;
+    text-shadow: -1px -1px 0 #155e75;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+button:hover {
+    background: #67e8f9;
+    color: white;
+
+}
+
+button:active {
+    background: #0891b2;
+    color: #ecfeff;
+    border: 1.5px solid #ecfeff;
+    box-shadow: none;
+
+}
+
+form {
+    accent-color: #06b6d4;
+}
+
+input:focus-visible, 
+textarea:focus-visible{
+    border: 2px solid #06b6d4;
+    outline: 1.5px solid #67e8f9;
+}

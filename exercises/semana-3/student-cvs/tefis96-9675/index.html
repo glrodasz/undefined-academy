@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0" >
+    <link rel="shortcut icon" href="./img/logoSCS.png" type="image/x-icon">
+    <script type="module" src="./js/bgButton.js"></script>
+    <title>Stephany Castro Salas</title>
+</head>
+
+<body class="Mode darkMode" id="bodyMode">
+    <nav class="navBar">
+        <div class="logoField">
+            <img class="logoTxt" src="img/logo-removebg-preview.png" alt="logoSCS">
+                <img class="logo" id="logo" src="img/logoSCS.png" alt="logoSCS">
+        </div>
+
+        <div class="containerMenu">
+            <div class="linksField">
+                <ul>
+                    <li><a class="buttonMode" ><img class="imgMode" src="img/mode.svg"
+                                alt="luna"></a>
+                    </li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="dropDown">
+                <button class="dropBtn"><img class="menu" id="menu" src="img/icons8-menu-rounded-50.png"
+                        alt="icons8-menu-rounded-50"></button>
+                <div class="dropOptions">
+                    <a class="buttonMode"><img class="imgMode" src="img/mode.svg"
+                            alt="luna"></a>
+                    <a href="#Home">Home</a>
+                    <a href="#aboutMe">About Me</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Section -->
+    <div class="containerScrollBtn">
+        <button class="scroll" id="btnScroll"><img class="scroll" id="arrowImg"
+                src="https://cdn-icons-png.flaticon.com/512/3148/3148343.png" alt="luna"></button>
+    </div>
+    <section class="home" id="Home">
+        <div class="containerHome">
+            <div class="containerImgPro">
+                <img class="profileImg" src="img/IMG_20200518_171543018-removebg-preview.png" alt="imgPerfil">
+            </div>
+            <div class="textHome">
+                <h1> Hola, Soy Stephany</h1>
+                <h1 id="lastName"> Castro Salas</h1>
+                <p>Desarrolladora FullStack</p>
+            </div>
+        </div>
+    </section>
+    <section class="aboutMe" id="aboutMe">
+        <div class="containerAboutMe">
+            <div class="textAboutMe">
+                <h3>Sobre Mi</h3>
+                <p>Estoy iniciando en desarrollo, me estoy preparando para ser <strong>FullStack</strong>
+                    He participado en fundamentos de programación en "MINTIC", donde desarrollamos pequeños proyectos
+                    usando diferentes tecnologias y metodologías agiles.</p>
+            </div>
+            <h3>Tengo conocimientos en:</h3>
+            <div class="tech">
+                <div class="containerTech">
+                    <div class="textTech">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="imgTech">
+                        <img class="iconTech"
+                            src="https://icongr.am/devicon/java-original.svg?size=50&color=currentColor" alt="Java">
+                        <img class="iconTech"
+                            src="https://img.icons8.com/color/512/spring-logo.png"
+                            alt="Spring Boot">
+                        <img class="iconTech" src="https://icongr.am/devicon/mongodb-original.svg?size=34&color=d4b5b5"
+                            alt="MongoDB">
+                        <img class="iconTech"
+                            src="https://icongr.am/devicon/mysql-original-wordmark.svg?size=34&color=d4b5b5"
+                            alt="MySQL">
+                        <img class="iconTech"
+                            src="https://icongr.am/devicon/javascript-original.svg?size=34&color=currentColor"
+                            alt="JavaScript">
+                    </div>
+                </div>
+                <div class="containerTech">
+                    <div class="textTech">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="imgTech">
+                        <img class="iconTech"
+                            src="https://icongr.am/devicon/html5-original.svg?size=34&color=currentColor" alt="HTML">
+                        <img class="iconTech"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                            alt="CSS">
+
+                        <img class="iconTech"
+                            src="https://icongr.am/devicon/javascript-original.svg?size=34&color=currentColor"
+                            alt="JavaScript">
+                        <img class="iconTech" src="https://ionicframework.com/docs/icons/logo-react-icon.png"
+                            alt="React">
+                    </div>
+                </div>
+                <div class="containerTech">
+                    <div class="textTech">
+                        <h3>Control de versiones</h3>
+                    </div>
+                    <div class="imgTech">
+                        <img class="iconTech" src="https://img.icons8.com/nolan/512/github.png" alt="Github">
+                        <img class="iconTech" src="https://icongr.am/devicon/gitlab-original.svg?size=34&color=d4b5b5"
+                            alt="GitLab">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="projCont">
+            <h2>Projects</h2>
+            <div class="containerProjects">
+                <div class="contProjects">
+                    <h3>Pokedex-Js</h3>
+                    <div class="img">
+                        <img class="imgProjec" src="img/pokedex-js.png" alt="">
+                    </div>
+                    <div class="techProj">
+                        <img class="iconTech"
+                            src="https://icongr.am/devicon/html5-original.svg?size=34&color=currentColor" alt="HTML">
+                        <img class="iconTech" src="https://lenguajecss.com/assets/logo.svg" alt="CSS">
+                        <img class="iconTech"
+                            src="https://icongr.am/devicon/javascript-original.svg?size=34&color=currentColor"
+                            alt="JavaScript">
+                    </div>
+                    <div class="description">
+                        <p>Mini proyecto de pokedex sencilla se puede buscar por nombre o id</p>
+                    </div>
+                    <div class="repo">
+                        <a href="https://github.com/StephanyCS1/Pokedex-Js"><img class="icon"
+                                src="https://img.icons8.com/nolan/512/github.png" alt="github"></a>
+                    </div>
+                </div>
+                <div class="contProjects">
+                    <h3>Calculadora</h3>
+                    <div class="img">
+                        <img class="imgProjec" src="img/calcu.png" alt="">
+                    </div>
+                    <div class="techProj">
+                        <img class="iconTech"
+                            src="https://icongr.am/devicon/html5-original.svg?size=34&color=currentColor" alt="HTML">
+                        <img class="iconTech" src="https://lenguajecss.com/assets/logo.svg" alt="CSS">
+                        <img class="iconTech"
+                            src="https://icongr.am/devicon/javascript-original.svg?size=34&color=currentColor"
+                            alt="JavaScript">
+                    </div>
+                    <div class="description">
+                        <p>Calculadora sencilla cuenta con las funciones basicas que se podrían necesitar</p>
+                    </div>
+                    <div class="repo">
+                        <a href="https://github.com/StephanyCS1/Calculadora"><img class="icon"
+                                src="https://img.icons8.com/nolan/512/github.png" alt="github"></a>
+                    </div>
+                </div>
+                <div class="contProjects">
+                    <h3>Pokedex React</h3>
+                    <div class="img">
+                        <img class="imgProjec" src="img/pk-re.png" alt="">
+                    </div>
+                    <div class="techProj">
+                        <img class="iconTech"
+                            src="https://icongr.am/devicon/html5-original.svg?size=34&color=currentColor" alt="HTML">
+                        <img class="iconTech" src="https://lenguajecss.com/assets/logo.svg" alt="CSS">
+                        <img class="iconTech"
+                            src="https://icongr.am/devicon/javascript-original.svg?size=34&color=currentColor"
+                            alt="JavaScript">
+                        <img class="iconTech" src="https://ionicframework.com/docs/icons/logo-react-icon.png"
+                            alt="React">
+                    </div>
+                    <div class="description">
+                        <p>Busqueda según tipo de pokemon, o nombre o iniciales, detalle de estadisticas por pokemón
+                        </p>
+                    </div>
+                    <div class="repo">
+                        <a id="repo" href="https://github.com/StephanyCS1/Pokedex-React"><img class="icon"
+                                src="https://img.icons8.com/nolan/512/github.png" alt="github"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="containerContact">
+            <h2>Contacto</h2>
+            <div class="contactInfo">
+                <a href="https://www.linkedin.com/in/stephany-castro-salas-03a001172/"><img class="iconContact"
+                        src="https://icongr.am/devicon/linkedin-original.svg?size=34&color=d4b5b5" alt="linkedin"></a>
+                <a href="https://github.com/StephanyCS1"><img class="iconContact"
+                        src="https://img.icons8.com/nolan/512/github.png" alt="github"></a>
+            </div>
+
+            <div class="contactForm">
+                <form action="/server" method="post" >
+                    <label for="name">Nombre</label>
+                    <input type="text" name="nameField" id="name" placeholder="Escriba su nombre" required>
+                    <label for="email">Correo Electronico</label>
+                    <input type="email" name="emailField" id="email" placeholder="Escriba su correo electronico"
+                        required>
+                    <label for="describe" class="describe">
+                        Mensaje
+                        <textarea name="describeField" id="describe" cols="30" rows="10"
+                            placeholder="Porfavor escriba su mensaje" required></textarea>
+                    </label>
+                    <div class="button">
+                        <button class="btnSend" type="submit"
+                            onclick="location.href='mailto:stephanycastrosalas@gmail.com'">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footerBanner">
+            <h3>StephanyCastroSalas 😁</h3>
+        </div>
+    </footer>
+</body>
+</html>

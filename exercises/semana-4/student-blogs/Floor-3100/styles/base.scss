@@ -1,0 +1,100 @@
+@use "variables.scss" as v;
+
+* {
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    background: v.$deep-champagne;
+    color: v.$smokey-yopaz;
+    font-size: 16px;
+    margin: 8px 32px;
+}
+
+.titulo {
+    font-size: 64px;
+    color: v.$smokey-yopaz;
+    font-style: italic;
+    margin: 16px;
+    text-align: center; 
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;     
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    padding: 0;
+    display: block;
+    gap: 16px;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+    padding: 8px 32px;          
+    margin: 8px;                
+    background: v.$smokey-yopaz;
+    font-weight: 600;
+    border-radius: 8px;
+    color: v.$deep-champagne;
+}
+
+li:hover {
+    background: v.$sinopia;
+}
+
+.search {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid Gainsboro;
+    width: 100%;    //
+    background: WhiteSmoke;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 4px 4px 0px v.$smokey-yopaz;
+    background: v.$deep-saffron;
+}
+
+.item:hover {
+    background: v.$sinopia;
+    color: v.$deep-champagne;
+}
+
+img {
+    width: auto;
+    max-height: 150px;
+    margin: 0px auto;
+}
+
+.item h1 {
+    margin: 0px;
+}
+
+p {
+    margin: 8px;
+    font-size: 16px;
+}
+
+footer {
+    margin: 32px auto;
+    text-align: center;
+}
+
+

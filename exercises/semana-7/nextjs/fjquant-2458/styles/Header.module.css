@@ -1,0 +1,44 @@
+.header {
+    background-image: linear-gradient(to right, rgb(250 250 200 /.8), rgb(250 250 200 /.7)), url(../public/patitas.jpg);
+    background-size: cover;
+    background-position: 50%;
+    padding: .5rem 0;
+}
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width:768px) {
+    .barra {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion {
+    margin-top: 1rem;
+    display: flex;
+    color: wheat;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+@media screen and (min-width:768px) {
+    .navegacion {
+        margin-top: 0;
+    }
+}
+
+.navegacion a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .5rem;
+}
+
+.navegacion a:hover {
+    background-color: #d89e82;
+    border-radius: 5px;
+}

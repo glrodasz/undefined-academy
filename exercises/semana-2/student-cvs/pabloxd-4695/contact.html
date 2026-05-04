@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <div class="contact-body">
+
+        <div class="contact-form">
+        <div class="contact-title"><h3>Contact Me</h3></div>
+        
+        <form id="contact-form-id" class="contact-form-class" onsubmit="return false;">
+            
+            <div class="contact-form-group">
+                <label for="Name" class="contact-label">Your name</label>
+                <div class="contact-input-group">
+                    <input type="text" id="Name" name="Name" class="contact-form-control" required>
+                </div>
+            </div>
+
+            <div class="contact-form-group">
+                <label for="Phone" class="contact-label">Your phone number</label>
+                <div class="contact-input-group">
+                    <input type="number" id="Phone" name="Phone" class="contact-form-control" required>
+                </div>
+            </div>
+
+            <div class="contact-form-group">
+                <label for="subject" class="contact-label">Your subject</label>
+                <div class="contact-input-group">
+                    <select id="Subject" name="Subject" class="contact-form-control" required>
+                        <option disabled hidden selected>Choose your subject</option>
+                        <option>I'd like to start a project</option>
+                        <option>I'd like to ask a question</option>
+                        <option>I'd like to make a proposal</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="contact-form-group">
+                <label for="Email" class="contact-label">Your email address</label>
+                <div class="contact-input-group">
+                    <input type="email" id="Email" name="Email" class="contact-form-control" required>
+                </div>
+            </div>
+    
+            <div class="contact-form-group">
+                <label for="Message" class="contact-label">Your message</label>
+                <div class="contact-input-group">
+                    <textarea id="Message" name="Message" class="contact-form-control" rows="6" maxlength="3000" required></textarea>
+                </div>
+            </div>
+    
+            <div class="contact-form-group">
+                <button type="submit" id="contact-button" class="contact-btn contact-btn-primary contact-btn-lg contact-btn-block">Send Message</button>
+            </div>
+        </form>
+        </div>
+  </body>
+</html>

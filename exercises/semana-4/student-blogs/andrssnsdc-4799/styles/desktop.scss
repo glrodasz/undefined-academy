@@ -1,0 +1,118 @@
+@use 'variables';
+html {
+    box-sizing: border-box;  
+  }
+  
+  * {
+    box-sizing: inherit;  
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: variables.$prussian-blue;
+    max-width: 900px;
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;  
+  }
+  
+  body p {
+    text-align: unset;
+  }
+  
+  /*"estilos layout"*/
+  
+  .layouts {
+    margin: 0 auto;
+    font-family: Courier New, monospace;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: variables.$outer-space;
+    color: variables.$charcoal;
+  }
+  
+  .container div {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    border: 2px solid variables.$electric-blue;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: variables.$jungle-green-alpha;
+    box-shadow:
+    3.4px 13.8px 9.7px rgba(0, 0, 0, 0.86),
+    23.8px 96.7px 36px rgba(0, 0, 0, 0.11),
+    62px 252px 189px rgba(0, 0, 0, -0.203);
+  }
+  
+  .container div:hover {
+    background-color: variables.$jungle-green;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+    box-shadow:
+    0px 36.8px 19.6px rgba(0, 0, 0, 0.48),
+    0px 212.9px 72.8px rgba(0, 0, 0, 0.061),
+    0px 500px 382px rgba(0, 0, 0, -0.113)
+    ;
+  }
+  
+  .container img {
+    height: 230px;
+    width: 100%;  
+  }
+  
+  input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid variables.$medium-sea-green;
+    width: 400px;
+    background: variables.$light-sea-green;
+  }
+  
+  input[type="search"]:focus{
+    border-color: variables.$electric-blue-2;
+    background: variables.$medium-spring-green;
+    transform: scale(1.03);
+    transition: transform 0.2s;
+    box-shadow:0px 0px 11px rgba(0, 0, 0, 0.5);
+    outline: none;
+  }
+  
+  .container {
+    font-weight: 800;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px 36px;
+  }
+  .container .fecha-publicacion {
+    font-weight: 100;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end;
+    margin-top: auto;
+    }
+  
+  .container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 /4;
+    grid-row: 1 / 2;
+  }
+  
+  .container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+   div:last-child {
+    grid-column: 1 / 4;
+  }
+  
+  

@@ -1,0 +1,107 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background: #FFA533;
+    color: #D0CAC2;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 32px;
+}
+
+main, h3.text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+h3.text {
+    text-align: center;
+    
+}
+
+section,
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+nav {
+    display: grid;
+    place-items: center;
+}
+
+header {
+    background: #3498db;
+    text-align: center;
+}
+
+.content {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup {
+    background: #FFA533;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5%;
+}
+
+.feature {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature.first {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature:last-child {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+    .features {
+        display: flex;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    .signup {
+        min-height: auto;
+        height: 200px;
+        order: 3;
+    }
+
+    content {
+        order: 3;
+    }
+}

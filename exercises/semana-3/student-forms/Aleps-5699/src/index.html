@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario con Bootstrap</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+    <main class="page">
+        <article>
+            <h1>Contacto</h1>
+            <hr>
+            <section>
+                <h2 class="about">Información Personal</h2>
+                <hr>
+                <form id="contact-form" action="" method="post">
+                    <div class="input-group mb-3 flex-wrap form-group">
+                        <label for="InputName1" class="form-label">Nombre:</label>
+                        <span class="input-group-text" id="addon-wrapping">✍️</span>
+                        <input type="text" class="form-control" id="InputName1" name="name"
+                            placeholder="Ingrese su nombre" aria-describedby="nameHelp" required>
+                        <input type="text" class="form-control" id="InputLastName1" name="lastName"
+                            placeholder="Ingrese su apellido" aria-describedby="LastnameHelp" required>
+                    </div>
+                    <div class="input-group mb-3 flex-wrap form-group">
+                        <label for="InputEmail1" class="form-label">Dirección Email</label>
+                        <span class="input-group-text" id="addon-wrapping">@</span>
+                        <input type="email" class="form-control" id="InputEmail1" name="email"
+                            placeholder="Ingrese su direccion de Email" aria-label="Email"
+                            aria-describedby="basic-addon1" required>
+                    </div>
+                    <div class="input-group mb-3 flex-wrap form-group">
+                        <label for="tel" class="form-label">Número telefónico:</label>
+                        <span class="input-group-text" id="addon-wrapping">📱</span>
+                        <input type="tel" class="form-control" name="phone" id="InputTel1"
+                            placeholder="Ingrese su número telefónico" aria-describedby="telHelp" required>
+                    </div>
+                    <div id="help" class="form-text">Tu información no será compartida con nadie más.</div>
+            </section>
+            <section>
+                <hr>
+                <h2 class="about">Acerca de tu proyecto</h2>
+                <hr>
+                <div class="form-group">
+                    <label for="type" class="form-label">Tipo de projecto deseado</label>
+                    <select name="projectType" class="form-select" id="type" required>
+                        <option value="" disabled selected>Seleccione una opción</option>
+                        <option value="Site">Website</option>
+                        <option value="App">Web App</option>
+                        <option value="Mobile">Mobile App</option>
+                        <option value="Design">Diseño de Website</option>
+                    </select>
+                </div>
+                <div class="input-group form-group">
+                    <label for="description">Descripción de tu proyecto</label>
+                        <span class="input-group-text">Describe tu proyecto</span>
+                        <textarea class="form-control" aria-label="With textarea" name="description" id="description" cols="30" rows="8" required></textarea>
+                      </div>
+                    <div class="help">
+                        Escribe una descripción del projecto que deseas realizar en al menos 200 palabras
+                    </div>
+                </div>
+
+
+                <div class="form-check form-group">
+                    <fieldset>
+                        <legend>¿Con cuánto presupuesto cuentas?</legend>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Budget" id="inlineRadio1" value="1000"
+                                required>
+                            <label class="form-check-label" for="inlineRadio1">$1,000</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Budget" id="inlineRadio2" value="2500"
+                                required>
+                            <label class="form-check-label" for="inlineRadio2">$2,500</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Budget" id="inlineRadio3" value="5000"
+                                required>
+                            <label class="form-check-label" for="inlineRadio3">$5,000</label>
+                        </div>
+                    </fieldset>
+                    <div class="help">Éste presupuesto es una base, no el real</div>
+                </div>
+                <div class="form-group">
+                    <label for="date" class="form-label">¿En qué fecha me contactas?</label>
+                    <input type="date" class="form-control" name="date" id="date" required>
+                </div>
+                <div class="form-check form-group">
+                    <label class="form-check-label" for="terms">Acepto los Términos y Condiciones</label>
+                    <input class="form-check-input mt-1" type="checkbox" name="terms" value="accepted" id="terms" required>
+                </div>
+            </section>
+            <footer>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <div id="form-help" class="form-text">Gracias por haber contactado con Alejandro del Muro, tendrás una
+                    respuesta pronto,
+                    hasta luego!.</div>
+            </footer>
+            </form>
+        </article>
+    </main>
+</body>
+
+</html>

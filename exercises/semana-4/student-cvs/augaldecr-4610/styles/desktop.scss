@@ -1,0 +1,9 @@
+@media screen and (min-width: 800px) {
+    h1 > small {
+      display: block;
+    }
+
+    main {
+      max-width: 800px;
+    }
+  }

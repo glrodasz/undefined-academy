@@ -1,0 +1,229 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #dbdbdb;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    background-color: #02a4c1;
+    color: #f8f8f8;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #a9a9a9;
+    display: flex;
+    place-items: center;
+    justify-content: right;
+    gap: 2rem;
+    font-size: 14px;
+    height: 3.5em;
+}
+
+.buttons {
+    padding-right: 4em;
+}
+
+nav a {
+    background-color: #e4e4e4;
+    border-radius: 2px;
+    padding: 1px 20px;
+    border: 0.5px solid #a1a1a1;
+    text-shadow: -1px -1px 0 #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.nav-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #e9e9e9;
+    background-color: #505357;
+    text-shadow: 0px 1px 0 #000000;
+    box-shadow: 1px 1px 3px rgba(239, 239, 239, 0.493);
+}
+
+a { 
+    color: #00869d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #656768;
+    color: rgb(233, 233, 233);
+    border-radius: 4px;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 50px
+}
+
+h2 {
+    margin-top: -20px;
+    font-style: italic;
+    font-size: 17px;
+}
+
+h3 {
+    margin-top: 34px;
+    margin-bottom: 2px;
+}
+
+h4 {
+    display: block;
+    margin-bottom: 2px; 
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 2px 16px 2px;
+    /* border: 2px solid rebeccapurple; */
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 13rem;
+    margin-top: 18px;
+    margin-right: 8px;
+}
+
+.profile-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 10px 12px 10px 12px    /* sup. der. inf. izq. */
+    /* border: 2px solid rebeccapurple; */
+}
+
+/* Para desktop ---> Cuando la pantalla tenga un ancho igual o mayor a 992 px */
+@media screen and (min-width: 992px) {    
+    .features, .table-one, .table-two {
+        display: flex;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    .profile {
+        padding: 2px 320px
+    }
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 500px) {
+    .header-info {
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       padding: 0px 6px 0px 6px;
+       box-sizing: border-box;
+    }
+
+    .profile-title {
+        margin-top: -20px;
+    }
+
+    .profile {
+        padding: 2px 40px
+    }
+
+    h2 {
+        padding: 0px 20px 0px 20px;
+    }
+
+    footer {
+        width: 100%;
+    }
+  }
+
+li {
+    padding: 0px 8px 0px 8px;
+}
+
+p {
+    text-align: center;
+    padding: 2px 40px
+}
+
+table {
+    margin-top: 1em;
+    background-color: #0094ae;
+    color: rgb(225, 240, 253);
+    text-align: center;
+    border-collapse: collapse;
+    width: 20em;
+}
+
+thead {
+    background-color: #505357;
+    color: #eaeaea;
+    border-bottom: solid 2px rgb(234, 234, 234);
+}
+
+th, td {
+    padding: 6px;
+}
+
+tr:nth-child(even) {
+    background-color: #00aac8ab;
+}
+
+tr:hover td {
+    background-color: #c1c1c1;
+    color: rgb(29, 29, 29);
+}
+
+footer {
+    width: 100%;
+    padding: 1em;
+    margin-top: 2em;
+    text-align: center;
+    background: #3A3F44;
+    color: whitesmoke;
+}
+
+
+
+ 
+
+

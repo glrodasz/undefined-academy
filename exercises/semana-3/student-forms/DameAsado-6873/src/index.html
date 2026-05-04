@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+    <div class="container bg-secundary">
+        <div class="mb-3">
+            <div class="d-flex align-items-center gap-4 justify-content-center">
+                <ion-icon name="call-outline"></ion-icon>
+                <h2 class="fw-bold">Contacto</h2>
+            </div>
+            <p>Completa el siguiente formulario para ponernos en contacto.</p>
+        </div>
+        <form action="/server" method="post">
+
+            <div class="mb-2">
+                <div class="d-flex align-items-center gap-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <ion-icon name="finger-print-outline"></ion-icon>
+                </div>
+                <input type="text" class="form-control" id="name" placeholder="John" required>
+            </div>
+            <div class="mb-2">
+                <div class="d-flex align-items-center gap-3">
+                    <label for="company" class="form-label">Empresa</label>
+                    <ion-icon name="business-outline"></ion-icon>
+                </div>
+                <input type="text" class="form-control" id="company" placeholder="John's Company" required>
+            </div>
+            <div class="mb-2">
+                <div class="d-flex align-items-center gap-3">
+                    <label for="email" class="form-label">Email</label>
+                    <ion-icon name="mail-outline"></ion-icon>
+                </div>
+                <input type="email" class="form-control" id="email" placeholder="john@email.com" required>
+            </div>
+            <fieldset class="my-3">
+                <legend>Asunto</legend>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="topic" id="webDesign">
+                    <label class="form-check-label" for="webDesign">
+                        Diseño Web
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="topic" id="restauration">
+                    <label class="form-check-label" for="restauration">
+                        Restaurar Aparato
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="topic" id="plants">
+                    <label class="form-check-label" for="plants">
+                        Regar Plantas
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="topic" id="other" checked>
+                    <label class="form-check-label" for="other">
+                        Otro
+                    </label>
+                </div>
+            </fieldset>
+            <div class="mb-3">
+                <label for="description" class="form-label">Mensaje:</label>
+                <textarea class="form-control" id="description" rows="8" cols="30" required></textarea>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

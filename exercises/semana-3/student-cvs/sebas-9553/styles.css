@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: honeydew;
+  color: #333;
+}
+
+.header {
+  color: #94a3b8;
+  padding: 10px;
+  text-align: center;
+}
+
+h1,
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  color: seagreen;
+}
+
+code {
+  padding: 2px;
+  color: crimson;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  font-family: Consolas, "courier new";
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hello {
+  font-size: 20px;
+}
+
+.github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: hotpink;
+}
+
+.footer {
+  color: green;
+  padding: 50px;
+    text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    max-width: 600px;
+    font-size: 16px;
+    margin: 0 auto;
+    background: #f3f4f6;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1 {
+    line-height: 1.5;
+    margin-top: 50px;
+  }
+
+  p {
+    line-height: 1.1;
+  }
+
+  span {
+    color: blue;
+  }
+
+  code {
+    padding: 2px;
+    color: crimson;
+    background-color: #f1f1f1;
+    font-size: 14px;
+    font-family: Consolas, "courier new";
+  }
+
+  .header {
+    color: #c3c3c3;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .hello {
+    font-size: 20px;
+  }
+  .footer {
+    color: #666;
+    padding: 50px;
+    text-align: center;
+  }
+}

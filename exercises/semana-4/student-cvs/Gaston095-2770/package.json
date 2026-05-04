@@ -1,0 +1,22 @@
+{
+  "name": "gaston095-2770",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "sass": "sass styles/main.scss styles/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1",
+    "vite": "^4.3.7"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  }
+}

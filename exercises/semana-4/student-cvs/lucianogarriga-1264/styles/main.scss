@@ -1,0 +1,40 @@
+@use "./reset.scss";
+@use "./base.scss";
+@use "./variables.scss";
+@use "./contact.scss";
+@use "./footer.scss";
+@use "./desktop.scss";
+
+
+/* MAIN */
+main{
+    display: flex; 
+    flex-direction: column;
+}  
+
+
+/* SECTION PAGES */
+.section-pages{
+    display: block;
+}
+.sections-sub{
+    font-size: 1.5rem;
+    color: var(--color-astronaut);
+}
+.l-about{
+    font-size: 1rem;
+    line-height: 1.5; 
+    text-align: justify;
+    margin: 0 2rem 0 7px;
+
+} 
+.content{
+    margin: 1rem 0.2rem 1.5rem;
+}
+
+// ABOUT
+
+.about-article{
+    max-width: 50em;
+    margin: 0 auto; 
+}

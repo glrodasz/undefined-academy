@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;800&display=swap');
+
+    $font-default: 'Inconsolata', monospace;
+    $base-size: 18px;
+
+
+
+    // COLOR TOKENS -------------------
+    $color-bittersweet: #FF6060;
+    $color-cod-gray: #191919;
+    $color-hint-of-green: #e6ffef;
+
+
+    $color-primary: $color-bittersweet;
+    $color-dark: $color-cod-gray;
+    $color-light: $color-hint-of-green;

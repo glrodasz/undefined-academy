@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;1,400&family=Raleway:wght@400;700;900&family=Staatliches&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat' , sans-serif ;
+}
+
+body{
+    background-color: #212025;
+
+}    
+
+nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-column: 1 /4;
+        grid-row: 1 / 2;
+
+}
+        
+ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 40px;
+        color: aliceblue;
+        margin: 50px;
+        
+        
+        
+}
+
+input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid Gainsboro;
+    width: 350px;
+    background: WhiteSmoke;
+    margin-right: 50px ;
+    
+  }
+ 
+.container_cards{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.card{
+    width: 280px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0,1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur (5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.cover__card{
+    width: 100%;
+    height: 180px;
+    
+
+}
+
+.cover__card img{
+    width: 160px;
+    height: 160px;
+    border-radius: 18px;
+}
+img{
+    width:  100%;
+    height: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.card h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: aliceblue;
+
+}
+
+.card p{
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: aliceblue;
+    letter-spacing: 0.3px;
+}
+
+.card hr{
+    margin-top: 30px;
+    border: none;
+    height: 0.2px;
+    background-color: #41414138;
+
+}
+
+.footer__card{
+    margin-top: 10px;
+    display: flex;
+    color: aliceblue;
+    justify-content: space-between;
+    
+
+}
+.footer__card h3{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.post_card {
+    
+    display: grid; 
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0,1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    max-width: 880px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    justify-content: center;
+    margin-left: 240px ;
+  }
+
+  .cover_pcard{
+    margin: auto;
+    max-width: 400px;
+    color: aliceblue;
+}
+
+h2, p{
+    color: aliceblue;
+    margin-top: 15px;
+}

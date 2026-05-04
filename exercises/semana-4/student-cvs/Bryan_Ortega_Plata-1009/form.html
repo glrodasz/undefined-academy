@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="container-form">
+        <h1>Contactame</h2>
+            <form class="form">
+                <div class="form-group">
+                    <label for="name">Nombres</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Apellidos</label>
+                    <input type="text" id="lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="menssage">Mensaje</label>
+                    <textarea id="menssage" cols="40" rows="5" required></textarea>
+                </div>
+                <button class="button-send" type="submit">Enviar</button>
+            </form>
+            </section>
+    </div>
+</body>
+<script type="module" src="main.mjs"></script>
+
+</html>

@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+:root{
+  --claro: #f4eeff;
+  --oscuro: #424874;
+  --primario: #a6b1e1;
+  --secundario: #dcd6f7;
+  --blanco: #ffffff;
+  --negro: #000000;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px */
+  font-family: 'PT Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+  min-height: 100vh;
+  background: rgb(244,238,255);
+  background: linear-gradient(185deg, rgba(244,238,255,0.804359243697479) 0%, rgba(220,214,247,0.6951155462184874) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-size: 10rem;
+  text-shadow: var(--oscuro) 1px 0 10px;
+}
+
+h2 {
+  font-size: 3rem;
+  color: var(--oscuro);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+ul{
+  list-style: none;
+}
+li{
+  text-decoration: none;
+}
+
+a, button{
+  cursor: pointer;
+}
+
+/*Utilidades*/
+
+.contenedor{
+  max-width: 120rem;
+  width: 95%; 
+}
+
+.centrado{
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
+
+.no-margen{
+  margin: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+/*HEADER*/
+
+.header{
+  width: 100%;
+  height: 70rem;
+}
+
+/*Navegacion*/
+
+.navegacion{
+  width: 100%;
+  height: 8rem;
+  background-color: var(--oscuro);
+}
+
+.navegacion-header{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link a, .footer a{
+  color: var(--claro);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem;
+  transition: color .3s ease-in-out;
+}
+
+.link a:hover, .footer a:hover{
+  color: var(--primario);
+}
+
+/*Busqueda*/
+
+.barra-busqueda input[type=text]{
+  width:30rem;
+  height:2.5rem;
+  border-radius:.5rem;
+  border: none;
+  color: var(--oscuro);
+  font-family: 'PT Sans', sans-serif;
+}
+
+.barra-busqueda input[type=text]:focus{
+  outline: none;
+}
+   
+.barra-busqueda button{
+  background-color: transparent;
+  color: var(--claro);
+  float: right;
+  padding: .5rem 1rem;
+  margin-right: 1.6rem;
+  border: none;
+}
+
+.barra-busqueda button:hover{
+  color: var(--primario);
+}
+
+/*hero*/
+
+.hero {
+	background-image: url(../imgs/hero.webp);
+  
+  background-attachment: fixed;/*efecto parallax*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: var(--blanco);
+}
+
+.hero span{
+  text-transform: uppercase;
+  letter-spacing: 2rem;
+  color: var(--secundario);
+}
+
+/*MAIN*/
+
+/*blog*/
+
+.articulos{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.articulo{
+  display: inline-block;
+  margin: 0 auto;
+}
+/*card*/
+
+.card {
+  position: relative;
+  width: 30rem;
+  height: 40rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.imagen-card {
+  height: 40rem;
+  width: 30rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.imagen-card img {
+  width: 100%;
+}
+
+.contenido-card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--claro);
+  color: var(--oscuro);
+}
+
+.titulo-contenido-card {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.texto-contenido-card {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.boton-card {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--oscuro);
+  color: var(--claro);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color .3s ease-in-out;
+}
+
+.boton-card:hover {
+  background-color: var(--primario);
+}
+
+.footer{
+  background-color: var(--oscuro);
+  width: 100%;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+.redes{
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p{
+  text-align: center;
+  color: var(--claro);
+}
+

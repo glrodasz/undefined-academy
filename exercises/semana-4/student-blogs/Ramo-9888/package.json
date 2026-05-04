@@ -1,0 +1,21 @@
+{
+  "name": "student-blogs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "vite": "vite",
+    "sass": "sass src/styles/main.scss src/styles/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.63.4",
+    "vite": "^4.3.9"
+  },
+  "description": "",
+  "dependencies": {
+    "dayjs": "^1.11.8"
+  }
+}

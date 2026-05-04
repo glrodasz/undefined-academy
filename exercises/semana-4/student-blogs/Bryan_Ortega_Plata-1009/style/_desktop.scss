@@ -1,0 +1,64 @@
+@use "./utilidades";
+@media (min-width: 801px) {
+  body {
+    div {
+      header {
+        @include utilidades.section-padding(1.5rem, 8rem);
+      }
+    }
+  }
+
+  .articulos {
+    @include utilidades.section-padding(0rem, 8rem);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .articulo {
+      width: 30%;
+    }
+  }
+
+  .articulo-especial {
+    @include utilidades.section-padding(0rem, 8rem);
+    .articulo {
+      display: flex;
+      gap: 2rem;
+      border-bottom: 0;
+      box-shadow: utilidades.$Shadow;
+      padding: 20px;
+      border-radius: 5px;
+      .img-articulo {
+        height: 100%;
+      }
+      .tags {
+        div {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .menu-navegacion {
+    display: block;
+    float: right;
+    ul {
+      align-items: center;
+      flex-direction: row;
+      gap: 40px;
+      padding: 0px;
+      li {
+        list-style: none;
+        a {
+          color: utilidades.$black;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  label {
+    .menu {
+      display: none;
+    }
+  }
+}

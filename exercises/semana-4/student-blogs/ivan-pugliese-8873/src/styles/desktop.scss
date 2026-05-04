@@ -1,0 +1,22 @@
+@media screen and (min-width: 1000px) {
+    .news-container {
+      width: 980px;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: auto;
+    }
+
+    .featured-new {
+      flex-direction: row;
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+
+    .featured-new img {
+      width: 200px;
+    }
+
+    .footer {
+      flex-direction: row;
+      gap: 2rem;
+    }
+  }

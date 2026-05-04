@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 700px;
+    margin: 100px auto;
+    padding: 0 40px;
+    font-size: 15px;
+    font-family: 'poppins';    
+    background: #242933;
+    color: #727ea3;
+}
+
+h1, h2 {
+    color: #9db2f7;
+}
+
+strong {
+    color:#9ba4c4;
+}
+
+.titlelearning{
+    margin-bottom: 30px;
+}
+
+.learning {
+    letter-spacing: 20px;
+    border: #40465d 2px dotted;
+    padding: 37px 10px 10px 10px;
+}
+
+.hrnormal {
+    height: 1px;
+    background-color:#40465d;
+    border: none;
+}
+
+.courses {
+    padding-left: 0%;
+    padding-top: 20px;
+}
+
+.certificates {
+    font-size: 13px;
+    padding: 0 40px;
+}
+
+a {
+    color: #7b8196;
+    font-size: 14px;
+    display:block;
+    line-height: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h4 {
+    color: #7b8196;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.networks {
+    display: flex;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        max-width: 100%;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .learning {
+        padding-top: 25px;
+        padding-bottom: 3px;
+    }
+}

@@ -1,0 +1,28 @@
+@import "variables.scss";
+
+@media screen and (min-width: 700px) {
+    body {
+        background: $prussianBlue;
+        color: $whiteLinen;
+    }
+    .navbar {
+        background-color: $pearlBush;
+    }
+    a{
+        color: $mandy;
+    }
+    .navbar-nav{
+        @if $whiteLinen==#F9F5EB{
+            &:hover{
+                background: $whiteLinen;
+            }
+        }
+    }
+    .footer {
+        color: $prussianBlue;
+        background: $mandy;
+        & a{
+            color: $prussianBlue;
+        }
+    }
+}

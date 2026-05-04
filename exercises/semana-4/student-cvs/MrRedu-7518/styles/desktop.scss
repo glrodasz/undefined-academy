@@ -1,0 +1,45 @@
+@use "variables.scss";
+
+
+// desktop variacioón
+
+@media screen and (min-width: 1100px) {
+    .father-container {
+
+        .main-container {
+            flex-direction: row;
+
+            main > .whoaim {
+
+                .container-info {
+                    footer {
+                        a.read-more:hover {
+                            background-color: variables.$v850;
+                        }
+                    }
+                }
+            }
+            main > .container-form {
+                margin-top: 40px;
+
+            }
+            .achievements {
+                margin: 0;
+
+                section.bootcamps {
+
+                    article.anAchievement {
+                        padding: 40px 80px;
+                        footer {
+                            span {
+                                a:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

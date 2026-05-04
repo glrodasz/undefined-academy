@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <title>Contact</title>
+  </head>
+  <body class="bg-purple-900 font-oxygen">
+    <div class="w-11/12 max-w-6xl mx-auto">
+      <header class="p-16 flex flex-col items-center justify-center gap-y-8">
+        <h1 class="text-cyan text-5xl font-bold">Contact Me</h1>
+        <p class="text-xl text-center text-white leading-8">
+          I´m interested in finding
+          <span class="text-pink font-bold">my first job in tech</span>. But if
+          what you need is a
+          <span class="text-pink font-bold">freelance developer</span>, don´t
+          hesitate to reach me out!
+        </p>
+      </header>
+      <section class="flex justify-center">
+        <form class="bg-purple-500 p-12 rounded-2xl w-11/12 max-w-lg mb-5">
+          <div class="flex flex-col gap-y-2 mb-4">
+            <label class="text-lg font-bold text-white" for="name">Name</label>
+            <input
+              class="p-2.5 rounded-lg text-slate-700"
+              type="text"
+              id="name"
+              placeholder="Your name"
+              required
+            />
+          </div>
+          <div class="flex flex-col gap-y-2 mb-4">
+            <label class="text-lg font-bold text-white" for="email"
+              >Email</label
+            >
+            <input
+              class="p-2.5 rounded-lg text-slate-700"
+              type="email"
+              placeholder="email@example.com"
+              required
+            />
+          </div>
+          <div class="flex flex-col gap-y-2 mb-4">
+            <label class="text-lg font-bold text-white" for="type"
+              >Contact Type</label
+            >
+            <select
+              class="p-2.5 rounded-lg text-slate-700"
+              name="type"
+              id="type"
+            >
+              <option selected disabled>Choose one</option>
+              <option value="job">Job</option>
+              <option value="freelance">Freelance project</option>
+            </select>
+          </div>
+          <div class="flex flex-col gap-y-2 mb-4">
+            <label class="text-lg font-bold text-white" for="message"
+              >Message</label
+            >
+            <textarea
+              class="p-2.5 rounded-lg text-slate-700 resize-none"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Your message"
+            ></textarea>
+          </div>
+          <button
+            class="bg-pink text-white font-bold py-2 px-4 mx-auto block rounded-xl"
+            type="submit"
+          >
+            Send Message
+          </button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

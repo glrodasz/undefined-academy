@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'Rubik Mono One', sans-serif;*/
+    font-family: 'Inter', sans-serif;
+}
+
+.mainHeader {
+    /*background-color: #263d36;*/
+    background-image: url(../img/bg-image.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 7vw 0;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(111, 113, 135);
+    text-shadow: 3px 5px 7px rgba(0, 0, 0, 0.47);
+    -webkit-text-stroke: 0.5px rgb(234, 234, 234);
+}
+
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    margin: 0 auto;
+    max-width: 45em;
+    line-height: 1.5;
+    padding: 3em 1em;
+    color: #566b78;
+    /*background-color: #e9e9e9;*/
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.50) 50%);
+    background-blend-mode: soft-light, screen;
+}
+
+
+h2 {
+    margin: 1em 0;
+    padding-top: 1em;
+}
+
+h3 {
+    margin: 0.8em 0;
+}
+
+p {
+    margin: 0.5em;
+}
+
+h2,
+strong {
+    color: #333;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+td:first-child {
+    font-weight: 600;
+    background: #e0e0e0;
+    border-bottom: 1px solid #d8dee9;
+    color: #6d6e72;
+    padding: 10px 5px;
+    vertical-align: text-bottom;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    color: crimson;
+    height: 40px;
+    background-color: #e0e0e0;
+}
+
+.code {
+    margin: 1.5em;
+    font-weight: 600;
+    background: #e0e0e0;
+    border-bottom: 1px solid #d8dee9;
+    color: #6d6e72;
+    padding: 10px 5px;
+    vertical-align: text-bottom;
+    box-shadow: 10px 10px 20px -10px rgb(187, 187, 187);
+}
+
+a {
+    color: crimson;
+    text-decoration: none;
+}
+
+/* FORM */
+
+.section-form {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-form h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.header-form {
+    padding: 1em 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.header-form ion-icon {
+    color: crimson;
+    font-size: 1.5em;
+    margin: auto 1em auto 0;
+}
+
+form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------ */
+
+.input-box {
+    position: relative;
+    margin: 15px auto 15px;
+    width: 310px;
+    border-bottom: 2px solid crimson;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    /*Que hace? */
+    font-size: 1em;
+    pointer-events: none;
+    /*Que hace?*/
+    transition: 0.5s;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+
+}
+
+.input-box ion-icon {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    color: crimson;
+    font-size: 1.2em;
+}
+
+/* ---------- */
+
+fieldset {
+    margin: 10px;
+    padding: 0px 18px;
+    width: 310px;
+    border: 1px solid crimson;
+    border-radius: 20px;
+}
+
+fieldset legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+fieldset label {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px 10px 10px;
+    border-radius: 31px;
+    transition: .25s ease;
+}
+
+fieldset label:hover,
+input[type="radio"]:checked+label {
+    background-color: #DCD9D4;
+}
+
+fieldset label:before {
+    content: "";
+    background-color: #DCD9D4;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: .25s ease;
+    box-shadow: inset 0 0 0 2px crimson;
+}
+
+input[type="radio"]:checked+label:before {
+    box-shadow: inset 0 0 0 6px crimson;
+    background-color: #DCD9D4;
+}
+
+/* -------------------- */
+
+.container-menssage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menssageBox {
+    margin: 15px;
+    padding: 0;
+    width: 310px;
+}
+
+textarea {
+    width: 100%;
+    height: 175px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid crimson;
+    border-radius: 20px;
+    background-color: #DCD9D4;
+    font-size: 16px;
+    resize: none;
+}
+
+form button {
+    font-size: 1em;
+    font-weight: 600;
+    color: #DCD9D4;
+    background-color: crimson;
+    height: 35px;
+    width: 80px;
+    border: 1px solid crimson;
+    border-radius: 18px;
+}
+
+form button:hover {
+    background-color: #DCD9D4;
+    color: crimson;
+    border: 3px solid crimson;
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        max-width: 50em;
+    }
+    .section-form{
+        margin: auto;
+    }
+    .input-box,fieldset, .menssageBox {
+        width: 470px;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    body{
+        max-width: 55em;
+    }
+    .input-box,fieldset, .menssageBox {
+        width: 570px;
+    }
+
+    textarea{
+        height: 200px;
+    }
+}

@@ -1,0 +1,126 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+    /* estudiarlo */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    background: white;
+    color: #566b78;
+    color: #555;
+    line-height: 1.5;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+/* header */
+.header {
+    background: linear-gradient(to right, #dd2476, #ff512f);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 4rem 4rem;
+    text-align: center;
+    max-width: none;
+}
+
+.header__img {
+    display: inline-block;
+    height: 120px;
+    vertical-align: top;
+    width: 120px;
+}
+
+.header__title {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 300;
+    font-family: "Raleway", sans-serif;
+    text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.header__github--link {
+    /* border: 1px solid #e81c4f; */
+    border: 2px solid #333;
+    border-radius: 290486px;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    padding: 1em 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.header__github--link:hover {
+    /* background:  #e81c4f; */
+    background: #333;
+    color: white;
+}
+
+.header__parrafo {
+    text-align: center;
+    padding-top: 1rem;
+    color: white;
+    margin-top: 2rem;
+}
+
+code > em {
+    color: white;
+}
+
+/* footer */
+.footer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: rgb(251, 248, 248);
+    padding: 2rem;
+    border-top: 1px solid rgb(179, 178, 178);
+}
+
+.footer__button strong {
+    color: #e41a4a;
+}
+
+.footer__button:hover {
+    background: #e41a4a;
+    border-color: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.footer__button {
+    font-size: 0.8em;
+    padding: 1em 2em;
+    color: #b0bfc7;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+}
+
+.footer__button:hover strong {
+    color: white !important;
+}

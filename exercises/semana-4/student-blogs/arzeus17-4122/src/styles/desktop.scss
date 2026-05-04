@@ -1,0 +1,16 @@
+@import "variables.scss";
+
+@media screen and (min-width: 992px) {
+    body {
+        background-color: $EasternBlue;        
+        color: $AliceBlue;
+    }
+    div {
+        background-color: $DeepSeaGreen;
+    }
+    .container {
+        width: 100%;
+        background-color: $DownRiver;      
+        color: $AliceBlue;
+    }
+}

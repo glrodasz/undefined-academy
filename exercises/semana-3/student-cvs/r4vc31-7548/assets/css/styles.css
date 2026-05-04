@@ -1,0 +1,300 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+
+.animated-image {
+    border-radius: 25%;
+    transition: 1s all;
+}
+
+.animated-image:hover {
+    transform: scale(1.05) rotate(5deg);
+}
+
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 2em 1em;
+    color: #566b78;
+}
+
+body>header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 100px;
+    padding: 1rem;
+
+}
+
+.icon {
+    display: none;
+}
+
+nav>ul {
+    display: none;
+}
+
+h1,
+h2,
+strong {
+    color: #333;
+}
+
+#description {
+    text-align: center;
+}
+
+a {
+    color: lightseagreen;
+}
+
+span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.contact {
+    width: 100%;
+    margin: 1rem auto;
+    border-style: outset;
+    border-radius: 4px;
+
+}
+
+.contact h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+    /*background-color: hsla(160, 100%, 75%, 20%);*/
+    padding: 1rem;
+    border-radius: 20px;
+    /*box-shadow: 0px 0px 10px 15px hsla(160, 100%, 75%, 30%);*/
+}
+
+form div {
+    width: 100%;
+    padding: 0.25rem;
+}
+
+label {
+    display: inline-block;
+    width: 25%;
+    padding: 0.2rem 0;
+    vertical-align: top;
+}
+
+input,
+select {
+    width: 25%;
+}
+
+fieldset label {
+    display: block;
+}
+
+button {
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 4px lightgrey;
+    transition: 0.5s all;
+}
+
+button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.social-icons-container, .skill-icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.1s;
+    gap: 1rem;
+    margin: 1rem 0;
+    justify-content: center;
+}
+
+.social-icons-container a, .skill-icons-item {
+    height: 70px;
+    width: 70px;
+}
+
+.social-icons-item, .skill-icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0.1rem 0.25rem;
+    box-shadow: 0px 0px 4px 4px lightgrey;
+}
+
+.social-icons-item:hover {
+    box-shadow: 0px 0px 4px 4px lightseagreen;
+}
+
+.social-icons-container .social-icon {
+    height: 50px;
+}
+
+.principal-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.principal-item {
+    text-align: center;
+}
+
+.project-image {
+    height: 30vh;
+    width: 100%;
+    min-width: 250px;
+    object-fit: cover;
+    transition: all 0.5s;
+    box-shadow: 0px 0px 4px 4px lightslategray;
+}
+
+.project-image:hover {
+    transform: scale(120%);
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0px 0px 4px 4px lightgrey;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+figure {
+    padding: 0.1rem;
+    margin: 0;
+}
+
+figcaption {
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.about-project {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: lightgrey;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20%;
+    border-radius: 4px;
+    padding: 0.25rem;
+    gap: 0.5rem;
+}
+
+.about-project div a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.about-project div a .social-icon {
+    height: 100%;
+    width: 100%;
+}
+
+.about-project .social-icon {
+    transition: all 1s;
+}
+
+.about-project .social-icon:hover {
+    transform: rotate(5deg);
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 4px lightseagreen;
+}
+
+
+.download-cv {
+    display: flex;
+    flex-direction: row;
+}
+
+.download-cv a {
+    width: 40px;
+    height: 40px;
+}
+
+
+footer {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+    .principal-container {
+        flex-direction: row;
+    }
+
+    .icon {
+        display: block;
+        height: 10vh;
+        object-fit: cover;
+    }
+
+    nav>ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .project-image {
+        height: auto;
+        width: 100%;
+    }
+
+    .about-project {
+        flex-direction: row;
+        justify-content: space-evenly;
+        background: lightgrey;
+        align-items: center;
+        width: 20%;
+        border-radius: 4px;
+    }
+
+}

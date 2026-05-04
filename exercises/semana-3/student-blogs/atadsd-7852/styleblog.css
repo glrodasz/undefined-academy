@@ -1,0 +1,238 @@
+@media only screen and (max-width: 400px) {
+
+    body {
+        margin: 0;
+        background-color: #333;
+        color: whitesmoke;
+    }
+
+    header {
+        background-image: url(/fotos/fotofondo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+    }
+
+    #logo {
+        width: 250px;
+        height: 250px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: whitesmoke;
+    }
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: whitesmoke;
+        margin-top: 1px;
+    }
+
+    .container {
+
+        padding: 5px;
+    }
+
+
+
+
+    img {
+        width: 100%;
+
+    }
+
+    #redes {
+        background-image: url(/fotos/Fondoredes.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+        border: 2px solid black;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+
+
+    body {
+        margin: 0;
+        background-color: #333;
+        color: whitesmoke;
+    }
+
+    header {
+        background-image: url(/fotos/fotofondo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+    }
+
+    #logo {
+        width: 250px;
+        height: 250px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: whitesmoke;
+    }
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: whitesmoke;
+        margin-top: 1px;
+    }
+
+    .container {
+
+        padding: 5px;
+    }
+
+
+
+
+    img {
+        width: 100%;
+
+    }
+
+    #redes {
+        background-image: url(/fotos/Fondoredes.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+        border: 2px solid black;
+    }
+}
+
+
+@media only screen and (min-width: 961px) {
+    header {
+        background-image: url(/fotos/fotofondo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: white;
+        line-height: 1.2;
+        padding: 5vw 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        border: 2px solid black;
+    }
+    .nav{display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    border: none;
+    }
+
+    #logo {
+        width: 100%;
+        width: 350px;
+        height: 350px;
+        flex-wrap: wrap;
+    }
+
+    body {
+        margin: 0 auto;
+        background-color: #303031;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 40px;
+        font-size: 20px;
+        font-style: normal;
+        margin-left: 20%;
+        margin-right: 30%;
+        color: white;
+    }
+
+    a:link,
+    a:visited {
+        color: whitesmoke;
+        text-decoration: none;
+
+    }
+
+
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+  .blog-boddy {
+        display: flex;
+        flex-direction: column;
+        border: 3px solid whitesmoke;
+        padding: 10px;
+        margin: 10px 2px 10px;
+        color: whitesmoke;
+    }
+
+
+    .item {
+        border: 2px solid black;
+        background-color: slategray;
+    }
+
+    .img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    div:last-child {
+        grid-column: 1 / 4;
+      }
+
+    #redes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        background-color: whitesmoke;
+        border: 2px solid black;
+        background-image: url(/fotos/Fondoredes.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+}

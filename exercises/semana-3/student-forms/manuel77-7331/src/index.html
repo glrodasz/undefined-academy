@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+    <main>
+        <nav class="navbar bg-dark">
+            <div class="container-fluid">
+                <a class="nav-link text-white active" href="index.html">Contact</a>
+            </div>
+        </nav>
+        <section class="container">
+            <h3 class="m-3 text-center">Contact</h3>
+            <form action="/server" method="get">
+                <div class="mb-3">
+                    <label class="form-label" for="name">Name:</label>
+                    <input class="form-control" id="name" name="name" type="text" placeholder="Full name" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="email">Email:</label>
+                    <input class="form-control" id="email" name="email" type="email" placeholder="email@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <fieldset>
+                        <legend class="col-form-label col-sm-2 pt-0">Reason for contact</legend>
+                        <div class="form-check">
+                        <label class="form-label">
+                        <input class="form-check-input" type="radio" name="reason" value="full" required>
+                        Full time job
+                        </label>
+                        </div>
+                        <div class="form-check">
+                        <label class="form-label">
+                        <input class="form-check-input" type="radio" name="reason" value="part">
+                        Part time job
+                        </label>
+                        </div>
+                        <div class="form-check">
+                        <label class="form-label">
+                        <input class="form-check-input" type="radio" name="reason" value="freelance">
+                        Freelance job
+                        </label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="subject">Subject:</label>
+                    <textarea class="form-control" name="subject" id="subject" rows="3" placeholder="your message" required></textarea>
+                    <div class="form-text">
+                        Your proposal in 200 words
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="terms">
+                        <input class="form-check-input" id="terms" type="checkbox" required>
+                        <span class="form-check-label">I accept terms and conditions</span>
+                    </label>
+                </div>
+                <button class="btn btn-primary">Send</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

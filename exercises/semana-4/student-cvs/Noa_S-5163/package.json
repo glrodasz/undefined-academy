@@ -1,0 +1,21 @@
+{
+  "name": "noa_s-5163",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "sass": "sass main.scss main.css",
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "vite": "^4.2.1"
+  }
+}

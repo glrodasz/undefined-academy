@@ -1,0 +1,23 @@
+{
+  "name": "dario-ernesto-roca-7375",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev:css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "dev:src": "vite dev src",
+    "dev": "concurrently \"npm run dev:css\" \"npm run dev:src\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^4.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "tailwindcss": "^3.3.1"
+  }
+}

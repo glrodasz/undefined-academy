@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="main.css">
+
+
+</head>
+
+<body>
+    <div class="informacion">
+        <header>
+            <figure>
+                <img src="https://avatars.githubusercontent.com/u/124321414?v=4" alt="photo">
+            </figure>
+        </header>
+        <div class="informacion-1">
+            <article>
+                <h2>Hola soy Enderson Quintero</h2>
+                <h4>Ingeniero Mecátronico, Soy Colombiano residenciado en Venezuela, tengo 26 años de edad.</h4>
+                <p>Estoy comenzando en el camino del aprendizaje de la programacion,
+                    <b>actualmente estoy aprediendo HTML,CSS y JAVASCRIPT</b> ,
+                    para poder convertirme en un futuro cercano en un desarrollador frotend.
+                </p>
+                <h3>Experiencias.</h3>
+                <ul>
+                    <li>
+                        <p> Actualmente no tengo ninguna experencia en el area del Desarrollo frotend-backend.</p>
+                    </li>
+                    <li>
+                        <p> como ingeniero Mecatronico tengo mas de 3
+                            años trabajando en diferentes áreas relacionadas a mi carrera</p>
+                    </li>
+
+                </ul>
+
+            </article>
+            <section>
+                <h3><b> Mis redes sociales:</b> </h3>
+                <ul>
+                    <li> <span> Mi perfil de github:</span>
+                        <a target="_blank" href="https://github.com/Ender96">Github</a>
+                    </li>
+                    <li>Mi perfil de linkedin: <a target="_blank"
+                            href="https://www.linkedin.com/in/enderson-jos%C3%A9-quintero-grimaldos-589614b1/">Linkedin</a>
+                    </li>
+                    <li>Mi perfil de twitter: <a target="_blank" href="https://twitter.com/Endergrimaldos">Twitter</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <section class="formulario">
+        <form  action="/server" method="get" onsubmit="return false;">
+            <h1>Contacto</h1>
+            <div class="form-1">
+                <label for="name">Nombre:</label>
+                <input id="name" type="text" placeholder="Indicame tu nombre" name="name"  required>
+            </div>
+            <div class="form-1">
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="Indicame tu correo electronico" 
+                name="email" required>
+            </div>
+            <div class="form-1">
+                <label for="Select">Selecciona tu nivel de experiencia:</label>
+                <select  name="select" id="Select" required>
+                    <option value="beginner">Begginer</option>
+                    <option value="junior">Junior</option>
+                    <option value="semi">Semi-junior</option>
+                    <option value="senior">Senior</option>
+                </select>
+            </div>    
+            <div class="form-2">
+                <input type="checkbox" id="accept" name="checkbox" required>
+                <label for="accept">Acepto los terminos y condiciones</label>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    <footer>
+        <p><b>Enderson Quintero publicado el:<time> 16 de marzo del 2023</time></b> </p>
+    </footer>
+
+</body>
+
+</html>

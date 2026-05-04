@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto</title>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<header>
+
+  <nav class="navbar navbar-expand-lg bg-body-primary ">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 cl" >
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="p-5 text-center bg-image" style="background-image: url('IMG_header.jpg'); height: 170px; ">
+    <div class="mask" style="background-color: rgba(255, 255, 255, 0.5); border: 2px solid darkblue; border-radius: 10px; justify-content: space-evenly;">
+      <div class="d-flex justify-content-center align-items-center h-auto">
+        <div class="text" style="color: darkblue;">
+          <h1 class="mb-3 mt-3">Formulario de contacto</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<body>
+
+  <div class="container py-4 px-3 w-75  mt-4" style="max-width: 500px; border: 2px solid rgb(29, 0, 95); border-radius: 15px; ">
+
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+      <input type="email" class="form-control autofocus" id="exampleFormControlInput1" placeholder="Ingrese su nombre">
+    </div>
+    
+    <div class="mb-4">
+      <label for="exampleFormControlInput1" class="form-label">Email</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@correo.com">
+    </div>
+
+    <div class="col-md-12 mb-4">
+      <label for="inputState" class="form-label">Desarrollo</label>
+      <select id="inputState" class="form-select">
+        <option selected>Seleccione un tipo de desarrollo</option>
+        <option>Aplicación Web</option>
+        <option>Aplicación de escritorio</option>
+        <option>Aplicación móvil</option>
+        <option>Diseño Web</option>
+      </select>
+    </div>   
+ 
+    <div class="mb-4">
+      <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+      <div id="passwordHelpBlock" class="form-text">
+        Describa el proyecto
+      </div>
+    </div>
+
+    <div class="botones row m">
+      <button class="btn btn-primary mb-3" type="submit">Enviar datos</button>
+      <button type="button" class="btn btn-secondary">Borrar</button>
+    </div>
+    
+  </div>
+</body>
+
+</html>

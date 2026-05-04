@@ -1,0 +1,37 @@
+@use "variables.scss" as variables;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+body {
+    font-family: Arial;
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 800px;
+    color: variables.$color-text;
+    background-color: variables.$color-secundary;
+    padding: 0;
+    line-height: 1.5;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 10px;
+    background-image: none;
+}
+
+
+@media (max-width: 768px) {
+    img {
+        display: none;
+        
+    }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil de GitHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <h1>Alejandro del Muro </h1>
+        <p> Principiante en el mundo de la programación </p>
+        <a href="https://github.com/Alepsss" target="_blank">Perfil de GitHub</a>
+    </header>
+    <nav class="navegation">
+        <ul class="navegation-list">
+            <li><a href="#">Bienvenida</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="/contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="center-box">
+        <main>
+            <article>
+                <h2>¿Quién soy?</h2>
+                <p> Soy originario de <strong>México</strong>, actualmente tengo 16 años, desde que me adentre al
+                    mundo
+                    de
+                    la
+                    programación fue una completa maravilla, llevo poco dentro de, pero me fascina. Tengo
+                    conociminetos
+                    de
+                    <strong>C ++, HTML y CSS</strong>, mi meta es poder comprender las bases de los demás lenguajes
+                    de
+                    programación y poco a poco adentrarme al mundo profesional de éste mundo.
+                </p>
+
+                <section class="hobbies">
+                    <h2>👀 Hobbies e intereses</h2>
+                    <ul class="hobbies-list">
+                        <li><span>🎬</span>Cine</li>
+                        <li><span>🎮</span>Videojuegos</li>
+                        <li><span>🎧</span>Música</li>
+                        <li><span>⚽</span>Deportes</li>
+                        <li><span>💻</span>Code</li>
+                        <li><span>🏎️</span>Vehículos</li>
+                        <li><span>✈️</span>Viajar</li>
+                        <li><span>🐶</span>Animales</li>
+                    </ul>
+                </section>
+
+
+                <section class="list">
+                    <h2>💻 Mis comandos de terminal favoritos</h2>
+                    <table>
+                        <tr>
+                            <th>Comando</th>
+                            <th>Descripción</th>
+                        </tr>
+                        <tr>
+                            <td>Ctrl + u</td>
+                            <td> Borra la línea</em> que estamos utilizando, para darle un <strong>nuevo uso</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> Flecha arriba</td>
+                            <td> La flecha arriba nos permite navegar entre comandos antes <strong>ya
+                                    utilizados</strong>, y así, <em>reutilizarlos</em>.</td>
+                        </tr>
+                        <tr>
+                            <td> ls </td>
+                            <td> Nos muestra el <strong>contenido</strong> al encontrarnos en
+                                un <strong>directorio</strong>.</td>
+                        </tr>
+                        <tr>
+                            <td> pwd </td>
+                            <td> Nos muestra en qué <strong>ubicación</strong> nos encontramos del
+                                <strong>directorio</strong>.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> cd </td>
+                            <td> Nos permite <strong>cambiar de directorio</strong> al que le mencionemos que
+                                deseamos hacerlo. </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section class="list">
+                    <h2> 💻 Alias que me parecieron utiles</h2>
+                    <table>
+                        <tr>
+                            <th>Alias</th>
+                            <th>Descripción</th>
+                        </tr>
+                        <tr>
+                            <td> nvmy </td>
+                            <td> Le indicamos que use la <em>version 18 de Node.js</em> </td>
+                        </tr>
+                        <tr>
+                            <td> mostused </td>
+                            <td> Nos muestras nuestros <strong>10 comandos</strong> más utilizados </td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+
+            <article>
+                <h1>Comentarios</h1>
+                <hr>
+                <section>
+                    <h2 class="about">Información Personal</h2>
+                    <hr>
+                    <form id="coment-form" action="" method="post">
+                        <div class="form-group">
+                            <label for="name">Nombre:</label>
+                            <input type="text" name="name" id="name" placeholder="Ingrese su nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">Número telefónico:</label>
+                            <input type="tel" name="phone" id="tel" placeholder="Ingrese su número telefónico" required>
+                        </div>
+                </section>
+                <section>
+
+                    <div class="form-group">
+                        <label for="description">Mensaje</label>
+                        <textarea name="description" id="description" cols="30" rows="8" required  placeholder="Escribe tu mensaje"></textarea>
+                        <div class="help">
+                            Escribe tu comentario en al menos 100 palabras.
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">¿En qué fecha me contactas?</label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+
+                </section>
+                <footer>
+                    <button type="submit">Enviar</button>
+                    <div class="help">Gracias por haber contactado con Alejandro del Muro, tendrás una respuesta pronto,
+                        hasta luego!.</div>
+                </footer>
+                </form>
+            </article>
+    </div>
+
+    <footer>
+        <address>
+            Dudas o preguntas, por favor contacte
+            <a href="mailto:alex2524@outlook.es">Alejandro</a>
+        </address>
+        <div class="line">
+            <p>Por Alejandro del Muro, publicado en
+                <time datetime="2023-05-01 19:00">Mayo 1st 2023</time>
+            </p>
+        </div>
+    </footer>
+    </main>
+
+    <!--http://localhost:8080/aleps/index.html-->
+
+    <script async defer type="module" src="main.mjs"></script>
+</body>
+
+</html>

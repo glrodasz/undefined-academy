@@ -1,0 +1,20 @@
+@use "../../styles/variables.scss" as *;
+
+.category {
+  margin: 10.4rem 0;
+  padding: 4.2rem 0;
+  background-color: $Black;
+  display: none;
+  color: white;
+}
+
+.category .container-row{
+  gap: 3rem;
+}
+
+.category .container-col {
+  max-width: 117.2rem;
+  margin: 0 auto;
+  /* padding: 0 1rem; */
+  box-sizing: content-box;
+}

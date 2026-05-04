@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+#header {
+    text-align: center;
+    padding-bottom: 5px;
+    border: 2px solid azure;
+    border-radius: 7px;
+    background-image: url("");
+}
+
+.mi-nombre {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    -webkit-text-fill-color: #00ffffd7;
+    -webkit-text-stroke: 1px #008b8b7d;
+    font-family: 'Alfa Slab One';
+    font-size: 33px;
+}
+
+.waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+    font-size: 60px;
+}
+
+#p-mi-nombre {
+    margin: 15px 0px;
+}
+
+.mi-nombre span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+
+}
+
+@keyframes waviy {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-20px)
+    }
+}
+
+code {
+    color: cyan;
+    background-color: #212529;
+    padding: 2px 4px;
+    vertical-align: text-bottom;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    padding: 2em 1em;
+    background-image: url("/img/fondo-divpanda-cv-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150% 100%;
+}
+
+#main-content {
+    margin-top: 12px;
+}
+
+#main-content,
+.cards-exp-hob {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+h1,
+h2 {
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    background-position: 509px;
+    background-size: 75px;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+#introduccion,
+#experiencia-previa,
+#hobbies-intereses,
+#encuéntrame {
+    border: 2px solid azure;
+    margin: 0 auto;
+    padding: 13px;
+    border-radius: 7px;
+    background-color: #353333c9;
+    width: 100%;
+}
+
+#resaltable {
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid azure;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#encuéntrame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: unset;
+
+}
+
+#botones-encuéntrame {
+    display: flex;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.plataformas-educativas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+a {
+    display: contents;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+a>img {
+    height: 50px;
+    object-fit: contain;
+}
+
+a>p{
+    margin: 0;
+    text-align: center;
+    font-size: larger;
+}
+
+#boton-platzi:hover {
+    background-color: rgba(153, 205, 50, 0.295);
+}
+
+#boton-freecodecamp:hover {
+    background-color: #575353;
+}
+
+#boton-github {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    color: aliceblue;
+    background-color: transparent;
+    border: 2px solid azure;
+    text-decoration: none;
+    background-image: url("../img/github-logo-dark.png");
+    background-repeat: no-repeat;
+    background-position: 9px;
+    background-size: 25px;
+
+}
+
+#boton-github:hover {
+    background-color: #575353be;
+}
+
+#boton-contáctame {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    height: 35px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    color: aliceblue;
+    background-color: transparent;
+    border: 2px solid azure;
+    text-decoration: none;
+}
+
+#boton-contáctame:hover {
+    background-color: #575353be;
+}
+
+.footer-body {
+    text-align: center;
+    opacity: .9;
+}
+
+hr {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    body {
+        max-width: 950px;
+        background-image: url("../img/fondo-divpanda-cv.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+
+    #main-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 12px;
+        row-gap: 14px;
+        margin-top: 14px;
+    }
+
+    #introduccion {
+        grid-column: 1 / 4;
+    }
+
+    .cards-exp-hob {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column: 1 / 4;
+        column-gap: 14px;
+    }
+
+    .mi-nombre {
+        gap: 10px;
+    }
+
+    #encuéntrame {
+        display: grid;
+        grid-column: 1 / 4;
+        width: 100%;
+        place-items: center;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+
+    #resaltable {
+        padding: 0 10px;
+        background-image: url("/img/fondo-divpanda-cv.jpg");
+    }
+
+}

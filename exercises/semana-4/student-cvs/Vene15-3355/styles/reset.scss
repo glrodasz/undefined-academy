@@ -1,0 +1,17 @@
+@use "./variables.scss" as *;
+
+html,
+body {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  background: $twilight;
+  color: 333;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}

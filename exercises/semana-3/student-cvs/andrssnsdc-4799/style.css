@@ -1,0 +1,325 @@
+html {
+  box-sizing: border-box;  
+  }
+* {
+box-sizing: inherit;  
+}
+.page {
+  border:2px solid lightcyan;
+  max-width: 500px;
+  margin: 15px auto;
+  padding: 0 40px; 
+  font-family: Arial, Helvetica, sans-serif;
+} 
+
+body {
+    background-color: #c8c9c8;
+    margin: 0 auto;
+    max-width: 600;
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #555;
+    color: #566b78;
+  }
+
+  body p {
+    text-align: unset;
+  }
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+  }
+
+h1, h2, strong {
+  color: #4b1111;
+}
+
+a {
+    color: #979797;
+  }
+  
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+body {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  }
+  header {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("header.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 350px;
+    line-height: 1.2;
+    max-width: 100%;
+    
+  }  
+  .logo {
+    
+    margin-top: 15px ;
+    height: 120px;
+    vertical-align: top;
+    width: 120px;
+  }
+  header h1 {
+    text-align: center;
+    font-family:"Star wars", fantasy;
+    color: rgb(236, 157, 37);
+    font-size: 2.5em;
+    font-weight: 300;
+    
+   
+  }
+  
+  .git {
+    border: 2px solid #e7a71d;
+    border-radius: 290486px;
+    color: rgb(226, 8, 0);
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+  }
+  
+  .git:hover {
+    background:  #90dd39;
+    color: white;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  footer p {
+    text-align: center;
+    font-family:"Helvetica", "Arial", sans-serif;
+    color: rgb(43, 41, 22);
+    font-size: 1em;
+    font-weight: 250;
+  }
+ 
+  footer a {
+    font-weight: bold;
+    height: 44px;
+    width: 200px;
+    margin: 20px auto;
+    border: 4px groove #45e3ffe3 ;
+    border-radius: 290486px;
+    color: rgb(87, 76, 76);
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+  }
+  
+  
+  footer a:hover {
+    background:  #646ac4b2;
+    color: white;
+  }
+  footer a:active {
+    background:  #30313bb7;
+    color: white;
+  }
+
+  form {
+    accent-color: rgba(67, 204, 163, 0.603);
+  }
+
+  .form-group { 
+  
+    margin: 15px 0;
+  }
+   label , input[type="text"], input[type="email"],input[type="tel"] {
+    width: 100%;
+    
+   }
+   label, input{
+    vertical-align: middle;
+   }
+   input:focus-visible, textarea:focus-visible{
+    border:  rgb(37, 209, 200);
+    outline: 2px solid lightseagreen;
+   }
+   input[type="text"], input[type="email"],input[type="tel"], textarea{
+    background: #d6e7b6;
+    border: 1px solid lightcyan;
+    border-radius: 5px;
+    padding: 6px 8px;
+    color: #333;
+   }
+   textarea{
+    display: block;
+    width: 100%;
+    resize: vertical;
+   }
+
+   .help{
+    font-size: 12px;
+    margin-top: 12px;
+    color: gray
+   }
+  
+   label, legend{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #444;
+  
+   }
+  button{
+    margin-bottom: 20px;
+    padding: 12px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid lightcyan;
+    background: lightgreen;
+    color: #4b1111;
+    text-shadow: -2px,-2px, 0 rgb(255, 255, 255, 0.5) ;
+    border-radius: 7px;
+    box-shadow: 3px, 3px, 9px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+  button:hover {
+    background: rgba(144, 238, 144, 0.507);
+  }
+  button:active {
+    background: rgb(101, 170, 101);
+    box-shadow: -3px, -3px, 0px rgba(0,0,0,0.5);
+    color: #421010a2;
+    text-shadow: 2px,2px, 0 rgb(255, 255, 255, 0.5) ;
+  }
+
+/*"estilos layout"*/
+
+.layouts {
+  
+    margin: 0 auto;
+    max-width: 600;
+    font-family: Courier New, monospace;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #555;
+    color: #566b78;
+}
+
+.container div {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(37, 209, 200);
+  padding: 10px;
+  background-color: #8cc5aa94;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+}
+
+input[type="search"] {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px rgb(37, 209, 200);
+  width: 400px;
+  background: WhiteSmoke;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px auto auto;
+  gap: 20px;
+}
+
+.container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1 /4;
+  grid-row: 1 / 2;
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+ div:last-child {
+  grid-column: 1 / 4;
+}
+
+@media screen and (max-width: 730px) {
+  footer a{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  input[type="search"] {
+    width: 40%;
+  }
+  
+  header{
+    line-height: 1; 
+    
+  }
+  
+
+  .git {
+    order: 1;
+    margin-bottom: -20%;
+    
+  }
+  header h1 {
+    margin-block-end: 5%;
+    order: 3; 
+  }
+  .logo {
+    display: flex; 
+    justify-content: center;
+    align-content: center;
+    order: 2; 
+  }
+
+  .formgroup fieldset {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 5%;
+  }
+  .container ul {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

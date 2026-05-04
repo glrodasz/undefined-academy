@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="main.scss">
+</head>
+<body>
+    <main class="page">
+
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">About-me</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <h1 class="img">My CVS</h1>
+    <div>
+        <figure class="img">
+            <img src="foto.jpg" alt="mi-foto-de-hoja-de-vida" width="140" height="140">
+        </figure>
+    </div>
+    <div>
+        <address>
+            <a href="https://github.com/marisolSv22" target="_blank">Profile Gihub</a>
+        </address>
+        <br>
+        <address>
+            <a href="https://www.linkedin.com/in/marisol-salazar-valencia-928091242/" target="_blank">Profile Linkedln</a>
+        </address>
+    </div>
+    <br>
+        <article>
+            <h2>Welcome</h2>
+                <section>
+                        <h2>My name is Marisol Salazar</h2>
+                        <p>- I am from Colombia, I live in Medellín</p>
+                        <p>- I am studying Sofwate Analisys and Development in the Sena</p>
+                </section>
+        </article>
+
+        <article>
+            <h3>Studies</h3>
+                <p>With knowledge in <strong>python</strong> and <strong>data analysis</strong> and <strong>management of sql databases</strong></p>
+        </article>
+
+        <article>
+            <h4>This is the five commands</h4> 
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td>clear</td>
+                                <td>clean screen</td>
+                            </tr>
+                            <tr>
+                                <td>ls</td>
+                                <td>list directory</td>
+                            </tr>
+                            <tr>
+                                <td>cd</td>
+                                <td>change directory</td>
+                            </tr>
+                            <tr>
+                                <td>yarn</td>
+                                <td>install dependecies</td>
+                            </tr>
+                            <tr>
+                                <td>alias</td>
+                                <td>list alias</td>
+                            </tr>
+                    </tbody>
+                </table>
+        </article>
+
+        <article>
+            <h4>This is my alias most used</h4>
+                    <p>alias mostused='history | awk '\''{print $2} '\'' | sort | uniq -c | sort -nr | head -n 10'</p>
+                    <p>alias cafe="cat /dev/urandom | hexdump | grep \"ca fe\""</p>
+        </article>
+
+        <form id="FormContact">
+            <h1 class="img">Contacto</h1>
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Ingrese su correo electronico" required>
+            </div>
+            
+            <div class="form-group">
+                <fieldset>
+                    <legend>Presupuesto</legend>
+
+                    <input type="radio" name="budget" id="10000" value="1000000">
+                    <label>$1.000.000</label>
+                    
+                    <input type="radio" name="budget" id="5000" value="5000000">
+                    <label>$5.000.000</label>
+                    
+                    <input type="radio" name="budget" id="1000" value="10000000">
+                    <label>$10.000.000</label>
+
+                </fieldset>
+                <div class="help">Este presupuesto es la base no el total.</div>
+            </div>
+            <div class="form-group">
+                <label for="type">Tipo de proyecto</label>
+                <select id="type" required name="type">
+                    <option disabled selected value="">Seleccione uno</option>
+                    <option value="website">Website</option>
+                    <option value="webapp">Webapp</option>
+                    <option value="mobile">Mobile app</option>
+                    <option value="design">Diseño Web</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción</label>
+                <textarea id="description" name="description" rows="5"></textarea>
+                <div class="help">
+                    Escribe una descripción del proyecto en almenos 500 palabras.
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="terms">
+                    <input id="terms" name="terms" type="checkbox" required>
+                    <span>Acepto los términos y condiciones</span>
+                </label>
+            </div>
+
+                <button type="submit">Enviar</button>
+        </form>
+
+        <div class="footer">
+            <footer>
+                © <time datetime="2023-03-15">2023</time> Realizado por Marisol Salazar Valencia, todos los derechos reservados.
+            </footer>
+        </div>
+
+</main>
+
+<script src="main.mjs" type="module"></script>
+
+</body>
+</html>

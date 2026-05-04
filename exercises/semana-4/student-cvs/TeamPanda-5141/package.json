@@ -1,0 +1,19 @@
+{
+  "name": "teampanda-5141",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "sass": "sass styles/main.scss styles/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.0",
+    "vite": "^4.3.1"
+  }
+}

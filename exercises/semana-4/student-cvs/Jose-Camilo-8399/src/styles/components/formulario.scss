@@ -1,0 +1,44 @@
+form {
+   padding: 30px 40px;
+   border-radius: 5px;
+   background: var(--color-form);
+   box-shadow: 1px 3px 5px rgba(70, 70, 70, 0.5);
+}
+
+/* form {
+   accent-color: #
+} */
+
+label,
+input,
+textarea {
+   display: block;
+   width: 100%;
+   color: var(--color-form-second);
+}
+
+label {
+   font-size: 0.9em;
+}
+
+textarea {
+   resize: vertical;
+}
+
+input,
+textarea {
+   border: 1px solid #c7c8ca;
+   border-radius: 0.4em;
+   padding: 0.7em 0.5em;
+}
+
+input::placeholder {
+   color: var(--color-humble-bellflower);
+   font-size: 1.1em;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+   outline: 1px solid var(--color-links-hover);
+   border: 1px solid var(--color-links-hover);
+}

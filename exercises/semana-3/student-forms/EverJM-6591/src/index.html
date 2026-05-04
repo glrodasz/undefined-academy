@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <div class="container mt-4">
+        <h1>Contacto</h1>
+        <hr>
+        <form action="#" method="get" class="row border border-2 border-primary rounded-4 p-3">
+            <div class="col-sm-12 col-md-5">
+                <div class="mb-3">
+                    <label for="txt_email" class="form-label ">Correo</label>
+                    <input type="email" class="form-control rounded-pill" id="txt_email">
+                </div>
+                <div class="mb-3">
+                    <label for="txt_name" class="form-label">Nombre Completo</label>
+                    <input type="password" class="form-control rounded-pill" id="txt_name">
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label" for="sert">Tipo de persona</label>
+                    <select class="form-select" id="sert">
+                        <option value="0">Persona Juridica</option>
+                        <option value="1">Persona Natural</option>
+                      </select>
+                    
+                </div>
+               
+            </div>
+            <div class="col-sm-12 col-md-7">
+                <div class="mb-3">
+                    <label for="txt_text" class="form-label">Dejanos un comentario</label>
+                    <textarea class="form-control" id="txt_text" rows="3"></textarea>
+                    
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="chk_ter">
+                    <label class="form-check-label" for="chk_ter">acepto los terminos</label>
+                </div>
+                  <button type="submit" class="btn btn-success rounded-pill px-4 py-2">Enviar formulario</button>
+            </div>
+            
+            
+        </form>
+    </div>
+  </body>
+</html>

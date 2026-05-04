@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+/* CLASES */
+.container{
+    max-width: 80rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+.red{
+    color: rgb(163, 39, 43);
+}
+
+.blue{
+    color: rgb(39, 23, 160);
+}
+
+.green{
+    color: rgb(30, 145, 30);
+}
+
+/* HEADER */
+header{
+    width:100% ;
+    height:50rem ;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.profile{
+    margin: 0 auto;
+    position: absolute;
+    top: 25%;
+    left: 43%;
+}
+
+.profile > .profile-img{
+    width: 15rem;
+    height: 15rem;
+    background-image: url('https://drive.google.com/uc?id=1Gv7DhO_2mBMhRbNa6sB9fv8AYyowDoBl');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+.profile > a{
+    display: inline-block;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    border: 1px solid #000;
+    border-radius: 2rem;
+    background-color: rgb(42, 39, 39);
+    color: rgb(76, 72, 72);
+    font-size: 2rem;
+    text-decoration: none;
+}
+.profile > a:hover{
+    cursor: pointer;
+    color: rgb(213, 222, 230);
+
+    
+}
+
+
+.img{
+
+    width: 100%;
+    height: inherit;
+    background-image: url('https://drive.google.com/uc?id=1ElfFTTl54dAARzTgCa8LHy_GDuLdWW8c');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+
+
+
+
+
+/*MAIN*/
+main{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.container > article > h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.container > article > p{
+    font-size: 2rem;
+    line-height: 3.5rem;
+    font-weight: bold;
+}
+
+.container > article > a{
+    display: inline-block;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid #000;
+    border-radius: 2rem;
+    background-color: rgb(42, 39, 39);
+    color: rgb(76, 72, 72);
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.container  > article > a:hover{
+    cursor: pointer;
+    color: rgb(213, 222, 230)
+}
+.container > article > .semana-1{
+    font-size: 3rem;
+    margin-top: 4rem;
+}
+
+.container > article > p{
+    font-size: 2rem;
+}
+
+table{
+    
+    background-color: rgb(206, 204, 206);
+    font-size: 2rem;
+    padding: 3rem;
+    margin: 2rem 0;
+}
+
+.container > table,tr ,td {
+    padding: 2rem;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+.semanas{
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+.semanas > h2{
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+
+.semanas > h3{
+font-size:2rem ;
+}
+
+.semanas > h1 {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+
+.cajas{
+    float: left;
+    margin-left: 4rem;
+    margin-bottom: 5rem;
+}
+
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    height: 20rem;
+    background-color: rgba(95, 103, 109, 0.833);
+    float: left;
+    position: absolute;
+    bottom: -90rem;
+    
+}
+
+footer > .text{
+    width: 50%;
+    height: 10rem;
+    float: left;
+    
+}
+
+footer > .text > address{
+   font-size: 2rem;
+    margin-top: 8rem;
+    margin-left: 2rem;
+}
+
+footer > .text > a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    background-color: rgb(42, 39, 39);
+    color: rgb(97, 101, 103);
+    cursor: pointer;
+}
+
+footer > .text > a:hover{
+    color: aliceblue;
+}
+
+footer > .text > a:active{
+    background-color: rgb(70, 65, 65);
+}
+
+footer > .icons{
+    display: inline;
+    width: 50%;
+    height: 15rem;
+    /* background-color: aqua; */
+    float: right;
+    
+}
+
+footer > .icons > span{
+    display: inline-block;
+    width: 9rem;
+    height: 9rem;
+    margin-top: 6rem;
+    margin-right: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    
+}
+
+
+
+footer > .icons > .icons-1{
+    background-image: url('https://drive.google.com/uc?id=1saMyJgr1sg7V10DF8fQ1ROcrsfBWQKYH');
+}
+
+
+footer > .icons > .icons-2{
+    background-image: url('https://drive.google.com/uc?id=12i-9esVt3oXqgtESTocua0DiL_R-2mDk');
+}
+
+footer > .icons > .icons-3{
+    background-image: url('https://drive.google.com/uc?id=1PuGnq6QlMh3f2__FoHYisHk6xr8yuAF0');
+}
+
+footer > .icons > .icons-4{
+    background-image: url('https://drive.google.com/uc?id=19vRqx4v8vXMQEzq9O39zzayreKzzBJc4');
+}
+
+footer > .icons > .icons-5{
+    background-image: url('https://drive.google.com/uc?id=1ns-Zl92kzcqnfBJY5QiOJTaeow-iwjV8');
+}
+
+
+
+
+
+
+
+/* Estilos de contacto.html ------------------------------------------------------- */
+
+main > a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    background-color: rgb(42, 39, 39);
+    color: rgb(97, 101, 103);
+    cursor: pointer;   
+}
+
+
+main > a:hover{
+    color: aliceblue;
+}
+
+main > a:active{
+    background-color: rgb(70, 65, 65);
+}
+
+form{
+    max-width: 700px;
+    margin: 5rem auto ;
+    box-shadow: -1px 0px 18px 1px rgba(0,0,0,0.65);
+    padding: 4rem;
+}
+
+form > h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+
+form > .form-box > input, label{
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+form > .form-box > .box1{
+    float: left;
+}
+
+form > .form-box > .box1 > input{
+    width: 30rem;
+    height: 3rem;
+}
+
+form > .form-box > .box2{
+    float:right;
+}
+
+form > .form-box > .box2 > input{
+    width: 30rem;
+    height: 3rem;
+}
+
+form > .form-box > .box3{
+    margin-top: 9rem;
+}
+
+form > .form-box > .box3 > input{
+  width: 62rem;
+  height: 3rem;
+    
+}
+
+form > .form-box > .box4 > textarea{
+    width: 62rem;
+    
+      
+}
+
+.formulario > .form-box > .box1 > input{
+    border: none;
+    border-bottom: 0.3rem solid black;
+}
+
+form > .form-box > .box2 > input{
+    border: none;
+    border-bottom: 0.3rem solid black;
+}
+
+form > .form-box > .box3 > input{
+    border: none;
+    border-bottom: 0.3rem solid black;
+}
+
+form > .form-box > .box4 > textarea{
+    border: none;
+    border-bottom: 0.3rem solid black;
+    resize: horizontal;
+}
+
+.box-button{
+    height: 5rem;
+}
+
+.box-button > .button{
+    float: left;
+}
+
+.box-button > .text{
+    float: right;
+}
+
+.box-button > .button > a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    background-color: rgb(42, 39, 39);
+    color: rgb(97, 101, 103);
+    cursor: pointer;
+}
+
+.box-button > .button> a:hover{
+    color: aliceblue;
+}
+
+.box-button > .button> a:active{
+    background-color: rgb(70, 65, 65);
+}
+
+.box-button > .text > p{
+    display: inline-block;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}

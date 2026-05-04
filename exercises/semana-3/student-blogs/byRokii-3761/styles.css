@@ -1,0 +1,249 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	box-sizing: inherit;
+	max-width: 90%;
+	min-height: 100vh;
+	margin: 0 auto;
+	font-family: "Victor Mono", "Arial", sans-serif;
+	line-height: 1.5;
+}
+
+.header {
+	height: 3em;
+	border-radius: 6px;
+
+	background: #ffa17f; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #00223e, #ffa17f); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#00223e,
+		#ffa17f
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav {
+	width: 90%;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-around;
+}
+
+.navbar li {
+	list-style: none;
+	font-weight: bold;
+	margin: 0.5em;
+
+	background: transparent;
+	color: white;
+	border: none;
+	border-radius: 0.625em;
+	cursor: pointer;
+
+	font-size: 17px;
+	font-weight: 600;
+	padding: 0.3em 0.5em;
+	overflow: hidden;
+}
+
+.navbar li:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.navbar li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+main {
+	min-height: 60vh;
+	margin: 2em auto;
+	margin-bottom: 0;
+}
+
+.container {
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container h1 {
+	margin-bottom: 0.4em;
+	color: black;
+}
+
+.card-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2em;
+}
+
+.card {
+	width: 330px;
+	height: 494px;
+
+	background: #ffa17f; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #00223e, #ffa17f); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#00223e,
+		#ffa17f
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	padding: 0.5em;
+	border-radius: 6px;
+	box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+	backdrop-filter: blur(6px);
+	border-radius: 17px;
+	transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+	border: 1px solid black;
+	transform: scale(1.05);
+}
+
+.card:active {
+	transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.card-image {
+	background-color: rgb(236, 236, 236);
+	width: 100%;
+	height: 60%;
+	border-radius: 6px 6px 0 0;
+}
+
+img {
+	border-radius: 6px;
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.card-image:hover {
+	transform: scale(0.98);
+}
+
+.card-title {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	font-weight: 600;
+	color: rgb(63, 121, 230);
+	padding: 10px 7px 0;
+}
+
+.category:hover {
+	cursor: pointer;
+}
+
+.card-description {
+	font-weight: 600;
+	color: #e4dbdb;
+	padding: 7px;
+}
+
+.card-description:hover {
+	cursor: pointer;
+}
+
+.author {
+	color: rgb(90, 137, 226);
+	font-weight: 900;
+	font-size: 11px;
+	padding-top: 15px;
+}
+
+.name {
+	font-weight: bold;
+}
+
+.name:hover {
+	cursor: pointer;
+}
+
+.card-second {
+	width: 78%;
+	height: 75%;
+	margin-top: 2em;
+	background: #ffa17f; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #00223e, #ffa17f); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#00223e,
+		#ffa17f
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	padding: 0.5em;
+	box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+	backdrop-filter: blur(6px);
+	border-radius: 17px;
+	transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+	display: flex;
+}
+
+.card-second:hover {
+	border: 1px solid black;
+	transform: scale(1.05);
+}
+
+.second-image {
+	background-color: rgb(236, 236, 236);
+	min-width: 60%;
+	min-height: 60%;
+	border-radius: 6px 6px 0 0;
+}
+
+.second-image:hover {
+	transform: scale(0.98);
+}
+
+.card-container-two {
+	margin-left: 1em;
+}
+
+.second-title {
+	font-size: 1.6em;
+	color: #3f79e6;
+}
+
+.second-description {
+	font-weight: 600;
+	color: #e4dbdb;
+	line-height: 1.5;
+}
+
+.second-description:hover {
+	cursor: pointer;
+}
+
+footer {
+	margin-top: 2.5em;
+	background: #ffa17f; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #00223e, #ffa17f); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#00223e,
+		#ffa17f
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #e4dbdb;
+
+	border-radius: 6px;
+	text-align: center;
+}

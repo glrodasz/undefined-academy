@@ -1,0 +1,20 @@
+@mixin reset-html-body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+@mixin reset-boxsizing($box) {
+    box-sizing: $box;
+}
+@mixin dimensiones ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin cajas () {
+    /* selecciona todas las cajas dentro de la clase container-grid */
+    padding: 20px; /* espacio interno de las cajas */
+    border-radius: 8px; /* borde redondeado de las cajas */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* sombra de las cajas */
+}

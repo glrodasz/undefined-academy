@@ -1,0 +1,165 @@
+@use "./base.scss";
+@use "./desktop.scss";
+@import "variables.scss";
+
+body {
+    padding: 0;
+}
+
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 1em 1em;
+    color: $MineShaft;
+    text-align: justify;
+    background-color: $Cararra;    
+    border: 4px solid $MineShaft2;
+}
+
+h1, h2, h3 {
+    text-align: right;
+}
+
+h2 {
+    margin-top: 0.2em;
+    padding-top: 0.2em;
+}
+
+h1, h2, h3, strong {
+    color: $Stratos;
+}
+
+p {
+    line-height: 1.5;
+}
+
+code, pre {
+    background: $SwissCoffee;
+    border-bottom: 0.2px solid $Lemon;
+    color: $WestSide;
+}
+
+code {
+    padding: 0.2px 0.2px;
+    vertical-align: text-bottom;
+}
+
+a {
+    color: $Amaranth;
+}
+
+header {
+    background-color: $Whisper;
+    background-image:url('/src/img/header.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 6vw 2em;
+    text-align: right;
+    color: $AliceBlue;
+    border: 4px solid $MineShaft2;
+}
+
+header img {
+    display: inline-block;
+    height: 120px;
+    vertical-align: top;
+    width: 100%;
+}
+
+#header {
+    color: $Turbo;
+    font-size: 3.2em;
+    font-weight: 300;
+    text-align: right;
+}
+
+nav {
+    display: grid;
+    place-items: right;
+}
+  
+header a {
+    border: 1px solid $Turbo;
+    border-radius: 290486px;
+    color: $BlackWhite;
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+}
+  
+header a:hover {
+    background: $Cabaret;
+    color: $BlackWhite;
+}
+
+figure img {
+    width: 280px; 
+    height: 400px;
+    align-items: right;
+}
+
+.form-group {
+    border: 1px solid $Stratos;
+    margin: 20px 0;
+}
+
+label [type="text"] {
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size:14px;
+    color: $BlackWhite;
+    vertical-align: middle;    
+    background: $NavyBlue;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+    font-size:12px;
+    margin-top: 10px;
+    background: $NavyBlue;
+}
+
+button {
+  padding: 16px 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid $DeepBlue;
+  background: $Ultramarine;
+  color: $BlackWhite;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px 3px rgb(255, 255, 255, 0.5);
+  align-items: center;
+}
+
+button:hover {
+  background: $HavelockBlue;
+}
+
+section {
+    text-align: left;
+    items-align: left;
+}
+
+footer {
+    font-weight: bold;    
+    font-size: 12px;
+    color: $Stratos;
+}

@@ -1,0 +1,63 @@
+@use "./utilidades";
+@media (min-width: 801px) {
+  header {
+    @include utilidades.section-padding(1.2rem, 8.5rem);
+  }
+  section {
+    @include utilidades.section-padding(0, 8.5rem);
+  }
+
+  .menu-navegacion {
+    display: block;
+    float: right;
+    ul {
+      flex-direction: row;
+      padding: 0;
+      gap: 20px;
+    }
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+  .home {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    padding-top: 100px;
+    .img-home {
+      grid-column: 3/5 !important;
+      grid-row: 1/3;
+      img {
+        width: 100%;
+      }
+    }
+    .info-titles,
+    .info-introduction {
+      grid-column: 1/3 !important;
+    }
+
+    .info-titles {
+      align-items: start;
+      padding-top: 0;
+      h1 {
+        font-size: 3rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      h3 {
+        margin: 15px 0;
+      }
+    }
+
+    .info-introduction {
+      gap: 15px;
+      div {
+        &:nth-child(2) {
+          max-width: 80%;
+        }
+      }
+    }
+  }
+}

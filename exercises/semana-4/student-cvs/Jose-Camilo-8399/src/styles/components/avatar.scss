@@ -1,0 +1,13 @@
+@use '../tools.scss';
+
+.img-perfil {
+   @include tools.format-img();
+   width: 8em;
+   height: 8em;
+}
+
+.img-perfil-small {
+   @include tools.format-img();
+   width: 6em;
+   height: 6em;
+}

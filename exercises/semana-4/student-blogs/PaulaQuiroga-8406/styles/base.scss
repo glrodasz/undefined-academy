@@ -1,0 +1,61 @@
+// Estilos mobile first:
+@use "variables.scss" as variables;
+@use "mixin.scss" as m;
+html, body {
+  @include m.reset-html-body;
+ }
+
+* {
+  @include m.reset-boxsizing(inherit);
+}
+body {
+  font-family: Arial;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  color: variables.$color-text;
+  background-color: variables.$color-secundary;
+  // padding: 0 40px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 800px) {
+    html {
+      text-align: center;
+      justify-content: space-between;
+    }
+
+    .navegador {
+      display: none;
+    }
+    .title {
+      justify-content: space-between;
+    }
+    .container-grid {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 10px;
+      
+    }
+    .container-grid img {
+      @include m.dimensiones  (200px, 200px);
+      border-radius: 4px;
+    }
+    .container-grid > div { 
+      background-color: variables.$color-secundary; /* color de fondo de las cajas */
+      @include m.cajas;
+    }
+    
+    .container-img1,
+    .container-img2,
+    .container-img3,
+    .container-img4 {
+      @include m.dimensiones(100%, auto); /* Establece el ancho de las cajas al 100% del contenedor */
+       /* Establece la altura de las cajas de manera proporcional al ancho */
+      max-width: 400px; /* Establece un ancho máximo de 400px para las cajas */
+      margin: 0 auto; /* Centra las cajas horizontalmente */
+      text-align: center;
+    }
+   
+  }

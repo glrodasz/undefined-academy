@@ -1,0 +1,38 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+body {
+    margin: 2em 2em;
+}
+
+form {
+    border: 1px solid rgb(210, 208, 208);
+    border-radius: 4px;
+    background-color: rgb(253, 239, 244);
+    box-shadow: 4px 4px rgb(236, 235, 235);
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 2em 8em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        margin: 4em 12em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        margin: 4em 20em;
+    }
+}
+
+@media screen and (min-width: 1560px) {
+    body {
+        margin: 5em 20em;
+        margin-left: 32em;
+    }
+}

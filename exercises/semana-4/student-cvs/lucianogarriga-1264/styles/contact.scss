@@ -1,0 +1,84 @@
+
+/* CONTACT PAGE STYLES */ 
+.contact{
+    font-size: 32px; 
+    text-align: center;
+}  
+
+.links{ 
+    display: flex;
+    justify-content: center;  
+    gap: 60px;
+} 
+h3 a {
+    font-size: 1rem;
+}
+.form-group{ 
+    margin: 10px;
+}
+
+.formulario {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+label, input[type="text"], input[type="email"]{
+    width: 100%; 
+}
+label, input{ 
+    vertical-align: middle;
+}
+label, legend{
+    font-weight: bold; 
+    font-size: 18px;
+    color: #444;
+}
+div fieldset label{
+    font-size: 14px;
+}
+input[type="text"], input[type="email"], textarea{
+    background: rgb(243, 239, 239);
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+textarea{
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+.help{
+    font-size: 13px;
+    margin: 10px 0; 
+} 
+button{
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: 1px solid rgb(61, 63, 66);
+    background: #83b4e2;
+    color: rgb(73, 74, 75);
+    border-radius: 8px; 
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+button:hover{
+    color: rgb(217, 221, 226);
+    background: #144c81;
+    transition: 0.3s;
+}
+button:active{
+    box-shadow: none;
+}
+.center-button{
+    text-align: center;  
+    padding-top: 1em;
+}
+form{
+    accent-color: #6c9cc8; 
+}
+input:focus-visible,
+textarea:focus-visible{
+    outline: 2.5px solid #76a2cb;
+}

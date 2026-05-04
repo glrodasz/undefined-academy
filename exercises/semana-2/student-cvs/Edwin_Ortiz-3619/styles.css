@@ -1,0 +1,217 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: yellow;
+    margin: 0;
+    padding: 0;
+}
+.hero{    
+    margin: 0;
+    padding: 0;
+}
+
+.nav__hero {
+    position: fixed;
+    top: 0;    
+    width: 100%;
+    height: 80px;
+    color: yellow;
+    background: #070707;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    padding: 0;
+}
+
+.name {
+    font-size: 24px;
+    color: yellow;
+}
+
+.link {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.hero__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vh;
+}
+
+.mockup {
+    object-fit: cover;
+    width: 35%;
+    max-height: 90vh;
+    padding: 20px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 200;
+    color: #070707;
+}
+
+ol,
+ul {
+    line-height: 1.1;
+    color: #070707;
+}
+
+h2 {
+    line-height: 1;
+    color: #070707;
+    font-weight: 300;
+}
+
+table {
+    width: 100%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid #070707;
+    text-align: left;
+    padding: 8px;
+}
+
+/* educacion */
+
+.educacion {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: auto;    
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15vh;
+}
+
+.portada {
+    object-fit: cover;
+    width: 40%;
+    max-height: 90vh;
+    padding: 10px;
+}
+
+/* Lenguajes y Tecnologías */
+
+.lenguaje {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: auto;    
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20vh, 0, 0, 0;
+}
+
+.tecnologia {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: auto;    
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20vh, 0, 0, 0;
+}
+
+/* comandos */
+
+.comandos {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: auto;    
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20vh, 0, 0, 0;
+}
+
+.contacto {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: auto;    
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20vh, 0, 0, 0;
+}
+.copy{
+    display: flex;
+}
+
+.form{    
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    background: yellow;
+}
+
+#email,
+#nombre,
+#apellido {
+    min-width: 460px;
+    background: yellow;
+}
+
+
+button {
+    border-radius: 5px;
+    background-color: #070707;
+    color: yellow;
+    padding: 10px;
+    width: 100px;
+}
+
+/* footer */
+
+.footer {
+    color: yellow;
+    height: 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: #070707;
+}
+
+.footer__caption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    padding: 0;
+}

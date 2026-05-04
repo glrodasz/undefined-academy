@@ -1,0 +1,29 @@
+@use "../../styles/variables.scss" as *;
+
+
+.footer {
+  width: 100%;
+  margin-top: 14.4rem;
+  padding: 5rem 0;
+  background-color: $Black;
+  position: relative;
+  color: $DoveGray;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.arrow-top {
+  padding: 1.2rem 2.2rem;
+  border-radius: 0 1.2rem 1.2rem 1.2rem;
+  background-color: $Black;
+  position: absolute;
+  top: -5.2rem;
+  right: 2rem;
+  color: $White;
+  font-weight: bold;
+  text-align: center;
+}
+
+.arrow-top:hover {
+  opacity: .8;
+}

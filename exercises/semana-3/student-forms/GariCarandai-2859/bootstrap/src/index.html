@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap w/ Vite</title>
+</head>
+
+<body class="bg-light">
+  <main class="d-flex justify-content-center align-items-center vh-100">
+    <div class="container py-4 px-3">
+
+      <h1 class="mb-5 fs-2 fw-bold text-center text-uppercase">My contact form</h1>
+
+      <form>
+        
+        <div class="mb-3 form-floating">
+          <input type="text" class="form-control" id="inputName" placeholder="Name" required>
+          <label for="inputName" class="form-label">Name</label>          
+        </div>
+        <div class="mb-3 form-floating">          
+          <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" required>
+          <label for="inputEmail" class="form-label">Email</label>
+        </div>
+        <div class="mb-3 form-floating">
+          <input type="text" class="form-control" id="inputSubject" placeholder="Subject" required>
+          <label for="inputSubject" class="form-label">Subject</label>          
+        </div>
+        <div class="mb-4 form-floating">
+          <textarea style="height: 140px" id="textareaMessage" class="form-control" placeholder="Message" required></textarea>
+          <label for="textareaMessage" class="form-label">Message</label>          
+        </div>
+        <div class="d-grid col-6 mx-auto">
+          <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+        </div>
+
+      </form>
+
+    </div>
+  </main>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

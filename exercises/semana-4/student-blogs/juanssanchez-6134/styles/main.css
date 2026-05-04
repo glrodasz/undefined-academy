@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
+body {
+  background: #F9F5EB;
+  color: #002B5B;
+  font-family: "Noto Sans", sans-serif;
+}
+
+main {
+  margin-left: 12rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  color: #F9F5EB;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #E4DCCF;
+  font-size: 14px;
+  color: #002B5B;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  transition: all 500ms;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-2px) scale(1.05);
+}
+
+.card p {
+  margin: 8px;
+}
+
+.card-description {
+  padding: 0 2px 2px 2px;
+  border: 2px dotted #EA5455;
+  border-radius: 4px;
+}
+
+.card .date {
+  align-self: start;
+  border-radius: 8px;
+  background: #EA5455;
+  color: #F9F5EB;
+  padding: 5px;
+}
+
+.basic-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.image-crop {
+  position: relative;
+  width: 330px;
+  height: 175px;
+  display: flex;
+  flex-flow: column wrap;
+  overflow: hidden;
+}
+
+.image-crop img {
+  position: absolute;
+  top: -10%;
+  left: 0%;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  width: 12rem;
+  height: 100%;
+  position: fixed;
+  background: #EA5455;
+}
+
+.logo {
+  display: flex;
+  margin-top: 35px;
+  font-size: 70px;
+}
+
+.navbar a {
+  margin-left: 5px;
+}
+
+.navbar-nav {
+  padding: 0;
+  margin: 20px 10px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+}
+.navbar-nav:hover {
+  margin-left: 0rem;
+  width: 12rem;
+  background: #002B5B;
+  text-decoration: none;
+}
+
+.footer {
+  margin-left: 12rem;
+  position: relative;
+  background: #002B5B;
+  border-radius: 8px;
+  color: #F9F5EB;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px dotted #E4DCCF;
+}
+
+.footer p {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    background: #002B5B;
+    color: #F9F5EB;
+  }
+  .navbar {
+    background-color: #E4DCCF;
+  }
+  a {
+    color: #EA5455;
+  }
+  .navbar-nav:hover {
+    background: #F9F5EB;
+  }
+  .footer {
+    color: #002B5B;
+    background: #EA5455;
+  }
+  .footer a {
+    color: #002B5B;
+  }
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

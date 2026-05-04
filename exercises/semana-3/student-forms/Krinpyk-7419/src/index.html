@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <main>
+    <div class="container text-center">
+        <h1 class="display-1">Contáctame</h1>
+        <hr class="border border-primary border-2 opacity-50">
+        <form class="d-flex flex-column" name="form" action="/server" method="post">
+            <div class="mb-3 row justify-content-center" >
+                <label class="col-sm-1 col-form-label" for="name_user">Nombre:</label>
+                <div class="col-sm-4">
+                    <input class="form-control" id="name_user" name="name_user" type="text" placeholder="Introduce tu nombre" required>
+                </div>
+            </div>
+            <div class="mb-3 row justify-content-center">
+                <label class="col-sm-1 col-form-label" for="email_user">Email:</label>
+                <div class="col-sm-6">
+                    <input class="form-control" id="email_user" name="email_user" type="text" placeholder="Introduce tu email" required>
+                </div>
+            </div>
+
+            <label class="mb-3 row justify-content-center">Seleccione una opción:</label>
+
+            <div class="justify-content-center">
+                <div class="form-switch form-check-inline">
+                    <input class="form-check-input" type="checkbox" role="switch" id="hobbies">
+                    <label class="form-check-label" for="hobbies">Hobbies</label>
+                </div>
+                <div class="form-switch form-check-inline">
+                    <input class="form-check-input" type="checkbox" role="switch" id="economy">
+                    <label class="form-check-label" for="economy">Economía</label>
+                </div>
+                <div class="form-switch form-check-inline">
+                    <input class="form-check-input" type="checkbox" role="switch" id="reading">
+                    <label class="form-check-label" for="reading">Lectura</label>
+                </div>
+            </div>
+
+            <div class="justify-content-center p-4">
+                <textarea class="form-control" rows=10 placeholder="Escriba aquí su comentario" id="textarea" name="comentario"></textarea>
+                <div><p class="form-text text-muted">Escriba un comentario de al menos 100 palabras.</p></div>
+            </div>
+            <div class="justitfy-content-center">
+                <input class="col-sm-1 btn btn-primary" type="submit" value="Enviar" class="button">
+            </div>
+            <div></div>
+        </form>
+    </div>
+   </main>
+    <footer class="h6 text-center"><p>2023</p></footer>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

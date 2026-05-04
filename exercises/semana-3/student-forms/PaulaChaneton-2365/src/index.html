@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Práctica de Bootstrap</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>Contacto </h1>
+        </div>
+
+    </header>
+
+    <section>
+
+        <form action="" method="">
+
+
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label" aria-required="true">Nombre</label>
+                <input type="name" class="form-control" id="name" placeholder="Ingrese su nombre aqui">
+            </div>
+
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label" aria-required="true">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su email aqui">
+            </div>
+
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label" aria-required="true">Ubicación</label>
+                <input type="ubicacion" class="form-control" id="ubicacion" placeholder="Ingrese su país de residencia">
+            </div>
+
+
+
+            <div>
+                <p>
+                <h4>¿Cuáles son tus intereses dentro de programación?</h4>
+                </p>
+            </div>
+
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
+                <label class="form-check-label" for="inlineRadio1">Front End</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                <label class="form-check-label" for="inlineRadio2">Back End</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                    value="option3">
+                <label class="form-check-label" for="inlineRadio3">Full Stack</label>
+
+            </div>
+            <div class="form-check form-check-inline">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>Elegi una opción</option>
+                    <option value="1">JavaScript</option>
+                    <option value="2">Java</option>
+                    <option value="3">Phyton</option>
+                </select>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Justifica tu elección</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    Acepto los términos y condiciones.
+                </label>
+                <div class="invalid-feedback">
+                    Debe aceptar los términos y condiciones.
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="enviar">Enviar</button>
+            </div>
+            <div>
+                <button type="reset" class="borrar">Borrar datos</button>
+            </div>
+
+    </section>
+
+
+</body>
+
+</html>

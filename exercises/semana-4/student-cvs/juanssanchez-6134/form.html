@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <section class="contact">
+        <section class="form">
+            <form id="form" name="form" action="POST">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input id="name" name="name" type="text" placeholder="Ingrese su nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo</label>
+                    <input id="email" name="email" type="text" placeholder="Ingrese su correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="type">Animal Favorito</label>
+                    <select id="type" name="type" required>
+                        <option disabled selected value="">Seleccione uno</option>
+                        <option>Gatos🐱</option>
+                        <option>Perros🐶</option>
+                        <option>Pandas🐼</option>
+                        <option>Otros🐱‍🐉</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span>Acepto los términos y condiciones</span>
+                    </label>
+                </div>
+                <button>Enviar</button>
+            </form>
+        </section>
+</body>
+</html>

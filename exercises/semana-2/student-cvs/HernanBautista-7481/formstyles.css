@@ -1,0 +1,109 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+body {
+  background-color: rgb(50, 50, 70);
+  Font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  color: #17202A;
+  height: 150%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+	color: #17202A;
+	padding: 20px 20%;
+	background-color: #F2F3F4;
+	
+}
+
+#title, #description {
+  text-align: center;
+}
+
+#form {
+  	background-color: #9fa2a5;
+  	background-image: linear-gradient(225deg, #9fa2a5 49%, #c6c5ca 100%);
+  	border-radius: 0.25rem;
+  	margin: 15px 60px;
+  	padding: 20px;
+  	height: 85%;
+	width: 75%;
+}
+
+label {
+    display: block;
+    
+}
+
+#name, #email, #dropdown {
+  height: 25px;
+  width: 80%;
+  margin: 5px 40px 1px;
+}
+
+#name-label, #email-label, #select-label, #radio1, #radio2, #radio3 {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+p {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.input-check {
+  margin-left: 40px;
+  padding: 5px 0;
+}
+
+.input-textarea {
+  height: 75px;
+  width: 80%;
+  margin: 5px 40px 1px;
+}
+
+.wrapper{
+  padding: 10px 0;
+}
+
+button{
+  	width: 48%;
+  	height: 40px;
+  	text-decoration: none;
+  	color: #FFFFFF;
+  	background-color: #e81c4f;
+  	border: 2px;
+  	border-radius: 0.25rem;
+  	letter-spacing: 2px;
+  	Font-size: 20px;
+  	text-align: center;
+	margin-left: 42%;
+  	transform: translateX(-50%);
+    cursor: pointer;
+}
+
+button:hover{
+  	background-color: #ed6d8d;
+}
+
+button:active {
+	background-color: #1B2631;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+	
+	outline: 2px solid #ed6d8d;
+}
+
+#name, #email, #comments {
+	border-radius: 4px;
+}
+
+form {
+	accent-color: #e81c4f;
+}

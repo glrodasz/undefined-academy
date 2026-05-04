@@ -1,0 +1,222 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+/* $logo-panda: url("/img/panda-logo.webp"); */
+html {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  padding: 2em 0em;
+  background-image: url("../img/fondo-divpanda-cv-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body p {
+  margin: 10px 0px;
+}
+body code {
+  color: #00ffeb;
+  background-color: #212529;
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+body a {
+  display: contents;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+body a > img {
+  height: 50px;
+  object-fit: contain;
+  border-radius: 20%;
+}
+body a > p {
+  margin: 0;
+  text-align: center;
+  font-size: larger;
+}
+body footer {
+  text-align: center;
+  margin: 10px 0px;
+}
+
+article {
+  padding: 0 1em;
+}
+article > #header {
+  text-align: center;
+  border: 2px solid #f0ffff;
+  border-radius: 7px;
+  width: 100%;
+  padding: 13px;
+}
+article > #header .mi-nombre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  -webkit-text-fill-color: #00ffeb;
+  -webkit-text-stroke: 1px #008b8b;
+  font-family: "Alfa Slab One";
+  font-size: 33px;
+}
+article > #header .mi-nombre > p {
+  margin: 15px 0px;
+}
+article > #header .mi-nombre span {
+  position: relative;
+  display: inline-block;
+  color: #f0ffff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+article > #header .mi-nombre .waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  font-size: 60px;
+}
+@keyframes waviy {
+  0%, 40%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+article > #header .waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  font-size: 60px;
+}
+@keyframes waviy {
+  0%, 40%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+article h1,
+article h2 {
+  font-family: "Helvetica", sans-serif;
+  text-align: center;
+  margin: 10px 0px;
+  font-size: 22px;
+}
+article h3 {
+  font-size: 18px;
+  margin: 10px 0px;
+}
+article ul {
+  list-style-type: disclosure-closed;
+  padding-left: 24px;
+}
+
+main {
+  margin-top: 12px;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+main .bold {
+  font-weight: bold;
+}
+main .cards-exp-hob {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+main #introduccion,
+main #experiencia-previa,
+main #hobbies-intereses,
+main #encuéntrame {
+  border: 2px solid #f0ffff;
+  margin: 0 auto;
+  padding: 13px;
+  border-radius: 7px;
+  background-color: rgba(53, 51, 51, 0.7882352941);
+  width: 100%;
+}
+main #resaltable {
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid #f0ffff;
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(53, 51, 51, 0.7882352941);
+}
+main #experiencia-previa #boton-platzi:hover {
+  background-color: rgba(153, 205, 50, 0.2941176471);
+}
+main #experiencia-previa #boton-freecodecamp:hover {
+  background-color: rgba(128, 128, 128, 0.6509803922);
+}
+main .plataformas-educativas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .botones {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+main #encuéntrame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: unset;
+}
+main #encuéntrame #botones-encuéntrame {
+  display: flex;
+  width: 100%;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+}
+main #encuéntrame #botones-encuéntrame #boton-github,
+main #encuéntrame #botones-encuéntrame #boton-contáctame {
+  display: flex;
+  border: 2px solid #f0ffff;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+main #encuéntrame #botones-encuéntrame #boton-github > img {
+  height: 24px;
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    max-width: 400px;
+    min-width: 425px;
+  }
+  body a > p {
+    margin: 0;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 800px) {
+  body {
+    max-width: 650px;
+  }
+}
+@media screen and (min-width: 800px) {
+  body {
+    max-width: 1000px;
+  }
+  body .cards-exp-hob {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

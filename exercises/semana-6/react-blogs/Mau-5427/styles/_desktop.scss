@@ -1,0 +1,26 @@
+@use "./variables";
+
+@media screen and (min-width: variables.$breakpoint-large) {
+  html {
+    font-size: 100%;
+  }
+  
+  .intro-posts {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  
+  .aside-cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr
+  }
+
+  .posts-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(450px, auto);
+  }
+
+  .nav-btn {
+    width: 120px;
+    height: 120px;
+  }
+}

@@ -1,0 +1,129 @@
+@use "variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;  
+  box-sizing: border-box;
+}
+
+body {
+  background-color: variables.$ghostWhite;
+  color: variables.$midnightBlue;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  padding: 2.5em 0;
+  text-align: center;
+  background-color: variables.$ghostWhite;
+}
+.nav-toggle {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  background-color: variables.$teaPapaGreen;
+}
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+.hamburger, .hamburger::after,
+.hamburger::before {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background-color: white;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.hamburger::after,
+.hamburger::before {
+  content: '';
+  width: 100%;
+}
+
+.nav {
+  display: none;
+}
+
+.nav--visible {
+  display: flex;
+}
+
+.navigation-links {
+  list-style: none;
+  width: 100%; 
+  font-size: 0.75em;
+  align-items: center;
+}
+
+.search-container {
+  margin: 8px auto 0 auto;
+  margin-top: 8px;
+  position: relative;
+  width: fit-content;
+}
+.search-container svg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  stroke: variables.$teaPapaGreen;
+}
+.search {
+  outline: none;
+  border: 0;
+  background-color: variables.$gullGray;
+  padding: 0.5em;
+  color: variables.$teaPapaGreen;
+  border-radius: 3px;
+  padding-left: 30px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid variables.$grayChateau;
+}
+.card-title {
+  margin-bottom: 0.5em;
+}
+.card-body {
+  padding: 1em;
+}
+
+footer {
+
+  border: 1px solid variables.$grayChateau;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Mario Gonzalez</title>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <img src="assets/logo.png" alt="website logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Hello, I am Mario Gonzalez</h1>
+            <p>I'm a <strong>FullStack Developer</strong> from <strong>Argentina</strong>.</p>
+            <section id="about">
+                <h2>About me</h2>
+                <p>
+                    I am passionate about technology and web development, I am good at both the client side (Front End)
+                    and the server side (Back End). I have acquired knowledge to develop end-to-end solutions, from the
+                    database to the user interface. I am committed to code quality, including test automation to ensure
+                    the stability of my solutions and I always try to follow good programming practices.
+                </p>
+                <p>Previously I worked as an audiovisual producer, graphic designer and sound engineer, also as an
+                    administrator, but I have always been passionate about technology and today I am in search of it.
+                </p>
+                <p>
+                    I am an effective <b>communicator</b> and able to work <b>collaboratively</b> in a team to
+                    <b>solve problems</b> and meet project requirements. I am also <b>adaptable</b>
+                    and committed to <b>continuous learning</b> to keep up with the latest trends and
+                    technologies in my field.
+
+                    If you want to know a little more about me or have a project that might interest me, drop me a line.
+                </p>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <p>This is my current technology stack <strong>MERN / PERN</strong></p>
+                <p>HTML, CSS, JavaScript, TypeScript, React, Node, Express, PostgreSQL, MongoDB, Linux.</p>
+                <img src="assets/tech-icon-svg/html-5.svg" width="48" alt="html icon">
+                <img src="assets/tech-icon-svg/css3.svg" width="48" alt="css icon">
+                <img src="assets/tech-icon-svg/javascript.svg" width="48" alt="javascript icon">
+                <img src="assets/tech-icon-svg/typescript.svg" width="48" alt="typescript icon">
+                <img src="assets/tech-icon-svg/react.svg" width="48" alt="react icon">
+                <img src="assets/tech-icon-svg/node-js.svg" width="48" alt="node icon">
+                <img src="assets/tech-icon-svg/postgresql.svg" width="48" alt="postgresql icon">
+                <img src="assets/tech-icon-svg/mongodb.svg" width="48" alt="mongodb icon">
+                <img src="assets/tech-icon-svg/bash.svg" width="48" alt="bash icon">
+                <img src="assets/tech-icon-svg/docker.svg" width="48" alt="docker icon">
+                <hr>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <form action="/server" method="get">
+                    <div>
+                        <label for="name">Name</label>
+                        <input id="name" type="text" name="name" placeholder="... type your fullname" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="... type your email" required>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Budget</legend>
+                            <input id="10000" value="10000" name="budget" type="radio">
+                            <label for="10000">$10000</label>
+                            <input id="5000" value="5000" name="budget" type="radio">
+                            <label for="5000">$5000</label>
+                            <input id="1000" value="1000" name="budget" type="radio">
+                            <label for="1000">$1000</label>
+                        </fieldset>
+                        <div class="help">This estimate is the base, not the total</div>
+                    </div>
+                    <div>
+                        <label for="type">Type of project
+                            <select id="type" name="type" required>
+                                <option value="" selected disabled>Select one</option>
+                                <option value="Website">Website</option>
+                                <option value="Webapp">Webapp</option>
+                                <option value="Mobile">Mobile</option>
+                                <option value="Api">Api</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" rows="5" required></textarea>
+                        <div class="help">Describe the project or proposal in a maximum of 500 words</div>
+                    </div>
+                    <div>
+                        <label for="terms">
+                            <input id="terms" type="checkbox" name="terms" required>
+                            I accept the terms and conditions
+                        </label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Code made by <strong>@lllariogonzalez</strong></p>
+            <hr>
+            <a href="https://github.com/lllariogonzalez" target="_blank">
+                <img src="assets/github.png" alt="github icon">
+            </a>
+            <a href="https://linkedin.com/in/lllariogonzalez" target="_blank">
+                <img src="assets/linkedin.png" alt="linkedin icon">
+            </a>
+        </footer>
+    </body>
+
+    <script src="index.js"></script>
+
+</html>

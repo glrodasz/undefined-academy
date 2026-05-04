@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="/css/form-styles.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1531/1531344.png" type="image/x-icon">
+    <script async defer type="module" src="/js/main.mjs"></script>
+</head>
+
+<body>
+    <main>
+        <form class="form" action="" method="">
+            <div>
+                <h1>Contáctame 📲</h1>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Escribe tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Escribe tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción</label>
+                <textarea id="description" name="description" placeholder="Describe brevemente tu solicitud de contacto"
+                    required rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="terms" id="terms" required>
+                <label for="terms">Acepto los términos y condiciones</label>
+
+            </div>
+
+            <div class="container-submit-button">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+
+        <footer>
+            <p>© 2023 Guillermo Bello</p>
+        </footer>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+:root {
+    --background-color: #282828;
+    --cards-color: #333;
+    --main-color:rgb(136,108,228);
+    --main-color--0-5-opacity: rgba(136,108,228, 0.5);
+}
+
+body {
+    background-color: var(--background-color);
+    color: #d1d1d1;
+    margin: 50px auto 50px;
+    width: 100%;
+}
+header h1 {
+    text-shadow: 1px 1px 10px black;
+}
+header {
+    h1 {
+        text-align: center;
+    }
+    strong {
+        color: var(--main-color);
+    }
+}
+
+article main h1 {
+    margin: 0 0 40px;
+    text-shadow: 1px 1px 10px black;
+}
+
+.form {
+    background-color: #323232;
+    margin: 50px 20px;
+    padding: 40px;
+    border-radius: 30px;
+    
+
+    h1 {
+        color: rgb(136,108,228);
+        text-align: center;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    .opciones {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .form-content {
+        margin-top: 10px;
+        // border: 1px solid red;
+    }
+    label {
+        font-weight: bolder;
+    }
+    .fieldset-legend-options {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .form-content:focus-within label:not(.form-check-label) {
+        color: var(--main-color);
+    }
+
+    textarea.changeColor, input.changeColor, select.changeColor {
+        background-color: #424242;
+        border: none;
+
+        color: var(--main-color);
+    }
+    textarea.changeColor:focus, input.changeColor:focus, select.changeColor:focus {
+        border: none;
+        box-shadow: 0 0 2px var(--main-color), 0 0 4px var(--main-color), 0 0 6px var(--main-color);
+    }
+
+    div#emailHelp {
+        color: (var(--main-color--0-5-opacity));
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .botones .btn {
+        color: #d1d1d1;
+        font-weight: bold;
+        border: none;
+    }
+    .botones .btn-submit {
+        background-color: var(--main-color);
+    }
+    .botones .btn-submit:active {
+        background-color: var(--main-color--0-5-opacity);
+    }
+    .botones .btn-clear {
+        border: 1px solid black;
+        background-color: #414141;
+    }
+    .botones .btn-clear:active {
+        background-color: #282828;
+    }
+}
+.form:hover {
+    box-shadow: 0 0 10px rgba(136,108,228, 0.6), 1px 1px 10px rgba(136,108,228, 0.8);
+}
+
+// sm 576px
+// @include media-breakpoint-up(sm) {
+//   
+//         
+//     
+// }
+
+// sm 768px
+@include media-breakpoint-up(md) {
+    body {
+        width: 80vw;
+        margin: 50px auto;
+    }
+
+    .form .botones {
+        flex-direction: row;
+    }
+    .botones .btn {
+        width: 50%;
+    }
+    .botones .btn.btn-submit {
+        order: 1;
+    }
+}
+
+// // lg: 992px
+// @include media-breakpoint-up(lg) {
+
+// }
+
+// xl: 1200px
+@include media-breakpoint-up(xl) {
+    body {
+        width: 60vw;
+        margin: 50px auto;
+    }
+
+    header h1:hover {
+        em {
+            color: transparent;
+        }
+    }
+
+
+    .form .botones {
+        flex-direction: column;
+    }
+    .botones .btn {
+        width: 100%;
+    }
+    .botones .btn.btn-submit {
+        order: 0;
+    }
+}
+
+// // xxl: 1400px
+// @include media-breakpoint-up(xxl) {
+    
+// }

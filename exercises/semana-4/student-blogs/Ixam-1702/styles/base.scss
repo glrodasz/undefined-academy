@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: var(--white);
+}
+
+.navbar-container li {
+    list-style: none;
+}
+
+header a,
+.navbar-item a {
+    text-decoration: none;
+}
+
+.navbar {
+    background: var(--shapphire);
+    margin-bottom: 1.5rem;
+}
+
+.navbar-header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu-mobile {
+    color: var(--corn-flower-blue);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.navbar-container {
+    position: absolute;
+    background: var(--shapphire);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease;
+}
+
+.navbar-link {
+    color: var(--white);
+}
+
+.navbar-item a:hover {
+    color: var(--dodger-blue);
+    transition: all 0.4s ease 0s;
+}
+
+#navbar-header:target .navbar-container {
+    height: 300px;
+}
+
+#navbar-header:target .open {
+    display: none;
+}
+
+#navbar-header:target .close {
+    display: flex;
+}
+
+.close {
+    display: none;
+}
+
+.card {
+    background-color: var(--periwinkle-gray);
+    box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.28);
+    border-radius: 12px;
+}
+
+.container {
+    width: 85%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.card-image {
+    height: 225px;
+    background-color: var(--gray);
+    border-radius: 12px;
+}
+
+.card .img-one {
+    background-image: url('../php-8.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card .img-two {
+    background-image: url('../mysql-vs-mariadb.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card .img-three {
+    background-image: url('../endeavouros.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card .img-four {
+    background-image: url('../postgresql.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-content h2 {
+    font-size: 1.2rem;
+}
+
+.card-content {
+    padding: 1.5rem
+}
+
+.post-details, icon-text {
+    display: flex;
+    align-items: center;
+}
+
+.icon-text {
+    margin-right: 1rem;
+}
+
+.icon-text .icon {
+    color: var(--chestnut-roses);
+    margin-right: 0.4rem;
+}
+
+.post-fragment {
+    font-weight: 300;
+}
+
+.button {
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+    display: inline-block;
+    background-color: var(--san-marino);
+    border-radius: 0.6rem;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--shapphire-2);
+}
+
+.button:hover {
+    background-color: var(--dodger-blue);
+}
+
+.button:active {
+    background-color: var(--shapphire-2);
+    box-shadow: none;
+}

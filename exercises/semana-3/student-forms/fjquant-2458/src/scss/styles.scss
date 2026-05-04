@@ -1,0 +1,43 @@
+@import "bootstrap/scss/bootstrap";
+
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Roboto", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.2;
+    padding: 4em 1em;
+    background-color: antiquewhite;
+}
+
+
+.page{
+    max-width: 400px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    ;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+input, select, option, textarea{
+    background-color: bisque    ;
+}
+
+button{
+    margin-top: 20px;
+    padding: 12px 24px;
+    border-radius: 20px;
+    background-color: blanchedalmond;
+    font-weight: bold;
+    box-shadow: 2px 2px 3px #333;
+}
+
+button:hover{
+background-color: coral;
+border: ne;
+}
+
+button:active{
+    background-color: chocolate;
+}

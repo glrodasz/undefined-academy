@@ -1,0 +1,136 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*  {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #dfe6e9;
+    gap: 10px
+
+}
+
+.bar {
+    display: grid;
+    place-content:center ;
+    background-color: #17c0eb;
+    place-content: end;
+    font-weight: bold;
+    padding: 8px;
+}
+
+h1, h4 {
+    display: grid;
+    place-content: center;
+
+}
+
+section {
+    display: flex;
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+
+}
+section:first-child {
+    border: 1px solid;
+    border-radius: 6px;
+    background-color:#b2bec3 ;
+
+}
+
+section:nth-child(2) {
+    border: 1px solid;
+    border-radius: 6px;
+    background-color: #b2bec3;
+}
+
+
+
+.footer {
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+.footer-list {
+    list-style-type: "\1F680";
+}
+
+.list-info-form {
+    list-style-type: "\1F393";  
+}
+
+.list-info-lab {
+    list-style-type: "\1F528" ;
+}
+
+.text-description {
+    display:block;
+    text-align: center;
+    font-size: large;
+}
+
+
+
+
+
+@media screen and (min-width: 772px) {
+
+    .main {
+        height: auto;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        max-height: 300px;
+    }
+
+    .text-description {
+        display: block;
+        text-align: center;
+        max-width: 1000px;
+        height: 200px;
+        
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-width: auto;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        max-width: 500px;
+        margin: 20px 100px 50px;
+        
+        
+    }
+
+    .footer-list {
+        width: 700px;
+        height: auto;
+        
+    }
+
+}

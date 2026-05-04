@@ -1,0 +1,46 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .aboutme {
+    margin: 0 auto;
+  }
+
+  .social {
+    flex-flow: row wrap;
+  }
+
+  .menu__list {
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .menu__item {
+    padding: 0.8rem 1rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .aboutme,
+  .aboutme p {
+    text-align: center;
+  }
+
+  .main__container {
+    max-width: 70rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    flex-flow: row nowrap;
+    gap: 1rem;
+  }
+
+  .main__item {
+    width: 50%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 1.2rem;
+  }
+}

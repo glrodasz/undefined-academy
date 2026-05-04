@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/tailwind.css">
+  <title>lmendev's profile</title>
+</head>
+<body class="m-auto font-sans text-gray-600 lg:max-w-3xl">
+  <header class="flex flex-col items-center lg:block">
+    <h1 class="text-zinc-800 text-3xl font-bold my-7 lg:block">Hi! I'm Luis 👋</h1>    
+    
+    <nav class="w-full text-center">
+      <h2 class="hidden">Navigation</h2>
+      <ul class="border-y-2 lg:border-0 lg:flex lg:justify-center lg:divide-x lg:divide-gray-500 lg:divide-solid">
+        <li class="p-1 lg:px-4 lg:py-0"><a class="text-rose-500 lg:hover:underline" href="./">home</a></li>
+        <li class="p-1 lg:px-4 lg:py-0"><a class="text-rose-500 lg:hover:underline" href="https://github.com/Lmendev">github.com/Lmendev</a></li>
+        <li class="p-1 lg:px-4 lg:py-0"><a class="text-rose-500 lg:hover:underline" href="#">contact form</a></li>
+      </ul>
+    </nav>
+
+    <p class="my-4 text-center lg:text-left"><strong class="text-zinc-800">Systems Engineer</strong> 👨🏽‍💻 coding passionate focused on <strong class="text-zinc-800">web technologies</strong>. Interested in design, tech and <strong class="text-zinc-800">OpenSource</strong>.</p>
+  </header>
+
+  <section class="flex flex-col items-center lg:block">
+    <h2 class="mt-8 px-2 border-x-2 border-sky-600 text-zinc-800 text-2xl font-bold my-7 lg:border-r-0">Contact form</h2>
+
+    <article class="w-full">
+      <h3 class="text-center font-bold text-xl text-gray-500 mb-4 lg:text-left">Get in touch</h3>
+
+      <form id="form" action="/server" method="get" class="mx-8 lg:max-w-md lg:m-0">
+        <p>Enter the following information to leave me a message 😃</p>
+
+        <label class="flex flex-col mb-4 uppercase text-sm font-bold " for="name">Name
+          <input class="bg-white border rounded py-3.5 px-4 text-sm font-normal" type="text" name="name" id="name" placeholder="Enter your full name" required>
+        </label>
+
+        <label class="flex flex-col mb-4 uppercase text-sm font-bold" for="email">Email
+          <input class="bg-white border rounded py-3.5 px-4 text-sm font-normal" type="email" name="email" id="email" placeholder="Enter your email" required>
+        </label>
+
+        <label class="flex flex-col mb-4 uppercase text-sm font-bold" for="message">Message
+          <textarea class="bg-white border rounded py-3.5 px-4 text-sm font-normal" name="message" id="message"  rows="12" placeholder="Enter your message" required></textarea>
+        </label>
+
+        <button class="p-4 uppercase font-bold border border-sky-600 rounded-lg bg-sky-600 text-white drop-shadow-lg w-full hover:bg-sky-500 active:bg-sky-700 active:drop-shadow-none" type="submit">
+          Send message
+        </button>
+      </form>
+    </article>
+  </section>
+
+  <footer class="mb-4 flex flex-col items-center lg:block">
+    <h2 class="mt-8 px-2 border-x-2 border-sky-600 text-zinc-800 text-2xl font-bold my-7 lg:border-r-0">Social</h2>
+
+    <article>
+      <h3 class="hidden">Social media links</h3>
+
+      <ul>
+        <li>
+          <a href="https://twitter.com/intent/follow?screen_name=Lmendev" target="_blank">
+            <img src="https://user-images.githubusercontent.com/7629661/87821427-202e0280-c870-11ea-9e38-8c7c74856753.png" width="144" alt="Follow @Lmendev on Twitter" title="Follow @lmendev on Twitter">
+          </a>
+        </li>
+      </ul>
+    </article>
+  </footer>
+
+  <script src="./app.mjs" type="module"></script>
+</body>
+</html>

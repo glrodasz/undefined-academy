@@ -1,0 +1,191 @@
+body {
+	margin: 0 auto;
+	width: 55%;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 500;
+	line-height: 1.25rem;
+	padding-block: 3.5rem;
+}
+
+em {
+	color: #223;
+}
+
+h1,
+h2, 
+h3 {
+  font-size: 2.4rem;
+  padding: 0.5rem 0;
+  margin: 1.75rem 0;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+	margin-block: .9rem;
+}
+
+.description {
+	font-size: 17px;
+	text-align: start;
+}
+
+.name {
+	margin-block: 0 2rem;
+	font-size: 2.6rem;
+}
+
+.subtitle {
+	margin-block: 2rem 0rem;
+}
+
+.about-me_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-me_text > div{
+	display: inline-block;
+	width: 730px;
+	margin-inline-end: 60px;  
+	text-wrap: pretty;
+}
+
+.me {
+	width: 170px;
+	height: auto;
+	aspect-ratio: 2536 / 2849;
+	border-radius: 45%;
+}
+
+
+h1,
+h2,
+th {
+  color: #35211c;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 2px solid #283618;
+  padding: 2px 16px;
+}
+
+a {
+  color: rgb(190, 82, 36);
+  font-style: oblique;
+  text-decoration: none;
+}
+
+code {
+  color: rgb(237, 88, 88);
+  font-style: italic;
+  letter-spacing: 0.5px;
+	font-size: 16px;
+}
+
+.skills > h2 {
+	margin-block-end: 2rem;
+}
+
+.skill {
+	width: 140px;
+	border: 2px solid #283618;
+	border-radius: 25px;
+	padding: 15px;
+	margin-block-end: 20px;
+	margin-inline-end: 20px;
+	display: inline-block;
+}
+
+.skill > img {
+	width: 70px;
+	height: 70px;
+	display: block;
+	margin: auto;
+}
+
+.skill-name {
+	font-weight: 600;
+	font-size: 18px;
+	text-align: center;
+	margin: 15px 0px 10px;
+}
+
+form {
+	text-align: center;
+	margin-block-start: 50px;
+}
+
+input,
+textarea {
+	display: block;
+	margin: auto;
+	margin-block: 10px 5px;
+	padding: 6px;
+	font-size: 16px;
+	font-family: inherit;
+	font-weight: 400;
+}
+
+fieldset {
+	padding-block: 20px;
+}
+
+label {
+	display: block;
+	text-align: start;
+	font-weight: 600;
+	color: #35211c;
+}
+
+legend {
+	padding-inline: 15px;
+	font-size: 24px;
+	font-weight: 700;
+	color: #283618;
+}
+
+input,
+label {
+	width: 100%;
+}
+
+textarea + p {
+	text-align: start;
+	margin: 0;
+	font-size: 14px;
+	color: #223;
+	margin-block-end: 20px;
+}
+
+.inputs {
+	width: 50%;
+	margin: auto;
+}
+
+button {
+	width: 20%;
+	height: 40px;
+	background-color: #35211c;
+	color: white;
+	font-size: 16px;
+	font-family: inherit;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	transition: box-shadow 300ms ease-in;
+}
+
+button:hover {
+	box-shadow: 0px 0px 10px 1px #223;
+}

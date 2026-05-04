@@ -1,0 +1,180 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,500,900';
+
+/* ------- Universal Box Sizing with Inheritance css-tricks.com  ------- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* ------- Variables ------- */
+:root{
+  --color-back-primary: #F5F5F5;
+  --color-back-secondary: #DCDCDC;
+  --color-shadow: #c4c4c4;
+  --color-text: #252525;
+  
+  --container-max-width: 1280px;
+}
+
+/* ------- Utilities ------- */
+.text-light{
+  font-weight: 300;
+}
+.text-bold{
+  font-weight: 900;
+}
+p{
+  padding: 4px 0px;
+}
+.text-title{
+  text-transform: uppercase;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.background-card{
+  background-color: var(--color-back-secondary);
+  border-radius: 4px;
+  box-shadow: 4px 2px 4px rgba(196,196,196, 0.8);
+  padding: 8px 8px;
+}
+/* ------- General ------- */
+body {
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: 360px;
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    padding: 8px 8px;
+    color: #252525;
+    background-color: var(--color-back-primary);
+
+    /* First mobile */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    /* GO DOWN TO DESKTOP VIEW */
+}
+
+
+/* ------- Header ------- */
+.header-cv{
+  position: relative;
+}
+.header-cv-cover{
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+.header-cv-avatar{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  left: 16px;
+  top:160px;
+}
+.header-cv-title{
+  padding: 36px 0px 8px 0px;
+}
+
+/* ------- Main ------- */
+
+/* ------- CARRER INFO ------- */
+.carrer-info-section{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+}
+.section-carrer-title{
+  padding: 4px 0px;
+  background-color: #94d2f9;
+}
+.carrer-info-article{
+  display: flex;
+  flex-direction: column;
+}
+.title-carrer-info-article{
+  padding: 4px 0px;
+}
+.unorder-list{
+  padding: 0px 0px 8px 28px ;
+}
+.unorder-list-level-two{
+  padding: 4px 0px 0px 28px ;
+}
+.unorder-list li, .unorder-list-level-two li{
+  padding-bottom: 4px;
+}
+.unorder-list-level-two li:last-child{
+  padding-bottom: 0px;
+}
+
+/* ------- CARD ------- */
+.alternative-info-section{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 16px;
+}
+.card{
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  gap: 12px;
+}
+.card img{
+  width: 48px;
+  height: 48px;
+}
+.card-button-link{
+  text-decoration: none;
+  color: var(--color-text);
+  transition: ease-in-out 0.4s;
+  
+}
+.card-button-link:hover{
+  color: #696969;
+  box-shadow: 6px 4px 6px rgba(196,196,196, 1);
+
+}
+
+/* ------- DESKTOP VIEW ------- */
+@media only screen and (min-width: 640px) {
+  body {
+    max-width: var(--container-max-width);
+  }
+  .main-info{
+    display: grid;
+    grid-template-areas: 
+    "contact contact work work work"
+    "languages languages education education education"
+    "tools tools . . .";
+    grid-column-gap: 8px
+  }
+  .contact{
+    grid-area: contact;
+  }
+  .work{
+    grid-area: work;
+  }
+  .education{
+    grid-area: education;
+  }
+  .languages{
+    grid-area: languages;
+  }
+  .tools{
+    grid-area: tools;
+  }
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <title>Ejercicio semana-1</title>
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet" >
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="name">Cristopher Cuautzo</h1>
+      <p class="description">
+        I'm recent graduate of the <strong>computer systems and software</strong>, and I'm currently studyig for <em>become a frontend developer</em>  
+      </p>
+    </header>
+    <article class="about-me">
+      <h2 class="subtitle">About me</h2>
+      <div class="about-me_text">
+        <div>
+          <p class="description">
+            I know aboute web development for more than 5 years, but I didn't use HTML, CSS and JavaScript, I used dreamweaver for build my own webs. I stopped building websites for 3 or 2 years approximate, but since 6 months I started to learn HTML, CSS and JavaScript
+          </p>
+          <p class="description">
+            Actually I like all the subjects about the frontend, specially CSS, beacause you can do things that are required JS before. 
+          </p>
+        </div>
+        <img class="me" src="./img/me.jpg" alt="Cristopher Cuautzo img">
+      </div>
+      <h3>Hobbies</h3>
+      <p class="description">
+        Some of my hobbies are:
+      </p>
+      <ul>
+        <li>
+          📚 Read: One of my favorite books are <em>The neverending history</em></li>
+        <li>
+          🎵 Listening music: Some of my favorite artists are: <em>Rosalia, NSQK, Alvaro Díaz</em> 
+        </li>
+        <li>
+          🎮 Play videogames: One of my favorite games are <em>The Legend of Zelda: Ocarina of Time</em>
+        </li>
+      </ul>
+      <section class="skills">
+        <h2 class="subtitle">Languages and Tools</h2>
+        <div class="skill">
+          <img src="./img/html5.svg" alt="HTML Logo">
+          <p class="skill-name">HTML</p>
+        </div>
+        <div class="skill">
+          <img src="./img/css.svg" alt="CSS Logo">
+          <p class="skill-name">CSS</p>
+        </div>
+        <div class="skill">
+          <img src="./img/javascript.svg" alt="JavaScript Logo">
+          <p class="skill-name">JavaScript</p>
+        </div>
+        <div class="skill">
+          <img src="./img/tailwindcss.svg" alt="TailwindCSS Logo">
+          <p class="skill-name">TailwindCSS</p>
+        </div>
+        <div class="skill">
+          <img src="./img/bootstrap.svg" alt="Bootstrap Logo">
+          <p class="skill-name">Bootstrap</p>
+        </div>
+        <div class="skill">
+          <img src="./img/git.svg" alt="Git Logo">
+          <p class="skill-name">Git</p>
+        </div>
+        <div class="skill">
+          <img src="./img/github.svg" alt="GitHub Logo">
+          <p class="skill-name">GitHub</p>
+        </div>
+      </section>
+    </article>
+    <section class="terminal">
+      <h2>Terminal commands</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Comando</th>
+            <th>Descripción del comando</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>
+                <code>mv</code>
+              </strong>
+            </td>
+            <td>Mueve de ubación o cambia el nombre de un archivo o carpeta</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>
+                <code>whatis</code>
+              </strong>
+            </td>
+            <td>Conoce para que sirve un determinado comando</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>
+                <code>man</code>
+              </strong>
+            </td>
+            <td>Muestra información detalla de un comando</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>
+                <code>touch</code>
+              </strong>
+            </td>
+            <td>Crea archivos</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>
+                <code>pwd</code>
+              </strong>
+            </td>
+            <td>Muestra la ruta del directorio en el que nos encontremos</td>
+          </tr>
+        </tbody>
+        </table>
+        <h3>My aliases</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Alias</th>
+              <th>Descripción del alias</th>
+            </tr>
+          </thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>
+                <code>upd='sudo apt update && sudo apt upgrade'</code>
+              </strong>
+            </td>
+            <td>Actualiza los paquetes de mi ditribución de linux</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>
+                <code>config='vim ~/.zshrc'</code>
+              </strong>
+            </td>
+            <td>Abre el archivo de configuración de mis bash en vim</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>
+                <code>g='git'</code>
+              </strong>
+            </td>
+            <td>Abreviatura del comando Git</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>
+                <code>upd='nvm install -lts'</code>
+              </strong>
+            </td>
+            <td>Actualiza node a la versión mas estable</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer>
+      <form>
+        <fieldset>
+          <legend>Contact with me</legend>
+          <div class="inputs">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+          </div>  
+            <div class="inputs">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email">
+            </div>
+            <div class="inputs">
+              <label for="description">Describe the job</label>
+              <textarea name="description" id="description" cols="48"
+              rows="6" placeholder="Describe the job / project / idea / etc.." maxlength="500"></textarea>
+              <p><small>Minimun characteres are 500</small></p>
+            </div>
+          <button id="send-btn">Send</button>
+        </fieldset>
+      </form>
+    </footer>
+    
+    <script>
+      const SEND_BUTTON = document.querySelector("#send-btn");
+      SEND_BUTTON.addEventListener("click", (e) => {
+        e.preventDefault()
+      })
+    </script>
+  </body>
+</html>

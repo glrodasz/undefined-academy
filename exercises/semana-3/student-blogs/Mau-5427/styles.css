@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid Gainsboro;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+input[type="search"] {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid Gainsboro;
+  width: 400px;
+  background: WhiteSmoke;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  height: fit-content;
+  border: none;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-column: 1 /4;
+  grid-row: 1 / 2;
+  border: 1px solid Gainsboro;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.aside-articles {
+  width: 100%;
+  grid-column: 1 / 2;
+  grid-row: 2 / 5;
+  gap: 10px;
+}
+.aside-articles div {
+  max-width: 400px;
+}
+.big-articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  grid-column: 2 / 4;
+  grid-row: 2 / 5;
+  gap: 10px;
+}
+.big-articles div {
+  max-width: 800px;
+}

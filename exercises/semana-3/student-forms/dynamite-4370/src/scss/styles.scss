@@ -1,0 +1,37 @@
+.body {
+    background-image: radial-gradient(circle at 30.17% 63.89%, #bcedff 0, #86d2fd 25%, #3cb5f2 50%, #0098e7 75%, #007dde 100%);
+}
+
+.formulario {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-form {
+    padding: 40px 30px;
+    box-shadow: -14px 16px 11px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    max-width: 840px;
+    background-color: #fff;
+}
+
+.container-form h1 {
+    text-transform: uppercase;
+    color: #333;
+    padding-bottom: 10px
+}
+
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+legend {
+    font-size: 16px;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

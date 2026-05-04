@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Titillium+Web&display=swap');
+
+:root {
+  --primaryAlphaColor: rgb(232, 28, 79, 0.50);
+  --fontTitle: 'Raleway', sans-serif;
+  --fontMain: 'Titillium Web', sans-serif;
+}
+
+body {
+  font-family: var(--fontMain);
+}
+
+
+.Form-title {
+  font-family: var(--fontTitle);
+}
+
+.navbar-brand img {
+  height: 45px;
+  width: auto;
+}
+
+.nav-item {
+  margin-left: 8px;
+  transition: all .3s ease-out;
+}
+
+.nav-item:hover {
+  border-radius: 8px;
+  background-color: var(--primaryAlphaColor);
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}

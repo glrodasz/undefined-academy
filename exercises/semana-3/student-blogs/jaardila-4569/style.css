@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f5f7;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.blog_title{
+    display: grid;
+    place-items: center;
+    margin: 30px;
+}
+
+.blog_title h1{
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+}
+
+.grid_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3%;
+}
+
+.card {
+    overflow: hidden;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.card_img img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.card_body {
+    padding: 26px 20px 36px 20px;
+}
+
+.card_title {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+
+.card_body p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+p.card_author {
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+p.card_author a {
+    font-style: italic;
+    color: #1b1c34;
+}
+
+p.card_author a:hover {
+    font-weight: bold;
+}
+
+a.read_more {
+    background-color: #0f1616;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1.1px;
+    padding: 24px 0;
+    width: 70%;
+    display: inline-block;
+    margin-top: 50px;
+    border-radius: 15px;
+    transition: all .3s ease-in-out;
+}
+
+a.read_more:hover {
+    background-color: #404040;
+    box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (max-width: 1441px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .grid{
+        gap: 2%;
+    }
+
+    .grid_2{
+        gap: 2%;
+    }
+
+    .card{
+        padding: 15px;
+    }
+
+    .card_body{
+        padding: 15px;
+    }
+
+    .card_title{
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+
+    .card_body p{
+        font-size: 16px;
+    }
+
+    a.read_more{
+        padding: 19px 0;
+        width: 60%;
+        font-size: 11px;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .grid_2{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .container{
+        max-width: 90%;
+    }
+
+    .card{
+        padding: 20px 10px;
+    }
+
+    .card_body{
+        padding: 7px;
+    }
+
+    .card_title{
+        font-size: 20px;
+        padding-bottom: 7px;
+    }
+
+    .card_body p{
+        font-size: 14px;
+    }
+
+    a.read_more{
+        padding: 15px 0;
+        width: 50%;
+        margin-top: 20px;
+    }
+}

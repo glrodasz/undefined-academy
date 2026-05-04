@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JorgeVillafraz Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-md navbar-light bg-primary bg-gradient">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#"><i class="bi bi-chat-square-heart-fill"></i></a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/JorgeVillafraz" target="_blank">Follow me</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Formulario -->
+  <div class="container border border-primary mt-4
+  p-4 rounded-5">
+    <form class="row g-3">
+      <div class="col-12">
+        <label class="col-form-label" for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Insert your name" aria-label="Name" required>
+      </div>
+      <div class="col-12">
+        <label class="col-form-label" for="email">Email</label>
+        <input class="form-control" id="email" name="email" type="email" placeholder="insert your email"
+          aria-label="Email" required>
+      </div>
+
+      <fieldset class="container text-center g-3">
+        <legend class="col-form-label col-12">Rate us</legend>
+        <div class="col-12 d-flex flex-nowrap justify-content-center">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" required>
+            <label class="form-check-label" for="gridRadios1">
+              1
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">
+              2
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+            <label class="form-check-label" for="gridRadios3">
+              3
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+            <label class="form-check-label" for="gridRadios4">
+              4
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option5">
+            <label class="form-check-label" for="gridRadios5">
+              5
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+        <label for="floatingTextarea">Give us your opinion</label>
+      </div>
+      <div class="container text-center g-3">
+        <button class="btn btn-outline-success" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+
+
+
+
+  </div>
+
+<script type="module" src="./js/main.js"></script>
+<script type="module" src="./js/main.mjs"></script>
+</body>
+</html>

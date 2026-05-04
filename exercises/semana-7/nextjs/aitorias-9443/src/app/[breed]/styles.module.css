@@ -1,0 +1,33 @@
+.main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.imageContainer {
+    position: relative;
+    max-width: 100%;
+    width: 500px;
+}
+
+.image {
+    border-radius: 6px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 440px;
+}
+
+.title {
+    text-transform: capitalize;
+}
+
+@media (prefers-color-scheme: dark) {
+    .image {
+        box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.3);
+    }
+}

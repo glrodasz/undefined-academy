@@ -1,0 +1,53 @@
+@use "variables.scss" as v;
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  * {
+    box-sizing: inherit;
+  
+    &:before, &:after {
+      box-sizing: inherit;
+    }
+  }
+  
+  body {
+    width: 100%;
+    font-family: v.$Poppins;
+    background: v.$clam-shell;
+    background: linear-gradient(180deg, v.$clam-shell 0%, v.$wafer 15%, v.$dawn-pink 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    font-size: 1.6rem;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p, a, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  

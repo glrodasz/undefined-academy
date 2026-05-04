@@ -1,0 +1,45 @@
+@import "bootstrap/scss/bootstrap";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    margin: 20px;
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(90.05deg,#e7bdd6 1.5%,#7e33c4 98.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+form{
+    margin-top: 20px;
+}
+
+.btn-primary{
+    background: linear-gradient(90.05deg,#e7bdd6 1.5%,#7e33c4 98.76%);
+    border: none;
+}
+
+.footer{
+    margin-top: 30px;
+}
+
+.footer-ref{
+    text-decoration: none;
+}
+
+@include media-breakpoint-up(md) { 
+    .g-3{
+        width: 80%;
+    }
+}

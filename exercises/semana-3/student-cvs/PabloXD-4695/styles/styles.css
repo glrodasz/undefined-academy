@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0px;
+  font-family: "Viga", sans-serif;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: #57238e;
+  background-color: #5199e5;
+  padding: 0px 30px;
+}
+
+figure.logo {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0px;
+  padding: 0px;
+}
+
+.logo-name {
+  font-size: 50px;
+  width: 140px;
+}
+
+.logo-slogan {
+  font-size: 15px;
+  margin-left: 25px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-item {
+  display: none;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #57238e;
+}
+
+.nav-button {
+  display: block;
+  font-size: 30px;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  border: 1px solid gray;
+  padding: 20px;
+  margin: 5px;
+}
+
+.skills ul {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+img {
+  width: 50%;
+  height: 50%;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-content {
+  background-color: aliceblue;
+}
+
+table {
+  margin: auto;
+  caption-side: bottom;
+  border: 2px solid #57238e;
+}
+
+td {
+  border: 2px solid #57238e;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .nav-button {
+    display: none;
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .profile-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h1,
+  .biography,
+  .profile-content:last-child,
+  .bootcamp-content {
+    grid-column: 1 / 4;
+  }
+
+  .container-profile {
+    padding: 10px 60px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+  }
+
+  .text-profile {
+    grid-column: 2 / 4;
+  }
+
+  .bootcamp-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bootcamp-content h2 {
+    text-align: center;
+    grid-column: 1 / 3;
+  }
+}

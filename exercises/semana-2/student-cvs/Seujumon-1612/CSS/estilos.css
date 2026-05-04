@@ -1,0 +1,49 @@
+body{
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333;
+}
+header{
+    text-align: center;
+    border-bottom: solid pink 3px;
+    border-radius: 17px;
+    border-top: solid purple 3px;
+    margin-top: 26px;
+    padding-bottom: 16px;
+}
+section{
+    border-right: solid rgb(209, 188, 188, .7) 2px;
+    border-left: solid rgb(209, 188, 188, .7) 2px;
+    padding: 3px 15px;
+    margin: 2px;
+}
+section img{
+    width: 90%;
+}
+.aboutme{
+    font-size: large;
+}
+a{
+    padding: 6px 8px;
+    background-color: rgb(138, 44, 226, .7) ;
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 12px;
+}
+a:hover{
+    background-color: darkorchid;
+}
+a:active{
+    background-color: deeppink;
+}
+.bloque{
+    display: inline-block;
+}
+footer{
+    padding: 15px;
+    border-radius: 18px 18px 0 0 ;
+    /*background-color: purple;*/
+    border: solid pink;
+    text-align: center;
+}

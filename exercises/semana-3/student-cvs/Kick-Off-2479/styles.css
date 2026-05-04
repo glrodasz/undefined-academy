@@ -1,0 +1,152 @@
+html,
+body {
+    margin: 5px;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+* {
+    box-sizing: inherit;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    display: block;
+    background-image: url("Assets/escuela_de_atenas.jpg");
+    background-size: 100%;
+    padding: 2em;
+    border-radius: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: large;
+}
+
+.first_title {
+    color: #331;
+    text-shadow: 1px 1px 1px black;
+    font-size: 50px;
+}
+
+.second_title {
+    color: orangered;
+    text-shadow: 3.5px 3px 1px black;
+    font-size: 30px;
+}
+
+body {
+    font-family: "Century Gothic", sans-serif;
+    line-height: 2;
+    color: #333;
+}
+
+.information {
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: brown;
+    text-shadow: 1px 1px 1px black;
+}
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+    color: #333;
+    text-shadow: 0px 0px 1px;
+}
+
+
+p {
+    border: 3px solid gray;
+    border-radius: 20px;
+    border-color: brown;
+    text-shadow: 0.5px 1px 1px;    
+    color: #333;
+    padding: 1em;
+}
+
+strong {
+    color: brown;
+}
+
+a {
+    color: rebeccapurple;
+}
+
+
+table,
+th,
+td {
+    border: 1px solid brown;
+}
+
+div {
+    margin-top: 10px;
+    border: 1px solid Gainsboro;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    height: 50%;
+    border-radius: 22px;
+}
+
+nav {
+    text-shadow: 0 0 1px;
+}
+
+input[type="search"] {
+    margin: 5px;
+    padding: 8px 20px;
+    border-radius: 4px;
+    border: 1px solid Gainsboro;
+    width: auto;
+    background: WhiteSmoke;
+}
+
+
+ul {
+    text-align: start;
+    list-style: circle;
+    gap: 30px;
+}
+
+
+@media screen and (min-width: 992px) {
+    body {
+        width: 60%;
+        margin: auto;
+        line-height: 1.5;
+    }
+
+
+    .containers {
+        display: grid;
+        grid-template-rows: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items: center;
+        gap: 5px;
+    }
+    
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 30px;
+        color: brown;
+        text-shadow: 1px 1px 1px black;
+    }
+}

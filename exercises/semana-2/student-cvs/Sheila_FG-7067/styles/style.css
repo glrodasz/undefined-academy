@@ -1,0 +1,91 @@
+body {
+    margin: 0 auto;
+    background: papayawhip;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+    max-width: max-content;
+    color: #333;
+}
+
+#contenido {
+    background-color: honeydew;
+    padding: 8px;
+    backdrop-filter: blur(10px);
+}
+
+#titulos {
+    color: #333;
+}
+
+.parrafo {
+    font-size: 14px;
+}
+
+.tabla1,
+td,
+th {
+    border: 1px solid;
+    font-size: 14px;
+}
+
+.tabla1 {
+    width: 80%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.tabla1 th {
+    color: #333;
+    background-color: khaki;
+}
+
+.tabla1 td:nth-child(1) {
+    text-align: center;
+    width: auto;
+}
+
+.tabla1 td:nth-child(2) {
+    text-indent: 40px;
+    font-style: italic;
+}
+
+.tabla2,
+td,
+th {
+    border: 1px solid;
+    font-size: 14px;
+}
+
+.tabla2 {
+    width: 60%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.tabla2 th {
+    color: #333;
+    background-color: khaki;
+}
+
+.tabla2 td:nth-child(1) {
+    text-align: center;
+    width: auto;
+}
+
+.tabla2 td:nth-child(2) {
+    text-indent: 40px;
+    font-style: italic;
+}
+
+.link {
+    text-align: end;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.github-mark {
+    width: 2%;
+    height: 2%;
+}
+

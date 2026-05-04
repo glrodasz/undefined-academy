@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Información para contactarme</title>
+</head>
+
+<body>
+    <Header>
+        <h1>Informacion para contactarme</h1>
+    </Header>
+    <main class="page">
+        <form action="server" method="post">
+            <div class="form">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" placeholder="Ingrese su nombre completo" name="nombre" required>
+            </div>
+            <div class="form">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Ingrese su correo electronico" name="email" required>
+            </div>
+            <div class="form">
+                <fieldset required>
+                    <legend>Cómo supiste de mi?</legend>
+                    <input id="Github" name="comodemi" type="radio" value="Github" required><label for="Github">Github</label>
+                    <input id="LinkedIn" name="comodemi" type="radio" value="LinkedIn"><label
+                        for="LinkedIn">LinkedIn</label>
+                    <input id="Discord" name="comodemi" type="radio" value="Discord"><label
+                        for="Discord">Discord</label>
+                </fieldset>
+            </div>
+            <div class="form">
+                <label for="area">Area de interés:</label>
+                <select id="area" name="area" required>
+                    <option value="">Selecciona una</option>
+                    <option value="diseño" >Diseño Web</option>
+                    <option value="webapp">Aplicacion Web</option>
+                    <option value="datos">Analitica de datos</option>
+                </select>
+            </div>
+            <div class="form">
+                <label for="Requerimiento">Requerimiento</label>
+                <textarea id="Requerimiento" name="Requerimiento" required></textarea>
+            </div>
+            <button>Enviar</button>
+        </form>
+    </main>
+
+
+</body>
+
+</html>

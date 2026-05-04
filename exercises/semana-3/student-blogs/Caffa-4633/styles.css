@@ -1,0 +1,243 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: inherit;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    overflow-y: visible;
+    border:unset;
+}
+
+/* Clases Utilitarias */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gainsboro;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Debug Class */
+.debug {
+    border: 1px dashed tomato;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/*  Contenedor Principal */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto;
+    gap: 20px;
+}
+
+
+
+/*  Estructura Principal */
+/* Post Principal  */
+.hero-post {
+    display: flex;
+    flex-direction: column;
+    
+    /* 
+    No Olvidar. Para dibujar filas y columnas, las GRID LINES siempre son 1 más
+    Para dibujar 2 columnas, necesito 3 grid lines. 
+    Para dibujar 2 filas, necesito 3 grid lines.
+    */
+
+    grid-row: 1 / 3;
+    grid-column: 1 / 4;
+}
+
+/* Sub Post Principal */
+.bio {
+    display: flex;
+    flex-direction: column;
+
+    grid-row: 1 / 3;
+    grid-column: 4 / 5;
+}
+
+/* Navigation - Ya se que está al medio */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    grid-row: 3 / 4;
+    grid-column: 1 / 5;
+}
+
+/* Seccion Publicaciones */
+.mid {
+    display: flex;
+
+    grid-row: 4 / 5 ;
+    grid-column: 1 / 5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+ul li {
+ flex-wrap: wrap;   
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    
+    grid-row: 5 /6;
+    grid-column: 1 / 5;
+}
+
+
+/** Responsive */
+
+:root {
+    --texto-responsive: 12px;
+    --titulos-responsive: 20px;
+}
+
+@media screen and (max-width <= 575.98px) { 
+    .container {
+        gap: 5px;
+    }
+
+ }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 5px;
+    }
+
+    .hero-post {
+        grid-column: 1;
+        grid-row: 2/3;
+    }
+
+    .hero-post h1 {
+        font-size: var(--titulos-responsive);
+    }
+
+    .hero-post p {
+        font-size: var(--texto-responsive);
+    }
+    .bio {
+        grid-row: 3/4;
+        grid-column: 1;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .bio img {
+        height: 150px;
+    }
+
+    .bio p {
+        font-size: var(--texto-responsive);
+    }
+    
+    nav {
+        grid-row: 1 / 2;
+        grid-column: 1;
+        font-size: 10pt;
+        overflow: hidden;
+    }
+
+    nav ul {
+        gap: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        flex-wrap: wrap;
+        background-color: gold;
+        padding: 10px;
+        border: 1px dotted peru;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: darkslategray;
+    }
+
+    nav ul li:last-child {
+        background-color: peru;
+    }
+
+    nav ul li:last-child input {
+        background-color: papayawhip;
+        padding: 5px;
+        color: black;
+        font-weight: bold;
+        font-style: oblique;
+        border: unset;
+    }
+    .mid {
+        grid-row: 4 / 5;
+        grid-column: 1;
+        height: max-content;
+        min-height: 475px;
+        overflow: scroll;
+        font-size: var(--texto-responsive);
+    }
+
+    .mid ul {
+        flex-flow: wrap;
+        max-height: 400px;
+        font-size: 12px;
+    }
+
+    .mid ul li {
+        display: flex;
+        flex-flow: wrap;
+        max-width: 190px;
+        font-size: 12px;
+    }
+
+    footer {
+        grid-row: 5 / 6;
+        grid-column: 1;
+        font-size: var(--texto-responsive);
+        margin-top: 20px;
+        min-height: 350px;
+    }
+
+ }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+ }
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    
+ }

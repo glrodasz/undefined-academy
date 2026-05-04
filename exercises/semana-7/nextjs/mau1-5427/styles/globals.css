@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --clr-brown: rgb(122, 59, 7);
+}
+
+body {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}

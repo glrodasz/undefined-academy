@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <main class="page">
+        <h1>Contacto</h1>
+        <form action="/correcto.html" method="post">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" type="text" placeholder="Ingrese su nombre completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Ingrese su correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="company">Empresa</label>
+                <input id="company" type="text" placeholder="Ingrese el nombre de la empresa" required>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <input id="100000" name="budget" type="radio"><label for="100000">$100000</label>
+
+                    <input id="50000" name="budget" type="radio"><label for="50000">$50000</label>
+
+                    <input id="15000" name="budget" type="radio"><label for="15000">$15000</label>
+                </fieldset>
+                <div class="help">Este presupuesto es la base no el total.</div>
+            </div>
+            <div class="form-group">
+                <label for="type">Tipo de proyecto</label>
+                <select name="" id="type" required>
+                    <option value="" disabled selected>Seleccione uno</option>
+                    <option value="">Website</option>
+                    <option value="">Webapp</option>
+                    <option value="">Mobile</option>
+                    <option value="">Diseño</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción</label>
+                <textarea name="" id="description" cols="30" rows="10" required></textarea>
+                <div class="help">Escribe una descripcion del proyecto en al menos 500 palabras.</div>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input id="terms" type="checkbox" required>
+                    <span>Acepto los terminos y condiciones</span>
+                </label>
+            </div>
+            <button>Enviar</button>
+        </form>
+    </main>
+</body>
+</html>

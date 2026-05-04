@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Hola, soy Eduardo Molina.</h1>
+            <nav>
+                <ul class="menu">
+                    <li class="menu_item"><a href="index.html">Inicio</a></li>
+                    <li class="menu_item"><a href="index.html#sobremi">Sobre mi</a></li>
+                    <li class="menu_item"><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="main_section">
+
+            <header>
+                <h1>Formulario de contacto</h1>
+            </header>
+
+            <form action="/server" method="post" id="contact-form">
+                <div class="form-group">
+
+                    <label for="full_name">Nombre Completo</label>
+                    <input type="text" id="full_name" required>
+
+                    <label for="email">Correo</label>
+                    <input type="email" id="email" required>
+
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+
+                    <button class="Primary">Enviar</button>
+                </div>
+            </form>
+
+            <footer>
+                <h3>Donde me pueden encontrar</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/emolina9506"> LinkedIn </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/eduardojavier95"> Github </a>
+                    </li>
+                </ul>
+            </footer>
+
+        </section>
+
+        <footer class="footer">
+            <p>Hecho por Eduardo Molina &copy; 2023</p>
+        </footer>
+
+    </main>
+
+</body>
+
+<script>
+    let form = document.getElementById('contact-form');
+    form.addEventListener('submit', event => {
+        console.log('Enviando formulario');
+        event.preventDefault();
+    })
+</script>
+
+</html>

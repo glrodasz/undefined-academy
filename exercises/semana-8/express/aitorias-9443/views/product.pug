@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  a(href="/products") Volver al listado de productos
+
+  h1 #{title}
+
+  div.flex.flex-col.gap-20
+    div.flex.flex-wrap
+      div.product-data-title
+        strong Nombre:
+      div.product-data
+        span #{product.name}
+    div.flex.flex-wrap
+      div.product-data-title
+        strong Descripción:
+      div.product-data
+        span #{product.description}
+    div.flex.flex-wrap
+      div.product-data-title
+        strong Precio:
+      div.product-data
+        span #{product.price} €

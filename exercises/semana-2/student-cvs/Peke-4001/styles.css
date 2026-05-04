@@ -1,0 +1,122 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  color: #333;
+  background-color: #fafafa;
+}
+.page {
+  margin: 0 auto;
+  max-width: 50em;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  padding: 4em 1em;
+}
+
+h1 {
+  font-size: 1.7em;
+}
+
+h1,
+h2,
+h3,
+strong {
+  margin-top: 1em;
+  padding-top: 1em;
+  color: #333;
+}
+
+code,
+pre {
+  background: #f5f7f9;
+  border-bottom: 1px solid #d8dee9;
+  color: #a7adba;
+}
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+pre {
+  border-left: 2px solid #69c;
+  padding: 1em;
+}
+a {
+  color: #e81c4f;
+}
+
+/* Contacto */
+.form-group {
+  margin: 20px 0;
+}
+
+label,
+input {
+  vertical-align: middle;
+}
+
+label,
+input:not([type="radio"], [type="checkbox"], [type="submit"]) {
+  width: 100%;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+
+label,
+legend {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+}
+
+.help {
+  font-size: 12px;
+  margin-top: 10px;
+  color: gray;
+}
+
+.btn {
+  width: 30%;
+  padding: 16px 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #1e40af;
+  background: #2563eb;
+  color: #fff;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #3b82f6;
+}
+
+.btn:active {
+  background-color: #1d4ed8;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+fieldset {
+  border-radius: 4px;
+}

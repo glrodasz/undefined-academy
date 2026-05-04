@@ -1,0 +1,213 @@
+html {
+   box-sizing: border-box;
+   height: 100%;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+   box-sizing: inherit;
+}
+
+body {
+   height: inherit;
+   margin: 0;
+   background-color: #111827;
+}
+
+a {
+   color: #cbd5e1;
+   text-decoration: none;
+}
+
+.container {
+   display: grid;
+   /* grid-template-columns: repeat(4, 1fr); */
+   grid-template-columns: 150px 350px 350px 150px;
+   grid-template-rows: 80px 300px auto 150px;
+   grid-template-areas:
+      "header header header header"
+      "main main main main"
+      "section section section section"
+      "footer footer footer footer";
+
+
+   max-width: 1000px;
+   margin: 0 auto;
+   height: inherit;
+}
+
+.header {
+   grid-area: header;
+   align-self: center;
+   background-color: #111827;
+   color: #f1f5f9;
+   padding: 10px;
+}
+
+.main {
+   grid-area: main;
+   background-image: url("./mern.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position-y: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   align-content: stretch;
+}
+
+.section {
+   grid-area: section;
+   display: grid;
+   place-items: center;
+   background-color: #cbd5e1;
+   padding-bottom: 50px;
+}
+
+.footer {
+   grid-area: footer;
+   background-color: #111827;
+   color: #cbd5e1;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   font-size: 14px;
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 1.2em;
+   padding: 0 20px;
+}
+
+ul {
+   display: flex;
+   gap: 60px;
+   list-style: none;
+}
+
+h2 {
+   color: #1f2937;
+}
+
+img {
+   width: 100px;
+   height: 100px;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding: 30px 90px 30px 80px;
+   border-top-right-radius: 15px;
+   width: 500px;
+}
+
+input {
+   padding: 10px 7px;
+   font-size: 15px;
+   border-radius: 5px;
+   border: 1px solid lightgray;
+}
+
+button {
+   padding: 8px;
+   font-weight: bold;
+   font-size: 16px;
+   text-transform: uppercase;
+   border-radius: 5px;
+   border: 1px solid lightgray;
+}
+
+input::placeholder {
+   font-size: 15px;
+}
+
+.card {
+   display: flex;
+   gap: 20px;
+   align-items: center;
+   width: 700px;
+   color: #cbd5e1;
+   background-color: #64748b;
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 40px;
+   box-shadow: 1px 3px 6px rgb(0, 0, 0, 0.5);
+}
+
+.card-img {
+   width: 100%;
+}
+
+.card-header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 15px;
+   font-size: 13px;
+}
+
+.card-avatar {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.avatar {
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   background-color: #cbd5e1;
+}
+
+.description p {
+   margin-top: 30px;
+   line-height: 25px;
+   font-size: 17px;
+}
+
+.social {
+   display: flex;
+   justify-content: space-between;
+   font-size: 13px;
+}
+
+.footer-bio {
+   width: 500px;
+}
+
+.footer-bio>span {
+   font-size: 25px;
+}
+
+.footer-bio>p {
+   line-height: 25px;
+}
+
+.contenedor-footer {
+   display: flex;
+   align-items: center;
+   gap: 50px;
+}
+
+.contenedor-footer>img {
+   background-color: white;
+   border-radius: 50%;
+   object-fit: contain;
+}
+
+.redes_social {
+   display: flex;
+   justify-content: space-evenly;
+   font-size: 30px;
+}
+
+.copy {
+   display: inline-block;
+   margin-top: 20px;
+}

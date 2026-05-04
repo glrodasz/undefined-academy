@@ -1,0 +1,59 @@
+@use "./style/utilidades";
+@use "./style/base";
+@use "./style/desktop";
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+* {
+  @include reset();
+}
+
+body {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  font-family: utilidades.$font-family-s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1rem;
+  color: utilidades.$gamboge;
+}
+
+section > h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 13px;
+  margin: 10px 0;
+}
+.nav-checkbox {
+  display: none;
+}
+
+.experiences img {
+  width: 50px;
+}

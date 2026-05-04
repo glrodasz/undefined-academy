@@ -1,0 +1,175 @@
+html {
+   box-sizing: border-box;
+   height: 100%;
+   font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+* {
+   box-sizing: inherit;
+}
+
+body {
+   height: inherit;
+   margin: 0;
+   background-color: var(--color-primary);
+   color: var(--color-text);
+}
+
+a {
+   color: var(--color-links);
+   text-decoration: none;
+}
+
+img {
+   width: 100px;
+   height: 100px;
+}
+
+h2 {
+   color: var(--color-text-h2);
+}
+
+time {
+   font-style: italic;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+}
+
+.header nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 10px;
+}
+
+.main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 50px 0;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   width: 250px;
+}
+
+input {
+   font-size: 0.9em;
+   padding: 9px 7px;
+   border-radius: 5px;
+   border: 1px solid lightgray;
+}
+
+button {
+   padding: 8px;
+   font-weight: bold;
+   font-size: 0.9em;
+   text-transform: uppercase;
+   border-radius: 5px;
+   cursor: pointer;
+   border: 1px solid lightgray;
+}
+
+.section {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.card {
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+   background-color: var(--color-background);
+}
+
+.card-img {
+   width: 100%;
+   height: auto;
+}
+
+.card-header {
+   display: flex;
+   font-size: 0.7em;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 10px;
+}
+
+.card-avatar {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.avatar {
+   object-fit: cover;
+   border-radius: 50%;
+   width: 3em;
+   height: 3em;
+}
+
+.description p {
+   line-height: 25px;
+   font-size: 0.9em;
+}
+
+.social {
+   display: flex;
+   justify-content: space-between;
+   font-size: 0.7em;
+}
+
+.img-perfil-small {
+   object-fit: cover;
+   border-radius: 50%;
+   width: 6em;
+   height: 6em;
+}
+
+.footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 30px;
+   padding: 20px 0;
+}
+
+.contenedor-footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
+
+.footer-bio {
+   text-align: center;
+   padding: 0 20px;
+
+   span {
+      font-size: 1.5em;
+   }
+
+   p {
+      line-height: 25px;
+      font-size: 0.9em;
+   }
+}
+
+.redes_social {
+   display: flex;
+   justify-content: space-evenly;
+   font-size: 30px;
+}
+
+.copy {
+   display: inline-block;
+   padding-top: 10px;
+   font-size: 0.7em;
+}

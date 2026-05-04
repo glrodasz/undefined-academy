@@ -1,0 +1,58 @@
+*{
+  font-family: "Nunito", sans-serif;
+ }
+
+:root{
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --bg-color:#f5f5f5;
+  --text-color:#334155;
+  --border:#57534e33;
+  --hover:#cbd5e1;
+  background-color:var(--bg-color);
+  color:var(--text-color);
+  
+}
+  
+
+h1{
+  font-size:1.3em;
+  text-align:center;
+  font-weight: bold;
+  
+}
+
+.grid-wrapper{
+  display:grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: 1fr 1fr;
+  justify-items:center;
+  gap:2em;
+
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg-color:#1c1917;
+    --text-color:#d1d5db;
+    --border:#e2e8f026;
+    --hover:#09090b;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .grid-wrapper{
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  }
+
+  
+  @media only screen and (max-width: 545px){
+    .grid-wrapper{
+      grid-template-columns:1fr;
+      grid-template-rows: 1fr;
+    }
+  
+}

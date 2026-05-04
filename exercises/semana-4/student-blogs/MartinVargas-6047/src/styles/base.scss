@@ -1,0 +1,73 @@
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Roboto:wght@300;500&display=swap");
+//reset
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+// mobile first - BEM + SCSS
+.body {
+  font-family: "Roboto";
+}
+.body__nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: $Cardinal-Pink;
+}
+.nav__input {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid $Alto;
+}
+.nav__a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+  color: $White;
+  background-color: $Cardinal-Pink;
+}
+.body__div {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.div__article {
+  max-width: 350px;
+  border-radius: 8px;
+  margin: 1rem;
+  background-color: $Alabaster;
+  box-shadow: 0 0 12px $Alto-approx;
+}
+.header__img {
+  border-radius: 8px 8px 0 0;
+  max-height: 200px;
+  height: 150px;
+  width: 100%;
+  max-width: 100%;
+}
+.article__footer {
+  padding: 0 1rem;
+}
+.footer__div {
+  margin-top: 1rem;
+}
+.footer__span {
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: $Cardinal-Pink;
+  color: $Alabaster;
+}
+.footer__time {
+  color: $Cardinal-Pink;
+  text-transform: capitalize;
+}

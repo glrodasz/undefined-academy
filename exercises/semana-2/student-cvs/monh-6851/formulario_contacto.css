@@ -1,0 +1,100 @@
+/* */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+	color: #333;
+	background-color: #fafafa;
+}
+
+.page{
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: tomato; */
+}
+
+.form-group{
+    /* border: 1px solid tomato; */ /* para Debugear   */
+    margin: 20px 0;
+    /* margin: 1em; */
+}
+
+label, input {
+	vertical-align: middle; /* solo funciona para los elementos inline que estén ordenados vertical/ */
+}
+
+
+/* label, input[type="text"], input[type=email]{
+    width: 100%;
+} */
+label, input:not[type="radio"], input[type=checbox]{
+    width: 100%;
+    /* display: block; */
+}
+
+label, input {
+	vertical-align: middle; /* solo funciona para los elementos inline que estén ordenados vertical/ */
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label, legend {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #444;
+}
+
+input[type="text"], input[type="email"], textarea {
+	background: white;
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	padding: 8px 10px;
+	color: #333;
+}
+
+.help {
+	font-size: 12px;
+	margin-top: 10px;
+	color: gray;
+}
+
+button {
+	padding: 16px 60px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: 1px solid #713f12;
+	background: #eab308;
+	color: #333;
+	text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+	border-radius: 8px;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+	cursor: pointer; /* transforma el ratón (affordance) */
+}
+
+button:hover {
+	background: #facc15;
+}
+button:active {
+	background: #ca8a04;
+	box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+} 
+/* nuevas propiedades css */
+form {
+	accent-color: #eab308;
+}
+input:focus-visible, textarea:focus-visible {
+	border: 1px solid #eab308;
+	outline: 3px solid #facc15;
+}

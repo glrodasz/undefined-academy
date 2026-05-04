@@ -1,0 +1,93 @@
+/* first rule ---
+Centering */
+
+/* 01 Centering */
+header,
+main {
+  margin: 0 auto;
+  max-width: 50em;
+}
+
+/* 02 Font family */
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+/* 03 Spacing */
+body {
+	line-height: 1.5;
+	padding: 4em 1em;
+  } 
+  /* h2 {
+	margin-top: 1em;
+	padding-top: 1em;
+  } */
+  h1, h2 {
+	margin-bottom: 0em;
+	border-bottom: 0em;
+	padding-bottom: 0em;
+	}
+	h2 {
+		font-size: 1.17em;
+	}
+
+  h3 {
+	/* margin-bottom: 0em;
+	border-bottom: 0em;
+	padding-bottom: 0em; */
+	margin: 0.25em 0em;
+	font-size: 1.0em;
+  }
+
+
+/* 04 Color and contrast */
+body {
+	color: #555;
+}
+h3 {
+	color: #333;
+} 
+h3 {
+	color: #444;
+} 
+strong {
+	color: #333;
+} 
+
+
+/* 05 Balance */
+ul {
+  /* background: #eee; */
+  /* padding: 1px 1px; */
+  vertical-align: text-top;
+  margin-top: 0em;
+  padding-top: 0em;
+}
+
+/* 06 Primary color */
+h1 {
+	color: #000000;
+}
+/* 07 Secondary colors */
+body {
+background: white;
+/* color: #566b78; */
+}
+
+/* Classes */
+/* .li_black{
+	color:#1f1f1f
+} */
+
+.li_font_size{
+	font-size: 0.9em;
+}
+
+/* #id Selectors */
+#p_subtitle{
+	/* vertical-align: text-top; */
+	margin-top: 0em;
+	padding-top: 0em;
+	border-top: 0em;
+	/* color: red; */
+}

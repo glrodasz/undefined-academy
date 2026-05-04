@@ -1,0 +1,12 @@
+@use '../tools.scss';
+
+.nav-bar {
+   position: fixed;
+   bottom: 0;
+   background-color: var(--color-night-owl);
+   height: 3em;
+   width: 100%;
+   z-index: 1;
+
+   @include tools.format-flex(stretch, normal, column-reverse);
+}

@@ -1,0 +1,27 @@
+:root {
+  --bg-light:       #fafafa;
+  --bg-dark:        #0e0e0e;
+  --text-primary:   #555;
+  --text-secondary: #fefefe;
+  --text-title:     #333;
+  --placeholder:    #cecece;
+  --sky-050:        #eff6ff;
+  --sky-100:        #e0f2fe;
+  --sky-200:        #bae6fd;
+  --sky-300:        #7dd3fc;
+  --sky-400:        #38bdf8;
+  --sky-500:        #0ea5e9;
+  --sky-600:        #0284c7;
+  --sky-700:        #0369a1;
+  --sky-800:        #075985;
+  --sky-900:        #0c4a6e;
+  --sky-950:        #082f49;
+  --sky-950-smoke:  #082f499e;
+}
+
+h1,
+h2,
+h2 a,
+strong {
+  color: var(--text-title);
+}

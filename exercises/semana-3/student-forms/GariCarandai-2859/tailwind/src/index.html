@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind w/ Vite</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-slate-100">
+  <main class="flex justify-center align-it items-center h-screen">
+
+    <div class="w-full max-w-md">
+      <h1 class="font-bold text-center mb-6 uppercase text-xl">My contact form</h1>
+
+      <form class="w-full">
+        <div class="mb-3 flex flex-col">
+          <label for="inputtext" class="mb-1">Name</label>
+          <input class="p-2 rounded-md" type="text" id="inputName" required>
+        </div>
+        <div class="mb-3 flex flex-col">
+          <label for="inputEmail" class="mb-1">Email</label>
+          <input class="p-2 rounded-md" type="email" id="inputEmail" required>
+        </div>
+        <div class="mb-3 flex flex-col">
+          <label for="inputSubject" class="mb-1">Subject</label>
+          <input class="p-2 rounded-md" type="text" id="inputSubject" required>
+        </div>
+        <div class="mb-6 flex flex-col">
+          <label for="inputMenssage" class="mb-1">Menssage</label>
+          <textarea class="p-2 rounded-md" id="inputMenssage" rows="4" required></textarea>
+        </div>
+        <div class="flex justify-center">
+          <button type="submit" class="rounded-lg bg-sky-500 hover:bg-sky-600 text-white py-3 w-full max-w-xs">Submit</button>
+        </div>
+        
+      </form>
+    </div>
+
+  </main>
+</body>
+
+</html>

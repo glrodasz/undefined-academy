@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./styles.css" rel="stylesheet">
+
+  <script async defer type="module" src="./main.js"></script>
+</head>
+<body>
+  <section class="p-28 font-mono flex flex-col items-center">
+    <h1 class="font-bold text-4xl pb-14 ">Contact us</h1>
+    <form action="" method="get" class="flex flex-wrap gap-10 justify-center px-36 form">
+      <div class="flex flex-col w-80 border-b-2 border-b-black gap-3">
+        <label for="firstName" class="">FIRST NAME</label>
+        <input type="text" id="firstName"  placeholder="Enter your first name" class="p-1" required>
+      </div>
+      <div class="flex flex-col w-80 border-b-2 border-b-black gap-3">
+        <label for="lastName" class="">LAST NAME</label>
+        <input type="text" id="lastName" placeholder="Enter your last name" class="" required>
+      </div>
+      <div class="flex flex-col w-80 border-b-2 border-b-black gap-3">
+        <label for="email" class="">EMAIL</label>
+        <input type="email" id="email" placeholder="Enter your email" class="" required>
+      </div>
+      <div class="flex flex-col w-80 border-b-2 border-b-black gap-3">
+        <label for="phone" class="">PHONE NUMBER</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" class="">
+      </div>
+      <div class="flex flex-col w-11/12 border-b-2 border-b-black gap-3">
+        <label for="message" class="">MESSAGE</label>
+        <textarea  name="" cols="30" rows="2" type="text" id="message" placeholder="Enter your message" class="resize-y" required></textarea>
+      </div>
+
+      <button type="submit" class="w-32 bg-gray-300 rounded-md py-1 shadow-2xl cursor-pointer form">Submit</button>
+    </form>
+  </section>
+</body>
+</html>

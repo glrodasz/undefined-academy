@@ -1,0 +1,235 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: slategrey;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+    background: rgb(86, 44, 86);
+    padding: 20px;
+}
+
+.presentacion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+p {
+    line-height: 1.3;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 5px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #333
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card {
+    padding: 5px;
+    margin: auto;
+    width: 15rem;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+li {
+    text-decoration: none;
+}
+
+.tecnologias {
+    display: flex;
+    flex-direction: column;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: auto;
+    padding: 5px;
+    width: 5rem;
+    height: auto;
+}
+
+footer {
+    background-color: cadetblue;
+}
+
+
+/*Contacto*/
+
+.form-group {
+    margin: 20px 0;
+}
+
+.form {
+    margin: 0px auto;
+    max-width: 600px;
+}
+
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+}
+
+label,
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #444;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label,
+input {
+    vertical-align: middle;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background: white;
+    border: 1px solid lightblue;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+textarea+div {
+    font-size: 12px;
+}
+
+label,
+input:not([type="checkbox"]) {
+    width: 100%;
+}
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid turquoise;
+    background: darkgrey;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px black;
+    cursor: pointer;
+}
+
+button:hover {
+    background: teal;
+}
+
+button:active {
+    background: orange;
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    .titulo {
+        display: flex;
+        justify-content: center;
+        font-size: 2.5rem;
+        color: white;
+        background: slategray;
+        margin: auto;
+        margin-top: 25px;
+        padding: 20px;
+    }
+
+    p {
+        line-height: 1.5;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 50px 150px;
+    }
+
+    .container {
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .card {
+        width: 18rem;
+        margin: 20px;
+    }
+
+
+
+    .iconos {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: auto;
+    }
+}

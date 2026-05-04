@@ -1,0 +1,106 @@
+@use "variables";
+
+@media screen and (min-width: variables.$tablet-media-query) { 
+    .main-container{
+        width: 100%; 
+        background: var(--color-seashell);
+    } 
+    p{
+        font-size: 1.2rem;
+    }
+    .main-title{
+        font-size: 60px;
+    }
+    .main-title span{
+        font-size: 30px;
+    }
+    .frontend-subtitle{
+        font-size: 22px;
+    }
+    h4{
+        font-size: 3rem;
+    }
+    header{
+        min-height: 580px;
+    }
+    nav ul{
+        font-size: 1.1rem;
+    }
+    .l-about li{
+        font-size: 1.2rem;
+    }
+    .personal-profile{
+        margin: 2rem 0;
+        font-size: 3rem;
+    } 
+    .feature{ 
+        padding: 1rem;
+    }
+    form{
+        min-width: auto; 
+    }
+    footer{   
+        min-height: 100px;
+        padding-bottom: 1.5rem; 
+    }   
+    footer p, footer address, h5{
+        font-size: 1.2rem; 
+    }
+    .contact{
+        font-size: 2.8rem; 
+    } 
+}
+@media screen and (min-width: variables.$desktop-media-query){
+    p{
+        font-size: 1.4rem;
+        padding: 1.2rem;
+    }
+    .main-title{
+        font-size: 4.5rem; 
+        padding: 1rem;
+        margin: 2rem;
+    }
+    .main-title span{
+        font-size: 2.7rem;
+    }
+    header{
+        min-height: 850px;
+    }
+    .frontend-subtitle{
+        font-size: 1.5rem; 
+        margin: 1rem;
+    } 
+    h4{
+        font-size: 4rem;
+        margin: 3rem;
+    }
+    nav ul{
+        font-size: 1.4rem;
+        margin: 1.2rem;  
+    } 
+    .features{
+        display: flex;
+        order: 1;
+    } 
+    .feature{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .signup{
+        height: 150px;
+        min-height: 150px;
+        order: 2;
+    }
+    content{
+        order: 3;
+    }
+
+    footer{   
+        min-height: 100px;
+        padding-bottom: 1.5rem; 
+    }   
+    footer p, footer address, h5{
+        font-size: 1.4rem; 
+    }
+}

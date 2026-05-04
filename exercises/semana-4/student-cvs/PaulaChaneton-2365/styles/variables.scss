@@ -1,0 +1,57 @@
+$color-MineShaft: #333333;
+$color-WildSand:  #F5F5F5;
+$color-CuriuosBlue: #73A2F2; 
+$color-CuttySark: #566b78; 
+$color-CornflowerBlue: #8CB0FD;
+$font-general: "Helvetica", "Arial", sans-serif;
+
+
+h1 {
+ color: $color-MineShaft;
+}
+
+body{
+    color: $color-CuttySark;
+    background-color: $color-WildSand;
+    font-family: $font-general;
+}
+
+a{
+    border-color: $color-CuriuosBlue;
+    color:$color-CuriuosBlue;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="ubicacion"],
+textarea {
+    background: $color-WildSand;
+    border: 1px solid $color-CuriuosBlue;
+    color: $color-MineShaft;
+}
+
+.enviar {
+
+    border-color: $color-CuriuosBlue;
+    background:$color-CuriuosBlue;
+    color:$color-MineShaft;
+}
+
+.borrar {
+    border-color: $color-WildSand;
+    color:$color-MineShaft;
+}
+
+button:hover {
+    background-color: $color-CornflowerBlue;
+}
+
+form {
+    accent-color:$color-CornflowerBlue;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    border: 1px solid $color-CornflowerBlue;
+    outline: 1px solid $color-CornflowerBlue;
+}

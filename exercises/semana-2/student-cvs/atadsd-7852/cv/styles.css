@@ -1,0 +1,119 @@
+header {
+    background-image: url(/fotos/fotofondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    line-height: 1.2;
+    padding: 5vw 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+#logo {
+    width: 100%;
+    width: 350px;
+    height: 350px;
+}
+
+nav {
+    width: 100%;
+    grid-column: 1 /4;
+    grid-row: 1 / 2; 
+}
+
+#nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    margin-left: 20%;
+    margin-right: 30%;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #303031;
+    flex-wrap: wrap;
+    
+
+}
+
+
+
+
+#nombre {
+    font-style: oblique;
+    font-size: 60px;
+}
+
+div ul {
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+
+}
+
+
+
+a:link, a:visited {
+    color: whitesmoke;
+    text-decoration: none;
+    
+   }
+   
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    padding: 10px;
+    color: white;
+  }
+  
+.list{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid Gainsboro;
+    padding: 10px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    
+}
+
+
+
+
+#contenido {
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    
+    
+    
+    
+}
+
+#redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    background-image: url(/fotos/Fondoredes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+
+}

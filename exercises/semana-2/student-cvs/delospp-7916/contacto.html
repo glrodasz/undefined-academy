@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contacto.css">
+    </head>
+    <body>
+        <main class="page">
+            <h1>Contact</h1>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email"  placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Budget in USD</legend>
+
+                        <input type="radio" id="10000" name="budget" required>
+                        <label for="10000">$10000</label>
+
+                        <input type="radio" id="5000" name="budget" required>
+                        <label for="5000">$5000</label>
+
+                        <input type="radio" id="1000" name="budget" required>
+                        <label for="1000">$1000</label>                        
+                    </fieldset>
+                    <div class="help">This budget is an estimate, not the total</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Type of project</label>
+                    <select id="type" required>
+                        <option disabled selected>Select an option</option>
+                        <option value="WebSite">Websites</option>
+                        <option value="AppWeb">Web app</option>
+                        <option value="MobileApp">Movil App</option>
+                        <option value="Design">Design</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" required rows="5"></textarea>
+                    <div class="help">Write a description of the project</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="terms">
+                        <input id="terms" type="checkbox" required>
+                        <span>I accept the terms and conditions</span>
+                    </label>
+                </div>
+
+                <button>Send</button>
+
+            </form>                    
+        </main>
+    </body>
+</html>

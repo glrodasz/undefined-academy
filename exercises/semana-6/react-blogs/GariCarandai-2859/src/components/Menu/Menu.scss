@@ -1,0 +1,51 @@
+@use "../../styles/variables.scss" as *;
+
+
+.menu {
+  width: 100%;
+  padding: 2.6rem 3rem;
+}
+
+.menu .container-row {
+  max-width: 153.6rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.menu .logo {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 0 1.2rem 1.2rem 1.2rem;
+  background-color: $Black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $White;
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: initial;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  list-style: none;
+}
+
+.menu a {
+  color: $DoveGray;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  &.selected {
+    color: $Black;
+    font-weight: bold;
+  }
+
+  &:hover {
+    color: $Black;
+  }
+}

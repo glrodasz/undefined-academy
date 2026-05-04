@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 8px;
+    width: 800px;
+}
+
+nav {
+    background-color: #ddaaaa36;    
+    display: inline-block;
+    width: 100%;
+}
+
+code {
+    background-color: #eee;
+}
+
+a {
+    color: #E6621F;
+}
+
+table {
+    border: #333333 1px solid;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+th, td {
+    border: #333333 1px solid;
+    padding: 4px;
+    text-align: center;
+}
+
+.menu_item {
+    display: inline-block;
+    align-items: center;
+    list-style-type: none;
+    margin: 8px;
+}
+
+.menu li:hover {
+    background-color: #eee;
+}
+
+.form-group {
+    margin: 32px 0;
+    width: 100%;
+}
+
+label, input {
+    width: 80%;   
+    margin: 4px 0 0 0;
+}
+
+label {
+    font-weight: bold;
+    display: inline-block;
+}
+
+textarea {
+    display: block;
+    margin: 4px 0;
+    resize: vertical;
+    width: 80%;
+}
+
+.main_section, .sobremi, .conocimientos {
+    margin: 0 44px;
+}
+
+.Primary {
+    background-color: rgb(75, 75, 255);
+    border-radius: 4px;    
+    color: #eee;
+    font-size: medium;
+    font-style: normal;
+    width: 15%;
+}
+
+.footer {
+    background-color: #ddaaaa36;
+    clear: both;
+    margin: 16px 0 0 0;
+    padding: 8px;
+    text-align: center;
+    width: 100%;
+}

@@ -1,0 +1,38 @@
+@use "../../styles/variables.scss" as *;
+
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-card .container-row {
+  align-items: center;
+}
+
+.article-card .date {
+  margin-top: 1.8rem;
+  /* font-size: 12px; */
+  line-height: 2.6rem;
+  white-space: nowrap;  
+  color: $DoveGray;
+}
+
+.article-card .tags{
+  margin-top: 3rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.article-card .tag{
+  padding: .2rem 1rem;
+  border-radius: 36rem;
+  background-color: #d7d7d7;
+  /* font-size: 1.2rem; */
+  color: $DoveGray;
+}
+
+
+

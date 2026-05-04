@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <script sync defer type="module" src="main.mjs"></script>
+</head>
+<body>
+    <section class="form">
+
+        <main class="page">
+            <h2 class="title">Contactame</h2>
+            <!-- http://127.0.0.1:5500/index.html?budget=on Qué hace esto? Toma los atributos NAME: En este caso
+            http://localhost:5173/server?name=Paula&email=paulaquiroga1207%40gmail.com&budget=5000&type=2&description=dsgdgg&terms=on
+        El get pone todos los atributos de los formularios en la URL
+        El post los manda en el cuerpo de la petición -->
+            <form id="myForm" action="/server" method="get">
+                <div class="form-group">
+                    <!-- El atributo for(para) hace referencia para quien es el nombre y el atributo id le da una identificación unica. Conectar estos dos hace que se referencien el uno al otro 
+                El placeholder es como un texto de ayuda, es decir, se escribe lo que poner ingresar en el input-->
+                    <!-- Con html5 se puede hacer validación con el atributo required en el input -->
+                    <label for="name">Nombre</label>
+                    <input id="name" name="name" type="text" placeholder="Ingrese su nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Ingrese su correo electrónico" required>
+                </div>
+
+
+
+                <div class="form-group">
+                    <!-- Fieldset se refiere como a un grupo de controles -->
+                    <fieldset>
+                        <!-- legend(leyenda) es la descripción de este fieldeset -->
+                        <legend>Salario Ofrecido</legend>
+                        <input id="1000" name="budget" type="radio" value="1000" required> <label
+                            for="1000">$1.000</label>
+
+                        <input id="800" name="budget" type="radio" value="800"> <label for="800">$800</label>
+
+                        <input id="500" name="budget" type="radio" value="500"> <label for="500">$500</label>
+                    </fieldset>
+
+                    <div class="help">Este presupuesto es la base, no el total</div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Tipo de proyecto</label>
+                    <select name="type" id="type" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="2">Website</option>
+                        <option value="3">Webapp</option>
+                        <option value="4">Mobile app</option>
+                        <option value="5">Diseño</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Modalidad de trabajo</label>
+                    <select name="type" id="type" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="2">Presencial</option>
+                        <option value="3">Hibrído</option>
+                        <option value="4">Remoto</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Descripcion</label>
+                    <textarea name="description" id="description" rows="5"></textarea>
+                    <div class="help">Haz una descripción de la empresa y el proyecto en al menos 500 palabras</div>
+                </div>
+
+                <div class="form-group">
+                    <!-- Poner un input checkbox dentro de un label es un buen truco para poder usar el for e id -->
+                    <label for="terms">
+                        <input id="terms" name="terms" type="checkbox" required>
+                        <span>Acepto los términos y condiciones</span>
+                    </label>
+                </div>
+
+                <button class="boton">Enviar</button>
+
+            </form>
+        </main>
+    </section>
+</body>
+</html>

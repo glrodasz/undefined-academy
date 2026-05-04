@@ -1,0 +1,67 @@
+@import "~bootstrap/scss/bootstrap";
+body {
+    background: whitesmoke;
+    margin: 10%; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;}
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 2px solid #92c2b6;
+        border-radius: 8px;
+        background: lightgreen;
+      }
+      
+      .form-group {
+        margin-bottom: 8px;
+      }
+      
+      fieldset {
+        border: 1px solid #b19f9f;
+        border-radius: 8px;
+        margin-bottom: 16px;
+        font-size: 14px;
+      }
+      
+      legend {
+        padding: 0 8px;
+        background-color: #adaaaa;
+        font-size: 14px;
+        border-radius: 4px;
+      }
+      
+      .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+      
+      .btn-primary:hover {
+        background-color: #0069d9;
+        border-color: #0062cc;
+      }
+      
+    
+      
+      .form-control:invalid {
+        border-color: #dc3545;
+      }
+      
+      .form-control:invalid:focus {
+        border-color: #dc3545;
+      }
+      
+      .form-control:invalid+span {
+        display: block;
+        color: #dc3545;
+      } 
+      .help{
+        font-size: 10px;    
+        color: #333;
+        margin-top: 11px;
+      }

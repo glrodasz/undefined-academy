@@ -1,0 +1,198 @@
+@use "styles/variables";
+@use "styles/base";
+@use "styles/desktop";
+
+:root, [data-color-mode=light][data-light-theme*=light], [data-color-mode=dark][data-dark-theme*=light] {
+    --body-background: #{variables.$white};
+    --body-color: #{variables.$shark};
+    --body-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --button-background: #{variables.$aquaHaze};
+    --button-background-active: #{variables.$forestGreen};
+    --button-background-hover: #{variables.$athensGray};
+    --button-background-active-hover: #{variables.$sea-green};
+    --button-border-active: #{variables.$buttonBorderActive};
+    --button-border-hover: #{variables.$buttonBorderHover};
+    --button-shadow: 0 1px 0 #{variables.$buttonShadowColor};
+    --button-inset-shadow: inset 0 1px 0 #{variables.$buttonInsetShadowColor};
+    --code-background: #{variables.$codeBackground};
+    --code-console-background: #{variables.$aquaHaze};
+    --code-console-color: #{variables.$cobalt};
+    --css3-color: #{variables.$css3Color};
+    --footer-color: #{variables.$regentGray};
+    --html-5-color: #{variables.$html5Color};
+    --icon-fill: #{variables.$shuttleGray};
+    --input-bg: #{variables.$white};
+    --input-border: #{variables.$outerSpace};
+    --input-color: #{variables.$shark};
+    --input-focus-bg: #{variables.$white};
+    --input-focus-border: #{variables.$malibu};
+    --javascript-color: #{variables.$javascriptColor};
+    --link-color: #{variables.$scienceBlue};
+    --table-tr-border: #{variables.$geyser};
+    --table-border: #{variables.$geyser};
+    --title-border: #{variables.$geyser};
+    --wrapper-border-color: #{variables.$geyser};
+}
+[data-color-mode=light][data-light-theme*=dark], [data-color-mode=dark][data-dark-theme*=dark] {
+    --body-background: #{variables.$bunker};
+    --body-color: #{variables.$ghost};
+    --body-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --button-background: #{variables.$shark2};
+    --button-background-active: #{variables.$forestGreen};
+    --button-background-hover: #{variables.$athensGray};
+    --button-background-active-hover: #{variables.$sea-green};
+    --button-border-active: #{variables.$buttonBorderActive};
+    --button-border-hover: #{variables.$buttonBorderHover};
+    --button-shadow: 0 1px 0 #{variables.$darkButtonShadowColor};
+    --button-inset-shadow: inset 0 1px 0 #{variables.$darkButtonShadowColor};
+    --code-background: #{variables.$codeBackground};
+    --code-console-background: #{variables.$aquaHaze};
+    --code-console-color: #{variables.$cobalt};
+    --css3-color: #{variables.$css3Color};
+    --footer-color: #{variables.$regentGray};
+    --html-5-color: #{variables.$html5Color};
+    --icon-fill: #{variables.$regentGray};
+    --input-bg: #{variables.$blackPearl};
+    --input-border: #{variables.$outerSpace};
+    --input-color: #{variables.$ghost};
+    --input-focus-bg: #{variables.$bunker};
+    --input-focus-border: #{variables.$malibu};
+    --javascript-color: #{variables.$javascriptColor};
+    --link-color: #{variables.$malibu};
+    --table-tr-border: #{variables.$shark2};
+    --table-border: #{variables.$outerSpace};
+    --title-border: #{variables.$shark2};
+    --wrapper-border-color: #{variables.$outerSpace};
+}
+
+:root {
+    color-scheme: light dark;
+}
+[data-color-mode="light"] {
+    color-scheme: light;
+}       
+[data-color-mode="dark"] {
+    color-scheme: dark;
+}
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0;
+    text-align: start;
+    text-align-last: start;
+}
+::placeholder {
+    color: var(--input-color);
+}
+
+/* Media */
+@media (prefers-color-scheme: light) {
+    :root {
+        --body-background: #{variables.$white};
+        --body-color: #{variables.$shark};
+        --body-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        --button-background: #{variables.$aquaHaze};
+        --button-background-active: #{variables.$forestGreen};
+        --button-background-hover: #{variables.$athensGray};
+        --button-background-active-hover: #{variables.$sea-green};
+        --button-border-active: #{variables.$buttonBorderActive};
+        --button-border-hover: #{variables.$buttonBorderHover};
+        --button-shadow: 0 1px 0 #{variables.$buttonShadowColor};
+        --button-inset-shadow: inset 0 1px 0 #{variables.$buttonInsetShadowColor};
+        --code-background: #{variables.$codeBackground};
+        --code-console-background: #{variables.$aquaHaze};
+        --code-console-color: #{variables.$cobalt};
+        --css3-color: #{variables.$css3Color};
+        --footer-color: #{variables.$regentGray};
+        --html-5-color: #{variables.$html5Color};
+        --icon-fill: #{variables.$shuttleGray};
+        --input-bg: #{variables.$white};
+        --input-border: #{variables.$outerSpace};
+        --input-color: #{variables.$shark};
+        --input-focus-bg: #{variables.$white};
+        --input-focus-border: #{variables.$malibu};
+        --javascript-color: #{variables.$javascriptColor};
+        --link-color: #{variables.$scienceBlue};
+        --table-tr-border: #{variables.$geyser};
+        --table-border: #{variables.$geyser};
+        --title-border: #{variables.$geyser};
+        --wrapper-border-color: #{variables.$geyser};
+    }
+}
+@media (prefers-color-scheme: dark) {
+    :root, [data-color-mode=auto][data-dark-theme*=dark] {
+        --body-background: #{variables.$bunker};
+        --body-color: #{variables.$ghost};
+        --body-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        --button-background: #{variables.$shark2};
+        --button-background-active: #{variables.$forestGreen};
+        --button-background-hover: #{variables.$athensGray};
+        --button-background-active-hover: #{variables.$sea-green};
+        --button-border-active: #{variables.$buttonBorderActive};
+        --button-border-hover: #{variables.$buttonBorderHover};
+        --button-shadow: 0 1px 0 #{variables.$darkButtonShadowColor};
+        --button-inset-shadow: inset 0 1px 0 #{variables.$darkButtonShadowColor};
+        --code-background: #{variables.$codeBackground};
+        --code-console-background: #{variables.$aquaHaze};
+        --code-console-color: #{variables.$cobalt};
+        --css3-color: #{variables.$css3Color};
+        --footer-color: #{variables.$regentGray};
+        --html-5-color: #{variables.$html5Color};
+        --icon-fill: #{variables.$regentGray};
+        --input-bg: #{variables.$blackPearl};
+        --input-border: #{variables.$outerSpace};
+        --input-color: #{variables.$ghost};
+        --input-focus-bg: #{variables.$bunker};
+        --input-focus-border: #{variables.$malibu};
+        --javascript-color: #{variables.$javascriptColor};
+        --link-color: #{variables.$malibu};
+        --table-tr-border: #{variables.$shark2};
+        --table-border: #{variables.$outerSpace};
+        --title-border: #{variables.$shark2};
+        --wrapper-border-color: #{variables.$outerSpace};
+    }
+}
+
+@supports (cx: 1) {
+    [data-color-mode=dark][data-dark-theme*=dark] .color-theme-icon>.moon>circle {
+        transform: translate(0);
+        cx: 17;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .color-theme-icon>.sun {
+        transition: transform .5s cubic-bezier(.5,1.25,.75,1.25);
+    }
+
+    .color-theme-icon>.sun-beams {
+        transition: transform .5s cubic-bezier(.5,1.5,.75,1.25),opacity .5s cubic-bezier(.25,0,.3,1);
+    }
+
+    .color-theme-icon .moon>circle {
+        transition: transform .25s cubic-bezier(0,0,0,1);
+    }
+
+    @supports (cx: 1) {
+        .color-theme-icon .moon>circle {
+            transition: cx .25s cubic-bezier(0,0,0,1);
+        }
+    }
+
+    [data-color-mode=dark][data-dark-theme*=dark] .color-theme-icon>.sun {
+        transform: scale(1.75);
+        transition-timing-function: cubic-bezier(.25,0,.3,1);
+        transition-duration: .25s
+    }
+
+    [data-color-mode=dark][data-dark-theme*=dark] .color-theme-icon>.sun-beams {
+        transform: rotate(-25deg);
+        transition-duration: .15s;
+    }
+
+    [data-color-mode=dark][data-dark-theme*=dark] .color-theme-icon>.moon>circle {
+        transition-delay: .25s;
+        transition-duration: .5s;
+    }
+}

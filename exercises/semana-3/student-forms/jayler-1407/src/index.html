@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+
+<body class="d-flex flex-column justify-content-center align-items-center">
+    <h1 class="text-center h1">Contacto</h1>
+    <form action="/server" method="get" class="row flex-column justify-content-center align-items-center w-75" id="contact">
+        <div class=" mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre completo" required>
+        </div>
+        <div class=" mb-3 ">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electronico">
+        </div>
+        <div class=" mb-3">
+            <fieldset >
+                <legend class="scheduler-border">Proyecto</legend>
+                <div class="d-flex gap-3 flex-column flex-sm-row">
+                <div class="mb-3 col-lg-6">
+                    <label for="proyect" class="form-label">Tipo de proyecto:</label>
+                    <select class="form-select" id="proyect" required>
+                        <option value="" selected disabled>Seleccione una opcion</option>
+                        <option value="website">sitio web</option>
+                        <option value="webapp">aplicación web</option>
+                        <option value="mobileapp">aplicación movil</option>
+                    </select>
+                </div>
+                <div class="mb-3 col-lg-6">
+                    <label for="price" class="form-label">Precio:</label>
+                    <div class="d-flex flex-row ">
+                        <input type="range" class="slider  form-range" id="price" min="5000" max="20000" value="5000">
+                        <div class=" value">100</div>
+                    
+                    </div>
+                    <div class="form-text">Escoja un presupuesto estimado del proyecto</div>
+                </div>
+                </div>
+            </fieldset>
+        </div>
+        <div class=" mb-3">
+            <label for="text" class="form-label">Descripción:</label>
+            <textarea class="form-control" id="text" rows="5"
+                placeholder="Escribe una descripción del proyecto de manera breve"></textarea>
+        </div>
+        <div class=" d-grid gap-2 col-sm-6 mx-auto text-center mb-3">
+            <button type="submit" class="btn btn-primary btn-block ">Enviar</button>
+        </div>
+        
+        
+
+
+
+    </form>
+</body>
+<script type="module" src="./js/main.js"></script>
+
+</html>

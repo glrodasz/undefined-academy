@@ -1,0 +1,42 @@
+.skills__title {
+    text-align: center;
+}
+
+.skills__subtitle {
+    text-align: center;
+}
+.skills__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+ol {
+    padding:0;
+}
+
+.skills__list img {
+    width: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .skills__skills {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .skills__title {
+        text-align: start;
+    }
+    
+    .skills__subtitle {
+        text-align: start;
+    }
+    .skills__list {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        
+    }
+
+}

@@ -1,0 +1,99 @@
+body {
+    margin: 0 auto;
+    line-height: 1.5em;
+    font-family: "Helvetica", sans-serif;
+    color: #d4d4d4;
+    background-color: #174A63;
+    padding: 0px;
+    margin: 0px; 
+}
+
+header {
+    background-image: url("sky.avif");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8.5vw;
+    height: 4em;
+    text-align: center;
+}
+
+header h1 {
+    color: rgb(241, 240, 240);
+    font-size: 2.9em;
+    font-weight: 300;
+    margin-top: -0.2em;
+}
+
+header h2 {
+    color:rgb(230, 230, 230)
+}
+
+article, section {
+    margin: 0 8em;
+    margin-top: 1.5em;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    color:#e7e7e7d7;
+    text-align: center;
+    
+}
+
+h4, strong {
+    color:#dda200d7;
+    text-align: left;
+}
+
+ul {
+    margin-top: -0.8em;
+}
+
+thead {
+    background-color: #b8b8b8e0;
+    text-align: center;
+    color: rgb(0, 91, 119);
+}
+
+table, td {
+    margin-top: -0.8em;
+    background-color: #236e90a8;
+    color: rgb(225, 240, 253);
+    width: 18em;
+    text-align: left;
+    margin-left: 2em;
+    border-collapse: collapse;
+}
+
+tr:nth-child(odd) {
+    background-color: #ddd;
+}
+
+tr:hover td {
+    background-color: #636363;
+    color: white;
+}
+
+footer {
+    padding: 1.8em;
+    margin-top: 2em;
+    text-align: center;
+    line-height: 0.6;
+    background: #352828;
+    color: rgba(228, 228, 228, 0.767);
+    text-decoration: none;
+}
+
+a {
+    color: #dda200d7;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #d6d6d6e0;
+    color: rgb(0, 0, 0);
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Contacto</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <div class="container py-4 px-3 mx-auto">
+      <form>
+        <legend>Contáctame</legend>
+
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombre"
+            placeholder="Ingresa tu nombre"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            required
+          />
+          <div id="emailHelp" class="form-text">
+            Nunca compartiremos tu Email con nadie mas.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Celular</label>
+          <input type="tel" required class="form-control" id="phone" />
+        </div>
+        <div class="row mb-3">
+          <label for="trabajo" class="col-sm-4 col-form-label"
+            >Tipo de trabajo</label
+          >
+          <div class="col-sm-8">
+            <select class="form-select" aria-label="Default select example" required>
+              <option selected disabled>Seleciona una opcion</option>
+              <option value="aplicacion-android">Aplicacion Android</option>
+              <option value="bot">Bot de trading en Python</option>
+              <option value="sitio-estatico">Sitio Web estatico</option>
+              <option value="aplicacion-web">Aplicacion Web</option>
+            </select>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="requerimientos" class="form-label"
+            >Describe tus requerimientos</label
+          >
+          <textarea type="text" class="form-control" id="requerimientos" rows="4" required> </textarea>
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1"  required/>
+          <label class="form-check-label" for="exampleCheck1"
+            >Acepto los terminos y condiciones</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

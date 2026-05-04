@@ -1,0 +1,11 @@
+body {
+  margin: 1rem;
+  background: #a8dadc;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+}

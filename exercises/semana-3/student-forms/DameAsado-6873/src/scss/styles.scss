@@ -1,0 +1,31 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    color: #566b78;
+    /*background-color: #e9e9e9;*/
+    background-color: #DCD9D4;
+    font-size: 1em;
+}
+
+ion-icon{
+    font-size: 1.5em;
+    color: #0d6efd;
+}
+
+fieldset {
+    padding: 0px 18px;
+    border: 1px solid #0d6efd;
+    border-radius: 20px;
+}
+
+fieldset legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}

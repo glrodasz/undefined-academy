@@ -1,0 +1,32 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+* {
+    margin: 0 auto;
+    width: auto;
+    max-width: 800px;
+}
+
+body {
+    background: lightgray;
+}
+
+button {
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-shadow: -1px -1px 0 rgb(33, 99, 185);
+    box-shadow: 1px 1px 3px #3b3b3b;
+    margin-bottom: 20px;
+  }
+
+  button:active {
+    background: #a0a0a0;
+    box-shadow: -1px -1px 0px #3b3b3b;;
+  }
+
+  .help {
+    font-size: 12px;
+    margin-top: 10px;
+    color: rgb(117, 116, 116);
+  }

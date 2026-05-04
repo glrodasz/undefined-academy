@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Formulario de Contacto</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo Electronico:</label>
+                <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="asunto">Seleccione uno:</label>
+                <select class="form-control" id="asunto" required>
+                    <option value="">Seleccione uno</option>
+                    <option value="consulta">Website</option>
+                    <option value="comentario">Aplicacion web</option>
+                    <option value="sugerencia">Aplicacion Mobile</option>
+                    <option value="sugerencia">Desing</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" rows="5" placeholder="Escriba una descripcion del proyecto" required></textarea>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="suscripcion" required>
+                <label class="form-check-label" for="suscripcion" >Acepto terminos y condiciones</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>

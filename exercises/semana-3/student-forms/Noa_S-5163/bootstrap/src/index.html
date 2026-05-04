@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap w/ Vite</title>
+  </head>
+  <body class="bg-purple-900">
+    <div class="container mx-auto">
+      <header
+        class="p-5 d-flex flex-column align-items-center justify-content-center gap-2"
+      >
+        <h1 class="text-cyan fs-1">Contact Me</h1>
+        <p class="fs-5 text-center text-white lh-base">
+          I´m interested in finding
+          <span class="text-pink fw-bold">my first job in tech</span>. But if
+          what you need is a
+          <span class="text-pink fw-bold">freelance developer</span>, don´t
+          hesitate to reach me out!
+        </p>
+      </header>
+      <section class="d-flex justify-content-center">
+        <form class="bg-purple-500 p-5 rounded mb-5 col col-lg-6">
+          <div class="d-flex flex-column gap-2 mb-4">
+            <label class="fs-5 fw-bold text-white" for="name">Name</label>
+            <input
+              class="form-control"
+              type="text"
+              id="name"
+              placeholder="Your name"
+              required
+            />
+          </div>
+          <div class="d-flex flex-column gap-2 mb-4">
+            <label class="fs-5 fw-bold text-white" for="email">Email</label>
+            <input
+              class="form-control"
+              type="email"
+              placeholder="email@example.com"
+              required
+            />
+          </div>
+          <div class="d-flex flex-column gap-2 mb-4">
+            <label class="fs-5 fw-bold text-white" for="type"
+              >Contact Type</label
+            >
+            <select class="form-select" name="type" id="type">
+              <option selected disabled>Choose one</option>
+              <option value="job">Job</option>
+              <option value="freelance">Freelance project</option>
+            </select>
+          </div>
+          <div class="d-flex flex-column gap-2 mb-4">
+            <label class="fs-5 fw-bold text-white" for="message">Message</label>
+            <textarea
+              class="form-control textarera-autosize"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Your message"
+            ></textarea>
+          </div>
+          <button
+            class="bg-pink btn fs-5 fw-bold text-white d-block mx-auto"
+            type="submit"
+          >
+            Send Message
+          </button>
+        </form>
+      </section>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

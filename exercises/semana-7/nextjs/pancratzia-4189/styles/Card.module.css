@@ -1,0 +1,11 @@
+.imgContainer{
+    text-align: center;
+}
+
+.imgContainer img {
+    max-height: 20rem;
+    width: auto;
+    max-width: 100%;
+    padding: .3rem;
+    border-radius: .5rem;
+}

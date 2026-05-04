@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <title>CV</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="header-section">
+            <header class="header">
+                <h1 class="heading bold center">
+                    Hello, I'm Lizeth Castañeda<span>👋</span>
+                </h1>
+                <h2 class="subheading center">
+                    <a class="link" href="#Contact">Contact</a>
+                </h2>
+            </header>
+        </section>
+
+        <main class="page">
+            <section class="about-me">
+                <h2 class="subheading center">About Me:</h2>
+                <p class="center">
+                    I'm a teenager looking forward to become a
+                    <span class="bold">Full-Stack developer</span>. <br />From Colombia,
+                    graduated from Misión TIC 2022 and willing to learn new things
+                    everyday. <br />Currently enrolled in
+                    <a href="https://undefined.academy/" target="_blank" class="link"><span class="bold">Undefined
+                            Academy</span></a>.
+                </p>
+            </section>
+
+            <section class="experience">
+                <h2 class="subheading center">Experience in:</h2>
+                <ul class="center">
+                    <li>- Java, Spring</li>
+                    <li>- SQL & NoSQL</li>
+                    <li>- Javascript</li>
+                    <li>- React</li>
+                    <li>- CSS</li>
+                    <li>- Tailwind</li>
+                </ul>
+            </section>
+
+            <section class="to-learn">
+                <h2 class="subheading center">Things to learn:</h2>
+
+                <ul class="center">
+                    <li>- JS</li>
+                    <li>- Express</li>
+                    <li>- Node</li>
+                    <li>- CSS Grid</li>
+                    <li>- Next JS</li>
+                    <li>- Linux</li>
+                    <li>- UX</li>
+                    <li>- MBA</li>
+                </ul>
+            </section>
+        </div>
+            <div class="form-container">
+                <section>
+                    <header>
+                        <h1 class="form-heading center">Contact</h1>
+                    </header>
+                </section>
+
+                <section id="Contact">
+                    <form action="/server" method="get" class="form center">
+                        <p class="caption">
+                            Enter the following information to leave a message:
+                        </p>
+
+                        <label for="name" class="input-style">Enter your name:
+
+                            <input type="text" name="name" id="name" required class="input-style" />
+                        </label>
+
+                        <label for="email" class="input-style">Enter your email:
+                            <input type="email" name="email" id="email" required class="input-style" />
+                        </label>
+
+                        <label for="message" class="input-style">Enter your message:
+                            <textarea name="message" id="message" rows="5" required class="input-style">
+                </textarea>
+                        </label>
+
+                        <button type="submit">Send message</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <footer class="center">Undefined Academy 2023</footer>
+        <script type="module" src="main.mjs"></script>
+</body>
+
+</html>

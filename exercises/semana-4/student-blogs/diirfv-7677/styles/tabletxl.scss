@@ -1,0 +1,30 @@
+@use "settings" as settings;
+
+@include settings.tabletxl{
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .nav-header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo-image{
+        max-width:180px;
+        padding: 0;
+    }
+
+    .search-bar{
+        margin-right: 1rem;
+    }
+
+    .nav-list{
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin: 0 1rem 1rem;
+    }
+}

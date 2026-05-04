@@ -1,0 +1,20 @@
+aside {
+  padding: 0 1em;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+aside ul {
+  padding: 1rem;
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+  aside {
+    max-width: 200px;
+  }
+}

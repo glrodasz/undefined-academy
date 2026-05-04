@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es" class="w-full">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Blog</title>
+</head>
+
+<body class="w-full md:max-md lg:max-lg">
+  
+  <main>
+    <div class="containerNav">
+    <nav class="navBar bg-purple-500 w-28 h-8 flex justify-between items-center">
+      <h3 class="titleForm text-xs p-1">Form</h3>
+      <a class="linkBlog text-stone-800 text-sm font-extralight p-1"
+        href="https://blog-contenido-programacion.vercel.app/">Blog</a>
+    </nav>
+  </div>
+    <div class="containerText">
+      <h2 class="text-indigo-700 p-1 text-xl md:text-4xl ld:text-4xl">Quieres agregar contenido?</h2>
+      <h3 class="text-indigo-500 p-2 text-xl md:text-3xl ld:text-3xl">Deja los siguientes datos para que sean revisados y agregados 😁</h3>
+    </div>
+    <div class="containerForm ">
+      <form action="/" method="post">
+        <h3 class="texTittle text-xl md:text-4xl ld:text-4xl font-bold pl-2">Elige la categoria</h3>
+        <div class="containerCheck flex flex-row">
+          <div class="formCheck p-2">
+            <input class="formCheckInput" type="radio" id="flexRadioBoot" name="checkBox" required>
+            <label class="formCheckLabel hover:bg-indigo-300 checked:bg-violet-900 text-xl md:text-xl ld:text-2xl" for="flexRadioBoot">Bootcamp</label>
+          </div>
+          <div class="formCheck p-2">
+            <input class="formCheckInput" type="radio" id="flexRadioYt" name="checkBox" required>
+            <label class="formCheckLabel hover:bg-indigo-300 checked:bg-violet-900 text-xl md:text-xl ld:text-2xl" for="flexRadioYt">Youtube</label>
+          </div>
+          <div class="formCheck p-2">
+            <input class="formCheckInput" type="radio" id="flexRadioTwic" name="checkBox" required>
+            <label class="formCheckLabel hover:bg-indigo-300 checked:bg-violet-900 text-xl md:text-xl ld:text-2xl" for="flexRadioTwic">Twitch</label>
+          </div>
+        </div>
+        <h3 class="texTittle text-xl md:text-4xl ld:text-4xl md:text4xl font-bold pl-2">Informacion del contenido</h3>
+        <div class="containerInput flex flex-col">
+          <label class="text-purple-800 ml-1 text-xl md:text-4xl ld:text-4xl" for="content">Nombre del contenido</label>
+          <input  class="bg-violet-200 border-4 border-indigo-500/50 pl-3 m-2 text-violet-600" type="text" id="content" placeholder="Nombre del contenido">
+          <label class="text-purple-800 ml-1 text-xl md:text-4xl ld:text-4xl" for="imgCont">Link dela imagen del contenido</label>
+          <input  class="bg-violet-200 border-4 border-indigo-500/50 pl-3 m-2 text-violet-600" type="url" id="imgCont" placeholder="Link dela imagen del contenido">
+          <label class="text-purple-800 ml-1 text-xl md:text-4xl ld:text-4xl" for="ig">Link del perfil de instagram</label>
+          <input  class="bg-violet-200 border-4 border-indigo-500/50 pl-3 m-2 text-violet-600" type="url" id="ig" placeholder="Link de instagram">
+          <label class="text-purple-800 ml-1 text-xl md:text-4xl ld:text-4xl" for="twtt">Link del perfil de twitter</label>
+          <input  class="bg-violet-200 border-4 border-indigo-500/50 pl-3 m-2 text-violet-600" type="url" id="twtt" placeholder="Link de twitter">
+          <label class="text-purple-800 ml-1 text-xl md:text-4xl ld:text-4xl" for="twch">Link del perfil de twitch</label>
+          <input  class="bg-violet-200 border-4 border-indigo-500/50 pl-3 m-2 text-violet-600" type="url" id="ig" placeholder="Link de twitch">
+          <label class="text-purple-800 ml-1 text-xl md:text-4xl ld:text-4xl" for="yt">Link del perfil de youtube</label>
+          <input  class="bg-violet-200 border-4 border-indigo-500/50 pl-3 m-2 text-violet-600" type="url" id="yt" placeholder="Link de youtube">
+          <label class="text-purple-800 ml-1 text-xl md:text-4xl ld:text-4xl" for="ownSide">Link de la pagina personal</label>
+          <input  class="bg-violet-200 border-4 border-indigo-500/50 pl-3 m-2 text-violet-600" type="url" id="ownSide" placeholder="Link de la pagina personal">
+        </div>
+        <div class="containerBtn flex justify-center ">
+          <button type="submit" class="rounded-lg bg-violet-800 w-4/5 p-1 m-2 text-violet-100" >Enviar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

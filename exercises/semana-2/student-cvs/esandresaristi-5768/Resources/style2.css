@@ -1,0 +1,235 @@
+nav.menu {    
+  text-align-last:left;
+  font-size: 1.3em;    
+  max-width: 16em;
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 2;
+  padding: 0.01em 0.01em;
+  color: #ffffff;
+  background-color: hsla(0, 0%, 0%, 0.589);
+  border-radius: 10%;
+  font-weight: bold;
+}
+h1{
+color: #f5f5f5;
+text-shadow: 5px 3px 3px black;
+font-size: 2.5em;
+font-weight: 300;
+
+}
+footer>h1{
+  color: #0f0e0e;
+  text-shadow: 5px 3px 3px rgb(189, 188, 189);
+  font-size: 2.5em;
+  font-weight: 300;
+  
+  }
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color:hsl(240, 2%, 25%);
+    background-color:rgb(238, 226, 226);
+    
+    
+  }
+
+  h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+  }
+  h3 {
+    margin-top: 1em;
+    padding-top: 1em;
+  }
+  h2,h3, strong {
+  color: #333;
+}
+
+code,pre {
+  background: #eee;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+pre {
+  padding: 1em;
+}
+
+  code,
+  pre {
+    background: #f5f7f9;
+    border-bottom: 1px solid #d8dee9;
+    color: #a7adba;
+  }
+  
+  pre {
+    border-left: 2px solid #69c;
+  }
+
+  header.encabezado {
+   
+    background-color: #263d36;
+    background-image: url("/Resources/me5.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    line-height: 1.2;
+    padding: 0.5vw 2em;
+    text-align:left;
+    text-shadow: navajowhite;
+    background-blend-mode:exclusion;
+    
+  }
+
+  header.encabezado img {
+    
+    display:flexbox;
+    height: 120px;
+    vertical-align:baseline;    
+    width: 120px;
+  }
+
+  body a.redes {
+    border: 1px solid #87cbb9;
+    border-radius: 290486px;
+    color: rgb(184, 178, 178);
+    font-size: 0.5em;
+    letter-spacing: 0.1em;
+    padding: 1em 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    transition-property: color, black;
+    background-color: #c4247c3a;
+  }
+  
+  body a.redes :hover {
+    background:  #b9eddd;
+    color: white;
+  }
+  body a.redesbody {
+    border: 1px solid hsla(299, 100%, 52%, 0.54);;
+    border-radius: 290486px;
+    color: rgb(0, 0, 0);
+    font-size: 0.5em;
+    letter-spacing: 0.1em;
+    padding: 1em 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    transition-property: color, black;
+    background-color: #06ffbd5b;
+    
+  }
+  
+  body a.redesbody :hover {
+    background:  #b9eddd;
+    color: white;
+  }
+
+  header.Hobbies {
+    background-color: #263d36;
+    background-image: url("/Resources/me2.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 5vw 2em;
+    text-align:left;
+    text-shadow: navajowhite;
+    background-blend-mode:exclusion;
+    
+  }
+  header.Comandos {
+    background-color: #263d36;
+    background-image: url("/Resources/header.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 5vw 2em;
+    text-align:left;
+    text-shadow: 0px 0px 0px black;
+    background-blend-mode:exclusion;
+    
+  }
+  footer{
+    align-items: center;
+    text-align: left;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 20px;
+    margin: 20px;
+    border-color: #0f0e0e;
+    border: 1.5px solid rgb(165, 163, 163);
+    padding: 30px;
+  }
+  div.form-group{
+   
+    margin: 20px 0;
+}
+label, input:not([type="radio"], [type="checkbox"]){
+  width: 100%;
+  
+}
+textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+label, legend{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size:  14px;
+  color: #444;
+  vertical-align: middle;
+}
+input {
+  vertical-align: middle;
+}
+input[type="text"], input[type="email"], input[type="textarea"] {
+  background: white;
+  border: 1.5px solid rgb(165, 163, 163);
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+  width: 100%;
+}
+textarea + div{
+  font-size: 12px;
+  margin-top: 10px 0 0 ;
+}
+
+button{
+  padding: 16px 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #713f12;
+  background: #dad3c1;
+  border-radius: 8px;
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 3px rgba(0,0,0, 0.5);
+  cursor: pointer;
+}
+
+button:hover {
+  background: #acac88;
+}
+
+button:active{
+  background: #d4be92;
+  box-shadow: none;
+  box-shadow: -1px -1px 0 rgba(15, 15, 15, 0.671);
+}
+div.footer {
+  text-align: center;
+}
+
+

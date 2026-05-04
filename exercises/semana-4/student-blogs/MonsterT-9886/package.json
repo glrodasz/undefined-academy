@@ -1,0 +1,19 @@
+{
+  "name": "monstert-9886",
+  "version": "1.0.0",
+  "description": "## ¿Cómo abordar un proyecto?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass main.scss styles/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1",
+    "vite": "^4.2.1"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  }
+}

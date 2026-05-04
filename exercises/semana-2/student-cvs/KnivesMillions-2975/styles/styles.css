@@ -1,0 +1,190 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 52em;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    padding: 2em 1em;
+    background-color: #CBE4DE;
+    color: #2C3333;
+}
+
+#container {
+    position: relative;
+    float: right;
+    width: 3em;
+    height: 1.5em;
+    box-shadow: inset 4em 4em 6em #d8dbe0,
+                inset -4em -4em 6em #2C3333;
+    margin: 0px auto;
+    border: 2px solid #0E8388;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.switch-dark-light {
+    position: absolute;
+    top: -0.4em;
+    left: -0.3em;
+    width: 2em;
+    height: 2em;
+    transform: scale(.5);
+    background-color: #0E8388;
+    border: 2px solid #0E8388;
+    border-radius: 25px;
+}
+
+#container.active {
+    box-shadow: inset 4em 4em 6em #2C3333,
+                inset -4em -4em 6em #d8dbe0;
+}
+
+
+#container.active .switch-dark-light {
+    left: 1em;
+}
+
+body.active {
+    background-color: #2C3333;
+    color: #CBE4DE;
+}
+
+.h1-name {
+    padding-top: 2em;
+    color: #0E8388;
+}
+
+.section-h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+    color: #0E8388;
+}
+
+h3 {
+    color: #0E8388;
+}
+
+h5 {
+    color: #0E8388;
+}
+
+hr {
+    margin-top: 3em;
+    border: 1px solid #0E8388;
+}
+
+.github-image {
+    float: right;
+    cursor: pointer;
+}
+
+.github-image img{
+    opacity:0.5;
+    transition: 1s ease;
+}
+    
+.github-image img:hover{
+    opacity:1;
+    transition: 1s ease;
+}
+
+.main-form {
+    max-width: 420px;
+    margin-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 1px solid #0E8388;
+    border-radius: 8px;
+    accent-color: #0e8388;
+    box-shadow: 1px 1px  0 #2C3333;
+}
+
+.h1-contact {
+    margin-top: 1em;
+    color: #0E8388;
+}
+
+.group-form {
+    width: 100%;
+    margin: 16px 0;
+}
+
+#name, #email {
+    display: block;
+}
+/* todos lo que sea label, input menos type radio y checkbox */
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 50%;
+}
+
+input:not([type="radio"], [type="checkbox"]) {
+    background: whitesmoke; 
+    border: 1px solid #afafaf;
+}
+
+label, input {
+    display: inline;
+    vertical-align: middle;
+}
+
+select {
+    border: 1px solid #afafaf;
+    background: whitesmoke; 
+    color: #2C3333;
+}
+
+fieldset {
+    border: 1px solid #afafaf;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+    background: whitesmoke;
+    border: 1px solid #afafaf;
+    color: #2C3333;
+}
+
+label, legend {
+    font-weight: bold;
+    color: #0E8388;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+button {
+    padding: 2% 8%;
+    background: #0E8388;
+    color: #d8dbe0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 72%;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    border: 1px solid #2E4F4F;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+input:focus-visible, textarea:focus-visible {
+    border: 1px solid #0E8388;
+    outline: 1px solid #0E8388;
+}
+
+button:hover {
+    background: #0E8888;
+}
+
+button:active {
+    background: #0E6368;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: inherit;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background: #d5b4b4;
+  background: linear-gradient(180deg, #d5b4b4 0%, #e4d0d0 15%, #f5ebeb 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.contenedor {
+  max-width: 120rem;
+  width: 95%;
+}
+
+.centrado {
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.header {
+  background-color: #867070;
+  padding-top: 3rem;
+}
+.header .contenedor-header .titulo-header {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  display: block;
+}
+.header .contenedor-header .titulo-header span {
+  color: #f5ebeb;
+  font-size: 2rem;
+}
+.header .contenedor-header .img-header {
+  max-width: 20rem;
+  max-height: 20rem;
+  padding: 1rem;
+}
+.header .contenedor-header .img-header img {
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.header .contenedor-header .header-nav {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.header .contenedor-header .header-nav a {
+  color: #fff;
+  font-size: 4rem;
+  margin: 2rem;
+  transition: all 0.3s;
+}
+.header .contenedor-header .header-nav a:hover {
+  color: #f5ebeb;
+}
+
+.main .contenedor-principal .section {
+  color: #000;
+  text-align: center;
+  margin: 2rem 0 0;
+  padding: 2rem 0 4rem;
+  border-bottom: 1px dashed #d5b4b4;
+}
+.main .contenedor-principal .section:last-of-type {
+  border: none;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+.main .contenedor-principal .section h2 {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: #867070;
+  letter-spacing: 0.5rem;
+}
+.main .contenedor-principal .section .section-contenido {
+  line-height: 1.5;
+}
+.main .contenedor-principal .section .section-contenido span {
+  font-weight: bold;
+}
+.main .contenedor-principal .section .section-contenido time {
+  color: #867070;
+  font-weight: bold;
+}
+.main .contenedor-principal .section .article.educacion {
+  margin-bottom: 2rem;
+}
+.main .contenedor-principal .section.tecnologias {
+  padding-bottom: 3rem;
+}
+.main .contenedor-principal .section.tecnologias .section-contenido {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.main .contenedor-principal .section.tecnologias .section-contenido .icono {
+  font-size: 5rem;
+  margin: 1rem;
+}
+.main .contenedor-principal .section.idiomas .section-contenido {
+  align-items: center;
+  justify-content: space-between;
+}
+.main .contenedor-principal .section.formulario .form .form-group input,
+.main .contenedor-principal .section.formulario .form .form-group textarea {
+  background: none;
+  border: none;
+  font-family: inherit;
+  border-bottom: solid 2px #867070;
+  color: #867070;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.main .contenedor-principal .section.formulario .form .form-group textarea {
+  resize: vertical;
+  min-height: 3rem;
+  height: 3rem;
+}
+.main .contenedor-principal .section.formulario .form .form-group input:focus,
+.main .contenedor-principal .section.formulario .form .form-group textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
+}
+.main .contenedor-principal .section.formulario .form .botones input {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+}
+.main .contenedor-principal .section.formulario .form .botones input:last-of-type {
+  margin-bottom: 0;
+}
+.main .contenedor-principal .section.formulario .form .botones .form-btn {
+  background: none;
+  border: solid 2px #867070;
+  color: #867070;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.main .contenedor-principal .section.formulario .form .botones .form-btn:hover {
+  color: #d5b4b4;
+}
+.main .contenedor-principal .section.formulario .form .botones .form-btn:active {
+  background: #867070;
+  color: #d5b4b4;
+}
+
+.footer {
+  background-color: #867070;
+  padding: 2rem 0;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.footer .flex {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .flex p {
+  font-weight: bold;
+}
+.footer .flex time {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 3rem 0;
+  }
+  .header .contenedor-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "img-header titulo-header header-nav";
+    align-items: center;
+  }
+  .header .contenedor-header .titulo-header {
+    grid-area: titulo-header;
+    font-size: 6rem;
+    line-height: 0.8;
+  }
+  .header .contenedor-header .img-header {
+    grid-area: img-header;
+  }
+  .header .contenedor-header .header-nav {
+    grid-area: header-nav;
+  }
+  .main .contenedor-principal {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "sobre-mi tecnologias" "idiomas tecnologias" "educacion-y-experiencia tecnologias" "formulario formulario";
+  }
+  .main .contenedor-principal .section.sobre-mi {
+    grid-area: sobre-mi;
+    border-bottom: none;
+  }
+  .main .contenedor-principal .section.educacion-y-experiencia {
+    grid-area: educacion-y-experiencia;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .main .contenedor-principal .section.idiomas {
+    grid-area: idiomas;
+    border-bottom: none;
+  }
+  .main .contenedor-principal .section.tecnologias {
+    grid-area: tecnologias;
+  }
+  .main .contenedor-principal .section.formulario {
+    grid-area: formulario;
+  }
+  .main .contenedor-principal .section.formulario .section-titulo {
+    margin-bottom: 3rem;
+  }
+  .main .contenedor-principal .section.formulario .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .main .contenedor-principal .section.formulario .form .form-group.telefono {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .main .contenedor-principal .section.formulario .form .form-group.email {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .main .contenedor-principal .section.formulario .form .form-group.mensaje {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .main .contenedor-principal .section.formulario .form .botones {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+  }
+  .main .contenedor-principal .section.formulario .form .botones input {
+    margin: 0;
+  }
+  .main .contenedor-principal .section.formulario .form .botones .form-btn {
+    width: 20rem;
+  }
+  .footer .flex time {
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

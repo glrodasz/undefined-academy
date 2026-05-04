@@ -1,0 +1,27 @@
+@import "./variables.scss";
+
+
+
+@media  screen and (max-width: $desktop-media) {
+
+    .first {
+        grid-area: 1 / 1 / 2 / 5 ;
+    }
+    
+    .second {
+        grid-area: 2 / 1 / 3 / 5 ;
+    }
+
+    .third {
+        grid-area: 3 / 1 / 4 / 5 ;
+
+    }
+    
+    
+    .four {
+        grid-area: 4 / 1 / 5 / 5;
+    }
+    
+
+    
+}

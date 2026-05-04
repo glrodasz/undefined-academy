@@ -1,0 +1,18 @@
+body {
+    font-family: "Inter", "Helvetica", "Arial", sans-serif;
+    color: var(--text-primary);
+    background: var(--sky-050);
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+main {
+    width: 100%;
+}
+
+main > section{
+    max-width: 50em;
+    padding: 1em 1em;
+    margin: 0 auto;
+}

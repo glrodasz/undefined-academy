@@ -1,0 +1,27 @@
+
+/* FOOTER */
+.footer{
+    background: rgb(46, 44, 44); 
+    color: rgb(179, 184, 188);   
+    padding: 20px; 
+} 
+footer p, footer address{
+    font-size: 0.8rem;
+    text-align: center;
+}
+footer a {  
+    color: aliceblue;
+    font-weight: bold;
+}
+footer p a:hover,
+footer address a:hover,
+section h3 a:hover{
+    color: #d3dbe3;
+    background: #166ab8;
+    padding: 5px;
+    border-radius: 9px;
+}
+h5{
+    font-size: 1rem;
+    text-align: center;
+}

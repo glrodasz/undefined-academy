@@ -1,0 +1,56 @@
+@use "./variables.scss" as *;
+
+h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+.presentacion {
+    display:flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+a {
+display: flex;
+justify-content: center;
+border: 2px solid $goldenFizz;
+border-radius: 10px;
+font-size: 0.6em;
+letter-spacing: 0.2em;
+padding: 1em 2em;
+text-transform: uppercase;
+text-decoration: none;
+color: $wildSand;
+}
+
+a {
+font: $wildSand;
+}
+ol {
+padding-inline-start: 20px;
+}
+.alias {
+padding: 5px;
+}
+
+.alias li {
+font-family: monospace;
+font-size: 12px;
+border: solid $barberry;
+border-radius: 10px;
+background-color: $bitterLemon;
+color: $codGray;
+padding: 10px;
+list-style-type: none;
+margin-bottom: 10px;
+}
+
+.date-blog {
+  font-size: 12px;
+  color: white;
+  margin: 10px;
+}

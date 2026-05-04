@@ -1,0 +1,26 @@
+{
+  "name": "semana-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview" ,
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebasvalencia/semana-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebasvalencia/semana-2/issues"
+  },
+  "homepage": "https://github.com/sebasvalencia/semana-2#readme",
+  "dependencies": {
+    "vite": "^4.2.1"
+  }
+}

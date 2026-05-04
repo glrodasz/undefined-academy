@@ -1,0 +1,42 @@
+@use "../../styles/variables.scss" as *;
+
+
+.filter {
+  width: 100%;
+  max-width: 117.2rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  padding: 0 3rem;
+  box-sizing: content-box;
+}
+
+.filter .container-row {
+  max-width: 153.6rem;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.filter ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  list-style: none;
+}
+
+.filter a {
+  color: $DoveGray;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  &.selected {
+    color: $Black;
+    font-weight: bold;
+  }
+
+  &:hover {
+    color: $Black;
+  }
+}

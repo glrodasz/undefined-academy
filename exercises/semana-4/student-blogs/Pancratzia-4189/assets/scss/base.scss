@@ -1,0 +1,214 @@
+@use "variables.scss" as v;
+@use "utilidades.scss" as u;
+
+//HEADER
+.header {
+  .navegacion {
+    width: 100%;
+    margin: 0 auto;
+    background-color: v.$east-bay;
+    padding: 2rem 0;
+
+    .contenedor-navegacion {
+      @include u.contenedor;
+      @include u.centrado;
+      display: flex;
+      flex-direction: column;
+
+      .barra-navegacion {
+        width: 100%;
+
+        .form-navegacion {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 85% auto;
+          justify-items: center;
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+
+          input {
+            width: 100%;
+            border-radius: 0.5rem;
+            border: none;
+            color: v.$east-bay;
+            font-family: v.$PT-Sans;
+            padding: 1rem 0.5rem;
+            &:active {
+              outline: none;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+
+          button {
+            width: 100%;
+            @include u.boton-principal;
+            &:hover {
+              background-color: v.$transparent;
+              color: v.$moon-raker;
+            }
+          }
+        }
+      }
+
+      .links-navegacion {
+        width: 100%;
+        @include u.contenedor;
+        @include u.centrado;
+        flex-direction: column;
+        padding: 0;
+  
+        .link-navegacion {
+          padding: 1rem 0;
+          margin: 0.5rem 0;
+          font-weight: bold;
+          width: 100%;
+          text-align: center;
+          border: 1px solid v.$cold-purple;
+          border-radius: 0.5rem;
+          a {
+            color: v.$blue-chalk;
+  
+            &:hover {
+              color: v.$moon-raker;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .hero {
+    width: 100%;
+    min-height: 30rem;
+    background: url(../imgs/hero.webp);
+
+    background-attachment: fixed; /*efecto parallax*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include u.centrado;
+
+    .contenedor-hero {
+      h1 {
+        text-shadow: v.$east-bay 1px 0 10px;
+        color: v.$white;
+        font-size: 5rem;
+        span {
+          color: v.$moon-raker;
+          text-transform: uppercase;
+          letter-spacing: 1rem;
+        }
+      }
+    }
+  }
+}
+
+//MAIN
+.main {
+  width: 100%;
+
+  .contenedor-main {
+    text-align: center;
+    .blog {
+      h2 {
+        font-size: 3rem;
+        margin: 2rem 0;
+      }
+
+      .articulos {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        .articulo {
+          display: inline-block;
+          margin: 0 auto;
+
+          .card {
+            display: grid;
+            grid-template-rows: auto auto;
+            width: 30rem;
+            height: auto;
+            margin: 2rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 0 10px v.$east-bay;
+            background-color: v.$transparent;
+            text-align: justify;
+
+            .imagen-card {
+              img{
+                width: 100%;
+              }
+            }
+
+            .contenido-card{
+              padding: 1rem;
+              .titulo-contenido-card {
+                font-size: 2.4rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+              }
+              
+              .texto-contenido-card {
+                font-size: 1.6rem;
+                line-height: 1.5;
+                margin-bottom: 2rem;
+              }
+              small {
+                display: block;
+                text-align: right;
+              }
+              
+              .boton-card {
+                display: inline-block;
+                padding: 1rem 2rem;
+                background-color: v.$east-bay;
+                color: v.$blue-chalk;
+                text-decoration: none;
+                border-radius: 5px;
+                font-weight: bold;
+                transition: background-color .3s ease-in-out;
+              }
+              
+              .boton-card:hover {
+                background-color: v.$cold-purple;
+              }
+            }
+ 
+          }
+        }
+      }
+    }
+  }
+}
+
+//FOOTER
+.footer{
+  width: 100%;
+  background-color: v.$east-bay;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  .contenedor-footer{
+    @include u.contenedor;
+    @include u.centrado;
+    flex-direction: column;
+    text-align: center;
+    color: v.$blue-chalk;
+
+    .redes{
+      font-size: 3rem;
+      display: flex;
+      gap: 5rem;
+      i{
+        color: v.$blue-chalk;
+        &:hover{
+          color: v.$moon-raker;
+        }
+      }
+    }
+  }
+}

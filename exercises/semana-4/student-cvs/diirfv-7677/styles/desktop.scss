@@ -1,0 +1,32 @@
+@use "settings" as settings;
+
+@include settings.desktop{
+    .article-aboutme{
+        margin: 5rem 0;
+        flex-direction: row;
+    }
+
+    .aboutme-text{
+        width: 60%;
+        margin-left: 2rem;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .profile-img-content{
+        width: 30%;
+    }
+
+    .projects-section{
+        padding: 0;
+    }
+
+    .project-card{
+        margin: 0 1rem;
+    }
+    
+    .project-img-container figure{
+        width: 40%;
+        max-width: 40%;
+    }
+}

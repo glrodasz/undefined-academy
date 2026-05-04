@@ -1,0 +1,26 @@
+[
+    {
+      "id": "all",
+      "value": "all",
+      "dataFilter": "all",
+      "text": "Todos"
+    },
+    {
+      "id": "html",
+      "value": "html",
+      "dataFilter": "html",
+      "text": "HTML"
+    },
+    {
+      "id": "css",
+      "value": "css",
+      "dataFilter": "css",
+      "text": "CSS"
+    },
+    {
+      "id": "javascript",
+      "value": "javascript",
+      "dataFilter": "javascript",
+      "text": "JavaScript"
+    }
+  ]

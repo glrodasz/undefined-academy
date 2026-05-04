@@ -1,0 +1,28 @@
+@use "variables.scss" as *;
+
+@media screen and (max-width: 800px) {
+    .container{
+        display:flex;
+        flex-direction: column;
+    }
+    .container div img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .container div#tft img {
+        width: 100%;
+        height: auto;
+    }
+    header {
+        background-color: $gull-gray;
+        color: $solid-white;
+        padding: 0;
+    }
+
+    nav {
+        background-color: $gull-gray;
+        color: $solid-white;
+        height: auto;
+    }
+}

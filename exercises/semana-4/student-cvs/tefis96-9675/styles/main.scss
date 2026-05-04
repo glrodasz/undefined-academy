@@ -1,0 +1,95 @@
+@import './base.scss';
+@import './tablet.scss';
+@import './desktop.scss';
+@import './variables.scss';
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  font-size: 1.5rem;
+}
+
+section {
+  border-bottom: 1px solid $Bright-Turquoise;
+}
+
+.lightMode {
+  position: absolute;
+  border: none;
+  outline: none;
+  background: $Dawn-Pink;
+  color: $Cod-Gray;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+
+.darkMode {
+  position: absolute;
+  border: none;
+  outline: none;
+  background: $Cod-Gray;
+  color: $Dawn-Pink;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.scroll {
+  background-color: $transparent;
+  border: none;
+  width: 40px;
+  position: fixed;
+  left: 2%;
+  bottom: 2%;
+}
+
+.buttonMode,
+.imgMode {
+  width: 1rem;
+}
+
+.imgMenu {
+  width: 2rem;
+}
+
+.logoField {
+  width: 25%;
+  padding: 0.5rem;
+}
+
+.iconTech,
+.icon {
+  width: 3rem;
+}
+
+.iconContact {
+  width: 4rem;
+}
+
+.imgMode {
+  margin-right: 15px;
+}
+
+.textAboutMe>h3,
+.containerContact>h2,
+.projCont>h2{
+  color: $Bright-Turquoise;
+  font-weight: bolder;
+  padding-bottom: 1rem;
+}

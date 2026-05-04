@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <script async defer type="module" src="../js/main.js"></script>
+  </head>
+  <body>
+    <main class="container text-center">
+      <div class="row">
+        <h1 class="conta mb-5">Contacto</h1>
+
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control required"
+              id="name"
+              required
+            />
+          </div>
+          <div class="mb-5">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              required
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              Nunca compartiremos tu información
+            </div>
+          </div>
+
+          <select class="form-select" aria-label="Default select example">
+            <option selected>
+              Seleccione una opción para ser contactada/o
+            </option>
+            <option value="1">Presupuesto</option>
+            <option value="2">Entrevista</option>
+            <option value="3">Consultas generales</option>
+          </select>
+
+          <div class="form-control mt-4 mb-4 mb-3">
+            <div id="emailHelp" class="form-text">
+              Si seleccionó <strong>presupuesto</strong> porque medio prefiere
+              ser contactado❓:
+            </div>
+
+            <div class="form-check text-start">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Whatsapp
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="whatsapp"
+                  aria-describedby="whatsapp"
+                  placeholder="+(cod)numero"
+                />
+              </label>
+            </div>
+            <div class="form-check text-start">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault2"
+                checked
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Email
+              </label>
+            </div>
+          </div>
+
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="floatingTextarea"
+            ></textarea>
+            <label for="floatingTextarea">Consultas Generales</label>
+            <div id="emailHelp" class="form-text">
+              Escribe tu consulta en almenos 300 palabras...
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-secondary mt-4 btnenviar">Enviar</button>
+        </form>
+
+        <div class="volver mt-5">
+          <a class="botonhome text-dark " href="../index.html"
+            ><img class="img-fluid mx-2" width="18px" src="../img/6392143.png" alt="imagen volver"
+          />Home</a>
+        </div>
+      </div>
+
+
+      <footer class="mt-5">
+        <p>María Sol Arroyo &copy; 2023</p>
+      </footer>
+    </main>
+
+    
+  </body>
+</html>

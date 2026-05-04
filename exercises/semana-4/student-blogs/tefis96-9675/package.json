@@ -1,0 +1,19 @@
+{
+  "name": "blog-sass",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "sass": "sass src/styles/main.scss src/styles/styles.css --watch",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.62.1",
+    "vite": "^4.3.2"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  }
+}

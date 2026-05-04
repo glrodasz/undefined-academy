@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="./estilos.css" />
+
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <section class="form">
+      <main class="page">
+        <h2 class="title container text-center">Contactame</h2>
+        <!-- http://127.0.0.1:5500/index.html?budget=on Qué hace esto? Toma los atributos NAME: En este caso
+            http://localhost:5173/server?name=Paula&email=paulaquiroga1207%40gmail.com&budget=5000&type=2&description=dsgdgg&terms=on
+        El get pone todos los atributos de los formularios en la URL
+        El post los manda en el cuerpo de la petición -->
+        <form id="myForm" action="/server" method="get">
+          <div class="form-group mb-3 container text-center">
+            <!-- El atributo for(para) hace referencia para quien es el nombre y el atributo id le da una identificación unica. Conectar estos dos hace que se referencien el uno al otro 
+                El placeholder es como un texto de ayuda, es decir, se escribe lo que poner ingresar en el input-->
+            <!-- Con html5 se puede hacer validación con el atributo required en el input -->
+        <div class="row">
+            <div class="col"> 
+            <label for="name" class="form-label">Nombre</label>
+            <input
+              class="form-control"
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Ingrese su nombre completo"
+              required
+            />
+            
+          </div>
+          <div class="mb-3 container text-center col">
+            <label class="form-label" for="email">Email</label>
+            <input
+              class="form-control"
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Ingrese su correo electrónico"
+              required
+            />
+          </div>
+          </div>
+          <div class="form-check">
+            <!-- Fieldset se refiere como a un grupo de controles -->
+            <fieldset>
+              <!-- legend(leyenda) es la descripción de este fieldeset -->
+              <legend class="mb-3">Salario Ofrecido</legend>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  id="1000"
+                  name="budget"
+                  type="radio"
+                  value="1000"
+                  required
+                />
+                <label class="form-check-label" for="1000">$1.000</label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  id="800"
+                  name="budget"
+                  type="radio"
+                  value="800"
+                />
+                <label class="form-check-label" for="800">$800</label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  id="500"
+                  name="budget"
+                  type="radio"
+                  value="500"
+                />
+                <label class="form-check-label" for="500">$500</label>
+              </div>
+            </fieldset>
+
+            <div class="form-text">Este presupuesto es la base, no el total</div>
+          </div>
+
+          <div class="form-group mb-3 container text-center">
+            <div class="row row-cols-2">
+                <div class="col">
+                    <label for="type">Tipo de proyecto</label>
+                    <select class="form-select" name="type" id="type" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="2">Website</option>
+                        <option value="3">Webapp</option>
+                        <option value="4">Mobile app</option>
+                        <option value="5">Diseño</option>
+                    </select>
+                </div>
+            <div class="col"> 
+                <label for="type">Modalidad de trabajo</label>
+                <select class="form-select" name="type" id="type" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="2">Presencial</option>
+                    <option value="3">Hibrído</option>
+                    <option value="4">Remoto</option>
+                </select>
+            </div>
+        
+            
+        </div>
+        </div>
+
+          <div class="form-floating mb-3">
+            <label for="description">Descripcion</label>
+            <textarea class="form-control" name="description" id="description" rows="5"></textarea>
+            <div class="form-text">
+              Haz una descripción de la empresa y el proyecto en al menos 500
+              palabras
+            </div>
+          </div>
+
+          <div class="form-check">
+            <!-- Poner un input checkbox dentro de un label es un buen truco para poder usar el for e id -->
+            <label class="form-check-label" for="terms">
+              <input class="form-check-input" id="terms" name="terms" type="checkbox" required />
+              <span>Acepto los términos y condiciones</span>
+            </label>
+          </div>
+
+          <button class="btn btn-primary" class="boton">Enviar</button>
+        </form>
+      </main>
+    </section>
+  </body>
+</html>

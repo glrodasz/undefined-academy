@@ -1,0 +1,38 @@
+@use "../../styles/tools";
+
+.tags-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px 0;
+
+  @include tools.desktop {
+    flex-wrap: nowrap;
+  }
+}
+
+.tags-filter .filter-list {
+  gap: 32px;
+}
+
+.filter-list {
+  overflow-y: hidden;
+  overflow-x: auto;
+  height: 50px;
+}
+
+.filter {
+  white-space: nowrap;
+}
+
+.is-active-filter .filter {
+  background-color: var(--color-black-pearl-900);
+  color: var(--color-aquarius-50);
+  padding: 8px 12px;
+}
+
+.filter-list-scroll-hider {
+  overflow-y: hidden;
+  height: 40px;
+}

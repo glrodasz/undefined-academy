@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./form.css">
+  <title>lmendev's profile</title>
+</head>
+<body>
+  <header>
+    <h1>Hi! I'm Luis 👋</h1>
+
+    <nav>
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="./">home</a></li>
+        <li><a href="https://github.com/Lmendev">github.com/Lmendev</a></li>
+        <li><a href="#">contact form</a></li>
+      </ul>
+    </nav>
+
+    <p><strong>Systems Engineer</strong> 👨🏽‍💻 coding passionate focused on <strong>web technologies</strong>. Interested in design, tech and <strong>OpenSource</strong>.</p>
+  </header>
+
+  <section >
+    <h2>Contat form</h2>
+
+    <article>
+      <h3>Get in touch</h3>
+
+      <form id="form" action="/server" method="get">
+        <p>Enter the following information to leave me a message 😃</p>
+
+        <label for="name">Name
+          <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+        </label>
+
+        <label for="email">Email
+          <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </label>
+
+        <label for="message">Message
+          <textarea name="message" id="message"  rows="12" placeholder="Enter your message" required></textarea>
+        </label>
+
+        <button type="submit">
+          Send message
+        </button>
+      </form>
+    </article>
+  </section>
+
+  <footer>
+    <h2>Social</h2>
+
+    <article>
+      <h3>Social media links</h3>
+
+      <ul>
+        <li>
+          <a href="https://twitter.com/intent/follow?screen_name=Lmendev" target="_blank">
+            <img src="https://user-images.githubusercontent.com/7629661/87821427-202e0280-c870-11ea-9e38-8c7c74856753.png" width="144" alt="Follow @Lmendev on Twitter" title="Follow @lmendev on Twitter">
+          </a>
+        </li>
+      </ul>
+    </article>
+  </footer>
+
+  <script src="./app.mjs" type="module"></script>
+</body>
+</html>

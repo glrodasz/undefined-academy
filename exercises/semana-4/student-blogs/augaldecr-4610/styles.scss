@@ -1,0 +1,76 @@
+@use 'styles/base.scss';
+
+.mainHeader {
+    grid-area: header;
+}
+
+.blog {
+    justify-self:center ;
+    display: grid;
+    grid-area: main;
+    grid-template-rows: 60% 40%;
+    max-width: 1080px;
+}
+
+.mainFooter {
+    grid-area: footer;
+}
+
+.card {
+    display: inline-block;
+}
+
+.card > h3, .card > p {
+    overflow: hidden;
+    position: relative;
+    top: -2rem;
+}
+
+.card > h3 {
+    left: 1rem;
+    width: fit-content;
+}
+
+.card > img {
+    max-height: 80%;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem calc(100vh - 8rem) 3rem;
+    grid-template-areas: "header" "main" "footer";
+}
+
+.hidden {
+    display: none;
+}
+
+.litle-card {
+    width: 33%;
+}
+
+.navBar ul {
+    display: flex;
+    padding: 0;
+    width: 100%;
+}
+
+.navBar ul li {
+    list-style-type: none;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.navBar ul li a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.posts {
+    display: flex;
+    justify-content: space-between;
+}

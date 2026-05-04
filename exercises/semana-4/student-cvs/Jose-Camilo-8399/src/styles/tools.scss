@@ -1,0 +1,11 @@
+@mixin format-flex($principal, $cruzado, $col-row) {
+   display: flex;
+   justify-content: $principal;
+   align-items: $cruzado;
+   flex-direction: $col-row;
+}
+
+@mixin format-img {
+   object-fit: cover;
+   border-radius: 50%;
+}

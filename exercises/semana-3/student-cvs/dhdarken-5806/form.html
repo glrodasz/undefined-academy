@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="formstyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="main.mjs"></script>
+    <title>Hoja de vida</title>
+  </head>
+  <body>
+    <main>
+      <footer>
+        <form class="ttal" action="/server" method="get">
+          <h1>Contacto</h1>
+          <img src="./images/fantasma.png" alt="fantastma con grid" />
+          <section class="head">
+            <label class="contact" for="name">
+              Nombre
+              <input
+                type="text"
+                class="contact"
+                name="name"
+                id="name"
+                required
+              />
+            </label>
+            <label class="contact" for="email"
+              >Email
+              <input
+                type="email"
+                class="contact"
+                name="email"
+                id="email"
+                required
+              />
+            </label>
+
+            <label class="contact" for="contact"
+              >Numero De Contacto
+              <input
+                type="tel"
+                name="contact"
+                class="contact"
+                id="contact"
+                required
+              />
+            </label>
+          </section>
+          <section class="range">
+            <fieldset>
+              <legend>Rango De Edad</legend>
+              <input type="radio" id="age_1_to_20" /><label
+                for="age_1_to_20"
+                class="radio"
+              >
+                1 A 20</label
+              >
+              <input type="radio" id="age_20_to_30" /><label
+                for="age_20_to_30"
+                class="radio"
+              >
+                20 A 30</label
+              >
+              <input type="radio" id="age_40_to_50" /><label
+                for="age_40_to_50"
+                class="radio"
+              >
+                40 A 50</label
+              >
+              <input type="radio" id="rest" /><label class="radio" for="rest">
+                50 En Adelante</label
+              >
+            </fieldset>
+          </section>
+          <section class="complaint">
+            <span class="textos">Tipo De Opcion Queja</span>
+            <select class="select" id="type" required>
+              <option class="option" disabled selected value="">
+                Seleccione Uno
+              </option>
+              <option class="option">Options 1</option>
+              <option class="option">Options 2</option>
+              <option class="option">Options 3</option>
+              <option class="option">Options 4</option>
+            </select>
+          </section>
+          <article class="descripcion">
+            <label for="descripcion" class="textos">Descripcion</label>
+            <textarea
+              name="descripcion"
+              id="descripcion"
+              rows="10"
+              required
+            ></textarea>
+            <p>Escribe aqui un breve resumen de su queja</p>
+          </article>
+          <section>
+            <input type="checkbox" required />
+            <span class="textos">Acepto Terminos Y Condiciones</span>
+          </section>
+          <button id="button" class="btn">Enviar Su Solicitud</button>
+        </form>
+      </footer>
+    </main>
+  </body>
+</html>

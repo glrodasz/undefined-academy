@@ -1,0 +1,23 @@
+body {
+    font-family: "Inter", "Helvetica", "Arial", sans-serif;
+    color: var(--text-primary);
+    background: var(--sky-050);
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+main > section{
+    max-width: 50em;
+    padding: 1em 1em;
+    margin: 0 auto;
+}
+
+section > h1 {
+    padding: 1rem;
+    color: var(--text-title);
+}
+
+main {
+    width: 100%;
+}

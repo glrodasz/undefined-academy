@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/form.css">
+    <script type="module" src="./scripts/main.mjs"></script>
+</head>
+<body>
+    <header id="header" class="container-header">
+
+        <nav>
+            <a href="https://github.com/Christian-356739" target="_blank"><img src="./images/github.png" alt="GitHub Link"></a>
+            <a href="" target="_blank"><img src="./images/linkedin.png" alt="Linkedin Link"></a> <!-- Link doesn't work -->      
+            <a href="index.html">About me</a>
+            <a href="../../student-blogs/KnivesMillions-2975/index.html">Blog</a>
+        </nav>
+        <hr>
+
+    </header>
+
+    <main class="main-form">
+
+        <h1 class="h1-contact">Contact Me</h1>
+
+        <form action="/server" method="get">
+
+            <div class="group-form">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="group-form">
+                <label for="project-type">Project type</label>
+                <select id="project-type" name="project-type" required>
+                <option value="">--Select an option--</option>
+                <option value="web">Web development</option>
+                <option value="mobile">Mobile development</option>
+                <option value="desktop">Desktop development</option>
+                </select>
+            </div>
+
+            <div class="group-form">
+                <fieldset>
+
+                    <legend>Budget</legend>
+                    <input type="radio" id="budget-low" name="budget" value="low" required>
+                    <label for="budget-low">Low</label><br>
+                    <input type="radio" id="budget-medium" name="budget" value="medium" required>
+                    <label for="budget-medium">Medium</label><br>
+                    <input type="radio" id="budget-high" name="budget" value="high" required>
+                    <label for="budget-high">High</label>
+
+                </fieldset>
+            </div>
+
+            <div class="group-form">
+                <label for="project-description">Project description</label><br>
+                <textarea id="project-description" name="project-description" rows="5" maxlength="100" 
+                    placeholder="Describe your project in fewer than 100 words." required></textarea>
+            </div>
+
+            <div class="group-form">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms and conditions</label>
+            </div>
+
+            <div class="group-form">
+                <button>Send</button>                
+            </div>
+
+        </form>
+    </main>
+
+    <footer class="container-footer">
+       
+        <a href="https://github.com/Christian-356739" target="_blank"><img src="./images/github.png" alt="GitHub Link"></a>
+        <a href="" target="_blank"><img src="./images/linkedin.png" alt="Linkedin Link"></a> <!-- Link doesn't work -->
+        <a href="#header">GO TOP</a>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+@use "./variables.scss" as *;
+
+@media screen and (min-width: 992px) {
+
+  /*Estilos del header*/
+  header {
+    width: 95%;
+    margin: 15px auto;
+    min-height: 250px;
+    background: $roseFog;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  header>img {
+    display: flex;
+    justify-content: flex-start;
+    width: 20%;
+    margin: 20px 20px 20px 35px;
+    border-radius: 50%;
+  }
+
+  header>div {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 35px 20px 20px;
+  }
+
+  .header-text h1,
+  h2,
+  p {
+    margin: 5px;
+  }
+
+  /*Estilos de las secciones*/
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  /*Estilos footer*/
+  footer {
+    margin: 15px auto;
+  }
+}

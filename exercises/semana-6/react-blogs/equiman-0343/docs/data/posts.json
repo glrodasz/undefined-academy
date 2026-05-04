@@ -1,0 +1,100 @@
+[
+    {
+        "uuid": "1f235554-b385-47d0-9b56-dba2609bc367",
+        "url": "https://dev.to/equimancho/usar-multiples-usuarios-con-git-1fci",
+        "title": "Usar múltiples usuarios con Git",
+        "img": {
+            "url": "https://res.cloudinary.com/dein-software/image/upload/v1681101435/dein-site/Git_khgg74.png",
+            "alt": "Git logo"
+        },
+        "short": "Una forma sencilla para no enredarse con multiples usuarios de Git en la misma maquina y sin tener que vender tu alma.",
+        "published": "2023-05-08",
+        "tags": [
+            "git",
+            "github",
+            "productividad"
+        ]
+    },
+    {
+        "uuid": "e8078c45-fe29-42a0-8ce8-d709ccdd1ebd",
+        "url": "https://dev.to/equimancho/vite-configuracion-para-react-3hf2",
+        "title": "Vite: Configuración para React",
+        "img": {
+            "url": "https://res.cloudinary.com/dein-software/image/upload/v1681101435/dein-site/Vite_mscw7k.png",
+            "alt": "Vite logo"
+        },
+        "short": "De la configuración más básica a la mas específica. Incluyendo formas de automatizar las tareas más aburridoras y tediosas.",
+        "published": "2022-10-19",
+        "tags": [
+            "react",
+            "vscode",
+            "vite",
+            "eslint"
+        ]
+    },
+    {
+        "uuid": "fea4cd68-ad4c-48c1-849b-36d8fe2515a0",
+        "url": "https://dev.to/equimancho/mover-el-sistema-de-archivos-de-wsl-a-otro-disco-3fbi",
+        "title": "Mover el Sistema de Archivos de WSL a otro disco",
+        "img": {
+            "url": "https://res.cloudinary.com/dein-software/image/upload/v1681101436/dein-site/WSL_sucajc.png",
+            "alt": "WSL logo"
+        },
+        "short": "No pierdas tu valiosa configuración y archivos de WSL cuando reinstales tu Windows.",
+        "published": "2022-10-19",
+        "tags": [
+            "wsl",
+            "terminal",
+            "ubuntu"
+        ]
+    },
+    {
+        "uuid": "629ebf3f-a593-4f89-9ac6-072d67330ff4",
+        "url": "https://dev.to/equimancho/vscode-crear-archivos-y-directorios-sin-usar-el-raton-1c19",
+        "title": "VSCode: Crear Archivos y Directorios sin usar el ratón",
+        "img": {
+            "url": "https://res.cloudinary.com/dein-software/image/upload/v1681101436/dein-site/VSCode_kbpuni.png",
+            "alt": "Visual Studio Codo logo"
+        },
+        "short": "Aprender a disminuir la dependencia del ratón para realizar tareas repetitivas es una buena forma de aumentar tu productividad.",
+        "published": "2022-10-19",
+        "tags": [
+            "vscode",
+            "productividad",
+            "webdev"
+        ]
+    },
+    {
+        "uuid": "c8f19d25-7146-41be-b653-41795bb09176",
+        "url": "https://dev.to/equimancho/codesignal-el-reto-de-calcular-el-area-de-una-figura-3o5k",
+        "title": "CodeSignal: el reto de calcular el área de una figura",
+        "img": {
+            "url": "https://res.cloudinary.com/dein-software/image/upload/v1681101437/dein-site/CodeSignal_xdzf6x.png",
+            "alt": "Code Signal logo"
+        },
+        "short": "Retarse con diferentes tipos de problemas es una buena práctica sin importar el nivel en el que te encuentres.",
+        "published": "2022-10-19",
+        "tags": [
+            "javascript",
+            "node",
+            "retos"
+        ]
+    },
+    {
+        "uuid": "cc532dbc-d37e-4b3e-9e89-3a4a38a1fcd2",
+        "url": "https://dev.to/equimancho/como-probar-media-queries-con-chrome-4kb5",
+        "title": "Como probar media queries con Chrome (o Edge)",
+        "img": {
+            "url": "https://res.cloudinary.com/dein-software/image/upload/v1681101436/dein-site/DevTools_ivbbii.png",
+            "alt": "Chrome Dev Tools logo"
+        },
+        "short": "El responsive vino para quedarse y los navegadores actuales tienen excelentes herramientas que nos pueden ayudar con el proceso de depuración.",
+        "published": "2022-10-19",
+        "tags": [
+            "chrome",
+            "edge",
+            "webdev",
+            "css"
+        ]
+    }
+]

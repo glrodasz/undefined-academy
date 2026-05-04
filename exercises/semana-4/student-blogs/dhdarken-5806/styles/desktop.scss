@@ -1,0 +1,13 @@
+@use "/styles/variables.scss" as *;
+@media (max-width: 750px) {
+  .content {
+    background-color: $LightSteelBlue;
+  }
+  .medium {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+  }
+}

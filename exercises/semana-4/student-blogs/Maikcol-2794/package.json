@@ -1,0 +1,22 @@
+{
+  "name": "maikcol-2796",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "sass": "sass styles/main.scss styles/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.60.0",
+    "vite": "^4.2.1"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  }
+}

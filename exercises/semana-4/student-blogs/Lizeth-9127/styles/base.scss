@@ -1,0 +1,113 @@
+@use "variables.scss" as *;
+
+body {
+  box-sizing: border-box;
+  background-color:  $zircon;
+  margin: 0;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: unset;
+  color: inherit;
+}
+
+a:hover {
+  color:  $cornflower-blue;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align:center;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin:0.5rem;
+}
+
+.article-header{
+  border:none;
+  margin:0;
+  padding:0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column-reverse;
+  grid-column: 1 / 4;
+  background-color:  $cornflower-blue;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1.5px solid  $periwinkle;
+}
+
+footer > span {
+  color:  $alpha-zircon;
+  font-size: 78%;
+}
+
+header {
+  grid-column: 1 /4;
+  grid-row: 1 / 2;
+  border-bottom: 1px solid  $lavender-web;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+img {
+  width: 90%;
+  height: 80%;
+  margin: auto;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+}
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border: 1px solid  $fog;
+  border-radius: 7px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.icon {
+  max-width: 1.3em;
+  height: unset;
+}
+.caption {
+  color:  $cadet-gray;
+  font-size: 14px;
+}
+
+.article:hover {
+  box-shadow: 2px 1px 16px  $hawkes-blue;
+  cursor: pointer;
+}

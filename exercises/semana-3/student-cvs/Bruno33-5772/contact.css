@@ -1,0 +1,178 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+header.main {
+    background-image: url("img/header-page.jpg");
+    background-position: center top;
+    background-size: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-color: #868686;
+    line-height: 1.2;
+    padding: 18px 0px 15px 0px;
+    text-align: center;
+    max-width: 100%;
+}
+
+header h1 {
+    color: rgb(0, 0, 0);
+    font-size: 2.5em;
+    font-weight: 600;
+    text-shadow: 2px 2px #fefefe;
+    margin: 25px 25px 15px 25px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #333;
+}
+
+nav {
+    background-color: transparent;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main.page {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 0em 1em;
+    color: #566b78;
+}
+
+body {
+    color: #333;
+    background-color: #f3f1f1de;
+    margin: 0;
+}
+
+h1, h2, strong {
+    color: #333;
+}
+
+.work {
+    display: none;
+}
+
+.work-item {
+    display: block;
+}
+
+@media screen and (min-width:992px) {
+    .work-item {
+        display: inline;
+    }
+}
+
+@media screen and (min-width:50em) {
+    header h1 {
+        margin: 25px auto 15px auto;
+        max-width: 760px;
+    }
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+input {
+    vertical-align: middle;
+}
+
+input[type="text"], input[type="email"], textarea {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+    padding-right: 5px;
+}
+
+fieldset > label {
+    font-weight: normal;
+    text-transform: none;
+    vertical-align: auto;
+}
+
+fieldset > input {
+    vertical-align: baseline;
+}
+
+span {
+    text-transform: none;
+}
+
+.help {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+select {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+}
+
+button {
+    padding: 15px 60px;
+    text-transform: uppercase;
+    font-size: bold;
+    border: 1px solid;
+    border-radius: 8px;
+    background: #0891b2;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #06b6d4;
+}
+
+button:active {
+    background-color: #0e7490;
+}
+
+form {
+    accent-color: #0891b2;
+}

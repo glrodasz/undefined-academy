@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="header_mod">
+        <h1 class="h1_mod">Contáctame</h1>
+    </header>
+    <div class="bloque-main">
+        <span class="bloque-izq">
+            <form class="form-group" action="/server" method="post">
+             <div class="bloque_element">
+                <label class="label_name" for="name_user">Nombre</label>
+                <input class="input_text" id="name_user" name="name_user" type="text" placeholder="Introduce tu nombre" required>
+             </div>
+             <div class="bloque_element">
+                <label class="label_name" for="name_user">E-mail</label>
+                <input  class="input_text" id="email" name="email" type="email" placeholder="Introduce tu email" required>
+             </div>
+            <fieldset>
+                <legend>Asunto de contacto:</legend>
+                <label class="label_checkbox" for="hobbies">Hobbies
+                    <input id ="hobbies" name="hobies" type="checkbox" value="hobbies" required>
+                </label>
+                <label class="label_checkbox" for="economy">Economía
+                    <input id ="economy" name="economy" type="checkbox" value="economia" required>
+                </label>
+                <label class="label_checkbox" for="reading">Lectura
+                    <input id ="reading" name="reading" type="checkbox" value="lectura" required>
+                </label>
+            </fieldset>
+            <div class="bloque_element">
+                <label class="label_name" for="textarea">Comentario:</label>
+                <textarea id="textarea" name="comentario"></textarea>
+                <div><p class="comentario">Escriba un comentario de al menos 100 palabras.</p></div>
+            </div>
+            <div class="bloque-inf">
+                <input type=submit value="Enviar" class="button">
+            </div>     
+            </form>
+        </span>
+        <span class="bloque-drch">
+            <p>Cumplimente el formulario con su información</p>
+        </span>
+    </div>
+   
+    <footer><p>2023</p></footer>
+</body>
+</html>

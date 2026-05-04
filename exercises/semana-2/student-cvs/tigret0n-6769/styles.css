@@ -1,0 +1,254 @@
+@import 'https://fonts.googleapis.com/css?family=Barlow';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Barlow', sans-serif;
+}
+
+li:not(.whoami_box li) {
+  list-style: none;
+}
+
+body {
+  background-color: #ffff;
+}
+
+section {
+  display: block;
+  text-align: justify;
+  font-size: 1.3em;
+  line-height: 1.8em;
+}
+
+
+/* Barra de navegación */
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #3F0C5B;
+  color: #FFFACD;
+}
+
+.navbar li a {
+  color: #FFFACD;
+  padding: 20px;
+  display: inline-block;
+}
+
+.navbar li a:hover {
+  background-color: #00EC87;
+  transition: background-color 0.3s ease-in;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3F0C5B;
+}
+
+.menu li {
+  font-size: 22px;
+  display: inline;
+}
+
+/* Presentación */
+
+.introduction {
+  
+  width: 100%;
+  background-color: #733f8f;
+  color: #ffff;
+  font-weight: bold;
+  padding: 3em;
+  font-size: 2em;
+}
+
+
+/*Sobre mí y conocimientos*/
+
+.container_devskills,
+.container_whoami {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: space-around;
+  /* Color coincidirá con bakcground-color de html */
+}
+
+h3 {
+  overflow: hidden;
+  border-radius: 20px;
+  color: #ffff;
+  text-align: center;
+  padding: 10px 1em;
+  margin-bottom: 1.5em;
+}
+
+.devskills_box>h3,
+.contact_box>h3 {
+  background-color: #00EC87;
+
+}
+
+.devskills_box {
+  background-color: #ffff
+    /*#D7FEED*/
+  ;
+  color: #170124;
+  padding: 2em 3em;
+  /*border: solid black;*/
+}
+
+.row {
+  display: flex;
+  align-items: row;
+  position: relative;
+  column-count: 2;
+  overflow: hidden;
+  margin: auto;
+  justify-content: center;
+}
+
+.card_group_1,
+.card_group_2 {
+  display: block;
+  /*border: solid black;*/
+  width: 50%;
+  text-align: center;
+}
+
+.card {
+  margin: 0.5em 1.2em;
+}
+
+
+.whoami_box>h3 {
+  background-color: #00EC87;
+}
+
+.container_whoami {
+  background-color: #D7FEED;
+  color: #170124;
+  padding: 4rem 0;
+}
+
+.whoami_box {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.whoami_box li {
+  margin: 0.5em 0;
+}
+
+/*Formulario de contacto*/
+
+.container_contact {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+
+.contact_box {
+  background-color: #ffff;
+  color: #170124;
+  border-radius: 5px;
+  padding: 2em 3em;
+
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #2EC685;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=checkbox] {
+  display: inline-block;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.pronouns label:nth-child(2) {
+  padding: 0 1em;
+}
+
+
+form {
+  display: block;
+  border-radius: 4px;
+  background-color: #D7FEED;
+  padding: 2em;
+}
+
+.button {
+  text-align: center;
+}
+
+button[type=submit] {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 24px;
+  text-decoration: none;
+  border: none;
+  padding: 15px 60px;
+  background-color: #6D348D;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 7px 6px 15px 2px rgba(0, 0, 0, 0.50);
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+}
+
+
+button[type=submit]:hover {
+  background-color: #3F0C5B;
+  transform: scale(0.97);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 20px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+
+/*Footer*/
+
+footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #3F0C5B;
+  color: #FFFACD;
+  padding: 20px;
+}
+
+footer a {
+  color: #D5C3DF;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+
+.footer-content{
+  margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Jorge Ardila</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#resumen">Resumen</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#experiencia-laboral">Experiencia</a></li>
+                <li><a href="#habilidades-tecnicas">Habilidades</a></li>
+                <li><a href="#certificaciones">Certificaciones</a></li>
+                <li><a href="#informacion-de-contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1 class="name">Jorge Alexander Ardila Restrepo</h1>
+    </header>
+
+    <main>
+        <section id="resumen">
+            <h2>Resumen</h2>
+            <p>Soy un desarrollador ASP.NET con experiencia en el diseño y desarrollo de aplicaciones web, backend,
+                microservicios, entre otros, utilizando tecnologías como HTML, CSS, JavaScript y C#. Me apasiona la
+                tecnología y estoy constantemente buscando formas para mejorar mis habilidades y conocimientos.
+            </p>
+        </section>
+    </main>
+
+    <section id="educacion">
+        <h2>Educación</h2>
+        <ul>
+            <li>Ingeniería en Informática, Fundación Universitaria Cátolica del Norte, 2013-2018</li>
+            <li>Tecnología en Análisis y Desarrollo de Sistemas de Información, SENA, 2020-2022</li>
+        </ul>
+    </section>
+
+    <section id="experiencia-laboral">
+        <h2>Experiencia Laboral</h2>
+        <article>
+            <h3>Analista Desarrollador de Sistemas de Información, Policia Nacional de Colombia</h3>
+            <p>Octubre 2020 - Presente</p>
+            <ol>
+                <li>Desarrollo de aplicaciones web utilizando HTML, CSS, JavaScript y C#</li>
+                <li>Mantenimiento y mejora de aplicaciones web y APIs existentes</li>
+                <li>Colaboración con el equipo de diseño y otros desarrolladores para garantizar la calidad del producto
+                    final
+                </li>
+                <li>Implementación de mejoras de usabilidad y diseño en sitios web existentes</li>
+            </ol>
+        </article>
+
+        <article>
+            <h3>Responsable de Análisis</h3>
+            <p>Enero 2019 - Octubre 2020</p>
+            <ol>
+                <li>Gráficas y análisis estadístico en excel</li>
+                <li>Georeferenciación en ArcGis desktop y online</li>
+                <li>Consulta en bases de datos</li>
+                <li>Direccionamiento y manejo del personal</li>
+            </ol>
+        </article>
+    </section>
+
+    <section id="habilidades-tecnicas">
+        <h2>Habilidades Técnicas</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C#</li>
+            <li>PL-SQL</li>
+            <li>SQL Server</li>
+            <li>Git</li>
+        </ul>
+    </section>
+
+    <section id="certificaciones">
+        <h2>Certificaciones</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre de la certificación</th>
+                    <th>Emisor</th>
+                    <th>Fecha de obtención</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Certificación en microservicios C#</td>
+                    <td>Udemy</td>
+                    <td>Febrero 2021</td>
+                </tr>
+                <tr>
+                    <td>Certificación en ASP.NET</td>
+                    <td>Udemy</td>
+                    <td>Agosto 2020</td>
+                </tr>
+                <tr>
+                    <td>Certificación en Javascript</td>
+                    <td>Platzi</td>
+                    <td>Mayo 2019</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="informacion-de-contacto">
+        <h2>Información de Contacto</h2>
+        <ul>
+            <li>Ciudad: Bogotá D.C. - Colombia.</li>
+            <li>Teléfono: +57 310 389 7228</li>
+        </ul>
+
+        <fieldset>
+            <legend>Contáctame para un trabajo o asesoría</legend>
+
+            <form class="form" action="/server" method="get" id="contactForm">
+
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input id="name" type="text" name="name" placeholder="Ingrese su nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Ingrese su email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-45-678" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Tipo de trabajo o asesoría</label>
+                    <select name="type" id="type" required>
+                        <option value="" selected disabled>Seleccione</option>
+                        <option value="freelance">Freelance</option>
+                        <option value="C#">Asesorías C#</option>
+                        <option value="JS">Asesorías JS</option>
+                        <option value="SQL">Asesorías SQL</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Descripción</label>
+                    <textarea name="description" id="description" cols="30" rows="8" required></textarea>
+                    <div class="descripcion">Escribe una descripción del trabajo de manera breve.</div>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox" for="terms">
+                        <input id="terms" type="checkbox" name="terms" required>
+                        <span>Acepto los términos y condiciones</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="Enviar">Enviar</button>
+            </form>
+
+        </fieldset>
+
+        <div class="socialMedia">
+            <a href="https://github.com/jaardila-3" title="Github">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:jorge.ardila1641@correo.policia.gov.co" title="Enviar un email">
+                <i class="far fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jorge-ardila/" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+    </section>
+
+    <div>
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="btn-float">&#8593;</button>
+    </div>
+
+    <footer>
+        <p>Derechos de autor &copy; 2023 Jorge Alexander Ardila Restrepo</p>
+        <p>Última actualización: <time>17 de marzo de 2023</time></p>
+    </footer>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f28e10f9c4.js" crossorigin="anonymous"></script>
+    <!-- preventDefault submit -->
+    <script> contactForm.addEventListener("submit", e => e.preventDefault()); </script>
+</body>
+
+</html>

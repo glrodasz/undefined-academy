@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil Personal: OrcaCL - Contacto</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="/main.mjs"></script>
+</head>
+<body>
+    <header>
+        <h1>Hola, soy Orlando Caffarena</h1>
+    </header>
+    <section>
+        <h1>Contacto</h1>
+        <p>Utiliza el formulario de contacto para contarme todo lo que necesites y te responderé a la brevedad.</p>
+        <!-- <form action="/server" method="post" onsubmit="event.preventDefault();"> -->
+        <form action="/server" method="post">
+            <div class="form-group">
+                <label for="name">Nombre*</label>
+                <input id="name" name="name" type="text" placeholder="Ingrese su nombre completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su correo" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción</label>
+                <textarea name="description" cols="70" rows="2" placeholder="Escribe una descripción del proyecto en menos de 1500 palabras" required></textarea>
+                <div class="help">Utiliza este espacio para describir tu proyecto o problemática para que la solucionemos juntos.</div>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" name="terms" required><span>No soy un robok🤖</span>
+                </label>
+            </div>
+            <button type="submit">Enviar</button>
+            <span class="cancel"><a href="/index.html">Volver al Inicio</a></span>
+        </form>
+    </section>
+</body>
+</html>

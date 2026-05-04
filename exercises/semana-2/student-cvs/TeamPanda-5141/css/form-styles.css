@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100%;
+    padding: 2em 1em;
+    min-width: 400px;
+    max-width: 450px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    margin: 0 auto;
+    background-image: url("/img/imagen-fondo-divpanda.jpg");
+    color: rgb(213, 222, 230);
+}
+
+h1 {
+    background-image: url("/img/imagen-fondo-divpanda.jpg");
+    border-radius: 8px;
+    border: 1px solid azure;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-color: rgba(53 51 51 / 0.36);
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid azure;
+}
+
+
+.form-group {
+    margin: 20px 0;
+    display: block;
+}
+
+label,
+input:not([type="checkbox"]) {
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+input:not([type="checkbox"]),
+textarea {
+    background-image: url("/img/imagen-fondo-divpanda.jpg");
+    color: rgb(213, 222, 230);
+    border: 1px solid azure;
+    border-radius: 5px;
+    padding: 8px 10px;
+}
+
+::placeholder {
+    color: rgb(213, 222, 230);
+}
+
+.container-submit-button {
+    display: grid;
+    place-items: center;
+}
+
+button {
+    /* background-image: url("/img/imagen-fondo-divpanda.jpg"); */
+    background-color: rgba(53 51 51 / 0.36);
+    color: rgb(213, 222, 230);
+    border: 1px solid azure;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 rgba(53 51 51 / 0.36);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(82, 80, 80);
+}
+
+button:active {
+    background-color: rgba(82, 80, 80, 0.36);
+}
+
+.footer-main {
+    text-align: center;
+    opacity: .9;
+}

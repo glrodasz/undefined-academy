@@ -1,0 +1,152 @@
+html {
+  background-color: #24b600;
+}
+html body {
+  font-family: "Outfit", Georgia;
+  font-size: 18px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: #e4e4e7;
+  margin: 0;
+  padding: 0;
+}
+html header {
+  background-color: #24b600;
+  color: #000000;
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+html header .header-img {
+  height: 300px;
+  width: 40%;
+  max-height: 100;
+  object-fit: cover;
+  flex-shrink: 1;
+}
+html header .header-content {
+  text-align: left;
+  width: 100%;
+}
+html nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1em auto;
+}
+html nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+html main {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+html .posts {
+  margin: 1em;
+  padding: 0.3em;
+  display: flex;
+  gap: 0.5em;
+  flex-direction: column;
+}
+html .posts article {
+  padding: 1em;
+  border: 1px solid #24b600;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+html .posts article img {
+  width: 50%;
+  max-width: 150px;
+  object-fit: contain;
+}
+html .posts article .article-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html .posts article .article-footer {
+  display: flex;
+  justify-content: space-between;
+}
+html footer {
+  height: 3em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  gap: 2em;
+  background-color: #24b600;
+  padding: 0.5rem 2rem;
+  color: #000000;
+}
+html footer img {
+  width: 10%;
+  max-width: 50px;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    height: auto;
+  }
+  header .header-img {
+    display: none;
+  }
+  header .header-content {
+    display: flex;
+    flex-direction: row;
+  }
+  header .header-content h1 {
+    width: 100%;
+  }
+  main {
+    flex-direction: row;
+  }
+  main .article-head {
+    width: 50%;
+  }
+  main .article-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main article img {
+    max-width: 800px;
+    object-fit: cover;
+    justify-self: center;
+  }
+  main .posts {
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "principal principal" "left right" "left right";
+    gap: 2em;
+    width: 60%;
+    max-width: 300px;
+  }
+  main .posts .principal {
+    flex-direction: row;
+    grid-area: principal;
+  }
+  main .posts .left {
+    grid-area: left;
+  }
+  main .posts .right {
+    grid-area: right;
+  }
+  main .card {
+    width: auto;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

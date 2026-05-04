@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap w/ Vite</title>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="mx-auto p-2" style="max-width: 50em;">
+      <h1>Contacto</h1>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input required type="email" class="form-control" id="email">
+        </div>
+
+        <fieldset class="border border-2">
+          <legend class="float-none w-auto text-center">Presupuesto</legend>
+          <div class="text-center mb-2">
+
+            <input class="mx-2" id="1000" name="budget" type="radio" value="1000" required><label
+              for="1000">$1.000</label>
+
+            <input class="mx-2" id="500" name="budget" type="radio" value="500" required><label for="500">$500</label>
+
+            <input class="mx-2" id="100" name="budget" type="radio" value="100" required><label for="100">$100</label>
+          </div>
+        </fieldset>
+        <div class="help">Este presupuesto es la base no el total.</div>
+
+        <div class="input-group my-3">
+          <select class="form-select" id="inputGroupSelect02" required>
+            <option selected disabled value="">Elige una</option>
+            <option value="website">Website</option>
+            <option value="webapp">Aplicación Web</option>
+            <option value="mobile">Aplicacion mobile</option>
+            <option value="design">Diseño Web</option>
+          </select>
+          <label class="input-group-text" for="inputGroupSelect02">Tipo de proyecto</label>
+        </div>
+
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"
+            required></textarea>
+          <label for="floatingTextarea2">Envie una breve descripcion del proyecto</label>
+        </div>
+        <div class="input-group my-3">
+          <label class="input-group-text">
+            <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"
+              required>
+            <span class="ms-2">Acepte los terminos</span>
+          </label>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary w-25 mx-auto text-center mt-3">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

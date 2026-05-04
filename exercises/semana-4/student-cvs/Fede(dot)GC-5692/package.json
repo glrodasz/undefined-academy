@@ -1,0 +1,24 @@
+{
+  "name": "fede.gc-5692",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "sass": "sass src/styles/main.scss src/nstyles/main.css",
+    "watch:sass": "sass --watch src/styles/main.scss src/styles/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1",
+    "vite": "^4.3.3"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  }
+}

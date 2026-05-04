@@ -1,0 +1,119 @@
+@import "variables.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+@media (min-width: 800px) {
+    
+    html {
+        box-sizing: border-box;
+    }
+
+    * {
+        box-sizing: inherit;
+    }
+
+    body {
+        max-width: 700px;
+        margin: 100px auto;
+        padding: auto;
+        font-size: 15px;
+        @include style-body
+    }
+
+    h1, h2 {
+        color: $jordyblue;
+        font-size: 20px;
+    }
+    
+    strong {
+        color: $logan;
+    }
+    
+    .titlelearning{
+        margin-bottom: 30px;
+    }
+    
+    .learning {
+        @include style-learning;
+        padding: 37px 10px 10px 10px;
+    }
+    
+    img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .hrnormal {
+        @include style-hr
+    }
+    
+    .courses {
+        padding-top: 20px;
+    }
+    
+    .certificates {
+        font-size: 14px;
+        padding: 0 40px 0 20px;
+    }
+    
+    a {
+        font-size: 14px;
+        @include style-link;
+    }
+    
+    h4 {
+        @include style-h4;
+        font-size: 14px;
+    }
+    
+    .networks {
+        display: flex;
+    }
+    
+    //Estilos form
+  
+    .page {
+        margin-left: 135px;
+    }
+    
+    form {
+        max-width: 700px;
+    }
+    
+    .form-group {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    input {
+        outline: none;
+    }
+
+    fieldset {
+        border-color: $gunpowder;
+        width: 320px;
+    }
+    
+    textarea {
+        @include style-textarea;
+        width: 175px;
+    }
+    
+    button {
+        margin-top: 5px;
+        padding: 16px 60px;
+        @include style-button;
+    }
+    
+    button:hover {
+        @include style-buttonhover;
+    }
+    
+    button:active {
+        @include style-buttonactive;
+    }    
+    
+    .back {
+        margin-top: 30px;
+    }
+}

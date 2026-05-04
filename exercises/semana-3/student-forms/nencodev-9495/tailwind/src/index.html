@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./output.css">
+  <title>Contacto | Tailwindcss</title>
+</head>
+
+<body class="bg-slate-100">
+      <div class="max-w-lg mx-auto">
+        <main>
+          <h2 class="text-3xl py-2">Contáctame</h2>
+          <hr class="border-gray-400">
+          <section>
+            <form class="pb-8" action="/server" method="get">
+              <div class="pt-4">
+                <label class="font-bold " for="name">Nombre:</label>
+                <input class="py-2 px-4 w-full rounded-md" id="name" name="name" type="text" placeholder="Ingrese su nombre completo" required />
+              </div>
+              <div class="pt-4">
+                <label class="font-bold" for="email">Correo electrónico: </label>
+                <input class="py-2 px-4 w-full rounded-md" id="email" name="email" type="email" placeholder="Ingrese su correo electronico" required />
+              </div>
+<div class="pt-4">
+  <fieldset class="border-gray-400 border-solid border-2 py-2 px-4 rounded-md">
+                <legend class="font-bold">Presupuesto</legend>
+                <div class="flex justify-evenly">
+                  <div>
+                  <input id="10000" name="budget" type="radio" value="10000" required />
+                  <label  for="10000"> $10.000</label>
+                </div>
+                <div>
+                  <input id="5000" name="budget" type="radio" value="5000" required />
+                  <label for="5000"> $5.000</label>
+                </div>
+                <div>
+                  <input id="1000" name="budget" type="radio" value="1000" required />
+                  <label for="1000"> $1.000</label>
+                </div>
+                </div>
+              </fieldset>
+              <div>
+                <p>Este presupuesto es la base no el total</p>
+              </div>
+</div>
+
+
+              <div class="pt-4">
+                <label class="font-bold" for="type">Tipo de Proyecto: </label>
+                <select class="py-2 px-4 w-full rounded-md" name="type" id="type" required>
+                  <option disabled selected value="">Seleccione uno</option>
+                  <option value="Website">Website</option>
+                  <option value="aplicacionweb">Aplicación Web</option>
+                  <option value="aplicacionmovil">Aplicación Movil</option>
+                  <option value="disenoweb">Diseño Web</option>
+                </select>
+              </div>
+
+              <div class="pt-4">
+                <label class="font-bold" for="description">Descripción: </label>
+                <textarea class="py-2 px-4 w-full rounded-md" name="description" id="description" cols="30" rows="8" required></textarea>
+                <div>
+                  Escribe una descripción del proyecto en al menos 500 palabras
+                </div>
+              </div>
+
+              <div class="pb-4">
+                <label for="termsandconditions">
+                  <input type="checkbox" name="termsandconditions" id="termsandconditions" required />
+                  <span>Acepto los términos y condiciones</span>
+                </label>
+              </div>
+
+              <button class="bg-orange-400 py-2 px-4 rounded" id="submit">Enviar</button>
+            </form>
+          </section>
+        </main>
+      </div>
+</body>
+
+</html>

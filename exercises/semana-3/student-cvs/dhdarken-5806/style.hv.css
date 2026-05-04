@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(129, 122, 197);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+
+}
+
+.head >img{
+  width: 200px;
+  border-radius: 20px;
+
+}
+p{
+  text-align: center;
+}
+
+h1{
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.unorderedlist{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.unorderedlist>li{
+  width: 40%;
+  text-align: center;
+  background-color: rgb(211, 189, 234);
+  border-radius: 20px;
+}
+
+.table1{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+}
+
+.table1>.t1{
+  background-color: rgb(195, 158, 214);
+  width: 40%;
+  text-align: center;
+  border-radius: 20px;
+  color: aliceblue;
+}
+
+.table1>.t2{
+  background-color: rgb(145, 97, 168);
+  width: 80%;
+  text-align: center;
+  border-radius: 20px;
+  color: aliceblue;
+}
+
+.table2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  gap:10px;
+}
+
+.table2>.p1{
+  background-color:rgb(195, 158, 214) ;
+  width: 50%;
+  border-radius: 20px;
+  color: aliceblue;
+}
+
+.table2>.p2{
+  background-color:rgb(145, 97, 168) ;
+  width: 100%;
+  border-radius: 20px;
+  color: aliceblue;
+}
+
+@media (min-width: 700px) { 
+  body{
+    background-color: rgb(129, 122, 197);
+  }
+  .table1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .t1{
+    justify-self: center;
+  }
+  .t2{
+    justify-self: center;
+  }
+
+  .table2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .p1{
+    justify-self: center;
+  }
+  .p2{
+    justify-self: center;
+
+  }
+
+ }

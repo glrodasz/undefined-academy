@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500&family=Exo:wght@300&family=Josefin+Sans:wght@100;300&family=Roboto&family=Ubuntu&display=swap');
+
+/*CSS Reset*/
+html{
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/*Modifico la equivalencia del rem; rem=10px*/
+html{
+    font-size: 62.5%;
+    background-color: white;
+}
+
+/*Asigno tamaño de letra de 16px*/
+body{
+    font-size: 1.6rem;
+    background-color: #fafafa;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
+    color:#6A6555;
+}
+
+.main-container{
+    padding: 0 2rem;
+    margin: 0 auto;
+    max-width: 900px; /*Asigno ancho máximo para ver mi página centrada*/
+
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#d1d5db;
+    border-radius: 0 0 8px 8px;
+}
+
+/*Defino tamaño del logo*/
+.img-logo{
+    max-width: 150px;
+    margin: 0 3rem;
+    transition: transform .2s;
+}
+
+.img-logo:hover{
+    transform: scale(1.2);
+}
+
+/*Configuración del nav*/
+.ul-nav{
+    display: flex;
+    margin: 0 1rem 1rem;
+    padding: 0;
+    list-style: none; /*elimino las viñetas de los li*/
+}
+
+/*Configuración de los botones del nav*/
+.li-nav{
+    margin: 1rem 1rem;
+    text-transform: uppercase; /*transformo las letras del nav en mayúsculas*/
+}
+
+/*Configuración de los enlaces del nav*/
+.a-nav{
+    text-decoration: none;
+    color:#6A6555;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.article-aboutme{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.aboutme-text{
+    width: 100%;
+    padding: 0 3rem;
+    margin-top: 1rem;
+}
+
+.tittle{
+    color:#16574A;
+    margin-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.4rem;
+}
+
+.profile-img-content{
+    width: 40%;
+}
+
+/*Defino tamaño de la imagen de perfil*/
+.img-profile{
+    width: 100%;
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
+
+.cv-icon-container{
+    text-align: center;
+    margin: 1rem;
+}
+
+.clicable-icon{
+    color: #6A6555;
+    margin: 1rem;
+    font-size: 2rem;
+    transition: transform 1s;
+}
+
+.clicable-icon:hover{
+    color: #4D8076;
+    transform: scale(1.1);
+    transition-property: color;
+    transition-duration: .8s;
+}
+
+/************************************/
+/**Contenedor padre cards projects**/
+/***********************************/
+.projects-cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/************************************/
+/****Elementos de cards projects****/
+/***********************************/
+.projects-section{
+    padding: 0 3rem;
+    margin-bottom: 5rem;
+}
+
+.project-card{
+   color:#6A6555;
+   border-radius: 2%;
+   margin: 1rem 1rem;
+   background-color:#d1d5db;
+   border-radius: 10px;
+   overflow:hidden;
+   box-shadow: 1px 1px 3px rgba(116, 116, 116, 0.798);
+   max-width: 250px;
+}
+
+.project-card:hover{
+    filter: opacity(.8);
+    cursor: pointer;
+    -webkit-transform:scale(1.03);
+    transform:scale(1.03);
+    transition-duration: .8s;
+    box-shadow: 1px 1px 5px #121414;
+}
+
+.card-fig{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-tittle{
+    font-size: 1.6rem;
+    margin: 1rem 1rem;
+    color:#16574A;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.card-text{
+    margin: 1rem 1rem;
+}
+
+.link-card{
+    text-decoration: none;
+    color:#6A6555;
+}
+
+/************************************/
+/********Estilos del formulario******/
+/***********************************/
+.article-contactame{
+    margin-top: 5rem;
+}
+
+.form-group{
+    border: 1px;
+    margin: 20px 0px;
+}
+
+label, input:not([type="checkbox"]) {
+    width: 100%;
+    display: block;
+}
+
+label, input{
+    vertical-align: middle;
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+}
+
+label{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color:#16574A
+}
+
+fieldset{
+    border: 1px solid rgb(209, 213, 219, 0.903);
+    padding: 2rem;
+}
+
+input, textarea, select{
+    background: #d1d5db5e;
+    border: 1px solid rgb(236, 226, 222);
+    border-radius: 10px;
+    padding: 1rem;
+    color: #6A6555;
+}
+
+button{
+    padding: 10px 30px;
+    margin: 20px auto 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0.5px solid rgba(236, 226, 222, 0.903);
+    background: #16574A;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: block;
+      
+}
+
+button:hover{
+    background:#16574ae9;
+}
+
+button:active{
+    background:#071d18;
+    box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.3);
+}
+
+form{
+    accent-color:#16574A;
+}
+
+input:focus-visible, textarea:focus-visible, select:focus-visible {
+    border: 1px solid hsl(46, 11%, 37%, 0.3);
+    outline: 2px solid hsl(46, 11%, 37%, 0.2);
+}
+
+/************************************/
+/*********Estilos del footer*********/
+/***********************************/
+.footer{
+    height: 100px;
+    background-color: #d1d5db;
+    border-radius: 8px 8px 0 0;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+
+.address-container{
+    display: flex;
+    align-items: center;   
+}
+
+.address-container i{
+    margin: 1rem 0.5rem 1rem 1rem;
+    font-size: 2rem;
+}
+
+.icons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/************************************/
+/**********Estilos cv page**********/
+/***********************************/
+.cv-container{
+    margin-top: 5rem;
+}   
+
+ul{
+    list-style: none;
+}
+
+.section-cv{
+    margin: 2rem;
+}
+
+.section-cv h1{
+    margin-bottom: 1rem;
+}
+
+.cv-ref{
+    text-decoration: none;
+    color:#2f8c79;
+}
+
+.section-cv strong{
+    color:#2f8c79;
+    font-weight:normal;
+}
+
+/************************************/
+/********Estilos project page********/
+/***********************************/
+.main-projects{
+    margin: 5rem 2rem 0;
+}
+
+.main-projects strong{
+    color:#2f8c79;
+}
+
+.main-projects h1{
+    margin-bottom: 1rem;
+}
+
+.project-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-img-container figure{
+    text-align: center;
+    max-width: 320px;
+}
+
+.project-img-container img{
+    width: 100%;
+    padding: 2rem 2rem 1rem;
+}
+
+@media screen and (min-width: 590px) {
+    .header-nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .img-logo{
+        margin: 1rem 3rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .article-aboutme{
+        margin: 5rem 0;
+        flex-direction: row;
+    }
+
+    .aboutme-text{
+        width: 60%;
+        margin-left: 2rem;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .profile-img-content{
+        width: 30%;
+    }
+
+    .projects-section{
+        padding: 0;
+    }
+
+    .project-card{
+        margin: 0 1rem;
+    }
+    
+    .project-img-container figure{
+        width: 40%;
+        max-width: 40%;
+    }
+}

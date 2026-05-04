@@ -1,0 +1,141 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    box-sizing: border-box; 
+}
+
+* {
+    box-sizing: inherit;
+}
+
+#principal {
+    width: 960px;
+    height: 900px;
+    margin: 0px auto;
+    background: white;
+
+}
+
+header {
+    width: 960px;
+    height: 200px;
+    background: red;
+    font-family: fantasy;
+    text-align: center;
+    text-decoration: overline underline;
+    text-shadow: 2px 2px 5px white;
+    font-size: 3em;
+    line-height: 200px;
+
+}
+
+nav {
+    width: 960px;
+    height: 50px;
+    background: rgb(247, 173, 173);
+    text-align: center;
+    text-indent: 50px;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 50px;
+}
+
+#section-left {
+    width: 320px;
+    height: 550px;
+    background: whitesmoke;
+    float: left;
+}
+
+#section-center {
+    width: 320px;
+    height: 550px;
+    background: rgb(219, 207, 207);
+    float: left;
+    
+}
+
+#section-right {
+    width: 320px;
+    height: 550px;
+    background: whitesmoke;
+    float: left;
+}
+
+
+#box-title {
+    width: 280px;
+    height: 100px;
+    background: red;
+    line-height: 100px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#box-text {
+    width: 280px;
+    height: 390px;
+    background: whitesmoke;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#box-text1 {
+    width: 280px;
+    height: 390px;
+    background: rgb(219, 207, 207);
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+footer{
+    width: 960px;
+    height: 100px;
+    background: red;
+    float: left;
+    align-items: center;
+    line-height: 100px;
+}
+
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 2px 2px 5px white;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+
+article {
+    
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #713f12;
+    background: w;
+    color: #333;
+    text-shadow: -1px -1px rgba(255, 255,255,0.5) ;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0,0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(224, 157, 157);
+}
+
+button:active {
+    background: #7e2b1c;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+    <title>Contact me</title>
+  </head>
+  <body>
+    <main class="page">
+        <h2>Contact me</h2>
+        <form action="/server" method="get">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input id="name" name="name" type="text" placeholder="¿Cuál es tu nombre?" required> 
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="Ingresa tu correo electrónico" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Mensaje: &nbsp;</label>
+                <textarea id="message" name="message" required rows="5"></textarea>
+            </div>
+            <button class="btn btn-primary">Enviar</button>    
+        </form>
+</main>
+</body>
+</html>

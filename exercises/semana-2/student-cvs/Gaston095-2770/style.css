@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    line-height: 1.5;
+    padding: 0 1em;
+    color: #555;
+}
+
+header {
+    background-color: #263d36;
+    background-image: url(images/img-header.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 10vw 2em;
+    text-align: center;
+}
+
+main {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.name {
+    color: #53a8b6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+a {
+    color: #e81c4f;
+}
+
+span {
+    font-weight: bold;
+}
+
+header a {
+    border: 1px solid #5585b5;
+    border-radius: 290486px;
+    color: white;
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+  }
+  
+header a:hover {
+    background:  #5585b5;
+    color: white;
+  }
+
+.skills {
+    padding: 20px 0;
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+    .title {
+        color: #53a8b6;
+        font-size: 35px;
+    }
+
+
+
+    .contact__form {
+        background: rgb(85,133,181);
+        background: linear-gradient(137deg, rgba(85,133,181,1) 0%, rgba(83,168,182,1) 78%, rgba(121,194,208,1) 100%);
+        width: 400px;
+        text-align: center;
+        padding: 30px;
+    }
+
+.block {
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #f5f5f5;
+}
+
+.form__input {
+    border-radius: 4px;
+    border: 1px solid #bbe4e9;
+    color: #555;
+    font-size: 15px;
+    padding: 7px;
+    width: 280px;
+}
+
+    .button {
+        font-size: 15px;
+        height: 40px;
+        padding: 10px;
+        margin: 15px auto 0 auto;
+        letter-spacing: 1px;
+        border-radius: 8px;
+        color: #5585b5;
+        width: 135px;
+        background: #fff;
+        color: #5585b5;
+        border: 1px solid #53a8b6;
+        cursor: pointer;
+        box-shadow: -1.5px 1.5px 1.5px #333;
+    }
+
+    .button:hover {
+        font-size: 16px;
+    }
+
+    .button:active {
+        background-color: #eee;
+        box-shadow: none;
+    }
+
+footer {
+    height: 50px;
+    text-align: center;
+    background-color: #53a8b6;
+    color: #f3f3f3;
+}
+
+    .footer__p {
+        padding: 10px;
+        max-width: none;
+    }

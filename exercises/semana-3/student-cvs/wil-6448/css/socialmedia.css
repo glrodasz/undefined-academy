@@ -1,0 +1,130 @@
+.socialmedia__title {
+  text-align: center;
+}
+
+.socialmedia__button {
+  display: none;
+}
+
+.socialmedia__buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.socialmedia__icon{
+  font-size: 32px;
+  color: #5a5656;
+  padding: 0 1rem;
+}
+
+.socialmedia__icon:hover {
+  color: #fd5949;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+  .socialmedia__icon {
+    display: none;
+  }
+  .socialmedia__button {
+    border: 1px solid #d8dee9;
+    border-radius: 100px;
+    color: #b0bfc7;
+    padding: 1em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+    display: block;
+    margin-bottom: 1em;
+  }
+  
+  .socialmedia__button em {
+    display: block;
+    font-size: 0.6em;
+    font-style: normal;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  
+  .socialmedia__button em {
+    font-size: 0.6em;
+    font-style: normal;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  
+  .socialmedia__button:hover strong {
+    color: white !important;
+  }
+  
+  .socialmedia__button.linkedin strong {
+    color: #0e76a8;
+  }
+  
+  .socialmedia__button.linkedin:hover {
+    background: #0e76a8;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+  
+  }
+  
+  .socialmedia__button.instagram strong {
+    color: #d6249f;
+  }
+  
+  .socialmedia__button.instagram:hover {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+  }
+  
+  
+  .socialmedia__button.facebook strong {
+    color: #3b5998;
+  }
+  
+  .socialmedia__button.facebook:hover {
+    background: #3b5998;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+  }
+  
+  .socialmedia__button.twitter strong {
+    color: #55acee;
+  }
+  
+  .socialmedia__button.twitter:hover {
+    background: #55acee;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+  }
+
+
+  .socialmedia__buttons {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .socialmedia__buttons .socialmedia__button{
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    margin-right: 1em
+  }
+
+  .socialmedia__buttons .socialmedia__button:last-child {
+    margin-right: 0;
+  }
+  .socialmedia__title {
+    text-align: start;
+  }
+
+}

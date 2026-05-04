@@ -1,0 +1,18 @@
+// CSS variables
+:root {
+    --color-shark: #232830;
+    --color-cerulean-blue: #364fc7;
+    --color-gray: #909090;
+    --color-white: #FFFFFF;
+    --color-havelock-blue: #4699E0;
+    --color-bunker: #0F1217;
+    --color-scooter: #3bc9db;
+    --color-tundora: #4D4D4D;
+
+    --container-max-width: 1180px;
+    --container-padding: 0 24px;
+}
+
+// SASS variables
+
+$breakpoint-large: 992px;

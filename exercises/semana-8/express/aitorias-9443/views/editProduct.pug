@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1 #{title}
+  
+  form(action=`/products/${product._id}/edit` method="POST")
+    div.form-group
+      label(for="name") Nombre:
+      input#name(type="text" name="name" value=product.name)
+
+    div.form-group
+      label(for="description") Descripción:
+      textarea#description(name="description" rows='4' cols='50' value=product.description) #{product.description}
+
+    div.form-group
+      label(for="price") Precio:
+      input#price(type="number" name="price" value=product.price)
+    
+    div.flex.flex-wrap.gap-20
+      button(type="submit") Guardar cambios
+      a.button(href="/products") Cancelar

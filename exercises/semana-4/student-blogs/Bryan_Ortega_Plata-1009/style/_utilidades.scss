@@ -1,0 +1,11 @@
+$gamboge: #f28c0f;
+$chablis: #ffffff;
+$black: black;
+$font-family-p: "Inter", sans-serif;
+$font-family-s: "Roboto Slab", serif;
+
+$Shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+@mixin section-padding($arriba, $costados) {
+  padding: $arriba $costados;
+}

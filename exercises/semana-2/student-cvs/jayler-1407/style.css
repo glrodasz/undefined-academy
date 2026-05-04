@@ -1,0 +1,136 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+*{
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: inherit;
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 1em 1em;
+    background-color: rgb(203 213 225);
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+nav {
+
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2.5rem;
+    background-color: rgb(203 213 225);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+h1{
+    text-align: center;
+}
+
+h2,
+h3 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+h1,
+h2,
+h3,
+strong {
+    color: #333;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+th {
+    text-align: left;
+}
+
+td,
+th {
+    border: 2px solid #3a588f;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    
+}
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.socialMedia a {
+    margin-right: 30px;
+    color: #3168af;
+}
+
+.socialMedia i {
+    font-size: 34px;
+}
+
+
+/* css formulario */
+
+#contact{
+    padding: 24px;
+    border-radius: 24px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+    background-color: #D7DBDD;
+}
+label{
+    width: 100%;
+    display: block;
+    font-weight: bold;
+}
+input, select, textarea, fieldset{
+    background-color: #D7DBDD;
+    width: 99%;
+    padding: 10px 0px;
+    border-radius: 8px;
+    border:1px solid #333
+}
+input:focus{
+    outline: none;
+}
+fieldset{
+    padding: 2px;
+}
+textarea{
+    resize: none;
+}
+legend{
+    font-weight: bold;
+}
+datalist {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.send{
+    display: block;
+    width: 10rem;
+    padding:1rem;
+    margin: auto;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;
+    background-color:#005cc8;
+    cursor: pointer;
+}

@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap");
+:root {
+  font-family: "Outfit", Georgia;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --color-background: #e4e4e7;
+  --color-primary: #18181b;
+  --color-secondary: #facc15;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", Georgia;
+  font-size: 18px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: var(--color-background);
+  margin: 0;
+  padding: 0;
+  min-width: 300px;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (min-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

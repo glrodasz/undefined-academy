@@ -1,0 +1,93 @@
+
+/* Navegador con Buscador */
+.navegador nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    /* border: 1px solid Gainsboro; */
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+.navegador ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+}
+
+input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid Gainsboro;
+    width: 400px;
+    background: WhiteSmoke;
+  }
+/* Sección para flexbox y grid */
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* crea 3 columnas del mismo ancho */
+  grid-gap: 40px; /* espacio entre las cajas */
+  margin: 20px auto;
+}
+
+.container-grid img {
+  width: 200px;
+  height: 200px;
+  border-radius: 4px;
+}
+
+.container-grid > div { /* selecciona todas las cajas dentro de la clase container-grid */
+  background-color: #fff; /* color de fondo de las cajas */
+  padding: 20px; /* espacio interno de las cajas */
+  border-radius: 8px; /* borde redondeado de las cajas */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* sombra de las cajas */
+}
+
+.container-img1,
+.container-img2,
+.container-img3,
+.container-img4 {
+  width: 100%; /* Establece el ancho de las cajas al 100% del contenedor */
+  height: auto; /* Establece la altura de las cajas de manera proporcional al ancho */
+  max-width: 400px; /* Establece un ancho máximo de 400px para las cajas */
+  margin: 0 auto; /* Centra las cajas horizontalmente */
+  text-align: center;
+}
+
+.container-img4 {
+  grid-column: 1 / span 3;
+}
+
+@media screen and (max-width: 800px) {
+    html {
+      text-align: center;
+      justify-content: space-between;
+    }
+
+    .navegador {
+      display: none;
+    }
+    .title {
+      justify-content: space-between;
+    }
+    .container-grid {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 10px;
+      
+    }
+   
+  }

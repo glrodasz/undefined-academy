@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=League+Spartan:wght@100;200;300;400&family=Montserrat:wght@300;400;700&display=swap");
+
+body {
+  font-family: "League Spartan";
+  margin: 0;
+  padding: 0;
+  background: #edf2f4;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0 auto;
+  background: #2b2d42;
+  height: 10px;
+  color: #edf2f4;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column-reverse;
+  background: #2b2d42;
+  color: #edf2f4;
+  font-weight: 600;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #edf2f4;
+}
+
+.menu {
+  display: flex;
+  align-items: end;
+}
+
+.menu ul {
+  margin-right: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.posts {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.post {
+  flex: 1;
+  padding: 10px;
+  background-color: #8d99ae;
+  border-radius: 10px;
+}
+
+.post img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.continue-reading {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #2b2d42;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  background-color: #2b2d42;
+  color: #edf2f4;
+  padding: 20px;
+  margin-top: auto;
+}
+
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    margin-bottom: 10px;
+  }
+  .menu ul {
+    margin: 0;
+  }
+
+  .menu {
+    margin-top: 10px;
+  }
+
+  .posts {
+    grid-template-columns: 1fr;
+  }
+
+  .post {
+    margin-bottom: 20px;
+  }
+
+  .continue-reading {
+    display: block;
+    margin: 10px auto;
+  }
+}

@@ -1,0 +1,18 @@
+.container {
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+}
+
+@media screen and (width >= 500px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+}
+
+@media screen and (width >= 900px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

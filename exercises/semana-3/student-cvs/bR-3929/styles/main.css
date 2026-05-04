@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+
+body,
+html {
+  box-sizing: border-box;
+  font-family: arial;
+ 
+}
+
+* {
+  box-sizing: inherit;
+
+}
+
+body {
+  max-width: 100%;
+  height: 100%;
+  background: #fef2f2;
+  margin: 0;
+}
+
+body a {
+  text-decoration: none;
+  color: red;
+  line-height: 1.3;
+}
+
+header {
+  font-family: "Rubik Iso", cursive;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  margin: 5px 10px;
+  padding: 0 10px;
+  height: auto;
+}
+
+table {
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background: #fecaca;
+}
+
+th {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+td {
+  border: 2px solid rgb(0, 0, 0);
+  text-align: center;
+}
+
+main {
+  grid-row: 1/5;
+  height: 100%;
+}
+
+footer {
+  bottom: 50px;
+  text-align: start;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+  }
+  header {
+    font-family: "Rubik Iso", cursive;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+  }
+  .container {
+    height: 100%;
+    padding: 5px 15px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    height: 100%;
+  }
+  .com {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .cmd {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 10px;
+  }
+  .cmd code {
+    font-size: 16px;
+  }
+  main {
+    height: 100%;
+    margin: 2px;
+    padding: 30px 5px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

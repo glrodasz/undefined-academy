@@ -1,0 +1,156 @@
+:root {
+  --primary-colo: #000B0D;
+  --letter-color: aliceblue;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto Slab", serif;
+}
+
+.cnt-principal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+/* ESTRUCTURA PRINCIPAL */
+/* MENU DE NAVEGACION */
+.cabecera {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 200px;
+}
+
+.menu-navegacion ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-colo);
+}
+
+a:hover {
+  color: #666868;
+}
+
+.cabecera input {
+  padding: 8px 8px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: rgba(131, 136, 230, 0.346);
+  outline: none;
+  color: var(--primary-colo);
+}
+
+
+/* ARTICULOS */
+
+main {
+  grid-column: 1/3;
+}
+
+.articulos {
+  padding: 60px 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 30px;
+
+}
+
+.articulo {
+  width: 300px;
+  background-color: rgba(131, 136, 230, 0.346);
+  border-radius: 8px;
+}
+
+.contenido {
+  padding: 20px 20px;
+}
+
+.contenido main {
+  margin: 17px 0;
+}
+
+.articulo main h2 {
+  font-size: 15px;
+}
+
+.articulo main p {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.tags div {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #404141d3;
+}
+
+.articulo footer div h3 {
+  font-size: 14px;
+}
+
+.articulo footer div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.articulo footer div h3 {
+  color: #404141d3;
+}
+
+
+.img-articulo {
+  width: 100%;
+  height: 140px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.img-articulo img {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.img-articulo img,
+.img-avatar img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.img-avatar img {
+  border-radius: 50px;
+}
+
+.img-avatar {
+  width: 35px;
+  height: 35px;
+}

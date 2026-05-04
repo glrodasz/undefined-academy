@@ -1,0 +1,70 @@
+html,
+body {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0%;
+   }
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    }
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+input {
+    border-radius: 0.5em ;
+    height:30px ;
+    
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+    border-radius: 0.5em;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+div :last-child {
+    grid-column: 1/4;
+    margin-bottom: auto;
+}
+
+button{
+    width: 200px;
+    border-radius: 0.5em;
+    font-style: oblique;
+    font-weight: bold;  
+}
+
+time{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    font-style: italic;
+  }
+
+

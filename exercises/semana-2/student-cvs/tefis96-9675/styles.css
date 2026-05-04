@@ -1,0 +1,367 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1500px;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+/*media sizing*/
+/* mobile*/
+@media screen and (max-width: 759px){
+
+  .navBar{
+    height: 80px;
+  }
+
+  .linksField, .logoTxt {
+    visibility: hidden;
+  }  
+  .logo {
+    visibility:  inherit;
+  }
+
+  .containerHome{
+    flex-direction: column;
+  }
+
+}
+
+/* Tablet */
+
+@media screen and (max-width: 960px){
+
+  .dropDown{
+    visibility: hidden;
+  }
+}
+
+
+/* Background mode*/
+
+.lightMode {
+  position: absolute;
+  border: none;
+  outline: none;
+  background: #e4e1e1;
+  color: #181818;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.darkMode {
+  position: absolute;
+  border: none;
+  outline: none;
+  background: #181818;
+  color: #faf4f4;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+/* Size img */
+
+.logoTxt {
+  position: absolute;
+  visibility: visible;
+  width: 20%;
+}
+
+.logo {
+  position: absolute;
+  visibility: hidden;
+  width: 5%;
+}
+
+.profileImg {
+  margin: 30px;
+  width: 30%;
+  height: 40%;
+}
+
+.menu{
+  width:30px;
+}
+
+/*tech img*/
+.iconTech {
+  width: 15%;
+}
+.iconContact {
+  width: 30px;
+}
+
+/*Porject img*/
+.imgProjec {
+  width: 50%;
+}
+
+.icon {
+  width: 50%;
+}
+
+.repo {
+  width: 100px;
+}
+.containerScrollBtn{
+  position: fixed;
+}
+
+/* DropBox Menu */
+
+.dropDown{
+  visibility: inherit;
+  display: inline-block;
+  justify-content: right;
+  position: relative;
+  align-content: center;
+}
+.dropOptions{
+  visibility: hidden;
+  position: absolute;
+  color: rgba(2, 232, 232, 0.802);
+}
+.dropDown:hover .dropOptions{
+  visibility: visible;
+}
+
+.dropBtn{
+  background-color: #ffffff00;
+  border: none;
+}
+/* section style*/
+section,
+nav {
+  border-color: #00000000 #00000000 rgba(2, 232, 232, 0.802) #00000000;
+  border-style: solid;
+}
+
+/* Scroll btn */
+#btnScroll {
+  width: 50px;
+  visibility: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
+  background-color: #ffffff00;
+}
+
+.scroll {
+  width: 60px;
+  visibility: visible;
+  padding: 0;
+  border: 0;
+}
+
+
+/* nav */
+.navBar {
+  background-color: #181818;
+  margin-right: 35px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+  height: 125px;
+}
+
+.logoField {
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.buttonMode {
+  background-color: #181818;
+  border-color: #181818;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 0;
+  margin-right: 10px;
+  align-items: center;
+}
+.containerMenu{
+  width: 50%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.linksField {
+  justify-content: right;
+  width: 33%;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 15px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 100%;
+}
+
+/* Home*/
+
+.containerHome {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.textHome {
+  font-size: 150%;
+}
+.textHome > h1 {
+  margin: 0;
+}
+
+#lastName {
+  color: rgba(2, 232, 232, 0.802);
+}
+
+/* About me*/
+
+.containerAboutMe {
+  display: block;
+  margin: 100px 10%;
+  justify-content: space-around;
+  align-content: center;
+}
+
+/* Tech Card */
+.textAboutMe {
+  font-size: 150%;
+}
+.textAboutMe>h3{
+  color: rgba(2, 232, 232, 0.802);
+}
+.tech {
+  width: 80%;
+  display: block;
+  margin: 10px auto 15px;
+  justify-content: space-around;
+}
+.containerTech {
+  display: block;
+  justify-content: center;
+}
+.textTech > h3 {
+  color: rgba(2, 232, 232, 0.802);
+}
+
+/* Projects*/
+
+.projCont{
+  color: rgba(2, 232, 232, 0.802);
+}
+.containerProjects {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 100px 10%;
+}
+
+.contProjects {
+  border-color: rgba(2, 232, 232, 0.802);
+  border-style: solid;
+  max-width: 33%;
+  padding: 15px 10px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.img {
+  align-items: center;
+}
+
+/* Contact */
+.containerContact{
+  display: block;
+  margin: 100px 10%;
+  justify-content: space-around;
+  align-content: center;
+}
+.containerContact>h2{
+  color:rgb(2, 232, 232);
+}
+.contactInfo {
+  display: flex;
+  justify-content: center;
+}
+
+.contactForm {
+  border-color: rgb(2, 232, 232);
+  border-style: solid;
+  border-radius: 25px;
+  margin: auto;
+  margin-bottom: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+input {
+  margin: 20px;
+  color: darkcyan;
+  width: 90%;
+}
+
+input:focus {
+  border: rgba(2, 232, 232, 0.189);
+}
+.describe {
+  display: block;
+  margin-bottom: 10px;
+  padding: 2px;
+}
+textarea {
+  width: 100%;
+}
+
+.btnSend{
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgb(2, 232, 232);
+  color: #333;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-weight: bolder;
+}
+
+.btnSend:hover{
+  background-color: darkcyan;
+  color: #faf4f4;
+}
+
+/* Footer */
+.footerBanner{
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1 #{title}
+  
+  form(action="/products", method="POST")
+    div.form-group
+      label(for="name") Nombre:
+      input(type="text" id="name" name="name")
+
+    div.form-group
+      label(for="description") Descripción:
+      textarea(id="description" name="description" rows='4' cols='50')
+
+    div.form-group
+      label(for="price") Precio (en euros sin símbolo):
+      input(type="number" id="price" name="price")
+
+    
+    div.flex.flex-wrap.gap-20
+      button(type="submit") Crear
+      a.button(href="/products") Cancelar

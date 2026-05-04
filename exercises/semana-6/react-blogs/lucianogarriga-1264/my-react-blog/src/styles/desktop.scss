@@ -1,0 +1,45 @@
+@use "variables";
+
+@media screen and (min-width: variables.$breakpoint-large){
+    .flex-container{
+        display: flex;
+    }
+    nav ul li a{
+        font-size: 1rem;
+    } 
+    .sidebar{
+        flex: 0 1 320px;
+    }
+    .content{
+        flex: 1;
+        display: flex;
+        min-height: 100%;
+        flex-direction: row; 
+        top: 0;
+        transition: all .1s ease-in;
+    }
+    .card{
+        margin: 0px 8px;
+        max-width: 300px; /* establece el ancho máximo */
+        max-height: 650px; /* establece la altura máxima */
+    } 
+    .paragraph-card{
+        flex: 1; 
+    }
+    .content-aside{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 100px auto auto;
+        gap: 15px;
+    }
+    /* To ensure that the website is readable even on ultrawide monitors */
+    /* Helper classes - To limit the width for the Content & Sidebar containers */
+    .wrapper{
+        margin: auto;
+        max-width: 85em;
+    }
+    .main-container{
+        max-width: 60em;
+        margin: 20px auto 50px auto;
+    }
+}

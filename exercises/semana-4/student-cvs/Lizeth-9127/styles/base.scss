@@ -1,0 +1,164 @@
+@use "variables.scss" as *;
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+     $vivid-sky-blue 0%,
+     $congress-blue 53%,
+     $venice-blue 100%
+  );
+}
+
+a {
+  text-decoration: none;
+  color:  $vivid-sky-blue;
+}
+
+a:hover {
+  color:  $venice-blue;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+p {
+  color:  $bluewood;
+}
+
+.heading {
+  font-size: 26px;
+  margin: 1rem auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.subheading {
+  font-size: 24px;
+  margin: 1rem auto;
+  font-weight: normal;
+}
+
+.container {
+  background:  $white;
+  width: 77%;
+  display: flex;
+  margin: 2rem auto 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 7px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  padding: 20px 30px;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  margin-top: -1rem;
+  margin-bottom: 5px;
+  color:  $alpha-white;
+}
+
+input,
+textarea {
+  border: 1px solid  $geyser;
+}
+
+input:focus,
+textarea:focus {
+  border-color:  $slate;
+  outline: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.caption {
+  margin: 26px 0;
+}
+
+button {
+  margin-top: 20px;
+  background:  $vivid-sky-blue;
+  text-transform: uppercase;
+  border-radius: 3px;
+  color:  $ebony;
+  border: none;
+  font-size: 1rem;
+  text-shadow: 1px 1px 3px  $geyser;
+  box-shadow: 1px 1px 3px  $ebony;
+  padding: 10px 7px 10px 7px;
+}
+button:hover {
+  background-color:  $blue-chill;
+}
+
+button:active {
+  background:  $blue-chill;
+  box-shadow: -1px -1px 0  $alpha-black;
+}
+
+.input-style {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 3px;
+  margin: 10px 0;
+}
+
+.form-container {
+  background-color:  $white;
+  width: 77%;
+  display: flex;
+  margin: 4rem auto 1.5rem auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 30px;
+  height: 100%;
+  border-radius: 7px;
+  padding: 7rem 3rem 3rem 3rem;
+  box-shadow: 1px 1px 3px  $alpha-black;
+}
+.form-heading {
+  font-size: 2rem;
+  margin: -5rem 0 0 0;
+}

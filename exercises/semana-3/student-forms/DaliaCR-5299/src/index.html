@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <script type="module" src="./js/main.js"></script>
+    </head>
+<body>
+    <main>
+        <nav class="navbar bg-primary">
+            <div class="container-fluid">
+                <a class="nav-link text-white active" href="index.html">Contacto</a>
+            </div>
+        </nav>
+    <section class="container">
+        <h3 class="m-3 text-center">Contacto</h3>
+        <form action="/server" method="get">
+            <div class="mb-3">
+                <label class="form-label" for="name">Nombre:</label>
+                <input class="form-control" id="name" name="name" type="text" placeholder="Nombre completo" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="email">Correo electronico:</label>
+                <input class="form-control" id="email" name="email" type="email" placeholder="email@example.com" required>
+            </div>
+            <div class="mb-3">
+                <fieldset>
+                    <legend class="col-form-label col-sm-2 pt-0">Razon de contacto:</legend>
+                    <div class="form-check">
+                    <label class="form-label">
+                        <input class="form-check-input" type="radio" name="reason" value="full" required>
+                        Empleo de tiempo completo
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-label">
+                        <input class="form-check-input" type="radio" name="reason" value="part">
+                        Empleo de tiempo parcial
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-label">
+                        <input class="form-check-input" type="radio" name="reason" value="freelance">
+                        Empleo de forma independiente
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="subject">Mensaje:</label>
+                <textarea class="form-control" name="subject" id="subject" rows="3" placeholder="Escribe tu mensaje" required></textarea>
+                <div class="form-text">
+                    Su propuesta en 500 palabras
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="terms">
+                    <input class="form-check-input" id="terms" type="checkbox" required>
+                    <span class="form-check-label">Acepto terminos y condiciones</span>
+                </label>
+            </div>
+            <button class="btn btn-primary">Enviar</button>
+        </form> 
+    </section>  
+    </main>
+</body>
+</html>

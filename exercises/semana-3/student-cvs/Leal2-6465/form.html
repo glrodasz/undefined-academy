@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylescontact.css">
+    <script type="module" src="main.mjs"></script>
+    <title>Contact Me</title>
+</head>
+<body>
+    <main class="formbox">
+
+        <h1>Contact me</h1>
+        <form action="/server" autocomplete="off" method="get">
+            <div class="form-group">
+                <label for="name">Full name</label>
+                <input id="name" type="text" name="name" placeholder="Full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your email</label>
+                <input id="email" type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <fieldset class="prince_range">
+                    <legend>Price range: </legend>
+                    <input id="1000" name="budget" type="radio" required><label for="1000" value="1000">$1000</label>
+                    <input id="2000" name="budget" type="radio" required><label for="2000" value="2000">$2000</label>
+                    <input id="3000" name="budget" type="radio" required><label for="3000" value="3000">$3000</label>
+                </fieldset>
+                <span class="help">This is not the final price is just a budget </span>
+            </div>
+            <div class="form-group">
+                <label for="type">Project type: </label>
+                <select name="Project" id="type" required>
+                    <option disabled selected>Select a option</option>
+                    <option value="Mobile">Mobile</option>
+                    <option value="Ecomerce">Ecomerce</option>
+                    <option value="WebApp">WebApp</option>
+                    <option value="App">App</option>
+                </select>
+            </div>
+            <div class="form-group">
+
+            </div>
+            <div class="form-group">
+                <label for="description" name="Description">Description
+                </label><br>
+                <textarea id="description" required rows="10" cols="60" placeholder="description of the project or tasks that you want to do in at least 500 words"></textarea>
+            </div>
+            <div class="form-group">
+                <label form="terms">
+                    <input id="terms" type="checkbox" name="terms" required>
+                    <span class="help">Accept terms and conditions</span>
+                </label>
+            </div>
+            <button>Send</button>
+        </form>
+    </main>
+    <nav>
+        <aside>
+            <a href="./index.html">Home</a>
+        </aside>
+
+    </nav>
+</body>
+
+</html>

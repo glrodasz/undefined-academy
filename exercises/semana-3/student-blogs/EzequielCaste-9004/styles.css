@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f1f6f9;
+  color: #212a3e;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 1em auto;
+  padding: 0 2.5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px auto auto;
+  gap: 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1 / 4;
+  height: auto;
+}
+
+.navitation-links {
+  list-style: none;
+  display: flex;
+  font-size: 0.75em;
+  align-items: center;
+}
+.navitation-links li {
+  margin-right: 1em;
+  font-weight: bold;
+}
+.search-container {
+  position: relative;
+}
+.search-container svg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  stroke: #1E3238;
+}
+.search {
+  outline: none;
+  border: 0;
+  background-color: #9BA4B5;
+  padding: 0.5em;
+  color: #1E3238;
+  border-radius: 3px;
+  padding-left: 30px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+}
+.card-title {
+  margin-bottom: 0.5em;
+}
+.card-body {
+  padding: 1em;
+}
+.card:last-of-type {
+  grid-column: 1 / 4;
+}

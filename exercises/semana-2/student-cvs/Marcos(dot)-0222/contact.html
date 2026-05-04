@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/contactstyle.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <main class="page">
+        <h1 class="title">YOUR CONTACT INFORMATION 👇🏻</h1>
+        <form action="/server" method="get">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Your full name here" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Your email" required>
+            </div>
+            <div class="form-group">
+                <label for="your-question">Your Question</label>
+                <textarea id="your-question" required rows="10"></textarea>
+            </div>
+            <button>Submit</button>
+        </form>
+        <div class="return">
+            <a href="index.html">return to main page ↩️</a>
+        </div>
+    </main>
+</body>
+
+</html>

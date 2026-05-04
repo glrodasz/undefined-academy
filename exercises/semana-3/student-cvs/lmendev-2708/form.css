@@ -1,0 +1,60 @@
+section article {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: bold;
+  color: #444;
+}
+
+input[type="text"], input[type="email"], textarea {
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: .8rem 1rem;
+  font-size: .8rem;
+  color: #333; 
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #69c;
+  border-radius: 8px;
+  background-color: #69c;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+  color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #0284c7;
+}
+
+button:active{
+  box-shadow: none;
+  background-color: #075985;
+}
+
+@media (min-width: 1024px) {
+  form {
+    max-width: 28rem;
+    margin: 0;
+  }
+}

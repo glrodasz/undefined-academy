@@ -1,0 +1,20 @@
+{
+  "name": "cvs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bgButton.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "sass": "sass styles/main.scss styles/styles.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.62.1",
+    "vite": "^4.3.2"
+  }
+}

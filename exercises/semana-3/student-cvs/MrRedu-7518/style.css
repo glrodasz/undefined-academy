@@ -1,0 +1,213 @@
+body {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 50em;
+    background-color: #282828;
+    font-family: sans-serif;
+    color: #d1d1d1;
+}
+
+h2, h3, h4 {
+    font-size: 16px;
+}
+
+.header h1 {
+    text-align: center;
+    margin-top: 42px;
+}
+
+.header h1 strong {
+    color: rgb(136,108,228);
+    text-shadow: 2px 2px 10px black;
+}
+.header h1:hover em {
+    color: #282828;
+}
+
+.slogan {
+    margin: 42px 10%;
+}
+.slogan h2 a {
+    text-decoration: none;
+    color: rgb(49,210,247);
+    text-shadow: 2px 2px 10px black;
+    font-size: 22px;
+}
+.slogan .parrafos {
+    background-color: #313131;
+    padding: 2px;
+    padding-left: 15px;
+    border-left: 2px solid rgb(49,210,247);
+    margin-top: -10px;
+}
+.slogan p{
+    line-height: 0.3;
+    font-weight: bold;
+}
+.slogan p:hover{
+    color: rgb(49,210,247);
+}
+.data {
+    margin: 0px 10%;
+}
+.data h3{
+    margin-top: 32px;
+}
+.data h3 em::after {
+    content: "*";
+    color: rgb(184, 24, 24);
+}
+
+.data .code{
+    background-color: #202020;
+    border-left: 2px solid rgb(136,108,228);
+    border-radius: 10px;
+    padding: 2px 0 2px 15px;
+    margin-top: -15px;
+}
+.data .code p {
+    line-height: 0.3;
+}
+.data .code .espacio {
+    padding-left: 25px;
+}
+
+.data h3 em {
+    color: #979797;
+}
+.data:hover h3 em {
+    color: rgb(136,108,228);
+}
+
+
+.skills {
+    margin: 30px 10%;
+    display: flex;
+    flex-direction: column;
+}
+.skills h3 {
+    margin: 0;
+}
+.skills ul {
+    list-style: none;
+}
+.skills ul li {
+    line-height: 1.2;
+}
+
+
+.contact {
+    display: flex;
+    justify-content: end;
+    margin: 0 10%;
+}
+
+.contact h4 a {
+    text-decoration: none;
+    padding: 20px;
+    background-color: rgb(49,49,49);
+    border-radius: 10px;
+    color: rgb(151, 151, 151);
+    box-shadow: 0 0 5px rgba(136,108,228, 0.3);
+
+}
+.contact h4:hover a {
+    color: #d1d1d1;
+    box-shadow: 0 0 5px rgba(136,108,228, 0.6);
+}
+
+
+.footer-container .banner-footer {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-container .banner-footer a img{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 200px;
+}
+
+
+/* Phone */
+/* @media screen and (min-width: 600px) {
+
+} */
+/* Tablet */
+/* @media screen and (min-width: 768px) {
+    
+}  */
+
+/* Notebook */
+@media screen and (min-width: 992px) {
+    body {
+        background-color: rgb(49, 40, 56);
+    }
+    .slogan, .data, .contact{
+        margin: 0;
+    }
+    .slogan .parrafos {
+        background-color: #2c2c2c;
+        color: #d1d1d1;
+        box-shadow: 0 0 5px black;
+    }
+    .skills {
+        margin: 32px 0;
+    }
+
+
+    .footer-container .banner-footer a img{
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 200px;
+    }
+}
+/* Desktop */
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: #282828;
+        max-width: 70vw;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+    .data {
+        order: 2;
+    }
+    .skills {
+        order: 1;
+        border: 2px dashed rgb(49,210,247);
+        box-shadow: 0 0 5px black;
+        border-radius: 8px;
+        padding: 10px;
+
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+
+        justify-content: center;
+    }
+    .skills div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .skills .skill-interes {
+        order: -1;
+    }
+    .contact {
+        margin: 30px 0 0;
+    }
+
+    .footer-container .banner-footer a img{
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 200px;
+    }
+
+}

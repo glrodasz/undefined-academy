@@ -1,0 +1,27 @@
+@use "/styles/variables.scss" as *;
+@media (min-width: 700px) {
+  body {
+    background-color: $MediumPurple;
+  }
+  .table1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .t1 {
+    justify-self: center;
+  }
+  .t2 {
+    justify-self: center;
+  }
+
+  .table2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .p1 {
+    justify-self: center;
+  }
+  .p2 {
+    justify-self: center;
+  }
+}

@@ -1,0 +1,86 @@
+//Colores
+
+$limedspruce: #37474f;
+$ebonyclay: #242933;
+$lynch: #727ea3;
+$logan: #9ba4c4;
+$white: white;
+$jordyblue: #9db2f7;
+$gunpowder: #40465d;
+
+//Mixins
+
+@mixin style-general {
+    box-sizing: inherit;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin style-body {
+    color: $limedspruce;
+    margin: 32px;
+    background:$ebonyclay;
+}
+
+@mixin style-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 /4;
+    grid-row: 1 / 2;
+    color: $lynch;
+}
+
+@mixin style-ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+@mixin style-wrappergrid {
+    display: grid;
+    justify-content: center;
+}
+
+@mixin style-container {
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px $logan;
+    background-color: $white;
+    text-align: center;
+    border-radius: 16px;
+    position: relative;
+    margin: 8px;
+}
+
+@mixin style-bannerimg {
+    position: absolute;
+    background-image: url(img/background.png);
+    height: 160px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin style-exampleimg {
+    width: 270px;
+    clip-path: circle(60px at center);
+    margin-top: 72px;  
+}
+
+@mixin style-button{
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    color: $jordyblue;
+    padding: 16px;
+    background-color: $gunpowder;
+}
+
+@mixin style-date {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 12px;
+    color: $logan;
+}

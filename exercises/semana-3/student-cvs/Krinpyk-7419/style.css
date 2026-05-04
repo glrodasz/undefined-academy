@@ -1,0 +1,249 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+* {
+    box-sizing: inherit
+}
+
+.header{
+    background-color: rgba(189, 229, 166, 0.627);
+    text-align: center;
+    border-radius: 25px;
+    padding: 1%;
+}
+
+.header_mod{
+  border-bottom: 10px solid  #38817a;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+body {
+    margin: 5% auto;
+    padding: 0px 8%;
+    font-family: "Libre Franklin", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    color: #555;
+    background-color: #f5f9ee;
+}
+
+h1 :not(header_mod){
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: #333
+}
+.h1_mod{
+  text-align: center;
+  font-size: 40px;
+}
+
+
+h2{
+    border-bottom: 1px solid rgb(22, 78, 22);
+    color: #333
+}
+
+a {
+    color: #005792;
+  }
+  a:hover{
+    border-bottom: 1px solid;
+    background: #CDFEAA;
+  }
+  a:visited {
+    color: #437A16;
+  }
+
+footer{
+    font-size: 15px;
+    color:  #333;
+}
+
+.bloque-main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:auto;
+    justify-items: start;
+    width: 100%;
+    border: 2px solid #38817a;
+}
+
+.group-form{
+    grid-row-start:1;
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.elementos_form{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bloque-drch{
+    width: 100%;
+    grid-row-start:2;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #38817a;
+    color: white;
+}
+
+.button{
+    font-size: 20px;
+    color: #333;
+    background-color: #D7E5E4;
+    border-radius: 15px;
+    border-color: #2C6761;
+    cursor: pointer;
+    padding: 15px 25px;
+}
+
+
+.button:hover{
+    background-color: #2C6761;
+    color: white;
+}
+
+.label_name, legend{
+    font-weight: bold;
+  }
+
+.input_text{
+    display: block;
+    width: 90%;
+    border-bottom: 3px solid #38817a;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #EBF2F1;
+    color: #32746D;
+    height: 35px;
+    text-align: center;
+}
+
+.bloque_element{
+    padding: 7px;
+}
+
+.label_checkbox{
+    font-size: 14px;
+}
+
+fieldset{
+    background-color: #F3F7F6;
+    border: 1px dotted #4B8D87;
+    border-radius: 10px;
+}
+textarea{
+    display: block;
+    min-width: 90%;
+    max-width: 480px;
+    min-height: 80px;
+    max-height: 80px;
+    background-color: #EBF2F1;
+    color: #32746D;
+    text-align: center;
+}
+
+.comentario{
+    font-size: 12px;
+    font-style: italic;
+    color: #2C6761;
+}
+
+.form-group{
+    accent-color: #38817a;
+}
+
+input:focus-visible, textarea:focus-visible{
+    outline: 2px solid #2C6761;
+    background-color: #d9f99d;
+}
+
+section,footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.group-hobbies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.hobbies{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 10px;
+    border: 1px solid #38817a;
+}
+span,h3{
+    padding: 0px;
+}
+p{
+    text-align: center;
+    padding: 0%;
+    font-size: 16px;
+}
+.div-table{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    gap: 8px;
+
+}
+.row-table{
+    border: 1px solid #38817a;
+}
+.title-cards-table{
+    background-color: #15803d;
+    color: white;
+    padding: 1px;
+}
+
+@media screen and (min-width: 992px){
+    .div-table{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .group-hobbies{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .hobbies{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+    }
+    .bloque-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1;
+    }
+    .group-form{
+        grid-column-start: 1;
+    }
+    .bloque-drch{
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+}

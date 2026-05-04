@@ -1,0 +1,181 @@
+html{
+    box-sizing: border-box;
+  }
+  
+*{
+    box-sizing: inherit;
+  }
+
+body {
+    background: var(--color-concrete);
+    color: var(--color-mine-shaft);
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+  }
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    overflow: hidden;
+    background-color: var(--color-downrivera);
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: var(--color-concrete) ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--color-matise);
+    color: var(--color-concrete);
+}
+
+section, header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    padding: 14px 16px;
+}
+
+.date{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--color-mine-shaft);
+  }
+
+.content {
+    background: var(--color-porcelain);
+}
+
+h1, h2, h3 {
+    margin-top: 1em;
+    padding-top: 1em;
+    color: var(--color-mine-shaft);
+    margin-bottom: 0;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  pre {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-athens-gray);
+    border-bottom: 1px solid var(--color-mystic);
+    color: var(--color-mako);
+    padding: 1em;
+    border-left: 2px solid var(--color-danube);
+  }
+  
+  .btn {
+    background-color: var(--color-chathams-blue);
+    color: var(--color-white);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+    margin-top: 1em;
+  }
+  
+  .btn:hover {
+    background-color: var(--color-jelly-bean);
+  }
+  
+  .shell-commands {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .shell-commands td, .shell-commands th {
+    border: 1px solid var(--color-alto);
+    padding: 8px;
+  }
+  
+  .shell-commands tr:nth-child(even) {
+    background-color: var(--color-concrete);
+  }
+  
+  .shell-commands tr:hover {
+    background-color: var(--color-alto);
+  }
+  
+  .shell-commands th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--color-matise);
+    color: var(--color-white);
+  }
+  /*estilos para el formulario*/
+  
+  .form-group {
+    margin: 20px 0;
+  }
+  .rdb{
+    display: flex;
+    flex-direction: column;
+  }
+  .form-group label, input:not([type="radio"],[type="checkbox"]){
+    width: 100%;
+  }
+  .form-group input, .form-group label {
+    vertical-align: middle;
+  }
+  .form-group textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+  }
+  .form-group input[type="text"],.form-group input[type="email"], .form-group textarea {
+    background: var(--color-white);
+    border: 1px solid var(--color-lightgray);
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: var(--color-mine-shaft);
+  }
+  
+  .help{
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  /*estilos para el pie de pagina*/
+  .copy {
+    bottom: 0;
+    background-color: var(--color-downrivera);
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /*estilo para el texto que contiene el pie de pagina*/
+  .copy p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    font-weight: 10px;
+    margin: 0;
+    color: var(--color-white);
+  }
+  
+  .copy a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0;
+  }

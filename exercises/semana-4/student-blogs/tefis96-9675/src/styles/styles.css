@@ -1,0 +1,263 @@
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .containerPost {
+    display: flex;
+    width: 100%;
+  }
+  .containerPost .cardPost:nth-child(4n) {
+    display: grid;
+    width: 100%;
+    height: 300px;
+    grid-column: 1/span 4;
+    background-color: #15659a !important;
+  }
+  .containerPost .cardPost:nth-child(4n) > .infoCard {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 430px;
+  }
+  .containerPost .cardPost:nth-child(4n) > .infoCard > .first {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+  }
+  .containerPost .cardPost:nth-child(4n) > .infoCard > .first > .tittlePost {
+    display: flex;
+    color: black;
+    font-size: xx-large;
+    justify-content: center;
+  }
+  .containerPost .cardPost:nth-child(4n) > .infoCard > .first > .imgPostCont {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    justify-content: center;
+  }
+  .containerPost .cardPost:nth-child(4n) > .infoCard > .first > .imgPostCont > .imgPost {
+    width: 60%;
+    object-fit: fill;
+  }
+  .containerPost .cardPost:nth-child(4n) > .infoCard > .secondInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .containerPost .cardPost:nth-child(4n) > .infoCard > .secondInfo .descPost {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .containerPost .cardPost:nth-child(4n) > .infoCard > .secondInfo .descPost .description {
+    color: white;
+  }
+  .containerPost .cardPost:nth-child(4n) > .infoCard > .secondInfo .datePostContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-style: italic;
+    margin: 2rem;
+    color: white;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .containerPost {
+    display: flex;
+    width: 100%;
+  }
+  .containerPost .cardPost:nth-child(3n) {
+    display: grid;
+    width: 100%;
+    height: 300px;
+    grid-column: 1/span 3;
+    background-color: #fff;
+  }
+  .containerPost .cardPost:nth-child(3n) > .infoCard {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 290px;
+  }
+  .containerPost .cardPost:nth-child(3n) > .infoCard > .first {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+  }
+  .containerPost .cardPost:nth-child(3n) > .infoCard > .first > .tittlePost {
+    display: flex;
+    color: white;
+    font-size: xx-large;
+    justify-content: center;
+  }
+  .containerPost .cardPost:nth-child(3n) > .infoCard > .first > .imgPostCont {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    align-content: center;
+    justify-content: center;
+  }
+  .containerPost .cardPost:nth-child(3n) > .infoCard > .first > .imgPost {
+    width: 100%;
+    object-fit: contain;
+  }
+  .containerPost .cardPost:nth-child(3n) > .infoCard > .secondInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .containerPost .cardPost:nth-child(3n) > .infoCard > .secondInfo .description {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .containerPost .cardPost:nth-child(3n) > .infoCard > .secondInfo .descPost {
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  .containerPost .cardPost:nth-child(3n) > .infoCard > .secondInfo > .datePostContent {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-style: italic;
+    padding: 0;
+  }
+}
+html {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #a6d6f8;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.containerHeader {
+  width: 100%;
+  height: 200px;
+}
+
+.headerImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  background-color: #167fb4;
+  height: 3rem;
+}
+.links > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.links > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  font-weight: bolder;
+  padding: 1rem 1rem;
+}
+
+.containerPost {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 100%;
+  height: 100%;
+  padding: 2rem 10px;
+  gap: 10px;
+}
+.containerPost .cardPost {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #75a6c6;
+  border: 4px solid #2f2f2f;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.containerPost .cardPost .infoCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+.containerPost .cardPost .infoCard > .first {
+  width: 100%;
+  height: 50%;
+}
+.containerPost .cardPost .infoCard > .first > .tittlePost {
+  height: 10%;
+  color: white;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+}
+.containerPost .cardPost .infoCard > .first > .imgPostCont {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  padding: 0 0.5rem;
+}
+.containerPost .cardPost .infoCard > .first > .imgPostCont > .imgPost {
+  width: 100%;
+  object-fit: contain;
+}
+.containerPost .cardPost .infoCard > .secondInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px;
+}
+.containerPost .cardPost .infoCard > .descPost {
+  padding: 1rem;
+  font-size: 1rem;
+}
+.containerPost .cardPost .infoCard > .descPost > .description {
+  display: flex;
+  height: 50%;
+}
+.containerPost .cardPost .infoCard .datePostCont {
+  display: flex;
+  justify-content: end;
+  font-style: oblique;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+.containerFooter {
+  display: flex;
+  width: 100%;
+  background-color: #167fb4;
+  justify-content: center;
+}
+.containerFooter > h3 {
+  font-size: xx-large;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */

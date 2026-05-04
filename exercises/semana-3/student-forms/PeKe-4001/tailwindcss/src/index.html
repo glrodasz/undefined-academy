@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="flex justify-center">
+
+    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <h1 class="text-3xl my-8 mx-4 text-blue-400 font-bold">
+        Contacto
+      </h1>
+      <div class="flex flex-wrap -mx-3 mb-6">
+        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+            Nombre
+          </label>
+          <input
+            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            id="grid-first-name" type="text" placeholder="Nombre" required>
+        </div>
+        <div class="w-full md:w-1/2 px-3">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+            Email
+          </label>
+          <input
+            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            id="grid-last-name" type="email" placeholder="Email" required>
+        </div>
+      </div>
+      <fieldset class="border border-solid border-gray-300 p-3">
+        <legend class="text-sm">Presupuesto</legend>
+        <input id="1000" name="budget" type="radio" value="1000" required><label for="1000">$1000</label>
+
+        <input id="500" name="budget" type="radio" value="500" required><label for="500">$500</label>
+
+        <input id="100" name="budget" type="radio" value="100" required><label for="100">$100</label>
+
+      </fieldset>
+
+      <div>
+        <label for="countries" class="mt-4 block mb-2 text-sm font-medium text-gray-900">Selecciona un
+          tipo de proyecto</label>
+        <select id="countries"
+          class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+          required>
+          <option selected disabled value="">Seleccione uno</option>
+          <option value="website">Website</option>
+          <option value="webapp">Aplicación Web</option>
+          <option value="mobile">Aplicacion mobile</option>
+          <option value="design">Diseño Web</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Envie un mensaje</label>
+        <textarea required id="message" rows="4"
+          class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 "
+          placeholder="Escribe una descripcion del proyecto"></textarea>
+
+      </div>
+
+      <div>
+        <label for="terms">
+          <input id="terms" name="terms" type="checkbox" required class="rounded">
+          <span>Acepto los terminos y condiciones</span>
+        </label>
+      </div>
+
+      <div class="my-3 flex justify-center">
+        <button
+          class="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-full px-8 py-3 text-white">
+          Enviar
+        </button>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>

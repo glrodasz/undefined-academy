@@ -1,0 +1,26 @@
+@import "variables.scss";
+
+@media screen and (min-width:700px) {
+    .information {
+      display: flex;
+      flex-direction: row;
+    }
+  
+  
+    .contact {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  
+    .footer {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .form {
+      width: 100%;
+      background: $tundora;
+    }
+  }

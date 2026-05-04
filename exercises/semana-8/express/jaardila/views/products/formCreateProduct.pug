@@ -1,0 +1,32 @@
+extends ../layout
+
+block content
+  .container
+    h1(class='text-center') Formulario para crear un nuevo producto
+
+    form(action='/products', method='post')
+      .form-group
+        label(for='nombre') Nombre:
+        input(type='text', name='nombre', class='form-control mb-2')
+      .form-group
+        label(for='descripcion') Descripción:
+        input(type='text', name='descripcion', class='form-control mb-2')
+      .form-group
+        label(for='categoria') Categoria:
+        input(type='text', name='categoria', class='form-control mb-2')
+      .form-group
+        label(for='marca') Marca:
+        input(type='text', name='marca', class='form-control mb-2')
+      .form-group
+        label(for='modelo') Modelo:
+        input(type='text', name='modelo', class='form-control mb-2')
+      .form-group
+        label(for='precio_compra') Precio compra:
+        input(type='number', name='precio_compra', class='form-control mb-2')
+      .form-group
+        label(for='precio_venta') Precio venta:
+        input(type='number', name='precio_venta', class='form-control mb-2')      
+
+      input(type='submit', value='Guardar', class='btn btn-primary')
+
+    a.btn.btn-info.my-5(href="/products") Volver al listado

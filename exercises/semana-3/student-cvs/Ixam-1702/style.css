@@ -1,0 +1,135 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+header {
+    background-color: #263d36;
+	background-image: url("header.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:soft-light;
+    padding: 10vw 2em;
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 50em;
+    padding: 4em 1em;
+    line-height: 1.5;
+    color: #555;
+}
+
+body {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    color: #566b78;
+    background: #dde4f5;
+}
+
+ul {
+    padding-left: 2em;
+}
+
+h1, h2, strong {
+    color: #333;
+}
+
+a {
+    color: indianred;
+}
+
+header img {
+    height: 120px;
+    width: 120px;
+    border-radius:30%;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+}
+
+header a {
+    border: 2px solid #3f3b6c;
+    border-radius: 290486px;
+    color: white;
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+}
+
+header a:hover {
+    background:  #3f3b6c;
+    color: white;
+}
+
+input, label {
+    width: 100%;
+}
+
+.form-group {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input[type="text"], input[type="email"], textarea {
+    border: 1px solid #c5cae9;
+    border-radius: 5px;
+    padding: 6px 8px;
+    color: #555;
+}
+
+button {
+    margin-top: 8px;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #e8eaf6;
+    background: #3f51b5;
+    border: 1px solid #303f9f;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: #7986cb;
+}
+
+button:active {
+    background: #283593;
+    box-shadow: none;
+}
+
+.footer {
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}

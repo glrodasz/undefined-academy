@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script async defer type="module" src="./main.mjs"></script>
+    <title>Julián Sucerquia</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <div class="logo">
+            <img src="assets/maracuya.webp" alt="logo" />
+          </div>
+          <aside class="tag-content">
+            <div class="tag">
+              <em>
+                ⚡ Fun fact: I love
+                <a
+                  href="https://en.wikipedia.org/wiki/Passiflora_edulis"
+                  target="_blank"
+                  >Maracuyá </a
+                >, also called passion fruit.
+              </em>
+            </div>
+          </aside>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="banner">
+        <div class="banner-content">
+          <div class="banner-title">
+            <h1 class="title-1">
+              Hi 👋,I'm<br />
+              Julián Sucerquia
+            </h1>
+            <span class="badge">Web Developer</span>
+          </div>
+        </div>
+      </div>
+      <article class="layout">
+        <section>
+          <h2 class="title-2">How I am?</h2>
+          <p>
+            I'm an UI/ UX enthusiast, Web animations lover and
+            <strong>Front-end Developer</strong> from Colombia ☕ with 3+ years
+            in the industry.
+          </p>
+        </section>
+        <section>
+          <h2 class="title-2">My tech stack</h2>
+          <p>
+            I 💖 Javascript and I’m currently learning
+            <strong>React</strong> advanced topics and Back-end stuff with
+            <strong>Node JS</strong> 🌱
+          </p>
+          <p>I have also worked with different tools and technologies:</p>
+          <ul class="technologies">
+            <li class="tech-item">
+              <img
+                class="tech-icon"
+                src="./assets/icons/scssIcon.png"
+                alt="SCSS icon"
+              />
+              <span class="tech-name">SCSS</span>
+            </li>
+            <li class="tech-item">
+              <img
+                class="tech-icon"
+                src="./assets/icons/bootstrapIcon.png"
+                alt="Bootstrap icon"
+              />
+              <span class="tech-name">Bootstrap</span>
+            </li>
+            <li class="tech-item">
+              <img
+                class="tech-icon"
+                src="./assets/icons/tailwindIcon.png"
+                alt="Tailwind icon"
+              />
+              <span class="tech-name">Tailwind</span>
+            </li>
+            <li class="tech-item">
+              <img
+                class="tech-icon"
+                src="./assets/icons/typescriptIcon.png"
+                alt="Typescript icon"
+              />
+              <span class="tech-name">Typescript</span>
+            </li>
+            <li class="tech-item">
+              <img
+                class="tech-icon"
+                src="./assets/icons/gatsbyIcon.webp"
+                alt="Gatsby icon"
+              />
+              <span class="tech-name">Gatsby</span>
+            </li>
+            <li class="tech-item">
+              <img
+                class="tech-icon"
+                src="./assets/icons/nextIcon.png"
+                alt="Next JS icon"
+              />
+              <span class="tech-name">Next JS</span>
+            </li>
+            <li class="tech-item">
+              <img
+                class="tech-icon"
+                src="./assets/icons/angularIcon.webp"
+                alt="Angular icon"
+              />
+              <span class="tech-name">Angular 6+</span>
+            </li>
+            <li class="tech-item">
+              <img
+                class="tech-icon"
+                src="./assets/icons/mysqlIcon.png"
+                alt="MySQL icon"
+              />
+              <span class="tech-name">MySQL</span>
+            </li>
+            <li class="tech-item">
+              <img
+                class="tech-icon"
+                src="./assets/icons/gitIcon.png"
+                alt="Git icon"
+              />
+              <span class="tech-name">Git</span>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="title-2">How to reach me?</h2>
+          <hr />
+          <div class="contact">
+            <div>
+              <p class="title-3">You can contact me by</p>
+              <form action="/contact" method="post">
+                <div class="form-group">
+                  <label for="contactName">Full Name</label>
+                  <input
+                    type="text"
+                    name="contactName"
+                    id="contactName"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Email</label>
+                  <input
+                    type="email"
+                    name="contactEmail"
+                    id="contactEmail"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contactPhone">Cellphone</label>
+                  <input
+                    type="tel"
+                    name="contactPhone"
+                    id="contactPhone"
+                    required
+                  />
+                </div>
+                <hr />
+                <div class="form-group">
+                  <label for="typeProyect">Project Type: </label>
+                  <select name="typeProject" id="typeProyect" required>
+                    <option disabled selected value="">Choose</option>
+                    <option value="Website">Website</option>
+                    <option value="webApplication">Web</option>
+                    <option value="mobileApPlication">
+                      Mobile Application
+                    </option>
+                    <option value="webDesign">Web Design</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="contactDesc">Description</label>
+                  <textarea
+                    name="contactDesc"
+                    id="contactDesc"
+                    rows="7"
+                    required
+                  ></textarea>
+                  <p class="helper">* Write a short project description</p>
+                </div>
+                <div class="form-group">
+                  <label for="termsConditions">
+                    <input
+                      type="checkbox"
+                      name="termsConditions"
+                      id="termsConditions"
+                      required
+                    />
+                    <span>Accept the terms and conditions</span>
+                  </label>
+                </div>
+                <button class="primary-btn">send</button>
+              </form>
+            </div>
+            <div class="text-center">
+              <p class="title-3 text-center">Or text me directly</p>
+              <ul>
+                <li>
+                  💌 Email:
+                  <a href="mailto:andresucerquia@gmail.com"
+                    >andresucerquia@gmail.com</a
+                  >
+                </li>
+                <li>
+                  💼 LinkedIn:
+                  <a
+                    href="https://www.linkedin.com/in/andresucerquia/"
+                    target="_blank"
+                    >andresucerquia</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <div class="copyright">
+        <p>
+          &copy; <time datetime="2023-04-12">2023</time> By Julián Andrés
+          Sucerquia.
+        </p>
+        <nav>
+          <a target="_blank" href="https://github.com/zucerkia">
+            <img
+              class="github"
+              src="./assets/icons/githubIcon.png"
+              alt="github icon"
+            />
+          </a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

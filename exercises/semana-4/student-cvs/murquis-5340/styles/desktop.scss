@@ -1,0 +1,32 @@
+@use "variables.scss";
+
+/* ------- DESKTOP VIEW ------- */
+@media only screen and (min-width: 640px) {
+    body {
+      max-width: variables.$container-max-width;
+    }
+    .main-info{
+      display: grid;
+      grid-template-areas: 
+      "contact contact work work work"
+      "languages languages education education education"
+      "tools tools . . .";
+      grid-column-gap: 8px
+    }
+    .contact{
+      grid-area: contact;
+    }
+    .work{
+      grid-area: work;
+    }
+    .education{
+      grid-area: education;
+    }
+    .languages{
+      grid-area: languages;
+    }
+    .tools{
+      grid-area: tools;
+    }
+  }
+  

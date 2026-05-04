@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="styles-form.css">
+    <script async defer type="module" src="main.mjs"></script>
+</head>
+<body>
+    <main class="page">
+        <h2>Contact me</h2>
+        <form action="/server" method="get">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input id="name" name="name" type="text" placeholder="¿Cuál es tu nombre?" required> 
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="Ingresa tu correo electrónico" required>
+            </div>
+
+            <fieldset>
+                <legend>Razón</legend>
+                    <input id="work" name="razon" type="radio" value="" required>
+                    <label for="work">Trabajo&emsp;</label>
+
+                    <input id="colab" name="razon" type="radio" value="">
+                    <label for="colab">Colaboración</label>
+            </fieldset>
+            <div class="form-group">
+                <label for="type">Tipo de proyecto:&emsp;</label>
+                <select id="type" required>
+                    <option disabled selected value="">Selecciona uno</option>
+                    <option value="website">Website</option>
+                    <option value="webapp">Webapp</option>
+                    <option value="mobile">Mobile app</option>
+                    <option value="design">Diseño</option>
+                </select>  
+            </div>
+            <div class="form-group">
+                <label for="description">¿Qué idea tienes?: &nbsp;</label>
+                <textarea id="description" name="description" required rows="8"></textarea>
+            </div>
+            <button>Enviar</button>
+        </form>
+    </main>
+    <a class="back" href="index.html">Back</a>
+</body>
+</html>

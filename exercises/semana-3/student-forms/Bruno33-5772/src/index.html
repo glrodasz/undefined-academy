@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
+    <title>Contacto</title>
+    <link rel='stylesheet' href='./scss/styles.scss'>
+    <script async refer type="module" src="./js/main.js"></script>
+</head>
+
+<body class="bg-light">
+    <header class="main">
+        <nav class="navbar navbar-expand-lg bg-success bg-gradient">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">BM</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar.." aria-label="Search">
+                        <button class="btn btn-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="page container mt-5 mb-5">
+        <h1 class="d-flex justify-content-center row mb-3">Formulario de contacto</h1>
+        <form action="/index.html" method="post">
+            <div class="form-group row mb-3">
+                <label class="form-label" for="name">Nombre</label>
+                <input class="form-control" name="name" id="name" type="text" placeholder="Ingrese su nombre completo"
+                    required>
+            </div>
+            <div class="form-group row mb-3">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control" name="email" id="email" type="email" placeholder="Ingrese su email"
+                    required>
+            </div>
+            <div class="form-group row mb-3">
+                <label class="form-label" for="type">Tipo de contacto</label>
+                <select class="form-select" name="type" id="type" required>
+                    <option disabled selected value="">Seleccionar consulta</option>
+                    <option value="work">Laboral</option>
+                    <option value="knowledge">Conocimientos</option>
+                    <option value="personal">Personal</option>
+                </select>
+            </div>
+            <div id="work" class="work">
+                <fieldset class="row mb-3 border p-2" id="work-fs">
+                    <legend class="float-none w-auto px-2 mb-0">Tipo de trabajo</legend>
+                    <div class="col-sm-5">
+                        <div class="work-item form-check">
+                            <input class="form-check-input" id="website" name="worktype" type="radio" value="website">
+                            <label class="form-check-label" for="website">Sitio web</label>
+                        </div>
+                        <div class="work-item form-check">
+                            <input class="form-check-input" id="webapp" name="worktype" type="radio" value="webapp">
+                            <label class="form-check-label" for="webapp">Aplicación web</label>
+                        </div>
+                        <div class="work-item form-check">
+                            <input class="form-check-input" id="mobileapp" name="worktype" type="radio"
+                                value="mobileapp">
+                            <label class="form-check-label" for="mobileapp">Aplicación mobile</label>
+                        </div>
+                        <div class="work-item form-check">
+                            <input class="form-check-input" id="design" name="worktype" type="radio" value="design">
+                            <label class="form-check-label" for="design">Diseño</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-group row mb-3 form-floating">
+                <textarea class="form-control" name="description" id="floatingTextarea" rows="5" required></textarea>
+                <label class="form-label" for="floatingTextarea">Descripción</label>
+                <div class="form-text">Escribe una descripción detallada de la consulta.</div>
+            </div>
+            <div class="form-group row mb-3 form-check">
+                <label class="form-label" for="truedata">
+                    <input class="form-check-input" id="truedata" name="truedata" type="checkbox" required>
+                    <span>Soy responsable y admito que los datos aportados son reales.</span>
+                </label>
+            </div>
+            <button type="submit" class="row btn btn-primary">Enviar</button>
+        </form>
+    </main>
+</body>
+
+</html>

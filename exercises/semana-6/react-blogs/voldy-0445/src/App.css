@@ -1,0 +1,135 @@
+/*Header*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    color: #52575d;
+}
+
+ul {
+    list-style: none;
+    margin-left: 50px;
+    padding: 10px;
+    font-size: 12px;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+input {
+    margin-right: 50px;
+    padding-right: 10px;
+    border-radius: 5px;
+    width: 70px;
+    outline: none;
+}
+
+/*Card*/
+
+.wrapper-grid {
+    grid-template-columns: repeat(auto-fit, 300px);
+    display: grid;
+    justify-content: center;
+}
+
+.container {
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px #726649;
+    background-color: #dfd8c8;
+    text-align: center;
+    border-radius: 16px;
+    position: relative;
+    margin: 8px;
+}
+
+.banner-img {
+    position: absolute;
+    background-image: url(assets/img/background.jpg);
+    height: 160px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.example-img {
+    width: 120px;
+    clip-path: circle(60px at center);
+    margin-top: 72px;  
+}
+
+.name {
+    font-weight: bold;
+    font-size: 20px;
+}
+     
+.description {
+    margin: 16px 32px;
+    font-size: 12px;
+}
+  
+.btn {
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    color: #dfd8c8;
+    padding: 16px;
+    background-color: #796d58;
+    cursor: pointer;
+}
+
+/*Footer*/
+
+.date {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 12px;
+    color: #41444b;
+}
+
+/*Desktop*/
+
+@media (min-width: 800px) {
+
+    ul {
+        list-style: none;
+        margin-left: 30px;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    input {
+        margin-right: 40px;
+        border-radius: 5px;
+        width: 150px;
+        outline: none;
+    }
+
+    .wrapper-grid {
+        grid-template-columns: repeat(auto-fit, 310px);
+    }
+
+    .name {
+        font-weight: bold;
+        font-size: 24px;
+    }
+      
+    .description {
+        margin: 16px 32px;
+        font-size: 14px;
+    }
+      
+    .btn {
+        font-size: 16px;
+    }
+
+    .date {
+        margin-top: 20px;
+        margin-left: 30px;
+        font-size: 14px;
+    }
+}

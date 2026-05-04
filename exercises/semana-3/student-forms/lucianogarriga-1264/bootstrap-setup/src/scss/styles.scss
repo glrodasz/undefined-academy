@@ -1,0 +1,45 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+body {
+    background: rgb(221, 218, 218);
+    color: rgb(50, 49, 49);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly; 
+    background: #383737;
+    color: #f1f1f1;
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 1rem;
+}
+nav ul li{
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    margin: 1.5rem;
+    text-align: center;
+}
+main{
+    padding: 0.8rem;
+}
+.my-form{
+    margin: 0 auto;
+    max-width: 500px;
+}
+.my-button{
+    display: block;
+    margin: 0 auto;
+}

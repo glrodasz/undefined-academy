@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    
+    <title>Document</title>
+
+<head>
+	<title>Formulario</title>
+</head>
+<body>
+	<h1>Contacto</h1>
+	<form action="" method="get">
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre" required><br><br>
+		
+		<label for="apellido">Apellido:</label>
+		<input type="text" id="apellido" name="apellido" required><br><br>
+		
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br><br>
+		
+		<label for="telefono">Teléfono:</label>
+		<input type="number" id="telefono" name="telefono"required><br><br>
+		
+	
+		<fieldset>
+			<legend>Contáctame por:</legend>
+			<label><input type="radio" name="contacto" value="email" checked>Email</label>
+			<label><input type="radio" name="contacto" value="telefono">Teléfono</label>
+			<label><input type="radio" name="contacto" value="ninguno">Ninguno</label>
+		</fieldset>
+        <input type="checkbox"name="checkbox" value="checkbox"required>Aceptar los términos y condiciones.
+
+        <button type="submit"> Enviar</button>
+    </form>
+    <script src="formulario.js"></script>
+</body>
+</html>
+		
+		

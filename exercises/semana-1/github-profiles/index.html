@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Profiles — Semana 1</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #f0f6fc;
+      margin-bottom: 0.25rem;
+    }
+
+    .subtitle {
+      font-size: 0.875rem;
+      color: #8b949e;
+      margin-bottom: 1.5rem;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.625rem;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    #search {
+      flex: 1;
+      min-width: 180px;
+      padding: 0.5rem 0.75rem;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      color: #c9d1d9;
+      font-size: 0.875rem;
+      outline: none;
+    }
+    #search:focus { border-color: #58a6ff; }
+    #search::placeholder { color: #484f58; }
+
+    button {
+      padding: 0.5rem 0.875rem;
+      border-radius: 6px;
+      border: 1px solid #30363d;
+      font-size: 0.8125rem;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .btn-secondary {
+      background: #21262d;
+      color: #c9d1d9;
+    }
+    .btn-secondary:hover { background: #30363d; border-color: #8b949e; }
+
+    .btn-primary {
+      background: #238636;
+      color: #fff;
+      border-color: #2ea043;
+      font-weight: 600;
+    }
+    .btn-primary:hover { background: #2ea043; }
+    .btn-primary:disabled {
+      background: #21262d;
+      color: #484f58;
+      border-color: #30363d;
+      cursor: not-allowed;
+    }
+
+    .count {
+      font-size: 0.8125rem;
+      color: #8b949e;
+      margin-left: auto;
+    }
+
+    .popup-note {
+      font-size: 0.75rem;
+      color: #8b949e;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 0.5rem 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .popup-note strong { color: #e3b341; }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.4rem 0.75rem;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      transition: background 0.1s, border-color 0.1s;
+    }
+    li:hover { background: #161b22; border-color: #30363d; }
+
+    li input[type="checkbox"] {
+      width: 15px;
+      height: 15px;
+      flex-shrink: 0;
+      accent-color: #2ea043;
+      cursor: pointer;
+    }
+
+    li a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-size: 0.875rem;
+      flex: 1;
+    }
+    li a:hover { text-decoration: underline; }
+
+    .hidden { display: none !important; }
+
+    .empty-state {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: #484f58;
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>GitHub Profiles</h1>
+<p class="subtitle">Semana 1 — student submissions</p>
+
+<div class="toolbar">
+  <input id="search" type="search" placeholder="Filter profiles…" autocomplete="off" />
+  <button class="btn-secondary" onclick="selectAll()">Select all</button>
+  <button class="btn-secondary" onclick="deselectAll()">Deselect all</button>
+  <button id="openBtn" class="btn-primary" onclick="openTabs()" disabled>Open selected in tabs</button>
+  <span id="count" class="count"></span>
+</div>
+
+<p class="popup-note">
+  <strong>Tip:</strong> If your browser blocks the tabs, click the popup-blocked icon in the address bar and allow popups for this page, then try again.
+</p>
+
+<ul id="list"></ul>
+<p id="emptyState" class="empty-state hidden">No profiles match your search.</p>
+
+<script>
+  const folders = [
+    "7thalex-1191",
+    "aa2d-7694",
+    "aabrazo-8279",
+    "achequisde-5168",
+    "adjsvar-8685",
+    "AETERNUS-9050",
+    "aitorias-9443",
+    "akoo1982-7735",
+    "alejoreyv9-0539",
+    "Aleps-5699",
+    "alex_aponte-4195",
+    "alexcaiced0-3094",
+    "AlexMGonzalez-6883",
+    "alifm-2843",
+    "Anaid Urióstegui S(dot)-9310",
+    "andrealarroza-3697",
+    "andresce-5981",
+    "Andresxd10-5559",
+    "andrssnsdc-4799",
+    "Angel-Mijares-3276",
+    "Aqward#5462",
+    "arzeus17-4122",
+    "atadsd-7852",
+    "augaldecr-4610",
+    "basko79-1418",
+    "BimoPRO_gameYT-9310",
+    "BingenWeb-5101",
+    "bR-3929",
+    "brianbr-3719",
+    "Bruno33-5772",
+    "Bryan_Ortega_Plata-1009",
+    "byRokii-3761",
+    "Byron-8971",
+    "caesara20-9814",
+    "caffa-4633",
+    "CamilaSilva#7352",
+    "camilo-acevedo-9421",
+    "camilol-1734",
+    "Carolina08001-6984",
+    "cescode-0914",
+    "crbm456-0270",
+    "CristhianMedina-7460",
+    "cristianpb-4535",
+    "d4vidwp-3213",
+    "Dali-7656",
+    "DaliaCR-5299",
+    "DameAsado-6873",
+    "Danielisho-3816",
+    "dario-ernesto-roca-7375",
+    "delospp-7916",
+    "denisse-9285",
+    "DevidH092101-6070",
+    "dfrestrepo-1489",
+    "dhdarken-5806",
+    "Diego-3282",
+    "diegol-1905",
+    "diirfv-7677",
+    "dilsonalfonso-9732",
+    "dlopeez-1132",
+    "Dr(dot)Lack47-4891",
+    "dynamite-4370",
+    "eavg-1634",
+    "El Bicho-5067",
+    "emporto95-7729",
+    "Ender26-3118",
+    "Enmanuel-8754",
+    "equiman-0343",
+    "ernzxr-2086",
+    "esandresaristi-5768",
+    "EverJM-6591",
+    "Ewincas-2746",
+    "EzequielCaste-9004",
+    "facundo91-1495",
+    "Fede(dot)GC-5692",
+    "fjquant-2458",
+    "Floor-3100",
+    "Franbichego-0028",
+    "FrankCasanova-2182",
+    "franman-6631",
+    "freivys-4974",
+    "gab-3881",
+    "gabi_gg-6394",
+    "GabrielObregon-7536",
+    "GariCarandai-2859",
+    "gaston-0280",
+    "Gaston095-2770",
+    "Gatz_gg-1050",
+    "ggomezr-8022",
+    "giocompany-3094",
+    "giovani-4566",
+    "giub-7914",
+    "GuishePR-6376",
+    "gustavo(dot)arana-6562",
+    "haboufaker-8509",
+    "hardstone-3508",
+    "hcofanelli-9792",
+    "HernanBautista-7481",
+    "hsalvadorgz-6132",
+    "IDKJesBen-9115",
+    "iik_brightside-0389",
+    "ImNotStefano-2457",
+    "INGCapaDev-8510",
+    "IngFelipeSolarte-3451",
+    "IRatten-5791",
+    "IvanFelipe-3478",
+    "ixam-1702",
+    "jaardila-4569",
+    "jayler-1407",
+    "jcdelrioe-5476",
+    "JeremyO-7130",
+    "Jessbel-7277",
+    "Joaquin-Esteban-2337",
+    "JoeOs-8843",
+    "Joha1701-9119",
+    "Johan-Jimenez-4558",
+    "Johans-2787",
+    "JonatanGarcia-2522",
+    "Jorem999-5406",
+    "jorgemr85-3672",
+    "JorgeVillafraz-6924",
+    "Jose C(dot) Barahona-1862",
+    "Jose-Camilo-8399",
+    "joséandrésgavilanes(smileyyy)-6269",
+    "JoseHerrera-9309",
+    "joshuaRoberts-0458",
+    "jrv_dev",
+    "Juan_Camilo_Loaiza_Penaranda-4852",
+    "juanfelipecaraballo-6690",
+    "juanmifer72-5949",
+    "juanmiyo0696-3317",
+    "juanssanchez-6134",
+    "julietalazzaro-2083",
+    "kanshh_-3254",
+    "karo26-9917",
+    "Karu-1655",
+    "Kick-Off-2479",
+    "kiltro-dev-2143",
+    "kjimenezr89-3718",
+    "knenita-8228",
+    "KnivesMillions-2975",
+    "Krinpyk-7419",
+    "laurelone-6335",
+    "ldrl96-4388",
+    "leal2-6465",
+    "Leonardo Pintor-6833",
+    "Lian-0550",
+    "Lili-3546",
+    "lllariogonzalez-2692",
+    "lmendev-2708",
+    "luanarmo-7586",
+    "LuciaAldana-5957",
+    "lucianogarriga-1264",
+    "Lugim-4737",
+    "luisdgamaya-3698",
+    "Luisponce-8843",
+    "lujan02-9250",
+    "lybauber-1569",
+    "Mac-9025",
+    "Maikcol-2796",
+    "Manuel-Guzman-0345",
+    "manuel77-7331",
+    "ManuelPryda-7878",
+    "Marcos(dot)-0222",
+    "MariaSolArroyo-9830",
+    "MarisolSalazarV-6177",
+    "markos-6727",
+    "Martinezm-2263",
+    "MartinVargas-6047",
+    "Masaru-3255",
+    "Matiascba27-8994",
+    "matidasilva145-1999",
+    "matii-6489",
+    "Matilayo-0663",
+    "Mau-5427",
+    "Mfassi-2651",
+    "Michel890-0152",
+    "monh-6851",
+    "MrRedu-7518",
+    "murquis-5340",
+    "Nathaly-3079",
+    "natsumychan-4117",
+    "Nbarbetti-6907",
+    "nencodev-9495",
+    "nicolas-52000",
+    "NicoleU-3996",
+    "NicoovLamperouge-893",
+    "nicopercivale-3043",
+    "Noa_S-5163",
+    "nohiria-9088",
+    "olezdev-5018",
+    "Oscar Terceros-1377",
+    "PabloXD-4695",
+    "pacorro-8888",
+    "pagliuca-6408",
+    "Pancratzia-4189",
+    "pantu-3796",
+    "PaulaChaneton-2365",
+    "PaulaQuiroga-8406",
+    "PedroLP-1935",
+    "PeKe-4001",
+    "percivv-5104",
+    "Pinto_O-5620",
+    "pioxscorpio94-0264",
+    "r4vc31-7548",
+    "rafitaruiz-4558",
+    "Ramo-9888",
+    "Raquel_Burgos-Full_Stack-2874",
+    "ricardocai92-2995",
+    "Romeo_Zulu-8290",
+    "Romina-2621",
+    "Ronald-9291",
+    "rrodriguezca-2238",
+    "Santiago-3437",
+    "SantiagoZ013-5300",
+    "sebas-9553",
+    "sebasrico-3054",
+    "Seujumon-1612",
+    "Sheila_FG-7067",
+    "Sorxa-9612",
+    "sugar-5500",
+    "taliixer-8876",
+    "TeamPanda-5141",
+    "tefis96-9675",
+    "tigret0n-6769",
+    "truquinio-8306",
+    "valitogt-1328",
+    "Vene15-3355",
+    "voldy-0445",
+    "wil-6448",
+    "Wilmer-8071",
+    "Yaani-8367",
+    "yair-1956",
+    "Yessy-2278",
+    "YilmerG-4850",
+    "Yiyeh-5309",
+    "Yolcar-7642",
+    "yukiko-3634",
+    "zucer-8998",
+  ];
+
+  const listEl = document.getElementById("list");
+  const searchEl = document.getElementById("search");
+  const countEl = document.getElementById("count");
+  const openBtn = document.getElementById("openBtn");
+  const emptyState = document.getElementById("emptyState");
+
+  function buildList() {
+    listEl.innerHTML = "";
+    const q = searchEl.value.trim().toLowerCase();
+    const visible = q ? folders.filter(f => f.toLowerCase().includes(q)) : folders;
+
+    visible.forEach(name => {
+      const li = document.createElement("li");
+      const cb = document.createElement("input");
+      cb.type = "checkbox";
+      cb.dataset.folder = name;
+      cb.addEventListener("change", updateButton);
+
+      const a = document.createElement("a");
+      a.href = `./${encodeURIComponent(name)}/index.html`;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.textContent = name;
+
+      li.appendChild(cb);
+      li.appendChild(a);
+      listEl.appendChild(li);
+    });
+
+    emptyState.classList.toggle("hidden", visible.length > 0);
+    updateCount(visible.length);
+    updateButton();
+  }
+
+  function updateCount(visibleCount) {
+    const total = folders.length;
+    countEl.textContent = visibleCount === total
+      ? `${total} profiles`
+      : `${visibleCount} of ${total} profiles`;
+  }
+
+  function updateButton() {
+    const checked = listEl.querySelectorAll("input[type=checkbox]:checked").length;
+    openBtn.disabled = checked === 0;
+    openBtn.textContent = checked > 0
+      ? `Open ${checked} selected in tabs`
+      : "Open selected in tabs";
+  }
+
+  function selectAll() {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(cb => cb.checked = true);
+    updateButton();
+  }
+
+  function deselectAll() {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(cb => cb.checked = false);
+    updateButton();
+  }
+
+  function openTabs() {
+    listEl.querySelectorAll("input[type=checkbox]:checked").forEach(cb => {
+      window.open(`./${encodeURIComponent(cb.dataset.folder)}/index.html`, "_blank");
+    });
+  }
+
+  searchEl.addEventListener("input", buildList);
+
+  buildList();
+</script>
+</body>
+</html>

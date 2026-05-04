@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/formcontact.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" crossorigin="anonymous">
+    <title>Mi Perfil de Github</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__img" id="logo" src="./img/logo.png" alt="Mi logo">
+        <h1 class="header__title">WILMER GULCOCHIA</h1>
+        <p class="header__parrafo">
+            <a class="header__github--link" href="https://github.com/nobody-redhawk" target="_blank">Visite mi
+                Github</a>
+        </p>
+        <p class="header__parrafo"><code><em> «Pasión por la tecnología» </em></code></p>
+        <div class="inicio__form">                  
+            <a href="index.html">Inicio <i class="fa-solid fa-arrow-right"></i> </a> 
+            
+        </div>
+    </header>
+    <!-- formulario -->
+    <main>
+        <section class="form">
+            <div class="form__container">
+                <h2 class="form__title">Contacto</h2>
+                <p class="form__parrafo"><em>Por favor rellene el formulario</em> </p>
+                <form action="/server" method="get" id="form" class="form__contact">
+                    <div class="form__group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Ingrese su nombre completo" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+                    </div>
+                    <div class="form__group">
+                        <fieldset>
+                            <legend>Presupuesto</legend>
+                            <input id="10000" name="budge" type="radio" value="10000">
+                            <label for="10000">$10000</label>
+                            <input id="5000" name="budge" type="radio" value="5000">
+                            <label for="5000">$5000</label>
+                            <input id="1000" name="budge" type="radio" value="1000">
+                            <label for="1000">$1000</label>
+                        </fieldset>
+                        <div class="help">*Este presupuesto es la base no el total.</div>
+                    </div>
+                    <div class="form__group">
+                        <label for="type">Tipo de proyecto</label>
+                        <select name="type" id="type" required>
+                            <option value="" disabled selected>Seleccion una opcion</option>
+                            <option value="website">Website</option>
+                            <option value="webapp">Webapp</option>
+                            <option value="mobileapp">Mobile app</option>
+                            <option value="design">Diseño</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="description">Descripción</label>
+                        <textarea name="description" id="description" cols="30" rows="10" required></textarea>
+                        <div class="help">*Haz una descripcion del proyecto en al menos 500 palabras.</div>
+                    </div>
+                    <div class="form__group">
+                        <label for="terms">
+                            <input id="terms" name="terms" type="Checkbox" required>
+                            <span>Acepto los terminos y condiciones</span>
+                        </label>
+                    </div>
+                    <div class="form__group form__group--button">
+                        <button class="form__button" type="submit" id="enviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="/main.mjs"></script>
+    <footer class="footer">
+        <a class="footer__button" href="https://github.com/nobody-redhawk" target="_blank">Realizado
+            por<strong> @nobody-redhawk</strong></a>
+    </footer>
+</body>
+
+</html>

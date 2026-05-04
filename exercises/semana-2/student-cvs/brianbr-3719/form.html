@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="/server" method="get">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"required>
+        </div>
+        <div class="form-group">
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+        </div>
+		<label for="mensaje">Mensaje:</label>
+		<textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+
+		<input type="checkbox" name="checkbox" id="checkbox" required>
+        <span id ="terminos"class="terminos">acepto los términos y condiciones</span>
+
+		<input type="submit" value="Enviar">
+      
+	</form>
+    <script src="form.js"></script>
+</body>
+</html>

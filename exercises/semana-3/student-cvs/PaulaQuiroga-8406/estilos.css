@@ -1,0 +1,124 @@
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+body {
+    font-family: Arial;
+    margin: 100px auto;
+    max-width: 800px;
+    color:#333 ;
+    background-color: #fafafa;
+    padding: 0 40px;
+    line-height: 1.5;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 10px;
+    background-image: none;
+    
+}
+
+.contenedor-imagen {
+    display: flex;
+    justify-content: center;
+  }
+
+.title h1, .title-proyectos , .perfil-github + h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #C04A82;
+}
+
+a {
+    color: #C04A82; 
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #C04A82;
+}
+.perfil-github, h2, .sobre-mi {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.form-group {
+    /* border: 1px solid salmon; */
+    margin-top: 20px;
+}
+
+/* vertical-align: middle (alinear verticalmente en el centro)funciona solo en los inline */
+label, 
+input {
+    vertical-align: middle;
+}
+
+label, 
+input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize:vertical;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.help {
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray
+}
+
+.boton {
+    margin-top: 32px;
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #DC8449;
+    background: #FDD36A;
+    color: #333;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background: #C04A82;
+    box-shadow: none;
+}
+
+form {
+    /* Para cambiarle el color por defecto que trae el formulario de los check o radios */
+    accent-color: #FDD36A;
+}
+
+footer  {
+    text-align: end;
+}

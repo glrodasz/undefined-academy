@@ -1,0 +1,12 @@
+@use "settings" as settings;
+
+@include settings.tablet{
+    .header-nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .img-logo{
+        margin: 1rem 3rem;
+    }
+}

@@ -1,0 +1,299 @@
+@use 'variables';
+html {
+    box-sizing: border-box;  
+    
+  }
+  
+  * {
+    box-sizing: inherit;  
+    text-decoration: none;
+  }
+  
+  body {
+    background-color: variables.$prussian-blue;
+    margin: 0 auto;
+    max-width: 900px;
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: variables.$outer-space;
+    color: variables.$charcoal;
+    
+  }
+  
+  body p {
+    text-align: unset;
+  }
+  
+  header {
+    margin-top: 64px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("imagenes/header.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 350px;
+    line-height: 1.2;
+    max-width: 100%;
+    
+  }  
+  .logo {
+    
+    margin-top: 15px ;
+    height: 150px;
+    vertical-align: top;
+    width: 120px;
+  }
+  header h1 {
+    text-align: center;
+    font-family:"Star wars", fantasy;
+    color: variables.$buttermilk;
+    font-size: 2.5em;
+    font-weight: 300;
+    
+   
+  }
+  
+  div.git  {
+    border: 2px solid variables.$rajah;
+    border-radius: 290486px;
+    color: variables.$saffron-mango;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+    
+  }
+  
+  div.git:hover  {
+    transition: transform 0.2s;
+    transform: scale(1.1);
+    background:  variables.$forest-green;
+    color: whitesmoke;
+    
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  footer p {
+    text-align: center;
+    font-family:"Helvetica", "Arial", sans-serif;
+    color: variables.$charcoal;
+    font-size: 1em;
+    font-weight: 250;
+  }
+ 
+  footer a {
+    font-weight: bold;
+    height: 44px;
+    width: 200px;
+    margin: 20px auto;
+    border: 4px groove variables.$light-sky-blue ;
+    border-radius: 290486px;
+    color: variables.$storm-gray;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+  }
+  
+  
+  footer a:hover {
+    background:  variables.$dodger-blue;
+    color: whitesmoke;
+  }
+  footer a:active {
+    background:  variables.$outer-space;
+    color: whitesmoke;
+  }
+
+  form {
+    
+    accent-color: variables.$Light-Sea-Green;
+  }
+  .page {
+    
+    border:2px solid lightcyan;
+    border-radius: 12px;
+    background: variables.$jungle-green;
+    box-shadow:
+    3.4px 13.8px 9.7px rgba(0, 0, 0, 0.86),
+    23.8px 96.7px 36px rgba(0, 0, 0, 0.11),
+    62px 252px 189px rgba(0, 0, 0, -0.203);
+    max-width: 500px;
+    margin: 65px auto 65px;
+    padding: 0 40px; 
+    font-family: Arial, Helvetica, sans-serif;
+  } 
+  
+  .form-group { 
+  
+    margin: 15px 0;
+  }
+   label , input[type="text"], input[type="email"],input[type="tel"] {
+    width: 100%;
+    
+   }
+   label, input{
+    vertical-align: middle;
+   }
+   input:focus-visible, textarea:focus-visible{
+    border:  rgb(37, 209, 200);
+    outline: 2px solid lightseagreen;
+   }
+   input[type="text"], input[type="email"],input[type="tel"], textarea{
+    background: variables.$tea-green;
+    border: 1px solid lightcyan;
+    border-radius: 5px;
+    padding: 6px 8px;
+    color: #333;
+   }
+   textarea{
+    display: block;
+    width: 100%;
+    resize: vertical;
+   }
+
+   .help{
+    font-size: 12px;
+    margin-top: 12px;
+    color: variables.$outer-space;
+    
+   }
+  
+   label, legend{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: variables.$black-bean;
+  
+   }
+  button{
+    margin-bottom: 20px;
+    padding: 12px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid lightcyan;
+    background: lightgreen;
+    color: variables.$blood;
+    text-shadow: -2px,-2px, 0 rgb(255, 255, 255, 0.5) ;
+    border-radius: 7px;
+    box-shadow: 3px, 3px, 9px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+  button:hover {
+    background: variables.$light-green;
+  }
+  button:active {
+    background: variables.$olive-drab;
+    box-shadow: -3px, -3px, 0px rgba(0,0,0,0.5);
+    color: variables.$black-bean;
+    text-shadow: 2px,2px, 0 rgb(255, 255, 255, 0.5) ;
+  }
+
+  /*"estilos layout"*/
+  
+  .layouts {
+    margin: 0 auto;
+    font-family: Courier New, monospace;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: variables.$outer-space;
+    color: variables.$charcoal;
+  }
+  
+  .container div {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    border: 2px solid variables.$electric-blue;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: variables.$jungle-green-alpha;
+    box-shadow:
+    3.4px 13.8px 9.7px rgba(0, 0, 0, 0.86),
+    23.8px 96.7px 36px rgba(0, 0, 0, 0.11),
+    62px 252px 189px rgba(0, 0, 0, -0.203);
+  }
+  .container .fecha-publicacion {
+    font-weight: 100;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end;
+    margin-top: auto;
+    }
+  .container div:hover {
+    background-color: variables.$jungle-green;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+    box-shadow:
+    0px 36.8px 19.6px rgba(0, 0, 0, 0.48),
+    0px 212.9px 72.8px rgba(0, 0, 0, 0.061),
+    0px 500px 382px rgba(0, 0, 0, -0.113)
+    ;
+  }
+  
+  .container img {
+    height: 230px;
+    width: 100%;  
+  }
+  
+  input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid variables.$medium-sea-green;
+    width: 400px;
+    background: variables.$light-sea-green;
+  }
+  
+  input[type="search"]:focus{
+    border-color: variables.$electric-blue-2;
+    background: variables.$medium-spring-green;
+    transform: scale(1.03);
+    transition: transform 0.2s;
+    box-shadow:0px 0px 11px rgba(0, 0, 0, 0.5);
+    outline: none;
+  }
+  
+  .container {
+    font-weight: 800;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px 36px;
+  }
+  
+  .container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 /4;
+    grid-row: 1 / 2;
+  }
+  
+  .container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+   div:last-child {
+    grid-column: 1 / 4;
+  }
+  

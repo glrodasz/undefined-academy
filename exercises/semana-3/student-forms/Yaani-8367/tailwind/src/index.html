@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Contacto Tailwind</title>
+</head>
+<body class="my-5">
+    <div class="w-full flex items-center justify-center">
+            <h1 class="md:text-3xl text-xl font-bold leading-7 text-center text-gray-700 dark:text-white">CONTÁCTEME</h1>
+            <form class="md:w-4/5 absolute top-20 bg-white dark:bg-gray-800 shadow rounded py-4 lg:px-28 px-8">
+                <div class="md:flex items-center mt-12">
+                    <div class="md:w-72 flex flex-col">
+                        <label class="text-base font-semibold leading-none text-gray-800 dark:text-white" for="name">Nombre</label>
+                        <input tabindex="0" arial-label="Please input name" type="name" class="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-black-100" placeholder="Ingrese su primer nombre" id="name"/>
+                    </div>
+                    <div class="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
+                        <label class="text-base font-semibold leading-none text-gray-800 dark:text-white" for="apellido">Apellido</label>
+                        <input tabindex="0" arial-label="Please input name" type="name" class="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-black-100" placeholder="Ingrese su apellido" id="apellido"/>
+                    </div>
+                </div>
+                <div class="md:flex items-center mt-12">
+                    <div class="md:w-72 flex flex-col">
+                        <label class="text-base font-semibold leading-none text-gray-800 dark:text-white" for="email">Email</label>
+                        <input tabindex="0" arial-label="Please input email address" type="name" class="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-black-100" placeholder="example@dominio.com" id="email"/>
+                    </div>
+                    <div class="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
+                        <label class="text-base font-semibold leading-none text-gray-800 dark:text-white" for="site">Website</label>
+                        <input tabindex="0" role="input" arial-label="Please input company name" type="name" class="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-black-100" placeholder="Ingrese su situi web" id="site"/>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full flex flex-col mt-8">
+                        <label class="text-base font-semibold leading-none text-gray-800 dark:text-white">Escribe tu mensaje</label>
+                        <textarea tabindex="0" aria-label="leave a message" role="textbox" type="name" class="h-36 text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 resize-none"></textarea>
+                    </div>
+                </div>
+                <p class="text-xs leading-3 text-gray-600 dark:text-gray-200 mt-4">Acepto los terminos y condiciones</p>
+                <div class="flex items-center justify-center w-full">
+                    <button class="mt-9 text-base font-semibold leading-none text-white py-4 px-10 bg-indigo-700 rounded hover:bg-indigo-600 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none">ENVIAR</button>
+                </div>           
+            </form>       
+    </div>
+</body>
+</html>

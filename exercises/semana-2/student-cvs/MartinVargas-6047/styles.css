@@ -1,0 +1,335 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&family=Titillium+Web:wght@200;300;400;600&display=swap");
+* {
+  font-family: "Titillium web";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* MOBILE FIRST */
+main {
+  display: flex;
+  flex-direction: column;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+@media screen and (min-width: 992px) {
+  section {
+    display: flex;
+  }
+}
+/* HOME SECTION */
+.home {
+  background-color: #000;
+  color: #940253;
+}
+.home .content-section {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  padding: 0 10px;
+}
+.home .content-section header {
+  padding: 30px;
+}
+.home .content-section header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  /*---*/
+  background-color: #940253;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.home .content-section header nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+.home .content-section header .logo {
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: #fff;
+  font-family: "Russo One", sans-serif;
+  text-shadow: 0 0 35px #fff;
+}
+.home .content-section header .logo .color {
+  color: #bb0c6c;
+  font-family: "Russo One", sans-serif;
+}
+.home .content-section .info {
+  padding-bottom: 130px;
+}
+.home .content-section .info h1 {
+  font-size: 3rem;
+  letter-spacing: 4px;
+  text-shadow: 0 0 55px #fff;
+  color: #e6e6e6;
+}
+.home .content-section .info h2 {
+  font-size: 20px;
+  margin-top: -10px;
+  letter-spacing: 2px;
+}
+.home .content-section .info .socials {
+  margin: 20px 0;
+}
+.home .content-section .info .socials a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #000;
+  color: #940253;
+  border: 2px solid #940253;
+  border-radius: 35%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+.home .content-section .info .socials a:hover {
+  color: #fff;
+  background-color: #940253;
+  box-shadow: 0 0 20px #fff;
+}
+.home .content-section .photo {
+  position: relative;
+}
+.home .content-section .photo img {
+  max-width: 200px;
+  border-radius: 50%;
+  border: 5px solid #940253;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+  transform: translateX(-50%);
+}
+/* GENERAL STYLES */
+.title-section {
+  font-family: "Russo One", sans-serif;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+/* ABOUT ME SECTION */
+.aboutme {
+  background-color: #e6e6e6;
+  padding: 140px 0 100px 0;
+  text-align: center;
+}
+.aboutme .content-section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+.aboutme .content-section h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.aboutme .content-section .special {
+  color: #940253;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.aboutme .content-section p {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+}
+.aboutme .content-section .row {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.aboutme .content-section .row .col {
+  width: 30%;
+}
+.aboutme .content-section .row .col i {
+  color: #940253;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #940253;
+  line-height: 40px;
+  border-radius: 50%;
+}
+.aboutme .content-section .row .col span {
+  display: block;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+/* RESUME SECTION */
+.resume {
+  background-color: #e6e6e6;
+  color: #000;
+  padding: 100px 0 100px 0;
+  text-align: center;
+  border: 1px solid gray;
+}
+.resume .content-section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+.resume .content-section h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.resume .content-section .info {
+  text-align: left;
+  margin-top: 30px;
+}
+.resume .content-section .info .col {
+  width: auto;
+}
+.resume .content-section .info .col .title {
+  display: inline-block;
+  color: #940253;
+  font-weight: bold;
+  border: 2px solid #940253;
+  padding: 10px;
+  background-color: #000;
+  margin-top: 20px;
+}
+.resume .content-section .info .col table {
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+.resume .content-section .info .col table .data {
+  width: 40%;
+  border-bottom: 1px solid #bab9b9;
+}
+.resume .content-section .info .col table h4 {
+  margin-top: 10px;
+}
+.resume .content-section .info .col table h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+.resume .content-section .info .col table p {
+  font-size: 14px;
+}
+.resume .content-section .info .col table .average {
+  display: block;
+  color: #940253;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.resume .content-section .info .col table .description {
+  border-left: 1px solid #bab9b9;
+  padding-left: 20px;
+}
+
+/* CONTACT FORM SECTION */
+.contact {
+  background-color: #000;
+  color: #940253;
+  padding: 140px 0 100px 0;
+  text-align: center;
+}
+.contact .content-section {
+  width: 30em;
+}
+.contact .content-section h3 {
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-top: 15px;
+}
+.contact .content-section .container .contact-box {
+  background-color: gainsboro;
+  border: 1px solid #222;
+  margin-top: 50px;
+}
+.contact .content-section .container .contact-box .right {
+  padding: 25px 40px;
+}
+.contact .content-section .container .contact-box .right .field {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #000;
+  font-size: 1.1rem;
+  margin-bottom: 1.1rem;
+  transition: 0.3s;
+  text-indent: 10px;
+}
+.contact .content-section .container .contact-box .right .field:hover {
+  background-color: hsla(345, 96%, 33%, 0.363);
+  color: #000;
+  outline: 1px solid #670039;
+  border: 1px solid #670039;
+}
+::placeholder {
+  color: black;
+  text-transform: capitalize;
+}
+.contact .content-section .container .contact-box .right .field:focus-visible {
+  border: 1px solid #670039;
+}
+.contact .content-section .container .contact-box .right .area {
+  min-height: 100px;
+  resize: vertical;
+}
+.contact .content-section .container .contact-box .right .button {
+  width: 40%;
+  padding: 0.5rem;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #940253;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-shadow: -1px -1px 0 rgba(255 255 255 0.5);
+  box-shadow: 1px 1px 3px rgba(0 0 0 0.5);
+}
+.contact .content-section .container .contact-box .right .button:hover {
+  background-color: #bb0c6c;
+}
+.contact .content-section .container .contact-box .right .button:active {
+  background: #580031;
+}
+.form-group label,
+input {
+  vertical-align: middle;
+}
+.form-group label,
+input:not([type="checkbox"]) {
+  width: 100%;
+}
+.form-group textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+.form-group label {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #080331;
+}
+form {
+  accent-color: red;
+}
+/* Javascript Form */
+#trucazo {
+  opacity: 0;
+  pointer-events: none;
+  cursor: default;
+}

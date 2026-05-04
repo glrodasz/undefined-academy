@@ -1,0 +1,54 @@
+@use 'variables.scss';
+
+@media screen and (min-width: variables.$tablet) {
+  .container {
+    padding: 2em 0;
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(500px, auto) minmax(400px, auto);
+    gap: 1.5em;
+  }
+  header {
+    padding: 0;
+    grid-column: 1 / 4;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navigation-links {
+    width: 66%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .search-container {
+    margin: 0;
+  }
+  .card:nth-of-type(4n) {
+    grid-column: 1 / 4;
+    flex-direction: row;
+    align-items: center;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .card:nth-of-type(8n) {
+    flex-direction: row-reverse;
+  }
+}

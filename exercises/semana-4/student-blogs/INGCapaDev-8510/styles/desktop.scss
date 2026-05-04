@@ -1,0 +1,30 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .card {
+    margin: 0.5rem;
+    grid-column: span 3;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .card {
+    margin: 0.5rem;
+    grid-column: span 2;
+  }
+  .card--footer {
+    grid-column: span 6;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+
+  html {
+    background-color: whitesmoke;
+  }
+}

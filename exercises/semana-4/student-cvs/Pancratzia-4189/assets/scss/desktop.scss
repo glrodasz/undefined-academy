@@ -1,0 +1,121 @@
+@use "variables.scss" as v;
+
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 3rem 0;
+
+    .contenedor-header {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-areas: "img-header titulo-header header-nav";
+      align-items: center;
+      .titulo-header {
+        grid-area: titulo-header;
+        font-size: 6rem;
+        line-height: 0.8;
+      }
+
+      .img-header {
+        grid-area: img-header;
+      }
+
+      .header-nav {
+        grid-area: header-nav;
+      }
+    }
+  }
+
+  .main {
+    .contenedor-principal {
+      display: grid;
+      grid-template-columns: 6fr 1fr;
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas:
+        "sobre-mi tecnologias"
+        "idiomas tecnologias"
+        "educacion-y-experiencia tecnologias"
+        "formulario formulario";
+      
+      .section {
+        &.sobre-mi {
+          grid-area: sobre-mi;
+          border-bottom: none;
+        }
+
+        &.educacion-y-experiencia {
+          grid-area: educacion-y-experiencia;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1rem;
+        }
+
+        &.idiomas {
+          grid-area: idiomas;
+          border-bottom: none;
+        }
+
+        &.tecnologias {
+          grid-area: tecnologias;
+        }
+
+        &.formulario {
+          grid-area: formulario;
+        }
+
+        &.formulario {
+          .section-titulo {
+            margin-bottom: 3rem;
+          }
+
+          .form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            .form-group {
+              &.telefono {
+                grid-column: 2/3;
+                grid-row: 1/2;
+              }
+              &.email {
+                grid-column: 1/3;
+                grid-row: 2/3;
+              }
+              &.mensaje {
+                grid-column: 1/3;
+                grid-row: 3/4;
+              }
+            }
+
+            .botones {
+              grid-column: 1/3;
+              grid-row: 4/5;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+              gap: 2rem;
+
+              input {
+                margin: 0;
+              }
+
+              .form-btn {
+                width: 20rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .flex {
+      time {
+        margin-left: 1rem;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-top: 0;
+      }
+    }
+  }
+}

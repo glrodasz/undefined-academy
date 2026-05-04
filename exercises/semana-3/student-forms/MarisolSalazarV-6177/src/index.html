@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+    <link rel="stylesheet" href="output.css">
+    
+</head>
+<body>
+    <div class="flex text-2xl sm:justify-center text-center space-x-4 rounded-lg px-3 py-4 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900">
+        <nav>
+            <ul>
+                <li><a href="index.html">Contact-me</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="block mx-auto my-12 p-8 bg-white w-2/4 border border-gray-200 rounded-lg shadow-lg text-gray-800">
+        <h1 class="text-3xl font-bold text-black text-center">Contacto</h1>
+        <form class="mt-4" id="FormContact">
+            <div>
+                <label for="name">Nombre</label>
+                <input class="border border-gray-200 rounded-md bg-gray-200 w-full text-lg placeholder-gray-500 
+                p-2 my-2 focus:bg-white" id="name" name="name" type="text" placeholder="Ingrese su nombre" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input class="border border-gray-200 rounded-md bg-gray-200 w-full text-lg placeholder-gray-500 
+                p-2 my-2 focus:bg-white" id="email" name="email" type="email" placeholder="Ingrese su correo electronico" required>
+            </div>
+            
+            <div>
+                <fieldset class="py-4 border border-gray-300 rounded-md">
+                    <legend>Presupuesto</legend>
+
+                    <input type="radio" name="budget" id="10000" value="1000000">
+                    <label>$1.000.000</label>
+                    
+                    <input type="radio" name="budget" id="5000" value="5000000">
+                    <label>$5.000.000</label>
+                    
+                    <input type="radio" name="budget" id="1000" value="10000000">
+                    <label>$10.000.000</label>
+
+                </fieldset>
+                <div class="py-1">Este presupuesto es la base no el total.</div>
+            </div>
+            <div class="py-1 mt-2">
+                <label for="type">Tipo de proyecto</label>
+                <select id="type" required name="type" class="border border-gray-200 rounded-md bg-gray-200 w-full text-lg placeholder-gray-500 
+                p-2 my-2 focus:bg-white">
+                    <option disabled selected value="">Seleccione uno</option>
+                    <option value="website">Website</option>
+                    <option value="webapp">Webapp</option>
+                    <option value="mobile">Mobile app</option>
+                    <option value="design">Diseño Web</option>
+                </select>
+            </div>
+            <div class="mt-2">
+                <label for="description">Descripción</label>
+                <textarea class="block 
+                file:mr-4 file:py-2 file:px-4 mt-2
+                file:rounded-full file:border-0
+                file:text-sm file:font-semibold
+                file:bg-violet-50 file:text-violet-700
+                hover:file:bg-violet-100 bg-gray-200 w-full text-lg" id="description" name="description" rows="5"></textarea>
+                <div class="mt-2 py-2">
+                    Escribe una descripción del proyecto en almenos 500 palabras.
+                </div>
+            </div>
+
+            <div class="mt-2 py-2">
+                <label for="terms">
+                    <input id="terms" name="terms" type="checkbox" required>
+                    <span>Acepto los términos y condiciones</span>
+                </label>
+            </div>
+
+            <button type="submit" class="rounded-md w-full text-lg text-white font-semibold p-2 my-3"
+            style="background:#3f79a8;">Enviar</button>
+
+        </form>
+    </main>
+
+</body>
+</html>

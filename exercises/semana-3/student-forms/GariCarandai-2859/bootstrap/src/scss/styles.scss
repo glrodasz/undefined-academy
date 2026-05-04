@@ -1,0 +1,8 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+@include media-breakpoint-up(sm) { .container{ width: 460px; } }
+@include media-breakpoint-up(md) { .container{ width: 460px; } }
+@include media-breakpoint-up(lg) { .container{ width: 460px; } }
+@include media-breakpoint-up(xl) { .container{ width: 460px; } }
+@include media-breakpoint-up(xxl) { .container{ width: 460px; } }

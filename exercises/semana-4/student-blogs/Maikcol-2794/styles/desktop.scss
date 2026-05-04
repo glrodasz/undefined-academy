@@ -1,0 +1,64 @@
+@media screen and (min-width: 600px) {
+    header {
+      height: auto;
+
+      .header-img {
+        display: none;
+      }
+      .header-content {
+        display: flex;
+        flex-direction: row;
+      }
+    
+      .header-content h1 {
+        width: 100%;
+      }
+
+    }
+    
+    main {
+      flex-direction: row;
+      
+      .article-head {
+        width: 100%;
+      }
+    
+      .article-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      article img {
+        max-width: 300px;
+        object-fit: contain;
+      }
+    
+      .posts {
+        margin: 1em auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+          "principal principal"
+          "left right"
+          "left right";
+        gap: 2em;
+    
+        width: 60%;
+        max-width: 800px;
+        
+        .principal {
+          flex-direction: row;
+          grid-area: principal;
+        }
+        .left {
+          grid-area: left;
+        }
+        .right {
+          grid-area: right;
+        }
+      }
+
+    }
+  
+  }

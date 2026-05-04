@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My cv responsive</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <h1> Leovigildo Manuel Martinez Balderas</h1>
+            <span class="subtitle">SysAdmin Linux / Back-End Developer</span>
+            <br />
+            <a class="btn" href="https://github.com/manuelmannuel"><span><i class="fa fa-github"></i></span> My Github
+                profile </a>
+
+            <p>SysAdmin Linux and software development, with problem solving skills, verifiable experience in system
+                administration and software development.</p>
+        </header>
+        <section class="content">
+            <h2>Useful commands</h2>
+            <article>
+                <h3>Commands Shell</h3>
+                <table class="shell-commands" style="width:100%">
+                    <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>ls</td>
+                        <td>Lists all files and directories in the present working directory</td>
+                    </tr>
+                    <tr>
+                        <td>cd</td>
+                        <td>To change to a particular directory </td>
+                    </tr>
+                    <tr>
+                        <td>pwd</td>
+                        <td>Full path name of your current directory</td>
+                    </tr>
+                    <tr>
+                        <td>cp</td>
+                        <td>Copy files</td>
+                    </tr>
+                    <tr>
+                        <td>cat filename</td>
+                        <td>Displays the file content</td>
+                    </tr>
+                    <tr>
+                        <td>rm</td>
+                        <td>Delete file</td>
+                    </tr>
+                    <tr>
+                        <td>mkdir</td>
+                        <td>Make directory</td>
+                    </tr>
+                    <tr>
+                        <td>man</td>
+                        <td>Gives help information on a command</td>
+                    </tr>
+                    <tr>
+                        <td>mv</td>
+                        <td>Renames a directory</td>
+                    </tr>
+                </table>
+            </article>
+            <h3>Commands alias</h3>
+            <article>   
+            <pre>
+        <strong>alias gstatus=’git status’</strong> | Check changes status
+        <strong>alias pull-m=’git pull origin main’</strong> | Get changes to remote repository in main
+        <strong>alias pull-d=’git pull origin dev’ </strong> | Get changes to remote repository in dev
+        <strong>alias push-m=’git push origin main’</strong> | Send changes to remote repository in main
+        <strong>alias push-d=’git push origin dev’ </strong> | Send changes to remote repository in dev
+            </pre>
+            </article>
+        </section>
+        <section id="contact" class="contact">
+            <h3>Contact</h3>
+            <form action="/server" method="get">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input id="name" name="name" type="text" placeholder="Full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="email" placeholder="email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Reason for contact</legend>
+                        <div class="rdb">
+                        <label>
+                        <input type="radio" name="reason" value="full" required>
+                        Full time job
+                        </label>
+                        <label>
+                        <input type="radio" name="reason" value="part">
+                        Part time job
+                        </label>
+                        <label>
+                        <input type="radio" name="reason" value="freelance">
+                        Freelance job
+                        </label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <textarea name="subject" id="subject" rows="5" placeholder="your message" required></textarea>
+                    <div class="help">
+                        Your proposal in 200 words
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="terms">
+                        <input id="terms" type="checkbox" required>
+                        <span>I accept terms and conditions</span>
+                    </label>
+                </div>
+                <button class="btn">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer class="copy">
+        <address>
+            <p>More information</p>
+            <a href="mailto:manuelmannuel@gmail.com">Contact me</a>
+        </address>
+        <p>manuelmannuel &copy; 2023</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+/* ---- Reset ----*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,h2,h3,p {
+  margin: 0;
+}
+
+.page h1 {
+    color: #2F004F;
+    font-weight: bold;
+}
+
+.page {
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin: 2rem;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;  
+}
+
+.form {
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #2F004F;
+    border-radius: 0.5rem;
+    background-color: #DBCFE4;
+}
+
+.form button {
+    padding: 10px 60px;
+    font-weight: bold;
+    border: 1px solid #2F004F;
+    background-color: #6801A8;
+    color: #ececec;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form textarea {
+    resize: none;
+}
+
+.footer {
+    margin-bottom: 2rem;
+    font-family: "Poppins", sans-serif;  
+}
