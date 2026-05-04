@@ -10,7 +10,10 @@
 - [🎓 Acerca del Bootcamp](#-acerca-del-bootcamp)
 - [▶️ Cómo Empezar](#️-cómo-empezar)
 - [📚 Contenido del Programa](#-contenido-del-programa)
-- [📂 Proyectos del Repositorio](#-proyectos-del-repositorio)
+- [🗂️ Estructura del Repositorio](#️-estructura-del-repositorio)
+- [📂 Proyectos del Bootcamp](#-proyectos-del-bootcamp)
+- [🌐 Sitio Web](#-sitio-web)
+- [📝 Ejercicios Semanales](#-ejercicios-semanales)
 - [🛠️ Tecnologías Utilizadas](#️-tecnologías-utilizadas)
 - [👥 Comunidad](#-comunidad)
 - [🔗 Enlaces Importantes](#-enlaces-importantes)
@@ -81,67 +84,97 @@ El bootcamp cubre un currículo completo que incluye:
 - Snapshot testing en React
 - Tests funcionales
 
-## 📂 Proyectos del Repositorio
+## 🗂️ Estructura del Repositorio
 
-Este repositorio contiene todos los proyectos prácticos del bootcamp, organizados por categoría:
+Este repositorio está organizado en tres carpetas principales:
+
+| Carpeta | Descripción |
+|---------|-------------|
+| [`content/`](./content) | Material de estudio y proyectos prácticos del bootcamp |
+| [`website/`](./website) | Código fuente del sitio web de Undefined Academy |
+| [`exercises/`](./exercises) | Ejercicios semanales resueltos por los estudiantes (semana-1 a semana-9) |
+
+## 📂 Proyectos del Bootcamp
+
+El material práctico está dentro de [`content/`](./content), organizado por categoría:
 
 ### HTML y Fundamentos Web
 
 | Proyecto | Descripción |
 |----------|-------------|
-| [introducción-a-html](./introducción-a-html) | Curso de introducción a HTML con ejemplos prácticos |
-| [html-semantico](./html-semantico) | Tutorial de elementos semánticos de HTML5 |
-| [formularios-html](./formularios-html) | Elementos de formularios HTML y validación |
-| [el-mundo-del-markdown](./el-mundo-del-markdown) | Tutorial de Markdown |
+| [introducción-a-html](./content/introducción-a-html) | Curso de introducción a HTML con ejemplos prácticos |
+| [html-semantico](./content/html-semantico) | Tutorial de elementos semánticos de HTML5 |
+| [formularios-html](./content/formularios-html) | Elementos de formularios HTML y validación |
+| [el-mundo-del-markdown](./content/el-mundo-del-markdown) | Tutorial de Markdown |
 
 ### CSS y Estilos
 
 | Proyecto | Descripción |
 |----------|-------------|
-| [css-flexbox-grid](./css-flexbox-grid) | Lecciones de Flexbox y Grid layout |
-| [css-responsive](./css-responsive) | Principios de diseño responsive |
-| [extendiendo-sass](./extendiendo-sass) | Características avanzadas de Sass |
-| [frameworks-ui](./frameworks-ui) | Configuración de Bootstrap 5 y Tailwind CSS |
+| [css-flexbox-grid](./content/css-flexbox-grid) | Lecciones de Flexbox y Grid layout |
+| [css-responsive](./content/css-responsive) | Principios de diseño responsive |
+| [extendiendo-sass](./content/extendiendo-sass) | Características avanzadas de Sass |
+| [frameworks-ui](./content/frameworks-ui) | Configuración de Bootstrap 5 y Tailwind CSS |
 
 ### JavaScript
 
 | Proyecto | Descripción |
 |----------|-------------|
-| [javascript-algorithms](./javascript-algorithms) | Implementaciones de algoritmos y soluciones |
-| [fechas-javascript](./fechas-javascript) | Manipulación de fechas con Day.js |
-| [biblioteca-utilidades](./biblioteca-utilidades) | Librería de funciones utilitarias con Lodash |
+| [javascript-algorithms](./content/javascript-algorithms) | Implementaciones de algoritmos y soluciones |
+| [fechas-javascript](./content/fechas-javascript) | Manipulación de fechas con Day.js |
+| [biblioteca-utilidades](./content/biblioteca-utilidades) | Librería de funciones utilitarias con Lodash |
 
 ### Node.js y Backend
 
 | Proyecto | Descripción |
 |----------|-------------|
-| [introduccion-a-node](./introduccion-a-node) | Introducción a Node.js |
-| [intro-a-express](./intro-a-express) | Tutorial de Express.js |
-| [intro-to-mongo](./intro-to-mongo) | Introducción a MongoDB nativo |
-| [mongoose](./mongoose) | Tutorial de MongoDB con Mongoose |
-| [passport](./passport) | Implementación de autenticación con Passport.js |
+| [introduccion-a-node](./content/introduccion-a-node) | Introducción a Node.js |
+| [intro-a-express](./content/intro-a-express) | Tutorial de Express.js |
+| [intro-to-mongo](./content/intro-to-mongo) | Introducción a MongoDB nativo |
+| [mongoose](./content/mongoose) | Tutorial de MongoDB con Mongoose |
+| [passport](./content/passport) | Implementación de autenticación con Passport.js |
 
 ### React
 
 | Proyecto | Descripción |
 |----------|-------------|
-| [intro-a-react](./intro-a-react) | Proyecto de introducción a React |
-| [practica-blog-react](./practica-blog-react) | Aplicación de blog con React + Vite |
-| [improvr-components](./improvr-components) | Librería de componentes con Storybook |
-| [practica-blog](./practica-blog) | Proyecto de blog con Vanilla JS + Vite |
+| [intro-a-react](./content/intro-a-react) | Proyecto de introducción a React |
+| [practica-blog-react](./content/practica-blog-react) | Aplicación de blog con React + Vite |
+| [improvr-components](./content/improvr-components) | Librería de componentes con Storybook |
+| [practica-blog](./content/practica-blog) | Proyecto de blog con Vanilla JS + Vite |
 
 ### Next.js
 
 | Proyecto | Descripción |
 |----------|-------------|
-| [practica-blog-next](./practica-blog-next) | Aplicación de blog con Next.js |
-| [improvr](./improvr) | Aplicación Next.js con integración de OpenAI |
+| [practica-blog-next](./content/practica-blog-next) | Aplicación de blog con Next.js |
+| [improvr](./content/improvr) | Aplicación Next.js con integración de OpenAI |
 
 ### Utilidades
 
 | Proyecto | Descripción |
 |----------|-------------|
-| [scripts](./scripts) | Scripts de Bash para mantenimiento del repositorio |
+| [scripts](./content/scripts) | Scripts de Bash para mantenimiento del repositorio |
+
+## 🌐 Sitio Web
+
+El código fuente del sitio web de Undefined Academy se encuentra en [`website/`](./website). Es una aplicación desarrollada con React y Vite.
+
+## 📝 Ejercicios Semanales
+
+En [`exercises/`](./exercises) encontrarás los ejercicios resueltos por los estudiantes, organizados por semana:
+
+| Carpeta | Descripción |
+|---------|-------------|
+| [semana-1](./exercises/semana-1) | Ejercicios de la semana 1 |
+| [semana-2](./exercises/semana-2) | Ejercicios de la semana 2 |
+| [semana-3](./exercises/semana-3) | Ejercicios de la semana 3 |
+| [semana-4](./exercises/semana-4) | Ejercicios de la semana 4 |
+| [semana-5](./exercises/semana-5) | Ejercicios de la semana 5 |
+| [semana-6](./exercises/semana-6) | Ejercicios de la semana 6 |
+| [semana-7](./exercises/semana-7) | Ejercicios de la semana 7 |
+| [semana-8](./exercises/semana-8) | Ejercicios de la semana 8 |
+| [semana-9](./exercises/semana-9) | Ejercicios de la semana 9 |
 
 ## 🛠️ Tecnologías Utilizadas
 
