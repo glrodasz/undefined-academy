@@ -522,7 +522,7 @@ function Hero({ onSignup }) {
       position: "relative",
       overflow: "hidden",
     }}>
-      <div style={{ position: "relative", maxWidth: 720, margin: "0 auto" }}>
+      <div style={{ position: "relative", maxWidth: 1100, margin: "0 auto" }}>
         <Badge>Bootcamp · 16 semanas · Gratis</Badge>
         <h1 style={{
           fontSize: "clamp(56px, 10vw, 104px)",
@@ -729,7 +729,7 @@ function CurriculumSection() {
 
   return (
     <section id="contenidos" style={{ padding: "100px 32px", backgroundColor: tokens.bgLight }}>
-      <div style={{ maxWidth: 800, margin: "0 auto" }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <Badge variant="light">Programa</Badge>
         <h2 style={{
           fontSize: 52,
@@ -744,7 +744,7 @@ function CurriculumSection() {
         <p style={{ fontSize: 17, color: "#4B5563", marginBottom: 40, lineHeight: 1.6 }}>
           De cero a Full-stack en 16 semanas con un currículo estructurado y progresivo.
         </p>
-        <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+        <div className="curriculum-grid">
           {WEEKS.map(({ week, title, topics }) => {
             const isOpen = open === week;
             return (
@@ -842,7 +842,7 @@ function CurriculumSection() {
 function InstructorSection() {
   return (
     <section id="profesor" style={{ padding: "100px 32px", backgroundColor: tokens.bg }}>
-      <div style={{ maxWidth: 800, margin: "0 auto", display: "flex", gap: 48, alignItems: "center", flexWrap: "wrap" }}>
+      <div style={{ maxWidth: 1100, margin: "0 auto", display: "flex", gap: 48, alignItems: "center", flexWrap: "wrap" }}>
         <div style={{
           width: 200,
           height: 200,
@@ -919,7 +919,7 @@ const TESTIMONIALS = [
 function TestimonialsSection() {
   return (
     <section id="testimonios" style={{ padding: "100px 32px", backgroundColor: tokens.bgLight }}>
-      <div style={{ maxWidth: 960, margin: "0 auto" }}>
+      <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         <Badge variant="light">Testimonios</Badge>
         <h2 style={{
           fontSize: 52,
@@ -983,7 +983,7 @@ function FAQSection() {
   const [open, setOpen] = useState(null);
   return (
     <section id="faq" style={{ padding: "100px 32px", backgroundColor: tokens.bgSurface }}>
-      <div style={{ maxWidth: 700, margin: "0 auto" }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <Badge>Preguntas frecuentes</Badge>
         <h2 style={{
           fontSize: 52,
@@ -995,7 +995,7 @@ function FAQSection() {
         }}>
           FAQ
         </h2>
-        <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+        <div className="faq-grid">
           {FAQ_ITEMS.map(({ q, a }, i) => {
             const isOpen = open === i;
             return (
@@ -1059,7 +1059,7 @@ function CTASection({ onSignup }) {
       padding: "120px 48px",
       textAlign: "center",
     }}>
-      <div style={{ maxWidth: 800, margin: "0 auto" }}>
+      <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         <h2 style={{
           fontSize: "clamp(48px, 8vw, 88px)",
           fontWeight: 700,
