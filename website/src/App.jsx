@@ -1119,16 +1119,17 @@ function Footer() {
       </div>
       <div style={{ display: "flex", gap: 24, justifyContent: "center", flexWrap: "wrap", marginBottom: 24 }}>
         {[
-          { label: "Discord",   href: "https://undf.sh/discord" },
+          { label: "GitHub",    href: "https://github.com/glrodasz/academy" },
           { label: "YouTube",   href: "https://undf.sh/en-diferido" },
-          { label: "Twitter",   href: "https://twitter.com/undefinedshell" },
-          { label: "Instagram", href: "https://instagram.com/undefinedshell" },
           { label: "Twitch",    href: "https://undf.sh/en-vivo" },
+          { label: "Discord",   href: "https://undf.sh/discord" },
+          { label: "Twitter",   href: "https://twitter.com/guillermorodas" },
+          { label: "Instagram", href: "https://instagram.com/_guillermorodas" },
         ].map(({ label, href }) => (
           <FooterLink key={label} href={href} label={label} />
         ))}
       </div>
-      <p style={{ fontSize: 13, color: tokens.border }}>
+      <p style={{ fontSize: 13, color: tokens.textMuted }}>
         © {new Date().getFullYear()} Guillermo Rodas · undefined.academy
       </p>
     </footer>
