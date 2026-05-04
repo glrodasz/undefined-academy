@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ronald Gonzalez</title>
+  <link rel="stylesheet" href="/student-cvs/Peke-4001/styles.css">
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1>Ronald Gonzalez 👨🏽‍💻</h1>
+      <hr>
+    </header>
+
+    <article>
+      <h2>Web Developer</h2>
+
+      <section>
+
+        <h2>About me</h2>
+
+        <p>I am a recently gratuated <strong>software engineer</strong> from Venezuela. I am a programming enthusiast
+          who is looking for his first job experience in a company where i can apply the knowledge that i have
+          acquired
+          during my college years, that allows me to grow in the labor and personal area.
+        </p>
+
+        <h2>🎓 Studies</h2>
+        <ul>
+          <li><strong>Bootcamp Full-Stack JavaScript</strong> - Guillermo Rodas en Udefined Academy</li>
+          <li><strong>Software Engineer</strong> - Universidad Rafael Belloso Chacin</li>
+          <li><strong>Courses in HTML, CSS, JavaScript and UI Frameworks</strong> - platzi.com</li>
+        </ul>
+
+        <h2>🛠️ Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Visual Studio Code</li>
+          <li>Terminal</li>
+          <li>Git y GitHub</li>
+          <li>Figma</li>
+          <li>MySQL</li>
+          <li>PHP</li>
+        </ul>
+
+      </section>
+
+      <section>
+        <h2>Github Profile 🔗</h2>
+        <p><a href="https://github.com/rdjgl24">https://github.com/rdjgl24</a></p>
+        <h2>Contacto</h2>
+
+        <form id="form">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input id="name" name="name" type="text" placeholder="Ingrese su nombre" required="">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Ingrese su correo" required="">
+          </div>
+
+          <div class="form-group">
+            <fieldset>
+              <legend>Presupuesto</legend>
+              <input type="radio" name="budget" id="100" value="100" required="">
+              <label for="100">100$</label>
+
+              <input type="radio" name="budget" id="500" value="500" required="">
+              <label for="500">500$</label>
+
+              <input type="radio" name="budget" id="1000" value="1000" required="">
+              <label for="1000">1.000$</label>
+            </fieldset>
+            <div class="help">
+              Este presupuesto es la base, no el total.
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="type">Tipo de proyecto</label>
+            <select id="type" name="type" required="">
+              <option value="" selected="" disabled="">Seleccione uno</option>
+              <option value="website">Sitio web</option>
+              <option value="webapp">Aplicación web</option>
+              <option value="mobile">Aplicación mobile</option>
+              <option value="design">Diseño web</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="description">Descripción</label>
+            <textarea id="description" name="description" rows="5" required=""></textarea>
+            <div class="help">
+              Escribe una descripción del proyecto en al menos 500 palabras.
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="terms">
+              <input type="checkbox" id="terms" name="terms" required="">
+              <span>Acepto los terminos y condiciones</span>
+            </label>
+          </div>
+          <input type="submit" class="btn">
+
+        </form>
+      </section>
+
+      <section>
+        <h2>Bootcamp ⛺</h2>
+
+        <h3>Comandos de la terminal 🟥</h3>
+
+        <table>
+          <tr>
+            <th>
+              Comandos
+            </th>
+            <th>Descripción</th>
+          </tr>
+          <tr>
+            <td>ls</td>
+            <td>Lista de carpetas actuales</td>
+          </tr>
+          <tr>
+            <td>cd</td>
+            <td>Lista de carpetas actuales</td>
+          </tr>
+          <tr>
+            <td>mkdir</td>
+            <td>Lista de carpetas actuales</td>
+          </tr>
+          <tr>
+            <td>cat</td>
+            <td>Lista de carpetas actuales</td>
+          </tr>
+          <tr>
+            <td>rm</td>
+            <td>Lista de carpetas actuales</td>
+          </tr>
+        </table>
+
+        <h3>Comandos alias 🟦</h3>
+        <table>
+          <tr>
+            <th>Comandos</th>
+            <th>Descripción</th>
+          </tr>
+          <tr>
+            <td>
+              <pre><code>alias npms="npm start"</code></pre>
+            </td>
+            <td>Le indica al npm (Node package manager) que corra el comando start</td>
+          </tr>
+          <tr>
+            <td>
+              <pre><code>alias cl="clear"</code></pre>
+            </td>
+            <td>Sirve para limpiar la terminal</td>
+          </tr>
+        </table>
+      </section>
+    </article>
+  </div>
+
+  <script>
+    const form = document.querySelector("#form");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      location.reload()
+    })
+  </script>
+</body>
+
+</html>

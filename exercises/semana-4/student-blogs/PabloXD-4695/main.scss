@@ -1,0 +1,13 @@
+@use "./styles/base.scss";
+@use "./styles/desktop.scss";
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: inherit;
+}

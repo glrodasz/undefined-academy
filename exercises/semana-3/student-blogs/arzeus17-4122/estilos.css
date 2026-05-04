@@ -1,0 +1,69 @@
+body {
+    font-family: Arial;
+    background-color: #2284b1;
+    color:aliceblue;
+  }
+  
+  div {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #2bb7d0;
+    padding: 20px;
+    background-color: #0c5868;
+    text-align: justify;    
+    margin-top: 10px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    border: 4px solid #0c314c;
+  }
+  
+  input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid Gainsboro;
+    width: 300px;
+    background: WhiteSmoke;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20px auto auto;
+    gap: 20px;    
+    background-color: #0c314c;
+    padding: 30px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 /4;
+    grid-row: 1 / 2;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 4px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  div:last-child {
+    grid-column: 1 / 4;
+  }
+
+  h1 {
+    text-align: center;
+    color:#2bb7d0;
+    font-size:xx-large;
+    padding: 10px;
+  }
+
+  h2 {
+    text-align: center;
+    color:#04031d;
+  }

@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Alkatra", cursive;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(160, 160, 192);
+}
+
+.menu-slide {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+  margin: 20px;
+}
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30px;
+  cursor: pointer;
+}
+
+.tool:hover {
+  background-color: #333;
+  color: rgb(235, 239, 243);
+  border-radius: 2px;
+}
+
+.medium {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 10px;
+}
+
+.perfil {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(176, 209, 105);
+}
+
+.picture {
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(111, 123, 161);
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px rgb(34, 41, 245);
+}
+
+h2 {
+  margin: 10px;
+  font-weight: 900;
+}
+
+.card > p {
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  gap: 30%;
+  margin: 10px;
+}
+
+.profile > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile > a:hover {
+  color: rgb(19, 19, 245);
+  cursor: pointer;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  border-radius: 20px;
+  background-color: rgb(111, 123, 161);
+  margin-bottom: 20px;
+}
+
+.pintura {
+  width: 400px;
+  height: 400px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}

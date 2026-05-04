@@ -1,0 +1,69 @@
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.container {
+  margin: 0px 5px;
+  border: 1px solid gray;
+}
+
+nav {
+  background-color: white;
+  position: sticky;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  top: 0px;
+  gap: 5px;
+  padding: 5px;
+}
+
+.nav-item {
+  background-color: antiquewhite;
+  cursor: pointer;
+  border: 1px solid black;
+  width: 25%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.nav-item:hover {
+  background-color: burlywood;
+}
+
+article {
+  margin: 0px 30px;
+  border: 1px solid gray;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid Gainsboro;
+}
+
+div:last-child {
+  grid-column: 2 / 4;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  text-align: center;
+}

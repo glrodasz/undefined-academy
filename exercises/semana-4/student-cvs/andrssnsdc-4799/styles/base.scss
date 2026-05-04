@@ -1,0 +1,66 @@
+@use 'variables';
+
+@media screen and (max-width: 730px) {
+  footer a{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  input[type="search"] {
+    width: 40%;
+  }
+  
+  header{display: flex;
+    flex-direction: column;
+    line-height: 1;
+    margin-top: 10px; 
+    
+  }
+  h1{margin: auto;
+  font-size: 14px;}
+
+  div.git { 
+    margin-top: 10px;
+    order: 1;
+  }
+  header h1 {
+    margin-block-end: 5%;
+    order: 3; 
+  }
+  figure {
+    height: 100px;
+    width: 70px;
+    display: flex; 
+    justify-content: center;
+    align-content: center;
+    order: 2; 
+  }
+
+  .formgroup fieldset {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 5%;
+  }
+  .container ul {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .container div:hover {
+    transform: scale(1.07);
+    transition: transform 0.5s;
+    
+  }
+ 
+}

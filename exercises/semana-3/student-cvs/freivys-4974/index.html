@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreivysDev - Frontend Developer</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="Header">
+      <img class="Header-logo" src="./logo.png" alt="Logo" loading="lazy" />
+      <h1 class="Header-title">Hi, I'm <strong>Freivys Paredes</strong></h1>
+      <h2 class="Header-subtitle"><em>Frontend Developer</em></h2>
+      <a
+        class="Header-github"
+        href="https://github.com/FreivysDev"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Link a mi perfil de GitHub</a
+      >
+    </header>
+
+    <!-- Main -->
+    <article class="Main">
+      <!-- About -->
+      <section class="About">
+        <h2 class="Subtitle">About me</h2>
+        <p class="About-paragraph">
+          Hi, I'm Freivys. I'm currently studying to be a Full Stack Developer.
+          I am passionate about programming and web development since I was
+          young.<br />I have experience in the area of computer support, HW, SW,
+          Printers, cabling and networking.<br />My skills are: teamwork,
+          proactivity, creativity, good interpersonal relationships and
+          responsibility.
+        </p>
+      </section>
+      <hr />
+
+      <!-- Tech Stack -->
+      <section class="Stack">
+        <h2 class="Subtitle">Tech Stack</h2>
+        <div class="Stack-img">
+          <img
+            class="Stack-logo"
+            src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+            alt="HTML5"
+            loading="lazy" />
+          <img
+            class="Stack-logo"
+            src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
+            alt="CSS3"
+            loading="lazy" />
+          <img
+            class="Stack-logo"
+            src="https://img.shields.io/badge/sass-%23CB6699.svg?style=for-the-badge&logo=sass&logoColor=white"
+            alt="Sass"
+            loading="lazy" />
+          <img
+            class="Stack-logo"
+            src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"
+            alt="Bootstrap"
+            loading="lazy" />
+          <img
+            class="Stack-logo"
+            src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7"
+            alt="Netlify"
+            loading="lazy" />
+          <img
+            class="Stack-logo"
+            src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"
+            alt="MySQL"
+            loading="lazy" />
+          <img
+            class="Stack-logo"
+            src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white"
+            alt="MariaDB"
+            loading="lazy" />
+          <img
+            class="Stack-logo"
+            src="https://img.shields.io/badge/Gimp-657D8B?style=for-the-badge&logo=gimp&logoColor=FFFFFF"
+            alt="Gimp"
+            loading="lazy" />
+          <img
+            class="Stack-logo"
+            src="https://img.shields.io/badge/Inkscape-e0e0e0?style=for-the-badge&logo=inkscape&logoColor=080A13"
+            alt="Inkscape"
+            loading="lazy" />
+          <img
+            class="Stack-logo"
+            src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"
+            alt="Figma"
+            loading="lazy" />
+          <img
+            class="Stack-logo"
+            src="https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white"
+            alt="Notion"
+            loading="lazy" />
+        </div>
+      </section>
+      <hr />
+
+      <!-- Contact -->
+      <section class="Contact">
+        <h2 class="Subtitle">Contact</h2>
+
+        <!-- Form -->
+        <form class="Form">
+          <div class="Form-group">
+            <label class="Form-title" for="fullname">Full name</label>
+            <input
+              class="Form-input"
+              type="text"
+              name="fullname"
+              id="fullname"
+              required />
+          </div>
+          <div class="Form-group">
+            <label class="Form-title" for="email">Email address</label>
+            <input
+              class="Form-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="tuemail@mail.com"
+              required />
+          </div>
+          <div class="Form-group">
+            <label class="Form-title" for="phone">Telephone number</label>
+            <input
+              class="Form-input"
+              type="tel"
+              name="phone"
+              id="phone"
+              required />
+          </div>
+          <div class="Form-group">
+            <label class="Form-title" for="project">Type of project</label>
+            <select class="Form-select" name="project" id="project" required>
+              <option value="" selected disabled>Select an option</option>
+              <option value="webSite">Web Site</option>
+              <option value="webApp">Web App</option>
+              <option value="mobileApp">Mobile App</option>
+              <option value="designWeb">Design Web</option>
+            </select>
+          </div>
+          <div class="Form-group">
+            <label class="Form-title" for="description">Description</label>
+            <textarea
+              class="Form-textarea"
+              name="description"
+              id="description"
+              cols="20"
+              rows="5"
+              required>
+            </textarea>
+          </div>
+          <div class="Form-group">
+            <label class="Form-title" for="terms">
+              <input
+                class="Form-terms"
+                type="checkbox"
+                name="terms"
+                id="terms"
+                required />
+              <span class="Form-help">I accept the terms and conditions</span>
+            </label>
+          </div>
+          <div class="Form-btn">
+            <button class="Btn" type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </article>
+    <hr />
+
+    <!-- Footer -->
+    <footer class="Footer">
+      <p class="Footer-paragraph">
+        Bootcamp Full-Stack JavaScript Developer by
+        <a
+          class="Footer-anchor"
+          href="https://undefined.academy/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Undefined Academy</a
+        >
+      </p>
+      <p class="Footer-paragraph">
+        Website developed by
+        <a
+          class="Footer-anchor"
+          href="https://github.com/FreivysDev"
+          target="_blank"
+          rel="noopener noreferrer"
+          >FreivysDev</a
+        >
+      </p>
+      <p class="Footer-paragraph">&copy; 2023</p>
+    </footer>
+
+    <script type="module" src="./main.mjs"></script>
+  </body>
+</html>

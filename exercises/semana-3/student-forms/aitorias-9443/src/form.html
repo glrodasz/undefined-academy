@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aitorias">
+    <meta name="description" content="My name is Aitor, pleased to meet you. I'm a front-end developer from Barcelona, Spain. I'm specialized in HTML, CSS, JavaScript and PHP.">
+    <meta name="color-scheme" content="light dark">
+
+    <title>Aitorias - Front-end developer</title>
+
+    <!-- CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script async defer src="main.mjs"></script>
+</head>
+<body class="bg-white dark:bg-slate-900">
+    <header class="sticky top-0 z-40" id="header">
+        <div class="bg-white border-b border-gray-200 dark:bg-slate-900 dark:border-slate-500">
+            <div class="focus:outline-none mx-auto max-w-7xl px-4 py-5 md:py-7 relative transition-all sm:px-3 md:px-5">
+                <nav class="items-center flex flex-wrap justify-between mx-auto w-full">
+                    <a href="/" class="text-eldengold font-mantinia text-2xl uppercase dark:text-white">aitorias</a>
+                    <div class="items-center hidden order-3 w-full md:flex md:order-2 md:w-fit animate-fade-in-down" id="navbar">
+                        <ul class="items-center flex flex-col justify-start mt-5 space-y-7 md:flex-row md:mt-0 md:space-x-7 md:space-y-0">
+                            <li>
+                                <a href="index.html" class="text-black dark:text-white">Inicio</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="items-center flex justify-between space-x-7 order-2 md:order-3">
+                        <button type="button" class="text-black dark:text-white" id="change-scheme">
+                            <span class="dark:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun" viewBox="0 0 16 16">
+                                    <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                                </svg>
+                            </span>
+                            <span class="hidden dark:inline">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <button type="button" id="toggle-menu" aria-controls="navbar-default" aria-expanded="false" class="items-center rounded-lg text-black inline-flex text-sm ml-3 p-2 transition-all duration-75 ease-in-out hover:bg-gray-100 focus:outline-none md:hidden dark:text-white dark:hover:bg-gray-700" data-collapse-toggle="navbar">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="mb-7">
+        <div class="page">
+            <!-- Hero -->
+            <section>
+                <div class="hero">
+                    <div class="items-center bg-fixed bg-nokron bg-center bg-no-repeat bg-cover flex justify-center min-h-500 relative">
+                        <div class="text-white items-center flex flex-col justify-center mx-auto max-w-7xl px-4 relative text-center sm:px-3 md:px-5 focus:outline-none  animate-fade-in-up">
+                            <h1 class="text-5xl font-bold mb-5">Formulario de contacto</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Hero -->
+            <!-- About me -->
+            <section class="focus:outline-none mx-auto max-w-7xl px-4 relative sm:px-3 md:px-5 scroll-mt-100" id="about-me">
+                <div class="bg-white border border-eldengold rounded drop-shadow-md -mt-7 px-7 py-7 dark:bg-slate-700 animate-fade-in-up">
+                    <article>
+                        <form action="/" class="form" id="form" method="get">
+                            <div class="relative z-0 w-full mb-7 group">
+                                <input type="text" name="name" id="name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b border-gray-300 appearance-none dark:text-white dark:border-gray-500 dark:focus:border-eldengold focus:outline-none focus:ring-0 focus:border-eldengold peer" placeholder=" " required>
+                                <label for="name" class="peer-focus:font-medium absolute text-sm text-black dark:text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-eldengold peer-focus:dark:text-eldengold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre</label>
+                            </div>
+                            <div class="relative z-0 w-full mb-7 group">
+                                <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b border-gray-300 appearance-none dark:text-white dark:border-gray-500 dark:focus:border-eldengold focus:outline-none focus:ring-0 focus:border-eldengold peer" placeholder=" " required>
+                                <label for="email" class="peer-focus:font-medium absolute text-sm text-black dark:text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-eldengold peer-focus:dark:text-eldengold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Correo electrónico</label>
+                            </div>
+                            <div class="relative z-0 w-full mb-7 group">
+                                <input type="url" name="website" id="website" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b border-gray-300 appearance-none dark:text-white dark:border-gray-500 dark:focus:border-eldengold focus:outline-none focus:ring-0 focus:border-eldengold peer" placeholder=" " required>
+                                <label for="website" class="peer-focus:font-medium absolute text-sm text-black dark:text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-eldengold peer-focus:dark:text-eldengold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">URL de tu web</label>
+                            </div>
+                            <div class="relative z-0 w-full mb-7 group">
+                                <label for="birthday" class="peer-focus:font-medium text-sm text-black dark:text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-eldengold peer-focus:dark:text-eldengold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Fecha de nacimiento</label>
+                                <input type="date" name="birthday" id="birthday" max="" class="block py-2.5 px-0 max-w-lg w-full text-sm text-gray-900 bg-transparent border-0 border-b border-gray-300 appearance-none dark:text-white dark:border-gray-500 dark:focus:border-eldengold focus:outline-none focus:ring-0 focus:border-eldengold peer" placeholder=" " required>                            </div>
+                            <div class="relative z-0 w-full mb-7 group">
+                                <label for="color" class="peer-focus:font-medium text-sm text-black dark:text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-eldengold peer-focus:dark:text-eldengold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">¿Cuál es tu color favorito?</label>
+                                <input type="color" name="color" id="color" class="block mt-2 max-w-lg w-full appearance-none focus:outline-none focus:ring-0 peer" required>
+                            </div>
+                            <div class="mb-7">
+                                <fieldset>
+                                    <legend class="mb-5">¿Qué tipo de desarrollador eres?</legend>
+                                    <div class="flex items-center mb-5">
+                                        <input id="backend" type="radio" name="developer" value="backend" class="accent-eldengold w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-500" checked required>
+                                        <label for="backend" class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Back-end</label>
+                                    </div>
+                                    <div class="flex items-center mb-5">
+                                        <input id="fronted" type="radio" name="developer" value="frontend" class="accent-eldengold w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-500" required>
+                                        <label for="fronted" class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Front-end</label>
+                                    </div>
+                                    <div class="flex items-center mb-5">
+                                        <input id="fullstack" type="radio" name="developer" value="fullstack" class="accent-eldengold w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-500" required>
+                                        <label for="fullstack" class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Full-stack</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="mb-7">                              
+                                <label for="region" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">¿Cuál es tu región?</label>
+                                <select id="region" name="region" class="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    <option value="" id="" selected>Selecciona</option>
+                                    <option value="africa">África</option>
+                                    <option value="american">América del norte</option>
+                                    <option value="latam">América del sur</option>
+                                    <option value="europe">Europe</option>
+                                </select>
+                            </div>
+                            <div class="mb-7">
+                                <label for="message" class="block mb-2 text-sm font-medium text-black dark:text-white">¿Quieres dejarnos un comentario?</label>
+                                <textarea id="message" name="message" rows="10" maxlength="255" class="block p-2.5 w-full text-sm text-gray-900 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Tu comentario"></textarea>
+                                <small class="block mt-2">Máximo 255 caracteres</small>
+                            </div>
+                            <div class="mb-7">
+                                <div class="flex items-center mb-4">
+                                    <input id="accept" type="checkbox" value="accept" class="accent-eldengold w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-500" required>
+                                    <label for="accept" class="ml-2 text-sm font-medium text-black dark:text-white">Acepto enviar el formulario</label>
+                                </div>
+                            </div>
+                            <button type="submit" id="submit" class="text-white bg-eldengold hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-eldengold dark:hover:bg-black dark:focus:ring-blue-800 transition duration-150 ease-in-out">Enviar</button>
+                            <input type="reset" class="cursor-pointer text-white bg-gray-700 hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-gray-500 dark:hover:bg-black dark:focus:ring-blue-800 transition duration-150 ease-in-out">
+                        </form> 
+                    </article>
+                </div>
+            </section>
+            <!-- /About me-->
+        </div>
+    </main>
+    <footer class="focus:outline-none mx-auto max-w-7xl pb-7 px-4 sm:px-3 md:px-5 relative">
+        <div class="text-dark block space-y-7 md:flex md:items-center md:justify-between md:-space-y-0 dark:text-white">
+            <div class="mb-5 sm:mb-0 sm:flex">
+                <span>&copy; <span datetime="" id="year"></span> - <span class="mr-5" id="author">Aitorias</span></span>
+            </div>
+            <div class="flex items-center justify-between">
+                <ul class="flex items-center justify-between space-x-5"> 
+                    <li class="text-0">
+                        <a href="https://es.linkedin.com/in/aitordediego" target="_blank">
+                            <span class="sr-only">LinkedIn</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="text-0">
+                        <a href="https://github.com/aitorias/" target="_blank">
+                            <span class="sr-only">GitHub</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="text-gray-200 dark:text-slate-500">|</span>
+                    </li>
+                    <li class="text-0">
+                        <a href="http://www.w3.org/html/logo/" target="_b">
+                            <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3.png" width="50" alt="HTML5 Powered with CSS3 / Styling" title="HTML5 Powered with CSS3 / Styling">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Back to top button -->
+    <button type="button" class="bg-eldengold text-white rounded-full bottom-25 p-2 fixed right-5 back-to-top-btn" id="back-to-top-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
+          </svg>          
+    </button>
+    <!-- /back to top button -->
+</body>
+</html>

@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-dark-green);
+    background-color: var(--color-light-green);
+    padding: 0.5em;
+    font-size: 1.2em;
+    font-weight: 900;
+    border-radius: 8px 8px 0 0 ;
+}
+
+.footerIcon {
+    width: 1.2em;
+}

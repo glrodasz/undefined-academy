@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script async defer type="module" src="main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Contact me 📩</h1>
+        <p class="header-paragraph">Hi 👋, I'm Dario Ernesto Roca a Full Stack Web developer. Let's talk about your project and find out how I can help you with it.</p>
+          <div class="header-link__container"><a class="header-link" href="index.html" title="Go to Homepage">Return Home</a></div>
+      </header>
+    <main class="main page">
+        <h2>Fill this form to contact</h2>
+        <form class="contact-form" action="/server" method="GET">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Add your complete name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Add your Email" required>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Budget</legend>
+                    <input type="radio" name="budget" id="10000" value="10000" required><label for="10000">$10.000</label>
+                    <input type="radio" name="budget" id="5000" value="5000" required><label for="5000">$5.000</label>
+                    <input type="radio" name="budget" id="1000" value="1000" required><label for="1000">$1.000</label>
+                </fieldset>
+                <div class="help">This budget is the base not the total</div>
+            </div>
+            <div class="form-group">
+                <label for="type">Type of project</label>
+                <select id="type" name="type" required>
+                    <option value="" disabled selected>Select one</option>
+                    <option value="website">Website</option>
+                    <option value="webapp">Webapp</option>
+                    <option value="mobile">Mobile app</option>
+                    <option value="design">Design</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                <div class="help">Write a description of the project in at least 500 words.</div>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input id="terms" type="checkbox" name="terms" required>
+                    <span>I agree to the terms & conditions</span>
+                </label>
+            </div>
+            <div class="button-container">
+                <button class="send-button">Send</button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <div>This profile page was created and developed by Darío Ernesto Roca | 2013</div>
+    </footer>
+</body>
+</html>

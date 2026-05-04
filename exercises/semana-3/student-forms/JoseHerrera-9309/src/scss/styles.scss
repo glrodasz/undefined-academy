@@ -1,0 +1,30 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+        /* Centrar el formulario verticalmente */
+html,
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:cadetblue;
+}
+
+   /* Estilo personalizado para el formulario */
+   .container {
+    max-width: 400px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }

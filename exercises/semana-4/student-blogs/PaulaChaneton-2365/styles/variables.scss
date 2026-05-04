@@ -1,0 +1,29 @@
+$color-Delta: #D3D3D3;
+$color-CuriuosBlue: #73A2F2;
+$color-WildSand:  #F5F5F5;
+$color-LavenderPink:#FBAED2;
+$color-LavenderMagenta: #EE82EE;
+$font-general: "Helvetica", "Arial", sans-serif;
+$border-CuriuosBlue: 1px solid $color-CuriuosBlue;
+$border-LavenderMagenta:1px solid $color-LavenderMagenta;
+
+
+html,
+body{
+    background-color: $color-Delta;
+    font-family: $font-general;
+   }
+
+input{
+    border: $border-CuriuosBlue;  
+}
+
+.card{
+    background-color: $color-WildSand;
+    border: $border-CuriuosBlue; 
+}
+
+button{
+    border: $border-LavenderMagenta;
+    background-color:$color-LavenderPink;
+}

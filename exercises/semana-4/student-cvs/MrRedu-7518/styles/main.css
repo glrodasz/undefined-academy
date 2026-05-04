@@ -1,0 +1,292 @@
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #282828;
+  color: #d1d1d1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body h1, body h2, body h3 {
+  font-size: 3rem;
+}
+body h4, body h5, body h6 {
+  font-size: 2.6rem;
+}
+body p {
+  font-size: 2rem;
+}
+
+.father-container {
+  padding: 30px 60px;
+}
+.father-container .main-container {
+  margin-top: 40px;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.father-container .main-container main > .whoaim {
+  background-image: radial-gradient(circle, #8b5cf6, #8251ea, #7947de, #703cd2, #6731c6, #5f2ab9, #5724ad, #4f1da1, #461a92, #3e1782, #361374, #2e1065);
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7654321);
+  display: flex;
+  flex-direction: column;
+}
+.father-container .main-container main > .whoaim .container-img {
+  display: grid;
+  place-items: center;
+  margin-bottom: 20px;
+}
+.father-container .main-container main > .whoaim .container-img img {
+  width: 50%;
+  border-radius: 50%;
+}
+.father-container .main-container main > .whoaim .container-info article header h1 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.father-container .main-container main > .whoaim .container-info article header h2 {
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.father-container .main-container main > .whoaim .container-info article section p {
+  margin-top: 0;
+}
+.father-container .main-container main > .whoaim .container-info article footer a.read-more {
+  font-size: 2.2rem;
+  display: block;
+  width: 100%;
+  background-color: #5b21b6;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #d1d1d1;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.5);
+  outline: 1px solid #303030;
+}
+.father-container .main-container main > .whoaim .container-info article footer a.read-more:focus {
+  background-color: #4c1d95;
+  box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+  color: #c4b5fd;
+}
+.father-container .main-container main > .container-form h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.father-container .main-container main > .container-form .container-form-adentro {
+  background-image: linear-gradient(215deg, hsl(0, 0%, 19%) 0%, hsl(267, 33%, 28%) 14%, hsl(264, 55%, 36%) 24%, hsl(264, 64%, 40%) 32%, hsl(266, 45%, 32%) 39%, hsl(269, 19%, 23%) 46%, hsl(269, 19%, 23%) 52%, hsl(266, 45%, 32%) 60%, hsl(264, 64%, 40%) 68%, hsl(264, 55%, 36%) 78%, hsl(267, 33%, 28%) 88%, hsl(0, 0%, 19%) 100%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7654321);
+  border-radius: 10px;
+}
+.father-container .main-container main > .container-form .container-form-adentro form {
+  padding: 40px;
+}
+.father-container .main-container main > .container-form .container-form-adentro form .form-content {
+  margin-bottom: 15px;
+}
+.father-container .main-container main > .container-form .container-form-adentro form .form-content input[type=text], .father-container .main-container main > .container-form .container-form-adentro form .form-content input[type=email], .father-container .main-container main > .container-form .container-form-adentro form .form-content select, .father-container .main-container main > .container-form .container-form-adentro form .form-content textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  padding: 10px;
+  background-color: transparent;
+  color: #a78bfa;
+  font-weight: bolder;
+}
+.father-container .main-container main > .container-form .container-form-adentro form .form-content select {
+  text-align: center;
+}
+.father-container .main-container main > .container-form .container-form-adentro form .form-content label {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #a7a7a7;
+}
+.father-container .main-container main > .container-form .container-form-adentro form .form-content:focus-within label {
+  color: #7c3aed;
+  text-shadow: 0px 0px 8px black;
+}
+.father-container .main-container main > .container-form .container-form-adentro form .form-content:focus-within input {
+  background-color: rgba(226, 226, 226, 0.1);
+}
+.father-container .main-container main > .container-form .container-form-adentro form textarea:focus {
+  background-color: rgba(226, 226, 226, 0.1);
+}
+.father-container .main-container main > .container-form .container-form-adentro form .form-content.msg .help {
+  font-weight: bold;
+  color: #a78bfa;
+  text-shadow: 0 0 5px black;
+  font-size: 1.2rem;
+}
+.father-container .main-container main > .container-form .container-form-adentro form .botones {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.father-container .main-container main > .container-form .container-form-adentro form .botones input {
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #5b21b6;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.5);
+  color: #d1d1d1;
+  outline: 1px solid #303030;
+  cursor: pointer;
+}
+.father-container .main-container main > .container-form .container-form-adentro form .botones input:focus {
+  box-shadow: none;
+}
+.father-container .main-container main > .container-form .container-form-adentro form .botones input.enviar:focus {
+  background-color: #4c1d95;
+  color: #ddd6fe;
+}
+.father-container .main-container main > .container-form .container-form-adentro form .botones input.cancelar {
+  background-color: rgb(65, 65, 65);
+}
+.father-container .main-container main > .container-form .container-form-adentro form .botones input.cancelar:focus {
+  background-color: #4c1d95;
+}
+.father-container .main-container .achievements {
+  margin-top: 20px;
+}
+.father-container .main-container .achievements header h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.father-container .main-container .achievements section.bootcamps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.father-container .main-container .achievements section.bootcamps article.anAchievement {
+  background-color: #303030;
+  padding: 40px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7654321);
+}
+.father-container .main-container .achievements section.bootcamps article.anAchievement header img {
+  width: 100%;
+}
+.father-container .main-container .achievements section.bootcamps article.anAchievement footer span {
+  font-size: 1.4rem;
+}
+.father-container .main-container .achievements section.bootcamps article.anAchievement footer span a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.father-container .main-container .achievements section.bootcamps article.undefined-shell {
+  min-height: 400px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.father-container .main-container .achievements section.bootcamps article.undefined-shell header h2 {
+  text-align: center;
+  font-size: 2.6rem;
+}
+.father-container .main-container .achievements section.bootcamps article.undefined-shell section p {
+  font-size: 1.6rem;
+}
+.father-container .main-container .achievements section.bootcamps article.undefined-shell footer span a {
+  color: #CDB26B;
+}
+.father-container .main-container .achievements section.bootcamps article.undefined-shell footer span a:focus {
+  color: #cf842e;
+}
+.father-container .main-container .achievements section.bootcamps article.otro-bootcamp {
+  min-height: 400px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.father-container .main-container .achievements section.bootcamps article.otro-bootcamp header h2 {
+  text-align: center;
+  font-size: 2.6rem;
+}
+.father-container .main-container .achievements section.bootcamps article.otro-bootcamp section p {
+  font-size: 1.6rem;
+}
+.father-container .main-container .achievements section.bootcamps article.otro-bootcamp footer span {
+  font-size: 1.4rem;
+}
+.father-container .main-container .achievements section.progress .container-progress h4 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+}
+.father-container .main-container .achievements section.progress .container-progress .container-schools {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+.father-container .main-container .achievements section.progress .container-progress .container-schools .school {
+  background-color: #303030;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7654321);
+}
+.father-container .main-container .achievements section.progress .container-progress .container-schools .school h2 {
+  font-size: 2.2rem;
+}
+.father-container .main-container .achievements section.progress .container-progress .container-schools .school img {
+  border-radius: 25px;
+}
+.father-container .main-container .achievements section.progress .container-progress .container-schools .school p {
+  font-size: 1.6rem;
+}
+.father-container .main-container .achievements section.progress .container-progress .container-schools .school:hover {
+  background-image: linear-gradient(to top, #424242, #423e4d, #423a58, #443561, #472f6a, #472f6a, #472f6a, #472f6a, #443561, #423a58, #423e4d, #424242);
+}
+.father-container .main-container .achievements section.progress .container-progress .container-schools .school:hover img {
+  transform: rotateY(3.142rad);
+  transition: transform 0.6s;
+}
+
+@media screen and (min-width: 1100px) {
+  .father-container .main-container {
+    flex-direction: row;
+  }
+  .father-container .main-container main > .whoaim .container-info footer a.read-more:hover {
+    background-color: #551fac;
+  }
+  .father-container .main-container main > .container-form {
+    margin-top: 40px;
+  }
+  .father-container .main-container .achievements {
+    margin: 0;
+  }
+  .father-container .main-container .achievements section.bootcamps article.anAchievement {
+    padding: 40px 80px;
+  }
+  .father-container .main-container .achievements section.bootcamps article.anAchievement footer span a:hover {
+    text-decoration: underline;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

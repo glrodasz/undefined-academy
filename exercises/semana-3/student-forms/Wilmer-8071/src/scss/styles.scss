@@ -1,0 +1,52 @@
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+html {
+    box-sizing: border-box;
+    font-size: 62.50%;
+    }
+  *, *:before, *:after {
+    box-sizing: inherit;}
+
+body {
+    background-color: tomato;
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.form-group{
+    border: 1px solid lightgray;
+    margin: 2rem 0;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+label, input[type="text"], input[type="email"]  {
+    width: 100%;
+    display: block;
+}
+
+form{
+    border: 3px solid #000;
+    padding: 20px;
+    width: 100%;
+}
+
+
+@media (min-width: 480px) {
+    form {
+        border: 3px solid #000;
+        padding: 20px;
+        width: 80%;
+        display: inline-block;
+    }
+}
+
+

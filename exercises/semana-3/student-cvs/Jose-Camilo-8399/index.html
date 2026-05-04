@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+   <link rel="stylesheet" href="./styles.css">
+   <title>Perfil Personal</title>
+</head>
+
+<body>
+   <div class="container">
+      <div class="nav-bar">
+         <nav id="nav">
+            <div class="logo">
+               <span>{ Jose Camilo ; }</span>
+            </div>
+            <ul>
+               <li><a class="nav-link" href="/">Home</a></li>
+               <li><a class="nav-link" href="/">Blog</a></li>
+               <li><a class="nav-link" href="#about">About me</a></li>
+               <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+         </nav>
+         <div class="nav-bar-hamburg">
+            <i class="uil uil-bars"></i>
+         </div>
+      </div>
+      <div class="main">
+         <main>
+            <div class="main-content">
+               <div class="main-social">
+                  <a class="social-link" href="https://github.com/JoseCamilo84/" target="_blank">
+                     <i class="uil uil-github redes_social"></i>
+                  </a>
+                  <a class="social-link"
+                     href="https://www.linkedin.com/in/jos%C3%A9-camilo-rodr%C3%ADguez-vera-22920319a/" target="_blank">
+                     <i class="uil uil-linkedin redes_social"></i>
+                  </a>
+                  <a class="social-link" href="https://twitter.com/Joscamilo84" target="_blank">
+                     <i class="uil uil-twitter redes_social"></i>
+                  </a>
+               </div>
+               <div class="main-avatar">
+                  <img src="./assets/perfil-2.jpg" class="img-perfil" alt="foto-perfil" />
+               </div>
+               <div class="main-name">
+                  <h1>Hi, I'm <span class="color-name">José Camilo</span></h1>
+                  <p id="animation"></p>
+               </div>
+               <div class="main-btn">
+                  <a class="btn btn-contact" href="#contact">Contact me</a>
+               </div>
+            </div>
+         </main>
+      </div>
+      <div class="about">
+         <a name="about"></a>
+         <section>
+            <div class="about-content">
+               <h2>About Me</h2>
+               <p>Hello 👋, my name is José Camilo, I'm a future <strong>FullStack Web Developer,</strong> I have 3
+                  years as a self-taught, in this time I have acquired some skills and knowledge to be able to integrate
+                  a working group.</p>
+               <p>I am passionate about learning and exploring new technologies, I want to gain more knowledge and also
+                  experience labor, with a positive attitude and eager to keep trying to achieve <strong><em>My goal
+                        from day one that touched my first lines of code...</em></strong></p>
+            </div>
+         </section>
+      </div>
+      <div class="skills">
+         <section>
+            <h2>My Skills</h2>
+            <div class="skills-content">
+               <div class="skill-img">
+                  <img src="./assets/img-skills/html5.png" alt="logo-html5">
+               </div>
+               <div class="skill-img">
+                  <img src="./assets/img-skills/css3.png" alt="logo-css3">
+               </div>
+               <div class="skill-img">
+                  <img class="js-opacity" src="./assets/img-skills/js.png" alt="logo-javascript">
+               </div>
+               <div class="skill-img">
+                  <img class="re-opacity" src="./assets/img-skills/react.png" alt="logo-react">
+               </div>
+               <div class="skill-img">
+                  <img src="./assets/img-skills/python.png" alt="logo-python">
+               </div>
+               <div class="skill-img">
+                  <img src="./assets/img-skills/django.png" alt="logo-django">
+               </div>
+            </div>
+         </section>
+      </div>
+      <div class="contact">
+         <a name="contact"></a>
+         <article>
+            <h2>Contact Me</h2>
+            <form id="form">
+               <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" placeholder="Enter first and last name">
+               </div>
+
+               <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" placeholder="Enter your email">
+               </div>
+
+               <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" rows="5" rows="10" cols="5"></textarea>
+               </div>
+
+               <button class="btn">Send message</button>
+            </form>
+         </article>
+      </div>
+      <div class="footer">
+         <footer>
+            <div class="contenedor-footer">
+               <img src="./assets/perfil-2.jpg" alt="foto-perfil">
+               <div class="footer-bio">
+                  <span>{ José Camilo ; }</span>
+                  <p>Hello!... I am a future Javascript Web Developer, eager to continue learning more technologies...
+                  </p>
+               </div>
+            </div>
+            <div>
+               <div class="redes-social">
+                  <a class="social-link" href="https://github.com/JoseCamilo84/" target="_blank">
+                     <i class="uil uil-github redes_social"></i>
+                  </a>
+                  <a class="social-link"
+                     href="https://www.linkedin.com/in/jos%C3%A9-camilo-rodr%C3%ADguez-vera-22920319a/" target="_blank">
+                     <i class="uil uil-linkedin redes_social"></i>
+                  </a>
+                  <a class="social-link" href="https://twitter.com/Joscamilo84" target="_blank">
+                     <i class="uil uil-twitter redes_social"></i>
+                  </a>
+               </div>
+               <span class="copy">© Produced by José Camilo 2023</span>
+            </div>
+         </footer>
+      </div>
+   </div>
+
+   <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+   <script src="./assets/animation.js"></script>
+   <script type="module" src="./index.js"></script>
+
+</body>
+
+</html>

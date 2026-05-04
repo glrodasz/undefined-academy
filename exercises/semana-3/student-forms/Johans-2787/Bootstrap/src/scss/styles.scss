@@ -1,0 +1,31 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+html {
+    box-sizing: border-box;
+}
+
+*  {
+    box-sizing: inherit;
+}
+body {
+    background-image: url(https://images.unsplash.com/photo-1538437616090-64c780652422?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-repeat:repeat;
+}
+
+.flex-item {
+    padding: 0px 40px;
+    margin: 100px auto;
+    width: 500px;
+    height: 600px;
+}
+
+@include media-breakpoint-up(lg) { 
+
+    .flex-item {
+        width: 700px;
+        height:auto;
+
+    }
+
+}

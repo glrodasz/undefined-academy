@@ -1,0 +1,169 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #566b78;
+    background: #eee;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px;
+    gap: 20px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 /4;
+    grid-row: 1 / 2;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+
+  input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid Gainsboro;
+    width: 400px;
+    background: WhiteSmoke;
+  }
+
+  img {
+    width: auto;
+    max-width: 100%;
+  }
+
+
+  /*  Header*/
+  .header {
+    max-width: 1172px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    padding: 0 30px;
+    box-sizing: content-box;
+  }
+
+  .header article {
+    display: flex;
+    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 50px;
+  }
+
+  .header article .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header .container h1 {
+    margin-top: 18px;
+    font-size: 46px;
+  }
+
+  .header .container p {
+    margin-top: 20px;
+    color: #707070;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  /* Cards*/
+
+  .articles {
+    max-width: 1172px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, auto));
+    grid-gap: 104px 54px;
+    box-sizing: content-box;
+  }
+
+  .articles article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .articles article .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .articles .container h1 {
+    margin-top: 16px;
+  }
+
+  .articles .container p {
+    margin-top: 18px;
+    color: #707070;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  /* Footer */
+  footer {
+    width: 100%;
+    margin-top: 104px;
+    padding: 50px 0;
+    background-color: #000;
+    position: relative;
+    color: #707070;
+    text-align: center;
+    font-size: 12px;
+  }
+
+
+  /* Images */
+
+  .header .img-box {
+    border-radius: 0 24px 24px 24px;
+  }
+
+  .header img {
+    aspect-ratio: 112/69;
+    max-width: 700px;
+  }
+
+  .articles .img-box {
+    border-radius: 0 20px 20px 20px;
+  }
+
+  .articles img {
+    aspect-ratio: 355/219;
+  }
+
+  /*
+  .header {
+    display: grid;
+    grid-column: 1 / 4;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid Gainsboro;
+    padding: 5px;
+
+    text-align: center;
+    background: #ddd;
+  }
+
+  div:last-child {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+  }

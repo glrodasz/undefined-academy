@@ -1,0 +1,21 @@
+{
+  "name": "ezequielcaste-9004",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "sass": "sass main.scss main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.62.1",
+    "vite": "^4.3.5"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  }
+}

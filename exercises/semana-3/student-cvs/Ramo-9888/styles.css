@@ -1,0 +1,208 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #555;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 50em;
+}
+
+h1,
+h2,
+strong {
+    color: #333;
+}
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+code,
+pre {
+    background: #eee;
+}
+
+code {
+    padding: 2px 4px;
+    vertical-align: text-bottom;
+}
+
+pre {
+    padding: 1em;
+}
+
+a {
+    color: #e81c4f;
+}
+
+body > header {
+    background-color: #263d36;
+    background-image: url("header.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    text-align: center;
+    max-width: none;
+}
+
+body > header img {
+    display: inline-block;
+    height: 120px;
+    vertical-align: top;
+    margin: 0;
+}
+
+body > header h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+body > header h2 {
+    color: white
+}
+
+body > header a {
+    border: 1px solid #e81c4f;
+    border-radius: 290486px;
+    color: white;
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+}
+
+body > header a:hover {
+    background: #e81c4f;
+    color: white;
+}
+
+.comment {
+    font-size: 0.6rem;
+}
+
+#tablecommands {
+    border: 2px solid;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid gray;
+}
+
+#tablefavs {
+    border: 1px dotted blue;
+    text-align: center;
+}
+
+article header a {
+    margin-top: 1em;
+    display: block;
+    font-size: 1.5rem;
+    color: burlywood;
+    text-align: center;
+}
+
+/* Contact Form */
+.contact {
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 40px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.form-group {
+    /* border: 1px dashed green; */
+    margin: 20px 0;
+}
+
+/* para indicar a qué tipo de input quiero aplicar el efecto 
+label, input[type="text"], input[type="email"] {
+    width: 100%;
+}
+*/
+
+/* para indicar a qué tipo de input NO quiero aplicar el efecto */
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+   /* display: block; */
+}
+
+label, input {
+    vertical-align: middle;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #444;
+}
+
+.contactbody {
+    color: #333;
+    background-color: #fafafa;
+    vertical-align: middle;
+}
+
+input[type="text"], input[type="email"], textarea {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.help {
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+}
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #713f12;
+    background: #eab308;
+    color: #333;
+    text-shadow: -1px -1px 0 rgba(255,255,255,0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: #facc15;
+}
+
+button:active {
+    background: #ca8a04;
+    box-shadow: -1px -1px 0px rgba(0,0,0,0.5);
+}
+

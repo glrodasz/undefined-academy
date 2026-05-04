@@ -1,0 +1,25 @@
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #dde4f5;
+}
+
+.container {
+    max-width: 70%;
+}
+
+label, button {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+textarea {
+    height: 100px;
+}

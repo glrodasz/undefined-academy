@@ -1,0 +1,44 @@
+body {
+  max-width: 600px;
+  font-size: 16px;
+  margin: 0 auto;
+  background: #f3f4f6;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  line-height: 1.5;
+  margin-top: 50px;
+}
+
+p {
+  line-height: 1.1;
+}
+
+span {
+    color: blue;
+}
+
+code {
+  padding: 2px;
+  color: crimson;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  font-family: Consolas, "courier new";
+}
+
+.header {
+  color: #666;
+  padding: 10px;
+  text-align: center;
+}
+
+.hello {
+  font-size: 20px;
+}
+.footer {
+  color: #666;
+  padding: 50px;
+  text-align: center;
+}

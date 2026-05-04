@@ -1,0 +1,89 @@
+body {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 40px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #FF1493;
+}
+
+.presentation {
+    text-align: center;
+
+}
+
+strong {
+    color: #91E0E0;
+}
+
+h2, h3 {
+    color: #CD98DE;
+}
+
+form {
+    box-sizing: border-box;
+}
+
+
+.form-group {
+    margin: 20px 0;
+}
+
+label, input {
+    vertical-align: middle;
+    width: 25%;
+
+}
+
+label, input [type="text"], input [type="email"] {
+    width: 100%;
+}
+
+fieldset {
+    width: 57%;
+}
+textarea {
+    margin-top: 10px;
+    width: 60%;
+    display: block;
+    resize: vertical;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #9c9c9c;
+}
+
+a {
+    color: #9c9c9c;
+
+}
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid black;
+    background: #364D7E;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0,0,0, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: #53B2BF;
+}
+
+button:active {
+    background: #424E68;
+    box-shadow: -1px -1px 0 rgba(0,0,0, 0.5);
+}

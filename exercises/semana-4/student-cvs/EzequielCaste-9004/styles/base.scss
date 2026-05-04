@@ -1,0 +1,163 @@
+@use "variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+html, body {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;  
+  box-sizing: inherit;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  padding-bottom: 4em;
+  font-size: 16px;
+}
+main,
+section {
+  color: variables.$emperor;
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+h1,
+h2,
+strong {
+  color: variables.$mineShaft;
+}
+
+code,
+pre {
+  background: variables.$gallery;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+a {
+  color: variables.$jade;
+}
+
+header {
+  background: url('../img/marek-piwnicki-9MJU5vDAAAY-unsplash.jpg');
+  background-color: variables.$outerSpace;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 10vw 2em;
+  text-align: center;
+  color: variables.$vistaWhite;
+}
+header h1 {
+  color: variables.$vistaWhite;
+  font-size: 2.5em;
+  font-weight: 500;
+  padding-bottom: 1em;
+}
+header a {
+  text-decoration: none;
+  color: variables.$vistaWhite;
+  border: 1px solid variables.$vistaWhite;
+  padding: 0.5em 3em;
+  border-radius: 100px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+header a:hover {
+  background-color: variables.$pacificBlue;
+  border: 1px solid variables.$pacificBlue;
+}
+.header-links {
+  display: flex;
+  flex-direction: column;
+}
+.header-btn {
+  margin: 0 auto;
+  width: fit-content;
+}
+.header-btn + .header-btn {
+  margin-top: 1em;
+}
+
+table,
+th,
+td {
+  border: 1px solid variables.$silver;
+  border-collapse: collapse;
+  padding: 0.5em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form input {
+  margin-bottom: 1em;
+}
+.contact-form input {
+  background-color: variables.$gallery;
+  border: 1px solid variables.$gallery;
+  padding: 0.5em;
+  border-radius: 5px;
+  max-width: 300px;
+}
+.contact-form input:active,
+.contact-form input:focus,
+.contact-form textarea:active,
+.contact-form textarea:focus {
+  border: 1px solid variables.$mineShaft;
+  outline: none;
+}
+.contact-form textarea {
+  background-color: variables.$gallery;
+  border: 1px solid variables.$gallery;
+  width: 100%;
+  padding: 0.8em;
+  max-width: 300px;
+  border-radius: 5px;
+  margin-bottom: 2em;
+}
+
+.btn {
+  border: 0;
+  padding: 0.75em;
+  border-radius: 5px;
+}
+.btn:hover {
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 3px variables.$mineShaft);
+}
+.btn-clear {
+  background-color: variables.$orient;
+  color: variables.$vistaWhite;
+}
+.btn-submit {
+  background-color: variables.$funGreen;
+  color: variables.$vistaWhite;
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto</title>
+  </head>
+  <body>
+    <div class="container pt-3">
+        <h2>Contacto</h2>
+        <p class="lead">Si necesitas mas información, puedes enviar el siguiente formulario</p>
+        <div class="row">
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" id="nombre" name="txtNombre" class="form-control" placeholder="Ingrese su nombre completo" required autofocus>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="txtEmail" class="form-control" placeholder="Ingrese su correo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="desc" class="form-label">Descripción</label>
+                    <textarea name="descripcion" class="form-control" id="desc" placeholder="Ingrese una descripción sobre la información requerida" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

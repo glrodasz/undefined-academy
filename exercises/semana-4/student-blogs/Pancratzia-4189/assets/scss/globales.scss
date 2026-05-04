@@ -1,0 +1,57 @@
+
+@use "variables.scss" as v;
+
+/*Globales*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: v.$PT-Sans;
+    scroll-behavior: smooth;
+  }
+  * {
+    box-sizing: inherit;
+    &:before {
+      box-sizing: inherit;
+    }
+    &:after {
+      box-sizing: inherit;
+    }
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    min-height: 100vh;
+    background: v.$blue-chalk;
+    background: linear-gradient(185deg, v.$blue-chalk 0%, v.$moon-raker 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    text-decoration: none;
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  button {
+    cursor: pointer;
+  }
+
+  h1, h2, h3{
+    margin: 0;
+    padding: 0;
+  }
+
+  img{
+    width: 100%;
+    max-width: 100%;
+  }

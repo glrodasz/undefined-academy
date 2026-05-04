@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel='stylesheet' href='styles.css' />
+    <script async defer type="module" src="/main.mjs"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulo">Contacto</h1>
+        <form action="/serve" method="get" class="form">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" type="text" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Ingrese su email" required>
+            </div>
+            <div class="form-group">
+                <label for="type">Tipo de proyecto</label>
+                <select name="type" id="type" required>
+                    <option disabled selected value="">Selecciona uno</option>
+                    <option value="website">Website</option>
+                    <option value="webapp">Aplicacion web</option>
+                    <option value="mobile">Aplicacion movile</option>
+                    <option value="desing">Diseño web</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description"></label>
+                <textarea name="description" id="description" cols="30" rows="10" required></textarea>
+                <div>
+                    Escribe una descripcion del proyecto
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input id="terms" name="terms" type="checkbox" required>
+                    <span>Acepto los terminos y condiciones</span>
+                </label>
+            </div>
+            <button>Enviar</button>
+        </form>
+    </main>
+</body>
+
+</html>

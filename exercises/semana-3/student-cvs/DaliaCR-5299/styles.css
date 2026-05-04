@@ -1,0 +1,193 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  background: #f3f3f3;
+  color: #333;
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  overflow: hidden;
+  background-color: #93C6E7;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #B9F3FC;
+  color: black;
+}
+
+section,
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  padding: 14px 16px;
+}
+
+.content {
+  background: #ecf0f1;
+}
+
+@media screen and (min-width: 992px) {
+  .rb {
+    display: inline!important;
+  }
+
+  .copy {
+    height: 60px;
+    min-height: auto;
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 1em;
+  padding-top: 1em;
+  color: #333;
+}
+
+pre {
+  display: flex;
+  flex-direction: column;
+  background: #f5f7f9;
+  border-bottom: 1px solid #d8dee9;
+  color: #43454b;
+  padding: 1em;
+  border-left: 2px solid #69c;
+}
+
+.btn {
+  background-color: #4b4b4e;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  background-color: rgb(155, 146, 146);
+}
+
+.table-shell {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-shell td,
+.table-shell th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-shell tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-shell tr:hover {
+  background-color: #ddd;
+}
+
+.table-shell th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #93C6E7;
+  color: black;
+}
+
+/*estilos para el pie de pagina*/
+.copy {
+  bottom: 0;
+  background-color: #93C6E7;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+/*estilo para el texto que contiene el pie de pagina*/
+.copy p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  margin: 0%;
+}
+
+.copy a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0%;
+}
+
+/*estilos para el formulario*/
+
+.form-group {
+  margin: 20px 0;
+}
+.rb {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label,
+input:not([type="radio"], [type="checkbox"]) {
+  width: 100%;
+}
+
+.form-group input,
+.form-group label {
+  vertical-align: middle;
+}
+
+.form-group textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+}
+
+.help {
+  font-size: 12px;
+  margin-top: 10px;
+}

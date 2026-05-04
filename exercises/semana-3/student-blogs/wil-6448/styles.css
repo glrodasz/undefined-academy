@@ -1,0 +1,110 @@
+body {
+    font-family: Arial;
+  }
+  .container {
+    padding: 2rem;
+    background-color: azure;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgb(181, 176, 176);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-bottom: 1rem;
+}
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+  }
+  .card p {
+    font-size: 1.25rem;
+  }
+
+  input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid Gainsboro;
+    background: WhiteSmoke;
+  }
+  
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    order: -1;
+
+  }
+
+  .search i {
+    position: relative;
+    padding: 0.5rem;
+    border: 1px solid Gainsboro;
+    z-index: 10;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+@media screen and (min-width:768px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:auto;
+    margin-top: 2rem;
+    gap: 20px;
+  }
+
+    .card:last-child {
+    grid-column: 1 / 4;
+  }
+  
+ .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-align: center;
+  } 
+
+  .search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    order: 0;
+  }
+}

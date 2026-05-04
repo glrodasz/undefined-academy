@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  .container
+    h1.my-5= title
+    p.mb-5 Bienvenido a mi servidor con #{title}. Continúa para ver los recursos listados y acceder a sus opciones:
+    button.btn.btn-info(onclick="window.location.href='/products'") Ver productos
+

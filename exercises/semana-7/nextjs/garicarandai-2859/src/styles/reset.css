@@ -1,0 +1,17 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: initial;
+}
+
+html{
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+html, body{
+  width: 100%;
+  min-height: 100vh;
+}

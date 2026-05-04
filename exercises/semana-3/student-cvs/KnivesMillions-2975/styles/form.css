@@ -1,0 +1,141 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 52em;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    padding: 2em 1em;
+    background-color: #4b4e4b;
+    color: #b7b3b3;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    margin: auto 1em;
+    color: #b7b3b3;
+    font-weight: bold;
+}
+
+hr {
+    border: 1px solid #6f9a6a;
+    margin-bottom: 4em;
+}
+
+.main-form {
+    max-width: 420px;
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 1px solid #6f9a6a;
+    border-radius: 8px;
+    accent-color: #6f9a6a;
+    box-shadow: 1px 1px  0 #2C3333;
+}
+
+.h1-contact {
+    margin-top: 1em;
+    color: #6f9a6a;
+}
+
+.group-form {
+    width: 100%;
+    margin: 16px 0;
+}
+
+#name, #email {
+    display: block;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 50%;
+}
+
+input:not([type="radio"], [type="checkbox"]) {
+    background: #b7b3b3; 
+    border: 1px solid #afafaf;
+}
+
+label, input {
+    display: inline;
+    vertical-align: middle;
+}
+
+select {
+    border: 1px solid #afafaf;
+    background: #b7b3b3; 
+    color: #2C3333;
+}
+
+fieldset {
+    border: 1px solid #afafaf;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+    background: #b7b3b3;
+    border: 1px solid #afafaf;
+    color: #2C3333;
+}
+
+label, legend {
+    font-weight: bold;
+    color: #6f9a6a;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+button {
+    padding: 2% 8%;
+    background: #6f9a6a;
+    color: #b7b3b3;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 72%;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    border: 1px solid #2E4F4F;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+input:focus-visible, textarea:focus-visible {
+    border: 1px solid #5f8a5a;
+    outline: 1px solid #4f7a4a;
+}
+
+button:hover {
+    background: #7f9a7a;
+}
+
+button:active {
+    background: #4f7a4a;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+}
+
+img {
+    width: 2em;
+    height: 2em;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Contactame</title>
+</head>
+
+<body>
+    <main>
+        <h1>Comunicate conmigo</h1>
+        <form id="form" action="/server">
+            <div>
+                <fieldset>
+                    <legend>Envia un saludo</legend>
+                    <input type="radio" name="greet" id="hi">
+                    <label for="hi">Hola</label>
+
+
+                    <input type="radio" name="greet" id="yello">
+                    <label for="yello">O.O!</label>
+
+                    <input type="radio" name="greet" id="where">
+                    <label for="where">¿Dónde estás?</label>
+                </fieldset>
+
+            </div>
+            <div>
+                <label for="names">¿Cuál es tu nombre?</label>
+                <input type="text" id="names" placeholder="Ingresa tus nombres" required>
+            </div>
+            <div>
+                <label for="email">Danos tu correo electrónico: </label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div>
+                <label for="feeling">¿cómo te sientes?</label>
+                <select name="feelings" id="feeling">
+                    <option disabled selected value="">Seleccionar un estado de animo</option>
+                    <option value="1">Feliz</option>
+                    <option value="2">Triste</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Otro</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="poem">Deja tu poema -></label>
+                <textarea name="" id="poem" cols="19" rows="11"></textarea>
+            </div>
+
+            <!-- <input type="button" value="Saludar" onclick="submitForm()"> -->
+            <button type="submit" onclick="submitForm()">Saludar</button>
+        </form>
+    </main>
+</body>
+
+<script>
+    // function submitForm() {
+    const form = document.getElementById("form");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        form.method = "post";
+        form.submit();
+    });
+        // document.getElementById("form").submit();
+    // }
+</script>
+
+</html>

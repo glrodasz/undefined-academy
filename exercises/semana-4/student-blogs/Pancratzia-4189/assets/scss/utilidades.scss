@@ -1,0 +1,42 @@
+@use "variables.scss" as v;
+/*Utilidades*/
+
+@mixin contenedor {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    max-width: map-get(v.$contenedor-max-widths, sm);
+  }
+
+  @media (min-width: 992px) {
+    max-width: map-get(v.$contenedor-max-widths, md);
+  }
+
+  @media (min-width: 1200px) {
+    max-width: map-get(v.$contenedor-max-widths, lg);
+  }
+}
+
+@mixin centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin boton-principal {
+  background-color: v.$transparent;
+  color: v.$blue-chalk;
+  border: none;
+  &:hover {
+    background-color: v.$cold-purple;
+  }
+}
+
+.contenedor{
+  @include contenedor;
+  @include centrado;
+}

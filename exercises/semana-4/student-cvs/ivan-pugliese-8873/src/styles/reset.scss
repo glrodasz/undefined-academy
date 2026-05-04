@@ -1,0 +1,39 @@
+/* ---- Reset ----*/
+
+html {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: $gallery-color;
+    scroll-behavior: smooth;
+  }
+  
+  *,
+  *::before,
+  *::after {
+  box-sizing: inherit;
+  }
+  
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1,h2,h3,p {
+    margin: 0;
+  }
+  
+  [id] {
+    scroll-margin-top: 9ex;
+  }
+  

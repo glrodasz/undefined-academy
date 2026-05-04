@@ -1,0 +1,40 @@
+@use "/src/styles/tools.scss";
+
+
+.tags-filter {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0 20px;
+    align-items: center;
+}
+
+
+.filter-list {
+    display: none;
+
+    @include tools.desktop {
+        display: flex;
+    }
+}
+
+.tags-filter .filter-list {
+    gap: 30px;
+}
+
+.tags-filter .filter {
+    color: var(--color-gray);
+}
+
+.is-active-filter .filter {
+    background: var(--color-scooter);
+    color: var(--color-bunker);
+    padding: 8px 12px;
+    border-radius: 5PX;
+}
+
+.tags-filter .button {
+    @include tools.desktop {
+        display: none;
+    }
+}

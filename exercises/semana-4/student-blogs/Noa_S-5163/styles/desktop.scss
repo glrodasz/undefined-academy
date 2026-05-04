@@ -1,0 +1,32 @@
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    column-gap: 1rem;
+  }
+
+  .posts-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .post--featured {
+    grid-column: 1/-1;
+  }
+
+  .post:nth-child(2) {
+    grid-column: 1/2;
+  }
+
+  .post:nth-child(3) {
+    grid-column: 2/3;
+  }
+
+  .post:last-child {
+    grid-column: 3/4;
+  }
+}

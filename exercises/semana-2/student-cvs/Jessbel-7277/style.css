@@ -1,0 +1,121 @@
+:root{
+    --color-background: #0d1117;
+    --just-white: #fff; 
+    --border-main: #30363d;
+    --border-bottom: #21262d;
+    --secondary-background: #292f36;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'DM Sans', sans-serif;
+    color: var(--just-white);
+    background-color: var(--color-background);
+}
+
+body {
+    margin: 0 auto;
+    max-width: 50em;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    padding: 20px 40px;
+    border: 1px solid var(--border-main);
+    border-radius: 6px;
+}
+
+h1{
+    font-size: 2rem;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+ul{
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+h2{
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+}
+
+.container-info{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: 1px dotted gray;
+    border-radius: 6px;
+    background-color: var(--secondary-background);
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 0.8rem;
+}
+
+th, td{
+    border: 1px solid gray;
+    padding: .75rem;
+    color: #fff;
+}
+table tbody tr:nth-child(odd) {
+	background: var(--color-background);
+}
+table tbody tr:nth-child(even) {
+	background: var(--secondary-background);
+}
+
+.container-form{
+    padding: 20px;
+}
+
+.container-form h2{
+    text-align: center;
+    border-top: 1px solid var(--border-bottom);
+    padding-top: 10px;
+}
+
+.form-group{
+    /* border: 1px solid tomato; */
+    margin: 20px 0;
+}
+
+label, input:not([type="checkbox"]){
+    width: 100%;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+input[type="text"], [type="email"], [type="date"], textarea {
+    padding: 8px 10px;
+    outline: none;
+}
+
+button{
+    background-color: var(--secondary-background);
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--just-white);
+    border-radius: 5px;
+    border: 1px solid lightskyblue;
+}

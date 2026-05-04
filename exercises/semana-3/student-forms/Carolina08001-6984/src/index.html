@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Bootstrap</title>
+    <link rel="stylesheet" href="./scss/styles.scss">
+    <script type="module" src="./js/main.js"></script>
+</head>
+  
+<body>
+  
+  <main class="container mx-auto content-width">
+    <form action="/server" method="get">
+      <h1 class="text-center text-uppercase">Contact</h1>
+
+      <div class="form-group mb-3">
+        <div class="row">
+          <label class="col-md-2 col-form-label col-form-label-lg" for="name">Name</label>
+          <div class="col-md-10">
+            <input id="name" type="text" class="form-control form-control-sm form-control-lg" name="nombres"
+        placeholder="Enter your name" required>
+          </div>
+        </div>
+            
+      </div>
+      <div class="form-group mb-3">
+        <div class="row">
+          <label class="col-md-2 col-form-label col-form-label-lg" for="email">Email</label>
+          <div class="col-md-10">
+            <input type="email" class="form-control form-control-sm form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    
+          </div>
+        </div>
+        
+      </div>
+      <div class="form-group mb-3">
+        <div class="row">
+          <label class="col-md-2 col-form-label col-form-label-lg" for="telefono">Your phone </label>
+          <div class="col-md-10">
+            <input type="tel" class="form-control form-control-lg" name="telefono" id="telefono" placeholder="Enter yor phone number" required>
+    
+          </div>
+        </div>
+      </div>
+      <div class="form-group mb-3">
+        <div class="row">
+          <label class="col-md-2 col-form-label col-form-label-lg">Budget</label>
+          <div class="col-md-10 form-control-lg">
+            <div class="form-check">
+              <label class="form-check-label" for="10000">
+              <input class="form-check-input" type="radio" name="budget" id="10000" value="10000">
+              $ 10,000.00</label>
+            </div>
+            
+            <div class="form-check">
+              <label class="form-check-label" for="5000">$ 5,000.00</label>
+              <input class="form-check-input" type="radio" name="budget" id="5000" value="5000">    
+            </div>
+            
+            <div class="form-check">
+              <label class="form-check-label" for="3000">$ 3,000.00</label>
+              <input class="form-check-input" type="radio" name="budget" id="3000" value="3000">
+            </div>
+  
+            <div class="form-check">
+              <label class="form-check-label" for="1000">$ 1,000.00</label>
+              <input class="form-check-input" type="radio" name="budget" id="1000" value="1000">
+            </div>
+  
+          </div>
+          
+        </div>
+      </div>
+      <div class="form-group mb-3">
+        <div class="row">
+          <label class="col-md-5 col-form-label col-form-label-lg" for="type">Type of project</label>
+          <div class="col-md-7">
+          <select name="type" id="type" class="form-control form-control-lg" required>
+            <option disabled selected>Select one </option>
+            <option value="Website">Website</option>
+            <option value="WebApp">WebApp</option>
+            <option value="Mobile App">Mobile App</option>
+            <option value="Design">Diseño</option>
+          </select>
+          </div>
+        </div>
+        
+      </div>
+      <div class="form-group mb-3">
+        <div class="row">
+            <label class="col-md-5 col-form-label col-form-label-lg" for="nacionality">Nationality</label>
+          <div class="col-md-7">
+            <select name="nacionality" id="nacionality" class="form-control form-control-lg" required>
+              <option disabled selected>Select one </option>
+              <option value="Peru">Perú</option>
+              <option value="Paraguay">Paraguay</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Chile">Chile</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="form-group mb-3">
+        <div class="row">
+            <label class="col-md-5 col-form-label col-form-label-lg" for="url">URL of your repository: </label>
+          <div class="col-md-7">
+            <input type="url"  class="form-control form-control-lg" name="url" id="url">
+          </div>
+        </div>
+      </div>
+      <div class="form-group mb-3">
+        <div class="row">
+          <label class="col-md-3 col-form-label col-form-label-lg" for="description">Description</label>
+          <div class="col-md-9">
+            <textarea name="description" class="form-control form-control-lg" id="description" cols="30" rows="10" required></textarea>
+            <small class="form-text text-muted">Describe your project.</small>
+    
+          </div>
+        </div>
+      </div>
+      <div class="form-group mb-3">
+        <label for="file" class="col-md-5 col-form-label col-form-label-lg">Upload project requeriments</label>
+        <input type="file" class="form-control-file form-control-lg" id="file">
+      </div>
+      <div class="form-check mb-3">
+          <input type="checkbox" id="terms" class="form-check-input "  name="terms" value="termsAccepted" required>
+          <label class="form-check-label " for="terms">I accept all terms and condictions</label>
+      </div>
+      <div class="d-flex flex-row justify-content-center">
+        <button class="btn btn-primary btn-lg mb-5 " >Send offer</button>
+      </div>
+
+      </div>
+      
+    </form>
+  </main>
+  
+</body>
+
+</html>

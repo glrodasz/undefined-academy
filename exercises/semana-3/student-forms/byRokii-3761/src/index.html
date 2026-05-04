@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITE APP</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+
+<body class="font-victor leading-3 w-full h-full ">
+
+    <header class="mx-auto my-3 w-1/2 shadow-xl border-2 rounded-2xl">
+        <nav class="py-2 h-12 items-center flex bg-transparent w-full">
+            <ul class="flex justify-around items-center w-full">
+                <li class="mr-4"><a class="hover:underline no-underline" href="index.html">Inicio</a></li>
+                <li class="ml-4"><a class="hover:underline no-underline" href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mx-auto my-3 max-w-xl mt-10 w-full h-3/4 border-2 shadow-xl rounded-2xl">
+        <form action="" method="" class="mt-2 rounded-2xl">
+            <div class="flex justify-center items-center flex-col mt-4 mb-4 py-6 px-6 bg-transparent">
+                <h1>Contact Me</h1>
+                <input class="rounded-2xl mt-6 block w-full text-black p-3 border-2 outline-none" name="name"
+                    type="text" required placeholder="Your Name">
+                <input class="rounded-2xl mt-6 block w-full text-black p-3 border-2 outline-none" name="email"
+                    type="email" required placeholder="Your Email">
+                <textarea class="w-full p-3 rounded-2xl mt-7 border-2 outline-none" placeholder="Your Message"
+                    name="message" cols="30" rows="5"></textarea>
+                <input
+                    class="hover:bg-cyan-200 w-full block border-2 mt-4 rounded-2xl cursor-pointer bg-transparent p-4"
+                    type="submit" name="message" value="Send">
+            </div>
+        </form>
+    </main>
+
+    <footer class="mx-auto my-3 w-1/2 bg-transparent p-6 mt-8 border-2 leading-normal shadow-xl rounded-2xl">
+        <p class="py-2 my-2"> Thank you for visiting my profile 😃.</p>
+        <p class="py-2 my-2">2023. Bootcamp Full Stack JavaScript. Todos los derechos reservados. &#169; Copyright</p>
+
+    </footer>
+    <script type="module" src="js/main.mjs"></script>
+</body>
+
+</html>

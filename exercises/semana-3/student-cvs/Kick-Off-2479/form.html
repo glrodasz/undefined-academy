@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="form_style.css">
+    <script type="module" src="/main.mjs"></script>
+</head>
+
+<body>
+    <main class="page">
+        <h1>Contact me</h1>
+        <form action="/server" method="get">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" type="text" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Prices</legend>
+                    <input id="5000" type="radio" name="budget" value="5000" required>
+                    <label for="5000">$ 5.000</label>
+
+                    <input id="2500" type="radio" name="budget" value="2500" required>
+                    <label for="2500">$ 2.500</label>
+
+                    <input id="1000" type="radio" name="budget" value="1000" required>
+                    <label for="1000">$ 1.000</label>
+                    <div class="help">This form it's not the final result</div>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="type">What kind of proyect do you want?</label>
+                <select name="" id="type" required>
+                    <option disable value="">Select a project!</option>
+                    <option value="">Website</option>
+                    <option value="">WebApp</option>
+                    <option value="">Mobile App</option>
+                    <option value="">Desing</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea name="description" id="description" required rows="5"></textarea>
+                <div class="help">Write a description about this project.</div>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input id="terms" type="checkbox" required>
+                    <span>I accept terms and conditions.</span>
+                </label>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </main>
+
+</body>
+
+</html>

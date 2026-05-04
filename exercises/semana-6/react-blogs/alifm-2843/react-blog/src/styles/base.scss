@@ -1,0 +1,121 @@
+@use "variables";
+
+body {
+    font-family: Arial;
+    color: variables.$mine-shaft;
+    background-color: variables.$alice-blue;
+    color: rgba(0, 40, 126, 0.882);
+  }
+
+  a {
+    color: rgba(0, 81, 255, 0.882);
+    font-weight: bold;
+}
+
+a:hover {
+    background: variables.$navy-blue;
+    color: variables.$white;
+}
+  
+  .container, .card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid variables.$regent-st-blue;
+    padding: 2em;
+    border-radius: 8px;
+    // margin: 2em 1.5em;
+    }
+
+   
+
+  section {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 2em;
+    }
+  
+  img {
+    width: 90%;
+    height: 60%;
+    margin: 1em auto;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+  }
+  
+  input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid variables.$regent-st-blue;
+    width: 400px;
+    background: variables.$link-water;
+    color: rgba(0, 81, 255, 0.882);
+  }
+
+  input::placeholder{
+    color: rgba(0, 81, 255, 0.882);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    border: 1px solid variables.$regent-st-blue;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 3em;
+  
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat();
+    grid-template-rows: auto  auto ;
+    gap: 1.5em;
+    margin: 0 3em;
+  }
+   
+
+  h1 {
+    font-size: 1em;
+}
+  
+.card:first-of-type {
+  grid-column: 1/4;
+  width: 90%;
+  height: 85%;
+  margin: auto;
+  margin-top: -1em;
+  
+  }
+
+  span {
+    font-size: 12px;
+    color: variables.$royal-blue;
+  }
+
+  footer {
+    font-size: 12px;
+    margin-top: 3em;
+    color: rgba(0, 81, 255, 0.882);
+    font-size: 12px;
+    border: 1px solid variables.$regent-st-blue;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  footer p {
+    border-top: 1px solid;
+    padding-top: 0.3em;
+    width: 24em;
+    text-align: right;
+
+}

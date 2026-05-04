@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aitorias">
+    <meta name="description" content="Mi perfil de GitHub">
+    <meta name="theme-color" content="#1e2327">
+    <meta name="color-scheme" content="light dark">
+    <title>Aitorias | Perfil de GitHub</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JavaScript -->
+    <script async defer src="main.js"></script>
+<body>
+    <header>
+        <nav>
+            <div class="header-wrapper px-1 px-md-2 px-lg-2 py-2">
+                <div class="flex align-items-center jc-end">
+                    <!-- Botón para cambiar esquema de colores -->
+                    <button class="change-theme-button" id="change-theme-button" name="change-theme-button" type="button" aria-label="dark">
+                        <svg class="color-theme-icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                            <mask class="moon" id="moon-mask">
+                              <rect x="0" y="0" width="100%" height="100%" fill="white"></rect>
+                              <circle cx="24" cy="10" r="6" fill="black"></circle>
+                            </mask>
+                            <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor"></circle>
+                            <g class="sun-beams" stroke="currentColor">
+                              <line x1="12" y1="1" x2="12" y2="3"></line>
+                              <line x1="12" y1="21" x2="12" y2="23"></line>
+                              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                              <line x1="1" y1="12" x2="3" y2="12"></line>
+                              <line x1="21" y1="12" x2="23" y2="12"></line>
+                              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                             </g>
+                          </svg>
+                    </button>
+                    <!-- Fin botón -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper mb-2 px-1 px-md-2 px-lg-32px">
+            <div class="content content-border">
+                <article class="file">
+                    <div class="cards-container">
+                        <div class="filters-bar">
+                            <div class="filters">
+                                <div class="filter">
+                                    <button type="button" class="filter-button active" id="all" value="all" data-filter="all">Todos</button>
+                                </div>
+                                <div class="filter">
+                                    <button type="button" class="filter-button" id="html" value="html" data-filter="html">HTML</button>
+                                </div>
+                                <div class="filter">
+                                    <button type="button" class="filter-button" id="css" value="css" data-filter="css">CSS</button>
+                                </div>
+                                <div class="filter">
+                                    <button type="button" class="filter-button" id="javsacript" value="javsacript" data-filter="javascript">JavaScript</button>
+                                </div>
+                                <div class="filter">
+                                    <button type="button" class="filter-button" id="web-components" value="web-components" data-filter="web-components">Web components</button>
+                                </div>
+                                <div class="filter">
+                                    <button type="button" class="filter-button" id="design-systems" value="design-systems" data-filter="design-systems">Sistemas de diseño</button>
+                                </div>
+                            </div>
+                            <div class="search-container">
+                                <form action="/" method="get">
+                                    <div class="input-group">
+                                        <input type="search" id="search" placeholder="Buscar" role="searchbox" value="">
+                                        <button type="submit" role="button" id="submit-search">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="post-cards">
+                            <div class="post">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="background.png" alt="Semana 1 - Undefined Academy" class="">
+                                    </a>
+                                </div>
+                                <div class="post-info">
+                                    <div class="tags">
+                                        <span class="tag" data-tag="html">HTML</span>
+                                    </div>
+                                    <h2 class="post-title">Semana 1 - Undefined Academy</h2>
+                                    <p class="post-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi tenetur laboriosam temporibus quibusdam impedit inventore enim? Alias placeat dolorum amet sint. Odit fugit sed adipisci. Molestiae distinctio vel harum enim?</p>
+                                </div>
+                            </div>
+                            <div class="post">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="background.png" alt="Semana 2 - Undefined Academy" class="">
+                                    </a>
+                                </div>
+                                <div class="post-info">
+                                    <div class="tags">
+                                        <span class="tag" data-tag="css">CSS</span>
+                                    </div>
+                                    <h2 class="post-title">Semana 2 - Undefined Academy</h2>
+                                    <p class="post-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi tenetur laboriosam temporibus quibusdam impedit inventore enim? Alias placeat dolorum amet sint. Odit fugit sed adipisci. Molestiae distinctio vel harum enim?</p>
+                                </div>
+                            </div>
+                            <div class="post">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="background.png" alt="Semana 3 - Undefined Academy" class="">
+                                    </a>
+                                </div>
+                                <div class="post-info">
+                                    <div class="tags">
+                                        <span class="tag" data-tag="javascript">JavaScript</span>
+                                    </div>
+                                    <h2 class="post-title">Semana 3 - Undefined Academy</h2>
+                                    <p class="post-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi tenetur laboriosam temporibus quibusdam impedit inventore enim? Alias placeat dolorum amet sint. Odit fugit sed adipisci. Molestiae distinctio vel harum enim?</p>
+                                </div>
+                            </div>
+                            <div class="post post-featured">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="background.png" alt="Semana 3 - Undefined Academy" class="">
+                                    </a>
+                                </div>
+                                <div class="post-info">
+                                    <div class="tags">
+                                        <span class="tag" data-tag="html">HTML</span>
+                                        <span class="tag" data-tag="css">CSS</span>
+                                    </div>
+                                    <h2 class="post-title">Semana 4 - Undefined Academy</h2>
+                                    <p class="post-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi tenetur laboriosam temporibus quibusdam impedit inventore enim? Alias placeat dolorum amet sint. Odit fugit sed adipisci. Molestiae distinctio vel harum enim?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper mb-2 px-1 px-md-2 px-lg-32px">
+            Creado por: Aitorias | <time datetime="" id="year"></time>
+        </div>
+    </footer>
+</body>
+</html>

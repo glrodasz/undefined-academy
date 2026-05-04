@@ -1,0 +1,24 @@
+{
+  "name": "pancratzia-4189",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "sass": "sass assets/scss/main.scss assets/css/main.css --watch",
+    "build": "vite build",
+    "preview": "vite previ"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.0",
+    "vite": "^4.2.2"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  }
+}

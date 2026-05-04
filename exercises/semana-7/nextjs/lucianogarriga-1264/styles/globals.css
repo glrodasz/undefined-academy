@@ -1,0 +1,85 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body{ 
+  padding: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #101010;
+  color: #e0e0e0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+img {
+  width: 100%;
+}
+
+input, select {
+  padding: 10px;
+  min-width: 200px;
+  margin: 20px; 
+  text-align: center; 
+  font-size: 18px;
+}
+ 
+
+.card {
+  box-shadow: 1px 2px 10px rgba(248, 248, 248, 0.2);
+  cursor: pointer;
+  max-width: 350px; 
+  min-width: 350px;
+  margin-bottom: 30px;
+}
+
+.card:hover {
+  transform: scale(1.025);
+  transition: transform .2s;
+}
+
+.card p { 
+  text-align: center;
+  font-size: 20px;   
+} 
+
+.not-found, .main-title{
+  text-align: center;
+}
+
+.homepage{
+  text-decoration: underline;
+  color: #4f76e3;
+  cursor: pointer;
+}
+
+.homepage:hover{
+  color: #44a7c5;
+}
+  
+.footer{
+  display: block;
+  text-align: center;
+  padding: 16px 0;
+  margin-top: 60px;
+  color: #989595;
+  border-top: 1px solid #353535;
+}
+ 

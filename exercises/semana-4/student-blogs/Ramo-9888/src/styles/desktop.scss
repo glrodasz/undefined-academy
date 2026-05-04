@@ -1,0 +1,11 @@
+@use "colors.scss";
+@media screen and (min-width: 980px){
+
+    body {
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        color: colors.$blue;
+        background-color: colors.$gray;
+    }
+
+}
+

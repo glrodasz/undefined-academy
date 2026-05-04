@@ -1,0 +1,120 @@
+/* ----------------------------- FOOTER ----------------------------------*/
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+}
+
+footer {
+    padding: 3rem 2rem;
+    background-color: #042940;
+
+    .container-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 8rem;
+        column-gap: 3rem;
+        text-align: center;
+    }
+}
+
+.links,
+.services,
+.social-media {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4rem;
+    gap: 2rem;
+    font-size: 1.4rem;
+
+    h2 {
+        font-size: 2rem;
+        color: white;
+        font-weight: 600;
+    }
+
+    li {
+        padding: 0.5rem 0;
+        color: darkgrey;
+    }
+
+    a {
+        color: darkgrey;
+    }
+}
+
+.icons {
+    display: flex;
+    gap: 1.6rem;
+
+    .icono {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        outline: 2px solid #fff;
+        transition-property: outline-offset, outline-color, background-color;
+        transition-duration: 0.25s;
+
+        &:hover {
+            outline-offset: 4px;
+
+            span {
+                animation: shake 0.25s;
+            }
+        }
+
+        span {
+            margin: auto;
+            font-size: 2.2rem;
+            color: white;
+        }
+
+        &.insta:hover {
+            background-color: transparent;
+            background-image: linear-gradient(to top, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+            outline-color: #f77737;
+        }
+
+        &.twitter:hover {
+            background-color: #1da1f2;
+            outline-color: #1da1f2;
+        }
+
+        &.In:hover {
+            background-color: #004182;
+            outline-color: #004182;
+        }
+
+        &.github:hover {
+            background-color: #6cc644;
+            outline-color: #6cc644;
+        }
+    }
+}
+
+.logo-footer {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.politics {
+    padding-top: 5rem;
+    text-align: center;
+    color: grey;
+    font-size: 1.2rem;
+}

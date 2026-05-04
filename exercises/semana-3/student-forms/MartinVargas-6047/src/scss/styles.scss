@@ -1,0 +1,47 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8f8f8;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 5% auto;
+  min-width: 240px;
+  max-width: 500px;
+  box-shadow: 0 0 12px #d7d7d7;
+  border-radius: 8px;
+}
+
+label,
+button {
+  font-family: Arial;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+::placeholder {
+  font-family: Arial;
+}
+h2 {
+  font-weight: bolder;
+}
+.form-check {
+  padding-left: 0;
+}
+.btn-primary {
+  --bs-btn-bg: #940253;
+  --bs-btn-border-color: #d7d7d7;
+  --bs-btn-hover-bg: #720240;
+  --bs-btn-hover-border-color: #940253;
+  --bs-btn-active-bg: #b60566;
+  --bs-btn-active-border-color: #720240;
+}
+form {
+  accent-color: #940253;
+}

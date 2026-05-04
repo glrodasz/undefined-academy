@@ -1,0 +1,139 @@
+@import './variables.scss';
+
+@media screen and (max-width: $breakpoint-tablet ) {
+    /* NavBar */
+
+    .navBar {
+        background-color: $Smoky-Black;
+        width: 100%;
+        display: flex;
+        border-bottom: 2px solid $Bright-Turquoise;
+    }
+
+    .logoField {
+        width: 25%;
+        padding: 0.5rem;
+    }
+
+    .logoTxt {
+        display: none;
+    }
+
+    .logo {
+        width: 2rem;
+        left: 3%;
+    }
+
+    .containerMenu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .linksField {
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .menuItem {
+        display: none;
+        text-align: right;
+    }
+
+    .menuIcon {
+        text-align: right;
+    }
+
+    .btnMenu {
+        background-color: $transparent;
+        border: none;
+        width: 3rem;
+    }
+
+
+    /* Home */
+    .containerHome {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .textHome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*Tech*/
+
+    .imgTech {
+        display: flex;
+        justify-content: space-evenly;
+
+        &>.iconTech {
+            width: 4rem;
+        }
+    }
+
+    /* Projects */
+    .projCont {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &>h2 {
+            color: $Bright-Turquoise;
+            font-weight: bolder;
+            padding-bottom: 1rem;
+        }
+    }
+
+    .containerProjects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .contProjects {
+        border: 2px solid $Bright-Turquoise;
+        margin: 2rem auto;
+        border-radius: 20px;
+        height: 500px;
+        padding: 0.5rem 1rem;
+
+        &>.img {
+            width: 100%;
+            height: 16rem;
+        }
+
+        &>.img>.imgProjec {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+        }
+
+        &>.techProj {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        &>.repo {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &:hover {
+            background-color: $Robin-Egg-Blue;
+            box-shadow: 5px 5px 5px $Granite-Gray;
+            height: 550px;
+        }
+    }
+}

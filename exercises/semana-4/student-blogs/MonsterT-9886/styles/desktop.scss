@@ -1,0 +1,70 @@
+@media screen and (min-width: 600px) {
+    header {
+      height: auto;
+
+      .header-img {
+        display: none;
+      }
+      .header-content {
+        display: flex;
+        flex-direction: row;
+      }
+    
+      .header-content h1 {
+        width: 100%;
+      }
+
+    }
+    
+    main {
+      flex-direction: row;
+      
+      .article-head {
+        width: 50%;
+      }
+    
+      .article-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      article img {
+        max-width: 800px;
+        object-fit: cover;
+        justify-self: center;
+      }
+    
+      .posts {
+        margin: 1em auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+          "principal principal"
+          "left right"
+          "left right";
+        gap: 2em;
+    
+        width: 60%;
+        max-width: 300px;
+        
+        .principal {
+          flex-direction: row;
+          grid-area: principal;
+        }
+        .left {
+          grid-area: left;
+        }
+        .right {
+          grid-area: right;
+        }
+      }
+      .card{
+        width: auto;
+
+
+      }
+
+    }
+  
+  }

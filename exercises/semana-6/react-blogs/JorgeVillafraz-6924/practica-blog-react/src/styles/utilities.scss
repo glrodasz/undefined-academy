@@ -1,0 +1,17 @@
+@use "/src/styles/settings.scss";
+
+
+.font-poppins-regular {
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+.font-recursive-italic {
+    font-family: Recursive;
+    font-weight: 400;
+    font-style: italic;    
+}
+
+.font-bold {
+    font-weight: 600;
+}

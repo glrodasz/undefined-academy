@@ -1,0 +1,18 @@
+@use "./variables.scss" as *;
+
+@media screen and (min-width:992px) {
+    body {
+      margin: 20px;
+      height: 20px;
+    }
+    .blogs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 2fr;
+      gap: 15px;
+      }
+    .blog-1 {
+        grid-column: 1/4;
+    }
+       
+  }

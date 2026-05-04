@@ -1,0 +1,184 @@
+@use "variables.scss" as *;
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    // margin: 0 auto;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    // padding: 4em 1em;
+    color: $cuttySark;
+    background-color: #fafafa;
+}
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+h1,
+h2,
+strong {
+    color: $mineShaft;
+}
+
+a {
+    color: $amaranth;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+label,
+input:not([type="radio"], [type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+}
+
+label,
+input {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+label,
+legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: 444;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    background: $white;
+    border: 1px solid $lightGray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.help {
+    font-size: 12px;
+    margin-top: 10px;
+    color: $darkGray;
+}
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid $sepia;
+    background: $corn;
+    color: $mineShaft;
+    text-shadow: -1px -1px 0 $gray;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px $blackT;
+    cursor: pointer;
+    width: 50%;
+}
+
+button:hover {
+    background: $candleLight;
+}
+
+button:active {
+    background: $pirateGold;
+    box-shadow: -1px -1px 0 $blackT;
+    ;
+}
+
+form {
+    accent-color: $corn;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-button {
+    display: grid;
+    place-items: center;
+}
+
+
+input:focus-visible,
+textarea:focus-visible {
+    border: 1px solid $corn;
+    outline: 2px solid $candleLight;
+}
+
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    gap: 20px;
+    color: $aliceBlue;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: $teal;
+        padding-top: 20px;
+        border-radius: 10px;
+        margin: 5px;
+    }
+
+    section {
+        margin: 10px;
+    }
+
+    img {
+        height: 40%;
+        width: 40%;
+        border-radius: 1200px;
+    }
+    p {
+        text-align: justify;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $papayawhip;
+    }
+    
+    header > article {
+        display: none;
+    }
+}

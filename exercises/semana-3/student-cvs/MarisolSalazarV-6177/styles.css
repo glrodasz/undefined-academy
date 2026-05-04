@@ -1,0 +1,225 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    color: #333;
+    background-color: #fefefe;
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+}
+
+h1, h2, h3, strong {
+    color: #333;
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+}
+
+code, pre {
+    background: #f5f7f9;
+    border-bottom: 1px solid #d8dee9;
+    color: #a7adba;
+    padding: 1em;
+    vertical-align: text-bottom;
+    border-left: 2px solid #69c;
+}
+
+address a {
+    color: #e81c4f;
+    text-decoration: none;
+}
+
+
+.page{
+    max-width: 800px;   
+    margin: 60px 60px;
+    padding: 0 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-group {
+    /* border:  1px solid; */
+    margin: 20px 0;
+}
+
+label, input {
+    vertical-align: middle;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+}
+
+input[type="text"], input[type="email"], select, fieldset, textarea{
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+input[type="radio"] + *::before {
+    display: flexbox;
+    vertical-align: bottom;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #facc15;
+  }
+
+input[type="radio"]:checked + * {
+    color: #facc15;
+  }
+
+input[type="radio"]:checked + *::before {
+    background: radial-gradient(#facc15 0%, #facc15 40%, transparent 50%, transparent);
+    border-color: #facc15;
+  }
+
+
+.help {
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+}
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid  #713f12;
+    background: #eab308;
+    color: #333;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: #facc15;
+}
+
+button:active {
+    background: #ca8a04;
+    box-shadow: none;
+}
+
+.nav{
+    font-size: 20px;
+    display: inline;
+}
+
+ul {
+    list-style: none;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    align-content: center;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 25%;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid #333;
+}
+
+.img{
+    padding: 1em 2em;   
+}
+
+.footer{
+    color: gray;
+    padding-top: 4em;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    input[type="radio"] {
+        display: flexbox;
+        margin: 12px;
+    }
+
+    input[type="radio"] + *::before {
+        display: flexbox;
+        vertical-align: bottom;
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.3rem;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 0.1rem;
+        border-color: #facc15;
+      }
+
+    input[type="radio"]:checked + * {
+        color: #facc15;
+      }
+
+    input[type="radio"]:checked + *::before {
+        background: radial-gradient(#facc15 0%, #facc15 40%, transparent 50%, transparent);
+        border-color: #facc15;
+      }
+    
+
+    html {
+        max-width: 50em;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+    }
+
+    .img{
+        padding: 2em 1em;
+        display:grid;
+        justify-content: center;
+    }
+
+    .table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    th, td {
+        width: 25%;
+        text-align: center;
+        border-collapse: collapse;
+        border: 1px solid #333;
+    }
+}
+
+
+
+
+

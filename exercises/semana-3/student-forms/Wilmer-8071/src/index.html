@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formulario de Propuesta</title>
+        <script type="module" src="./js/main.js"></script>
+    </head>
+    <body>
+        <h2> 📃 Formulario de Contactos</h2>
+
+        <form id="form">
+            <div class="form-group">
+            <label for="name">Nombres</label>
+            <input id="name" type="text" placeholder="Ingresa tu Nombre" required>
+            </div>
+
+            <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Ingresa tu Correo" required>
+            </div>
+
+
+            <div class="form-group">
+                <fieldset>
+                <legend>Propuesta</legend>
+                <input type="radio" name="budget"><label for="1000">$1000</label>
+                <input type="radio" name="budget"><label for="5000">$5000</label>
+                <input type="radio" name="budget"><label for="10000">$10000</label>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <label for="type">Tipo de Proyecto</label>
+                <select id="type" required>
+                    <option selected disabled>Selecciona uno</option>
+                    <option value="Website">Website</option>
+                    <option value="WebApp">WebApp</option>
+                    <option value="Mobile App">Mobile App</option>
+                    <option value="Diseño">Diseño</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Descripcion</label>
+                <textarea id="description"></textarea>
+                <div class="help">Deja tu comentario</div>
+            </div>
+
+            <div class="form-group">
+                <label for="terms">
+                <input id="terms" type="checkbox" required>
+                <span>Acepto los Terminos y Condiciones</span>
+                </label>
+            </div>
+
+            <button>Enviar</button>
+
+        </form>
+
+    </div>
+    </body>
+</html>

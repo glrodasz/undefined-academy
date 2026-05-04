@@ -1,0 +1,162 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+
+header {
+    margin-bottom: 4em;
+}
+
+header,
+div {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+header img {
+    width: 2em;
+    height: 2em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-self: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1em;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+h1,
+h2,
+strong {
+    color: #333;
+}
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline #333;
+    text-decoration-style: wavy;
+    text-underline-offset: 3px;
+}
+
+form {
+    max-width: 50%;
+    margin: 3em 0;
+    accent-color: #333;
+}
+
+form div {
+    display: block;
+    margin: 1em auto;
+}
+
+form div fieldset {
+    width: 100%;
+}
+
+form div fieldset label {
+    font-weight: normal;
+    display: inline;
+    width: 100%;
+}
+
+.help {
+    font-size: 12px;
+    margin: 0;
+}
+
+label,
+input:not([type="radio"], [type="checkbox"]) {
+    display: block;
+    width: 100%;
+}
+
+label,
+fieldset {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+button {
+    padding: 12px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0e0e0e;
+    border-radius: 7px;
+    box-shadow: 1px 1px 3px #333;
+}
+
+button:hover {
+    background-color: #242424;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+footer {
+    display: flex;
+    margin-top: 12em;
+    margin-bottom: 2em;
+    justify-content: center;
+    gap: 1em;
+}
+
+footer img {
+    width: 2em;
+    box-shadow: 1px 1px 3px #333;
+    border-radius: 100%;
+}
+
+footer p {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+footer img:hover {
+    box-shadow: none;
+}
+
+hr {
+    border: none;
+}

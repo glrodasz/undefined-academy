@@ -1,0 +1,57 @@
+@use "variables.scss" as m;
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: m.$porcelain;
+}
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 0;
+    gap: 20px;
+    list-style: none;
+    cursor: pointer;
+    
+}
+
+input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid m.$alto;
+    width: 300px;
+    background: m.$wild-sand;
+  }
+  
+
+div {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .help-text {
+    font-size: small;
+    color: rgb(113, 113, 117);
+  }
+
+.container {
+    display: flex;
+    gap: 16px;
+    background-color: m.$porcelain;
+}

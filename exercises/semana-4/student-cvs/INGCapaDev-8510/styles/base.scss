@@ -1,0 +1,125 @@
+@import 'variables.scss';
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+* {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: $tundora;
+  background: $alabaster;
+}
+
+h2 {
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+h1,
+h2,
+h3,
+strong {
+  color: $mineShaft;
+}
+
+code,
+pre {
+  background: $athensGray;
+  border-bottom: 1px solid $mystic;
+  color: $aluminium;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+pre {
+  padding: 1rem;
+  border-left: 2px solid $danube;
+}
+
+.menu {
+  width: 100%;
+  margin: 0;
+  background-color: $mineShaft;
+  color: $silver;
+}
+
+.menu__list {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  list-style: none;
+}
+
+.menu__item {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.menu__item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu__item:hover {
+  color: $white;
+}
+
+.menu__item--selected a {
+  color: $danube;
+  cursor: default;
+}
+
+.menu__item--selected:hover {
+  color: $danube;
+}
+
+.container--body {
+  padding: 0 1rem;
+}
+
+.main__container {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.technologies {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social {
+  margin-bottom: 1rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--justify {
+  text-align: justify;
+}

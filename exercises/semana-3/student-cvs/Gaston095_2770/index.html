@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaston Salas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/89d57fbb8c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a class="link-header" href="https://github.com/Gaston095" target="_blank">Link a Github</a>
+    </header>
+    <main>
+        <h1>Hola, mi nombre es <span class="style">Gaston Salas</span></h1>
+        <div class="paragraph-container">
+            <p class="paragraph">Soy de <span class="style">Argentina</span>.</p>
+            <p class="paragraph">Me apaciona la tecnologia y el desarrollo web.</p>
+            <p class="paragraph">Actualmente estudio Ing. en Sistemas de Informacion.</p>
+            <p class="paragraph">Estoy cursando el bootcamp de <a class="link" href="https://undefined.academy/"
+                    target="_blank">Undefined Academy</a> para convertirme en <span class="style">Full-stack JavaScript
+                    Developer</span></p>
+        </div>
+    </main>
+    <section class="skills">
+        <h2 class="title">Skills</h2>
+        <div class="skills-container">
+            <article class="skills__item">
+                <i class="fa-brands fa-html5 icon"></i>
+                <span class="txt-icon">HTML</span>
+            </article>
+            <article class="skills__item">
+                <i class="fa-brands fa-css3-alt icon"></i>
+                <span class="txt-icon">CSS</span>
+            </article>
+            <article class="skills__item">
+                <i class="fa-brands fa-js icon"></i>
+                <span class="txt-icon">JAVASCRIPT</span>
+            </article>
+            <article class="skills__item">
+                <i class="fa-brands fa-github icon"></i>
+                <span class="txt-icon">GIT & GITHUB</span>
+            </article>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h1 class="title">Contactame</h1>
+        <form class="form" id="form" action="" method="GET">
+            <label class="form-label" for="name">Nombre</label>
+            <input class="form-input" name="name" id="name" type="text" placeholder="Ingrese su nombre" required>
+            <label class="form-label" for="lastname">Apellido</label>
+            <input class="form-input" type="text" name="lastname" id="lastname" placeholder="Ingrese su apellido"
+                required>
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" name="email" id="email" placeholder="example@example.com" required>
+            <label class="form-label" for="phone">Tel</label>
+            <input class="form-input" type="tel" name="phone" id="phone" placeholder="Telefono" required>
+            <label class="form-label" for="message">Mensaje</label>
+            <textarea class="form-area" name="message" id="message" cols="30" rows="10" placeholder="Deje su mensaje"
+                required></textarea>
+            <button id="submit" class="submit" type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>@2023</footer>
+    <script type="module" src="/main.mjs"></script>
+</body>
+
+</html>

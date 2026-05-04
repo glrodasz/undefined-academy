@@ -1,0 +1,20 @@
+@use "./variables.scss" as *;
+
+html body {
+    box-sizing: border-box;}
+  * {
+    box-sizing: inherit;}
+  
+  header{ 
+      display: flex;
+      flex-direction: column;
+  }
+  
+  body {
+    background-color: $codGray;
+    font-family: Arial;
+    font-size: 15px;
+    color: $wildSand;
+    margin: 20px;
+    height: 20px;
+      }

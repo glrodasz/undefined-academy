@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="/main.mjs"></script>
+    <script
+      src="https://kit.fontawesome.com/097d438f24.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,
+maximum-scale=1.0"
+    />
+
+    <meta charset="UTF-8" />
+    <title>Diego Mauricio Restrepo</title>
+  </head>
+
+  <body>
+    <header>
+      <section>
+        <h1>Hola, soy Diego M. Restrepo</h1>
+
+        <h2>Un breve resumen de mi vida educativa y profesional</h2>
+
+        <p>
+          Estudie para Tecnólogo de sistemas 3 años y me gradue a los 17 años al
+          mismo tiempo que termine el colegio, luego estudie hasta el 5 to
+          semestre de Ing de Sistemas en la Universidad del Valle en Cali,
+          Colombia. Por diversas razones no puede terminar, seguidamente me
+          dedique a proyectos propios..
+        </p>
+      </section>
+      <section>
+        <h3>Experiencia</h3>
+
+        <p>
+          Realice un par de aplicaciones en
+          <strong> <i class="fa-brands fa-android"></i> Android Nativo </strong>
+          y algunos juegos en
+          <strong><i class="fa-brands fa-unity"></i> Unity</strong>, luego me vi
+          inmerso en el mundo de las Crypto-monedas durante mas de 5 años donde
+          cree modelos de analisis del mercado y varios Bots de trading
+          algoritmico usando
+          <strong><i class="fab fa-python"> </i> Python y MQL5 </strong>
+        </p>
+      </section>
+      <section>
+        <h3>Mi Actualidad</h3>
+        <ul>
+          <li>
+            Me encuentro desarrollando un proyecto propio usando Gatsby,
+            <i class="fa-brands fa-react"></i>
+            React y
+            <i class="fa-brands fa-css3-alt"></i> Css.
+          </li>
+          <li>
+            Dedicado por completo aprender y ponerme al dia con la actualidad de
+            la insdustria del desarrollo del sofware empezando por este Bootcamp
+            Full-stack <i class="fa-brands fa-js"></i> JavaScript Developer de
+            Undefined Academy.
+          </li>
+        </ul>
+      </section>
+    </header>
+    <hr />
+    <section>
+      <h2>Comandos <i class="fa-solid fa-terminal fa-fade fa-lg"></i></h2>
+      <article>
+        <h3>Algunos comandos útiles para la terminal:</h3>
+
+        <table>
+          <tr>
+            <th>COMANDO</th>
+            <th>DESCRIPCIÓN</th>
+          </tr>
+
+          <tr>
+            <td>mkdir</td>
+            <td>Crea un nuevo directorio en la ubicación actual.</td>
+          </tr>
+          <tr>
+            <td>cd</td>
+            <td>Cambia el directorio actual a una ubicación especificada.</td>
+          </tr>
+          <tr>
+            <td>ls</td>
+            <td>Lista los archivos y directorios en la ubicación actual.</td>
+          </tr>
+          <tr>
+            <td>cp</td>
+            <td>Copia un archivo o directorio a una nueva ubicación.</td>
+          </tr>
+          <tr>
+            <td>mv</td>
+            <td>Mueve o renombra un archivo o directorio.</td>
+          </tr>
+        </table>
+      </article>
+
+      <br />
+      <article>
+        <h3>Ejemplo de 2 comandos alias que pueden ser útiles</h3>
+
+        <table>
+          <tr>
+            <th>COMANDO</th>
+            <th>DESCRIPCIÓN</th>
+          </tr>
+
+          <tr>
+            <td>`ls`='ls -alh'</td>
+            <td>
+              Crea un nuevo comando ll que lista los archivos y directorios en
+              la ubicación actual en formato de lista larga (-l), incluyendo
+              información como permisos, propietario, tamaño y fecha de
+              modificación. También incluye el tamaño de archivo en un formato
+              legible para humanos (-h).
+            </td>
+          </tr>
+          <tr>
+            <td>`..`='cd ..'</td>
+            <td>
+              Crea un nuevo comando .. que cambia el directorio actual al
+              directorio padre del directorio actual. Esto es útil para moverse
+              rápidamente por la estructura de directorios sin tener que
+              escribir la ruta completa cada vez.
+            </td>
+          </tr>
+        </table>
+      </article>
+    </section>
+    <br />
+    <hr />
+    <section>
+      <fieldset>
+        <legend>Contáctame</legend>
+        <form
+          action="/server"
+          method="get"
+          class="form"
+          id="contactForm"
+          name="contactForm"
+        >
+          <div class="form-group">
+            <label for="name"> Nombre</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Ingresa tu nombre"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ingresa tu email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Celular</label>
+            <input
+              type="tel"
+              id="phone"
+              name="pho"
+              placeholder="Ingresa tu celular"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="job">Tipo de trajo </label>
+            <select name="job" id="job" required>
+              <option value="" selected disabled>Selecione uno</option>
+              <option value="app-android">Aplicacion Android</option>
+              <option value="trading-bot">Bot de Trading en Python</option>
+              <option value="static-website">Sitio web estatico</option>
+              <option value="app-web">Aplicacion web</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="descripcion">describe tus requerimientos</label>
+            <textarea
+              name="descripcion"
+              id="descripcion"
+              placeholder="Ingresa aca la descripcion del proyecto a solicitar"
+              rows="6"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="term">
+              <input id="term" type="checkbox" name="term" required />
+              <span> Acepto los términos y condiciones</span>
+            </label>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </fieldset>
+    </section>
+
+    <footer>
+      <h2>Este es mi perfil de Github</h2>
+      <a href="https://github.com/restre17">
+        <i class="fa-brands fa-github fa-2xl"></i> Restre17
+      </a>
+    </footer>
+
+<!--     <script>
+      contactForm.addEventListener("submit", (e) => e.preventDefault());
+    </script> -->
+  </body>
+</html>

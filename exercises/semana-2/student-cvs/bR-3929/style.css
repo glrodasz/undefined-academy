@@ -1,0 +1,66 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body,
+html {
+    background: whitesmoke;
+    max-width: 1200px;
+    margin: 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Rubik Iso', cursive;
+    font-size: 50px;
+}
+.aprendiz li a{
+    text-decoration: none;
+    color: blue;
+}
+.aprendiz li{
+    margin-top: 5px;
+}
+
+table {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+td {
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+}
+.tabla h1{
+    font-size: 30px;
+}
+.tabla h2{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 15px;
+}
+code {
+    font-size: 16px;
+    border: 2px solid black;
+    background: white;
+    border-radius: 5px;
+    padding: 2px 15px;
+}
+
+footer {
+    position: fixed;
+    bottom: 50px;
+    text-align: center;
+    padding: 10px;
+}

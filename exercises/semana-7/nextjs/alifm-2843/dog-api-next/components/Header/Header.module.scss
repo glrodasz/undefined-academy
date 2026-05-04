@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    gap: 0.4em;
+    justify-content: space-between;
+    align-items: center;
+    color:var(--color-dark-green);
+    background-color: var(--color-light-green);
+    padding: 0.5em;
+    font-size: 1.8em;
+    font-weight: 900;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+}
+
+.headerIcon {
+    width: 1.7em;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="flex flex-col items-center mt-20 mt-md-4">
+        <h2 class="text-2xl font-bold">Contact</h2>
+        <form class="w-4/5 md:w-1/2 accent-yellow-500">
+            <div class="my-8">
+                <label for="name" class="font-bold uppercase text-gray-500 text-gray-500 text-sm">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name"
+                    class="w-full bg-white border border-solid border-gray-300 my-1 px-2 py-2 rounded-sm text-xs focus:outline focus:outline-yellow-500"
+                    required>
+            </div>
+            <div class="my-8">
+                <label for="email" class="font-bold uppercase text-gray-500 text-sm">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email"
+                    class="w-full bg-white border border-solid border-gray-300 my-1 px-2 py-2 rounded-sm text-xs focus:outline focus:outline-yellow-500"
+                    required>
+            </div>
+            <div class="my-8 w-full">
+                <fieldset class="font-bold uppercase border border-solid border-black my-1 px-2 py-2 rounded-sm">
+                    <legend class=" text-gray-500 text-sm">Budget</legend>
+
+                    <input type="radio" name="budget" id="10000" required>
+                    <label for="10000">$10.000</label>
+
+                    <input type="radio" name="budget" id="5000">
+                    <label for="5000">$5.000</label>
+
+                    <input type="radio" name="budget" id="2000">
+                    <label for="2000">$2.000</label>
+                </fieldset>
+                <div class="text-sm text-gray-500 mt-2">This budget is an estimate not a final amount</div>
+            </div>
+            <div class="my-8">
+                <label for="type" class="font-bold uppercase text-gray-500 text-sm">Project type</label>
+                <select name="type" id="type" required
+                    class="w-full bg-white border border-gray-300 my-1 px-2 py-2 rounded-sm text-xs">
+                    <option value="" disabled selected >Select one</option>
+                    <option value="website">website</option>
+                    <option value="webapp">webapp</option>
+                    <option value="mobileapp">mobile app</option>
+                    <option value="design">design</option>
+                </select>
+            </div>
+            <div class="my-8">
+                <label for="description" class="font-bold uppercase text-gray-500 text-sm">Description</label>
+                <textarea name="description" id="description" rows="5" required
+                    class="w-full resize-y border border-solid border-gray-300 focus:outline focus:outline-yellow-500"></textarea>
+                <div class="text-sm text-gray-500 mt-2">Write a brief summary of the project in 500 words or less</div>
+            </div>
+            <div class="my-8">
+                <label for="terms">
+                    <input id="terms" name="terms" type="checkbox" required>
+                    <span class="text-sm font-bold uppercase text-gray-500">I agree to the terms and conditions</span>
+                </label>
+            </div>
+            <div class="flex justify-center my-8 ">
+                <button type="submit"
+                    class="flex items-center justify-center w-1/2 h-10 bg-yellow-500 hover:bg-yellow-400 border border-solid border-black font-bold py-6 px-4 rounded-lg uppercase text-xs cursor-pointer shadow-lg shadow-black/20"
+                    style="text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);">Send</button>
+            </div>
+        </form>
+    </section>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f8dda4;
+  color: #813405;
+  font-size: 16px;
+  margin: 8px 32px;
+}
+
+.titulo {
+  font-size: 64px;
+  color: #813405;
+  font-style: italic;
+  margin: 16px;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  padding: 0;
+  display: block;
+  gap: 16px;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+  padding: 8px 32px;
+  margin: 8px;
+  background: #813405;
+  font-weight: 600;
+  border-radius: 8px;
+  color: #f8dda4;
+}
+
+li:hover {
+  background: #d45113;
+}
+
+.search {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid Gainsboro;
+  width: 100%;
+  background: WhiteSmoke;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 4px 4px 0px #813405;
+  background: #f9a03f;
+}
+
+.item:hover {
+  background: #d45113;
+  color: #f8dda4;
+}
+
+img {
+  width: auto;
+  max-height: 150px;
+  margin: 0px auto;
+}
+
+.item h1 {
+  margin: 0px;
+}
+
+p {
+  margin: 8px;
+  font-size: 16px;
+}
+
+footer {
+  margin: 32px auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 450px) {
+  .titulo {
+    font-size: 72px;
+  }
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+  li {
+    padding: 8px;
+    margin: 0px;
+  }
+  .search {
+    width: 400px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 40px;
+  }
+  .item:last-child {
+    grid-column: 1/4;
+    text-align: justify;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

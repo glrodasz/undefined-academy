@@ -1,0 +1,206 @@
+html, body{
+    height: 100%;
+}
+html{
+     box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: #444;
+    font-size: 1.2rem;
+    min-height: 100vh;
+    background-color: rgb(250, 250, 235);
+    font-family: Lato, Helvetica, sans-serif;
+}
+/*header y nav*/
+.main-header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.main-header nav ul li {
+    list-style: none;
+}
+
+.main-header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(246 246 246);
+
+}
+.main-header nav ul li a {
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+nav{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-items: center;
+    margin-right: 2rem;
+    margin-left: 0.5rem;
+    align-items: center;
+}
+
+
+.logo{
+    width: 100px;
+}
+.logo img{
+    width: 100%;
+}
+
+main{
+    margin-top: 100px;
+}
+/* Cards de los articulos*/
+.articles{
+    margin: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+article{
+    --title-color: black;
+    padding: 50px;
+    height: auto;
+    width: auto;
+    background-color:rgb(205, 214, 220);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(77, 73, 73, 0.2);
+    
+}
+article h2 {
+    margin: 0 0 18px 0;
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    transition: color, font-size 0.7s ease;
+}
+article h2:hover{
+    cursor: pointer;
+    color:rgb(6, 62, 101);
+    font-size: 2rem;
+}
+.article-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.article-body{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.article-wrapper figure {
+    width: 300px;
+    height: 200px;
+}
+.article-wrapper figure img{
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    
+}
+article a {
+    width: 250px;
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    color:rgb(6, 62, 101);
+
+    padding: 10px 20px ;
+    border-radius: 8px;
+    transition: color,font-size, background-color 1s ease-out;
+
+}
+
+article a:hover {
+    color: rgb(139, 196, 237);
+    font-size: 1.3rem;
+    background-color: rgb(6, 62, 101);
+
+}
+.ultimo-article {
+    grid-column: 1 / 4;
+    
+
+}  
+.ultimo-article .article-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.ultimo-article .article-wrapper .article-body{
+    flex-direction: column;
+    gap: 20px
+}
+.ultimo-article figure{
+    width: 700px;
+}
+.article-wrapper img{
+    width: 100%;
+}
+
+.icon {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+}
+
+
+.menu li a:hover {
+    color: aliceblue;
+    background-color: rgb(6, 62, 101);  
+}
+.buscar {
+    appearance: none;
+    width: 100%;
+    padding: 3%;
+    margin: 5%;
+
+    height: 1.8rem;
+    border-radius: 5px;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-around;
+}
+  
+.icono a:hover {
+    color: rgb(6, 62, 101);
+}
+
+.net-icons {
+    color: rgb(99, 56, 96);
+    text-decoration: none;
+}
+ 
+i {
+    font-size: 2rem;
+    margin: 10px;
+}
+  
+footer{
+    background-color: rgb(240, 230, 230);
+    padding: 25px 100px 50px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+/* Contenedor de Cards*/

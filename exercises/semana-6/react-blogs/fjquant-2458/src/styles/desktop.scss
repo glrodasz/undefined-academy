@@ -1,0 +1,23 @@
+@media screen and (min-width: 792px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3 1fr);
+        grid-template-rows: repeat(4 1fr);
+        gap: 20px;;
+    }
+
+nav{
+    justify-content: space-between;
+}
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .principal {
+        grid-column: 1 / 3;
+        grid-row: 2/ 3;
+        align-items: center;
+    }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gustavo Arana</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Hello, I'm Gustavo Arana Osorio</h1>
+        <hr />
+      </header>
+
+      <section>
+        <h2>About me</h2>
+
+        <p>
+          I'm a Systems Engineer, Computer Security Specialist, and Full-stack
+          developer in Genexus from Colombia. Iiving on the "Tierrita" it's
+          small town call Buga in Valle del Cauca, where I was born and raised.
+          I have more than 10 years of experience in consulting, development
+          projects, and integrations with accounting software.
+        </p>
+
+        <p>
+          Genexus is a great tool. **I used to say "why learn native if we have
+          Genexus?"**, but I was wrong. However, it's never too late to learn
+          HTML, CSS, and JavaScript, and that's why I'm here.
+        </p>
+      </section>
+
+      <section>
+        <h2>Let's talk about the terminal</h2>
+
+        <article>
+          <h3>Most used commands in Linux</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>cd</td>
+                <td>Change of directory</td>
+                <td>cd home</td>
+              </tr>
+              <tr>
+                <td>mkdir</td>
+                <td>Create a directory</td>
+                <td>mkdir MyFolder</td>
+              </tr>
+              <tr>
+                <td>mv</td>
+                <td>Move a directory</td>
+                <td>mv MyFolder</td>
+              </tr>
+              <tr>
+                <td>touch</td>
+                <td>Create a file</td>
+                <td>touch index.html</td>
+              </tr>
+              <tr>
+                <td>rm -r</td>
+                <td>Delete a directory and content</td>
+                <td>rm MyFolder -r</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article>
+          <h3>Useful Aliases</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Command alias</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>nvmy</td>
+                <td>Change version of node</td>
+              </tr>
+              <tr>
+                <td>ggpush</td>
+                <td>Execute the git push command</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Write your name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="name">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Write your email"
+              required
+            />
+          </div>
+
+          <fieldset>
+            <legend>Budget</legend>
+            <input type="radio" id="5000" name="budget" />
+            <label for="5000">$5,000</label>
+
+            <input type="radio" id="10000" name="budget" />
+            <label for="10000">$10,000</label>
+
+            <input type="radio" id="30000" name="budget" />
+            <label for="30000">$30,000</label>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="type-project">Type Project:</label>
+            <select name="type-project" id="type-project" required>
+              <option value="" selected disabled>Select one</option>
+              <option value="website">Website</option>
+              <option value="webapp">Webapp</option>
+              <option value="mobile">Mobile App</option>
+              <option value="design">Design</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea id="description"></textarea>
+            <div>
+              Write a description about the project almost 500 characters.
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="terms">
+              <input id="terms" type="checkbox" required />
+              <span>Accept terms and conditions</span>
+            </label>
+          </div>
+
+          <button>Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <h2>GitHub Profile</h2>
+      Click
+      <a href="https://github.com/gustavo-arana" target="_blank">here</a> to go
+      to my GitHub profile
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+  @import url('https://fonts.googleapis.com/css2?family=Acme&family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    background-color: rgba(118, 130, 130, 0.895);
+    margin: 0 auto;
+    max-width: 30em;
+    line-height: 1.4;
+    padding: 4em 1em;
+    color: #231f1f;
+    font-family: 'Comfortaa', cursive
+  }
+
+  h1,h3 {
+    margin-top: 1em;
+    padding-top: 1em;
+    color:rgb(38, 39, 40);
+ }
+ p, li{
+ font-size: 18px;
+ font-family: 'Acme', sans-serif;
+ }
+
+ a {
+  color:rgb(165, 78, 46)
+ }
+
+ footer {
+  display: flex;
+  justify-content: center;
+ }
+
+ @media screen and (min-width: 992px) {
+  body {
+    background-color: rgb(28, 74, 28);
+    max-width: 60%;
+  }
+
+  .container {
+    margin: auto 4px;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+   }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+
+  footer {
+    align-items: center;
+    justify-items: center;
+  }
+}
+

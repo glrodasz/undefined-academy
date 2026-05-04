@@ -1,0 +1,111 @@
+@media screen and (min-width: 768px) {
+
+    header {
+        padding: 1rem 4rem;
+
+        .header-items {
+            .navbar-menu {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .navbar-section {
+                .container-info {
+                    img {
+                        border-radius: 50%;
+                        height: 15rem;
+                    }
+
+                    h1 {
+                        font-size: 4rem;
+                        font-weight: 700;
+                        margin: 2rem 0 1rem 0;
+                    }
+
+                    p {
+                        font-size: 2rem;
+                        color: #333;
+                    }
+                }
+            }
+        }
+    }
+
+    //Interaccion - Menus
+    .button-mobile {
+        display: none;
+    }
+
+    .menu-desktop {
+        padding: 0;
+        display: flex;
+        gap: 20px;
+        font-size: 1.6rem;
+        font-weight: 600;
+
+        a {
+            color: #333;
+        }
+
+        .button-nav {
+            background-color: #0db769;
+            border-radius: 5px;
+            padding: 0.9rem 2rem;
+        }
+    }
+
+    .section-education-body,
+    .section-services-body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+
+
+    .content {
+        padding: 5rem 4rem;
+    }
+
+    footer {
+        padding: 3rem 4rem;
+    }
+
+    .links,
+    .services {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .blog-card {
+        max-width: 355px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header-items {
+        max-width: 100rem;
+        margin: 0 auto;
+    }
+
+    .desktop,
+    .content-services,
+    .content-blog,
+    .content-education,
+    .content-form,
+    .container-footer {
+        max-width: 110rem;
+        margin: 0 auto;
+    }
+
+
+    footer {
+        .container-footer {
+            justify-content: space-between;
+            padding: 8rem 2rem 0 2rem;
+        }
+    }
+
+}

@@ -1,0 +1,50 @@
+@use "./variables.scss" as *;
+
+.blogs {
+    display:flex;
+    flex-direction: column;
+    margin: 10px auto;
+  }
+
+  img {
+    width: 100%;
+  }
+  
+  input[type="search"] {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid $alto;
+    width: 100%;
+    background: $wildSand;
+  }
+  .box {position: relative;}
+  .icon{
+        padding: 5px;
+        color: $black;
+        position: absolute; 
+}
+
+::placeholder{
+    padding: 15px;
+}
+  
+  nav {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+  }
+  a {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: $wildSand;
+    font-size:12px ;
+  }
+  .date-blog {
+    font-size: 11px;
+  }

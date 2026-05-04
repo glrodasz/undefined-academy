@@ -1,0 +1,19 @@
+.input {
+
+
+    border: 2px solid var(--color-havelock-blue);
+    color: var(--color-havelock-blue);
+    background: transparent;
+    border-radius: 8px;
+    max-width: 250px;
+
+    font-family: Recursive;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+input::placeholder {
+    color: var(--color-gray);
+}

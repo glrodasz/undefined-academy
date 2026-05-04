@@ -1,0 +1,79 @@
+@import "./variables.scss";
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .containerPost {
+    display: flex;
+    width: 100%;
+
+    .cardPost:nth-child(3n) {
+      display: grid;
+      width: 100%;
+      height: 300px;
+      grid-column: 1 / span 3;
+      background-color: #fff;
+
+      & > .infoCard {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 290px;
+
+
+        & > .first {
+          display: flex;
+          flex-direction: column;
+          width: 60%;
+          height: 100%;
+          
+          & > .tittlePost {
+            display: flex;
+            color: white;
+            font-size: xx-large;
+            justify-content: center;
+          }
+
+          & > .imgPostCont {
+            display: flex;
+            width: 100%;
+            height: 80%;
+            align-content: center;
+            justify-content: center;
+          }
+
+          & > .imgPost {
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+
+        & > .secondInfo {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          padding: 0.5rem;
+
+          .description{
+            font-size: 20px;
+            font-weight: bold;
+          }
+          .descPost {
+            height: 80%;
+            display: flex;
+            flex-wrap: wrap ;
+            align-content: center;
+            justify-content: center;
+
+          }
+
+          &>.datePostContent {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            font-style: italic;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

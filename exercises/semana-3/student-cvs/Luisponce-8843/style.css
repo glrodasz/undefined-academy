@@ -1,0 +1,206 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap');
+
+html,body{
+  box-sizing: border-box;
+  background: #f9fafb
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 100%;
+}
+body{
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h2{
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+h1,h2,h3{
+    
+    color: #059669;
+    
+}
+.info h2{
+  color: #fef08a;
+}
+.presentacion{
+  color: #facc15;
+}
+strong{
+  color: #fef08a;
+}
+.parrafo1{
+    color: #eab308;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+code {
+    padding: 2px 4px;
+    vertical-align: text-bottom;
+}
+pre{
+    padding: 1em;
+    border-left: 2px solid rgb(58, 96, 133);
+}
+a {
+    color: #e81c4f;
+  }
+  body{
+    color: #40484d;
+  }
+  header{
+    background-image: url("imagenes/imagen.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  header {
+    background-color: #263d36;
+    line-height: 1.2;
+    padding: 3vw 6em;
+    text-align: center;
+    width: 100%;
+  }
+  header img {
+    display: inline-block;
+    height: 160px;
+    vertical-align: top;
+    width: 160px;
+    border-radius: 50%;
+  }
+  header h1 {
+    color: rgb(255, 255, 59);
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  
+  header a {
+    border: 3px solid #fbbf24;
+    border-radius: 290486px;
+    color: rgb(255, 255, 59);
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+  }
+  
+  header a:hover {
+    background:  #fbbf24;
+    color: rgb(0, 0, 0);
+  }
+ .contact{
+    background-color: #1c1917;
+    background-image: url("imagenes/imagen2.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    line-height: 1.2;
+    padding: 4vw 1em;
+    text-align: center;
+  }
+  div a{
+    border: 3px solid #fbbf24;
+    border-radius: 290486px;
+    color: rgb(255, 255, 59);
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+  }
+  div a:hover{
+    background:  #fbbf24;
+    color: rgb(0, 0, 0);
+  }
+  .page{
+    display: flex;
+    flex-direction: column;
+  }
+  section, header{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+  }
+  .info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .aprender{
+    display: flex;
+    min-width: 300px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .habilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .estudios{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .header{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    padding: 10px;
+  }
+  .siguiente{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+
+
+  @media screen and (min-width: 992px){
+    .feature{
+      display: flex;
+      width: 100%;
+      align-content: center;
+    }
+    .feature{
+      text-align: center;
+      
+    }
+    .header{
+      max-width: 700px;
+    }
+    .aprender{
+      order: 3;
+    }
+    .habilidades{
+      order: 2;
+    }
+    .estudios{
+      order: 2;
+    }
+    .siguiente{
+    order: 2;
+    }
+  }

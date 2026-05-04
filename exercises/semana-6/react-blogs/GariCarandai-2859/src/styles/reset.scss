@@ -1,0 +1,12 @@
+@use "fonts.scss" as *;
+
+/*=== RESET ===*/
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}

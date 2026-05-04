@@ -1,0 +1,88 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 700px;
+    margin: 100px auto;
+    padding: 0 180px;
+    font-size: 15px;
+    font-family: 'poppins';    
+    background: #fdf9d0;
+    color: #75604a;
+}
+
+h2 {
+    color: #705447;
+    font-weight: 600;
+}
+
+form {
+    max-width: 700px;
+}
+
+.form-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input {
+    outline: none;
+    outline-color: #49372f;
+}
+
+#name {
+    width: 230px;
+}
+
+#email {
+    width: 250px;
+}
+
+
+textarea {
+    width: 220px;
+    border-color: #705447;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn {
+    margin-top: 5px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #49372f;
+    background: #705447;
+    color: #fdf9d0;
+    text-shadow: 1px 1px 0 rgba(241, 188, 126, 0.6);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(241, 188, 126, 0.6);
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid #49372f;
+    background: rgb(141, 106, 65);
+
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        padding-left: 50px;
+    }
+   form {
+        margin-left: 40px;
+    }
+    h2 {
+        margin-left: 40px;
+    }
+}

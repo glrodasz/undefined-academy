@@ -1,0 +1,29 @@
+/******************
+**   CSS Reset   **
+******************/
+html {
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*******************
+  ** HTML/Body/Main **
+  *******************/
+  html {
+    font-size: 62.5%; /*Modifico la equivalencia del rem; rem=10px*/
+    font-family: "Courier New", Courier, monospace;
+    color: #323132;
+  }
+  
+  body {
+    font-size: 1.6rem; /*Asigno tamaño de letra de 16px*/
+    background-color: #6ba590;
+    line-height: 1.5;
+  }

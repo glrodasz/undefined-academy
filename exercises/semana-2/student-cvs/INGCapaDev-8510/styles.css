@@ -1,0 +1,109 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 50rem;
+  margin: 0 auto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  padding: 4rem 1rem;
+  color: #444;
+  background: #fafafa;
+}
+
+h2 {
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+h1,
+h2,
+h3,
+strong {
+  color: #333;
+}
+
+code,
+pre {
+  background: #f5f7f9;
+  border-bottom: 1px solid #d8dee9;
+  color: #a7adba;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+pre {
+  padding: 1rem;
+  border-left: 2px solid #69c;
+}
+
+a {
+  color: #e81c4f;
+}
+
+.form__container {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.form__group {
+  margin: 1rem 0;
+}
+
+.form__group input,
+.form__group label {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.form__group input {
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 0.5rem 0.6rem;
+}
+
+.form__group label {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.form__group textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+
+.form__btn {
+  display: block;
+  margin: 0 auto;
+  padding: 0.7rem 2rem;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  background-color: lightgray;
+
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form__btn:hover {
+  background-color: rgb(228, 226, 226);
+}
+
+.form__btn:active {
+  box-shadow: none;
+}

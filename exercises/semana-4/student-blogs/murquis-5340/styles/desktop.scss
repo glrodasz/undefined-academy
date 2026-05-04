@@ -1,0 +1,11 @@
+@use "variables.scss";
+
+/* ------- DESKTOP VIEW ------- */
+@media only screen and (min-width: 600px) {
+    body {
+      max-width: var(variables.$container-max-width);
+    }
+    article{
+      width: 45%;
+    }
+  }

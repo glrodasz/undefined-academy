@@ -1,0 +1,69 @@
+@import "styles/variables.scss";
+
+html {
+  box-sizing: border-box;
+}
+  
+* {
+  @include style-general;
+}
+  
+body {
+  @include style-body;
+}
+  
+nav {
+  @include style-nav;
+}
+  
+ul {
+  font-size: 12px;
+  padding: 10px;
+  @include style-ul;
+}
+  
+input {
+  padding-left: 10px;
+  border-radius: 5px;
+  width: 70px;
+  outline: none;
+}
+  
+.wrapper-grid {
+  grid-template-columns: repeat(auto-fit, 300px);
+  @include style-wrappergrid
+}
+  
+.container {
+  @include style-container;
+}
+  
+.banner-img {
+  @include style-bannerimg;
+}
+  
+.example-img {
+  @include style-exampleimg
+}
+  
+.date {
+  @include style-date;
+}
+
+
+.name {
+  font-weight: bold;
+  font-size: 20px;
+}
+  
+.description {
+  margin: 16px 32px;
+  font-size: 12px;
+}
+  
+.btn {
+  font-size: 14px;
+  @include style-button;
+}
+  
+  

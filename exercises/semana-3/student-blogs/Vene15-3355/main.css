@@ -1,0 +1,136 @@
+html body {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  background: #ebdfea;
+  color: 333;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Estilos del header*/
+header {
+  width: 95%;
+  margin: 15px auto;
+  min-height: 250px;
+  background: #e5bbab;
+  display: flex;
+  align-items: center;
+}
+
+header>img {
+  display: flex;
+  justify-content: flex-start;
+  width: 20%;
+  margin: 20px 20px 20px 35px;
+  border-radius: 50%;
+}
+
+header>div {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 35px 20px 20px;
+}
+
+.header-text h1,
+h2,
+p {
+  margin: 5px;
+}
+
+.header-text h1 {
+  font-size: 48px;
+}
+
+.header-text h2 {
+  font-size: 32px;
+}
+
+.header-text p {
+  font-size: 16px;
+}
+
+main {
+  width: 95%;
+  margin: auto;
+}
+
+section {
+  min-height: 300px;
+}
+
+/*Estilos de las secciones blog*/
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr;
+  gap: 10px;
+}
+
+.blog {
+  padding: 10px;
+  background: whitesmoke;
+}
+
+.img-blog {
+  width: 100%;
+  padding: 10px;
+}
+
+.blog h3,
+.blog p {
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+/*Estilos sección max-blog*/
+.max-blog {
+  background: #eddaca;
+  grid-column: 1 / 4;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.img-max-blog {
+  width: 40%;
+  padding: 10px;
+}
+
+.max-blog>img {
+  display: flex;
+  justify-content: flex-start;
+  width: 25%;
+  max-height: 400px;
+  margin: 10px 10px 10px 10px;
+}
+
+.max-blog>div {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 35px 20px 20px;
+}
+
+/*Estilos footer*/
+footer {
+  background: #e5bbab;
+  height: 30px;
+  margin: 15px;
+  padding: 10px;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+footer>a {
+  color: #333;
+}

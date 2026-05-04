@@ -1,0 +1,128 @@
+@use "variables.scss" as v;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 30px 24px;
+    padding: 0px;
+    background-color: v.$columbia-blue;
+    color: #121214;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#navbar ul li {
+    margin: 8px 8px;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: v.$dark-slate-gray;
+    border-radius: 24px;
+}
+
+#navbar li a {
+    color: v.$columbia-blue;
+    text-decoration: none;
+}
+
+#navbar li:hover {
+    color: v.$columbia-blue;
+    background: v.$metallic-seaweed;
+}
+
+#navbar li:active {
+    color: v.$columbia-blue;
+    background: v.$metallic-seaweed;
+}
+
+// --------MAIN-----------
+
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+    color: v.$metallic-seaweed;
+    text-align: center;
+}
+
+h3 {
+    background-color: v.$dark-slate-gray;
+    color: v.$columbia-blue;
+    padding: 10px;
+}
+
+#contacto a {
+    text-decoration: none;
+    color: v.$dark-slate-gray;
+    display: flex;
+    justify-content: center;
+}
+
+#contacto a:hover {
+    font-weight: 600;
+}
+
+label {
+    display: block;
+    margin: 10px;
+}
+
+input {
+    background-color: v.$soft-slate-gray;
+    margin: 0px 10px;
+    padding: 5px;
+    border-radius: 8px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #ffffff;
+}
+
+select {
+    background-color: v.$soft-slate-gray;
+    color: #fff;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 8px;
+    resize: none;
+    border: 1px solid grey;
+    max-width: 600px;
+    min-width: 250px;
+    background-color: v.$soft-slate-gray;
+    color: #FFF;
+}
+
+input[type="submit"] {
+    margin: 10px 20px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+input[type="submit"]:hover {
+    background-color: v.$metallic-seaweed;
+
+}
+
+#condiciones {
+    font-size: 12px;
+    color: grey;
+}
+
+// -----FOOTER------------------------------------- 
+
+footer {
+    font-size: 14px;
+    margin: 40px auto;
+    text-align: center;
+}

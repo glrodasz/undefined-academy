@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script async defer type="module" src="main.js"></script>
+    <title>Contact</title>
+  </head>
+  <body>
+    <header class="top-0 w-full sticky">
+      <nav class="flex justify-between p-8">
+        <div class="flex items-center">
+          <a class="w-[50px] h-[50px]" href="index.html">
+            <img src="assets/maracuya.webp" alt="logo" />
+          </a>
+          <aside class="tag-content">
+            <div class="tag">
+              <em>
+                ⚡ Fun fact: I love
+                <a
+                  href="https://en.wikipedia.org/wiki/Passiflora_edulis"
+                  target="_blank"
+                  >Maracuyá </a
+                >, also called passion fruit.
+              </em>
+            </div>
+          </aside>
+        </div>
+      </nav>
+    </header>
+    <main class="my-1 mx-auto max-w-screen-md">
+      <section>
+        <h1 class="title-1">Contact me!</h1>
+        <form class="p-1" action="/contact" method="post">
+          <div class="form-group">
+            <label for="contactName">Nombre completo</label>
+            <input type="text" name="contactName" id="contactName" required />
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Correo electrónico</label>
+            <input
+              type="email"
+              name="contactEmail"
+              id="contactEmail"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="contactPhone">Teléfono</label>
+            <input type="tel" name="contactPhone" id="contactPhone" required />
+          </div>
+          <hr />
+          <div class="form-group">
+            <label for="typeProyect">Tipo de Proyecto: </label>
+            <select name="typeProyect" id="typeProyect" required>
+              <option disabled selected value="">Seleccione</option>
+              <option value="Website">Website</option>
+              <option value="aplicacionweb">Aplicación Web</option>
+              <option value="aplicacionmovil">Aplicación Movil</option>
+              <option value="disenoweb">Diseño Web</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contactDesc">Descripción</label>
+            <textarea
+              class="resize-none"
+              name="contactDesc"
+              id="contactDesc"
+              rows="7"
+              required
+            ></textarea>
+            <p class="helper">* Escribe una descripción del proyecto</p>
+          </div>
+          <div class="form-group">
+            <label for="termsConditions">
+              <input
+                type="checkbox"
+                name="termsConditions"
+                id="termsConditions"
+                required
+              />
+              <span>Acepta los términos y condiciones</span>
+            </label>
+          </div>
+          <button class="primary-btn">enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer class="bg-yellow">
+      <p class="copyright">
+        &copy; <time datetime="2023-04-12">2023</time> By Julián Andrés
+        Sucerquia.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es" style="color-scheme: dark;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1531/1531344.png" type="image/x-icon">
+    <script async defer type="module" src="/src/js/main.mjs"></script>
+</head>
+
+<body class="py-8 px-4 my-0 mx-auto font-roboto flex justify-center leading-normal box-border text-50">
+    <main class="w-full">
+        <form class="w-full p-4 bg-400 border-2 border-100 rounded-lg" id="form" action="" method="">
+            <div>
+                <h1>Contáctame 📲</h1>
+            </div>
+            
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Escribe tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Escribe tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción</label>
+                <textarea id="description" name="description" placeholder="Describe brevemente tu solicitud de contacto"
+                    required rows="8"></textarea>
+            </div>
+            <div class="flex gap-1 justify-center">
+                <input type="checkbox" name="terms" id="terms" required>
+                <label for="terms">Acepto los términos y condiciones</label>
+
+            </div>
+            <div class="grid place-items-center">
+            <button class="submit-button" type="submit">Enviar</button>
+            </div>
+        </form>
+
+        <footer class="mt-2">
+            <p>© 2023 Guillermo Bello</p>
+        </footer>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+html {
+    box-sizing:  border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+body {
+    margin: auto;
+    max-width: 40em;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    padding: 3em 1em;
+    color: #555;
+}
+
+h1,
+h2,
+strong {
+    color: #333;
+}
+
+table {
+    padding: 2px 4px;
+    background: #f5f5f5;
+}
+
+tr {
+    background: #d6d8e0;
+}
+
+th {
+    background: #c2c6da;
+}
+
+th,
+td {
+    padding: 8px;
+}
+
+a {
+    color: rgb(7, 1, 94);
+}
+
+fieldset{
+    background: #f5f5f5 ;
+}
+legend{
+    font-size: xx-large;
+    font-weight: bold;
+}
+input, textarea{
+    padding: 6px 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+input, label{
+    vertical-align: middle;
+}
+.form-group{
+    margin: 15px 0;
+   
+}
+
+label , input:not([type="radio"],[type="checkbox"]){
+    width: 100%;
+    display: block;
+}
+textarea{
+    width: 100%;
+}
+label{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #555;
+}
+
+button{
+    padding: 15px 50px;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0 #164e63;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 1px solid #155e75;
+    background: #0891b2;
+    box-shadow: 1px 1px 3px #333;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #06b6d4;
+
+}
+button:active{
+    background: #0e7490;
+    box-shadow: none;
+    box-shadow: -1px -1px 0px #333;
+}
+
+@media screen and (min-width: 992px) {
+    ul {
+        display: flex;
+        list-style-type: none;
+        
+        
+    }
+
+    li {
+        width: 1fr;
+        border: solid 1px #bdc3c7;
+        background-color: #ecf0f1;
+        padding: 10px;
+        margin: 15px;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+    footer {
+        display: flex;
+        
+    }
+    a {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        margin-left: 30px;
+        padding: 10px;
+    }
+}

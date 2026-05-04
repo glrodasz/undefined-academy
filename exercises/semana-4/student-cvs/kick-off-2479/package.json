@@ -1,0 +1,23 @@
+{
+  "name": "semana-4",
+  "version": "1.0.0",
+  "description": "> 🏕️ [Base de conocimientos.](https://undefinedshell.notion.site/Semana-4-30b7ce779d2d4ab1b9de5982fe199561)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "sass": "sass styles/main.scss styles/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^4.2.1"
+  },
+  "dependencies": {
+    "sass": "^1.61.0",
+    "bootstrap": "^5.2.3",
+    "dayjs": "^1.11.7"
+  }
+}

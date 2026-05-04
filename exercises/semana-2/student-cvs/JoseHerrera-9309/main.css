@@ -1,0 +1,161 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: slategrey;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #333;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    background-color: cadetblue;
+    padding: 0px 16px;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    color: silver;
+}
+
+p {
+    line-height: 1.1;
+    font-size: 2rem;
+    text-align: center;
+    margin: 5px;
+}
+
+h1,
+h2 {
+    line-height: 1.5;
+    margin-top: 25px;
+}
+
+/*Contacto*/
+
+.form-group {
+    margin: 20px 0;
+}
+
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+}
+
+label,
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #444;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label,
+input {
+    vertical-align: middle;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background: white;
+    border: 1px solid lightblue;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+textarea+div {
+    font-size: 12px;
+}
+
+label,
+input:not([type="checkbox"]) {
+    width: 100%;
+}
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid turquoise;
+    background: darkgrey;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px black;
+    cursor: pointer;
+}
+
+button:hover {
+    background: teal;
+}
+
+button:active {
+    background: orange;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex-basis: calc(33.33% - 20px);
+    border: 1px solid chocolate;
+    padding: 20px;
+    margin: 20px;
+    width: 18rem;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+footer{
+    background-color: cadetblue;
+}
+.form{
+    margin: 0px auto;
+    max-width: 600px;
+}

@@ -1,0 +1,157 @@
+html{
+  box-sizing: border-box;
+}
+
+*{
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  color: #566b78;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 50em;
+}
+/* estilo de la barra de navegacion superior*/
+.topnav {
+  overflow: hidden;
+  background-color: #0A2647;
+}
+
+/* estilo de enlaces de la barra de navegacion*/
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*estilos al pasar el puntero sobre el enlace de la barra de navegacion*/
+.topnav a:hover {
+  background-color: #205295;
+  color: #f2f2f2;
+}
+
+h1, h2, h3 {
+  margin-top: 1em;
+  padding-top: 1em;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+pre {
+  background: #f5f7f9;
+  border-bottom: 1px solid #d8dee9;
+  color: #43454b;
+  padding: 1em;
+  border-left: 2px solid #69c;
+}
+
+.btn {
+  background-color: #144272;
+  color: white;
+  padding: 14px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px;
+  margin-bottom: 1em;
+}
+
+.btn:hover {
+  background-color: #2C74B3;
+}
+
+.shell-commands {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.shell-commands td, .shell-commands th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.shell-commands tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.shell-commands tr:hover {
+  background-color: #ddd;
+}
+
+.shell-commands th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #205295;
+  color: white;
+}
+/*estilos para el formulario*/
+
+.form-group {
+  margin: 20px 0;
+}
+
+.form-group label, input:not([type="radio"],[type="checkbox"]){
+  width: 100%;
+}
+.form-group input, .form-group label {
+  vertical-align: middle;
+}
+.form-group textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+.form-input {
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+}
+
+.help{
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/*estilos para el pie de pagina*/
+.copy {
+  bottom: 0;
+  background-color: #0A2647;
+  text-align: center;
+  padding: 10px;
+}
+
+/*estilo para el texto que contiene el pie de pagina*/
+.copy p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  font-weight: 10px;
+  margin: 0;
+  color: #fff;
+}
+
+.copy a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 0;
+}

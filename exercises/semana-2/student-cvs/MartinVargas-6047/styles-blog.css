@@ -1,0 +1,62 @@
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Roboto:wght@300;500&display=swap");
+
+body {
+  font-family: "Roboto";
+}
+img {
+  max-width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #f8f8f8;
+}
+input[type="search"] {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid gainsboro;
+}
+a {
+  color: #fff;
+  background-color: #940253;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+}
+article.card {
+  max-width: 350px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  margin: 1rem;
+  box-shadow: 0 0 12px #d7d7d7;
+}
+.card-header img {
+  border-radius: 8px 8px 0 0;
+  max-height: 200px;
+  height: 150px;
+  width: 100%;
+}
+.card-cat {
+  margin-top: 1rem;
+}
+.card-cat span {
+  background: #940253;
+  color: #f8f8f8;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+.card footer {
+  padding: 0 1rem;
+}
+.card-wrap {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+}

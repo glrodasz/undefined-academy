@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+  .container
+    a.btn.btn-info.my-5(href="/forms/products/create") Crear Producto
+    h2 Listado de productos
+    table.table.table-striped
+        thead
+            tr
+            th Nombre
+            th Categoría
+            th Precio
+            th Vigente
+            th Acciones
+        tbody
+            each producto in productos
+                tr
+                td= producto.nombre
+                td= producto.categoria
+                td= producto.precio_venta
+                td= producto.vigente
+                td
+                    a.btn.btn-primary(href=`/products/${producto._id}`) Ver

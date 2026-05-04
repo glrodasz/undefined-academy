@@ -1,0 +1,85 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.menu {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btn {
+    background-color: rgb(0, 110, 255);
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-top: 1px solid #333;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    border-left: 1px solid #333;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(55, 142, 255);
+}
+
+.btn:active {
+    border-top: 2px solid #333;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-left: 2px solid #333;
+}
+
+.card-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.card-item {
+    background-color: white;
+    padding: 1em;
+    flex: 1 1 300px;
+    border-top: 1px solid #333;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    border-left: 1px solid #333;
+    border-radius: 10px;
+}
+
+.card-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-item p,
+h3,
+h5 {
+    text-align: justify;
+    margin: 0.5em 0;
+}
+
+footer {
+    text-align: center;
+}

@@ -1,0 +1,282 @@
+/* GENERAL */
+
+:root {
+    /*Paleta de colores*/
+
+    ---primario: #1abc9c;
+    ---PrimarioOscuro: rgba(102, 115, 150, 0.4);
+    ---Secundario: #2c3e50;
+    ---SecundarioOscuro: rgba(41, 83, 160, 0.5);
+    ---blanco: #fff;
+    ---negro: #000;
+    ---definitivo: linear-gradient(35deg, #ff7fff 0, #c66dff 16.67%, #8b59ff 33.33%, #4d42d4 50%, #002ca6 66.67%, #00197c 83.33%, #000056 100%);
+
+    /*fuente de la pagina*/
+
+    ---fuentePrincipal: 'Staatliches', cursive;}
+
+/*globales*/
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.50%;
+    }
+  *, *:before, *:after {
+    box-sizing: inherit;}
+
+body {
+    background-color: var(---Secundario);
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0 auto;
+}
+
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+p, ol{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(---negro);
+
+}
+
+a {
+    text-decoration: none;}
+
+img {
+    max-width: 100%;
+}
+
+
+h1, h2, h3 {
+    color: var(---negro);
+    font-family: var(---fuentePrincipal);
+} 
+
+h1 {
+    font-size: 4rem;}
+
+    
+h2 {
+    font-size: 3.2rem;
+    margin-top: 1em;
+    padding-top: 1em;}
+
+h3 {
+    font-size: 2.4rem;}
+
+main{
+    margin: auto 0;
+    padding: 4rem 2rem;
+    max-width: 100%;
+    background-color: var(---Secundario);
+    border: 4px solid;
+}
+
+footer {
+    background-color: var(---Secundario);
+    border-top: 1px solid var(---negro);
+    text-align: center;
+    font-weight: bold;}
+
+
+.header {
+    background-color: #263d36;
+    background-image: url(../Wilmer-8071/photo-1505238680356-667803448bb6.avif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.6;
+    text-align: center;
+    padding: 8rem 0;
+    height: 60rem;
+}
+
+  #logo {
+    background-color: transparent;
+    display: inline-block;
+    height: 250px;
+    vertical-align: top;
+    width: 250px;
+}
+
+
+  header h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+  
+  header a {
+    border: 1px solid #190464;
+    border-radius: 290486px;
+    color: white;
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+}
+  
+  header a:hover {
+    background:  #330d8b;
+    color: white;
+}
+
+.label{
+    display: inline;
+    outline: none;
+    text-decoration: none;
+    margin-left: 1%;
+    text-align: center;
+    box-sizing: border-box;
+    width: 31%;
+    background-color: var(---PrimarioOscuro);
+    color: var(---blanco);
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.tabla{
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: var(---negro);
+}
+
+.tabla tr, .tabla td {
+    padding: 10px;
+    text-align: center;
+    border: 3px solid var(---negro)
+}
+
+.tabla th {
+    background-color: var(---PrimarioOscuro);
+    font-weight: bold;
+    color: var(---blanco);
+  }
+
+
+footer{
+    background-color: var(---primario);
+    background-image: url(../Wilmer-8071/photo-1505238680356-667803448bb6.avif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+}
+
+@media (min-width: 480px) {
+    footer{
+        background-color: var(---primario);
+        background-image: url(../Wilmer-8071/photo-1505238680356-667803448bb6.avif);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30rem;
+    }
+    
+}
+
+.footer-texto{
+    color: var(---blanco);
+}
+
+.footer__contactame{
+    display: flex;
+    justify-content: center;
+    color: var(---blanco);
+}
+
+.footer__redes{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.form-group{
+    border: 1px solid lightgray;
+    margin: 2rem 0;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+label, input[type="text"], input[type="email"]  {
+    width: 100%;
+    display: block;
+}
+
+label{
+    font-weight: bold;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+}
+
+form{
+    border: 3px solid var(---negro);
+    padding: 20px;
+    width: 100%;
+}
+
+
+@media (min-width: 480px) {
+    form {
+        border: 3px solid var(---negro);
+        padding: 20px;
+        width: 50%;
+    }
+}
+
+
+.help{
+    font-size: 12px;
+    margin-top: 1rem;
+    color: gray;
+}
+
+button{
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid;
+    color: var(---negro);
+}
+
+fieldset{
+    display: flex;
+}
+
+
+.navegacion{
+    display: flex;
+    justify-content: center;
+    background-color: var(---PrimarioOscuro);
+    padding: 1rem 0;
+}
+
+.navegacion__enlace{
+    font-family: var(---fuentePrincipal);
+    font-size: 2rem;
+    color: var(---blanco);
+    
+}
+
+@media (min-width: 400px) {
+    .navegacion__enlace{
+        font-family: var(---fuentePrincipal);
+        font-size: 3rem;
+        color: var(---blanco);
+        
+    }
+}

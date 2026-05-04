@@ -1,0 +1,81 @@
+@use "./styles/variables.scss" as *;
+
+header {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    background-color: $black;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.gallery {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.featured {
+    grid-column: span 2;
+}
+
+.card {
+    background-color: $white;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px $gray;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.titleCard {
+    margin: 7px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bodyCard {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    height: 180px;
+}
+
+p {
+    color: $emperor;
+    margin: 7px 0;
+}
+
+.date {
+    font-size: 12px;
+    width: 90%;
+    margin: 0 auto;
+    font-weight: bold;
+    color: $emperor;
+    text-align: end;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: $black;
+    color: $white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

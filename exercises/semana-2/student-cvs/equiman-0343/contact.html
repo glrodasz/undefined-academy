@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Equiman</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main>
+        <h2>Contacto</h2>
+
+        <form action="#" method="get">
+
+            <label for="name">Nombre</label>
+            <input type="text"
+                name="name" id="name"
+                placeholder="Ingrese su nombre completo"
+                required>
+
+            <label for="email">Correo-e</label>
+            <input type="email"
+                name="email" id="emali"
+                placeholder="Ingrese el correo electrónico"
+                required>
+
+            <fieldset>
+                <legend>Presupuesto</legend>
+                <div class="option">
+                    <input type="radio" name="budget"
+                        id="10000" value="10000" required>
+                    <label for="10000">$10.000</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="budget"
+                        id="5000" value="5000">
+                    <label for="5000">$5.000</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="budget"
+                        id="1000" value="1000">
+                    <label for="1000">$1.000</label>
+                </div>
+            </fieldset>
+            <div class="help">Este valor se refiere a la base y no al total.</div>
+
+            <label for="type">Tipo de proyecto</label>
+            <select name="type" id="type" required>
+                <option value="" selected disabled>Elija una opción</option>
+                <option value="website">Website</option>
+                <option value="webapp">Webapp</option>
+                <option value="mobile">Mobile App</option>
+                <option value="design">Diseño</option>
+            </select>
+
+            <label for="description">Descripción</label>
+            <textarea name="description" id="description"
+                rows="5" required>
+            </textarea>
+            <div class="help">Ingrese una descripción con al menos 500 palabras.</div>
+
+            <label for="terms">
+                <input type="checkbox" name="terms" id="terms" required>
+                <span>Acepto los términos y condiciones</span>
+            </label>
+
+            <button>Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <section class="menu"><a href="index.html">Regresar</a></section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario con Bootstrap</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <main></main>
+    <h2>Contacta con Manuel Pulido</h2>
+    <form action="/server" method = "get" class="row g-3">
+
+            <div class="col-md-6">
+            <label for="name" class="form-label" >Nombre</label>
+            <input id="name" name="name" class="form-control"  type="text" placeholder="Escriba aquí su nombre" required>
+            </div>
+
+            <div class="col-md-6">
+            <label for="surnames" class="form-label">Apellidos</label>
+            <input id="surnames" name="surnames" class="form-control" type="text" placeholder="Escriba aquí sus apellidos" required>
+            </div>
+
+            <div class="col-md-6">
+            <label for="floatingInputValue" class="form-label">Email</label>
+            <input id="email" name="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" type="email" placeholder="Escriba aquí su email" required>
+            </div>
+
+            <div class="col-md-6">
+            <label for="tel" class="form-label">Teléfono</label>
+            <input id="tel" name="tel" class="form-control" type="tel" placeholder="Número de teléfono móvil" required>
+            </div>
+
+            <div class="col-12">
+            <label for="type" class="form-label">Perfil de programación</label>
+            <select id="type" class="form-select" aria-label="Default select example" required>
+                <option disable selected>Seleccione uno</option>
+                <option value="1">FrontEnd</option>
+                <option value="2">BackEnd</option>
+                <option value="3">Full Stack</option>
+                <option value="4">Mobile APP</option>
+                <option value="5">Otros</option>
+            </select>
+            </div>  
+
+            <div class="col-md-12">
+            <label for="github" class="form-label">Perfil Github</label>
+            <input id="github" name="github" class="form-control" type="text" placeholder="Si tienes Github, ponlo aquí">
+            </div>
+
+            <button type="button" class="btn btn-primary btn-lg">Enviar</button>
+    </form>
+    </main>
+  </body>
+</html>

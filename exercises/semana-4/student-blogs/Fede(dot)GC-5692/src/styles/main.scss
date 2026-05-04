@@ -1,0 +1,17 @@
+@use "base.scss";
+@use "desktop.scss";
+
+html,
+body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}

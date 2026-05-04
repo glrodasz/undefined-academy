@@ -1,0 +1,286 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+}
+
+/* Size img */
+.logo{
+  padding-left: 0.5rem;
+}
+.logoScs{
+  width: 50px;
+}
+.imgBoot {
+  width: 100%;
+}
+.imgLogo,
+.menuIcon {
+  width: 50px;
+}
+.containerHeader {
+  line-height: 0;
+}
+.banner {
+  display: block;
+}
+
+.imgCreator {
+  width: 250px;
+  object-fit: cover;
+}
+
+/* Nav */
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.containerNav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8b5cf6;
+}
+
+.logo,
+.menu {
+  flex: 1 0 auto;
+}
+.menu{
+  display: flex;
+  justify-content: end;
+}
+
+.buttonMenu{
+  background-color: #8b5cf6;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #181818;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.menuhidden {
+  background-color: #8b5cf6;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 3rem;
+}
+
+.showMenu{
+  display: flex;
+}
+
+
+main{
+  margin: 0 2%;
+}
+/* About */
+.containerAbout {
+  margin: 2rem 0;
+}
+
+.containerAbout > h1 {
+  color: #4c1d95;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.containerAbout > p {
+  color: #181818;
+  font-size: medium;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+/* Bootcamps */
+
+.titles {
+  color: #4c1d95;
+  font-size: xx-large;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  padding: 0 2%;
+}
+.cardBootcamp {
+  border: 1px solid #8b5cf6;
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  margin: 1rem auto;
+}
+.cardBootcamp:hover {
+  border: 1px solid #4c1d95;
+  box-shadow: 3px 3px 7px #1e1b4b;
+  background-color: #c3b5fd80;
+}
+.nameBoot,
+.nameOwner,
+.description {
+  margin: 2%;
+}
+
+.nameBoot {
+  color: #3730a3;
+  font-size: large;
+  font-weight: bold;
+}
+.nameOwner {
+  color: #4f46e5;
+  font-size: small;
+  font-weight: bold;
+}
+.logoNetwork {
+  width: 25px;
+}
+
+.network {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2%;
+}
+
+/* Card Youtube*/
+
+.cardYoutube {
+  width: 26rem;
+  margin: 1rem auto;
+  height: 220px;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  border: 1px solid tomato;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.cardYoutube:hover{
+  background-color: #ff000049;
+  box-shadow: 3px 3px 7px #1e1b4b;
+}
+
+.yTitle {
+  margin-bottom: 10px;
+  padding: 0 2%;
+  color: #ff0000;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.containerYoutube>p{
+  margin: 0 0 3rem 0;
+}
+.infoYout,
+.containerNetw {
+  width: 40%;
+  padding: 0 5px;
+}
+
+.infoProfile{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Twitch */
+
+.twitchTitle{
+  margin-bottom: 10px;
+  padding: 0 2%;
+  color: #A970FF;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.cardTwitch{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #A970FF;
+  width: 26rem;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  border-radius: 15px;
+}
+
+.imgTchPrf{
+  width: 100%;
+}
+
+.imgTch{
+  width: 60%;
+  display: flex;
+  padding: 1% 2%;
+}
+.infoProfileTwi{
+  margin: auto 0;
+}
+.nameTwitch{
+  color: #6403f5;
+}
+
+.cardTwitch:hover{
+  background-color: #a970ff5f;
+  box-shadow: 3px 3px 7px #1e1b4b;
+}
+
+/* footer */
+
+.containerFooter{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8b5cf6;
+  padding: 1% 5%;
+}
+
+
+@media screen and (min-width: 768px) {
+  
+  .containerCards, .containerTwitch{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cardBootcamp, .cardTwitch, .cardYoutube{
+    width: 20rem;
+  }
+} 
+
+@media screen and (min-width: 1024px){
+  .menuIcon{
+    display: none;
+  }
+  .link{
+    display: block;
+    padding: 0 1rem;
+  }
+  .menu{
+    display: flex;
+  }
+  .menuhidden {
+    display: flex;
+    flex-direction: row;
+    top: 1rem;
+  }
+  .menuDesp{
+    display: flex;
+  }
+}

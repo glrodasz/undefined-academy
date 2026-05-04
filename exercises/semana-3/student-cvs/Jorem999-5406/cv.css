@@ -1,0 +1,276 @@
+/* RESET*/
+html,
+body {
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+main {
+    height: 100%;
+}
+
+body {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #00164d;
+    margin: 40px;
+    /* background: linear-gradient(rgb(0, 130, 190), #001638); */
+
+}
+
+h2 {
+    font-size: 16px;
+    color: #00164d;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+p {
+    font-style: italic;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    height: 40px;
+    background-color: lightskyblue;
+    margin-bottom: 2%;
+    border-radius: 15px;
+
+}
+
+.inicio {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+a:visited:hover {
+    color: lightcyan;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content: flex-end;
+    gap: 7%;
+    margin-right: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+a:detDesarrollo {
+    font-size: small;
+    color: green;
+     background-color: silver; 
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+a:hover {
+    color: orange;
+    background-color: #001638;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+a:visited {
+    color: lightcyan;
+    background-color: silver;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.tope {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    gap: 7%;
+    padding: 1% 5%;
+    color: #001638;
+    /* background: linear-gradient(rgb(0, 130, 190), #001638); */
+}
+
+.photo {
+    /* border-radius: 90%;  */
+    height: 300px;
+    grid-area: photo;
+}
+
+.imgNexus {
+    align-self: center;
+}
+
+section {
+    display: flex;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 15%;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 1% 3%;
+    background: lightcoral;
+    margin: 2% 0%;
+    border-radius: 20px 0px;
+
+}
+
+.extras {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 15%;
+
+}
+
+.extra {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 1% 3%;
+    background: lightskyblue;
+    margin: 2% 0%;
+    border-radius: 0 20px;
+
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    line-height: 0.1em;
+    height: auto;
+}
+
+.correo {
+    display: grid;
+    align-items: center;
+}
+
+.detDesarrollo {
+    display: none;
+
+}
+
+a:hover+.detDesarrollo {
+    display: block;
+    justify-content: flex-start;
+    background-color: lightskyblue;
+    min-height: max-content;
+    animation: aparecer 0.5s ease-in-out;
+}
+
+.odd {
+    background-color: lavender;
+}
+
+.even {
+    background-color: lavenderblush;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateX(40%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .features {
+        flex-direction: row;
+        margin: 0 0;
+    }
+
+    .feature {
+        width: 32%;
+    }
+
+    .extras {
+        flex-direction: row;
+        margin: 0 0;
+    }
+
+
+    .extra {
+        width: 32%;
+    }
+
+    .signup {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        place-content: center;
+        font-size: 14px;
+        margin: 0% 0% 2% 0%;
+        padding: 1% 30%;
+        background: linear-gradient(lightsteelblue, 70%, white);
+        order: 3;
+    }
+
+    .tope {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .photo {
+        margin-left: 5%;
+    }
+
+    .correo {
+        grid-column-start: 1 / 2;
+        grid-row-start: 1 / 2;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        height: 40px;
+    }
+
+}

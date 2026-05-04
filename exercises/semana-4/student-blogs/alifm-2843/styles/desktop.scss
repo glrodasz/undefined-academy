@@ -1,0 +1,29 @@
+/*----------Responsiveness-----------*/
+/*-------- Media queries --------*/
+
+@media screen and (max-width:900px) {
+
+    nav {
+      
+      display: block;
+    }
+  
+    input[type="search"] {
+      padding: 8px 12px;
+      border-radius: 4px;
+      border: 1px solid Gainsboro;
+      width: 94%;
+      background: WhiteSmoke;
+    }
+  
+    section {
+      grid-column: 1/4;
+      padding: 25px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+  
+  }

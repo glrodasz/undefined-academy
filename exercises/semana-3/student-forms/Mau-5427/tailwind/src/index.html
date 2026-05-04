@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+  <title>Tailwind</title>
+</head>
+<body class="h-screen grid place-items-center bg-slate-900">
+  <div class="w-10/12 max-w-md md:max-w-lg flex flex-col gap-3.5">
+    <h2 class="text-center text-sky-400 text-2xl font-bold">Contacto</h2>
+    <form class="w-full p-3.5 rounded-lg bg-white bg-opacity-20 backdrop-blur-lg backdrop-saturate-200 border-2 border-sky-400">
+      <div class="mb-2">
+        <label for="name" class="block mb-1 text-slate-300 font-semibold tracking-wider">Nombre</label>
+        <input type="text" class="w-full p-1.5 pl-3 rounded outline-none bg-slate-800 text-slate-200 border border-transparent focus:border-sky-400" id="name" name="name" placeholder="ej. Mauricio Bedoya" autocomplete="new-password" required>
+      </div>
+      <div class="mb-2">
+        <label for="email" class="block mb-1 text-slate-300 font-semibold tracking-wider">Email</label>
+        <input type="email" class="w-full p-1.5 pl-3 rounded outline-none bg-slate-800 text-slate-200 border border-transparent focus:border-sky-400" id="email" name="email" placeholder="ej. example@gmail.com" autocomplete="new-password" required>
+      </div>
+      <div class="mb-2">
+        <label for="subject" class="block mb-1 text-slate-300 font-semibold tracking-wider">Asunto</label>
+        <input type="text" class="w-full p-1.5 pl-3 rounded outline-none bg-slate-800 text-slate-200 border border-transparent focus:border-sky-400" id="subject" name="subject" placeholder="ej. Nuevo proyecto" required>
+      </div>
+      <div class="mb-2">
+        <label for="description" class="block mb-1 text-slate-300 font-semibold tracking-wider">Descripción</label>
+        <textarea class="w-full p-1.5 pl-3 rounded outline-none bg-slate-800 text-slate-200 border border-transparent focus:border-sky-400" id="description" name="description" cols="30" rows="3" placeholder="Detalles del asunto" required style="resize:none"></textarea>
+      </div>
+      <div class="flex justify-center">
+        <button type="submit" class="bg-sky-400 transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-sky-700/50 py-1 px-6 rounded-full font-bold text-slate-900">Enviar</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

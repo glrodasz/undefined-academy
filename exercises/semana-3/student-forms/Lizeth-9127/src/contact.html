@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Form</title>
+    <script type="module" src="/main.mjs"></script>
+</head>
+
+<body class="box-border my-0 mx-auto bg-gradient-to-r from-[#00d4ff] via-[#074b9e] to-[#067086]">
+
+    <div class="bg-white h-full lg:w-[46%] w-[60%] rounded-[7px] my-12 mx-auto pt-28 pb-12 px-12 shadow-lg hover:shadow-xl flex flex-col flex-wrap items-center justify-center shadow-slate-600">
+        <section>
+
+            <header>
+                <h1 class="mt-[-4rem] font-bold text-center text-[2rem] center">Contact Page</h1>
+            </header>
+        </section>
+
+        <section>
+            <form action="/server" method="get" class="form center">
+                <p class="my-6 text-center text-slate-700">Enter the following information to leave a message:</p>
+
+                <div class="flex flex-col justify-around">
+                    <label for="name" class="block mx-0 text-center my-2.5 w-full">Enter your name:
+                        <input type="text" name="name" id="name" required
+                            class="rounded-[3px] border-[1px] block my-2.5 mx-0 w-full border-slate-300 hover:border-slate-400 focus:border-slate-400 outline-none " />
+                    </label>
+
+                    <label for="email" class="block my-2.5 mx-0 w-full  text-center">Enter your email:
+                        <input type="email" name="email" id="email" required
+                            class="rounded-[3px] block my-2.5 mx-0 w-full  border-[1px] border-slate-300 hover:border-slate-400 focus:border-slate-400 outline-none">
+                    </label>
+
+                    <label for="message" class="block my-2.5 mx-0 w-full  text-center">Enter your message:
+                        <textarea name="message" id="message" rows="5" required
+                            class="rounded-[3px] block my-2.5 mx-0 w-full  border-[1px] border-slate-300 hover:border-slate-400 focus:border-slate-400 outline-none">
+                </textarea>
+                    </label>
+                    <button class="w-2/4 bg-cyan-600 hover:bg-cyan-700 py-[7px] lg:py-[10px] px[7px] active:bg-cyan-900 mt-5 uppercase rounded-sm border border-solid border-sky-900 shadow-md shadow-slate-400 hover:shadow-slate-400 active:shadow-slate-600 self-center" type="submit">
+                        Send message
+                    </button>
+                </div>
+            </form>
+
+        </section>
+    </div>
+</body>
+
+</html>

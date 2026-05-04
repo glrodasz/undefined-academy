@@ -1,0 +1,32 @@
+@use "./styles/variables.scss" as *;
+
+@media screen and (min-width: 992px) {
+    header {
+        background-color: $black;
+        background-position: top center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .link-header {
+        background-color: transparent;
+    }
+
+    .link-header:hover {
+        background:  $steelBlue;
+        color: $white;
+    }
+
+    main, .skills, .contact {
+        max-width: 60%;
+    }
+
+    .form-label{
+        margin-top: 7px;
+    }
+
+    .submit {
+        width: 30%;
+    }
+
+}

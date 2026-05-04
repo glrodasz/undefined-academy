@@ -1,0 +1,133 @@
+@use "./utilidades";
+
+@mixin flex-column($gap) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+@mixin flex-row($gap) {
+  display: flex;
+  gap: $gap;
+}
+
+@media (min-width: 320px) {
+  div {
+    header {
+      @include utilidades.section-padding(1.5rem, 3rem);
+      background-color: utilidades.$chablis;
+      position: fixed;
+      width: 100%;
+      box-shadow: utilidades.$Shadow;
+      transition: 0.7s;
+      span {
+        color: utilidades.$gamboge;
+      }
+      label {
+        float: right;
+        cursor: pointer;
+      }
+    }
+  }
+
+  label {
+    .close {
+      display: none;
+    }
+  }
+
+  input {
+    &:checked ~ .menu-navegacion {
+      display: block;
+    }
+    &:checked ~ label .close {
+      display: block;
+    }
+    &:checked ~ label .menu {
+      display: none;
+    }
+  }
+
+  .menu-navegacion {
+    display: none;
+    ul {
+      align-items: center;
+      @include flex-column(1rem);
+      padding: 30px 0;
+      li {
+        list-style: none;
+        a {
+          color: utilidades.$black;
+          &:hover {
+            color: utilidades.$gamboge;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.articulos {
+  margin: 5rem 0px 0rem 0px;
+}
+
+.articulo-especial {
+  margin: 3rem 0px;
+}
+
+.articulos,
+.articulo-especial {
+  @include utilidades.section-padding(0rem, 3rem);
+  @include flex-column(3rem);
+
+  .articulo {
+    border-bottom: 3px solid utilidades.$gamboge;
+    padding: 20px 0;
+    .img-articulo {
+      width: 100%;
+      height: 150px;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .contenido {
+      @include flex-column(1rem);
+    }
+  }
+}
+
+.tags {
+  @include flex-row(10px);
+  div {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+}
+
+footer {
+  div {
+    @include flex-row(1rem);
+    align-items: center;
+    .img-avatar {
+      width: 35px;
+      height: 35px;
+      img {
+        border-radius: 100%;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  time{
+    font-size: 12px;
+  }
+}
+
+

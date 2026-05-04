@@ -1,0 +1,292 @@
+body {
+  background: #232136;
+  color: #e0def4;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  width: 90%;
+  margin: 0 auto;
+}
+
+body p {
+  line-height: 2rem;
+  text-align: justify;
+}
+
+body a {
+  text-decoration: none;
+  color: #f6c177;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  background: #393552;
+  z-index: 9999999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 70px;
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 0;
+  margin: 0;
+}
+
+.nav li {
+  list-style: none;
+  border-right: 1px solid transparent;
+  border-image: linear-gradient(to top, transparent, gray, transparent) 5% stretch;
+  height: 60px;
+  width: 25%;
+}
+
+.nav li:last-child {
+  border-right: none;
+}
+
+.nav li a {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+  font-size: .85em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f2f2f2;
+  transition: all .2s ease-in-out;
+}
+
+.nav li a:hover {
+  color: #f6c177;
+}
+
+.menu-icons {
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+}
+
+.me-icon {
+  background-image: url('./assets/images/me-icon.png');
+}
+
+.resume-icon {
+  background-image: url('./assets/images/resume-icon.png');
+}
+
+.portfolio-icon {
+  background-image: url('./assets/images/portfolio-icon.png');
+}
+
+.email-icon {
+  background-image: url('./assets/images/email-icon.png');
+}
+
+.social-icons {
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons li {
+  list-style: none;
+}
+
+.social-icons img {
+  width: 24px;
+}
+
+.main {
+  padding-top: 5rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  grid-template-areas:
+    "profile"
+    "resume"
+    "header";
+}
+
+.profile {
+  grid-area: profile;
+  background: #393552;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.profile-content > p {
+  color: #f6c177;
+  margin-top: 0;
+}
+
+.resume {
+  grid-area: resume;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.profile-bg {
+  height: 35vh;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 5px 15px;
+}
+
+.avatar {
+  position: absolute;
+  top: -60px;
+  width: 96px;
+  border-radius: 50px;
+}
+
+.separator {
+  border-right: 1px solid transparent;
+  border-image: linear-gradient(to right, transparent, gray, transparent) 5% stretch;
+}
+
+.module {
+  background: #393552;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.module h2 {
+  color: #f6c177;
+  margin-bottom: 1rem;
+}
+
+.year {
+  border: 1px solid #f6c177;
+  border-radius: 10px;
+  padding: 8px;
+  line-height: 0.85;
+  width: fit-content;
+}
+
+/* FORMULARIO */
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+
+.form-group {
+  margin: 20px 0;
+}
+
+label,
+input {
+  vertical-align: middle;
+}
+
+label,
+input:not([type="radio"], [type="checkbox"]) {
+  display: block;
+  width: 95%;
+}
+
+textarea {
+  display: block;
+  resize: vertical;
+}
+
+label,
+legend {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #f2f2f2;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+  font-size: 1.15rem;
+}
+
+.help {
+  font-size: 12px;
+  margin-top: 10px;
+  color: gray;
+}
+
+button {
+  padding: 16px 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #f6c177;
+  background: #f6c177;
+  color: #333;
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f2f2f2;
+}
+
+button:active {
+  background: #f6c177;
+  box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+form {
+  accent-color: #f6c177;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  border: 1px solid #f6c177;
+  outline: 1px solid #f6c177;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    width: 60%;
+  }
+}

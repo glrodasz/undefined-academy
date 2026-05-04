@@ -1,0 +1,216 @@
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+
+  color: #555;
+  margin: 0;
+}
+
+.block-center {
+  margin: 0 auto;
+  max-width: clamp(375px, 80%, 40em);
+}
+
+main > header * {
+  margin: 0;
+}
+
+h1 + p {
+  font-family: monospace;
+  font-style: italic;
+  font-size: var(--fs-caption);
+}
+
+:root {
+  --fs-h1: 1.75rem;
+  --fs-h2: 1.5rem;
+  --fs-text: 1.125rem;
+  --fs-caption: 0.875rem;
+}
+
+.page-header h1::before,
+.page-header h1::after {
+  content: " 🖥💻 ";
+}
+
+code,
+figcaption {
+  font-size: var(--fs-caption);
+}
+
+p,
+li,
+th,
+td {
+  font-size: var(--fs-text);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  background: linear-gradient(0.25turn, #c19ab7, #9c95dc);
+  background-size: 100%;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+
+@media (max-width: 800px) {
+  .page-header h1::after,
+  .page-header h1::before {
+    content: none;
+  }
+
+  :root {
+    --fs-text: 1.1875rem;
+    --fs-caption: 1rem;
+  }
+}
+
+header {
+  text-align: center;
+  background-color: transparent;
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+li {
+  padding: 0.25em;
+}
+
+tr:nth-child(even) {
+  background-color: #c19ab7;
+  color: #fff;
+}
+
+th:first-child {
+  width: 15%;
+}
+
+th,
+td {
+  padding: 0.25em;
+  border-bottom: 1px solid #333;
+}
+
+th:first-child,
+td:first-child {
+  border-right: 1px solid #333;
+}
+
+h1,
+h2,
+th,
+strong {
+  color: #9c95dc;
+}
+
+code {
+  display: inline-block;
+  padding: 0.2em;
+  border-bottom: 2px solid #228cdb;
+}
+
+ul {
+  margin: 0;
+  padding: 0 2ch;
+}
+
+figure {
+  font-style: italic;
+  text-align: center;
+
+  width: 10em;
+  float: right;
+  margin-top: 0;
+}
+
+figure * {
+  margin-bottom: 0.5em;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  color: #c19ab7;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+footer {
+  padding: 1em 0;
+  margin-bottom: 0;
+  background-color: #333;
+  color: #fff;
+  margin-top: 0.83em;
+}
+
+footer h2 {
+  color: #fff;
+  font-size: var(--fs-text);
+}
+
+footer p {
+  font-size: var(--fs-text);
+}
+
+label {
+  margin: 0.5em 0;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 0.5em;
+}
+
+input,
+label,
+select,
+textarea,
+button {
+  display: block;
+}
+
+button {
+  margin: 1em 0;
+  padding: 2em;
+  border: none;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-family: monospace;
+  background-color: hsl(206, 73%, 50%);
+  color: #fff;
+
+  text-align: center;
+}
+
+button:hover {
+  background-color: hsl(206, 73%, 80%);
+  cursor: pointer;
+}
+
+.text-small {
+  font-size: var(--fs-caption);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.invisible {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

@@ -1,0 +1,36 @@
+@media screen and (min-width: 450px) {
+
+    .titulo {
+        font-size: 72px;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    li {
+        padding: 8px;
+        margin: 0px;
+    }
+    .search {
+       width: 400px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto auto;
+        gap: 40px;
+    }
+
+    .item:last-child {
+        grid-column: 1 / 4;
+        text-align: justify;
+    }
+
+}

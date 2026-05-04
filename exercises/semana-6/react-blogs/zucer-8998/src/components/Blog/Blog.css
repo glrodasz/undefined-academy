@@ -1,0 +1,32 @@
+.blog-container {
+  position: relative;
+  background: white;
+  padding: 1rem;
+  border-radius: 16px;
+  top: -15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.blog-title {
+  text-align: center;
+}
+
+.blog-articles {
+  display: grid;
+  row-gap: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .blog-container {
+    top: -30px;
+    padding: 2rem;
+    box-shadow: var(--regent-gray) 0px 8px 24px;
+  }
+
+  .blog-articles {
+    grid-template-columns: auto auto;
+    gap: 1rem 2rem;
+  }
+}

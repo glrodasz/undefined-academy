@@ -1,0 +1,23 @@
+.title{
+  text-align: center;
+  color: #475569;
+}
+
+.container{
+  display:flex;
+  flex-wrap: wrap;
+  gap:15px;
+  justify-content: space-evenly;
+}
+.container img{
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+.container p{
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  font-family: arial;
+}
+

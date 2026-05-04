@@ -1,0 +1,338 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+html,
+body {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    display: grid;
+    place-items: center;
+    padding: 0 10px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(250, 239, 225);
+    margin: 0 auto;
+    max-width: 60em;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #555
+}
+
+header {
+    background-color: rgb(240, 230, 216);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 0px 3px 4px rgba(31, 30, 30, 0.16);
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+/*----Hamburger menu----*/
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+
+h1,
+h2
+ {
+    color: #333;
+}
+
+h1 {
+    margin-top: 1em;
+    font-size: 2em;
+    padding-left: 0.5em;
+}
+
+header h1, footer h1 {
+ margin-top: 0.5em;
+ margin-bottom: 0;
+}
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+a, header h1, footer h1  {
+    color: rgba(0, 81, 255, 0.882);
+}
+
+a:hover {
+    font-weight: bolder;
+    color: darkblue;
+}
+
+#home,
+#acknowledgements {
+    margin-top: 6em;
+    background-color: rgb(227, 234, 234);
+    padding: 1em 2em 3em;
+    margin-bottom: 3em;
+    border-radius: 8px;
+}
+
+#about {
+    padding-top: 3em;
+}
+
+ul {
+    list-style: square inside;
+}
+
+table,
+th,
+td {
+    border: 1px solid #333;
+}
+
+table {
+    margin-bottom: 1em;
+}
+
+code {
+    background: lightgray;
+    border-bottom: 1px solid #d8dee9;
+
+}
+
+footer {
+    background-color: rgb(240, 230, 216);
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+    box-shadow: 10px 10px 10px 10px rgba(31, 30, 30, 0.16);
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 3em;
+    color: rgba(0, 81, 255, 0.882);
+}
+
+footer p {
+    border-top: 1px solid;
+    padding-top: 0.3em;
+    width: 24em;
+    text-align: right;
+}
+
+/* ------------------ Form styles -----------------------------*/
+
+.form-fieldset {
+    border-radius: 10px;
+    border: 3px solid #333;
+    text-align: center;
+    width: 100%;
+    margin: 0.7em auto 1em;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+legend {
+    background-color: rgb(250, 239, 225);
+    padding: 0 10px;
+    text-decoration: underline;
+    font-size: 20px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    margin: 0px auto;
+    accent-color: rgba(0, 81, 255, 0.882);
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+select {
+    border-radius: 5px;
+    margin: 1px 0px 20px 0px;
+    width: 90%;
+    height: 40px;
+    border: 1px solid gray;
+    color: #333;
+    padding: 5px 7px;
+}
+
+textarea {
+    border-radius: 6px;
+    margin: 1px 0px 20px 0px;
+    width: 90%;
+    resize: none;
+    border: 1px solid gray;
+    color: #333;
+    padding: 7px 7px;
+    
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+.radio-fieldset:focus-visible {
+    outline: 1.5px solid rgba(0, 81, 255, 0.882);
+}
+
+.radio-fieldset {
+    border-radius: 7px;
+    margin: 0em auto 2em;
+    border: 1px solid gray;
+    width: 90%;
+    display: block;
+    text-align: initial;
+    background-color: white;
+}
+
+button {
+    background-color: rgba(0, 81, 255, 0.882);
+    color: rgb(250, 239, 225);
+    padding: 12px;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    font-weight: bolder;
+    margin: 30px;
+    width: 15em;
+    height: 4em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1em;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+legend {
+    text-align: center;
+}
+
+.legend-radio {
+    text-decoration: none;
+    background: linear-gradient(180deg, rgb(250, 239, 225), white);
+
+}
+
+button:hover {
+    background-color: rgba(42, 110, 255, 0.882);
+}
+
+button:active {
+    box-shadow: none;
+    background-color: rgba(0, 52, 165, 0.882);
+}
+
+
+ /* When the screen is less than 900 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
+ .topnav a {
+    display: none;
+}
+
+.topnav a.icon {
+    float: right;
+    display: block;
+    padding-right: 25px;
+    
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+.topnav.responsive {
+    position: relative;
+    display: flex;
+}
+
+header li {
+    display: block;
+    padding: 0px;
+}
+
+.header.responsive {
+    padding: 0;
+}
+
+.topnav.responsive a.icon {
+    position: absolute;
+    right: 1px;
+    top: 16px;
+    
+}
+
+.topnav.responsive a {
+    display: block;
+    text-align: left;
+    
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+
+/*-------- Media queries --------*/
+
+@media screen and (min-width:900px) {
+   
+
+    form {
+        width: 38em;
+
+    }
+
+    main {
+        margin-top: 8em;
+        margin-bottom: 3em;
+    }
+
+   
+
+  header ul {
+    margin: 0.1em 1.5em 0.em;
+}
+
+header li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1em;
+    padding: 1.5em 0.5em;
+    font-weight: bold;
+}
+
+header i {
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+
+.topnav a {
+    display: flex;
+}
+
+.topnav a.icon {
+    display: none;
+}
+
+
+}

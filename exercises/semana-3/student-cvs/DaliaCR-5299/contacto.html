@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="main.mjs"></script>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="contact">Contacto</a>
+        </nav>
+        <section class="contact">
+            <h3>Contacto</h3>
+            <form action="/server" method="get">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input id="name" name="name" type="text" placeholder="Nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electronico:</label>
+                    <input id="email" name="email" type="email" placeholder="email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Razon de contacto</legend>
+                        <div class="rb">
+                        <label>
+                            <input type="radio" name="reason" value="full" required>
+                            Empleo de tiempo completo
+                        </label>
+                        <label>
+                            <input type="radio" name="reason" value="part">
+                            Empleo de tiempo parcial
+                        </label>
+                        <label>
+                            <input type="radio" name="reason" value="freelance">
+                            Empleo de forma independiente
+                        </label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Mensaje:</label>
+                    <textarea name="subject" id="subject" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+                    <div class="help">
+                        Su propuesta en 500 palabras
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="terms">
+                        <input id="terms" type="checkbox" required>
+                        <span>Acepto terminos y condiciones</span>
+                    </label>
+                </div>
+                <button class="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

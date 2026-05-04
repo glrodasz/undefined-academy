@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML5 </title>
+    <link rel=" stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="header"> 
+        <div class="contenedor navbar">
+             <img src="img/28867_1.webp" class="picture" alt="Daniel Lazarte">
+                 <h1 class="tagline"> Daniel Lazarte  </h1>
+        </div>         
+                  <nav class="menu">
+                     <ul>
+                             <li> <a href="https://github.com/Danlarte"> <img src="img/icons8-github-32.png" alt="github"> </a> </li>
+                             <li> <a href="https://www.linkedin.com/in/daniel-lazarte-a566ba67/"> <img src="img/icons8-linkedin-rodeado-de-círculo-32.png" alt="Linkedin"> </a></li>
+                             <li> <a href="https://www.behance.net/daniellazarte1"> <img src="img/icons8-behance-32.png" alt="Behance"> </a> </li>
+                     </ul>
+                    </nav>
+         
+    </header>
+
+    <main class="page">
+        <h1 class="formContact">Formulario de contacto</h1>
+
+        <form action="/server" method="get">
+            <div class="form-group">
+                <label for="name">Nombre </label>
+                <input id="name" name="name" type="text" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email"> Email </label>
+                <input id="email" name="email" type="email" placeholder="Ingrese su e-mail" required>
+            </div>
+            <div class="form-group">
+              <fieldset>
+                  <legend> Presupuesto</legend>
+
+                    <input id="5000" name="budge" type="radio" value="5000" required>
+                    <label for="5000"> $5000.- </label>
+
+                    <input id="3000" name="budge" type="radio" value="3000" required>
+                    <label for="3000"> $3000.- </label>
+
+                    <input id="1000" name="budge" type="radio" value="1000" required>
+                    <label for="1000"> $1000.- </label>
+            </div>
+                    <div class="form-group">
+                        <label for="type"> Tipos de proyecto</label> 
+                            <select id="type" name="type" class="selector">
+                                <option disable selected value=""> Seleccionar Servicio </option>
+                                <option>Web</option>
+                                <option>Web App</option>
+                                <option> Mobile</option>
+                                <option>Designer</option>
+                            </select>
+                        </div>
+              </fieldset>
+            
+                <div class="form-group">
+                    <label for="description"> Descripción</label>
+                    <textarea id="description" name="description" required rows="12"></textarea>
+                    <div class="proyect"> Describe tu proyecto en al menos 500 palabras</div>
+
+                </div>
+                    <div class="form-group">
+                        <label for="terms">
+                            <input id="terms" name="terms" type="checkbox" required>
+                            <span> Acepto los términos y condiciones</span>
+                        </label>
+
+                    </div>
+                        <button>
+                            Enviar
+                        </button>
+
+            </form>
+        </main>
+        <footer>
+             
+            <h2> Redes Sociales</h2>
+            <ul class="footernav">
+                <li> <a href="https://github.com/Danlarte"> <img src="img/icons8-github-32.png" alt="github"> </a> </li>
+                <li> <a href="https://www.linkedin.com/in/daniel-lazarte-a566ba67/"> <img src="img/icons8-linkedin-rodeado-de-círculo-32.png" alt="Linkedin"> </a></li>
+                <li> <a href="https://www.behance.net/daniellazarte1"> <img src="img/icons8-behance-32.png" alt="Behance"> </a> </li>
+         </ul>
+             <div>
+                <p class="footer"> Copyright - 2023 Daniel Lazarte </p> 
+             </div>
+             
+        </footer> 
+    </body>
+    </html>

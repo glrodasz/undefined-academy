@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Alvarez's Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script async defer type="module" src="main.mjs"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+        <section>
+            <h1>Contactame</h1>
+            <form id="contact">
+                <div class="formStyle">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" id="name" placeholder="Ingrese su nombre" required>
+                </div>
+                <div class="formStyle">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Ingrese su E-mail" required>
+                </div>
+                <div class="formStyle">
+                    <fieldset>
+                        <legend>Proyecto</legend>
+                        <div class="flex-container">
+                            <div class="flex">
+                                <label for="proyect">Tipo de proyecto:</label>
+                                <select name="proyect" id="proyect" required>
+                                    <option value="" selected disabled>Seleccione una opcion</option>
+                                    <option value="website">Website</option>
+                                    <option value="webapp">Webapp</option>
+                                </select>
+                            </div>
+                            <div class="flex">
+                                <label for="price">Precio:</label>
+                                <div>
+                                    <input type="range" name="price" id="price" min="5.000" max="20.000" list="values">
+                                    <datalist id="values">
+                                        <option value="5.000">5.000</option>
+                                        <option value="10.000">10.000</option>
+                                        <option value="15.000">15.000</option>
+                                        <option value="20.000">20.000</option>
+                                    </datalist>
+                                    <div class="desc">Escoja un precio estimado</div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="formStyle">
+                    <label for="text">Descripción:</label>
+                    <textarea name="text" id="text" rows="10" required></textarea>
+                    <div class="desc">Describa el proyecto</div>
+                </div>
+                <input type="submit" value="ENVIAR" class="btn">
+            </form>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"
+                style="fill: rgb(255, 251, 251); --darkreader-inline-fill:#e9e3d5;" data-darkreader-inline-fill="">
+                <path
+                    d="M12 22c5.421 0 10-4.579 10-10S17.421 2 12 2 2 6.579 2 12s4.579 10 10 10zm0-18c4.337 0 8 3.663 8 8s-3.663 8-8 8-8-3.663-8-8 3.663-8 8-8z">
+                </path>
+                <path
+                    d="M12 17c.901 0 2.581-.168 3.707-1.292l-1.414-1.416C13.85 14.735 12.992 15 12 15c-1.626 0-3-1.374-3-3s1.374-3 3-3c.993 0 1.851.265 2.293.707l1.414-1.414C14.582 7.168 12.901 7 12 7c-2.757 0-5 2.243-5 5s2.243 5 5 5z">
+                </path>
+            </svg>2023</p>
+    </footer>
+</body>
+</html>

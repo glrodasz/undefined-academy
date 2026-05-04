@@ -1,0 +1,23 @@
+{
+  "name": "alifm-2843",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite", 
+    "build": "vite build", 
+    "preview": "vite preview" ,
+    "sass": "sass styles/main.scss styles/main.css",    
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1",
+    "vite": "^4.3.5"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  }
+}

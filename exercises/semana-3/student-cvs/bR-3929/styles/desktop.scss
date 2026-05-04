@@ -1,0 +1,56 @@
+@use "variables.scss" as *;
+
+@media screen and (min-width: 700px) {
+    body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+    }
+
+    header {
+        font-family: 'Rubik Iso', cursive;
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .container {
+        height: 100%;
+        padding: 5px 15px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        height: 100%;
+    }
+
+    .com {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .cmd {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        padding: 10px;
+
+    }
+
+    .cmd code {
+        font-size: 16px;
+    }
+
+    main {
+
+        height: 100%;
+        margin: 2px;
+        padding: 30px 5px;
+
+    }
+}

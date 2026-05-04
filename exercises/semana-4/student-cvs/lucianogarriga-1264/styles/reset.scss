@@ -1,0 +1,15 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+body{ 
+    background: rgb(255, 239, 239);
+    color: rgb(86, 79, 79);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5; 
+} 

@@ -1,0 +1,90 @@
+body {
+  font-family: Arial;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background: WhiteSmoke;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+}
+
+.card {
+  border: 1px solid Gainsboro;
+  border-radius: 12px;
+  background-color: #8bcaca;
+}
+
+.card-extended {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+input[type="search"] {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid Gainsboro;
+  width: 400px;
+  background: WhiteSmoke;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1012px;
+  width: 100%;
+}
+
+.container {
+  padding: 10px 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+nav {
+  background-color: #8bcaca;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+div :first-child {
+  grid-column: 1 / 4;
+}
+
+.socialMedia {
+  background-color: #8bcaca;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.socialMedia a {
+  margin-right: 30px;
+  color: #3168af;
+}
+
+.socialMedia i {
+  font-size: 34px;
+}

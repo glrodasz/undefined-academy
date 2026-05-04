@@ -1,0 +1,82 @@
+/*=== DESKTOP ===*/
+
+@media screen and (min-width: 425px) {
+
+  //--- Images ---//
+  .menu,
+  .header,
+  .articles {
+    padding: 0 3rem;
+  }
+
+}
+
+@media screen and (min-width: 675px) {
+
+  //--- Sections ---//
+  .articles {
+    grid-template-columns: repeat(2, minmax(25rem, auto));
+  }
+
+  .articles{
+    & .text-2xl{
+      font-size: clamp(1.8rem, calc(1.34rem + 2.3vw), 3.13rem);
+    }
+  } 
+
+}
+
+@media screen and (min-width: 930px) {
+
+  .header .img-box {
+    max-width: 67.2rem;
+  }
+
+  .header article {
+    grid-template-columns: auto 1fr;
+    grid-gap: 5rem;
+  }
+
+ .header{
+    & .text-2xl{
+      font-size: clamp(1.8rem, calc(1.34rem + 2.3vw), 3.13rem);
+    }
+  }
+
+  //--- Sections ---//
+  .articles {
+    grid-template-columns: repeat(3, minmax(25rem, auto));
+  }
+
+}
+
+@media screen and (min-width: 1100px) {
+
+  .header{
+    & .text-2xl{
+      font-size: clamp(2.16rem, calc(1.55rem + 3.04vw), 3.91rem);
+    }
+  }
+
+  .articles {
+    /* grid-gap: 10.4rem 5.4rem; */
+    
+    &:first-of-type {
+      margin-bottom: 10.4rem;
+    }
+  }
+
+}
+
+@media screen and (min-width: 1170px) {
+
+  //--- Sections ---//
+  .articles:first-of-type {
+    margin-bottom: 0px;
+  }
+
+  .category {
+    display: block!important;
+  }
+
+}

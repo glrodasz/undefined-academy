@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="/main.mjs"></script>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1><img src="/media/imagen email.png" alt="Dibujo email">Contacto </h1>
+        </div>
+
+    </header>
+
+    <section>
+
+        <form action="" method="">
+
+            <div class="form-group">
+                <label for="name" aria-required="true">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Ingrese su nombre aqui">
+            </div>
+
+
+            <div class="form-group">
+                <label for="email" aria-required="true">Email</label>
+                <input type="email" name="email" id="name" placeholder="Ingrese su email aqui">
+            </div>
+
+
+            <div class="form-group">
+                <label for="ubicación" aria-required="true">Ubicación</label>
+                <input type="ubicacion" name="ubicacion" id="ubicacion" placeholder="Ingrese su país de residencia">
+            </div>
+
+
+            <div class="form-group">
+
+                <fieldset class="intereses">
+                    <legend>¿Cuáles son tus intereses dentro de programación?</legend>
+
+                    <input type="radio" name="intereses" id="frontEnd" required>
+                    <label for="frontEnd">Front End</label>
+
+                    <input type="radio" name="intereses" id="backEnd" required>
+                    <label for="backEnd">Back End</label>
+
+                    <input type="radio" name="intereses" id="fullStack" required>
+                    <label for="fullStack">Full Stack
+
+                        <select name="option" id="option">
+                            <option disabled selected>Elegi una opción</option>
+                            <option value="JavaScript">Java Script</option>
+                            <option value="Java">Java</option>
+                            <option value="Phyton">Phyton</option>
+                        </select>
+                    </label>
+                </fieldset>
+            </div>
+
+
+            <div class="form-group">
+                <label for="justificacion" aria-required="true">Justifica tu elección</label>
+                <textarea name="justificacion" id="justificacion" rows="5"></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <label for="terms" class="terms" >
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <span>Acepto los términos y condiciones</span>
+                </label>
+            </div>
+
+
+            <button class="enviar" type="submit">Enviar</button>
+            <button class="borrar" type="reset">Borrar datos</button>
+
+
+
+    </section>
+
+    <footer>
+        <a href="/index.html" class="volver">Volver a la página principal</a>
+    </footer>
+    </form>
+
+</body>
+
+</html>

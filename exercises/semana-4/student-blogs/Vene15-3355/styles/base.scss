@@ -1,0 +1,104 @@
+@use "./variables.scss" as *;
+
+/*Estilos del header*/
+header {
+  width: 95%;
+  min-height: 250px;
+  background: $roseFog;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header>img {
+  width: 60%;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+header>div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.header-text h1,
+h2,
+p {
+  margin: 10px;
+}
+
+.header-text h1 {
+  font-size: 48px;
+  margin-top: 0;
+}
+
+.header-text h2 {
+  font-size: 32px;
+}
+
+.header-text p {
+  font-size: 16px;
+}
+
+main {
+  width: 95%;
+  margin: auto;
+}
+
+section {
+  min-height: 300px;
+}
+
+/*Estilos de las secciones blog*/
+.blogs {
+  display: grid;
+  grid-template-rows: 6fr;
+  gap: 10px;
+}
+
+.blog {
+  padding: 10px;
+  background: $wildSand;
+}
+
+.max-blog {
+  padding: 10px;
+  background: $almond;
+}
+
+.img-blog,
+.img-max-blog {
+  width: 100%;
+  padding: 10px;
+}
+
+.blog h3,
+.blog p,
+.max-blog h3,
+.max-blog p {
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.date-blog {
+  font-size: 11px;
+}
+
+/*Estilos footer*/
+footer {
+  background: $roseFog;
+  height: 30px;
+  margin: 10px auto;
+  padding: 10px;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
+
+footer>a {
+  color: $mineShaft;
+}

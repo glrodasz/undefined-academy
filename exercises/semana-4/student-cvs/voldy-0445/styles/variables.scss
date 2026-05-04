@@ -1,0 +1,73 @@
+//Colores
+
+$ebonyclay: #242933;
+$lynch: #727ea3;
+$jordyblue: #9db2f7;
+$logan: #9ba4c4;
+$gunpowder: #40465d;
+$mercury: #E7E7E7;
+$waterloo: #7b8196;
+$codgray: #1b1b1b;
+$emperor: #505050;
+$black: #000000;
+$lynch2: #747c99;
+
+//Mixins
+
+@mixin style-body {
+    font-family: 'poppins';    
+    background: $ebonyclay;
+    color: $lynch;
+}
+
+@mixin style-learning {
+    letter-spacing: 20px;
+    border: $gunpowder 2px dotted;
+}
+
+@mixin style-hr {
+    height: 1px;
+    background-color: $gunpowder;
+    border: none;
+}
+
+@mixin style-button {
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid $gunpowder;
+    background: $lynch2;
+    color: $black;
+    text-shadow: 1px 1px 0 rgba(80, 80, 80, 0.6);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0,0,0, 0.5);
+    cursor: pointer;
+}
+
+@mixin style-link {
+    color: $waterloo;
+    display:block;
+    line-height: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@mixin style-h4 {
+    color: $waterloo;
+    letter-spacing: 3px;
+}
+
+@mixin style-textarea {
+    background-color: $mercury;
+    border-radius: 5px;
+    outline: none;
+}
+
+@mixin style-buttonhover {
+    background: $jordyblue;
+}
+
+@mixin style-buttonactive {
+    background: $gunpowder;
+    box-shadow: -1px -1px 0 rgba(0,0,0, 0.5);
+}

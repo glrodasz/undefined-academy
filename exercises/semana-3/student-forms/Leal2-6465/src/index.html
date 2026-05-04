@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body class="bg-secondary">
+    <div class="container py-4 px-3 mx-auto">
+      <h1>Contact me!</h1>
+      <form action="/server" autocomplete="off" method="get">
+        <div class="mb-3">
+          <label for="exampleInputName" class="form-label">Full name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputName"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            name="email"
+            aria-describedby="emailHelp"
+            placeholder="YourEmail@example.com"
+            required
+          />
+          <div id="emailHelp" class="form-text text-dark">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+        <label>Proyect type:</label>
+        <select
+          class="form-select form-select-sm mb-3"
+          aria-label=".form-select-sm "
+          name="project"
+          required
+        >
+          <option selected disabled>Select a proyect</option>
+          <option value="Mobile">Mobile</option>
+          <option value="App">App</option>
+          <option value="WebApp">WebApp</option>
+          <option value="Ecomerce">Ecomerce</option>
+        </select>
+        <div class="form-label">
+            <span>Budget in USD:  </span>
+            <div class="form-check form-check-inline pt-3 pb-0">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="budget"
+              id="inlineRadio1"
+              value="1500"
+              required
+            />
+            <label class="form-check-label" for="inlineRadio1">1.500</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="budget"
+              id="inlineRadio2"
+              value="2500"
+              required
+            />
+            <label class="form-check-label" for="inlineRadio2">2.500</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="budget"
+              id="inlineRadio3"
+              value="4000"
+              required
+            />
+            <label class="form-check-label " for="inlineRadio3">4.000</label>
+          </div>
+          <p id="budgetHelp" class="form-text text-dark">
+            This is not the final price is just a budget.
+          </p>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Description</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            name="description"
+            rows="3"
+            placeholder="Description of the project or tasks that you want to do in at least 500 words"
+            required
+          ></textarea>
+        </div>
+        <div class="mb-3 form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="exampleCheck1"
+            required
+          />
+          <label class="form-check-label" for="exampleCheck1"
+            >Accept terms and conditions</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

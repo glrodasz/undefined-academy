@@ -1,0 +1,354 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit; /* estudiarlo */
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background: white;
+  color: #566b78;
+  color: #555;
+  line-height: 1.5;
+}
+
+header {
+  background: linear-gradient(to right, #DD2476, #FF512F);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 4rem 4rem;
+  text-align: center;
+  max-width: none;
+  
+}
+
+header img {
+  display: inline-block;
+  height: 120px;
+  vertical-align: top;
+  width: 120px;
+}
+
+header h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  
+}
+
+header a {
+  border: 2px solid #333;
+  border-radius: 290486px;
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+header a:hover { 
+  Background: #333;
+  color: white;
+} 
+
+
+header p {
+  text-align: center;
+  padding-top: 1rem;
+  color: white;
+  margin-top: 2rem;
+}
+
+main {
+  padding: 2rem 2rem 0 2rem;
+  margin: 0 auto;
+  max-width: 50rem;
+}
+
+h1, h2, strong {
+  color: #333;
+}
+
+a {
+    color: #e41a4a;
+  }
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+li > img {
+  width: 20px;
+}
+
+.form__container {
+  padding: 0 2rem;
+  margin: 0 auto;
+  max-width: 50rem;
+}
+
+.redes__sociales-container {
+  padding: 0 2rem 2rem 2rem;
+  margin: 0 auto;
+  max-width: 50rem;
+}
+
+footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: rgb(251, 248, 248);
+  padding: 2rem;
+  border-top: 1px solid rgb(179, 178, 178);
+}
+
+html a.button {
+  border: 1px solid #d8dee9;
+  border-radius: 290486px;
+  color: #b0bfc7;
+  padding: 1em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+html a.button strong {
+  color: #e41a4a;
+}
+
+.button:hover {
+  background: #e41a4a;
+  border-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.button em {
+  display: block;
+  font-size: 0.6em;
+  font-style: normal;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.button strong {
+  color: #e81c4f;
+  -webkit-transition: color 200ms ease-out;
+  transition: color 200ms ease-out;
+}
+
+.button:hover strong {
+  color: white !important;
+}
+
+.button.linkedin strong {
+  color: #0e76a8;
+}
+
+
+.button.linkedin:hover {
+  background: #0e76a8;
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  
+}
+
+.button.instagram strong {
+  color: #d6249f;
+}
+
+.button.instagram:hover {
+  background: #d6249f; 
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+
+.button.facebook strong {
+  color: #3b5998;
+}
+
+.button.facebook:hover {
+  background: #3b5998;
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+.button.twitter strong {
+  color: #55acee;
+}
+
+.button.twitter:hover {
+  background: #55acee;
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+footer .button {
+  font-size: 0.8em;
+  padding: 1em 2em;
+}
+
+.buttons .button {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.cover {
+  text-align: center;
+}
+
+.cover .resource {
+  display: block;
+}
+
+.emoji {
+  font-size: 1.125em;
+  vertical-align: middle;
+}
+
+/* formcontact */
+
+.form__group {
+  /* border: 1px solid tomato; */
+  margin: 1.25rem 0;
+}
+
+label, input {
+  vertical-align: middle; /* sirve para alinear de forma vertical a elementos inline */
+}
+
+/* label, input:not([type="radio"], input[type="checkbox"]) */
+label, input[type="text"], input[type="email"]{
+  width: 100%;
+
+}
+
+label, legend {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.750rem;
+  color: #444;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  resize: vertical; /* bloquea el lado vertical */
+}
+
+input[type="text"], input[type="email"], textarea {
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  color: #333;
+}
+
+.help {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+button {
+  padding: 1rem 3.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #b22e4a;
+  background: #e41a4a;
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+  color: #333;
+  border-radius: 50px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  display: flex;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+button:hover {
+  background: #f03158 ;
+}
+
+button:active {
+  background:  #b62645;
+  box-shadow: none;
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.form__contact {
+  background: #f4f1f1;
+  padding: 0.5rem 2rem 1rem 2rem;
+}
+
+form {
+  accent-color: #bd1c3c;
+}
+
+input:focus-visible, textarea:focus-visible {
+  /* border: 1px solid #bd1c3c; */
+  outline: 2px solid #e22a4f;
+}
+
+.form__contact--title {
+  text-align: center;
+}
+
+.redes__sociales {
+  text-align: center;
+}
+.form__group>button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Responsiveness */
+
+@media (min-width: 600px) {
+  .buttons {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    /* padding: 1em 0; */
+  }
+
+  .buttons .button {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-bottom: 0;
+    margin-right: 1em
+  }
+
+  .buttons .button:last-child {
+    margin-right: 0;
+  }
+
+}
+

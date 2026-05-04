@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/formulario.css">
+</head>
+
+<body>
+    <main class="page">
+        <h1>Contacto</h1>
+        <form action="/server" method="get" id="form">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" type="text" placeholder="Escriba su nombre completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Escriba su correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <input id="3000" name="budget" type="radio"><label for="3000">3000$</label>
+                    <input id="2000" name="budget" type="radio"><label for="2000">2000$</label>
+                    <input id="1000" name="budget" type="radio"><label for="1000">1000$</label>
+                </fieldset>
+                <div class="help">Es un aproximado, no el total.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="type">Seleccione el proyecto</label>
+                <select id="type" required>
+                    <option disabled selected>Eliga uno por favor</opcion>
+                    <option value="WebApp">WebApp</option>
+                    <option value="mobileapp">MobileApp</option>
+                    <option value="Web">Website</option>
+                    <option value="Design">Diseño </option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Descripción</label>
+                <textarea id="description" required rows="4"></textarea>
+
+                <div class="help"> Cuentame un poco sobre el proyecto.</div>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input id="terms" type="checkbox" required>
+                    <span>Acepto los terminos y condiciones.</span>
+                </label>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <script src="form.js"></script>
+    </main>
+
+</body>
+
+</html>

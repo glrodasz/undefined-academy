@@ -1,0 +1,13 @@
+.author {
+	display: flex;
+	flex-direction: row;
+	gap: 0 12px;
+	align-items: center;
+}
+
+.author img {
+	width: 100%;
+	max-width: 32px;
+	max-height: 32px;
+	border-radius: 50%;
+}

@@ -1,0 +1,119 @@
+.me {
+    background-color: var(--sky-950);
+    background-image: url("https://user-images.githubusercontent.com/933393/164779706-9434093e-61cd-4e6e-86a9-5c23ec90b1b1.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 1vw 1em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.me h1 {
+    color: var(--text-secondary);
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 1rem;
+}
+
+.me .profile-avatar {
+    display: inline-block;
+    height: 120px;
+    vertical-align: top;
+    width: 120px;
+    border-radius: 50%;
+    border: 4px solid var(--bg-light);
+    margin-bottom: 1em;
+}
+
+.me p {
+    max-width: 40em;
+    color: var(--text-secondary);
+    font-weight: 300;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: var(--sky-950-smoke);
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+
+.me strong {
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.blog .post-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.post > :first-child{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+    border: 1px solid var(--sky-200);
+    background-color: var(--sky-100);
+    border-radius: 8px;
+}
+
+.post > :first-child:hover {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.post a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.post header {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.post img {
+    padding: 0.5em 0;
+}
+
+.post p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.post footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding-top: 0.5rem;
+    color: var(--text-title);
+}
+
+.post .tags {
+    justify-self: flex-end;
+}
+
+@media only screen and (min-width: 576px) {
+    .blog .post-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .blog .post-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .me h1{
+        font-size: 2.5em;
+    }
+
+    .blog .post-list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

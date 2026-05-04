@@ -1,0 +1,185 @@
+html,
+body {
+  background: var(--color-white);
+  color: var(--color-black);
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+
+nav {
+  display: grid;
+  place-items: center;
+  background: var(--color-white);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  padding: 40px 0 20px 0;
+}
+
+header {
+  display: flex;
+  min-height: 300px;
+  background: var(--color-white);
+}
+
+
+.foto {
+  display: flex;
+  height: 400px;
+}
+
+
+.perfil{
+  background: var(--color-white);
+}
+
+.content{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background: var(--color-white);
+}
+
+.icons{
+  display: flex;
+  margin: 0;
+  padding: 50px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.icon{
+  width: 35px;
+}
+
+.bx{
+  color: var(--color-black);
+}
+
+.val{
+  padding-left: 150px;
+  }
+
+.progress {
+  display: flex;
+  border-radius: 0;
+}
+
+.text {
+  text-align: right;
+}
+
+.text-perfil {
+  text-align: center;
+}
+
+.text-info {
+  text-align: left;
+
+}
+
+.name {
+  color: var(--color-orange);
+}
+
+
+.tec {
+  text-align: center;
+  margin: 20px;
+}
+
+.menu li {
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li h2 {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--color-orange);
+  padding: 10px;
+  width: 200px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 5%;
+}
+
+
+ul.menu{
+  justify-content: center;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li.menu{
+  text-align: left;
+}
+
+.feature.first {
+  background: var(--color-white);
+}
+
+.feature:last-child {
+  background: var(--color-white);
+}
+
+.studie {
+  display: flex;
+	background: var(--color-white);
+}
+
+.studie.first {
+  display: flex;
+	background: var(--color-white);
+}
+
+.studie:last-child {
+  display: flex;
+	background: var(--color-white);
+}
+
+.footer{
+  background: var(--color-black);
+}
+
+.contact{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  color: var(--color-white);    
+}
+
+.item__contact{
+  width: 100%;
+  text-align: center;
+}
+
+.contact__icon{
+  font-size: 14px;
+  color: var(--color-white);
+}
+
+.contact__title{
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer_logo{
+  display: flex;
+  width: 200px;
+  margin: auto;
+}

@@ -1,0 +1,37 @@
+@use "variables" as variables;
+
+html{
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/*Modifico la equivalencia del rem; rem=10px*/
+html{
+    font-size: 62.5%;
+    background-color: variables.$color-snow;
+}
+
+@mixin centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin tablet{
+    @media screen and (min-width: variables.$breakpoint-middle){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media screen and (min-width: variables.$breakpoint-large){
+        @content;
+    }
+}

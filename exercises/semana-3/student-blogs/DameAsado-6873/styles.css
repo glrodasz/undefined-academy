@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f0f0f0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.header {
+    height: 2em;
+    background-color: #333;
+    color: #f0f0f0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    grid-area: 1 / 1 / 2 / 4;
+    box-shadow: 0px 6px 6px 0px #333;
+}
+
+.nav-cards {
+    height: 3em;
+    display: flex;
+    padding: 0 30px 10px 10px;
+    grid-area: 2 / 1 / 2 / 4;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 6px 6px 0px #333;
+}
+
+.nav-cards a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-cards a:hover{
+    color: turquoise;
+}
+
+li,
+ul {
+    padding-left: 15px;
+    display: inline-block;
+}
+
+/*  Section blog */
+
+.blogGrid{
+    margin: 1em 2em;
+    height: 100vh;
+    display: grid;
+    grid-template: 35em/ 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+/* Cards */
+
+.article {
+    /*background-color: teal;*/
+    display: grid;
+    grid-template: 1fr 3fr 10px / 1fr;
+}
+
+.card {
+    grid-row: 2 / 3;
+    background: #e2e2f8;
+    color: #333;
+    border-radius: 20px;
+    padding: 0 15px;
+    margin: 0 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 3px 3px 10px 0px #333;
+}
+
+.card img {
+    width: 75%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    position: relative;
+    top: -15%;
+    margin-bottom: -10%;
+    border-radius: 10%;
+    box-shadow: 3px 3px 6px 0px #333;
+}
+
+.tag a {
+    position: relative;
+    top: -20px;
+    padding: 3px;
+    border-radius: 5px;
+    background: turquoise;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    box-shadow: 2px 2px 4px 0px #333;
+}
+
+.tag a:hover {
+    color: black;
+}
+
+.card h2, .card p{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.readmore {
+    font-weight: 600;
+    background: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.readmore:hover{
+    background-color: #f0f0f0;
+    color: #333;
+    border: #333 solid 1px;
+}

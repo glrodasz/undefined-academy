@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+fieldset {
+    border: none;
+}
+
+.inactive {
+    display: none;
+}
+
+//Navbar Responsive
+.navbar-transparent {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    backdrop-filter: blur(8px) brightness(0.2);
+    opacity: 0;
+    transform: translateX(-100%);
+    z-index: 99;
+    transition: all 0.3s ease-in-out;
+}
+
+.show-navbar {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.navbar__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar__ul li a {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 2.5rem;
+    width: 100vw;
+    transition: all 0.3s ease-in;
+}
+
+.navbar__ul li a:hover {
+    color: #00BCD4;
+    background-color: var(--just-white);
+}
+
+.button-closed {
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 3.6rem;
+}
+
+.button-closed span {
+    font-size: 3.6rem;
+    color: #fff;
+}
+
+.button-closed span:hover {
+    font-size: 3.6rem;
+    color: #00BCD4;
+}

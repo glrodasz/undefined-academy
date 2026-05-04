@@ -1,0 +1,15 @@
+/* Custom properties (CSS Variables) */
+/* settings */
+:root {
+  --color-dark-brown: #BC7842;
+    --color-sand-sand: #C2B280;
+    --color-light-green: #E6ECC4;
+    --color-dark-green: #648A2E;
+    --color-pet-dark: #F08019;
+    --color-pet-light: #F8F3DF;
+  
+    --container-max-width: 1180px;
+    --container-padding: 0 24px;
+
+    
+  }

@@ -1,0 +1,21 @@
+{
+  "name": "luanarmo-7586",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "sass": "sass main.scss main.css"
+  },
+  "keywords": [],
+  "author": "luanarmo",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.60.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "vite": "^4.2.1"
+  }
+}

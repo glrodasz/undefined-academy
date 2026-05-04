@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --primario: #d5b4b4;
+  --secundario: #e4d0d0;
+  --oscuro: #867070;
+  --claro: #f5ebeb;
+  --blanco: #fff;
+  --negro: #000;
+  --opaco: #000000a8;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.25;
+  background: var(--primario);
+  background: linear-gradient(
+    180deg,
+    var(--primario) 0%,
+    var(--secundario) 15%,
+    var(--claro) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  padding: 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  text-align: justify;
+}
+
+
+/*ASIDE*/
+
+.aside {
+  max-width: 25%;
+  height: 100vh;
+  background-color: var(--oscuro);
+  float: left;
+  position: fixed;
+  z-index: 100;
+  margin: 0 auto;
+  box-shadow: 9px 0px 5px 0px rgba(0,0,0,0.12);
+  -webkit-box-shadow: 9px 0px 5px 0px rgba(0,0,0,0.12);
+  -moz-box-shadow: 9px 0px 5px 0px rgba(0,0,0,0.12);
+
+}
+
+.contenedor-aside {
+  max-width: 90%;
+  height: 100%;
+  color: var(--blanco);
+  margin: 0 auto;
+  position: relative;
+}
+
+.aside-header {
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.aside-header img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 5px solid var(--claro);
+}
+
+.aside-header h1 {
+  font-size: 2rem;
+}
+
+.aside-header span {
+  font-size: 1rem;
+  color: var(--claro);
+}
+
+.aside-nav {
+  display: inline-block;
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+}
+.aside-nav a {
+  display: inline-block;
+  width: 45%;
+}
+
+.aside-nav a img {
+  max-width: 100%;
+  height: 2rem;
+}
+
+.aside-footer {
+  position: absolute;
+  font-size: .9rem;
+  bottom: 0;
+  margin-bottom: 6rem;
+  width: 100%;
+  text-align: center;
+}
+
+.aside-footer time {
+  font-weight: bold;
+}
+
+/*MAIN*/
+
+.main {
+  width: 75%;
+  float: right;
+  margin: 0 auto;
+}
+
+.contenedor-main{
+  max-width: 95%;
+  margin: 2rem 1rem;
+}
+
+/*secciones de informacion*/
+
+.informacion{
+
+  border-bottom: 1px solid var(--claro);
+  color: var(--opaco);
+  padding-bottom: 1rem;
+
+}
+
+.informacion:last-of-type{
+  border-bottom: none;
+}
+
+.informacion h2{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.informacion ul{
+  list-style: none;
+}
+
+.informacion ul li::marker{
+  content: "↠ ";
+  color: var(--oscuro);
+}
+
+.tecnologias, .informacion.idiomas ul{
+  text-align: center;
+}
+
+.tecnologias img{
+  max-width: 20%;
+  height: 2rem;
+}
+
+.informacion.idiomas ul{
+  width: 90%;
+}
+
+.informacion.idiomas li {
+  display: inline-block;
+  width: 45%;
+}
+
+.informacion.idiomas li:first-child {
+  margin-right: auto;
+}
+
+.informacion.idiomas li:last-child {
+  margin-left: auto;
+}
+
+.idiomas li span, .educacion li span, .experiencia li span{
+  font-weight: 700;
+}
+
+/*Formulario*/
+
+.contenedor-formulario {
+  border: solid 3px var(--oscuro);
+  max-width: 90%;
+  margin: 30px auto;
+  position: relative;
+  padding: 30px;
+}
+
+.contenedor-formulario h2{
+  letter-spacing: .5rem;
+}
+
+.contenedor-formulario .linea{
+  border-bottom: solid 2px var(--oscuro);
+  margin: -0.5rem auto;
+  width: 6rem;
+}
+
+.form{
+  margin-top: 5rem;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+
+.form-group input, .form-group textarea {
+	background: none;
+  border: none;
+  font-family: inherit;
+	border-bottom: solid 2px var(--oscuro);
+	color: var(--oscuro);
+	font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, [type='tel']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+textarea{
+  resize: vertical;
+  min-height: 1.5rem;
+}
+
+.mensaje {
+	float: none;
+}
+
+.nombre {
+	float: left;
+	width: 45%;
+}
+
+.botones{
+  text-align: right;
+}
+
+.form-btn {
+  padding: 15px 25px;
+  background: none;
+  border: solid 2px var(--oscuro);
+  color: var(--oscuro);
+  cursor: pointer;
+  display: inline-block;
+  font-family:  inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+	transition: all 0.5s ease-in-out;
+  
+}
+
+.form-btn:hover {
+  background: var(--oscuro);
+  color: var(--blanco);
+}
+
+
+

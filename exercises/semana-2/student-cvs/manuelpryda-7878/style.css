@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 100;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v30/KFOiCnqEu92Fr1Mu51QrEz0dL_nz.woff2) format('woff2');
+}
+
+body {
+    font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: whitesmoke;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: 20px;
+    
+}
+
+.contact-page {
+    font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 40px;
+
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+label {
+    width: 100%;
+    font-weight: bold;
+    color: #444;
+}
+
+input {
+    width: 100%;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+button {
+    padding: 12px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: burlywood;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+
+}
+
+button:hover {
+    background: rgb(236, 141, 106);
+}
+
+button:active {
+    background:burlywood;
+    box-shadow: none;
+}

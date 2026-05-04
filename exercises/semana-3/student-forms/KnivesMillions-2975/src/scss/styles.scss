@@ -1,0 +1,61 @@
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    background-color: #f0f0f0;
+}
+
+nav {
+    margin-bottom: 32px;
+    background-color: #212529;
+}
+
+i {
+    font-size: 2rem;
+    color: whitesmoke;
+    margin: 12px;
+}
+
+
+.card {
+    width: 300px;
+    border: 1px solid #212529;
+    border-radius: 8px;
+    padding: 8px 8px;
+    margin: 0 auto;
+}
+
+.card:hover {
+    box-shadow: 0px 1px 4px 1px whitesmoke;
+}
+
+.form-control {
+    width: 280px;
+    margin: auto;
+}
+
+select {
+    border-color: transparent;
+}
+
+textarea {
+    resize: vertical;
+    width: 280px;
+    background-color: transparent;
+}
+
+footer {
+    margin-top: 32px;
+    background-color: #212529;
+}
+
+
+@include media-breakpoint-up(md) {
+    .card {
+        width: 640px;
+        padding: 24px 32px;
+    }
+}

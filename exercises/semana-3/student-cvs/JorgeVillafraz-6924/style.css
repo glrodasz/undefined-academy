@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    background: #081b29;
+    color: #ffee75
+}
+
+.navCont {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;     
+    align-items: center;
+    
+}
+
+.esto {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px ;
+    gap: 20px;
+}
+
+.navbar{
+    display: none;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.learning-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+footer {
+    margin-top: 30px;
+}
+
+.foto img{
+    width: 400px;
+    height: auto;
+    border: 10px solid #00abf0;
+    border-radius: 50%;
+    
+}
+.logo {
+    font-size: 25px;
+    color: #ffee75;
+    text-decoration: none;
+    /*quita el subrayado*/
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ffee75;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    /*tiempo de transicion*/
+
+}
+
+.navbar a:hover,
+.navbar a.active {
+    /*al pasar el puntero en los elementos a dentro de la clase navbar y tambien la clase active*/
+    color: #00abf0;
+
+
+}
+
+
+
+
+
+
+
+/* .about-content, .learning-content, .projects-content, .forms-content{
+    max-width: 600px;
+} */
+
+.about-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+.about-content h2, .projects-content h2, .learning-content h2, .forms-content h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.about-content h3, .projects-content h3, .learning-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.about-content p {
+    font-size: 16px;
+
+}
+
+.home-sci {
+    /* position: absolute; */
+   
+    width: 100%;
+    display: flex;
+    /*elementos flexibles organizados en fila*/
+    justify-content: space-around;
+
+    /*justifica con espacio equitativo entre los elementos*/
+
+}
+
+
+
+.form {
+    /* border: 2px solid tomato; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+
+.learning {
+    margin-top: 40px;
+}
+
+
+
+.lea-sci i, .lea-sci p {
+    position: relative;
+    /* left: 20%; */
+    /* display: inline-flex; */
+    /* justify-content: center; */
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    background: transparent;
+    font-size: 40px;
+    color: #00abf0;
+    text-decoration: none;
+    /* border: 2px solid; */
+    
+}
+
+.lea-sci p {
+    color: #ffee75;
+    font-size: 30px;
+    
+
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    /*posicion en el plano z es decir profundidad*/
+    overflow: hidden; /*recorta el contenido ocultando que hace interaccion entre bloques parte de la transición*/
+    transition: .5s;/*para que coincidan las transiciones y el icono sea visible es decir los alterna*/
+}
+
+.home-sci a:hover {
+    color: #081b29;
+}
+
+.home-sci a::before {
+    /*pseudo-elemento que es el primer hijo del elemnto seleccionad*/
+    content: '';
+    position: absolute;
+    top: 0;
+    /*dimensionando los bloques independientes de cada elemento, recomendable colocar un color de fondo temporal para visualizar la dimension*/
+    left: 0;
+    width: 0;/*inicialmente en 100% cambiamos a 0 cuando se agrega la transición*/
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    /*enviando al fondo*/
+    transition: .5s;
+
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+
+
+/* formulario-------------------- */
+
+.contact {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: #ffee75;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0;
+        align-items: center;
+        /* border: 2px solid #ca8a04; */
+        
+        
+    
+    }
+
+    .content-form {
+        display: flex;
+        align-items: center;
+        /* border: 2px solid #ca8a04; */
+        
+        margin-top: 50px;
+    }
+
+
+    
+     label,
+    input {
+        vertical-align: middle;
+    }
+    
+     label, .contact input:not([type="radio"], [type="checkbox"]) {
+        width: 100%;
+    
+    }
+    
+    
+    textarea {
+        display: block;
+        width: 100%;
+        resize: vertical;
+    }
+    
+    label,
+    legend {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #ffee75;
+    
+    
+    }
+    
+    input[type="text"],
+    input[type="email"] {
+        background: transparent;
+        border: 1px solid #00abf0;
+        border-radius: 4px;
+        padding: 8px 10px;
+        color: #ffee75
+    }
+    
+    
+    button {
+        padding: 16px 100px;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: 1px solid #713f12;
+        background: #ffee75;
+        color: #333;
+        text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+        border-radius: 8px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    
+    }
+    
+    button:hover {
+        background: #facc15;
+    
+    }
+    
+    button:active {
+        background: #ca8a04;
+        box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+    
+    }
+
+
+    @media screen and (min-width: 992px){
+        .esto {
+            flex-direction: row;
+        }
+
+        .navbar {
+            display: block;
+        }
+
+        .home-sci{
+            justify-content: flex-start;
+            gap: 40px;
+            padding-left: 170px;
+            margin-bottom: 40px;
+        }
+
+        .conten {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+            
+        
+        }
+
+        .learning-content h2 {
+            margin-bottom: 40px;
+        }
+
+
+    }
+
+
+

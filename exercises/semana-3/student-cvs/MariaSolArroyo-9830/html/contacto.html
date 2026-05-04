@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script async defer type="module" src="../main.mjs"></script>
+  </head>
+  <body>
+    
+
+    <main class="page">
+        <h1 class="conta">Contacto</h1>
+        <form method="post">
+          <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" name="name" id="name" required>
+          </div>
+
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+          </div>
+
+          <div class="form-group">
+              <label for="type">Tipo de consulta</label>
+              <select name="type" id="type" required>
+                  <option disabled selected></option>
+                  <option value="presupuesto">Presupuesto</option>
+                  <option value="entrevista">Entrevista</option>
+                  <option value="consultas">Consultas Generales</option>
+              </select>
+          </div>
+
+          <div class="form-group">
+              <fieldset>
+                  <div> Si seleccionó <strong>presupuesto</strong> porque medio prefiere ser contactado:</div>
+
+                  <legend> ❓</legend>
+                   <div class="grupobotones">
+                    <div><input type="radio" name="budget" id="10000" value="whatsapp">
+                      <label for="whatsapp">Whatsapp</label>
+                      <input class="whatsapp" type="tel" placeholder="Ingrese su Whatsapp"></div>
+
+                      <div>
+
+                  <input type="radio" name="budget" id="10000" value="emailcontacto">
+                  <label for="emailcontacto">Email</label>
+                      </div>
+                   </div>
+              </fieldset>
+          </div>
+
+          <div class="form-group">
+              <label for="description">Consultas Generales</label>
+              <textarea name="description" id="description" cols="30" rows="10"></textarea>
+              <div class="help">Escribe tu consulta en almenos 300 palabras...</div>
+          </div-form-group>
+          <button>Enviar</button>
+      </form>
+
+
+      <div class="volver">
+        <a class="botonhome" href="../index.html"><img src="/img/6392143.png" alt=""></a>
+
+      </div>
+      
+    </main>
+   
+    <footer>
+      <p>María Sol Arroyo &copy; 2023</p>
+    </footer>
+</body>
+</html>

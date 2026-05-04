@@ -1,0 +1,21 @@
+@use "variables";
+
+@media screen and (min-width: 1992px) {
+	.container {
+		display: flex;
+		order: 1;
+	}
+
+	.footer {
+		min-height: auto;
+		height: 100px;
+		order: 2;
+	}
+
+	.footer {
+		order: 3;
+	}
+
+
+}
+

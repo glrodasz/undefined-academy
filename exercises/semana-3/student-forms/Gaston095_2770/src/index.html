@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="GET" class="g-3 mt-3">
+
+            <div class="row mb-3 title-form p-4">
+                <h1 class="title">Formulario de contacto</h1>
+                <p class="fw-bold">Complete sus datos a continuacion.</p>
+            </div>
+
+            <div class="row mb-3 p-1">
+                <label class="col-2 form-label fw-bold" for="name">Nombre</label>
+                <div class="col-10">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Ingrese su nombre"
+                        required>
+                </div>
+            </div>
+
+
+            <div class="row mb-3 p-1">
+                <label class="col-2 form-label fw-bold" for="lastname">Apellido</label>
+                <div class="col-10">
+                    <input type="text" class="form-control" name="lastname" id="lastname"
+                        placeholder="Ingrese su apellido" required>
+                </div>
+            </div>
+
+            <div class="row mb-3 p-1">
+                <label class="col-2 form-label fw-bold" for="email">Email</label>
+                <div class="col-10">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="example@example.com"
+                        required>
+                </div>
+            </div>
+
+            <div class="row mb-3 p-1">
+                <label class="col-2 form-label fw-bold" for="phone">Tel</label>
+                <div class="col-10">
+                    <input type="tel" class="form-control" name="phone" id="phone" placeholder="Telefono" required>
+                </div>
+            </div>
+
+            <div class="row mb-3 p-1">
+                <label class="col-2 form-label fw-bold" for="message">Mensaje</label>
+                <div class="col-10">
+                    <textarea class="form-control" name="message" id="message" cols="30" rows="8"
+                        placeholder="Deje su mensaje" required></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <button id="submit" class="btn btn-primary col-3 m-3" type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

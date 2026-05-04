@@ -1,0 +1,280 @@
+body {
+  background-color: rgb(229, 227, 216);
+  padding: 20px;
+  margin: 0 auto;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.page {
+  border: 2px solid black; 
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+/* Estilos de la seccion de Header  */
+.header_container {
+  display: flex; 
+  border-bottom: 1px solid black;
+  color: rgb(255, 124, 124);
+  background-color: rgb(222, 218, 198);
+
+}
+
+.header_logo{
+  display: grid;
+  width: 20%;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+  border-right: 1px solid black;
+}
+
+.header_logo img {
+  width: 70px;
+}
+
+.header_texts {
+  width: 80%;
+  padding: 6px;
+  text-align: center;
+  border-right: 1px solid black;
+}
+
+.header_texts-title {
+  margin: 0;
+  font-size: 50px;
+}
+
+.header_texts-subtitle {
+  margin-top: -4px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(76, 76, 76);
+}
+
+.header_autors {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 20%;
+}
+
+.header_autors h3 {
+  margin: 0 0 12px 0;
+  font-weight: 700;
+}
+
+.header_autors p {
+  margin: 0px;
+}
+
+.header_autors p:nth-child(1) {
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  height: 35px;
+  border-bottom: 1px solid black;
+}
+
+.navbar li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar li:nth-child(1) {
+  border-right: 1px solid black;
+}
+.navbar li:nth-child(2) {
+  border-right: 1px solid black;
+}
+.navbar li:nth-child(3) {
+  border-right: 1px solid black;
+}
+
+.navbar li a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar li:hover  a{
+  color:  rgb(255, 124, 124);
+  font-weight: 800;
+}
+
+.navbar li:hover {
+  background-color:rgb(222, 218, 198);
+}
+/* ________________________________________ */
+
+
+/* Estilos de la seccion principal del blog  */
+
+.hero_container {
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+.hero_article-container {
+  width: 75%;
+  padding: 20px;
+  border-right: 1px solid black;
+  padding-bottom: 40px;
+}
+
+.hero_article-texts {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 25px;
+}
+
+.hero_article-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.hero_article-img img{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;  
+}
+
+.hero_article-texts h1{
+  margin: 0;
+  margin-top: 15px;
+  font-size: 48px; 
+}
+
+.hero_article-linkContainer {
+  display: flex;
+  justify-content: end;
+}
+
+.hero_article-link {
+  display: flex;
+  width: 100px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(255, 124, 124);
+  text-decoration: none;
+  background-color: rgb(222, 218, 198);
+
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.hero_article-description {
+  font-size: 20px;
+  padding-left: 4px;
+  margin-bottom: 40px;
+}
+
+.hero_article-link p {
+  margin: 0;
+}
+
+.hero_aside-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+
+}
+
+.hero_aside-img {
+  width: 90%;
+  margin: 0;
+  
+}
+.hero_aside-img  img{
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: -60px;
+}
+
+.hero_aside-text {
+  font-size: 58px;
+  margin-bottom: 0;
+}
+/* ________________________________________ */
+
+
+/* Sección posts */
+
+.posts_container {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+
+.posts_card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  width: 33.33%;
+  padding: 20px;
+  border-right: 1px solid black;
+}
+
+.post_card-img {
+  width: 100%;
+  margin: 0;
+}
+
+.post_card-img img {
+  width: 100%;
+  object-fit: cover;
+
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.posts_card-texts h2 {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.posts_card-texts p{
+  margin-top: 0;
+}
+
+.post_link {
+  justify-self: end;
+  align-self: flex-end;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(222, 218, 198);
+}
+
+footer p {
+  font-size: 26px;
+  color: rgb(255, 124, 124);
+}
+
+.footer_img img {
+  width: 60px;
+}

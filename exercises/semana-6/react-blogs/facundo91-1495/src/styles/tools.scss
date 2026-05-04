@@ -1,0 +1,12 @@
+@use "settings";
+
+@mixin container-width {
+  width: 100%;
+  max-width: var(--container-max-width);
+}
+
+@mixin desktop {
+  @media screen and (min-width: settings.$breakpoint-large) {
+    @content;
+  }
+}

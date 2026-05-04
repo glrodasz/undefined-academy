@@ -1,0 +1,16 @@
+
+@media screen and (min-width: 450px) {
+    body {
+        margin: 30px 100px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    #navbar ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}

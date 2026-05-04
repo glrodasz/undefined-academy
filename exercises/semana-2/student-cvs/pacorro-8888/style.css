@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+a:hover {
+    background: #ddd;
+}
+a:active {
+    background: #2563eb;
+    color: white;
+}
+
+h1 {
+    color: #2563eb;
+}
+
+h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    font-weight: 800;
+    margin-top: .5rem;
+}
+
+header {
+    background: #bfdbfe;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+h3 {
+    color: #1e3a8a;
+}
+
+header p {
+    color: #172554;
+}
+
+hr {
+    margin: 1rem auto;
+    width: 50%;
+    border: none;
+    height: 6px;
+    background: #bfdbfe;
+    border-radius: 6px;
+}
+
+article {
+    background: #dbeafe;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+}
+
+table {
+    margin: 1rem 0 0;
+    padding: .4rem;
+    border: 1px solid #bfdbfe;
+    background: #eff6ff;
+    border-radius: .5rem;
+}
+
+button {
+    border: none;
+    margin: .5rem 0 0;
+    background: #eff6ff;
+    color: #222;
+    padding: .4rem .8rem;
+    border-radius: 99px;
+    transition: all .4s cubic-bezier(0,.85,.4,1);
+}
+button:hover {
+    background: #ffffff;
+    color: #2563eb;
+    transform: scale(1.05);
+}
+button:active {
+    background: #2563eb;
+    color: white;
+    transform: scale(.95);
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(10px);
+    background: rgb(255 255 255 / .4);
+}
+dialog {
+    background: #bfdbfe;
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 20px 60px -10px black;
+}
+
+dialog h1 {
+    color: #222;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    font-weight: 800;
+    margin: .5rem 0;
+    color: #222;
+    width: 100%;
+}
+
+input, textarea {
+    padding: .4rem;
+    border-radius: .5rem;
+    border: 2px solid #aaa;
+    width: 100%;
+}

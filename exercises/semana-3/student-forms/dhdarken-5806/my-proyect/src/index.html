@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Form</title>
+  </head>
+  <body class="p-3 mb-2 bg-secondary text-white">
+    <form>
+      <div class="d-flex w-100">
+        <img
+          src="/img/fantasma.png"
+          class="w-25 h-25 rounded-circle mx-auto"
+          alt="fantasma hecho en grid"
+        />
+      </div>
+
+      <div class="d-flex flex-column w-100 mt-4">
+        <label for="nameImput" class="text-center align-self-center text-form"
+          >Name</label
+        >
+        <input
+          type="email"
+          class="form-control w-75 align-self-center"
+          id="nameImput"
+        />
+      </div>
+      <div class="d-flex flex-column w-100 mt-4">
+        <label for="emailImput" class="text-center align-self-center text-form"
+          >Email</label
+        >
+        <input
+          type="email"
+          class="form-control w-75 align-self-center"
+          id="emailImput"
+        />
+      </div>
+      <div class="container mx-auto mt-4" style="width: 70%">
+        <div class="row mt-4">
+          <div class="col d-flex flex-column align-items-center">
+            <label for="dirRes">Adress</label>
+            <input type="text" id="dirRes" class="form-control w-100" />
+          </div>
+          <div class="col d-flex flex-column align-items-center">
+            <label for="telNum">Phone</label>
+            <input type="text" class="form-control w-100" id="telNum" />
+          </div>
+          <div class="w-100"></div>
+        </div>
+      </div>
+      <div class="form-group text-center mt-4">
+        <label for="exampleFormControlSelect1">Satisfaction Score</label>
+        <select
+          class="form-control w-50 mx-auto"
+          id="exampleFormControlSelect1"
+        >
+          <option class="text-center">1</option>
+          <option class="text-center">2</option>
+          <option class="text-center">3</option>
+          <option class="text-center">4</option>
+          <option class="text-center">5</option>
+        </select>
+        <small id="emailHelp" class="mt-4 form-text text-muted"
+          >1 being the lowest scale and 5 being the highest score..</small
+        >
+      </div>
+      <div class="form-check mt-4 d-flex flex-row justify-content-center">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label ms-2" for="exampleCheck1"
+          >Accept Terms</label
+        >
+      </div>
+      <div class="mx-auto d-flex mt-4 flex-column w-25">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <small id="emailHelp" class="mt-4 form-text text-muted text-center"
+          >This survey must be completed in all fields please</small
+        >
+      </div>
+    </form>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

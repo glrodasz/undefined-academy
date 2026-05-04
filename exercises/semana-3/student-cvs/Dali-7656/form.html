@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact me</title>
+    <link href="stylesForm.css" rel="stylesheet" type="text/css">
+    <script async defer type="module" src="main.mjs"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="header-info">
+                <img class="profile-pic" src="profile-pic.jpg" alt="profile picture">
+                <div class="profile-title">
+                    <h1>Dalian Aguirre</h1>
+                    <h2>Business Administrator &amp; Fullstack Developer</h2>
+                </div>
+            </div>
+        </header>
+
+        <div class="form">
+            <h3>Contact me 📝</h3>
+            <form action="/server" method="get">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Budget</legend>
+                        <input id="1000" name="budget" value="1000" type="radio" required><label for="1000">$1.000</label>
+                        <input id="5000" name="budget" value="5000" type="radio" required><label for="5000">$5.000</label>
+                        <input id="10000" name="budget" value="10000" type="radio" required><label for="10000">$10.000</label>
+                    </fieldset>
+                    <div class="help">*This budget is the base, not the total.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Project type</label>
+                    <select id="type" name="type" required>
+                        <option disabled selected value="">Select one</option>
+                        <option value="website">Website</option>
+                        <option value="webapp">Webapp</option>
+                        <option value="mobile">Mobile app</option>
+                        <option value="design">Web design</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" required rows="8"></textarea>
+                    <div class="help">*Write a project description in at least 300 words.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="terms">
+                        <input id="terms" name="terms" type="checkbox" value="termsAccepted" required>
+                        <span>I accept the terms and conditions</span>
+                    </label>
+                </div>
+
+                <button>Send</button>
+
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Blog</title>
+</head>
+
+<body>
+  <div class="page__container">
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__items">Home</li>
+          <li class="nav__items">HTML</li>
+          <li class="nav__items">CSS</li>
+          <li class="nav__items">JavaScript</li>
+        </ul>
+        <input class="nav__search" type="search" placeholder="Search">
+      </nav>
+    </header>
+
+    <div class="card">
+      <img src="https://www.hostinger.es/tutoriales/wp-content/uploads/sites/7/2018/11/what-is-html.jpg" alt="card-img-1" class="card__img">
+      <div class="card__tags">
+        <span class="card__tag">HTML</span>
+        <span class="card__tag">tricks</span>
+        <span class="card__tag">web</span>
+      </div>
+      <h1 class="card__title">How to center a div in HTML</h1>
+      <p class="card__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, quibusdam. Voluptatem quas cumque quos tempore architecto ea nostrum, ratione voluptatum laborum vel ipsa facere repellat reprehenderit, ab sint aspernatur praesentium.</p>
+    </div>
+    <div class="card">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADDCAMAAACxkIT5AAAAwFBMVEXYhyrKgC3///9ERETciSnWgRPdiSnXghrYhic5QEXUhSvHdgvOgizv0bhBQ0Tpv5zSllw3P0X37ufQgyzMhjzVfQDmyK8yPkbIehrIfCGRZTnIfy7ksYPajTrsyavQkFGibTapcDVOSEN8Wz29ejH46+H9+PXclEvgomjem1ncsInhp3Hy2seXaDhRSUNtVT+EXzy+ejDZp3psVD9dTkGzdTPou5XfnmDdl1KgbDfbkUPXonNbTUHEbQDjrHr04dI3qOf9AAAI90lEQVR4nO2cfXequhKHQSGESKHopvhSbbXW1lar3lb7eu33/1Y3mQQICj1n9bCW9+g8f+kwWzO/TCZDsNswEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEOSUaHme1zr0IA6KZ0pOWAUzxTv0UA6Fl2lwsplg6hx6MIehldOAHXo4B8HLaXCai8FEDVADA9eCIK/BadbE09sX2F6Q7Mf+gO3/g383rGjN/6SBzBHviGTwiiMt1SBT52gqpV789JnVJdBvmlol/v9i8jmvzezfMB/LfYRplkRVmB9sx/so7qp3g8riLcr51p73ocZdJftRJYnP9iP19p0PNvAKKdBAJfi+BgWuR1EV99dCGtmOBsWehx19NRRHBushnxgF6+D/UQOLQ/+Gjeo2PSAvxexQ6iVhey1KOx3Py8vQaXu5TZM6Aqob9C/ml/OudHdY/xxi9dbX78Nxi1jZdxFvfX2dtxmErYfc5imblgidc53p+XkHrH/OX6fSdGU2Oolz+3PAr6ef6kR32yAILt9sW8Xm3A+mWdjOR7C11Uv77TIINvcsyi5XogDrPoUuJ3RfhpaKmKye3VDZEhWs3iKxvVOwZVVxUtuhySPu/Ee33D40ZDZ0Pvm7q2QqHXvTVB6Tsz7ESh/5m7vU4Y6/24iYabRJvud2G1WYC+Tddf26xA9HYwLGbpza3NEaAibXms0fgk1lQudhV4Ja7bNjNm53dLmCVGif8deBmsjoMSdfIESwdQeQoDazxTLQP685rUwEchNDUGEYCin8WARM3mMhSOjG0iby1lrH4Cdt9XgshyCn9mpfgz+m2WgWGPMaRMGOhwhW10BKUHvk76LvvKtdmQSuiPZm2OuN50/i9YInAuNRus9jZpjD59CX8ZKRX/df1szw1jfCNkzqRAvS+wIQQ5OvREEADS4GwAyG/d3Ia2Bv5JwG99P7QM5ylNPA+QDjpa1WSG32ythrALlTUWXk+c2j/TIJL/aUkGvfjeeWYQ3duv8MZcAivRf/hstCV3Hd/7KkzVz4z9qnML4XtAWmGNp/4aXIetDgHN62G21Q4cr0WBYincoII17pqQPLopnTQEkAJdEWH3AWcU9qR5eT2qCisigm3H9JBbXMrphe0nXrbjLPlDAI/JrbusncS5uGrI5/xIAbaaGUGiTbQWOiIstCjGDqp0lSO8Zg0Keag/MBE/4IDuCcFAHHYRUtBTIX2d/ScgomGjSYk5yr0MBf5m052F9pAEvgTF/u9D7JcwV1YHdMHJy+JoERNVVdUL6VKMAD+/L3ghXmdyHNSu8MeEkM+apZE2vXOYN5P+fBxa4GkN0i+XdQDlRmwb3SyBYlsflRcWdgeDyuuOBUqwdbwGJtEJLJzX15oRwyUqoD7ZdrwGQub/S1YE+UZQfpYMsseE2uO7J+zrZ25FTXG4i59Z8K8pssQ7lhvnTHlrpO5nITjb+WayNRwXFsgRpTuQbMcuQu+KEtd+n+th+PdDBAAq1ftNMGaTC1q8oGVf+LrtzIfojLMJqriK1uaqt3ZU20H+XGN5CBFGrweQVsYXOfRYamART9gjkFh4FsLgbZUqH9rN9obuxqcgE0WBTWObJ+5r2QL/vElRSBrBahtNVdX7RSzjYdExMjYkX1QGdC9ZInNSgo7+CQsNVKph1kTWWzX4kI1ppr8FVc6y3iXd+MZO/oqvsbvk0OE5vom7Sxbh3eJBTuCxrfchPOr4W7kjwQYd7uLhYneh0kDfOkmqogal9cepxjEdrrjsQWcUMym9V7h36Sayf3NpkHXll/kHJ71ZDPVrLt/6eayIPs97PkSeD9EdvKprOaJony/te9/mHTp8Ra8oDrOaMFbUXoiWb+EnjomaU9UvDAgbmTd0ws0wBuAG5L9sbahFEH2uPvHQ/eUfbFBxbsqr9ABOiPchZV/zLpiS/jTS6B7cWvh+ImQpxo0HYnaQEK+wN+uQ0XJsqtkebBpTA/atOp9UhN0QVFA5hwGax2yuJAk12JBoYpGp+sKlpGt8vEQcF8nNrIE8+VlkG9+TqzLbgGKxhR7kCttEeSJwnfjaxhhF4ZdrtJPxGBRpvZNNk8N7JB/pbVRjhv+ZaoVIBSMqlGA9EVcxEYtEIWWT25IVekFbvxUuUCMWOZKnU3XrRky2QxvjxCtqvAT70yNIm1QSOvgdxYJq/qnqkvAjaoft9IoWaIwglJE8ijJi5W8Sr6FdaLqG/17qrFTLgn5j0TFScFbr3b422isRYlg9dEaB395YrbrPGXuI0m+6eqP/TKsj5+dnIaGJGsft/bu/7do3x9R/PnB1NVF1WRCN6cKOpDvxVU1SexL1Hz3ND33fQMhUqbW3964p1A3RflwFpArxzWR2Crx3wp7B0sJxrIXUJpoF+rZXnQhq+3Z7U8s/z5QXLE8G3Tt8RlIpuEivZGARWzn52bQT9kzeX5mmqSxnAzeV3XbOGQFDw4URokV0CDKZVv2lASHjqpBvI+RVa9lEBvJCUyVxilLHeONCloLH4NGfOW0BV5EKd9MWl1R7ELxAtT2Yz5U2J7FlLtP19o8xm6bRiJBnBswnd3pciFWhlw+viZHCzbb1kqzO6gEMLSv09DtJti0kUVeNVcWaX3jxZpDbvL5fJ9ZWWtAiE9YewOW5nNskxpM6E2Fjxr+zM7gxZWve1czM6d1LMRfD+0QRv5Qn0qtdnlYDabDS6NpOzbm5l+qsDOZnLSqe08Bmc51yplsCyy+0BFGsttRc8b27BI0wxpt2Wk0tBpqw5BvkgbVJq7+xQ4uftCmj54MKj0rfDm+Z9R8KzN27+inAv0Os5nrj/9/mD/oeOhxl0ppRN7Or9D2YlKi0k3l/4e6RiWglH+9ypl032Uf9+SBZWb1dJlf4S/T/zF71Slasf0O1XB/u+PT+z3yoWc3u/W90EN8O9YBCZqgBoYuBYEWBP/qj84Ecr+vuWkyCQ4jjvkX4H/DwaHif8P5WTXAYIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgSCH/Az61q36XP/OmAAAAAElFTkSuQmCC" alt="card-img-2" class="card__img">
+      <div class="card__tags">
+        <span class="card__tag">css</span>
+        <span class="card__tag">tricks</span>
+        <span class="card__tag">web</span>
+      </div>
+      <h1 class="card__title">Some CSS tricks</h1>
+      <p class="card__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, quibusdam. Voluptatem quas cumque quos tempore architecto ea nostrum, ratione voluptatum laborum vel ipsa facere repellat reprehenderit, ab sint aspernatur praesentium.</p>
+    </div>
+    <div class="card">
+      <img src="https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1085535/regular_1708x683_staging.toptal.net_javascript_functional-programming-javascript-3b5c20a73284cfe018fdde08bd2ef253.png" alt="card-img-3" class="card__img">
+      <div class="card__tags">
+        <span class="card__tag">Js</span>
+        <span class="card__tag">web</span>
+      </div>
+      <h1 class="card__title">How to create a JavaScript Function</h1>
+      <p class="card__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, quibusdam. Voluptatem quas cumque quos tempore architecto ea nostrum, ratione voluptatum laborum vel ipsa facere repellat reprehenderit, ab sint aspernatur praesentium.</p>
+    </div>
+
+    <footer class="card card--footer">
+      <img src="https://images.unsplash.com/photo-1598301257942-e6bde1d2149b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aGFiaXRzfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="card-img-3" class="card__img">
+      <div class="card__tags">
+        <span class="card__tag">Habits</span>
+        <span class="card__tag">life</span>
+      </div>
+      <h1 class="card__title">Good Habits for Improve your life</h1>
+      <p class="card__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, quibusdam. Voluptatem quas cumque quos tempore architecto ea nostrum, ratione voluptatum laborum vel ipsa facere repellat reprehenderit, ab sint aspernatur praesentium.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

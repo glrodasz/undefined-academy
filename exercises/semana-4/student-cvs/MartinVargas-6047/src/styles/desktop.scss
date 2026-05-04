@@ -1,0 +1,7 @@
+@import "./variables.scss";
+@media screen and (min-width: 1000px) {
+  section {
+    display: flex;
+    // background-color: $RegentStBlue !important;
+  }
+}

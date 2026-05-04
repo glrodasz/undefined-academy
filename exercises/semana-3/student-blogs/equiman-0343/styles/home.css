@@ -1,0 +1,74 @@
+.blog .post-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.post > :first-child{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+    border: 1px solid var(--sky-200);
+    background-color: var(--sky-100);
+    border-radius: 8px;
+}
+
+.post > :first-child:hover {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.post a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.post header {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.post img {
+    padding: 0.5em 0;
+}
+
+.post p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.post footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding-top: 0.5rem;
+    color: var(--text-title);
+}
+
+.post .tags {
+    justify-self: flex-end;
+}
+
+@media only screen and (min-width: 576px) {
+    .blog .post-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .blog .post-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .me h1{
+        font-size: 2.5em;
+    }
+
+    .blog .post-list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

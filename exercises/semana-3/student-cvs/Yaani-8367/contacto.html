@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./contacto.css">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./main.mjs"></script>
+    <title>Contáctame</title>
+</head>
+<body>
+    <header class="main-header" >
+        <h1> <a class="main-logo" href="#">Yanina Unrein</a></h1>      
+        <nav id="nav" class="main-nav" >
+          <div class="nav-links" >
+            <a class="link-item" href="./index.html" >Home</a>
+            <a class="link-item" href="#studies" >Estudios</a>
+            <a class="link-item" href="#technologies" >Tecnologías</a>
+            <a class="link-item" href="./contacto.html" >Contáctame</a>
+          </div>
+        </nav>
+        <button id="button-menu" class="button-menu" >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+    </header>
+    <main>
+        <article class="container">
+            <div class="text">CONTÁCTAME</div>
+            <form action="/server" method="get" onsubmit="event.preventDefault()">
+               <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Nombre</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Apellido</label>
+                    </div>
+               </div>
+               <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Website</label>
+                    </div>
+               </div>
+               <div class="form-row">
+                    <div class="input-data textarea">
+                        <textarea rows="8" cols="80" required></textarea>
+                        <br />
+                        <div class="underline"></div>
+                        <label for="">Escribe tu mensaje</label>
+                    </div>
+                    <div class="form-row submit-btn">
+                        <div class="input-data">
+                            <div class="inner"></div>
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </div>
+               </div>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <section class="icon-footer">
+            <div class="icon_link location">
+                <ion-icon name="location-outline"></ion-icon>
+                <span class="span-location">Buenos Aires, Argentina</span>
+            </div> 
+            <ul class="social-icon">
+                <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/Yanina-Unrein">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="mailto:unrein.syanina@gmail.com?">
+                    <ion-icon name="logo-google"></ion-icon>
+                  </a></li>
+              </ul>
+        </section>     
+        <p class="footer-text">&copy;2023 Yanina Unrein | All Rights Reserved</p>
+    </footer>
+
+    <script src="./js/index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

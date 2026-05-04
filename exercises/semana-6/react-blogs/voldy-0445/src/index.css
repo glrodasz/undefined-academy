@@ -1,0 +1,19 @@
+:root {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    color: #41444b;
+    margin: 32px;
+    background: #cabfab;
+}

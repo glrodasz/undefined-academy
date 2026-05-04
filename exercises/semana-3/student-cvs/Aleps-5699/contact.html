@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script async defer type="module" src="main.mjs"></script>
+</head>
+
+<body>
+    <main class="page">
+        <article>
+            <h1>Contacto</h1>
+            <hr>
+            <section>
+                <h2 class="about">Información Personal</h2>
+                <hr>
+                <form id="contact-form" action="" method="post">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="name" placeholder="Ingrese su nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">Número telefónico:</label>
+                        <input type="tel" name="phone" id="tel" placeholder="Ingrese su número telefónico" required>
+                    </div>
+            </section>
+            <section>
+                <h2 class="about">Acerca de tu proyecto</h2>
+                <hr>
+                <div class="form-group">
+                    <label for="type">Tipo de projecto deseado</label>
+                    <select name="projectType" id="type" required>
+                        <option value="" disabled selected>Seleccione una opción</option>
+                        <option value="Site">Website</option>
+                        <option value="App">Web App</option>
+                        <option value="Mobile">Mobile App</option>
+                        <option value="Design">Diseño de Website</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Descripción de tu proyecto</label>
+                    <textarea name="description" id="description" cols="30" rows="8" required></textarea>
+                    <div class="help">
+                        Escribe una descripción del projecto que deseas realizar en al menos 500 palabras
+                    </div>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>¿Con cuánto presupuesto cuentas?</legend>
+                        <input type="radio" name="budget" id="1000" required>
+                        <label for="1000">$1,000</label>
+                        <input type="radio" name="budget" id="2500" required>
+                        <label for="2500">$2,500</label>
+                        <input type="radio" name="budget" id="5000" required>
+                        <label for="5000">$5,000</label>
+                    </fieldset>
+                    <div class="help">Éste presupuesto es una base, no el real</div>
+                </div>
+                <div class="form-group">
+                    <label for="date">¿En qué fecha me contactas?</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="terms">Acepto los Términos y Condiciones</label>
+                    <input type="checkbox" name="terms" id="terms" required>
+                </div>
+            </section>
+            <footer>
+                <button type="submit">Enviar</button>
+                <div class="help">Gracias por haber contactado con Alejandro del Muro, tendrás una respuesta pronto,
+                    hasta luego!.</div>
+            </footer>
+            </form>
+        </article>
+    </main>
+
+</body>
+
+</html>

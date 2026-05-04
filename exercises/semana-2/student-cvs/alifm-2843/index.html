@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Alianna's web page</title>
+</head>
+
+<body>
+    <header>
+        <img src="./images/aflogo.jpg" alt="AF logo">
+
+        <nav class="topnav" id="myTopnav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#acknowledgements">Acknowledgements</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <article>
+                <h1> <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="28px" height="28px" alt="hi"> &nbsp; Hi there! I'm Alianna</h1>
+                <hr />
+                <p>
+                    I majored in
+                    <strong>Industrial Engineering</strong>
+                    and have been working in information management, organization and quality
+                    management, Intellectual/Industrial Property.
+                </p>
+                <p>
+                    Currently I am learning Web development/programming and Data
+                    analysis/Science.
+                </p>
+            </article>
+
+            <article>
+                <h2>Programming languages and Tools</h2>
+
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>React</li>
+                    <li>Git</li>
+                    <li>Python</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="about" class="about-section">
+
+            <h1>Info about me</h1>
+            <hr>
+
+            <article>
+                <h2>Things I love doing</h2>
+
+                <ol>
+                    <li>Learning Programming and apply it on my life and work</li>
+                    <li>Studying better ways to do everything taking into account history, analyses and tools</li>
+                    <li>Learning knew languages and have the opportunity to speak to people who speak them</li>
+                    <li>Knowing knew places, overall where I can interact with their people and normal live</li>
+                    <li>Knowing about different cultures and environments</li>
+                    <li>Stepping outside my comfort zone to make a positive impact and achieve professional/personal
+                        growth
+                    </li>
+                    <li>Last but not least, helping people and try to make a better world. (All I mentioned previously
+                        contribute to it, indeed)</li>
+                </ol>
+
+            </article>
+            <article>
+                <h2>Some commands I use</h2>
+
+                <table>
+                    <tr>
+                        <th>Commands</th>
+                        <th>Description</th>
+
+                    </tr>
+                    <tr>
+                        <td>cp: copy directory</td>
+                        <td>Copy a file from one location to another/make a copy of the same file with a new name</td>
+
+                    </tr>
+                    <tr>
+                        <td>mv: move a file</td>
+                        <td>file move from one location to another, removing the file from the original location and
+                            putting it into the new location</td>
+
+                    </tr>
+                    <tr>
+                        <td>rm R: remove nested directories</td>
+                        <td>remove an entire directory that might contain other directories or files. This command is
+                            irreversible</td>
+                    </tr>
+                    <tr>
+                        <td>rmdir: remove an empty directory</td>
+                        <td>remove a directory, use the rmdir command followed by the path to the directory</td>
+                    </tr>
+                    <tr>
+                        <td>touch: create a text file</td>
+                        <td>create any type of file</td>
+                    </tr>
+                </table>
+
+                <h2>Some aliases I use</h2>
+
+                <table>
+                    <tr>
+                        <th>Alias</th>
+                        <th>Description</th>
+
+                    </tr>
+                    <tr>
+                        <td>clr: clear</td>
+                        <td>Clear your terminal screen </td>
+
+                    </tr>
+                    <tr>
+                        <td>ll: ls -al</td>
+                        <td>List all files in current directory in long list format</td>
+
+                    </tr>
+                </table>
+
+            </article>
+        </section>
+
+        <section id="contact">
+            <form id="contact-form" action="" method="get">
+                <fieldset class="form-fieldset">
+                    <legend>
+                        <h2>Contact</h2>
+                    </legend>
+
+                    <label for="name">Name</label>
+                    <input required type="text" id="name" name="name" placeholder="Enter your full name"
+                        pattern="^[A-Za-z -']+$" minlength="3" maxlength="20"
+                        title="It should be at least three letters, and just letters" />
+                    <label for="email">Email</label>
+                    <input required type="email" id="email" name="email" placeholder="Enter your email" />
+                    <label for="phone">Phone</label>
+                    <input required type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+
+                    <label for="continent">Where are you from?</label>
+                    <select name="continent" id="continent" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="northame">North America</option>
+                        <option value="latiname">Latin America</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                        <option value="africa">Africa</option>
+                        <option value="australia">Australia and Oceania</option>
+                    </select>
+                    <fieldset class="radio-fieldset">
+                        <legend>Interests</legend>
+                        <input type="radio" name="interests" id="webdev" required>
+                        <label for="webdev">Web development</label>
+                        <input type="radio" name="interests" id="data" required>
+                        <label for="data">Data analysis</label>
+                        <input type="radio" name="interests" id="mldl" required>
+                        <label for="mldl">Machine learning</label>
+
+                    </fieldset>
+                    <label for="message">Message</label>
+                    <textarea required name="message" id="message" cols="30" rows="10" minlength="3" maxlength="200"
+                        placeholder="Tell me about your interest in contacting me..."></textarea>
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span>I accept terms and conditions</span>
+                    </label>
+                    <button type="submit" class="buttons">Submit</button>
+
+                </fieldset>
+
+            </form>
+        </section>
+        <section id="acknowledgements">
+
+            <h2>Acknowledgements to:</h2>
+            <ul>
+                <li><em>Guillermo Rodas</em> &nbsp; <code>@glrodasz</code> &nbsp; for the Boot Camp, lessons and assistance!</li>
+                <li><em>Mauricio Bedoya</em> &nbsp; <code>@maubedoya</code> &nbsp; for his useful and helpful comments as reviewer!</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <figure>
+                <img src="./images/up-arrow.png" id="myBtn" alt="up arrow" onclick="topFunction()">
+            </figure>
+        </section>
+
+    </main>
+    <footer>
+        <img src="./images/aflogo.jpg" alt="AF logo">
+        <p>| Copyright &copy; Alianna |</p>
+
+    </footer>
+    <script>
+        // function to prevent default behavior and reset form
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.getElementById('contact-form').reset();
+    alert("Form sent successfully!")
+})
+
+// Button to to top
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 150px from the top of the document, show the button
+window.onscroll = function () {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+    </script>
+</body>
+
+</html>

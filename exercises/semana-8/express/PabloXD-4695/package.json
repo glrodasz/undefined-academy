@@ -1,0 +1,18 @@
+{
+  "name": "week8bootcamp",
+  "version": "1.0.0",
+  "description": "Practice week 8 bootcamp javascript - express and mongodb",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pablo Alejandro Rodríguez Muñoz",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.2.0"
+  }
+}

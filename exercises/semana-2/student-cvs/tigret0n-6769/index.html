@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi perfil en HTML</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header>
+<nav class="navbar">
+<div class="menu">
+<ul>
+<li><a href="#skills">Conocimientos</a></li>
+<li><a href="#whoami">Sobre mí</a></li>
+<li><a href="#contact">Contacto</a></li>
+</ul>
+</div>
+</nav>
+
+<div class="introduction">
+<h1>¡Hola 👋!</h1>
+<h2>Soy Izan.<br> Desarrollador Web en formación.</h2>
+</div>
+</header>
+
+<section class="container_devskills" id="devskills">
+
+<div class="devskills_box">
+<h3>Conocimientos</h3>
+
+<div class="row">
+<div class="card_group_1">
+<div class="card">
+<p>
+HTML
+</p>
+</div>
+<div class="card">
+<p>
+CSS
+</p>
+</div>
+<div class="card">
+<p>
+JavaScript
+</p>
+</div>
+</div>
+<div class="card_group_2">
+<div class="card">
+<p>
+Git
+</p>
+</div>
+<div class="card">
+<p>
+GitHub
+</p>
+</div>
+<div class="card">
+<p>
+Visual Studio Code
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="devskills_box">
+<h3>En proceso</h3>
+<p>Actualmente estoy estudiando en plataformas como FreeCodeCamp así como en el Bootcamp de Undefined Academy, con el objetivo de desarrollar habilidades Full Stack. Entre mis objetivos se encuentran PHP, python, NodeJS, React...</p>
+</div>
+
+</section>
+
+<section class="container_whoami" id="whoami">
+<div class="whoami_box">
+<h3>Sobre mí:</h3>
+<p>Soy un principiante apasionado por el Desarrollo Web, que estudia actualmente de manera autodidacta. Estoy en proceso de descubrir más sobre este mundo y en qué parte de él me quiero centrar.</p><br>
+<ul>
+<li>Mis pronombres son "he/they" en inglés, "él" en español.</li>
+<li>En mis ratos libres también disfruto de la lectura, la cocina y el deporte, el bienestar físico es importante para mí.</li>
+<li>¡En el aprendizaje se encuentra uno de mis mayores placeres! Y me resulta todavía más satisfactorio si es en compañía.😊</li>
+</ul>
+</div>
+
+<div class="whoami_box">
+<h3>Mi recorrido académico:</h3>
+<p>En 2021 terminé mis estudios de Máster en <em>Filosofía Contemporánea</em>, después de haber cursado el Grado de Filosofía. Posteriormente obtuve una capacitación como profesor de educación secundaria.<br>
+Tras aquello decidí pasar un año viviendo en Berlín, donde conocí a personas dentro del mundo de la programación y me dio curiosidad probar. Quedé enganchado. <br>
+Por ello ahora mismo estoy estudiando en el Fullstack Bootcamp de Undefined Academy, a la espera de comenzar el curso 2023-2024 el Grado Superior de <em>Desarrollo de Aplicaciones Web</em>.</p>
+</div>
+</section>
+
+<section class="container_contact" id="contact">
+<div class="contact_box">
+<h3>Contacto</h3>
+<form class="contact_form" action="#" method="get" autocomplete="off">
+<label for="name">Nombre</label>
+        <input type="text" name="name" id="name" placeholder="ej. Izan Valderrábanos" required>
+<label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="abcd_12@email.com" required>
+<label for="subject">Motivo</label>
+        <input type="text" name="subject" id="subject" required>
+<label for="message">Mensaje</label>
+        <textarea name="message" id="message" cols="40" rows="4" placeholder="Detalles del motivo de contacto." required></textarea>
+        <p>Mi pronombre o pronombres son...</p>
+        
+      <div class="pronouns">
+        <label for="pronoun1"><input type="checkbox" id="pronoun1" name="pronoun1" value="they"> Elle</label>
+        <label for="pronoun2"><input type="checkbox" id="pronoun2" name="pronoun2" value="she"> Ella</label>
+        <label for="pronoun3"><input type="checkbox" id="pronoun3" name="pronoun3" value="he"> Él</label>
+      </div>
+      
+        
+        <div class="button">
+        <p><button type="submit" id="mySubmit" value="send">Enviar</button></p></div>
+</form>
+</div>
+</section>
+
+<footer>
+<div class="footer-content">
+<ul class=”socials”>
+<li><a href="https://github.com/tigrexeto"><i class="fa-brands fa-github"> GitHub</i></a></li>
+</ul>
+</div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

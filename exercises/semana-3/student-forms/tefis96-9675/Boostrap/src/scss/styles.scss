@@ -1,0 +1,141 @@
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+.containerAll{
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.containerCheck{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #a970ff8c;
+  --bs-btn-border-color: #a970ff8c;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #a970ff8c;
+  --bs-btn-hover-border-color: #a970ff8c;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #a970ff8c;
+  --bs-btn-active-border-color: #a970ff8c;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #a970ff8c;
+  --bs-btn-disabled-border-color: #a970ff8c;
+  color: #181818;
+  width: 90%;
+  font-weight: bolder;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #8B5CF6;
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0.5rem;
+  --bs-navbar-color: #181818;
+  --bs-navbar-hover-color: #181818;
+  --bs-navbar-disabled-color: #181818;
+  --bs-navbar-active-color: #181818;
+  --bs-navbar-brand-padding-y: 0.3125rem;
+  --bs-navbar-brand-margin-end: 1rem;
+  --bs-navbar-brand-font-size: 2rem;
+  --bs-navbar-brand-font-weight: bolder;
+  --bs-navbar-brand-color: #181818;
+  --bs-navbar-brand-hover-color: #181818;
+  --bs-navbar-nav-link-padding-x: 0.5rem;
+  --bs-navbar-toggler-padding-y: 0.25rem;
+  --bs-navbar-toggler-padding-x: 0.75rem;
+  --bs-navbar-toggler-font-size: 2rem;
+  --bs-navbar-toggler-border-color: #181818;
+  --bs-navbar-toggler-border-radius: 0.375rem;
+  --bs-navbar-toggler-focus-width: 0.25rem;
+  --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+  position: relative;
+  font-weight: bolder;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #8B5CF6;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="radio"]:checked {
+  background-color: #8B5CF6;
+  border: 2px solid #8B5CF6;
+
+}
+.form-control, .form-select {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #8B5CF6;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-floating > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 1.5rem;
+  overflow: hidden;
+  text-align: start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  button, [type=button], [type=reset], [type=submit] {
+    -webkit-appearance: button;
+    display: none;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end;
+  }
+
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 720px;
+    width: 100%;
+    font-size: x-large;
+  }
+
+
+
+  .btn-primary {
+    width: 15rem;
+    height: 4rem;
+    font-weight: bolder;
+  }
+}

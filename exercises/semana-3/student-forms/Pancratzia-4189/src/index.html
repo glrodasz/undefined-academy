@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Formulario</title>
+  </head>
+
+  <body>
+    <div class="wrap min-vh-100 mw-100 bg-light bg-gradient">
+      <div
+        class="container min-vh-100 d-flex justify-content-center align-items-center"
+      >
+        <!--FORMULARIO-->
+        <form action="#" onsubmit="event.preventDefault()" class="p-4 border border-dark mw-100 w-100 text-center">
+
+          <h1 class="text-uppercase form-title m-0 p-0 fw-bold">
+            &bull;Contáctame&bull;
+          </h1>
+
+          <div class="w-100 d-flex justify-content-center align-items-center">
+            <div class="w-25 border-bottom border-dark mb-5 mt-3"></div>
+          </div>
+          
+
+          <!--form groups-->
+          <div class="row">
+            <div class="form-group mb-3 col-sm-12 col-md-6">
+              <input type="email" class="form-control bg-transparent rounded-0 border-0 border-bottom border-dark" placeholder="NOMBRE...">
+            </div>
+            
+            <div class="form-group mb-3 col-sm-12 col-md-6">
+              <input type="tel" class="form-control bg-transparent rounded-0 border-0 border-bottom border-dark" placeholder="TELÉFONO...">
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="form-group mb-3 col-12">
+              <input type="mail" class="form-control bg-transparent rounded-0 border-0 border-bottom border-dark" placeholder="CORREO...">
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="form-group mb-3 col-12">
+              <textarea class="form-control bg-transparent rounded-0 border-0 border-bottom border-dark" rows="1"
+                placeholder="ESCRIBE TU MENSAJE..."></textarea>
+            </div>
+          </div>
+          
+
+          <!--fin form groups-->
+
+          <div class="btn-group mt-3 gap-3 d-flex">
+              <button type="reset" class="btn btn-outline-dark text-uppercase rounded-0 fw-bold">Limpiar</button>
+              <button type="submit" class="btn btn-outline-dark text-uppercase rounded-0 fw-bold">Enviar</button>
+          </div>
+          
+        </form>
+        <!--FIN FORMULARIO-->
+      </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+@use "settings" as settings;
+
+@include settings.desktop{
+    .main-blog{
+        max-width: 900px;
+    }
+
+    .article-card{
+        height: 100%;
+    }
+
+    .cards-container article:last-child{
+        max-width: 250px;
+    }
+
+    .cards-container{
+        display: grid;
+        grid-template-columns: [uno] 1fr [dos] 1fr [tres] 1fr [cuatro];
+        grid-auto-rows: 5.5rem;
+        gap: 2rem;
+    }
+
+    .cards-container article:nth-child(3n+1){
+       grid-row-end: span 9;
+    }
+
+    .cards-container article:nth-child(3n+2){
+        grid-row-end: span 11;
+    }
+
+    .cards-container article:nth-child(3n+3){
+        grid-row-end: span 12;
+    }
+
+    .article-card time{
+        position: absolute;
+        bottom: 0;
+    }
+
+    .image-card-container{
+        height: 20%;
+    }
+
+    .card-content{
+        position: relative;
+        height: 80%;
+    }
+}

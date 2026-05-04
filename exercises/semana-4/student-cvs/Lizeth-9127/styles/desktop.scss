@@ -1,0 +1,11 @@
+@media only screen and (min-width: 880px){
+    .container, .form-container{
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+  .container,.form-container{
+    width: 44%;
+  }
+}

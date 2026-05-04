@@ -1,0 +1,45 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: #d4d6d4;
+  margin: 0 auto;
+  max-width: 75em;
+  line-height: 1.5;
+  padding: 3em 1em;
+  color: #070707;
+  }
+  
+  h1, h2, strong {
+  color: #333;
+  }
+
+  h1, h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+  }
+
+  a {
+    color: black;
+  }
+  
+  table {
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+    width: 30%;
+  }
+
+  th {
+    background-color: #616060;
+    border-bottom: 4px #0f362d;
+    color: white;
+  }
+
+  tr, td {
+    padding: 3px;
+  }
+
+  tr:nth-child(even){
+    background-color: #ddd;
+  }

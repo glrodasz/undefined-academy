@@ -1,0 +1,26 @@
+button,
+.btn {
+    background-color: var(--button-background);
+    border-color: var(--wrapper-border-color);
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: var(--button-shadow), var(--button-inset-shadow);
+    color: var(--body-color);
+    cursor: pointer;
+    font-family: var(--body-font);
+    font-weight: 500;
+    padding: 5px 16px;
+    position: relative;
+    transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+    transition-property: color,background-color,box-shadow,border-color;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+button:hover,
+.btn:hover {
+    border-color: var(--button-border-hover);
+    transition-duration: .1s;
+}

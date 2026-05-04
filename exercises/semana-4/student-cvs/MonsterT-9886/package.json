@@ -1,0 +1,18 @@
+{
+  "name": "monstert-9886",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.0",
+    "vite": "^4.2.1"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  }
+}

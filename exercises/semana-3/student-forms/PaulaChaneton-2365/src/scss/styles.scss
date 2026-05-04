@@ -1,0 +1,50 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+
+body{
+    margin: 0;
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 2% 20%;
+    color: #555;
+    background-color:whitesmoke;
+}
+h1 {
+    margin-top: 1em;
+    padding-top: 1em;
+  }
+
+h1,
+h2,
+strong {
+  color: #333;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 90px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+button:hover {
+    background-color: rgb(140, 176, 253);
+}
+.enviar {
+
+    width: 100%;
+    font-weight: bold;
+    border-color: #1c96e8;
+    background: #91d6f1;
+    color: #333;
+}
+
+
+.borrar {
+    width: 100%;
+    border-color: lightgray;
+    color: #333;
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto</title>
+    <script async defer type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+    <main class="container-md">
+        <h1 class="text-center mt-5 mb-3 fw-bold conta">Contacto</h1>
+        <form onsubmit="event.preventDefault();">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="Email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" name="Email" id="Email" placeholder="name@example.com"
+                    aria-describedby="emailHelp" required>
+            </div>
+            <div class="mb-3">
+                <label for="tel" class="form-label">Teléfono</label>
+                <input name="tel" class="form-control" type="tel" id="tel" placeholder="Ingrese su teléfono de contacto"
+                    required>
+            </div>
+            <div class="mb-3">
+                <label for="type" class="form-label">Asunto</label>
+                <select name="type" class="form-select" id="type" required>
+                    <option value="" disabled selected>Seleccionar...</option>
+                    <option value="consult">Consulta</option>
+                    <option value="colab">Colaboración</option>
+                    <option value="work">Oferta laboral</option>
+                    <option value="other">Otro</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Descripción</label>
+                <textarea name="description" class="form-control" id="description" cols="10" rows="6"
+                    placeholder="Escriba su mensaje" required></textarea>
+            </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="terms" name="terms" required>
+                <label class="form-check-label" for="terms">
+                    Acepto los terminos y condiciones
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+        </form>
+    </main>
+</body>
+
+</html>

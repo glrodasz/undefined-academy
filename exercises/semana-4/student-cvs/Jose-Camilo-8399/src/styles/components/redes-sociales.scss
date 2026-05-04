@@ -1,0 +1,28 @@
+@use '../tools.scss';
+
+.main-social {
+   @include tools.format-flex(stretch, flex-start, column);
+   gap: 1em;
+   margin-bottom: 2em;
+
+   i {
+      font-size: 2em;
+   }
+}
+
+.social-link {
+   transition: color 0.3s;
+
+   &:hover {
+      color: var(--color-links-hover);
+   }
+}
+
+.footer-social {
+   @include tools.format-flex(space-between, stretch, row);
+   margin-bottom: 1em;
+
+   i {
+      font-size: 2em;
+   }
+}

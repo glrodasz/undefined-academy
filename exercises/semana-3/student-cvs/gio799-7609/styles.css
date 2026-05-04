@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* Variables */
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
+  --secondary-color: #ff7235;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+/* Variables fin */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+}
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  nav h1 {
+    color: var(--primary-color);
+  }
+
+  nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+  }
+  nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  nav ul{
+    display: flex;
+    gap: 1.9rem;
+  }
+
+  nav ul li {
+    font-weight: var(--bold-font);
+  }
+
+  .menu-hamburguesa {
+    color: var(--primary-color);
+    font-size: 5rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display:none;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.0rem;
+    max-width: 60.70rem;
+    margin: auto;
+  }
+
+  .hero img {
+    height: 30.5rem;
+    width: 30.5rem;
+  }
+  
+  .bio {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  }
+  
+  .bio h1 {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+  }
+
+  .mas-sobre {
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+  }
+
+  .mas-sobre h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+  }
+  .mas-sobre p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+  }
+
+  .habilidades {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  .contenedor-habilidad {
+    margin-bottom: 1rem;
+  }
+  
+  .contenedor-habilidad img {
+    padding: 1.25rem;
+  }
+  
+  .icon {
+    width: 11.875rem;
+    height: 11.25rem;
+  }
+
+
+  .icon-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+  }
+
+
+  .article {
+    display: grid;
+    justify-content: center;
+}
+
+.mas-sobre {
+    display: grid;
+    justify-content: center;
+}
+
+.form-group {
+
+    margin: 20px 0;
+}
+
+label,
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+
+}
+
+input {
+    vertical-align: middle;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label,legend {
+
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+    vertical-align: middle;
+}
+
+input[type="text"],
+input[type="email"],textarea {
+background: white;
+border: 1px solid lightblue;
+border-radius: 4px;
+padding:8px 10px;
+color: #333;
+
+}
+.help{
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+}
+button{
+
+
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #713f12;
+    background: #eab308;
+    color: #333;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button:hover{
+    background: #facc15;
+}
+button:active{
+    background: #ca8a04;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+form{
+    accent-color: #eab308;
+}
+
+input:focus-visible, textarea:focus-visible{
+border: 1px solid #eab308;
+outline: 1px solid #facc15;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+a {
+  color: black    ;
+}
+
+.page {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 0 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.proyectos {
+  background-color: var(--bg-color);
+  padding: 32px 0;
+  margin-top: 2rem;
+}
+
+
+.project-pic {
+  width: 65%;
+  height: 60%;
+}
+
+.contenedor-de-proyectos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-de-proyectos {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+ .contenedor-de-proyecto {
+  text-align: center;
+  width: 21.875rem;
+  padding: 1rem;
+} 
+
+.contenedor-de-proyecto p {
+  padding: 0.4rem;
+}
+
+.titulo-de-proyecto {
+  margin-bottom: var(--bottom-margin);
+}
+
+.detalles-de-proyecto {
+  margin-bottom: var(--bottom-margin);
+}
+
+.tarjeta-de-proyecto {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+/*Footer */
+footer {
+  background-color: var(--bg-color);
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
+
+@media screen and (max-width: 720px) {
+  /* los cambios se reflejan en una pantalla con un ancho de 720px ye inferior */
+  nav {
+    padding: 1.5rem 1rem;
+  }
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+   nav ul li {
+    margin: 8px;
+  }
+  .menu-hamburguesa {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+  .icono {
+    width: 5.875rem;
+    height: 5.25rem;
+  }
+  .contenedor-proyectos {
+    flex-direction: column;
+  }
+
+  .contenedor-proyecto {
+    width: 20.875rem;
+  }
+}

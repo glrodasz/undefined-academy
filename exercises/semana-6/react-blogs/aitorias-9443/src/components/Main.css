@@ -1,0 +1,42 @@
+.header-wrapper,
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+}
+
+.wrapper .content {
+    padding: 40px;
+}
+.wrapper .content-border {
+    border-color: var(--wrapper-border-color);
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.file {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1012px;
+    width: 100%;
+}
+
+.posts {
+    display: grid;
+    margin-top: 40px;
+    row-gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .posts {
+        column-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }  
+}
+
+@media (min-width: 1024px) {
+    .posts {
+        grid-template-columns: repeat(3, 1fr);
+    }  
+}

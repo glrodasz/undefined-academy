@@ -1,0 +1,68 @@
+//=== MEDIA QUERYS ===//
+
+@media screen and (min-width: 375px) {//Móvil M
+
+  section .hobbies-list li{
+    width: calc((100% / 4) - .75em);
+  }
+
+}
+
+@media screen and (min-width: 425px) {//Móvil L
+
+  .headerPage{
+    background-size: 280%;
+  }
+
+  section .habilidades-listas .box-list{
+    width: calc((100% / 2) - .5em);
+  }
+
+  th{
+    padding: .8em;
+  }
+
+}
+
+@media screen and (min-width: 596px) {//Tablet S
+
+  .headerPage{
+    background-size: 210%;
+  }
+
+  section .hobbies-list{
+    justify-content: center;
+  }
+
+  section .hobbies-list li{
+    width: calc((100% / 3) - 0.67em);
+  }
+  
+  button{
+    width: initial;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {//Tablet
+
+  .headerPage{
+    background-size: initial;
+  }
+
+  .habilidades-listas{
+    flex-wrap: initial;
+  }
+  section .habilidades-listas .box-list{
+    width: calc(100% / 4);
+  }
+
+}
+
+@media screen and (min-width: 1024px) {//Portátil
+
+  .headerPage{
+    background-size: 120%;
+  }
+
+}

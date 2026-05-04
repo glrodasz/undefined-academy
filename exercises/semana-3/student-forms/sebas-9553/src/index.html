@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+	<script async defer type="module" src="main.mjs"></script>
+    <title>Document</title>
+  </head>
+
+  <body >
+    <main class=" m-auto w-full max-w-sm">
+      <h1 class="text-xl font-semibold">Contact</h1>
+      <form action="/server" method="get" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div class="form-group">
+          <label for="name"  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+          <input
+		    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email"  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+          <input
+		    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+		    id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <fieldset>
+            <legend>Budget</legend>
+            <input class="accent-pink-500" type="radio" name="budget" id="10000" value="10000" />
+            <label class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300" for="10000">$10.000</label>
+            <input class="accent-pink-500" type="radio" name="budget" id="5000" value="5000" />
+            <label class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300" for="5000">$5.000</label>
+            <input class="accent-pink-500" type="radio" name="budget" id="1000" value="1000" />
+            <label class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300" for="1000">$1.000</label>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <label for="type"  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Type of project</label>
+          <select  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+		    name="type" id="type" required>
+            <option disabled selected hidden value="">Select one</option>
+            <option value="website">Website</option>
+            <option value="webapp">Webapp</option>
+            <option value="mobile">Mobile app</option>
+            <option value="design">Design</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
+          <textarea 
+		  class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            name="description"
+            id="description"
+            rows="5"
+            required
+          ></textarea>
+          <div class="help">
+            Write a project description in at least 500 words
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="terms"  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+            <input 
+			class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 accent-pink-500"
+			type="checkbox" name="terms" id="terms" required />
+            <span>I accept the terms and conditions</span>
+          </label>
+        </div>
+
+		<button class="bg-orange-400 hover:bg-orange-400 text-white font-bold py-2 px-4 rounded">
+			Send
+		</button>
+      </form>
+    </main>
+  </body>
+</html>

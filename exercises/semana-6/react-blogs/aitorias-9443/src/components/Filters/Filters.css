@@ -1,0 +1,34 @@
+.filters-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filters {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    padding: 10px 0 10px 0;
+}
+
+.filter-button.active {
+    background-color: var(--button-background-active);
+    border-color: var(--button-border-active);
+    color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+    .filters-bar {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+    .filters {
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        padding: 0;
+    }
+}

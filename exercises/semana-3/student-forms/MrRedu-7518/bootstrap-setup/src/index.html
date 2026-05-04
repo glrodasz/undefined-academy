@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!-- Los .js/.mjs están al final del <body> :P -->
+    
+</head>
+<body>
+        
+  <header class="header">
+      <h1>
+          👾 <em>Sup! </em><strong>Mr Redu</strong> <em>is here</em> 👾
+      </h1>
+  </header>
+
+  <article>
+      <main class="form">
+          <h1>¡Contáctame!</h1>
+          <form action="" method="">
+            
+            <div class="row g-1 form-content">
+              <div class="col">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" id="name" class="form-control changeColor" placeholder="Nombre" aria-label="Nombre">
+              </div>
+              <div class="col">
+                <label for="lastname" class="form-label">Apellido</label>
+                <input type="text" id="lastname" class="form-control changeColor" placeholder="Apellido" aria-label="Apellido">
+              </div>
+            </div>
+
+            <div class="mb-3 form-content">
+              <label for="email" class="form-label">Correo eléctronico</label>
+              <input type="email" class="form-control changeColor" id="email" name="email" placeholder="e-mail@abc.com" required>
+
+              <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie.</div>
+            </div>
+
+            <div class="col-12 form-content">
+              <label for="adress1" class="form-label">Dirección 1</label>
+              <input type="text" class="form-control changeColor" id="adress1" placeholder="País, estado, provincia, ciudad, municipio, etc" required>
+            </div>
+
+            <!-- <div class="col-12 form-content">
+              <label for="adress2" class="form-label">Dirección 2</label>
+              <input type="text" class="form-control" id="adress2" placeholder="">
+            </div> -->
+
+            <div class="form-content">
+              <label for="type" class="form-label">Tipo de proyecto</label>
+              <select class="form-select changeColor" name="type" id="type" required>
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="website">Website 🖥️</option>
+                <option value="webapp">WebApp 📱</option>
+              </select>
+            </div>
+
+            <div class="form-content">
+              <label for="quantity" class="form-label">Número de proyectos</label>
+              <select class="form-select changeColor" name="quantity" id="quantity" required>
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="2">3</option>
+                <option value="2">4</option>
+                <option value="2">5</option>
+              </select>
+            </div>
+
+            <div class="form-content">
+              <fieldset>
+                <legend class="fieldset-legend-options">Presupuesto</legend>
+
+                <div class="opciones">
+                  <div class="opcion">
+                    <input class="form-check-input" type="radio" name="budget" value="475" id="475">
+                    <label class="form-check-label" for="475">
+                      $ 475
+                    </label>
+                  </div>
+
+                  <div class="opcion">
+                    <input class="form-check-input" type="radio" name="budget" value="725" id="725">
+                    <label class="form-check-label" for="725">
+                      $ 725
+                    </label>
+                  </div>
+
+                  <div class="opcion">
+                    <input class="form-check-input" type="radio" name="budget" value="1200" id="925">
+                    <label class="form-check-label" for="925">
+                      $ 925
+                    </label>
+                  </div>
+
+                  <div class="opcion">
+                    <input class="form-check-input" type="radio" name="budget" value="1200" id="1200" checked required>
+                    <label class="form-check-label" for="1200">
+                      $ 1200
+                    </label>
+                  </div>
+                </div>
+
+              </fieldset>
+            </div>
+
+            <div class="mb-3 form-content">
+              <label for="description" class="form-label">Descripción</label>
+              <textarea name="description" id="description" class="form-control changeColor" id="description" rows="3" placeholder="¡Buenas, buenas!..." required></textarea>
+
+              <div id="emailHelp" class="form-text">
+                Escribe una descripción del proyecto en al menos 500 palabras.
+              </div>
+            </div>
+
+            <div class="mb-3 form-check form-content">
+              <input type="checkbox" class="form-check-input" id="terms" required>
+              <label class="form-check-label" for="terms">Acepto los términos y condiciones</label>
+            </div>
+
+            <div class="botones">
+              <button type="submit" class="btn btn-submit">Enviar</button>
+              <button type="reset" class="btn btn-clear">Limpiar</button>
+            </div>
+
+          </form>
+      </main>
+  </article>
+    
+        <script type="module" src="./js/main.mjs"></script>
+        <!-- Script para evitar el comportamiento predeterminado del envío de datos a través del formulario -->
+
+        <script type="module" src="./js/main.js"></script>
+        <!-- Script para importar Bootstrap -->
+
+</body>
+</html>

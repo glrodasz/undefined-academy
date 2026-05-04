@@ -1,0 +1,102 @@
+@import "@/styles/tools.scss"; 
+
+.home{
+    background-color:oldlace;
+    color: var(--color-dark-brown);
+    
+}
+
+.home h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 1em 0 0.5em;
+    font-weight: bold;
+}
+
+
+.homeIcon {
+    width: 1.4em;
+    margin-bottom: -0.5em;
+    animation: wiggle 3.5s infinite;
+}
+
+
+@keyframes wiggle {
+
+    0% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+
+    25% {
+        transform: rotateZ(15deg);
+    }
+
+    35% {
+        transform: rotateZ(-15deg);
+    }
+
+    50% {
+        transform: rotateZ(15deg);
+    }
+
+    65% {
+        transform: rotateZ(-15deg);
+    }
+    75% {
+        transform: rotateZ(15deg);
+    }
+
+    85% {
+        transform: rotateZ(-15deg);
+    }
+
+     100% {
+        transform: rotateZ(0);
+    }
+}
+
+.topSection {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    gap: 0.4em;
+    margin: 3em 0 1em;
+}
+
+.bottomSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin: 1em 0 2em;
+
+}
+
+
+@include desktop {
+    .cardSection {
+     display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+
+    .bottomSection {
+        width: 30%;
+    
+    }
+
+    .mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    }
+
+
+}  

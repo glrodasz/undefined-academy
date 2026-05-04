@@ -1,0 +1,17 @@
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navbar-menu-mobile {
+        display: none;
+    }
+    
+    .navbar-container {
+        height: auto;
+        flex-direction: row;
+        position: static;
+        width: 30%;
+    }
+}

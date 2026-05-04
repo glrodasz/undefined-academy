@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de acceso</title>
+    <link rel="stylesheet" href="styles.css">
+    <h1>Formulario de acceso a mi perfil</h1>
+</head>
+<body class="bodyform">
+    <main class:"form">
+        <form method="POST">
+            <div class="form-grupo">
+                <fieldset>
+                    <legend>Tipo identificación</legend>
+                    <input type="radio"><label for="CC">CC</label>
+                    <input type="radio"><label for="CE">CE</label>
+                    <input type="radio"><label for="TI">TI</label>
+                    <input type="radio"><label for="PAS">PAS</label>
+
+                </fieldset>
+            </div>
+            <div class="form-grupo">
+                <label class="form-label">Número de identificación</label>
+                <input id="id" type = "number"
+                placeholder="ingresa tu número de identificación" required>
+                
+            </div>
+            <div class="form-grupo">
+                <label class="form-label">Nombres</label>
+                <input id="nombres" type ="nombres"
+                placeholder="ingresa tus nombres" required>
+
+            </div>
+            <div class="form-grupo">
+                <label class="form-label">Apellidos</label>
+                <input id="apellidos" type ="apellidos"
+                placeholder="ingresa tus apellidos" required>
+            </div>
+            <div class="form-grupo">
+                <label for="type">Cómo te enteraste de mi</label>
+                <select id="type" required>
+                    <option disabled selected>Selecciona uno</option>
+                    <option value="Bootcamp Undefined-Academy">Bootcamp Undefined-Academy"</option>
+                    <option value="facebook">facebook</option>
+                    <option value="GitHub">GitHub</option>
+                    <option value="linkedin">linkedin</option>
+                    <option value="twitter">twitter</option>
+                </select>
+            </div>
+            <div class="form-grupo">
+                <label for="info_visitante">Cuéntame sobre ti</label>
+                <textarea id="info_visitante" name="info_visitante" required rows="5"></textarea>
+                <div class="help">Puede ser relacionado con estudios, profesion, talentos y/o hobbies</div> 
+            </div>
+            <div class="form-grupo">
+                <label for="terms">
+                    <input id="terms" type="checkbox" required>
+                    <span>aceptas los términos y condiciones</span>
+                </label>
+            </div>
+            <button>Ingresar</button>
+        </form>
+    </main>
+</body>
+</html>

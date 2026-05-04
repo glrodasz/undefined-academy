@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
+    <title>Contacto</title>
+    <link rel='stylesheet' href='/contact.css'>
+    <script async defer type="module" src="/main.mjs"></script>
+</head>
+
+<body>
+    <header class="main">
+        <h1>BRUNO MONGE</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page">
+        <h1>Contacto</h1>
+        <form action="/index.html" method="post">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input name="name" id="name" type="text" placeholder="Ingrese su nombre completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input name="email" id="email" type="email" placeholder="Ingrese su email" required>
+            </div>
+            <div class="form-group">
+                <label for="type">Tipo de contacto</label>
+                <select name="type" id="type" required>
+                    <option disabled selected value="">Seleccionar consulta</option>
+                    <option value="work">Laboral</option>
+                    <option value="knowledge">Conocimientos</option>
+                    <option value="personal">Personal</option>
+                </select>
+            </div>
+            <div id="work" class="work">
+                <fieldset id="work-fs">
+                    <legend>Tipo de trabajo</legend>
+                    <div class="work-item">
+                        <input id="website" name="worktype" type="radio" value="website">
+                        <label for="website">Sitio web</label>
+                    </div>
+                    <div class="work-item">
+                        <input id="webapp" name="worktype" type="radio" value="webapp">
+                        <label for="webapp">Aplicación web</label>
+                    </div>
+                    <div class="work-item">
+                        <input id="mobileapp" name="worktype" type="radio" value="mobileapp">
+                        <label for="mobileapp">Aplicación mobile</label>
+                    </div>
+                    <div class="work-item">
+                        <input id="design" name="worktype" type="radio" value="design">
+                        <label for="design">Diseño</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción</label>
+                <textarea name="description" id="description" rows="5" required></textarea>
+                <div class="help">Escribe una descripción detallada de la consulta.</div>
+            </div>
+            <div class="form-group">
+                <label for="truedata">
+                    <input id="truedata" name="truedata" type="checkbox" required>
+                    <span>Soy responsable y admito que los datos aportados son reales.</span>
+                </label>
+            </div>
+            <button>Enviar</button>
+        </form>
+    </main>
+</body>
+
+</html>

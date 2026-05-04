@@ -1,0 +1,127 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 50em;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  padding: 4em 1em;
+  color: #555;
+}
+
+.link {
+  color: #e81c4f;
+  text-decoration: none;
+}
+
+h1,
+h2,
+strong {
+  color: #333;
+}
+
+.title {
+  text-align: center;
+}
+
+.nav {
+  text-align: center;
+  width: 100%;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #9a1335;
+}
+.nav__link:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+strong {
+  background-color: #f3e707;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+.form-group {
+  margin-top: 10px;
+}
+
+label,
+input {
+  vertical-align: middle;
+}
+
+label,
+input[type="text"],
+[type="email"],
+textarea {
+  width: 100%;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #555;
+}
+
+label {
+  font-size: 12px;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.message {
+  resize: none;
+  font-family: inherit;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.button {
+  padding: 15px;
+  width: 130px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #555;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px #333;
+  background-color: #d9ff04;
+  color: #555;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: #a1bd03;
+  color: #eee;
+}
+
+.button:active {
+  box-shadow: inset 2px 2px 2px 2px #333;
+}
+
+.table {
+  border: 1px solid #333;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+}

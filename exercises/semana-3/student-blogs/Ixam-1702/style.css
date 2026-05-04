@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+header {
+    width:100%;
+    height: 75px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-image: linear-gradient(#303f9f, black);
+    opacity: 86%;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 20px;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+nav li a:hover{
+    color: #536dfe;
+    transition: all 0.4s ease 0s;
+}
+
+.card {
+    background-color: #c5cae9;
+    box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.28);
+    border-radius: 12px;
+}
+
+.container {
+    width: 85%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.card-image {
+    height: 225px;
+    background-color: gray;
+    border-radius: 12px;
+}
+
+.card .img-one {
+    background-image: url('php-8.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card .img-two {
+    background-image: url('mysql-vs-mariadb.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card .img-three {
+    background-image: url('endeavouros.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card .img-four {
+    background-image: url('postgresql.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-content h2 {
+    font-size: 1.2rem;
+}
+
+.card-content {
+    padding: 1.5rem
+}
+
+.post-details, icon-text {
+    display: flex;
+    align-items: center;
+}
+
+.icon-text {
+    margin-right: 1rem;
+}
+
+.icon-text .icon {
+    color: #cd5c5c;
+    margin-right: 0.4rem;
+}
+
+.button {
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+    display: inline-block;
+    background-color: #3f51b5;
+    border-radius: 0.6rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    border: 1px solid #303f9f;
+}
+
+.button:hover {
+    background-color: #536dfe;
+}
+
+.button:active {
+    background-color: #303f9f;
+    box-shadow: none;
+}

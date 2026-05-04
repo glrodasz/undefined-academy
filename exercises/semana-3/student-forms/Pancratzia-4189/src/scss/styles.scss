@@ -1,0 +1,21 @@
+@import './bootstrap-variables.scss';
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+.form-title{
+    letter-spacing: .5rem;
+}
+
+.btn-group{
+    flex-direction: column;
+}
+
+@include media-breakpoint-up(md) { 
+    
+    .btn-group{
+        flex-direction: row;
+        justify-content: flex-end;
+        flex: none;
+    }
+
+}

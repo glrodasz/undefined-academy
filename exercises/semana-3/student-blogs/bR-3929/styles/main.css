@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Delicious+Handrawn&display=swap");
+body,
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+header {
+  background-color: #94a3b8;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+nav {
+  background-color: #94a3b8;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: flex;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px;
+  font-family: "Alkatra", cursive;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin: 50px auto;
+}
+
+.container div {
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+
+.container div p {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 100;
+}
+
+.container div img {
+  max-width: 100%;
+  width: 350px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.container div#tft {
+  grid-column: 1/4;
+}
+
+.container div#tft img {
+  width: 100%;
+  height: 350px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #e2e8f0;
+  padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container div img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .container div#tft img {
+    width: 100%;
+    height: auto;
+  }
+  header {
+    background-color: #94a3b8;
+    color: #FFFFFF;
+    padding: 0;
+  }
+  nav {
+    background-color: #94a3b8;
+    color: #FFFFFF;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

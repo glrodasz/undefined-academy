@@ -1,0 +1,11 @@
+.entrada .img{
+  width: 20%;
+  height: 50px;
+  flex-grow: 1;
+}
+
+.entrada .nombre {
+  text-align: center;
+  background-color: black;
+  color: aliceblue;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <main>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="container p-3">
+                <h2>Contact</h2>
+                <p class="lead">If you need more information, you can send us the following form.</p>
+                <div class="row">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input name="name" id="name" type="text" class="form-control"
+                                placeholder="Enter your name here" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input name="email" id="email" type="email" class="form-control"
+                                placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea name="message" id="message" class="form-control" required></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input name="terms" id="terms" type="checkbox" required>
+                            <label class="form-check-label" for="terms">Check me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

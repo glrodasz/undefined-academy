@@ -1,0 +1,408 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  color: #555;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  color: #566b78;
+}
+
+h1,
+h2,
+strong {
+  color: #333;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: .4em;
+}
+
+a {
+  color: #e8521c;
+}
+
+ul {
+  padding-left: 1em;
+  padding-bottom: 1em;
+  list-style: none;
+}
+
+table {
+  width: 100%;
+  padding-bottom: 2em;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  margin-bottom: 2em;
+}
+
+td,
+th {
+  border: 1px solid #fbfbfb;
+  text-align: left;
+  padding: .8em;
+}
+
+tr:nth-child(even) {
+  background-color: #fbfbfb;
+}
+
+code,
+pre {
+  background-color: #eee;
+  background-color: #f5f7f9;
+  border-bottom: 1px solid #d8dee9;
+  color: #a7adba;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+pre {
+  padding: 1em;
+  border-left: 2px solid #69c;
+}
+
+
+
+
+/*=== ARTICLE ===*/
+
+
+/*--- HEADER ---*/
+
+.headerPage {
+  width: 100%;
+  height: 56vh;
+  padding-top: 44vh;
+  box-sizing: content-box;
+  background-color: black;
+  background-image: url("https://raw.githubusercontent.com/undefined-academy/semana-1/4bb3dfa972c85aabb1430ad1af32c0023bbd239b/github-profiles/garicarandai-2859/img/header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120%;
+  position: relative;
+  overflow: hidden;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* .headerPage::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.headerPage::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url("img/header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: rotate 10s linear infinite;
+  rotate: 0deg;
+} */
+
+@keyframes rotate {
+  to {
+    rotate: -360deg;
+  }
+}
+
+.headerPage h1 {
+  margin-bottom: 0em;
+  color: white;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.headerPage p {
+  color: #707070;
+}
+
+.headerPage a {
+  margin-top: 2em;
+  padding: 1em 2em;
+  border: 1px solid #e8521c;
+  border-radius: 360px;
+  display: inline-block;
+  color: white;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+.headerPage a:hover {
+  background: #e8521c;
+  color: white;
+}
+
+
+/*--- SECTIONS ---*/
+
+section .habilidades-listas {
+  display: flex;
+  gap: 1em;
+}
+
+section .habilidades-listas .box-list {
+  width: calc(100% / 4);
+  padding: 1em;
+  /*border: 2px solid #c9c9c9;*/
+  border-radius: 1em;
+  background: #fbfbfb;
+}
+
+section .hobbies-list {
+  width: 100%;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+section .hobbies-list li {
+  width: calc((100% / 4) - .75em);
+  padding: 1em;
+  border-radius: 1em;
+  background: #fbfbfb;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+section .hobbies-list li span {
+  width: 100%;
+  font-size: 2em;
+}
+
+footer{
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #f5f7f9;
+  font-size: 12px;
+}
+
+/*footer .line{
+  width: 100%;
+  height: 2px;
+  background-color: #e8521c;
+  position: absolute;
+  top: 0;
+  left: 0;
+}*/
+footer p{
+  padding: 20px 0;
+}
+
+
+/*=== PAGE ===*/
+.center-box{
+  max-width: 50em;
+    margin: 0 auto;
+    padding: 4em 1em;
+}
+
+.form{
+  padding: 10px 40px 20px 40px;
+}
+
+.form-group{
+  margin-top: 10px;
+  /* border: 1px solid red; */
+}
+
+label{
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  display: block;
+}
+
+textarea{
+  resize: vertical;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+button  {
+  margin-top: 2em;
+  padding: 1em 2em;
+  border-radius: 360px;
+  border: none;
+  background: #e8521c;
+  display: inline-block;
+  color: white;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ad3d14;
+}
+
+.contant-links{
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.contant-links li{
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 6px 20px;
+  border-radius: 360px;
+  background-color: #f5f7f9;
+  display: inline-block;
+  font-size: 12px;
+}
+
+
+
+/*=== MEDIA QUERYS ===*/
+
+@media screen and (max-width: 2560px) {/*4k*/
+  /*body{ background-color: lightsalmon; }*/
+}
+
+@media screen and (max-width: 1440px) {/*Portátil L*/
+  /*body{ background-color: cyan; }*/
+}
+
+@media screen and (max-width: 1024px) {/*Portátil*/
+  /*body{ background-color: pink; }*/
+
+  .headerPage{
+    background-size: initial;
+  }
+
+}
+
+@media screen and (max-width: 768px) {/*Tablet*/
+  /*body{ background-color: purple; }*/
+
+  .headerPage{
+    background-size: 210%;
+  }
+
+  .habilidades-listas{
+    flex-wrap: wrap;
+  }
+  section .habilidades-listas .box-list{
+    width: calc((100% / 2) - .5em);
+  }
+
+}
+
+@media screen and (max-width: 596px) {/*Tablet S*/
+  /*body{ background-color: orange; }*/
+
+  .headerPage{
+    background-size: 280%;
+  }
+
+  section .hobbies-list{
+    justify-content: center;
+  }
+
+  section .hobbies-list li{
+    width: calc((100% / 3) - 0.67em);
+  }
+  
+  button{
+    width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 425px) {/*Móvil L*/
+  /*body{ background-color: green; }*/
+
+  .headerPage{
+    background-size: 320%;
+  }
+
+  .habilidades-listas{
+    gap: initial;
+  }
+  section .habilidades-listas .box-list{
+    width: 100%;
+  }
+
+  th{
+    padding: 0.5em;
+  }
+
+}
+
+@media screen and (max-width: 375px) {/*Móvil M*/
+  /*body{ background-color: blue; }*/
+
+  section .hobbies-list{
+    justify-content: initial;
+  }
+
+  section .hobbies-list li{
+    width: calc((100% / 2) - .5em);
+  }
+
+}
+
+@media screen and (max-width: 320px) {/*Móvil S*/
+  /*body{ background-color: red; }*/
+}

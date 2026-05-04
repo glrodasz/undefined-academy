@@ -1,0 +1,106 @@
+$desktop-media: 768px;
+
+@media screen and (min-width: $desktop-media) {
+   .container {
+      display: grid;
+      /* grid-template-columns: repeat(4, 1fr); */
+      grid-template-columns: 150px 350px 350px 150px;
+      grid-template-rows: 50px 300px auto 150px;
+      grid-template-areas:
+         "header header header header"
+         "main main main main"
+         "section section section section"
+         "footer footer footer footer";
+
+      max-width: var(--container-max-width);
+      margin: 0 auto;
+      height: inherit;
+   }
+
+   .header {
+      grid-area: header;
+      align-self: center;
+      background-color: var(--color-primary);
+      color: var(--color-text);
+      padding: 10px;
+   }
+
+   .main {
+      grid-area: main;
+      background-image: url("./images/mern.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-y: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: stretch;
+   }
+
+   .section {
+      grid-area: section;
+      display: grid;
+      place-items: center;
+      background-color: #cbd5e1;
+      padding-bottom: 50px;
+   }
+
+   nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.2em;
+      padding: 0 20px;
+   }
+
+   form {
+      padding: 30px 90px 30px 80px;
+      width: 500px;
+   }
+
+   input {
+      padding: 10px 7px;
+   }
+
+   input::placeholder {
+      font-size: 15px;
+   }
+
+   .card {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+      width: 700px;
+      border-radius: 5px;
+      padding: 20px;
+      margin-top: 40px;
+      box-shadow: 1px 3px 6px rgb(0, 0, 0, 0.5);
+   }
+
+   .card-img {
+      width: 40%;
+   }
+
+   .footer {
+      grid-area: footer;
+      background-color: var(--color-primary);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   .footer-bio {
+      width: 500px;
+   }
+
+   .contenedor-footer {
+      flex-direction: row;
+   }
+
+   .redes_social {
+      justify-content: space-between;
+   }
+}

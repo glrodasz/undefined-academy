@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Carlota Galtés Delgado</title>
+    </head>
+    <body>
+        <main>
+        <header>
+            <h1>Hello, I'm Carlota 👩‍💻</h1>
+        <p class="presentation">I'm currently studying to be a <strong>full stack developer</strong>⌨️. For now I've learned <em>HTML, CSS and Javascript</em>, but I would like, in the future, to train in <strong>swift</strong> language🍎.</p>
+        </header>
+        <section>
+            <h2>⌨️ Comandos aprendidos en Undefined Bootcamp:</h2>
+            <ol> 
+                <li>Help: Muestra todos los comandos disponibles con una breve descripción en inglés.</li>
+                <li>MD nombrecarpeta: Crea una carpeta con el nombre indicado en la dirección donde nos encontramos en ese momento.</li>
+                <li>CD: os lleva directamente a la home.</li>
+                <li>Alias nombre_alias=comando: Creamos un alias para minimizar procesos recurrentes.</li>
+                <li>CP cp nom_archivo nom_directorio: Copia archivos en el directorio que indiquemos.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>🖱️ Comandos alias útiles para nuestro día a día:</h2>
+            <ol>
+                <li>alias mkdir="mkdir -pv"</li>
+                <li>alias cl = clear</li>
+            </ol>
+        </section>
+        <section>
+            <h2>📩 Contáctame</h2>
+            <form action="/server" method="get">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input id="name" name="name" type="text" placeholder="Para que pueda dirigirme a ti" required> 
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="email" placeholder="Ingrese su correo electrónico" required>
+                </div>
+
+                <fieldset>
+                    <legend>Razón</legend>
+                        <input id="work" name="reason" type="radio" value="" required>
+                        <label for="work">Trabajo</label>
+
+                        <input id="colab" name="reason" type="radio" value="">
+                        <label for="colab">Colaboración</label>
+                </fieldset>
+                <div class="form-group">
+                    <label for="type">Tipo de proyecto</label>
+                    <select id="type" required>
+                        <option disabled selected value="">Selecciona uno</option>
+                        <option value="website">Website</option>
+                        <option value="webapp">Webapp</option>
+                        <option value="mobile">Mobile app</option>
+                        <option value="design">Diseño</option>
+                    </select>  
+                </div>
+                <div class="form-group">
+                    <label for="description">¿Qué idea tienes?</label>
+                    <textarea id="description" name="description" required rows="8"></textarea>
+                </div>
+                <button>Enviar</button>
+        </section>
+        <br>
+        <footer>
+            <a href="https://github.com/carlotagadel">Enlace a mi perfil de GitHub</a>
+        </footer>
+        </main>
+    </body>
+</html>

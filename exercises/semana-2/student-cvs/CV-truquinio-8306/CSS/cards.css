@@ -1,0 +1,54 @@
+.row {
+  display: flex;
+  justify-content: center;
+  padding: 0 15%;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+}
+
+div .card {
+  background-color: #ffffff26;
+  margin: 5% auto;
+  padding: 2rem;
+  color: #fff;
+}
+
+div .card:hover {
+  transform: scale(1.03);
+  transition: 1s;
+  cursor: pointer;
+}
+
+.card-title,
+.card-text {
+  margin: 0;
+  text-align: center;
+}
+
+.card-text a {
+  color: #e48c0d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+div a {
+  color: #e48c0d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tecnologias:hover {
+  transform: none;
+}
+
+.card-img {
+  margin-top: 5%;
+}
+
+.card-img:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}

@@ -1,0 +1,16 @@
+@import "variables.scss";
+
+@media screen and (min-width: 568px) {    
+    article {
+        background-color: $Cabaret;
+        color: $WildSand;
+    }
+    section {
+        background-color: $Cabaret;
+        color: $WildSand;
+    }
+    footer {
+        background-color: $AliceBlue;
+        color: $NavyBlue;
+    }
+}

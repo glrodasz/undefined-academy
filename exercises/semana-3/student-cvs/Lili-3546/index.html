@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi perfil</title>
+</head>
+<body>
+    <header>
+        <div class="portada" id="top">
+            <h1>Hello, I'm Lilia Garcia</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">ABOUT ME</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Front End Developer</h1>
+            <p>Hello I'm <strong>Lilia García</strong>, I'm 28 years old, and I'm living in <strong>Mendoza, Argentina</strong>.
+                I'm <strong>Front End Developer</strong> from MindHub, and I'm studying <strong>Full Stack
+                with Javascript</strong> in the bootcamp created by Guillermo Rodas.
+                Also, I'm studying for Tecnicature <strong>Software Development</strong> admission.</p>
+                <hr>
+            <p>⭐My <a href="https://github.com/LiliaG-hiramatsu">Github</a> profile.</p>
+            <p>However, you can see some of my projects in the section <a href="#projects">Projects.</a></p>
+        </section>
+        <section>
+            <h3>Until now in this bootcamp I've learned:</h3>
+            <ul>
+                <li>Installation WSL for Linux Terminal</li>
+                <li>Markdown</li>
+                <li>Terminal commands</li>
+                <li>Git and Github</li>
+                <li>HTML5 intro</li>
+                <li>CSS3</li>
+                <li>Semantic HTML</li>
+                <li>Forms</li>
+            </ul>
+        </section>
+        <article>
+            <h2>Week 1 Exercise</h2>
+            <section>
+                <div class="container">
+                    <h3>Terminal commands 💻</h3>
+                    <ul>
+                        <li>cd: To navigate between folders</li>
+                        <li>ls: List of directories or files that exist in the actual directory</li>
+                        <li>pwd: Shows the absolute path of the actual directory</li>
+                        <li>mkdir: Create a new directory</li>
+                        <li>rm: Delete a file given a path</li>
+                        <li>touch: Create a new file</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <h3>Useful Alias 💎</h3>
+                    <ul>
+                        <li>cl: clear</li>
+                        <li>rm: trash</li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+        <section id="contact">
+            <h1>Contact me</h1>
+            <form action="" method="get">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="example@example.com" required>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Genre</legend>
+                        <input id="fem" name="fem" value="fem" type="radio">
+                        <label for="fem">Female</label>
+
+                        <input id="masc" name="masc" value="masc" type="radio">
+                        <label for="masc">Male</label>
+
+                        <input id="nb" name="nb" value="nb" type="radio">
+                        <label for="nb">Non-binary</label>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <select name="location" id="location">
+                        <option disabled selected value="">Select one</option>
+                        <option value="America">America</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Antarctica">Antarctica</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="subscribe">
+                        <input id="subscribe" name="subscribe" type="checkbox">
+                        <span>I want to subscribe to the newsletter</span>
+                    </label>
+                </div>
+                <button>Send</button>
+            </form>
+        </section>
+        <section id="projects">
+            <h1>My Projects</h1>
+            <div class="card-container">
+                <h1>Mighty Ducks Hockey League</h1>
+                <img src="./images/mighty.png" alt="">
+                <p>Description</p>
+            </div>
+            <div class="card-container">
+                <h1>E-commerce</h1>
+                <img src="./images/commerce.png" alt="">
+                <p>Description</p>
+            </div>
+            <div class="card-container">
+                <h1>Amazing Events</h1>
+                <img src="./images/amazing.png" alt="">
+                <p>Description</p>
+            </div>
+        </section>
+        <section class="button-top">
+            <button><a href="#top">TOP</a></button>
+        </section>
+    </main>
+    <footer>
+        <p>Lilia Garcia</p>
+        <p>Copyright 2023©</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  .container
+    h2.my-5 Eliminar #{nombre}
+    .alert.alert-danger.my-5(role='alert') ¿Esta segur@ que desea eliminar el producto: #{nombre}?    
+
+    form(action=`/products/${id}?_method=DELETE`, method='POST')
+        input(type='hidden', name='_method', value='DELETE')
+        input(type='submit', value='Sí, deseo eliminarlo', class='btn btn-danger')
+    
+    a.btn.btn-success.my-5(href="/products") No, Volver al listado

@@ -1,0 +1,123 @@
+body {
+    margin: 50px auto;
+    max-width: 800px;
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 0 40px;
+    color: #566b78;
+    text-align: justify;
+    background-color: #fefefe;
+}
+
+h1 {
+    margin-top: 1em;
+    padding-top: 1em;
+    color: #333;
+}
+
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+
+a {
+    color: #1c9de8;
+    border: 1px solid #1c96e8;
+    border-radius: 290486px;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    margin-top: 25px;
+    display: inline-block;
+}
+
+.form-group {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="ubicacion"],
+textarea {
+    width: 100%;
+    vertical-align: middle;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.intereses {
+    border: none;
+    margin-top: 40px;
+}
+
+
+textarea {
+    display: block;
+    width: 100%;
+}
+
+.terms {
+    font-size: 10px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 90px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+.enviar {
+
+    width: 40%;
+    font-weight: bold;
+    border-color: #1c96e8;
+    background: #91d6f1;
+    color: #333;
+}
+
+
+.borrar {
+    border-color: lightgray;
+    color: #333;
+}
+
+
+button:hover {
+    background-color: rgb(140, 176, 253);
+}
+
+.volver {
+    border: none;
+}
+
+form {
+    accent-color: rgb(140, 176, 253);
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    border: 1px solid rgb(140, 176, 253);
+    outline: 1px solid rgb(140, 176, 253);
+}
+
+@media screen and (max-width:400px) {
+    .S0 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

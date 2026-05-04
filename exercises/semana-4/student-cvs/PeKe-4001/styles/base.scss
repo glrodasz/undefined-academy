@@ -1,0 +1,170 @@
+@import "./variables.scss";
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  color: $mine-shaft;
+  background-color: $white-ice;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page article {
+  margin: 0 auto;
+  max-width: 50em;
+  line-height: 1.5;
+  padding: 3em;
+}
+.page form {
+  margin: 0 auto;
+  max-width: 50em;
+  line-height: 1.5;
+  padding: 3em;
+}
+
+header {
+  background-image: linear-gradient(
+      rgba(105, 100, 100, 0.5),
+      rgba(133, 110, 110, 0.5)
+    ),
+    url(https://source.unsplash.com/_MMP5j_fCqw);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  display: inline-block;
+  height: 120px;
+  vertical-align: top;
+  width: 120px;
+}
+
+header h1 {
+  color: $white;
+  padding-top: 1em;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+header h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: $mine-shaft;
+}
+
+h3,
+strong {
+  color: $eden;
+  padding-top: 1em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+a {
+  color: $surfie-green;
+}
+
+.list {
+  padding: 10px;
+}
+
+/* Contacto */
+.form-group {
+  margin: 20px 0;
+}
+
+label,
+input {
+  vertical-align: middle;
+}
+
+.ancho label,
+.ancho input {
+  width: 100%;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+
+label,
+legend {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: $tundora;
+}
+
+.fondo {
+  background: $white;
+  border: 1px solid $alto;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: $mine-shaft;
+}
+
+.help {
+  font-size: 12px;
+  margin-top: 10px;
+  color: $gray;
+}
+
+.btn {
+  width: 30%;
+  padding: 16px 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid $eden;
+  background: $surfie-green;
+  color: #fff;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.btn:hover {
+  background: $blue-chill;
+}
+
+.btn:active {
+  background-color: $eden;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+fieldset {
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+form label {
+  accent-color: $surfie-green;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  border: 1px solid $mountain-meadow;
+  outline: 2px solid $green-haze;
+}

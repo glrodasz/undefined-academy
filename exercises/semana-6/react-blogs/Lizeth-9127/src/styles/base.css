@@ -1,0 +1,123 @@
+:root {
+  --bg-color: #eef2ff;
+  --primary: rgb(99, 102, 241);
+  --accent-snow: #c7d2fe;
+  --accent-lavender: #e0e7ff;
+  --alpha-bg: #eef2ff73;
+  --caption: #9ca3af;
+  --hover-color: #dee5fe;
+  --border:#d9e0ff;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--bg-color);
+  margin: 0;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: unset;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer {
+  display: flex;
+  grid-column: 1 / 4;
+  background-color: var(--primary);
+  align-items: center;
+  border-top: 1.5px solid var(--accent-snow);
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  
+}
+
+footer > span {
+  color: var(--alpha-bg);
+  font-size: 0.8em;
+}
+
+header {
+  grid-column: 1 /4;
+  grid-row: 1 / 2;
+  border-bottom: 1px solid var(--accent-lavender);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+img {
+  width: 90%;
+  height: 80%;
+  margin: auto;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+}
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 1rem;
+  width: 90%;
+  margin: 1rem;
+}
+
+.icon {
+  max-width: 1.3em;
+  height: unset;
+  
+}
+.caption {
+  color: var(--caption);
+  font-size: 14px;
+}
+
+.article:hover {
+  box-shadow: 2px 1px 16px var(--hover-color);
+  cursor: pointer;
+}

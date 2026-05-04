@@ -1,0 +1,25 @@
+
+@media screen and (min-width: 792px) {
+    .navegador{
+        display: inline-block;
+    }
+
+    .tablas {
+        max-width: 40%;
+        display: inline-block;
+        justify-content: space-between;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .habilidades{
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    
+}

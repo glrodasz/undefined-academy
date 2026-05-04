@@ -1,0 +1,159 @@
+html {
+  background-color: #212429;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.main {
+  background: transparent url("https://i.ibb.co/Ld7q13v/fondo3.jpg") repeat fixed 0 0;
+}
+
+/* SETEO LA VELOCIDAD DE GIRO DEL LOGO */
+.logo {
+  width: 3%;
+  margin-right: 20px;
+  animation: logo-spin infinite 10s linear;
+}
+
+/* SETEO EL GIRO DEL LOGO */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.about,
+.tech,
+.buttons,
+.form,
+footer {
+  padding: 10px 300px;
+  text-align: justify;
+
+  color: #fff;
+  accent-color: #e48c0d;
+}
+
+.form-group {
+  margin-bottom: 20px 0;
+}
+
+.title,
+.subtitle {
+  color: #fff;
+  text-align: center;
+
+  margin: 20px;
+}
+
+.tecnologias {
+  display: inline-block;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.tecnologias:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+label,
+input {
+  vertical-align: middle;
+}
+
+label,
+input:not([type="radio"],
+  [type="checkbox"]) {
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: #3c3d40;
+  border: 1px solid #3c3d40;
+  border-radius: 5px;
+  padding: 8px 10px;
+  color: #ebebeb;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: 1px solid #e48c0d;
+}
+
+textarea {
+  width: 100%;
+  display: block;
+  resize: vertical;
+}
+
+label,
+.presupuesto {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ebebeb;
+
+  padding: 10px 0 0 0;
+}
+
+.fieldset {
+  display: flex;
+  align-content: center;
+}
+
+.select {
+  border-radius: 5px;
+}
+
+.help {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #81838a;
+
+  text-align: center;
+}
+
+.boton {
+  display: block;
+  padding: 0.5rem 1rem;
+  width: 200px;
+  margin: 30px auto 30px auto;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+
+  background: #e48c0d;
+  border: 1px solid #e48c0d;
+  border-radius: 8px;
+  padding: 16px 60px;
+
+  cursor: pointer;
+}
+
+.boton:hover {
+  transform: scale(0.9);
+  transition: 1s;
+}
+
+.boton:active {
+  background: #db4932;
+  border: 1px solid #db4932;
+  transition: 1s;
+}

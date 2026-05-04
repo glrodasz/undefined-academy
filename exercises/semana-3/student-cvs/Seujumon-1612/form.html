@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	<title>Formulario de Contacto</title>
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/eform.css" rel="stylesheet">
+	<script type="module" src="/main.mjs">
+</script>
+</head>
+<body>
+	<div class="conteiner">
+		<div class="item">
+			<header>
+				<h1>Contacto</h1>
+				<div>
+					<a href="https://github.com/Seujumon" target="_blank">Perfil de GitHub</a>
+					<a href="index.html">Inicio</a>
+				</div>
+			</header>
+		</div>
+		<div class="item">
+			
+				<div class="conteiner2">
+					<div class="item2">
+						<fieldset>
+							<legend>Datos e información para ponerme en contacto: </legend>
+								<form action="" method="post" autocomplete="off">
+									<div class="item2">
+									<label for="name" class="bloque">Nombre: </label>
+									<input type="text" id="name" name="name" required class="cien" placeholder="Ingrese su nombre completo">
+									</div>
+									<div class="item2">
+									<label for="cellphone" class="bloque" >Teléfono: </label>
+									<input type="tel" name="cellphone" id="cellphone" required class="cien" placeholder="Número de área seguido de un número de teléfono. Ej: +54 11 55555555">	
+									</div>
+									<div class="item2">
+									<label for="mail" class="bloque">Correo electrónico: </label>
+									<input type="email" name="mail" id="mail" required class="cien">
+									</div>
+									<div class="item2">
+									<label for="reason" class="bloque">Motivo del mensaje</label>
+									<select id="reason" name= "reason" required class="cien">
+										<option disabled selected>Seleccione uno</option>
+										<option value="colab">Coolaboración</option>
+										<option value="question">Consulta</option>
+										<option value="suggestion">Sugerencias</option>
+										<option value="work">Oferta laboral</option>
+										<option value="other">Otro. Especificar en el mensaje.</option>
+									</select>
+									</div>
+									<div class="item2">
+									<label for="mensaje" class="bloque">Mensaje</label>
+									<textarea id="mensaje" class="cien" rows="6" required></textarea>
+									</div>
+									<div class="item2">					
+									<label for="terms">
+										<input type="checkbox" id="terms" name="terms" required>
+										<span>Acepto los terminos y condiciones</span>
+									</label>
+									<div class="item2">
+									<button type="submit" class="bloque">Enviar</button>
+									</div>
+								</form>
+						</fieldset>
+					</div>
+				</div>
+			
+		</div>
+		<div class="item">
+			<footer>
+				<a href="index.html">Inicio</a>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

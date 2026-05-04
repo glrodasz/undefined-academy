@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bautista Lonardi</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="page">
+            <header>
+                <h1>Hello 👋, I'm Bautista Lonardi</h1>
+
+                <h2>
+                    I'm a <i>Full Stack Javascript developer</i> in progress
+                    from <strong>Argentina</strong> looking for a new experience
+                    on a company that helped me to be a
+                    <strong> better developer</strong>
+                </h2>
+            </header>
+
+            <main>
+                <section class="section-about-me">
+                    <h2>🚀 About Me</h2>
+
+                    <p>
+                        I'm a Front End Developer based in <i>Argentina</i> with
+                        a passion for designing and coding stuff.. 🌱 I’m
+                        currently learning <i>React</i>, <i>Node</i> and
+                        <i>Python</i>..
+                    </p>
+                </section>
+                <section class="section-link">
+                    <h2>🔗 Links</h2>
+                    <div class="articles-link">
+                        <article>
+                            <p>Github</p>
+                            <a href="https://github.com/blonardi/"
+                                ><img
+                                    src="https://img.shields.io/badge/-GitHub-333333?style=flat&logo=github"
+                                    alt=""
+                            /></a>
+                        </article>
+                        <article>
+                            <p>📂 Portfolio</p>
+                            <a
+                                href="https://bautistalonardiportfolio.netlify.app/"
+                            >
+                                <img
+                                    src="https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white"
+                                    alt=""
+                                />
+                            </a>
+                        </article>
+                    </div>
+                </section>
+                <section class="section-skills">
+                    <article>
+                        <h2>🧰 Skills</h2>
+                        <p>
+                            Through my studies, I've learned a solid amount of
+                            computer science and web development concepts, and
+                            have dedicated a lot of my free time to apply these
+                            in personal and academic projects.
+                        </p>
+                        <ul>
+                            <li>HTML & CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Git</li>
+                        </ul>
+                    </article>
+                </section>
+            </main>
+
+            <section>
+                <article>
+                    <header>
+                        <h2>5 comandos mas usados</h2>
+                    </header>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Comando</th>
+                                <th>Descripcion</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>ls</td>
+                                <td>Lista el contenido de un directorio</td>
+                            </tr>
+                            <tr>
+                                <td>cd</td>
+                                <td>Cambia de directorio</td>
+                            </tr>
+                            <tr>
+                                <td>rm</td>
+                                <td>
+                                    Es utilizado para eliminar archivos y
+                                    directorios en SO Unix o Linux
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>mv</td>
+                                <td>
+                                    Es utilizado para mover o renombrar archivos
+                                    o directorios
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>clear</td>
+                                <td>Limpiar la terminal</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article>
+                    <header>
+                        <h2>Alias de comandos</h2>
+                    </header>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Alias</th>
+                                <th>Descripcion</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>rm -rf</td>
+                                <td>
+                                    Para forzar la eliminación de un directorio
+                                    y su contenido sin solicitar confirmación
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>gp</td>
+                                <td>
+                                    Realiza "git pull" y "git push" al mismo
+                                    tiempo
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>cl</td>
+                                <td>
+                                    Limpia la terminal que estamos usando,
+                                    realizando la abrevacion a 'clear'
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+
+            <section class="section-form">
+                <div class="form-container">
+                    <h2>Contact Me</h2>
+                    <form id="form" action="/server" method="get">
+                        <div class="form-group">
+                            <input
+                                id="name"
+                                name="name"
+                                type="text"
+                                placeholder="Ingrese su nombre completo"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                placeholder="Ingrese su correo electronico"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <input
+                                id="asunto"
+                                type="text"
+                                name="asunto"
+                                placeholder="Asunto"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <div class="description">
+                                <textarea
+                                    id="description"
+                                    name="description"
+                                    placeholder="Escribe el motivo de contacto. Gracias😬"
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="button" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

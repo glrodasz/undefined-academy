@@ -1,0 +1,18 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<title>html5-white-svg</title>
+	<style>
+		.s0 { fill: #ffffff } 
+		.s1 { opacity: .8;fill: #ffffff } 
+		.s2 { opacity: .2;fill: #ffffff } 
+	</style>
+	<g id="css3">
+		<path id="Capa 1" fill-rule="evenodd" class="s0" d="m88 111.6h336l-31.4 340.7-136.6 38.7-136.6-37.8m136.6 8.3l111.7-30.5 25.2-292.5-136.9-0.1v42.5h-104.3l3.7 42.4h100.6v42.5h-96.9l3.7 42.5h93.2v66.4l-47.1-12.9-2.7-33.2h-41.6l5.6 66.4 85.8 23.1z"/>
+		<path id="Capa 4 copy" fill-rule="evenodd" class="s1" d="m256 138.4l137.4 0.1-25.1 293-112.3 30.5v-43.9l85.8-23.1 19.4-214.1h-105.2zm59.1 84.9l-3.7 42.6h-55.4v-42.6zm-7.4 84.9l-4.6 53.6-47.1 13.8v-67.4z"/>
+		<path id="Capa 6" class="s2" d="m256 223.3v-42.4h-104.3l3.7 42.4z"/>
+		<path id="Capa 5" class="s2" d="m256 265.8v42.5h-93.2l-3.7-42.5z"/>
+		<path id="Capa 7" class="s2" d="m164.6 328.6h41.6l2.7 33.2 47.1 12.9v43.4l-85.8-23.1z"/>
+		<path id="Capa 2" class="s0" d="m220 84.1h-49.8v-63.7h49.8v21.2h-29.5v21.3h29.5z"/>
+		<path id="Capa 3" class="s0" d="m280.9 20.4h-49.8v41.6h28.6v3.6h-28.6v19.4h49.8v-42.4h-29.5v-3.7h29.5z"/>
+		<path id="Capa 3 copy" class="s0" d="m341.8 20.4h-49.8v41.6h28.6v3.6h-28.6v19.4h49.8v-42.4h-29.5v-3.7h29.5z"/>
+	</g>
+</svg>

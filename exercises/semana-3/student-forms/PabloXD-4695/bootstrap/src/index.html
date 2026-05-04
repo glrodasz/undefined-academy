@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="scripts/main.js"></script>
+    <title>Contact</title>
+  </head>
+  <body>
+    <h1>Contact Me</h1>
+    <article class="contact-body">
+      <form>
+        <div class="mb-3">
+          <label for="Name" class="form-label">Your name</label>
+          <input
+            type="text"
+            id="Name"
+            name="Name"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="Phone" class="form-label">Your phone number</label>
+          <input
+            type="number"
+            id="Phone"
+            name="Phone"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="subject" class="form-label">Your subject</label>
+          <select id="Subject" name="Subject" class="form-control" required>
+            <option disabled hidden selected>Choose your subject</option>
+            <option>I'd like to start a project</option>
+            <option>I'd like to ask a question</option>
+            <option>I'd like to make a proposal</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="Email" class="form-label">Your email address</label>
+          <input
+            type="email"
+            id="Email"
+            name="Email"
+            class="form-control"
+            required
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="Message" class="form-label">Your message</label>
+          <textarea
+            id="Message"
+            name="Message"
+            class="form-control"
+            rows="6"
+            maxlength="3000"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </article>
+  </body>
+</html>

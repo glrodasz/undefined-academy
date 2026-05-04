@@ -1,0 +1,55 @@
+@use "variables" as variables;
+
+/******************
+**   CSS Reset   **
+******************/
+html{
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/*******************
+** HTML/Body/Main **
+*******************/
+html{
+    font-size: 62.5%; /*Modifico la equivalencia del rem; rem=10px*/
+    font-family: 'Courier New', Courier, monospace;
+    color:#323132;
+}
+
+@mixin centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin columncenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin tablet{
+    @media screen and (min-width: variables.$breakpoint-middle){
+        @content;
+    }
+}
+
+@mixin tabletxl{
+    @media screen and (min-width: variables.$breakpoint-middlexl){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media screen and (min-width: variables.$breakpoint-large){
+        @content;
+    }
+}

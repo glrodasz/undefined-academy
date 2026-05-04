@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 65em;    
+    line-height: 1.1;
+    padding: 0 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4b4a4a;
+    background-color: #DBD2BB;
+    margin-top: -6em;
+}
+
+.hidden-this {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(136, 55, 55);
+    position: sticky;
+    top: 0;
+    border-radius: 10px;
+}
+
+nav  li {
+   float: left;
+}
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  nav li a:hover {
+    background-color: rgb(190, 96, 96);
+    border-radius: 8px;
+}
+  
+nav .active {
+    background-color: #4CAF50;
+}
+
+h1, h2 ,h3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+h4 {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-weight: bolder;
+}
+
+.paragraph {
+    margin-top: 40px;
+}
+
+p, ul {
+    padding-bottom: 2em;
+}
+
+li {
+    text-align: center;
+    list-style: none;
+    padding: 4px;
+}
+
+hr {
+    border: rgb(136, 55, 55) solid 1px;
+}
+
+table {
+    margin: 0 auto;
+}
+
+th {
+    padding-bottom: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: #4b4a4a;
+}
+
+.imagen {
+    position: relative;
+    border-radius: 50%;
+    object-fit: cover;
+    top: 12em;
+    width: 18%;
+    margin-left: 10em;
+}
+
+.emphatic {
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+.form {
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    padding: 24px;
+    border-radius: 24px;
+    box-shadow: 2px 2px 30px rgba(136, 55, 55, 0.5);
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+label, legend {
+    font-weight: bold;
+    color: rgb(87, 35, 35);
+    text-shadow: 1px 1px rgb(141, 86, 86);
+}
+
+::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.budget {
+    display: inline-flex;
+    margin: 10px 115px;
+}
+
+textarea {
+    background-color: rgb(141, 86, 86);
+    display: block; 
+    width: 100%;
+    resize: vertical;
+    border: none;
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+input {
+    background-color: rgb(141, 86, 86);
+    color: #ffffff;
+    border: none;
+    padding: 10px 8px;
+    border-radius: 8px;
+    margin-top: 6px;
+}
+
+.description {
+    color: #ffffff;
+    
+}
+
+button {
+    background-color: rgb(141, 86, 86);
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    
+}
+
+button:hover {
+    background-color: rgb(190, 96, 96);
+}
+
+select {
+    background-color: rgb(141, 86, 86);
+    color: #ffffff;
+    border: none;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.terms {
+    vertical-align: middle;
+}

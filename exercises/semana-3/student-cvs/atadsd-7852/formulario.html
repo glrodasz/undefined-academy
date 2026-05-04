@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="/student-form/atadsd-7852/dist/output.css">
+    <script type="module" src="/atadsd-7852/formulario/main.mjs"> </script>
+    <title>Formulario de contacto</title>
+</head>
+
+<body>
+    <header>        <div class="nav">
+
+            <nav>
+                <img src="/fotos/A. Torres-1 (2).png" id="logo">
+                <ul class="ulheader">
+                    <a href="/student-blog/atadsd-7852/home.html">
+                        <li>home</li>
+                    </a>
+                    <a href="/student-blog/atadsd-7852/blog.html">
+                        <li>blog</li>
+                    </a>
+
+                    <a href="/student-cvs/atadsd-7852/index.html">
+                        <li>about</li>
+                    </a>
+                    <a href="/student-cvs/atadsd-7852/formulario.html">
+                        <li>contact</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <h1 id="contact"> Contactame </h1>
+
+        <form>
+
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" type="text" placeholder="Ingrese su nombre completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email"> Email </label>
+                <input id="email" type="email" placeholder="Ingrese su correo electronico" required>
+            </div>
+
+            <div class="form-group">
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <div class="radio">
+                        <input type="radio" id="3000" name="budget" required>
+                        <label for="3000">$3000</label>
+                        <input type="radio" id="2000">
+                        <label for="2000">$2000</label>
+                        <input type="radio" id="1000">
+                        <label for="1000">$1000</label>
+                        <input type="radio" id="500">
+                        <label for="500">$500</label>
+                        <input type="radio" id="300">
+                        <label for="300">$300</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="type">Tipo de proyecto</label>
+                <select id="type">
+                    <option disabled selected value="">Selecione uno</option>
+                    <option>Restauracion de motocicleta</option>
+                    <option>Reparacion de motocicleta</option>
+                    <option>Mantenimiento basico</option>
+                    <option>Mantenimiento completo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description"> Descripcion</label>
+                <textarea id="description" placeholder="describa el trabajo solicitado" required rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input id="terms" type="checkbox" required>
+                    <span>Acepto los terminos y condiciones</span>
+                </label>
+            </div>
+
+            <button class="rounded-full border-orange-600 border-2">Enviar</button>
+        </form>
+
+
+
+    </main>
+    <footer>
+        <nav id="redes">
+            <a href="atadsd#7852"> <img src="/fotos/discord logo.png" width="60" height="40"> </a>
+            <a href="https://github.com/anthonytorres30"> <img src="/fotos/github logo.png" width="60" height="40">
+            </a>
+            <a href="https://instagram.com/atadsd "> <img src="/fotos/instagram logo.png" width="60" height="40">
+            </a>
+            <a href="https://www.linkedin.com/in/anthony-torres-56207526a/"> <img src="/fotos/linkedin-logo.png"
+                    width="60" height="40"> </a>
+        </nav>
+</footer>
+</body>
+
+</html>

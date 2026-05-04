@@ -1,0 +1,75 @@
+@import "variables";
+
+.container {
+  margin: 0px 5px;
+  border: 1px solid $color-border;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background-color: $color-background;
+  position: sticky;
+  margin-bottom: 10px;
+  top: 0px;
+  padding: 2px;
+}
+
+.nav-item {
+  background-color: $color-primary;
+  cursor: pointer;
+  border: 1px solid $color-border;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.nav-item:hover {
+  background-color: $color-secundary;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $color-border;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px;
+  background-color: $color-primary;
+}
+
+.card-footer a {
+  color: $color-black;
+  border: 1px solid $color-border;
+  border-radius: 25px;
+  padding: 3px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-footer a:hover {
+  background-color: $color-secundary;
+}
+
+time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  text-align: center;
+}

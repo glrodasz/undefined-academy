@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.portada {
+    background-image: url(./images/portada.jpg);
+    background-size: cover;
+    line-height: 1.2;
+    padding: 6vw 2em;
+    text-align: center;
+}
+
+.portada h1 {
+    color: rgb(247, 195, 224);
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.portada nav li {
+    display: inline-block;
+    margin: 2px;
+    list-style: none;
+}
+
+.portada nav li a {
+    font-size: 0.7em;
+    color: rgb(244, 156, 205);
+    text-decoration: none;
+    padding: 3px 1px;
+}
+
+.portada nav li a:hover {
+    color: palevioletred;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 10px;
+    margin: 1em 2em;
+    line-height: 2;
+    padding: 0 1em 2em;
+    color: #555;
+}
+
+section > h1, h3, h2, p {
+    margin: 0.5em;
+}
+
+p strong {
+    color: #333;
+}
+
+p a {
+    text-decoration: none;
+    color: rgb(195, 83, 243);
+}
+
+p a:hover {
+    color: rgb(131, 7, 188);
+}
+
+article h2, h3 {
+    color: #555;
+}
+
+.container {
+    background-color: rgb(237, 251, 255);
+    padding: 5px;
+    margin: 1rem 0;
+    color: #333;
+}
+
+.container ul li {
+    list-style-type: none;
+}
+
+form {
+    border: 1px solid #aaaaaa;
+    padding: 20px;
+    background-color: rgb(255, 240, 245);
+    border-radius: 4px;
+    box-shadow: 3px 3px #d8d8d8;
+    accent-color: palevioletred;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+label, input {
+    vertical-align: middle;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 9px;
+    color: #444;
+}
+
+input[type="text"], input[type="email"], textarea, fieldset, select {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+form button {
+    padding: 8px 30px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    border: 1px solid palevioletred;
+    background: rgb(255, 186, 208);
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+form button:hover {
+    background: rgb(254, 139, 177);
+}
+
+form button:active {
+    background: rgb(211, 98, 136);
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    border: 1px solid palevioletred;
+    outline: 1px solid rgb(254, 132, 173);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgb(226, 225, 225);
+    padding: 20px 10px;
+    margin: 0.5rem;
+}
+
+.card-container img {
+    margin: 1rem;
+    width: 80%;
+    height: auto;
+    align-self: center;
+}
+
+.button-top {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.button-top button {
+    width: 4rem;
+    height: 2rem;
+    border-radius: 4px;
+    border: 1px solid #4e4e4e;
+    background: rgb(220, 220, 220);
+}
+
+.button-top button a {
+    text-decoration: none;
+    font-size: 10px;
+}
+
+footer {
+    padding: 1rem;
+    background-color: gainsboro;
+    font-size: 10px;
+    color: #555;
+}
+
+@media screen and (min-width: 768px) {
+    .portada h1 {
+        font-size: 2em;
+    }
+
+    .portada nav li a {
+        font-size: 1em;
+    }
+
+    main {
+        margin: 2em 5em;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    label, legend {
+        font-size: 11px;
+    }
+
+    form button {
+        font-size: 12px;
+    }
+
+    .button-top button a {
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 2rem;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .portada h1 {
+        font-size: 2.5em;
+    }
+
+    main {
+        margin: 3em 10em;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    label, legend {
+        font-size: 12px;
+    }
+
+    form button {
+        padding: 16px 60px;
+    }
+    
+    footer {
+        padding: 3rem;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        margin: 4em 20em;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    main {
+        margin: 4em 40em;
+    }
+}

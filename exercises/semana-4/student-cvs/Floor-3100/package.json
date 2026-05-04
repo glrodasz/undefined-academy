@@ -1,0 +1,24 @@
+{
+  "name": "floor-3100",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.mjs",
+  "type": "module",
+
+  "scripts": {
+    "dev": "vite",
+    "sass": "sass scss/main.scss css/main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1",
+    "vite": "^4.3.3"
+  },
+  "dependencies": {
+    "16": "^0.0.2",
+    "dayjs": "^1.11.7"
+  }
+}

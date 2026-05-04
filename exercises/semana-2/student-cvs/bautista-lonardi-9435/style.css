@@ -1,0 +1,168 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: #263d36;
+  margin: 0 auto;
+  max-width: 50em;
+  line-height: 1.5;
+  padding: 2em 1em;
+  color: #ffffff;
+}
+
+.page {
+  margin: 0 auto;
+  width: 800px;
+}
+
+
+h1,
+h2,
+strong {
+  color: #333;
+  color: aliceblue;
+}
+
+a {
+  color: #e81c4f;
+}
+
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 3vw 2em;
+  text-align: center;
+}
+
+header img {
+  display: inline-block;
+  height: 120px;
+  vertical-align: top;
+  width: 120px;
+}
+
+header h1, header h2 {
+  /* color: #263d36; */
+  color: #ffffff;
+  font-size: 2.5em;
+  font-weight: 300;
+  text-align: justify;
+}
+
+header h2 {
+  margin-top: 1em;
+}
+
+header strong {
+  /* color: #263d36; */
+  color: aliceblue;
+}
+
+main {
+  margin: 4em 0;
+}
+
+.section-about-me {
+  margin: 3em 0;
+}
+
+.section-about-me h2 {
+  margin: 1em 0;
+}
+
+.section-about-me p {
+  font-size: 1.2rem;
+}
+
+.section-link {
+  margin: 2em 0;
+}
+
+.articles-link {
+  display: flex;
+  justify-content: space-around;
+}
+
+.articles-link article p {
+  font-size: 1.2rem;
+}
+
+.articles-link > article > a > img {
+  height: 2rem;
+}
+
+.section-skills > article > h2{
+  margin: 1em 0;
+}
+
+.section-skills > article > p {
+  margin: 1em 0;
+}
+
+.section-skills > article > ul {
+  list-style-type:circle;
+}
+.section-form {
+  background-color: #fff;
+  color: #fff;
+  padding: 8px;
+  margin: 50px auto;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.form-container > h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.form-container{
+  padding: 20px;
+  background-color: #263d36;
+  border-radius: 16px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+.button {
+  background-color: #263d36;
+  color: #fff;
+  border: 0.5px solid white;
+  width: 60%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.4s ease;
+  font-family: monospace;
+}
+
+.button:hover {
+  background-color:#fff; ;
+  color: #263d36;
+  transform: scale(1.1);
+}

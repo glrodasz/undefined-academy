@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./scss/styles.scss">
+    <title>Formulario</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__img" id="logo" src="./img/logo.png" alt="Mi logo">
+        <h1 class="header__title">WILMER GULCOCHIA</h1>
+        <p class="header__parrafo">
+            <a class="header__github--link" href="https://github.com/nobody-redhawk" target="_blank">Visite mi
+                Github</a>
+        </p>
+        <p class="header__parrafo"><code><em> «Pasión por la tecnología» </em></code></p>
+    </header>
+    <main>
+        <!-- formulario -->
+        <div class="container">
+            <h2 class="form__title">Contacto</h2>
+            <p class="form__parrafo"><em>Por favor rellene el formulario</em> </p>
+            <form action="/server" method="get" id="form" class="form">
+                <div class="form__group">
+                    <label class="h6" class="form-label" for="name">Nombre</label>
+                    <input class="form-control" type="text" id="name" name="name"
+                        placeholder="Ingrese su nombre completo" required>
+                </div>
+                <div class="form__group">
+                    <label class="h6" class="form-label" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email"
+                        placeholder="Ingrese su correo electrónico" required>
+                </div>
+                <div>
+                    <label class="h6" class="form-label" for="description">Presupuesto</label>
+                    <div class="form_check">
+                        <input class="form-check-input" id="10000" name="budge" type="radio" value="10000">
+                        <label class="form-check-label" for="10000">$10000</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="5000" name="budge" type="radio" value="5000">
+                        <label class="form-check-label" for="5000">$5000</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="1000" name="budge" type="radio" value="1000">
+                        <label class="form-check-label" for="1000">$1000</label>
+                    </div>
+                    <div class="help">*Este presupuesto es la base no el total.</div>
+                </div>
+                <div class="col-md-3">
+                    <label class="h6" class="form-label" for="type">Tipo de proyecto</label>
+                    <select class="form-select" name="type" id="type" required>
+                        <option value="" disabled selected>Seleccion una opcion</option>
+                        <option value="website">Website</option>
+                        <option value="webapp">Webapp</option>
+                        <option value="mobileapp">Mobile app</option>
+                        <option value="design">Diseño</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="h6" class="form-label" for="description">Descripción</label>
+                    <textarea class="form-control" name="description" id="description" cols="30" rows="10"
+                        required></textarea>
+                    <div class="help">*Haz una descripcion del proyecto en al menos 500 palabras.</div>
+                </div>
+                <div class="mb-3 form-check">
+                    <label class="h6" class="form-check-label" for="terms">
+                        <input class="form-check-input" id="terms" name="terms" type="Checkbox" required>
+                        <span>Acepto los terminos y condiciones</span>
+                    </label>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary bg-danger border-danger" class="form__button" type="submit" id="enviar">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+<footer class="footer">
+    <a class="footer__button" href="https://github.com/nobody-redhawk" target="_blank">Realizado
+        por<strong> @nobody-redhawk</strong></a>
+</footer>
+
+</html>

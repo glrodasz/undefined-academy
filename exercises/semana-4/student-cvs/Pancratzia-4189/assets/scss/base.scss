@@ -1,0 +1,219 @@
+
+@use "variables.scss" as v;
+
+.header {
+  background-color: v.$spicy-pink;
+  padding-top: 3rem;
+
+  .contenedor-header {
+    .titulo-header {
+      text-align: center;
+      color: v.$white;
+      font-size: 3rem;
+      display: block;
+
+      span {
+        color: v.$dawn-pink;
+        font-size: 2rem;
+      }
+    }
+
+    .img-header {
+      max-width: 20rem;
+      max-height: 20rem;
+      padding: 1rem;
+
+      img {
+        border-radius: 50%;
+        border: 3px solid v.$white;
+      }
+    }
+
+    .header-nav {
+      text-align: center;
+      padding-bottom: 1rem;
+
+      a {
+        color: v.$white;
+        font-size: 4rem;
+        margin: 2rem;
+        transition: all 0.3s;
+
+        &:hover {
+          color: v.$dawn-pink;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  .contenedor-principal {
+    .section {
+      color: v.$black;
+      text-align: center;
+      margin: 2rem 0 0;
+      padding: 2rem 0 4rem;
+      border-bottom: 1px dashed v.$clam-shell;
+
+      &:last-of-type {
+        border: none;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      h2 {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        color: v.$spicy-pink;
+        letter-spacing: 0.5rem;
+      }
+
+      .section-contenido {
+        line-height: 1.5;
+
+        span {
+          font-weight: bold;
+        }
+
+        time {
+          color: v.$spicy-pink;
+          font-weight: bold;
+        }
+      }
+
+      .article {
+        &.educacion {
+          margin-bottom: 2rem;
+        }
+      }
+
+      &.tecnologias {
+        padding-bottom: 3rem;
+
+        .section-contenido {
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-around;
+          .icono {
+            font-size: 5rem;
+            margin: 1rem;
+          }
+        }
+      }
+
+      &.idiomas {
+        .section-contenido {
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+
+      &.formulario {
+        .form {
+          .form-group {
+            input,
+            textarea {
+              background: none;
+              border: none;
+              font-family: inherit;
+              border-bottom: solid 2px v.$spicy-pink;
+              color: v.$spicy-pink;
+              font-size: 1.4rem;
+              font-weight: 400;
+              letter-spacing: 1px;
+              margin: 0em 0 1.875em 0;
+              padding: 0 0 0.875em 0;
+              text-transform: uppercase;
+              width: 100%;
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              -ms-box-sizing: border-box;
+              -o-box-sizing: border-box;
+              box-sizing: border-box;
+              -webkit-transition: all 0.3s;
+              -moz-transition: all 0.3s;
+              -ms-transition: all 0.3s;
+              -o-transition: all 0.3s;
+              transition: all 0.3s;
+            }
+
+            textarea {
+              resize: vertical;
+              min-height: 3rem;
+              height: 3rem;
+            }
+
+            input:focus,
+            textarea:focus {
+              outline: none;
+              padding: 0 0 0.875em 0;
+            }
+          }
+
+          .botones {
+            input {
+              display: block;
+              width: 100%;
+              margin: 1rem 0;
+
+              &:last-of-type {
+                margin-bottom: 0;
+              }
+            }
+
+            .form-btn {
+              background: none;
+              border: solid 2px v.$spicy-pink;
+              color: v.$spicy-pink;
+              cursor: pointer;
+              display: inline-block;
+              font-family: inherit;
+              font-size: 1rem;
+              font-weight: bold;
+              outline: none;
+              padding: 20px 35px;
+              text-transform: uppercase;
+              transition: all 0.3s ease;
+
+              &:hover {
+                color: v.$clam-shell;
+              }
+
+              &:active {
+                background: v.$spicy-pink;
+                color: v.$clam-shell;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer{
+  background-color: v.$spicy-pink;
+  padding: 2rem 0;
+  bottom: 0;
+  width: 100%;
+  color: v.$white;
+  font-size: 1.4rem;
+  .flex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+      font-weight: bold;
+    }
+    
+    time{
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+  }
+}
+
+
+
+

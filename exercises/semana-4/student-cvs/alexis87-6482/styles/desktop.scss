@@ -1,0 +1,83 @@
+@use "./variables.scss" as *;
+
+@media screen and (min-width:992px) {
+    body {
+          margin: 20px;
+          height: 20px;
+    }
+    .presentacion {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: 4fr;
+          gap: 15px;
+          }
+    .p-1 {
+            grid-column: 1/4;
+    }
+  
+  }
+  
+  /*Estilos formulario*/
+ 
+  .form-group {
+      
+    margin: 20px 0;
+    }
+  
+  label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+  
+  }
+  textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+  }
+  label, input {
+  vertical-align: middle;
+  }
+  input[type="text"], input[type="email"], input[type="tel"], textarea {
+  background: $wildSand;
+  border: 1px solid $alto;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: $mineShaft;
+  }
+  .help {
+  font-size: 12px;
+  margin-top: 10px;
+  color: $gray;
+  }
+  label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $tundora;
+  }
+  button {
+  padding: 16px 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid $deepKoamaru;
+  background:$cerulean ;
+  color: $mineShaft;
+  text-shadow: -1px -1px 0px $alto ;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px $codGray;
+  cursor: pointer;
+  margin-bottom: 30px;
+  }
+  button:hover {
+  background: $havelockBlue;
+  }
+  button:active {
+  background: #4c80c9;
+  box-shadow: none;
+  }
+  form {
+  accent-color: $havelockBlue;
+  }
+  input:focus-visible, textarea:focus-visible {
+  border: 1px solid $havelockBlue;
+  outline: 3px solid $poloblue;
+  }

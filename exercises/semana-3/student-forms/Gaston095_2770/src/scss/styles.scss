@@ -1,0 +1,24 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+body {
+    background-color: #5585b5;
+}
+
+p {
+    color: #555;
+}
+
+.container {
+    max-width: 600px;
+    background-color: #fff;
+}
+
+.title-form {
+    background-color: #eee;
+}
+
+h1, label {
+    color: #333;
+}
+ 

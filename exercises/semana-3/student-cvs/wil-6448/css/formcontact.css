@@ -1,0 +1,104 @@
+.form__group {
+    /* border: 1px solid tomato; */
+    margin: 1.25rem 0;
+  }
+
+  .form__title, .form__parrafo {
+    text-align: center;
+    margin: 0;
+    
+  }
+
+  .form__title {
+    margin-top: 1.25rem;
+  }
+  
+  label, input {
+    vertical-align: middle; /* sirve para alinear de forma vertical a elementos inline */
+  }
+  
+  /* label, input:not([type="radio"], input[type="checkbox"]) */
+  label, input[type="text"], input[type="email"]{
+    width: 100%;
+  
+  }
+  
+  label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.750rem;
+    color: #444;
+  }
+  
+  textarea {
+    display: block;
+    width: 100%;
+    resize: vertical; /* bloquea el lado vertical */
+  }
+  
+  input[type="text"], input[type="email"], textarea {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    color: #333;
+  }
+  
+  .help {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+ .form__button {
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    
+    font-weight: bold;
+    border: 1px solid #b22e4a;
+    background: #e41a4a;
+    /* text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5); */
+    color: #333;
+    border-radius: 50px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    display: flex;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+  } 
+  
+.form__button:hover {
+    background: #f03158 ;
+    color: white !important;
+  } 
+  
+ .form__button:active {
+    background:  #b62645;
+    box-shadow: none;
+    box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5);
+  }
+
+.form__contact {
+    accent-color: #bd1c3c;
+    background: #f4f1f1;
+    padding: 0.5rem 2rem;
+  }
+  
+input:focus-visible, textarea:focus-visible {
+    /* border: 1px solid #bd1c3c; */
+    outline: 2px solid #e22a4f;
+  }
+  
+  .form__contact--title {
+    text-align: center;
+  }
+
+  .form__group--button {
+    display: flex;
+    justify-content: center;
+  }

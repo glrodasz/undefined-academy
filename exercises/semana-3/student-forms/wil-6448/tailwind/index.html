@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/main.mjs"></script>
+    <title>formulario</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__img" id="logo" src="./src/assets/logo.png" alt="Mi logo">
+        <h1 class="header__title">WILMER GULCOCHIA</h1>
+        <p class="header__parrafo">
+            <a class="header__github--link" href="https://github.com/nobody-redhawk" target="_blank">Visite mi
+                Github</a>
+        </p>
+        <p class="header__parrafo"><code><em> «Pasión por la tecnología» </em></code></p>
+    </header>
+    <main>
+        <div class="antialiased text-gray-900 px-6 max-w-xl mx-auto py-12 divide-y md:max-w-4xl">
+            <div>
+                <h2 class="text-2xl font-bold">Contacto</h2>
+                <p class="mt-2 text-lg text-gray-600"><em>Por favor rellene el formulario</em> </p>
+            </div>
+            <div class="mt-8 max-w-sm">
+                <form action="/server" method="get" id="form">
+                    <div class="grid grid-cols-1 gap-6">
+                        <div class="block">
+                            <label class="text-gray-700 font-semibold" for="name">Nombre</label>
+                            <input
+                                class="mt-1 block w-full rounded-md outline-red-700 border border-solid border-gray-600 p-2"
+                                type="text" id="name" name="name" placeholder="Ingrese su nombre completo" required>
+                        </div>
+                        <div class="block">
+                            <label class="text-gray-700 font-semibold" for="email">Email</label>
+                            <input
+                                class="mt-1 block w-full rounded-md outline-red-700 border border-solid border-gray-600 p-2"
+                                type="email" id="email" name="email" placeholder="Ingrese su correo electrónico"
+                                required>
+                        </div>
+                        <div class="block">
+                            <label class="text-gray-700 font-semibold" for="description">Presupuesto</label>
+                            <div class="block">
+                                <input class="form-radio" id="10000" name="budge" type="radio" value="10000">
+                                <label class="text-gray-700" for="10000">$10000</label>
+                            </div>
+                            <div class="block">
+                                <input class="form-radio" id="5000" name="budge" type="radio" value="5000">
+                                <label class="text-gray-700" for="5000">$5000</label>
+                            </div>
+                            <div class="block">
+                                <input class="form-radio" id="1000" name="budge" type="radio" value="1000">
+                                <label class="text-gray-700 rounded-sm" for="1000">$1000</label>
+                            </div>
+                            <div class="help text-xs">*Este presupuesto es la base no el total.</div>
+                        </div>
+                        <div>
+                            <label class="text-gray-700 font-semibold" for="type">Tipo de proyecto</label>
+                            <select
+                                class="block w-full mt-1 rounded-md outline-red-700 border border-solid border-gray-600 p-2"
+                                name="type" id="type" required>
+                                <option value="" disabled selected>Seleccion una opcion</option>
+                                <option value="website">Website</option>
+                                <option value="webapp">Webapp</option>
+                                <option value="mobileapp">Mobile app</option>
+                                <option value="design">Diseño</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="text-gray-700 font-semibold" for="description">Descripción</label>
+                            <textarea
+                                class="mt-1 block w-full rounded-md outline-red-700 border border-solid border-gray-600 p-2"
+                                name="description" id="description" cols="30" rows="3" required></textarea>
+                            <div class="help text-xs">*Haz una descripcion del proyecto en al menos 500 palabras.</div>
+                        </div>
+                        <div class="block mt-2">
+                            <label class="inline-flex items-center" for="terms">
+                                <input class="form-check-input" id="terms" name="terms" type="Checkbox" required>
+                                <span class="ml-2">Acepto los terminos y condiciones</span>
+                            </label>
+                        </div>
+                        <div class="col-12">
+                            <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full"
+                                class="form__button" type="submit" id="enviar">Enviar</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+
+</body>
+
+<footer class="footer">
+    <a class="footer__button" href="https://github.com/nobody-redhawk" target="_blank">Realizado por<strong>
+            @nobody-redhawk</strong></a>
+</footer>
+
+</html>

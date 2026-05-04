@@ -1,0 +1,152 @@
+html body {
+  box-sizing: border-box;}
+* {
+  box-sizing: inherit;}
+
+header{ 
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+  background-color: #0c0b0b;
+  font-family: Arial;
+  font-size: 15px;
+  color: white;
+  margin: 20px;
+  height: 20px;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+.presentacion {
+      display:flex;
+      flex-direction: column;
+      margin: 10px auto;
+}
+a {
+  display: flex;
+  justify-content: center;
+  border: 2px solid rgb(237, 250, 57);
+  border-radius: 10px;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  font: white;
+}
+ol {
+  padding-inline-start: 20px;
+}
+.alias {
+  padding: 5px;
+}
+
+.alias li {
+  font-family: monospace;
+  font-size: 12px;
+  border: solid rgb(219, 223, 22);
+  border-radius: 10px;
+  background-color: rgb(224, 232, 9);
+  color: #0c0b0b;
+  padding: 10px;
+  list-style-type: none;
+  margin-bottom: 10px;
+  }
+  
+@media screen and (min-width:992px) {
+  body {
+        margin: 20px;
+        height: 20px;
+  }
+  .presentacion {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 4fr;
+        gap: 15px;
+        }
+  .p-1 {
+          grid-column: 1/4;
+  }
+
+}
+
+/*Estilos formulario*/
+.form-group {
+    
+  margin: 20px 0;
+  }
+
+label, input:not([type="radio"], [type="checkbox"]) {
+  width: 100%;
+
+}
+textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+label, input {
+vertical-align: middle;
+}
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+background: white;
+border: 1px solid lightgray;
+border-radius: 4px;
+padding: 8px 10px;
+color: #333;
+}
+.help {
+font-size: 12px;
+margin-top: 10px;
+color: gray;
+}
+label {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #444;
+}
+button {
+padding: 16px 60px;
+text-transform: uppercase;
+font-weight: bold;
+border: 1px solid rgb(26, 17, 119);
+background:#08aaea ;
+color: #333;
+text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.5) ;
+border-radius: 8px;
+box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+cursor: pointer;
+margin-bottom: 30px;
+}
+button:hover {
+background: #639ddb;
+}
+button:active {
+background: #4c80c9;
+box-shadow: none;
+}
+form {
+accent-color: #639ddb;
+}
+input:focus-visible, textarea:focus-visible {
+border: 1px solid #639ddb;
+outline: 3px solid #89aed6;
+}
+
+ 
+
+
+

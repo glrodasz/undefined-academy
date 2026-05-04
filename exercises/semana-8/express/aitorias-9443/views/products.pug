@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  include menu.pug
+
+  div.items-center.flex.flex-wrap.gap-20.justify-between
+    h1 Listado de productos
+    a.button(href="/products/create") Crear producto
+  div.table-container
+    table
+      thead
+        tr
+          th Nombre
+          th Descripción
+          th Precio
+          th Acciones
+      tbody
+        each product in products
+          tr
+            td #{product.price}
+            td #{product.description}
+            td #{product.price} €
+            td
+              div.table-actions
+                a.button(href=`/products/${product._id}`) Ver
+                a.button(href=`/products/${product._id}/edit`) Editar
+                form.table-form(action=`/products/${product._id}/delete` method="POST" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este producto?');")
+                  button(type="submit" class="btn-delete") Eliminar

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form with Bootstrap</title>
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/main.mjs" defer></script>
+</head>
+
+<body class="mx-auto">
+  <main class="container">
+    <h2 class="text-center mt-3 fw-bold">Contacto: </h2>
+    <form class="" id="form">
+      <div class="mb-3">
+        <label class="form-label text-uppercase fw-bold text-secondary" for="name">Nombre:</label>
+        <input class="form-control" type="text" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label text-uppercase fw-bold text-secondary" for="email">Correo Electronico:</label>
+        <input class="form-control" type="email" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label text-uppercase fw-bold text-secondary" for="comments">Comentarios:</label>
+        <textarea class="form-control" name="comments" id="comments" rows="5" required minlength="50"></textarea>
+      </div>
+      <div class="d-grid gap-2 col-2 mx-auto">
+        <button type="submit" id="btnSubmit" class="shadow btn btn-secondary mb-3 text-center">Enviar</button>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>

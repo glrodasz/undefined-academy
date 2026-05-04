@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background: rgb(0,0,0);
+background: linear-gradient(97deg, rgba(0,0,0,1) 0%, rgba(7,55,53,1) 28%, rgba(3,67,59,1) 47%, rgba(4,92,70,1) 60%, rgba(5,113,99,1) 72%, rgba(6,146,123,1) 87%, rgba(7,172,151,1) 95%, rgba(8,178,195,1) 98%, rgba(9,230,187,1) 100%);}
+  
+  li {
+    color: whitesmoke;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #d4d4d4;
+    padding: 10px;
+    border-radius: 5px;
+    color: #a3a3a3;
+  }
+  
+  img {
+    border-radius: 1%;
+    width: 100%;
+    height: 100%;
+  }
+  
+  input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(242,232,11,1) 100%);
+    width: 400px;
+    background: WhiteSmoke;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px auto auto;
+    gap: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 /4;
+    grid-row: 1 / 2;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  div:last-child {
+    grid-column: 1 / 4 ;
+  }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Mi perfil en Github</title>
+  </head>
+  <body>
+    <header class="cabecera">
+      <div class="capa"></div>
+      <h1>
+        Hola, soy nencodev<img
+          class="logo"
+          src="https://avatars.githubusercontent.com/u/81738767?v=4"
+          alt="Logo de nencodev"
+        />
+      </h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li>|</li>
+          <li><a href="./contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-contact">
+      <h1>Contáctame</h1>
+      <form action="/submit-form" method="get">
+        <p>Por favor, llena el siguiente formulario</p>
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Ingrese su nombre"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Ingrese su correo electrónico"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <fieldset>
+            <legend>Presupuesto del proyecto</legend>
+            <input type="radio" name="budget" id="10000" value="10000" required/>
+            <label for="10000">$10000</label>
+
+            <input type="radio" name="budget" id="5000" value="5000" required/>
+            <label for="5000">$5000</label>
+
+            <input type="radio" name="budget" id="1000" value="1000" required/>
+            <label for="1000">$1000</label>
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <label for="type">Tipo de proyecto</label>
+          <select name="type" id="type" required>
+            <option value="" disabled selected>Seleccione un proyecto </option>
+            <option value="website">Sitio Web</option>
+            <option value="webapp">Webapp</option>
+            <option value="mobileapp">Mobile App</option>
+          </select>
+        </div>
+        <div class="form-group">
+           <label for="description">Descripción</label>
+           <textarea name="description" id="description" rows="6" placeholder="Describa brevemente su proyecto" required></textarea>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="check" id="check" required>
+          <label for="check">Acepto los términos y condiciones</label>
+        </div>
+        <button>Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>

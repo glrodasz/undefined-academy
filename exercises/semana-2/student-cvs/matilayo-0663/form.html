@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <main>
+        <article>
+            <header>
+                <h1>Contact Form</h1>
+                <p class="coment">If you want to contact me, please complete the following form</p>
+            </header>
+
+            <form>
+                <div class="N-E">
+                    <label for="Name">Name:</label><input type="text" id="Name" placeholder="Enter your name..." required>
+                    <label for="Email">Email:</label><input type="email" id="Email" placeholder="Enter your email..." required>
+                </div>
+
+                <div class="form-group">
+                    <p class="indication">Please indicate in wich language you want us to comunicate</p>
+                    <input value="English" type="radio" id="English" name="language" required><label for="English">English</label>
+                    <input value="Español" type="radio" id="Español" name="language" required><label for="Español">Español</label>
+                </div>
+
+                <div class="form-group">
+                    <p class="indication">Why do you want to contact me?</p>
+                    <input value="Job-offer" name="reason" id="Job-offer" type="checkbox"><label for="Job-offer">Job offer</label>
+                    <input value="Project-colaboration" name="reason" id="Project-colaboration" type="checkbox"><label for="Project-colaboration">Project colaboration</label>
+                    <input value="Educative-offer" name="reason" id="Educative-offer" type="checkbox"><label for="Educative-offer">Educative offer</label>
+                    <input value="Other" name="reason" id="Other" type="checkbox"><label for="Other">Other</label>
+                    <textarea placeholder="Please describe here a little more about why do you want to contact me" required></textarea>
+                </div>
+
+                <div class="form-group select">
+                    <p class="indication">Where de you find my personal web?</p>
+                    <select required>
+                        <option disabled selected value="">Select here</option>
+                        <option value="Linkedin">Linkedin</option>
+                        <option value="Github">Github</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <button type="submit">Submit</button>
+
+            </form>
+        </article>
+    </main>
+</body>

@@ -1,0 +1,137 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 50em;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  padding: 4em 1em;
+  color: #333;
+  background-color: #f3f4f6;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+.alias li {
+  margin-bottom: 10px;
+  font-family: monospace;
+  font-size: 15px;
+  border: solid #f9a8d4;
+  border-radius: 10px;
+  background-color: #f9a8d4;
+  padding: 10px;
+  list-style-type: none;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  border: 2px solid #f9a8d4;
+  border-radius: 10px;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  background: #f9a8d4;
+  color: white;
+}
+
+img {
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-group {
+  margin: 20px 0;
+}
+
+label,
+input {
+  vertical-align: middle;
+}
+
+label,
+input:not([type="radio"], [type="checkbox"]) {
+  width: 100%;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+
+label {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+}
+
+.help {
+  font-size: 12px;
+  margin-top: 10px;
+  color: gray;
+}
+
+button {
+  padding: 16px 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #f472b6;
+  background: #f9a8d4;
+  color: #333;
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  background: #fbcfe8;
+}
+
+button:active {
+  background: #f472b6;
+  box-shadow: none;
+}
+
+form {
+  accent-color: #f9a8d4;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  border: 1px solid #f9a8d4;
+  outline: 3px solid #fbcfe8;
+}

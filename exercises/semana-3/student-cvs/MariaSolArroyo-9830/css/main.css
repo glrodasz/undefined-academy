@@ -1,0 +1,256 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+html{
+  box-sizing: border-box;
+}
+
+*{
+  box-sizing: inherit;
+}
+body{
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    color: #566b78;
+    background: whitesmoke;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px;
+}
+
+header img{
+    width: 40%;
+}
+
+header{
+    background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 5vw 2em;
+  text-align: center;
+  color: #333;
+  text-shadow: 1px 1px 1px #333;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+header a{
+    color: whitesmoke;
+    border: 1px solid #5eead4;
+    background: #14b8a6;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+.botonesinicio{
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+.quiensoy{
+    border: 1px dotted #333;
+    padding: 20px 35px;
+    border-radius: 20px;
+}
+
+.sobremi, .habilidades{
+    width: 70%;
+}
+
+h3{
+    color: whitesmoke;
+    border: 1px solid #5eead4;
+    background: #14b8a6;
+    border-radius: 10px;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #333;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.undefined h2{
+    border: 1px dotted #333;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+
+
+.botonhome img{
+    width: 30px;
+}
+
+
+/* Formulario */
+
+.page{
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-group{
+    /* border: 1px solid tomato; */
+    margin: 20px 0;
+}
+
+label, input, span{
+    vertical-align: middle;
+}
+
+label, input[type="text"], input[type="email"] {
+    width: 100%;
+} 
+
+.conta{
+    
+    color: #333333dc;
+    border-radius: 10px;
+    padding: 5px 0px;
+    text-decoration: underline;
+}
+
+
+
+form{
+    accent-color: #14b8a6;
+}
+
+input:focus-visible, textarea:focus-visible{
+    outline: 2px solid #5eead4;
+  }
+
+  .description{
+    display: flex;
+    flex-direction: column;
+  }
+
+  label, legend{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #444;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+.help{
+    font-size: 11px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: gray;
+}
+
+fieldset div{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+button{
+    padding: 16px 60px ;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #14b8a6;
+    background: #5eead4;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 1px 1px rgba(0,0,0 , 0.5);
+    text-shadow: -1px -1px 0 #fee2e2;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.volver{
+    margin: 30px 0;
+}
+
+.adobe{
+    color: #32756bb7;
+}
+th,tr,td{
+    border: 0.6px solid #333;
+    padding: 5px;
+    margin: 5px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: self-start ;
+}
+
+.whatsapp{
+    margin-top: 10px;
+}
+
+/* Media query */
+
+@media screen and (min-width:992px) {
+
+    .botonesinicio{
+        flex-direction:row;
+        justify-content: space-between;
+    }
+
+    body{
+        max-width: 70em;
+    }
+
+    th,tr,td{
+        border: 0px solid #333;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    fieldset{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .whatsapp{
+        margin: 0;
+    }
+
+
+    .grupobotones{
+        display: flex;
+    }
+}
+
+
+
+/* Footer */
+footer{
+    text-align: center;
+}
+
+

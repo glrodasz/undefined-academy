@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(109, 229, 187);
+    max-width: 1000px;
+    margin: 0 auto;
+    color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding-bottom: 600px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover,
+section li:hover {
+    color: red;
+}
+
+h2,
+h4 {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    position: absolute;
+    bottom: -600px;
+    left: 420px;
+}
+
+section li {
+    color: rgb(95, 11, 103);
+}
+
+.form-1 {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.form-1 input {
+    width: 95%;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    align-items: middle;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 32px;
+    border-radius: 5px;
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: blue;
+    color: white;
+}
+
+input[type="submit"]:active {
+    background-color: blue;
+    color: white;
+}
+
+input[type="text"],
+input[type="email"] {
+    border-radius: 2px;
+    padding: 4px 8px;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+select {
+    width: 95%;
+}
+
+.form-2 {
+    margin: 10px 250px;
+}

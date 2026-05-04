@@ -1,0 +1,420 @@
+[
+  {
+    "id": 24,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_12.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_12.jpg"
+    ],
+    "imageAlt": [
+      "Icono de portatil con un cohete despegando saliendo de la pantalla", "Imagen de JavaScript"
+    ],
+    "imageColor": [
+      "#f1c32a", "#c06e0c"
+    ],
+    "tags": ["JavaScript"],
+    "title": "5 consejos para mejorar tu código JavaScript",
+    "text": "En este artículo te compartimos 5 consejos para mejorar la calidad de tu código JavaScript. Entre ellos se encuentran: documentar tu código, mantener una estructura clara, utilizar nombres significativos, evitar la duplicación de código y realizar pruebas de calidad. Siguiendo estos consejos podrás escribir un código más eficiente, legible y fácil de mantener.",
+    "author": "Juan Pérez",
+    "date": "2023-05-07"
+  }, {
+    "id": 23,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_11.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_11.jpg"
+    ],
+    "imageAlt": [
+      "Icono de portatil con estructura de una promesa en pantalla", "Imagen de Promesas en JavaScript"
+    ],
+    "imageColor": [
+      "#f1c32a", "#c06e0c"
+    ],
+    "tags": ["JavaScript"],
+    "title": "Cómo utilizar las promesas en JavaScript",
+    "text": "Las promesas son una característica importante en JavaScript que permite manejar operaciones asíncronas de manera más eficiente. En este artículo te explicamos cómo utilizar las promesas en JavaScript, desde su creación hasta su manejo en casos de éxito o error. Además, te mostramos algunos ejemplos prácticos de su uso en diferentes situaciones.",
+    "author": "María Gómez",
+    "date": "2023-05-06"
+  }, {
+    "id": 22,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_6.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_6.jpg"
+    ],
+    "imageAlt": [
+      "Icono de maquetación en doble columna", "Una imagen de codigo CSS"
+    ],
+    "imageColor": [
+      "#45d4ff", "#0069d6"
+    ],
+    "tags": [
+      "CSS", "UI", "Web"
+    ],
+    "title": "Cómo utilizar CSS Grid para crear diseños avanzados",
+    "text": "CSS Grid es otra característica de CSS que te permitirá crear diseños más avanzados y flexibles. En este artículo, te enseñaremos cómo utilizar CSS Grid para crear diseños complejos y personalizados. Aprenderás algunos de los conceptos básicos de CSS Grid y te mostraremos algunos ejemplos prácticos de cómo puedes utilizarlo para mejorar tus diseños web.",
+    "author": "Carlos Gomez",
+    "date": "2023-05-05"
+  }, {
+    "id": 21,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_9.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_9.jpg"
+    ],
+    "imageAlt": [
+      "Icono de marcador de velocidad", "Imagen de velocidad de carga"
+    ],
+    "imageColor": [
+      "#f1c32a", "#c06e0c"
+    ],
+    "tags": [
+      "JavaScript", "Web"
+    ],
+    "title": "Cómo mejorar la velocidad de carga de tu sitio web con JavaScript",
+    "text": "La velocidad de carga de un sitio web es un factor importante para mejorar la experiencia del usuario y el posicionamiento en motores de búsqueda. En este artículo te mostramos cómo utilizar JavaScript para mejorar la velocidad de carga de tu sitio web. Algunas de las técnicas que te mostramos son: cargar scripts de manera asíncrona, reducir el tamaño de los archivos JavaScript, utilizar técnicas de compresión y optimizar el código para su ejecución en el navegador.",
+    "author": "Pedro Hernández",
+    "date": "2023-05-05"
+  }, {
+    "id": 20,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_8.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_6.jpg"
+    ],
+    "imageAlt": [
+      "Icono de estrella", "Una imagen de codigo CSS"
+    ],
+    "imageColor": [
+      "#45d4ff", "#0069d6"
+    ],
+    "tags": [
+      "CSS", "UI"
+    ],
+    "title": "Cómo crear animaciones impresionantes con CSS",
+    "text": "Las animaciones pueden ser una excelente manera de agregar un toque visualmente interesante a tu sitio web. En este artículo, te enseñaremos cómo crear animaciones impresionantes utilizando CSS. Exploraremos algunos de los conceptos básicos de las animaciones en CSS y te mostraremos algunos ejemplos prácticos para que puedas comenzar a crear tus propias animaciones.",
+    "author": "Maria Rodriguez",
+    "date": "2023-05-03"
+  }, {
+    "id": 19,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_7.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_7.jpg"
+    ],
+    "imageAlt": [
+      "Icono de pantalal de ordenador con simbolos de v y x", "Grupo de personas probando una aplicación"
+    ],
+    "imageColor": [
+      "#dfff80", "#50ab4c"
+    ],
+    "tags": [
+      "UX", "UI"
+    ],
+    "title": "Cómo realizar pruebas de usabilidad en el diseño UX/UI",
+    "text": "Las pruebas de usabilidad son una herramienta esencial para evaluar la calidad del diseño UX/UI y para identificar posibles problemas en la experiencia del usuario. En este artículo, explicaremos los pasos necesarios para realizar pruebas de usabilidad efectivas, desde la definición de los objetivos y la selección de los participantes, hasta la interpretación de los resultados y la implementación de mejoras en el diseño.",
+    "author": "Pedro Rodríguez",
+    "date": "2023-05-02"
+  }, {
+    "id": 18,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_6.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_6.jpg"
+    ],
+    "imageAlt": [
+      "Icono de maquetación en doble columna", "Una imagen de codigo CSS"
+    ],
+    "imageColor": [
+      "#45d4ff", "#0069d6"
+    ],
+    "tags": [
+      "CSS", "Web"
+    ],
+    "title": "Cómo utilizar Flexbox en CSS para crear diseños modernos",
+    "text": "Flexbox es una de las características más poderosas de CSS, y es especialmente útil para crear diseños modernos y responsivos. En este artículo, exploraremos algunos de los conceptos básicos de Flexbox y cómo utilizarlo para crear diseños que se adapten a diferentes tamaños de pantalla. También repasaremos algunos ejemplos prácticos de cómo usar Flexbox en diferentes situaciones de diseño.",
+    "author": "Juan Perez",
+    "date": "2023-05-01"
+  }, {
+    "id": 17,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_5.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_5.jpg"
+    ],
+    "imageAlt": [
+      "Icono pantalla de ordenador con instrumentos de diseño", "Personas usando una aplicación"
+    ],
+    "imageColor": [
+      "#dfff80", "#50ab4c"
+    ],
+    "tags": [
+      "UX", "UI"
+    ],
+    "title": "Los beneficios de un diseño UX/UI bien pensado",
+    "text": "El diseño UX/UI es una parte fundamental en el desarrollo de cualquier producto digital, ya sea una aplicación móvil o una página web. Un buen diseño puede hacer la diferencia entre una experiencia de usuario positiva o negativa, lo que a su vez puede tener un impacto significativo en la satisfacción del usuario y en los resultados del negocio. En este artículo, exploraremos los principales beneficios de un diseño UX/UI bien pensado, incluyendo la mejora de la usabilidad, la reducción de la tasa de abandono, y el aumento de la fidelidad del usuario.",
+    "author": "Juan Pérez",
+    "date": "2023-05-01"
+  }, {
+    "id": 16,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_4.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_4.jpg"
+    ],
+    "imageAlt": 
+    ["Icono de formulario en un portatil", "Imagen de un formulario HTML en una pantalla de ordenador"],
+    "tags": [
+      "HTML", "Web"
+    ],
+    "title": "Cómo crear formularios HTML efectivos",
+    "text": "Los formularios HTML son una de las principales formas en que los usuarios interactúan con un sitio web. En este artículo, veremos cómo crear formularios HTML efectivos mediante el uso de etiquetas semánticas, validación de formularios y técnicas de diseño para mejorar la usabilidad y accesibilidad.",
+    "author": "Carlos Martínez",
+    "date": "2023-04-30"
+  }, {
+    "id": 15,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_3.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_3.jpg"
+    ],
+    "imageAlt": [
+      "Icono de circuo cromatico tricolor", "Ilustración de una pantalla con elementos de diseño modernos"
+    ],
+    "imageColor": [
+      "#dfff80", "#50ab4c"
+    ],
+    "tags": [
+      "UX", "UI"
+    ],
+    "title": "Las tendencias de diseño UX/UI para el 2023",
+    "text": "El diseño UX/UI evoluciona constantemente para adaptarse a las necesidades y preferencias de los usuarios y para seguir las últimas tendencias tecnológicas. En este artículo, analizaremos las tendencias de diseño UX/UI más relevantes para el año 2023, incluyendo la inclusión de elementos 3D, la personalización de la interfaz, y la integración de la inteligencia artificial en la experiencia del usuario.",
+    "author": "María González",
+    "date": "2023-04-30"
+  }, {
+    "id": 14,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_2.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_2.jpg"
+    ],
+    "imageAlt": [
+      "Icono de lupa con un rompecabezas en la lente", "Imagen de una pantalla de ordenador con código HTML"
+    ],
+    "imageColor": [
+      "#F45C43", "#EB3349"
+    ],
+    "tags": [
+      "HTML", "Web"
+    ],
+    "title": "Cómo usar los atributos data-* en HTML",
+    "text": "Los atributos data-* en HTML permiten añadir información adicional a un elemento sin afectar a su apariencia o comportamiento. En este artículo, veremos cómo usar los atributos data-* para almacenar información personalizada en los elementos HTML y cómo acceder a ellos mediante JavaScript.",
+    "author": "María Gómez",
+    "date": "2023-04-25"
+  }, {
+    "id": 13,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_1.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_1.jpg"
+    ],
+    "imageAlt": [
+      "Icono de una estructura de una página web", "Imagen de una persona escribiendo código en un portátil"
+    ],
+    "imageColor": [
+      "#F45C43", "#EB3349"
+    ],
+    "tags": [
+      "HTML", "Web"
+    ],
+    "title": "Cómo estructurar una página web con HTML5",
+    "text": "HTML5 es la última versión de HTML y proporciona una serie de nuevas etiquetas y atributos que facilitan la estructuración de una página web. En este artículo, vamos a revisar los fundamentos de HTML5 y aprenderemos cómo estructurar una página web básica utilizando las nuevas etiquetas semánticas.",
+    "author": "Juan Pérez",
+    "date": "2023-04-20"
+  },  
+  {
+    "id": 12,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_12.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_12.jpg"
+    ],
+    "imageAlt": [
+      "Icono de portatil con un cohete despegando saliendo de la pantalla", "Imagen de JavaScript"
+    ],
+    "imageColor": [
+      "#f1c32a", "#c06e0c"
+    ],
+    "tags": ["JavaScript"],
+    "title": "5 consejos para mejorar tu código JavaScript",
+    "text": "En este artículo te compartimos 5 consejos para mejorar la calidad de tu código JavaScript. Entre ellos se encuentran: documentar tu código, mantener una estructura clara, utilizar nombres significativos, evitar la duplicación de código y realizar pruebas de calidad. Siguiendo estos consejos podrás escribir un código más eficiente, legible y fácil de mantener.",
+    "author": "Juan Pérez",
+    "date": "2023-05-07"
+  }, {
+    "id": 11,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_11.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_11.jpg"
+    ],
+    "imageAlt": [
+      "Icono de portatil con estructura de una promesa en pantalla", "Imagen de Promesas en JavaScript"
+    ],
+    "imageColor": [
+      "#f1c32a", "#c06e0c"
+    ],
+    "tags": ["JavaScript"],
+    "title": "Cómo utilizar las promesas en JavaScript",
+    "text": "Las promesas son una característica importante en JavaScript que permite manejar operaciones asíncronas de manera más eficiente. En este artículo te explicamos cómo utilizar las promesas en JavaScript, desde su creación hasta su manejo en casos de éxito o error. Además, te mostramos algunos ejemplos prácticos de su uso en diferentes situaciones.",
+    "author": "María Gómez",
+    "date": "2023-05-06"
+  }, {
+    "id": 10,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_6.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_6.jpg"
+    ],
+    "imageAlt": [
+      "Icono de maquetación en doble columna", "Una imagen de codigo CSS"
+    ],
+    "imageColor": [
+      "#45d4ff", "#0069d6"
+    ],
+    "tags": [
+      "CSS", "UI", "Web"
+    ],
+    "title": "Cómo utilizar CSS Grid para crear diseños avanzados",
+    "text": "CSS Grid es otra característica de CSS que te permitirá crear diseños más avanzados y flexibles. En este artículo, te enseñaremos cómo utilizar CSS Grid para crear diseños complejos y personalizados. Aprenderás algunos de los conceptos básicos de CSS Grid y te mostraremos algunos ejemplos prácticos de cómo puedes utilizarlo para mejorar tus diseños web.",
+    "author": "Carlos Gomez",
+    "date": "2023-05-05"
+  }, {
+    "id": 9,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_9.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_9.jpg"
+    ],
+    "imageAlt": [
+      "Icono de marcador de velocidad", "Imagen de velocidad de carga"
+    ],
+    "imageColor": [
+      "#f1c32a", "#c06e0c"
+    ],
+    "tags": [
+      "JavaScript", "Web"
+    ],
+    "title": "Cómo mejorar la velocidad de carga de tu sitio web con JavaScript",
+    "text": "La velocidad de carga de un sitio web es un factor importante para mejorar la experiencia del usuario y el posicionamiento en motores de búsqueda. En este artículo te mostramos cómo utilizar JavaScript para mejorar la velocidad de carga de tu sitio web. Algunas de las técnicas que te mostramos son: cargar scripts de manera asíncrona, reducir el tamaño de los archivos JavaScript, utilizar técnicas de compresión y optimizar el código para su ejecución en el navegador.",
+    "author": "Pedro Hernández",
+    "date": "2023-05-05"
+  }, {
+    "id": 8,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_8.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_6.jpg"
+    ],
+    "imageAlt": [
+      "Icono de estrella", "Una imagen de codigo CSS"
+    ],
+    "imageColor": [
+      "#45d4ff", "#0069d6"
+    ],
+    "tags": [
+      "CSS", "UI"
+    ],
+    "title": "Cómo crear animaciones impresionantes con CSS",
+    "text": "Las animaciones pueden ser una excelente manera de agregar un toque visualmente interesante a tu sitio web. En este artículo, te enseñaremos cómo crear animaciones impresionantes utilizando CSS. Exploraremos algunos de los conceptos básicos de las animaciones en CSS y te mostraremos algunos ejemplos prácticos para que puedas comenzar a crear tus propias animaciones.",
+    "author": "Maria Rodriguez",
+    "date": "2023-05-03"
+  }, {
+    "id": 7,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_7.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_7.jpg"
+    ],
+    "imageAlt": [
+      "Icono de pantalal de ordenador con simbolos de v y x", "Grupo de personas probando una aplicación"
+    ],
+    "imageColor": [
+      "#dfff80", "#50ab4c"
+    ],
+    "tags": [
+      "UX", "UI"
+    ],
+    "title": "Cómo realizar pruebas de usabilidad en el diseño UX/UI",
+    "text": "Las pruebas de usabilidad son una herramienta esencial para evaluar la calidad del diseño UX/UI y para identificar posibles problemas en la experiencia del usuario. En este artículo, explicaremos los pasos necesarios para realizar pruebas de usabilidad efectivas, desde la definición de los objetivos y la selección de los participantes, hasta la interpretación de los resultados y la implementación de mejoras en el diseño.",
+    "author": "Pedro Rodríguez",
+    "date": "2023-05-02"
+  }, {
+    "id": 6,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_6.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_6.jpg"
+    ],
+    "imageAlt": [
+      "Icono de maquetación en doble columna", "Una imagen de codigo CSS"
+    ],
+    "imageColor": [
+      "#45d4ff", "#0069d6"
+    ],
+    "tags": [
+      "CSS", "Web"
+    ],
+    "title": "Cómo utilizar Flexbox en CSS para crear diseños modernos",
+    "text": "Flexbox es una de las características más poderosas de CSS, y es especialmente útil para crear diseños modernos y responsivos. En este artículo, exploraremos algunos de los conceptos básicos de Flexbox y cómo utilizarlo para crear diseños que se adapten a diferentes tamaños de pantalla. También repasaremos algunos ejemplos prácticos de cómo usar Flexbox en diferentes situaciones de diseño.",
+    "author": "Juan Perez",
+    "date": "2023-05-01"
+  }, {
+    "id": 5,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_5.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_5.jpg"
+    ],
+    "imageAlt": [
+      "Icono pantalla de ordenador con instrumentos de diseño", "Personas usando una aplicación"
+    ],
+    "imageColor": [
+      "#dfff80", "#50ab4c"
+    ],
+    "tags": [
+      "UX", "UI"
+    ],
+    "title": "Los beneficios de un diseño UX/UI bien pensado",
+    "text": "El diseño UX/UI es una parte fundamental en el desarrollo de cualquier producto digital, ya sea una aplicación móvil o una página web. Un buen diseño puede hacer la diferencia entre una experiencia de usuario positiva o negativa, lo que a su vez puede tener un impacto significativo en la satisfacción del usuario y en los resultados del negocio. En este artículo, exploraremos los principales beneficios de un diseño UX/UI bien pensado, incluyendo la mejora de la usabilidad, la reducción de la tasa de abandono, y el aumento de la fidelidad del usuario.",
+    "author": "Juan Pérez",
+    "date": "2023-05-01"
+  }, {
+    "id": 4,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_4.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_4.jpg"
+    ],
+    "imageAlt": 
+    ["Icono de formulario en un portatil", "Imagen de un formulario HTML en una pantalla de ordenador"],
+    "tags": [
+      "HTML", "Web"
+    ],
+    "title": "Cómo crear formularios HTML efectivos",
+    "text": "Los formularios HTML son una de las principales formas en que los usuarios interactúan con un sitio web. En este artículo, veremos cómo crear formularios HTML efectivos mediante el uso de etiquetas semánticas, validación de formularios y técnicas de diseño para mejorar la usabilidad y accesibilidad.",
+    "author": "Carlos Martínez",
+    "date": "2023-04-30"
+  }, {
+    "id": 3,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_3.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_3.jpg"
+    ],
+    "imageAlt": [
+      "Icono de circuo cromatico tricolor", "Ilustración de una pantalla con elementos de diseño modernos"
+    ],
+    "imageColor": [
+      "#dfff80", "#50ab4c"
+    ],
+    "tags": [
+      "UX", "UI"
+    ],
+    "title": "Las tendencias de diseño UX/UI para el 2023",
+    "text": "El diseño UX/UI evoluciona constantemente para adaptarse a las necesidades y preferencias de los usuarios y para seguir las últimas tendencias tecnológicas. En este artículo, analizaremos las tendencias de diseño UX/UI más relevantes para el año 2023, incluyendo la inclusión de elementos 3D, la personalización de la interfaz, y la integración de la inteligencia artificial en la experiencia del usuario.",
+    "author": "María González",
+    "date": "2023-04-30"
+  }, {
+    "id": 2,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_2.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_2.jpg"
+    ],
+    "imageAlt": [
+      "Icono de lupa con un rompecabezas en la lente", "Imagen de una pantalla de ordenador con código HTML"
+    ],
+    "imageColor": [
+      "#F45C43", "#EB3349"
+    ],
+    "tags": [
+      "HTML", "Web"
+    ],
+    "title": "Cómo usar los atributos data-* en HTML",
+    "text": "Los atributos data-* en HTML permiten añadir información adicional a un elemento sin afectar a su apariencia o comportamiento. En este artículo, veremos cómo usar los atributos data-* para almacenar información personalizada en los elementos HTML y cómo acceder a ellos mediante JavaScript.",
+    "author": "María Gómez",
+    "date": "2023-04-25"
+  }, {
+    "id": 1,
+    "imageUrl": [
+      "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_ico_1.png", "https://raw.githubusercontent.com/adrian-gg/semana-6/main/react-blogs/GariCarandai-2859/src/assets/img/tp_bg_1.jpg"
+    ],
+    "imageAlt": [
+      "Icono de una estructura de una página web", "Imagen de una persona escribiendo código en un portátil"
+    ],
+    "imageColor": [
+      "#F45C43", "#EB3349"
+    ],
+    "tags": [
+      "HTML", "Web"
+    ],
+    "title": "Cómo estructurar una página web con HTML5",
+    "text": "HTML5 es la última versión de HTML y proporciona una serie de nuevas etiquetas y atributos que facilitan la estructuración de una página web. En este artículo, vamos a revisar los fundamentos de HTML5 y aprenderemos cómo estructurar una página web básica utilizando las nuevas etiquetas semánticas.",
+    "author": "Juan Pérez",
+    "date": "2023-04-20"
+  }
+]

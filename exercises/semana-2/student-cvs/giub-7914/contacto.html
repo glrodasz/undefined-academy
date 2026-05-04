@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styleContacto.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="nav">
+            <a class="urlContacto" href="./index.html">Inicio</a>
+            <!-- <a class="urlOtro1" href="#"></a>
+            <a class="urlOtro2" href="#"></a> -->
+            <a class="urlContacto" href="./contacto.html">Formulario de contacto</a>
+        </div>
+    </nav>
+
+    <main class="page">
+    <h2>Formulario de contacto</h2>
+
+        <form action="/" method="get">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group" required>
+                <h4>Cómo me encontraste:</h4>
+                <label for="github">
+                    <input id="github" name="eleccion" type="radio" required>
+                    <span class="pregunta"  >Github</span>   
+                </label>
+                <label for="linkedin">
+                    <input id="linkedin" name="eleccion" type="radio" required>
+                    <span class="pregunta">Linkedin</span> 
+                </label>
+                <label for="referido">
+                    <input id="referido" name="eleccion" type="radio" required>
+                    <span class="pregunta">Referido</span> 
+                </label>
+                <label for="otro">
+                    <input id="otro" name="eleccion" type="radio" required>
+                    <span class="pregunta">Otro:</span>   
+                </label>   
+                    <textarea id="opciones" name="opciones"  rows="5" placeholder="Escribe otra opción"></textarea>                            
+            </div>
+            <button class="btn">Enviar</button> 
+        </form>
+    </main>
+<script src="/giub-7914/main.js"></script>
+</body>
+</html>

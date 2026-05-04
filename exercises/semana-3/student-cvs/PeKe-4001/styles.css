@@ -1,0 +1,180 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  color: #333;
+  background-color: #f0fdfa;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.page article {
+  margin: 0 auto;
+  max-width: 50em;
+  line-height: 1.5;
+  padding: 3em;
+}
+.page form {
+  margin: 0 auto;
+  max-width: 50em;
+  line-height: 1.5;
+  padding: 3em;
+}
+
+header {
+  background-image: linear-gradient(
+      rgba(105, 100, 100, 0.5),
+      rgba(133, 110, 110, 0.5)
+    ),
+    url(https://source.unsplash.com/_MMP5j_fCqw);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  display: inline-block;
+  height: 120px;
+  vertical-align: top;
+  width: 120px;
+}
+
+header h1 {
+  color: #ffffff;
+  padding-top: 1em;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+header h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #333;
+}
+
+h3,
+strong {
+  color: #115e59;
+  padding-top: 1em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+a {
+  color: #0f766e;
+}
+
+.list {
+  padding: 10px;
+}
+
+/* Contacto */
+.form-group {
+  margin: 20px 0;
+}
+
+label,
+input {
+  vertical-align: middle;
+}
+
+.ancho label,
+.ancho input {
+  width: 100%;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+
+label,
+legend {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #444;
+}
+
+.fondo {
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+}
+
+.help {
+  font-size: 12px;
+  margin-top: 10px;
+  color: gray;
+}
+
+.btn {
+  width: 30%;
+  padding: 16px 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #115e59;
+  background: #0f766e;
+  color: #fff;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.btn:hover {
+  background: #0d9488;
+}
+
+.btn:active {
+  background-color: #115e59;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+fieldset {
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+form label {
+  accent-color: #0f766e;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  border: 1px solid #10b981;
+  outline: 2px solid #059669;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    height: 100vh;
+  }
+
+  .page article {
+    position: relative;
+    background: #f0fdfa;
+    bottom: 100px;
+    margin-top: 2em;
+    box-shadow: 0px 3px 8px rgb(100, 100, 100);
+  }
+}

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+  </head>
+  <body>
+
+    <form>
+        <h1>CONTACTO</h1>
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="correo">Correo:</label>
+          <input type="email" class="form-control" id="correo" name="correo" required>
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" class="form-control" id="telefono" name="telefono" required>
+        </div>
+      
+        <fieldset class="form-group">
+          <legend>¿Cómo desea ser contactado?</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="contacto" id="telefonoRadio" value="telefono" required>
+            <label class="form-check-label" for="telefonoRadio">
+              Teléfono
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="contacto" id="correoRadio" value="correo" required>
+            <label class="form-check-label" for="correoRadio">
+              Correo
+            </label>
+          </div>
+        </fieldset>
+      
+        <div class="form-group">
+          <label for="tema">Tema a tratar:</label>
+          <select class="form-control" id="tema" name="tema" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="programacion">Programación</option>
+            <option value="gastronomia">Gastronomía</option>
+            <option value="plantas">Plantas</option>
+          </select>
+        </div>
+      
+        <div class="form-group">
+          <label for="descripcion">Descripción:</label>
+          <textarea class="form-control" id="descripcion" name="descripcion" rows="8"></textarea>
+        </div>
+        <div class="help">Escriba su problema o preguntas en este espacio</div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="terminos" name="terminos" required>
+          <label class="form-check-label" for="terminos">
+            Acepto términos y condiciones
+          </label>
+        </div>
+      
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

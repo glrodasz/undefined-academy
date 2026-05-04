@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aitorias">
+    <meta name="description" content="Mi perfil de GitHub">
+    <meta name="theme-color" content="#1e2327">
+    <meta name="color-scheme" content="light dark">
+    <title>Aitorias | Perfil de GitHub</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JavaScript -->
+    <script async defer type="module" src="main.mjs"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header-wrapper px-1 px-md-2 px-lg-2 py-2">
+                <div class="flex align-items-center jc-end">
+                    <ul class="flex flex-dr mb-0 mr-2 main-menu">
+                        <li>
+                            <a href="index.html">Indice</a>
+                        </li>
+                    </ul>
+                    <!-- Botón para cambiar esquema de colores -->
+                    <button class="change-theme-button" id="change-theme-button" name="change-theme-button" type="button" aria-label="dark">
+                        <svg class="color-theme-icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                            <mask class="moon" id="moon-mask">
+                              <rect x="0" y="0" width="100%" height="100%" fill="white"></rect>
+                              <circle cx="24" cy="10" r="6" fill="black"></circle>
+                            </mask>
+                            <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor"></circle>
+                            <g class="sun-beams" stroke="currentColor">
+                              <line x1="12" y1="1" x2="12" y2="3"></line>
+                              <line x1="12" y1="21" x2="12" y2="23"></line>
+                              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                              <line x1="1" y1="12" x2="3" y2="12"></line>
+                              <line x1="21" y1="12" x2="23" y2="12"></line>
+                              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                             </g>
+                          </svg>
+                    </button>
+                    <!-- Fin botón -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper mb-2 px-1 px-md-2 px-lg-32px">
+            <div class="content content-border">
+                <article class="file">
+                    <h1>Formulario de contacto</h1>
+                    <form action="/" class="form" id="form" method="get">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name" placeholder="Introduce tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" name="email" id="email" placeholder="Introduce tu correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="website">URL de tu web</label>
+                            <input type="url" name="website" id="website" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="birthday">Fecha de nacimiento</label>
+                            <input type="date" name="birthday" id="birthday" max="" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="color">¿Cuál es tu color favorito?</label>
+                            <input type="color" name="color" id="color" required>
+                        </div>
+                        <div class="form-group">
+                            <fieldset>
+                                <legend>¿Qué tipo de desarrollador eres?</legend>
+                                <div class="form-selection">
+                                    <input type="radio" class="selection-input" name="developer" id="backend" value="backend" required>
+                                    <label for="backend">Back-end</label>
+                                </div>
+                                <div class="form-selection">
+                                    <input type="radio" class="selection-input" name="developer" id="frontend" value="frontend">
+                                    <label for="frontend">Front-end</label>
+                                </div>
+                                <div class="form-selection">
+                                    <input type="radio" class="selection-input" name="developer" id="fullstack" value="fullstack">
+                                    <label for="fullstack">Full-stack</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">¿Cuál es tu región?</label>
+                            <select class="form-select" name="region" id="region" required>
+                                <option value="" id="" selected>Selecciona</option>
+                                <option value="africa">África</option>
+                                <option value="american">América del norte</option>
+                                <option value="latam">América del sur</option>
+                                <option value="europe">Europe</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">¿Quieres dejarnos un comentario?</label>
+                            <textarea name="comment" id="comment" cols="60" rows="10" maxlength="255"></textarea>
+                            <small>Máximo 255 caracteres</small>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-selection">
+                                <input type="checkbox" class="selection-input" name="accept" id="accept" required>
+                                <label for="accept">Acepto enviar el formulario</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn" id="submit">Enviar</button>
+                        <input type="reset" class="btn">
+                    </form>  
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper mb-2 px-1 px-md-2 px-lg-32px">
+            Creado por: Aitorias | <time datetime="" id="year"></time>
+        </div>
+    </footer>
+</body>
+</html>

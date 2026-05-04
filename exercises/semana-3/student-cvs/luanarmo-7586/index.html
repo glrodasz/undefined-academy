@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Angel Arroyo</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>👋 Hi, I'm Luis Angel Arroyo</h1>
+            <hr>
+        </header>
+
+        <section>
+            <h2>🧑🏽About me:</h2>
+            <h3>🧑🏽‍💻 A computer systems engineer from Mexico.</h3>
+            <p>📖 I'm currently learning Javascript Full-stack on my own and collaborating with other colleagues in the
+                reengineering of the CIMPS congress website.</p>
+            <p>🦉 I love challenges that can push me to learn new things and improve my skills. In my free time, I like
+                to solve
+                logic problems like the ones that can be found on the HackerRank website.</p>
+            <p>🔍 I actively seek opportunities that will bring me more knowledge and skills. I am willing to commit
+                100% to any
+                project that aligns with my career goals.</p>
+            <p>📒 My native language is Spanish, and I am currently perfecting my English level through language courses
+                and
+                practice.</p>
+        </section>
+
+        <section>
+            <h2>Linux terminal commands & alias</h2>
+            <article>
+                <h3>📚 Five Linux commands I learned in the first bootcamp class</h3>
+                <div class="container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Command</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ls</td>
+                                <td>Lists the contents of a directory</td>
+                            </tr>
+                            <tr>
+                                <td>cd</td>
+                                <td>Change the current working directory</td>
+                            </tr>
+                            <tr>
+                                <td>pwd</td>
+                                <td>Print the current working directory</td>
+                            </tr>
+                            <tr>
+                                <td>mkdir</td>
+                                <td>Create a new directory</td>
+                            </tr>
+                            <tr>
+                                <td>whoami</td>
+                                <td>Display the username of the current user</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <article>
+                <h3>Two useful alias commands for Linux 🐧</h3>
+                <div class="container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Command</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>alias md="mkdir $1"</td>
+                                <td>Create a new directory with a specified name. </td>
+                            </tr>
+                            <tr>
+                                <td>alias ll="ls -alFh"</td>
+                                <td>Display detailed information about files and directories in a human-readable format.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>alias cafe="cat /dev/urandom \| hexdump \| grep "ca fe"</td>
+                                <td>Takes random input, converts it into hexadecimal format and then searches for the
+                                    pattern "ca
+                                    fe".</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Budget</legend>
+
+                        <input type="radio" name="budget" id="10000" required>
+                        <label for="10000">$10.000</label>
+
+                        <input type="radio" name="budget" id="5000">
+                        <label for="5000">$5.000</label>
+
+                        <input type="radio" name="budget" id="2000">
+                        <label for="2000">$2.000</label>
+                    </fieldset>
+                    <div class="help">This budget is an estimate not a final amount</div>
+                </div>
+                <div class="form-group">
+                    <label for="type">Project type</label>
+                    <select name="type" id="type" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="website">website</option>
+                        <option value="webapp">webapp</option>
+                        <option value="mobileapp">mobile app</option>
+                        <option value="design">design</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" rows="5" required></textarea>
+                    <div class="help">Write a brief summary of the project in 500 words or less</div>
+                </div>
+                <div class="form-group">
+                    <label for="terms">
+                        <input id="terms" name="terms" type="checkbox" required>
+                        <span>I agree to the terms and conditions</span>
+                    </label>
+                </div>
+                <div class="form-button">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <h2>🌐 You can find me on:</h2>
+        <ul>
+            <li> <a href="https://twitter.com/Iuanarmo">Twitter</a> </li>
+            <li> <a href="https://www.linkedin.com/in/luis-angel-arroyo-morales-31b25a1ab">LinkedIn</a> </li>
+            <li><a href="https://github.com/luanarmo">Github Profile</a></li>
+        </ul>
+    </footer>
+
+    <script type="module" src="main.mjs"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+@media screen and (min-width: 425px) and (max-width:800px) {
+    body {
+        max-width: 650px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        max-width: 1000px;
+
+        .cards-exp-hob{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

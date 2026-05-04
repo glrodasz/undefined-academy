@@ -1,0 +1,19 @@
+{
+  "name": "boostrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.60.0",
+    "vite": "^4.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

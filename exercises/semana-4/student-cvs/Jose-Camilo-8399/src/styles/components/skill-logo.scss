@@ -1,0 +1,18 @@
+@use '../tools.scss';
+
+.skills-content {
+   @include tools.format-flex(stretch, center, column);
+   gap: 2em;
+}
+
+.skill-img {
+   width: 6em;
+   height: 6em;
+   border-radius: 0.5em;
+   cursor: pointer;
+   transition: box-shadow 0.3s ease-out;
+
+   &:hover {
+      box-shadow: 2px 3px 7px rgba(199, 196, 196, 0.5);
+   }
+}

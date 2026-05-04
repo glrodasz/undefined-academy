@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+// Colors
+$color-azure: #f0ffff;
+$color-alice-blue: #f0f8ff;
+$color-cyan: #00ffeb;
+$color-teal: #008b8b;
+$color-shark: #212529;
+$color-mine-shaft: #353333c9;
+$color-emperor: #575353be;
+$color-atlantis-platzi: #99cd324b;
+$color-gray-freecodecamp: #808080a6;
+// Imágenes 
+$imagen-fondo-mobile: url("../img/fondo-divpanda-cv-mobile.jpg");
+$logo-freecodecamp: url("../img/freecodecamp-logo.png");
+$logo-github: url("../img/github-logo-dark.png");
+$logo-platzi: url("../img/platzi-logo.png");
+/* $logo-panda: url("/img/panda-logo.webp"); */
+
+html {
+    color-scheme: dark;
+}
+
+// Estilos Mobile First
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    padding: 2em 0em;
+    background-image: $imagen-fondo-mobile;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    p {
+        margin: 10px 0px;
+    }
+
+    code {
+        color: $color-cyan;
+        background-color: $color-shark;
+        padding: 2px 4px;
+        vertical-align: text-bottom;
+    }
+
+    a {
+        display: contents;
+        gap: 10px;
+        text-decoration: none;
+        color: inherit;
+
+        &>img {
+            height: 50px;
+            object-fit: contain;
+            border-radius: 20%;
+        }
+
+        &>p {
+            margin: 0;
+            text-align: center;
+            font-size: larger;
+        }
+
+    }
+
+    footer {
+        text-align: center;
+        margin: 10px 0px;
+    }
+}
+
+article {
+    padding: 0 1em;
+
+    &>#header {
+        text-align: center;
+        border: 2px solid $color-azure;
+        border-radius: 7px;
+        width: 100%;
+        padding: 13px;
+
+        .mi-nombre {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            -webkit-text-fill-color: $color-cyan;
+            -webkit-text-stroke: 1px $color-teal;
+            font-family: 'Alfa Slab One';
+            font-size: 33px;
+
+            &>p {
+                margin: 15px 0px;
+            }
+
+            span {
+                position: relative;
+                display: inline-block;
+                color: $color-azure;
+                text-transform: uppercase;
+                animation: waviy 1s infinite;
+                animation-delay: calc(.1s * var(--i));
+
+            }
+
+            .waviy {
+                position: relative;
+                -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+                font-size: 60px;
+
+                @keyframes waviy {
+
+                    0%,
+                    40%,
+                    100% {
+                        transform: translateY(0)
+                    }
+
+                    20% {
+                        transform: translateY(-20px)
+                    }
+                }
+            }
+
+        }
+
+        .waviy {
+            position: relative;
+            -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+            font-size: 60px;
+
+            @keyframes waviy {
+
+                0%,
+                40%,
+                100% {
+                    transform: translateY(0)
+                }
+
+                20% {
+                    transform: translateY(-20px)
+                }
+            }
+        }
+    }
+
+    h1,
+    h2 {
+        font-family: "Helvetica", sans-serif;
+        text-align: center;
+        margin: 10px 0px;
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin: 10px 0px;
+    }
+
+    ul {
+        list-style-type: disclosure-closed;
+        padding-left: 24px;
+    }
+}
+
+// Contenido main
+
+main {
+    margin-top: 12px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .cards-exp-hob {
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    #introduccion,
+    #experiencia-previa,
+    #hobbies-intereses,
+    #encuéntrame {
+        border: 2px solid $color-azure;
+        margin: 0 auto;
+        padding: 13px;
+        border-radius: 7px;
+        background-color: $color-mine-shaft;
+        width: 100%;
+    }
+
+    #resaltable {
+        font-size: 18px;
+        border-radius: 10px;
+        border: 1px solid $color-azure;
+        text-align: center;
+        padding: 15px;
+        background-color: $color-mine-shaft;
+    }
+
+    #experiencia-previa {
+
+        #boton-platzi:hover {
+            background-color: $color-atlantis-platzi;
+        }
+
+        #boton-freecodecamp:hover {
+            background-color: $color-gray-freecodecamp;
+        }
+    }
+
+    .plataformas-educativas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botones {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    #encuéntrame {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: unset;
+
+        #botones-encuéntrame {
+            display: flex;
+            width: 100%;
+            gap: 14px;
+            justify-content: center;
+            align-items: center;
+
+            #boton-github,
+            #boton-contáctame {
+                display: flex;
+                border: 2px solid $color-azure;
+                border-radius: 10px;
+                padding: 0 10px;
+            }
+
+            #boton-github>img {
+                height: 24px;
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        max-width: 400px;
+        min-width: 425px;
+
+        a>p {
+            margin: 0;
+            text-align: center;
+        }
+    }
+}

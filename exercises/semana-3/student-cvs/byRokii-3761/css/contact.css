@@ -1,0 +1,132 @@
+html {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 50em;
+	font-family: "Victor Mono", "Arial", sans-serif;
+	line-height: 1.5;
+	color: #566b78;
+	min-height: 100%;
+}
+
+h2 {
+	margin-top: 1em;
+}
+
+h1,
+h2 {
+	color: #333;
+}
+
+a {
+	color: #e81c4f;
+}
+
+.nav {
+	background-color: transparent;
+	border-radius: 1rem;
+	height: 10vh;
+	padding: 8px 0;
+	margin-top: 0.4rem;
+	background-color: transparent;
+	box-shadow: 0 0 10px #363636;
+}
+
+.nav-menu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
+
+.nav-menu li a {
+	color: #000;
+	text-decoration: none;
+}
+
+main {
+	height: 75vh;
+	width: 100%;
+}
+
+form {
+	margin: 2.5em 0 0 0;
+}
+
+.container {
+	max-width: 30em;
+	margin: 1rem auto;
+	color: white;
+	padding: 1.5em 1.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 1em;
+	box-shadow: 0 0 10px #363636;
+	background-color: transparent;
+}
+
+.container input {
+	display: block;
+	width: 100%;
+	border: none;
+	outline: none;
+	padding: 1.2rem;
+	margin-top: 1.4rem;
+	font-size: 1rem;
+	background: rgba(255, 255, 255, 0.15);
+	box-shadow: 0 0 10px #363636;
+	color: #000;
+	border-radius: 1rem;
+	font-family: inherit;
+}
+
+.container textarea {
+	margin-top: 1.4rem;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.15);
+	box-shadow: 0 0 10px #363636;
+	border: none;
+	outline: none;
+	font-size: 1rem;
+	font-family: inherit;
+	padding: 1.2rem;
+	border-radius: 1rem;
+}
+
+.container input[type="submit"] {
+	border-radius: 1rem;
+	cursor: pointer;
+	transition: all 300ms ease;
+	box-shadow: 0 0 10px #363636;
+	background: transparent;
+}
+
+footer {
+	margin: 3.5rem 0 1rem;
+	box-shadow: 0 0 10px #363636;
+	background: transparent;
+	padding: 1rem 0.5rem;
+	text-align: center;
+	border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+	body {
+		margin: 0 1.4em;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 998px) {
+	body {
+		margin: 0 1.4em;
+	}
+}

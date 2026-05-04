@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
+html {
+    box-sizing: border-box;
+    margin: 0 auto;
+    color-scheme: dark;
+    /* background-image: url("/semana-3/student-blogs/TeamPanda-5141/img/imagen-fondo-divpanda.jpg"); */
+}
+
+#separador {
+    margin: 20px 0px 20px 0px;
+}
+
+body {
+    min-width: 400px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    padding: 2em 1em;
+    background-color: rgba(53 51 51 / 0.36);
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border: 1px solid azure;
+    border-radius: 10px;
+    background-image: url("./img/imagen-fondo-divpanda.jpg");
+    background-size: contain;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: 4px;
+    width: 70%;
+}
+
+a {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: azure;
+}
+
+/* #btn-github {
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    background-image: url("./img/github-logo-dark.png");
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: 9px;
+    width: 50px;
+    height: 32px;
+} */
+
+input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 15px;
+    border: 1px solid azure;
+    width: 30%;
+    background-color: rgba(53 51 51 / 0.36);
+    margin-right: 10px;
+    display: flex;
+    flex-direction: flex-end;
+    justify-content: space-around;
+}
+
+::placeholder {
+    color: azure;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1;
+    gap: 20px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid azure;
+    border-radius: 10px;
+    justify-content: space-around;
+    place-items: center;
+    padding: 15px;
+}
+
+
+.main-article {
+    display: grid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+
+    html {
+        box-sizing: border-box;
+        margin: 0 auto;
+        color-scheme: dark;
+    }
+
+    input[type="search"] {
+        display: flex;
+        width: 45%;
+    }
+
+    body {
+        max-width: 950px;
+    }
+
+    ul {
+        justify-content: space-evenly;
+        width: 50%;
+        font-weight: bold;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 20px 0;
+    }
+
+    article {
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+    }
+
+    .main-article {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Sección para agregar animaciones */
+
+    /* Animación para los artículos */
+
+    @-webkit-keyframes hvr-bob {
+        0% {
+            -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+        }
+
+        50% {
+            -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+        }
+
+        100% {
+            -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+        }
+    }
+
+    @keyframes hvr-bob {
+        0% {
+            -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+        }
+
+        50% {
+            -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+        }
+
+        100% {
+            -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+        }
+    }
+
+    @-webkit-keyframes hvr-bob-float {
+        100% {
+            -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+        }
+    }
+
+    @keyframes hvr-bob-float {
+        100% {
+            -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+        }
+    }
+
+    .hvr-bob {
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    }
+
+    .hvr-bob:hover,
+    .hvr-bob:focus,
+    .hvr-bob:active {
+        -webkit-animation-name: hvr-bob-float, hvr-bob;
+        animation-name: hvr-bob-float, hvr-bob;
+        -webkit-animation-duration: .3s, 1.5s;
+        animation-duration: .3s, 1.5s;
+        -webkit-animation-delay: 0s, .3s;
+        animation-delay: 0s, .3s;
+        -webkit-animation-timing-function: ease-out, ease-in-out;
+        animation-timing-function: ease-out, ease-in-out;
+        -webkit-animation-iteration-count: 1, infinite;
+        animation-iteration-count: 1, infinite;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-direction: normal, alternate;
+        animation-direction: normal, alternate;
+    }
+
+    /* Animación para los botones del nav y del main-footer */
+
+    .hvr-reveal {
+        display: grid;
+        place-items: center;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+        width: 100px;
+        height: 32px;
+        cursor: pointer;
+    }
+
+    .hvr-reveal:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-color: azure;
+        border-style: solid;
+        border-width: 0;
+        border-radius: 15px;
+        -webkit-transition-property: border-width;
+        transition-property: border-width;
+        -webkit-transition-duration: 0.1s;
+        transition-duration: 0.1s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+    .hvr-reveal:hover:before,
+    .hvr-reveal:focus:before,
+    .hvr-reveal:active:before {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        border-width: 4px;
+    }
+
+}

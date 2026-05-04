@@ -1,0 +1,68 @@
+@use "variables";
+
+@media screen and (min-width: variables.$breakpoint-xxs) {
+  html {
+    font-size: 90%;
+  }
+}
+@media screen and (min-width: variables.$breakpoint-md) {
+  .section__content--welcome {
+    padding: 0 2.75rem;
+    grid-template-columns: 60% 40%;
+  }
+  .content--welcome__img {
+    max-width: 100%;
+  }
+  .contact__form {
+    width: 30rem;
+  }
+}
+@media screen and (min-width: variables.$breakpoint-lg) {
+  html {
+    font-size: 100%;
+  }
+  .hamburger {
+    display: none;
+  }
+  /* desktop nav */
+  .navbar {
+    display: block;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(7px);
+    opacity: 1;
+    transform: translateX(0);
+    transition: none;
+  }
+  .navbar__ul {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 1.25rem;
+    padding: 1rem 0.5rem;
+  }
+  .navbar__ul li a {
+    display: inline;
+    color: variables.$violent-violet;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid #ebeaed;
+    border-radius: 50px;
+    padding: 0.25rem 1rem;
+    transition: all 0.3s ease;
+  }
+  .navbar__ul li a:hover {
+    background-color: rgba(29, 14, 98, 0.1);
+  }
+  .l-projects {
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .tech-tags {
+    display: none;
+  }
+}

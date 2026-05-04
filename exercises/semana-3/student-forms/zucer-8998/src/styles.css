@@ -1,0 +1,163 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    @apply m-0 text-base;
+    background-color: #f6fff8;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    color: #353535;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+strong {
+    @apply text-tertiary decoration-dashed;
+}
+
+a {
+    @apply text-tertiary-light;
+}
+
+ul {
+    @apply m-0;
+    list-style: none;
+}
+
+li {
+    margin: 8px 0;
+}
+
+li::before {
+    @apply text-primary text-2xl mr-1;
+    content: '\203A';
+}
+
+hr {
+    border-top: 2px dashed #003049;
+    margin: 0;
+}
+
+table {
+   border-spacing: 8px;
+   width: 100%;
+}
+
+table td {
+    @apply bg-white py-1 px-2;
+    border-radius: 4px;
+}
+  
+table th {
+    @apply bg-primary text-light-blue text-left p-2;
+    border-radius: 8px;
+}
+
+.tag {
+    @apply p-2 bg-light-blue text-primary inline-block font-bold;
+    border-radius: 0 8px 8px 0;
+    border-left: 3px solid #003049;
+    width: 415px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+.tag-content {
+    width: 0px;
+    transform: translateX(-20px);
+    transition: width .3s, transform .5s;
+    transition-timing-function: ease;
+    overflow: hidden;
+}
+
+.logo-container:hover > .tag-content {
+    transform: translateX(20px);
+    transition: width .5s, transform 1s;
+    width: 415px;
+}
+
+.title-1, .title-2, .title-3 {
+    @apply text-primary font-bold;
+}
+
+.title-1 {
+    font-size: 3rem;
+}
+
+.title-2 {
+    font-size: 2rem;
+}
+
+.title-3 {
+    font-size: 1.5rem;
+}
+
+.technologies {
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    background: #dff3f3;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+input, textarea, select {
+    @apply w-full text-gray p-2 rounded;
+    border: 1px solid #284b63;
+}
+
+input[type="checkbox"] {
+    @apply accent-primary align-middle w-auto;
+}
+
+label {
+    @apply w-full block mb-1 font-bold;
+}
+
+.helper {
+    font-size: 12px;
+    margin: 0;
+    margin-left: 8px;
+}
+
+.primary-btn {
+    @apply uppercase text-white bg-primary rounded-lg border-none pointer-events-none;
+    padding: 1rem 4rem;
+    transition: all .2s ease;
+}
+
+.primary-btn:hover {
+    box-shadow: 4px 4px 14px -4px rgba(40,75,99,1);
+}
+
+.primary-btn:active {
+    transform: scale(0.95);
+}
+

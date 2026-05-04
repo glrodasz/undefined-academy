@@ -1,0 +1,92 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    color: #333;
+    background-color: #fefefe;
+}
+
+.page{
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+
+input, input {
+    vertical-align: middle;
+}
+
+
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #444;
+}
+
+input[type="text"], input[type="email"], textarea {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.help {
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+}
+
+button {
+    padding: 16px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid;
+    background: white;
+    color: #444;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: #f97316;
+}
+
+button:active {
+    background: #fb923c;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+form {
+    accent-color: #fb923c;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    border: 1px solid #fb923c;
+    outline: 1px solid #fb923c;
+}

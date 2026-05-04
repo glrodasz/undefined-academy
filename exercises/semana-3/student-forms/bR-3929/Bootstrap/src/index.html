@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <style>
+        .form-container {
+            max-width: 450px;
+            margin-top: 0;
+        }
+
+        @media screen and (max-width: 699px) {
+            .form-container {
+                min-width: auto;
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and (min-width: 700px) {
+            .form-container {
+                min-width: 100%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container d-flex align-items-center vh-100">
+        <div class="form-container mx-auto">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <h1 class="text-center mb-4">CONTACTO</h1>
+                    <p class="lead text-center">Si estás interesado en contactarme, por favor rellena el siguiente
+                        formulario:</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label d-block text-center">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label d-block text-center">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <h2>Motivo del contacto</h2>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="motivo" id="creacion-web"
+                                value="creacion-web" required>
+                            <label class="form-check-label" for="creacion-web">
+                                Creación de Website
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="motivo" id="creacion-webapp"
+                                value="creacion-webapp">
+                            <label class="form-check-label" for="creacion-webapp">
+                                Creación de WebApp
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="motivo" id="creacion-mobileapp"
+                                value="creacion-mobileapp">
+                            <label class="form-check-label" for="creacion-mobileapp">
+                                Creación de Mobile App
+                            </label>
+                        </div>
+                        <div class="mb-3">
+                            <h2>Descripción del proyecto</h2>
+                            <textarea class="form-control" id="descripcion-proyecto" rows="3" required></textarea>
+                            <small class="form-text text-muted">Genera una breve explicación del proyecto.</small>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="terminos-y-condiciones"
+                                required>
+                            <label class="form-check-label" for="terminos-y-condiciones">
+                                Acepto los términos y las condiciones
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar formulario</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

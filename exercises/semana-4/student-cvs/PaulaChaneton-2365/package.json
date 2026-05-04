@@ -1,0 +1,24 @@
+{
+  "name": "paulachaneton-2365",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "sass": "sass styles/main.scss styles/main.css",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "vite": "^4.2.1"
+  },
+  "devDependencies": {
+    "sass": "^1.62.0"
+  }
+}

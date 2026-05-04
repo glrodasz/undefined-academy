@@ -1,0 +1,18 @@
+{
+  "name": "yaani-8367",
+  "version": "1.0.0",
+  "description": "I´m a **Full-stack JavaScript Developer Trainee** from **Argentina**.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^4.3.9"
+  }
+}

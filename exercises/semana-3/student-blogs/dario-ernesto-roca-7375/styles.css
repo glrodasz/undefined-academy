@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+  }
+
+/* Estilos para la clase 'container' */
+
+.nav {
+    position: fixed;
+    margin: 20px 0;
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    order: 1;
+    width: 100%;
+  }
+
+  .nav li {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .nav li:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 86%);
+  }
+
+  .search {
+    height: 30px;
+    border: #333 1px solid;
+    border-radius: 4px;
+
+  }
+
+/* .nav input {
+    order: 0;
+} */
+
+.cards-filter {
+  grid-area: cards;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin: 20px;
+  grid-template-areas: "nav cards cards cards";
+}
+
+/* Estilos para la clase 'card' */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 25%;
+
+
+  background-color: #ffffff;
+  width: 200px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.card h1 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .card:nth-child(4) {
+      flex-basis: 50%;
+      /* Estilos para las tarjetas agrupadas */
+    }
+  }

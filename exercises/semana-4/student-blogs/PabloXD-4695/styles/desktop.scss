@@ -1,0 +1,39 @@
+@import "variables";
+
+@media screen and (min-width: 600px) {
+  article {
+    margin: 0px 30px;
+    border: 1px solid $color-secundary;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  nav {
+    background-color: $color-background;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    top: 0px;
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .nav-item {
+    background-color: $color-primary;
+    cursor: pointer;
+    border: 1px solid $color-border;
+    width: 25%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+  }
+
+  div:last-child {
+    grid-column: 2 / 4;
+  }
+}

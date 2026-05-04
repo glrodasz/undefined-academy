@@ -1,0 +1,21 @@
+{
+  "name": "juanssanchez-6134",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "sass":"sass main.scss styles/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  },
+  "devDependencies": {
+    "sass": "^1.62.0",
+    "vite": "^4.3.1"
+  }
+}

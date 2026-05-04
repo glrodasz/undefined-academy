@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form contact</title>
+</head>
+
+<body>
+    <header class="bg-black">
+        <nav class="text-yellow flex justify-around items-center p-4">
+            <h1 class="text-3xl"><a href="#" title="Home">Maikcol G.</a></h1>
+            <ul>
+                <li class="flex align-center"><a class="nav__link hover:underline" href="#" title="contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <article class="article bg-white py-8">
+        <section class="max-w-lg mx-auto bg-white shadow-lg rounded-md px-8 pt-6 pb-8 mb-4">
+            <header class=" mb-6">
+                <h1 class="text-3xl text-center font-bold pb-3">Contact Me</h1>
+                <p>If you're looking for a developer with experience in JavaScript, React JS,
+                    Python, then don't hesitate to contact me. 👇</p>
+            </header>
+            <form action="" method="post" class="contact-form">
+                <div class="form-row mb-4">
+                    <label for="subject" class="block font-bold mb-2">Subject:</label>
+                    <input type="text" id="subject" name="subject" class="py-2 px-3 border rounded w-full"
+                        value="New proposal">
+                </div>
+
+                <div class="form-row mb-4">
+                    <label for="name" class="block font-bold mb-2">Name:</label>
+                    <input type="text" id="name" name="name" class="py-2 px-3 border rounded  w-full" required>
+                </div>
+
+                <div class="form-row mb-4">
+                    <label for="email" class="form-label block font-bold mb-2">Email:</label>
+                    <input type="email" id="email" name="email" class="py-2 px-3 border rounded  w-full" required>
+                </div>
+
+                <div class="form-row mb-4">
+                    <label for="type" class="block font-bold mb-2">Project type:</label>
+                    <select name="type" id="type" class="py-2 px-3 border rounded" required>
+                        <option value="" selected disabled>Select one option</option>
+                        <option value="web">App Web</option>
+                        <option value="job">New Job</option>
+                        <option value="project">New Project</option>
+                    </select>
+                </div>
+
+                <div class="form-row mb-6">
+                    <label for="content" class="form-label block font-bold mb-2">Content:</label>
+                    <textarea name="content" id="content" class="form-input py-2 px-3 border rounded resize-vertical  w-full"
+                        rows="8" required></textarea>
+                </div>
+
+                <div class="flex justify-center">
+                    <input type="submit" class="bg-yellow rounded-3xl hover:bg-yellow-light font-bold py-2 px-5"
+                        value="Send">
+                </div>
+            </form>
+        </section>
+    </article>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>

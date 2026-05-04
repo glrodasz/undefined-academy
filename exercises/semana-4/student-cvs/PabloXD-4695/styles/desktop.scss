@@ -1,0 +1,50 @@
+@import "variables";
+
+@media screen and (min-width: 600px) {
+  .nav-button {
+    display: none;
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .profile-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h1,
+  .biography,
+  .profile-content:last-child,
+  .bootcamp-content {
+    grid-column: 1 / 4;
+  }
+
+  .container-profile {
+    padding: 10px 60px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+  }
+
+  .text-profile {
+    grid-column: 2 / 4;
+  }
+
+  .bootcamp-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bootcamp-content h2 {
+    text-align: center;
+    grid-column: 1 / 3;
+  }
+}

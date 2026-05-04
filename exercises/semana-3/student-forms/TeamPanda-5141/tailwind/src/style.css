@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    
+    body {
+        min-width: 425px;
+        background-image: url('/img/fondo-divpanda-cv-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    main {
+        max-width: 500px;
+    }
+    
+    h1 {
+        @apply grid place-items-center rounded-md font-semibold text-4xl my-5 h-12;
+    }
+
+    label {
+        @apply font-bold text-xl;
+    }
+
+    input:not([type="checkbox"]), textarea {
+        @apply bg-300 border border-solid border-100 rounded-md text-50 text-lg py-2 px-3 font-bold;
+    }
+
+    ::placeholder {
+        @apply text-100 ;
+        
+    }
+
+    footer {
+        @apply text-center font-semibold text-lg;
+    }
+    
+}
+
+@layer components {
+    .form-group {
+        @apply my-5 mx-0 flex flex-col;
+    }
+
+    .submit-button {
+        box-shadow: 1px 1px 2px;
+
+        @apply py-1 px-5 mt-2 font-bold text-50 bg-400 hover:bg-300 active:bg-400 border border-solid border-100 rounded-md cursor-pointer;
+    }
+}

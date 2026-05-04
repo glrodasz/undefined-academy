@@ -1,0 +1,34 @@
+@import "variables.scss";
+/* Media query */
+
+@media screen and (min-width:992px) {
+
+    .botonesinicio{
+        flex-direction:row;
+        justify-content: space-between;
+    }
+
+    body{
+        max-width: 70em;
+    }
+
+    th,tr,td{
+        border: 0px solid $color-secondary;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    fieldset{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .whatsapp{
+        margin: 0;
+    }
+
+
+    .grupobotones{
+        display: flex;
+    }
+}

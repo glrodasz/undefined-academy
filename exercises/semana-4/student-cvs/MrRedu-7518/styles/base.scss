@@ -1,0 +1,335 @@
+@use "variables.scss";
+
+// mobile first 730px
+
+
+body {
+    background-color: variables.$mine-shaft;
+    color: variables.$alto;
+    font-family: Arial, Helvetica, sans-serif;
+
+    h1, h2, h3 {
+        font-size: 3rem;
+    }
+    h4, h5, h6 {
+        font-size: 2.6rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+}
+
+.father-container {
+    padding: 30px 60px;
+
+    .main-container {
+        margin-top: 40px;
+
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+
+        main > .whoaim {
+            background-image: variables.$principal-card;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 0 10px variables.$container-shadow;
+
+            display: flex;
+            flex-direction: column;
+
+            .container-img {
+                display: grid;
+                place-items: center;
+
+                margin-bottom: 20px;
+
+                img {
+                    width: 50%;
+                    border-radius: 50%;
+                }
+            }
+            .container-info {
+                article {
+                    header {
+                        h1 {
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+                        h2 {
+                            font-weight: 100;
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    section {
+                        p {
+                            margin-top: 0;
+                        }
+                    }
+                    footer {
+                        a.read-more {
+                            font-size: 2.2rem;
+                            display: block;
+                            width: 100%;
+                            background-color: variables.$v800;
+                            text-align: center;
+                            padding: 15px 0;
+                            border-radius: 8px;
+                            text-decoration: none;
+                            color: variables.$alto;
+                            box-shadow: 3px 4px 10px variables.$buton-shadow;
+                            outline: 1px solid variables.$tundora;
+                        }
+                        a.read-more:focus {
+                            background-color: variables.$v900;
+                            box-shadow: -1px -1px 0 variables.$buton-shadow;
+                            color: variables.$v300;
+                        }
+                    }
+                }
+            }
+
+        }
+        main > .container-form{
+            h2 {
+                font-size: 3rem;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            .container-form-adentro {
+                // background-color: variables.$tundora;
+                background-image: variables.$form-card;
+                box-shadow: 0 0 5px variables.$container-shadow;
+                border-radius: 10px;
+                form {
+                    padding: 40px;
+                    .form-content {
+                        // border: 1px solid red;
+                        margin-bottom: 15px;
+                        
+                        // input[type="text"], input[type="email"], select {
+
+                        // }
+
+                        input[type="text"], input[type="email"], select, textarea {
+                            width: 100%;
+                            border-radius: 10px;
+                            border: 2px solid rgba(0, 0, 0, 0.3);
+                            outline: none;
+                            padding: 10px;
+                            background-color: transparent;
+                            color: variables.$v400;
+                            font-weight: bolder;
+                        }
+                        select {
+                            text-align: center;
+                        }
+                        label {
+                            font-size: 1.6rem;
+                            font-weight: bold;
+                            color: #a7a7a7;
+                        }
+
+                    }
+                    .form-content:focus-within label{
+                        color: variables.$v600;
+                        text-shadow: 0px 0px 8px black;
+                    }
+                    .form-content:focus-within input {
+                        background-color: rgba(226, 226, 226, 0.1);
+                    }
+                    textarea:focus{
+                        background-color: rgba(226, 226, 226, 0.1);                    }
+                    // .form-content.name {
+    
+                    // }
+                    .form-content.msg .help{
+                        font-weight: bold;
+                        color: variables.$v400;
+                        text-shadow: 0 0 5px black;
+                        font-size: 1.2rem;
+                    }
+                    // .form-content.terms {
+
+                    // }
+                    .botones {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        input {
+                            font-weight: bold;
+                            padding: 8px;
+                            border-radius: 5px;
+                            border: none;
+                            outline: none;
+                            background-color: variables.$v800;
+                            box-shadow: 3px 4px 10px variables.$buton-shadow;
+                            color: variables.$alto;
+                            outline: 1px solid variables.$tundora;
+                            cursor: pointer;
+                        }
+                        input:focus {
+                            box-shadow: none;
+                        }
+                        input.enviar:focus {
+                            background-color: variables.$v900;
+                            color: variables.$v200;
+                        }
+                        input.cancelar {
+                            background-color: rgb(65, 65, 65);
+                        }
+                        input.cancelar:focus {
+                            background-color: variables.$v900;
+                        }
+                    }
+                }
+            }
+        }
+        .achievements {
+            margin-top: 20px;
+
+            header {
+                h2 {
+                    margin-top: 0;
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                }
+            }
+            section.bootcamps {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                article.anAchievement {
+                    background-color: variables.$tundora;
+                    padding: 40px;
+                    box-shadow: 0 0 5px variables.$container-shadow;
+                    header {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    footer {
+                        span {
+                            font-size: 1.4rem;
+                            a {
+                                font-size: 1.2rem;
+                                font-weight: bold;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                article.undefined-shell {
+                    min-height: 400px;
+                    border-radius: 10px;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    header {
+                        h2{
+                            text-align: center;
+                            font-size: 2.6rem
+                        }
+                        // .img > img {
+
+                        // }
+                    }
+                    section {
+                        p {
+                            font-size: 1.6rem;
+                        }
+                    }
+                    footer {
+                        span {
+                            a {
+                                color: variables.$guillermo-color-main;
+                            }
+                            a:focus {
+                                color: variables.$guillermo-color-focus;
+                            }
+                        }
+                    }
+                }
+                article.otro-bootcamp {
+                    min-height: 400px;
+                    border-radius: 10px;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    header {
+                        h2{
+                            text-align: center;
+                            font-size: 2.6rem
+                        }
+                        // .img > img {
+
+                        // }
+                    }
+                    section {
+                        p {
+                            font-size: 1.6rem;
+                        }
+                    }
+                    footer {
+                        span {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+            section.progress {
+                .container-progress {
+                    h4 {
+                        font-size: 2.6rem;
+                        margin-bottom: 10px;
+                    }
+                    .container-schools {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-rows: repeat(2, 1fr);
+                        gap: 10px;
+
+                        .school {
+                            // outline: 2px dashed blue;
+                            background-color: variables.$tundora;
+
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            border-radius: 10px;
+                            padding: 20px;
+
+                            box-shadow: 0 0 5px variables.$container-shadow ;
+
+                            h2 {
+                                font-size: 2.2rem;
+                            }
+                            img {
+                                border-radius: 25px;
+                            }
+                            p {
+                                font-size: 1.6rem;
+                            }
+                        }
+                        .school:hover {
+                            background-image: variables.$skills-cards;
+
+                            img {
+                                transform: rotateY(3.142rad);
+                                transition: transform 0.6s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

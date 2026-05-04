@@ -1,0 +1,22 @@
+.btn {
+   padding: 1em 2em;
+   border: 1px solid #7388b2;
+   border-radius: 0.8em;
+   background-color: var(--color-links-hover);
+   cursor: pointer;
+   color: #f3f4f6;
+   font-size: 14px;
+   font-weight: 600;
+   text-transform: uppercase;
+   box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
+   transition: background-color 0.3s ease-out;
+
+   &:hover {
+      background-color: rgb(56, 149, 241);
+   }
+
+   &:active {
+      background-color: var(--color-links-hover);
+      box-shadow: none;
+   }
+}

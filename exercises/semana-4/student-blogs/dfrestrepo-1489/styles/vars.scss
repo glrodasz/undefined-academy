@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+// NOTTA: 
+// defino variables de css en este fichero para darle soporte nadivo al dark mode
+
+$font-default: 'Inconsolata', monospace;
+$base-size: 18px;
+
+:root {
+
+    --color-primary: #FF6060;
+    --color-black: #191919;
+    --color-black-light: #333635;
+    --color-light: #e6ffef;
+}
+
+/* suppert for native dark mode  */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-primary: #FF6060;
+        --color-black: #e6ffef;
+        --color-black-light: #b4cabc;
+        --color-light: #191919;
+    }
+}

@@ -1,0 +1,145 @@
+/* Contenedor principal */
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+/* Encabezado */
+header {
+  background-color: #515151;;
+  color: #fff;
+  padding: 0.3rem;
+}
+
+.blog {
+  background-image: url("sky.avif");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3.5vw;
+  text-align: center;
+  color: #f4eeeed8;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  cursor: pointer;
+  color: #414141;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+  border: 1.5px solid;
+  border-radius: 0.2rem;
+  padding: 6px 12px;
+  background:  WhiteSmoke;
+}
+
+nav li:hover {
+  background-color: #0369a1;
+  color: #fff;
+}
+
+input[type="search"] {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid Gainsboro;
+  width: 400px;
+  background: WhiteSmoke;
+}
+
+/* Contenido article */
+article {
+  background-color: #e6dadad8;
+  padding: 3.5rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*  tres columnas, cada una con un ancho de 1fr */
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  border: 1px solid #e1ccff;
+  padding: 1rem;
+  color: #4c4c4c;
+  cursor: pointer;
+  text-align: center;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card-content {
+  padding: 2rem;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+
+.card:last-child {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  grid-column: 1 / 4;  /* el elemento debe ocupar desde la primera hasta la tercera columna de la cuadrícula */
+   /* grid-area: 2 / 2 / 3 / 3;   grid-area toma 4 valores que representan los números de línea de la cuadrícula: grid-row-start, grid-column-start, grid-row-end y grid-column-end*/
+}
+.card-image {
+  flex: 2.4;
+  margin-right: 1rem;
+  padding: 1rem;
+}
+
+.card-text {
+  flex: 1.5;
+  margin-top: -20rem;
+  margin-right: 2rem;
+}
+
+.card:hover {
+  background-color: #a8a29e;
+  color: #efefef;
+}
+
+/* Pie de página */
+footer {
+  background-color: #515151;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+
+

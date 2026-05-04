@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/student-cvs/jaardila-4569/img/favicon.ico" />
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <div class="container mt-5 bg-light">
+        <h1 class="mb-3 text-center">Información de Contacto</h1>
+        <div class="mb-3 text-center">
+            <p>Ciudad: Bogotá D.C. - Colombia.</p>
+            <p>Teléfono: +57 310 389 7228</p>
+        </div>
+
+        <form action="/server" method="get" id="contactForm" class="bg-secondary">
+            <fieldset class="border p-4">
+                <legend class="text-center">Contáctame para un trabajo o asesoría</legend>
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input id="name" type="text" class="form-control" name="name" placeholder="Ingrese su nombre"
+                        required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" type="email" class="form-control" placeholder="name@example.com" name="email"
+                        required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Teléfono</label>
+                    <input type="tel" id="phone" class="form-control" name="phone" placeholder="123-45-678" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="type" class="form-label">Tipo de trabajo o asesoría</label>
+                    <select name="type" id="type" class="form-select" required>
+                        <option value="" selected disabled>Seleccione</option>
+                        <option value="freelance">Freelance</option>
+                        <option value="C#">Asesorías C#</option>
+                        <option value="JS">Asesorías JS</option>
+                        <option value="SQL">Asesorías SQL</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="description" class="form-label">Descripción</label>
+                    <textarea class="form-control" name="description" id="description" cols="30" rows="3"
+                        required></textarea>
+                    <div class="form-text">Escribe una descripción del trabajo de manera breve.</div>
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+                    <label class="form-check-label" for="terms">Acepto los términos y condiciones</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

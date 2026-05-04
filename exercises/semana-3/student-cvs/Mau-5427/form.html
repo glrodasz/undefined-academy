@@ -1,0 +1,29 @@
+<!-- Es exactamente el mismo formulario del "index.html" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="styles.css">
+  <script defer src="main.js"></script>
+  <title>Formulario de Contacto</title>
+</head>
+<body>
+  <section class="contact__section" id="contact">
+    <div class="section__content">
+      <h2 class="content__title">Contacto</h2>
+      <form class="contact__form" action="#" method="get">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" placeholder="ej. Mauricio Bedoya" autocomplete="new-password" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="ej. example@email.com" autocomplete="new-password" required>
+        <label for="subject">Asunto</label>
+        <input type="text" name="subject" id="subject" placeholder="ej. Nuevo proyecto" autocomplete="new-password" required>
+        <label for="message">Descripción</label>
+        <textarea name="message" id="message" cols="30" rows="3" placeholder="Detalles del asunto" autocomplete="new-password" required></textarea>
+        <button type="submit" class="submit-btn">Enviar</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

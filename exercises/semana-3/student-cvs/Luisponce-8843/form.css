@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f4f6;
+}
+label{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+    vertical-align: middle;
+}
+
+.page {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 40px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.form-group{
+    margin: 20px 0;
+}
+.terms{
+    font-size: 10px;
+}
+
+label, input[type="text"], input[type="email"]{
+    display: block;
+    width: 100%;
+}
+label, input{
+    vertical-align: middle;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+.help{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0 6px;
+    margin-top: 6px;
+    color: grey;
+}
+.aviso{
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="text"], input[type="email"], textarea{
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+html{
+    box-sizing: border-box;
+}
+
+#whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+ }
+
+ svg {
+    width: 80px;
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+ }
+ circle {
+    fill: #25d366;
+ }
+ path {
+    fill: #fff;
+ }
+ svg:active{
+    background-color: #075E54;
+    box-shadow: 4px 4px 4px #0000003f;
+    transform: translateY(4px);
+    border-radius: 60%;
+ }
+ svg:hover{
+    background-color: #25D366;
+    border-radius: 60%;
+ }
+ button{
+    padding: 12px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #a16207;
+    background-color: #fbbf24;
+    border-radius: 8px;
+    color: #252423;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.329);
+ }
+ button:hover{
+    background-color: #facc15;
+ }
+ button:active{
+    background-color: #eab308;
+    box-shadow: 1px 1px 4px rgba(0,0,0,.4);
+    transform: translateY(2px);
+    border-radius: 8px;
+ }

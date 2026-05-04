@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Hola!, soy Gabriel Calderón  &#128075;</h1>
+            <h2>Sobre mí &#128587;&#8205;&#9794;&#65039;</h2>
+            <h3>Estudiante de ingeniería y un apasionado por la tecnología&#128104;&#8205;&#128187;</h3>
+            <p> Actualmente me encuentro formándome acerca de tecnologías web, mayormente orientadas al desarrollo FrontEnd como <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong>, además de ver poco del lado del BackEnd con <strong>PHP</strong> y <strong>MySQL</strong>
+            <p> Así como me gusta aprender desarrollo web, también estoy estudiando sobre desarrollo de videojuegos, especialmente utilizando el motor de videojuegos <strong>Unity</strong>, además de trabajar con algunos programas de modelado 3D como <strong>Blender</strong> o <strong>Maya</strong>.
+            <h3>Hobbies: </h3>
+                <ul>
+                    <li>En mis ratos libres me gusta leer, principalmente acerca de ciencia ficción</li>
+                    <li>Mi instrumento preferido es el piano</li>
+                    <li>Disfruto mucho de la música electrónica</li>
+                    <li>Me gustan mayormente los juegos largos y con una narrativa profunda</li>
+                </ul>
+        </section>
+    </main>
+    <section class="section-form">
+        <h1>Contáctame</h1>
+        <form class="form" method="get" id="form">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Ingrese su nombre completo" required>
+                <label for="email">Correo</label>
+                <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+                <label for="cellphone">Teléfono</label>
+                <input type="tel" name="cellphone" id="cellphone" placeholder="Número telefónico" value="">
+            </div>
+            <div class="form-group">
+                <label for="message">Escribe un mensaje</label>
+                <textarea name="message" id="message" rows="10"></textarea>
+                <label for="terms">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <span>Acepto los términos y condiciones</span>
+                </label>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>Aquí puedes encontrar <a href="https://github.com/ga-b0">mi perfil de github</a></p>
+    </footer>
+    <script>
+        const myForm = document.getElementById("form");
+        myForm.addEventListener("submit", function(event){
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

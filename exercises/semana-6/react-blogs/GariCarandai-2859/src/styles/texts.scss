@@ -1,0 +1,59 @@
+@use "./variables.scss" as *;
+
+.text-xs{
+  font-size: clamp(0.87rem, calc(0.72rem + 0.72vw), 1.28rem);
+}
+.text-sm{
+  font-size: clamp(1.04rem, calc(0.85rem + 0.97vw), 1.6rem);
+}
+.text-md{
+  font-size: clamp(1.25rem, calc(0.99rem + 1.3vw), 2rem);
+}
+.text-lg{
+  font-size: clamp(1.5rem, calc(1.15rem + 1.74vw), 2.5rem);
+}
+.text-xl{
+  font-size: clamp(1.8rem, calc(1.34rem + 2.3vw), 3.13rem);
+}
+.text-2xl{
+  font-size: clamp(2.16rem, calc(1.55rem + 3.04vw), 3.91rem);
+}
+.text-3xl{
+  font-size: clamp(2.59rem, calc(1.79rem + 3.98vw), 4.88rem);
+}
+.text-4xl{
+  font-size: clamp(3.11rem, calc(2.07rem + 5.21vw), 6.1rem);
+}
+
+
+h1{
+  margin-top: 1.6rem;
+  /* font-size: 32px; */
+}
+
+h2{
+  margin-bottom: 1.7rem;
+  font-size: 1.4rem;
+  color: $DoveGray;
+  text-transform: uppercase;
+}
+
+p{
+  width: 100%;
+  margin-top: 1.8rem;
+  overflow: hidden;
+  color: $DoveGray;
+  white-space: nowrap;
+  /* font-size: 14px; */
+  line-height: 2.6rem;
+  text-overflow: ellipsis;
+
+  @supports (-webkit-line-clamp: 4) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+}

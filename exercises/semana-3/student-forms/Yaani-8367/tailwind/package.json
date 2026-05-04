@@ -1,0 +1,20 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:css": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "dev:src": "vite dev src",
+    "dev": "concurrently \"npm run dev:css\" \"npm run dev:src\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "tailwindcss": "^3.3.2",
+    "vite": "^4.3.9"
+  }
+}

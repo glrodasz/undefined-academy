@@ -1,0 +1,17 @@
+.breed{
+    text-transform: capitalize;
+}
+
+.dogpicture{
+    border-radius:8px;
+}
+
+.container{
+    border: 1px solid var(--border);
+    border-radius:8px;
+    padding:1em;
+}
+
+.container:hover{
+    box-shadow:  1px 1px 20px var(--hover);;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Daniel Campo</title>
+    <meta charset='UTF-8'>
+</head>
+
+
+<body>
+    <article>
+        <header class="mhead">
+            <h1>Daniel Campo</h1>
+        </header>
+
+
+        <div class="body">
+            <section>
+                <h2>About me</h2>
+                <figure>
+                    <img src="/pages/imgs/look.jpg" alt="A human looking through magnifying glass">
+                </figure>
+                <article>
+                    <h3>I’m currently learning...</h3>
+                    <ul>
+                        <li>🎓 For been a <strong>JavaScript Full-Stack developer</strong> on <a
+                                href="https://undefined.academy/"><strong>Undefined Academy</strong></a>.</li>
+                        <li>🤓 English (B1) and Colombian Sing Language (B1)</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Hobbies</h3>
+                    <figure>
+                        <img src="/pages/imgs/cat.jpg" alt="Cat resting">
+                    </figure>
+                    <ul>
+                        <li>🏐Volley and Basket🏀</li>
+                        <li>📚Languages</li>
+                        <li>📽Thriller</li>
+                        <li>🎮Videogames</li>
+                    </ul>
+                </article>
+
+
+                <article>
+                    <form id="form1" action="/server" method="get" class="form">
+                        <fieldset>
+                            <legend class="center">
+                                <h3>Contact me</h3>
+                            </legend>
+                            <div class="form">
+                                <label for="name">Name</label>
+                                <input id="name" name="name" type="text" placeholder="Enter your full name" required>
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="email" placeholder="Enter your email" required>
+                            </div>
+
+                            <div class="form">
+                                <fieldset class="center">
+                                    <legend>Service</legend>
+                                    <input id="developer" name="Service" value="developer" type="radio" required>
+                                    <label for="developer">Developer💻</label>
+
+                                    <input id="Interpreter" name="Service" value="Interpreter" type="radio" required>
+                                    <label for="Interpreter">Interpreter🤟🏻</label>
+                                </fieldset>
+                            </div>
+                            <div class="form">
+                                <label for="description">Description</label>
+                                <div class="txt">Put a description for the required job.</div>
+                                <textarea required id="description" name="description" rows="7"></textarea>
+                            </div>
+
+                            <div class="form">
+                                <label for="check">
+                                    <input id="check" name="check" type="checkbox" required>
+                                    <span>Acepto los terminos y condiciones</span>
+                                </label>
+                            </div>
+                            <button>Send</button>
+                        </fieldset>
+                    </form>
+                </article>
+
+            </section>
+        </div>
+
+        <footer>
+            <hr>
+            <ul>
+                <li>📧 danielcampo314@gmail.com</li>
+            </ul>
+            <nav>
+                <h2><a href="/pages/bootexercises.html">Bootcamp Exercise</a></h2>
+            </nav>
+        </footer>
+    </article>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact Form</title>
+</head>
+<body>
+    <header>
+        <h1>AF</h1>
+
+        <nav class="topnav" id="myTopnav">
+            <ul>
+                <li><a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                <li><a href="index.html#about"><i class="fa fa-fw fa-user"></i>About me</a></li>
+                <li><a href="index.html#acknowledgements"><i class="fa fa-fw fa-trophy"></i>Acknowledgements</a></li>
+                <li><a href="form.html"><i class="fa fa-fw fa-envelope"></i>Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" id="myIcon"><i class="fa fa-bars"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section id="contact">
+            <form id="contact-form" action="" method="get">
+                <fieldset class="form-fieldset">
+                    <legend>
+                        <h2>Contact</h2>
+                    </legend>
+
+                    <label for="name">Name</label>
+                    <input required type="text" id="name" name="name" placeholder="Enter your full name"
+                        pattern="^[A-Za-z -']+$" minlength="3" maxlength="20"
+                        title="It should be at least three letters, and just letters" />
+                    <label for="email">Email</label>
+                    <input required type="email" id="email" name="email" placeholder="Enter your email" />
+                    <label for="phone">Phone</label>
+                    <input required type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+
+                    <label for="continent">Where are you from?</label>
+                    <select name="continent" id="continent" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="northame">North America</option>
+                        <option value="latiname">Latin America</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                        <option value="africa">Africa</option>
+                        <option value="australia">Australia and Oceania</option>
+                    </select>
+                    <fieldset class="radio-fieldset">
+                        <legend class="legend-radio">Interests</legend>
+                        
+                        <div>
+                        <input type="radio" name="interests" id="data" required>
+                        <label for="data">Data analysis</label>
+                    </div> 
+                    <div>
+                        <input type="radio" name="interests" id="mldl" required>
+                        <label for="mldl">Machine learning</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="interests" id="webdev" required>
+                        <label for="webdev">Web development</label>
+                        </div>
+
+                    </fieldset>
+                    <label for="message">Message</label>
+                    <textarea rows="7" required name="message" id="message" cols="30" rows="10" minlength="3" maxlength="500"
+                        placeholder="Tell me about your interest in contacting me..."></textarea>
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span>I accept terms and conditions</span>
+                    </label>
+                    <button type="submit" class="buttons">Submit</button>
+
+                </fieldset>
+
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <h1>AF</h1>
+        <p>| Copyright &copy; Alianna |</p>
+
+    </footer>
+    <script  src="main.mjs"></script>
+</body>
+</html>

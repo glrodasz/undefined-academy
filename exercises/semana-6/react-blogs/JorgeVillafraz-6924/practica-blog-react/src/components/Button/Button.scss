@@ -1,0 +1,45 @@
+.button {
+    display: inline-flex;
+    padding: 5px 10px;
+    align-items: center;
+
+
+    border-radius: 25px;
+    cursor: pointer;
+
+    transition: background 0.2s ease-in-out;
+}
+
+.button-primary {
+    border: 3px solid var(--color-cerulean-blue);
+    color: var(--color-havelock-blue);
+    background: transparent;
+
+    font-family: Poppins;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+
+    &:hover {
+        background: var(--color-havelock-blue);
+        color: var(--color-white);
+    }
+
+}
+
+.button-secundary {
+    border: 3px solid var(--color-cerulean-blue);
+    color: var(--color-white);
+    background: var(--color-havelock-blue);
+
+    font-family: Recursive;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    font-style: italic;
+
+    &:hover {
+        background: transparent;        
+    }
+
+}

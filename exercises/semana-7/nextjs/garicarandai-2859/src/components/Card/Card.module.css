@@ -1,0 +1,34 @@
+.card{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background-image: url("../../../public/placeholder.png");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.card .img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  scale: 1.2;
+}
+
+.card h2{
+  width: max-content;
+  padding: 0.4rem 1.4rem;
+  border-radius: 360px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  bottom: 1.2rem;
+  z-index: 10;
+  text-transform: capitalize;
+}

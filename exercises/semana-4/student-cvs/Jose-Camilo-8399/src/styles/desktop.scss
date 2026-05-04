@@ -1,0 +1,122 @@
+@use 'tools.scss';
+
+$desktop-media: 768px;
+
+@media screen and (min-width: $desktop-media) {
+
+   .container {
+      max-width: var(--container-max-width);
+      margin: 0 auto;
+   }
+
+   /* ========= NAV-BAR ========= */
+
+   .nav-bar {
+      position: static;
+      flex-direction: row;
+   }
+
+   .nav-bar-hamburg {
+      display: none;
+   }
+
+   .logo {
+      display: block;
+      font-size: 1.2em;
+   }
+
+   .nav-link {
+      display: inline;
+      transition: color 0.3s;
+
+      &:hover {
+         color: var(--color-links-hover);
+         background-color: transparent;
+      }
+   }
+
+   nav {
+      justify-content: space-between;
+      padding: 2em 1em;
+      border-bottom: none;
+      transform: none;
+      transition: none;
+      width: inherit;
+   }
+
+   ul {
+      display: flex;
+      width: auto;
+
+      li {
+         margin-left: 3em;
+      }
+   }
+
+   /* ========= MAIN ========= */
+   .main {
+      padding-left: 5em;
+   }
+
+   .main-name {
+      h1 {
+         font-size: 3em;
+      }
+   }
+
+   /* ========= ABOUT ========= */
+
+   .about-content {
+      margin: 4em 8em;
+   }
+
+   /* ========= SKILLS ========= */
+
+   .skills {
+      section {
+         margin: 3em 8em;
+      }
+   }
+
+   .skills-content {
+      @include tools.format-flex(space-around, stretch, row);
+      flex-wrap: wrap;
+      gap: 5em;
+   }
+
+   /* ========= CONTACT ========= */
+
+   .contact {
+      article {
+         margin: 2em auto;
+         width: 600px;
+      }
+   }
+
+   /* ========= FOOTER ========= */
+   footer {
+      @include tools.format-flex(space-between, center, row);
+   }
+
+   .footer {
+      margin-bottom: 0;
+      border-bottom: 0;
+      padding: 2em 1em;
+   }
+
+   .contenedor-footer {
+      flex-direction: row;
+      gap: 4em;
+      width: 60%;
+   }
+
+   .footer-bio {
+      width: 60%;
+   }
+
+   .footer-bio {
+      p {
+         margin-bottom: 0;
+      }
+   }
+}

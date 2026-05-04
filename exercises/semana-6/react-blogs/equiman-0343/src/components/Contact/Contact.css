@@ -1,0 +1,150 @@
+form {
+    display: grid;
+    align-items: center;
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    grid-gap: 16px;
+    grid-template-columns: repeat(1fr, 3);
+}
+
+label {
+    margin-bottom: -16px; /* reset grid-gap */
+    grid-column: 1 / 4;
+    justify-self: start;
+    vertical-align: middle;
+}
+
+form > label,
+legend {
+    font-weight: bold;
+}
+
+input,
+select {
+    padding: 8px 12px;
+    font-size: 1rem;
+    grid-column: 1 / 4;
+}
+
+textarea,
+fieldset,
+.help{
+    grid-column: 1 / 4;
+}
+
+.help {
+    padding: 0 4px;
+    margin-top: -16px; /* reset grid-gap */
+    font-size: 0.85em;
+    justify-self: start;
+}
+
+label[for="terms"] {
+    color: var(--text-primary);
+    font-weight: normal;
+    grid-column: 1 / 4;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 8px 12px;
+    border: 1px solid var(--sky-200);
+    border-radius: 4px;
+    gap: 16px;
+}
+
+textarea {
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+input[type="checkbox"],
+input[type="radio"]
+{
+    margin: 0 8px;
+    accent-color: var(--sky-700);
+    transform: scale(1.2);
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    padding: 8px 12px;
+    border: 1px solid var(--sky-200);
+    border-radius: 4px;
+    background: var(--bg-light);
+}
+
+select option {
+    color: var(--text-primary);
+}
+
+input::placeholder,
+select option:disabled,
+select:invalid {
+    color: var(--placeholder);
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    border: 1px solid var(--sky-600);
+    outline: 3px solid var(--sky-500);
+}
+
+button {
+    grid-column: 3 / 4;
+}
+
+form button {
+    min-width: 60px;
+    padding: 8px 0;
+    border: 1px solid var(--sky-500);
+    border-radius: 8px;
+    accent-color: var(--sky-700);
+    background: var(--sky-600);
+    box-shadow: 1px 1px 3px rgb(0 0 0 / 50%);
+    color: var(--sky-200);
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-shadow: -1px -1px rgb(0 0 0 / 50%);
+    text-transform: uppercase;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+}
+
+form button:hover {
+    background: var(--sky-500);
+    color: var(--sky-100);
+    text-shadow: 1px 1px rgb(0 0 0 / 50%);
+}
+
+form button:active {
+    background: var(--sky-700);
+    box-shadow: -1px -1px 0 rgb(0 0 0 / 50%);
+}
+
+@media only screen and (width >= 576px) {
+    label {
+        margin-bottom: 0;
+        grid-column: 1 / 2;
+    }
+
+    label[for="terms"] {
+        grid-column: 1 / 3;
+    }
+
+    input,
+    select {
+        grid-column: 2 / 4;
+    }
+
+    textarea {
+        margin-top: -16px; /* reset grid-gap */
+    }
+}

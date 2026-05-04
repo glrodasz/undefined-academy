@@ -1,0 +1,54 @@
+@import "variables.scss";
+
+@media screen and (min-width: 768px) {
+    body {
+        padding: 0px 24px;
+    }
+
+    // Cards
+    .cards-container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .cards {
+        margin: 24px 12px 0px 12px;
+        padding: 0px 16px 0px 0px;
+        border-radius: 8px;
+    }
+
+    .cards h2 {
+        text-align: left;
+        margin-left: 24px;
+    }
+
+    // Form
+    .form {
+        display: grid;
+        grid-template-columns: auto auto;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        padding: 0px 124px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    body {
+        padding: 0px 180px;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .skills {
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+}

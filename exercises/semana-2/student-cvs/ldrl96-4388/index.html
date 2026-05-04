@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil LDRL</title>
+    <link rel="stylesheet" href="style.css">
+   
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Ldrl</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobremi">Sobre mi</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <h1>Luis Daniel Reyes López</h1>
+            <h2>Desarollador Web</h2>
+
+
+            <div class="redes">
+                <h2>GitHub</h2>
+                <a href="https://github.com/ldrl"> <i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mi</h2>
+            <p>Soy originario de Guatemala</p>
+
+            <p>Soy una persona que se esfuerza en conseguir lo que me propongo, me gusta el deporte en especifico jugar
+                <span>futboll
+                    soccer, los video juegos en pc, consola y celular</span>
+            </p>
+
+            <p>Actualmente estoy cursando el <span>bootcamp Undefined Shell </span> con el objetivo de seguir
+                aprendiendo y
+                reforzar
+                conocimientos en el <span>mundo del desarollo web</span>
+            </p>
+
+            <article>
+                <div class="comando">
+                    <h2>Comandos</h2>
+                    <p>Comandos que he utilizado ultimamente son los siguientes:</p>
+
+                    <table class="table-comando">
+                        <thead>
+                            <tr>
+                                <th class="th-comando">Comandos</th>
+                                <th>Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span>docker-compose</span></td>
+                                <td>Ejecutar aplicaciones dockerizadas, pudiendo manejar múltiples contenedores</td>
+                            </tr>
+                            <tr>
+                                <td><span>ls</span></td>
+                                <td>Enumera el contenido del directorio que desee, archivos y otros directorios anidados
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span>sudo</span></td>
+                                <td>Permite a los usuarios no root ejecutar otros comandos Linux que norlamente
+                                    requeririan privilegios de
+                                    superusuario. 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span>cd</span></td>
+                                <td>Navega por los archivos y directorios</td>
+                            </tr>
+                            <tr>
+                                <td><span>git</span> </td>
+                                <td> Utilizado para tener el control de versiones</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="comando-aleas">
+                    <h2>Listado de commandos alias</h2>
+
+                    <table class="table-comando">
+                        <thead>
+                            <tr>
+                                <th class="th-comando">Comandos</th>
+                                <th>Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span>stop: docker-compose stop</span></td>
+                                <td>Permite parar un contenedor</td>
+                            </tr>
+                            <tr>
+                                <td><span>up: docker-compose up -d</span></td>
+                                <td>Arranca un contenedor</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <form  id="form-post">
+                <div class="contacto-form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input id="name" type="text" placeholder="Ingrese su nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">correo</label>
+                        <input id="email" type="email" name="email" placeholder="Ingrese su correo electronico" required>
+                    </div>
+
+                    <div class="form-group">
+                        <fieldset>
+                            <legend>Presupuesto</legend>
+                            <input id="10000" name="budget" type="radio" value="10000" required><label for="10000">$10.000</label>
+                            <input id="50000" name="budget" type="radio" value="50000" required><label for="50000">$50.000</label>
+                            <input id="70000" name="budget" type="radio" value="70000" required><label for="70000">$70.000</label>
+                        </fieldset>
+                        <div class="help">Este presupuesto es la base no el total</div>
+
+                    </div>
+                  
+                    <div>
+                        <label for="proyect">Tipo de proyecto</label>
+                        <select name="proyect" id="proyect" required>
+                            <option disabled selected value="">Seleccione un proyecto</option>
+                            <option value="app_m" required>App Movil</option>
+                            <option value="app_w" required>App web</option>
+                            <option value="app_e" required>App escritorio</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Descripcion</label>
+                        <textarea name="description" id="" cols="5" rows="5" required></textarea>
+                        <div class="help">Escribe una descripcion del proyecto en al menos 500 palabras</div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="terms">
+                            <input id="terms" name="termns" type="checkbox" class="checkmark" required>
+                            <span>Acepto los terminos y condiciones</span>
+                        </label>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+<script>
+    const contactForm = document.getElementById("form-post");
+
+    contactForm.addEventListener("submit",(e) => {
+        console.log(document.contactForm);
+        e.preventDefault();
+    });
+
+</script>
+</html>

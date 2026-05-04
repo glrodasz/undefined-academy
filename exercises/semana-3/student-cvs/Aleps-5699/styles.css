@@ -1,0 +1,352 @@
+/* Main CSS*/
+html {
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: inherit;    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #566b78;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.center-box {
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 4em 1em;
+}
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+h2,
+h3,
+strong {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    padding-bottom: 2em;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+  }
+
+  td,
+  th {
+    text-align: left;
+    padding: .8em;
+  }
+
+.list {
+    background: #ddd;
+    padding: 2px 4px;
+    vertical-align: text-bottom;
+    border-left: darkorchid solid;
+}
+
+ol {
+    vertical-align: text-bottom;
+}
+
+a {
+    color: darkorchid;
+}
+
+header {
+    background-color: #263d36;
+    background-image: url("header.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    max-width: none;
+    padding: 10vw 2em;
+    text-align: center;
+}
+
+header p {
+    color: aliceblue;
+}
+
+
+header h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+header a {
+    border: 1px solid darkorchid;
+    border-radius: 290486px;
+    color: white;
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+}
+
+header a:hover {
+    background: darkorchid;
+    color: white;
+}
+
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+    border-radius: 4px;
+    justify-content: center;
+    margin-top: 2em;
+
+}
+
+nav ul li {
+    border: 1px solid darkorchid;
+    border-radius: 290486px;
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    margin: 0 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+    margin-bottom: 1em;
+
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background: darkorchid;
+    color: white;
+}
+
+/* Contact CSS*/
+/*
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+*/
+
+.hobbies-list {
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .hobbies-list li {
+    width: calc((100% / 4) - .75em);
+    padding: 1em;
+    border-radius: 1em;
+    background: #fbfbfb;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  section .hobbies-list li span {
+    width: 100%;
+    font-size: 2em;
+  }
+
+.page {
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 4em 1em;
+    box-sizing: border-box;
+    border-left: darkorchid solid;
+}
+
+hr {
+    color: #9932cc;
+}
+
+.form-group {
+    margin-top: 1em;
+}
+
+article h1 {
+    font-size: 2em;
+}
+
+.about {
+    font-weight: 300;
+    padding: 0;
+}
+
+label,
+input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+label,
+input {
+    vertical-align: middle;
+    /*Vertical Align solo sirve para los elementos Inline*/
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label,
+legend {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="datetime-local"],
+input[type="tel"],
+textarea {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+.help {
+    /* textarea + div {}*/
+    font-size: 0.85em;
+    margin-top: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 16px 60px;
+    font-weight: bold;
+    color: #222;
+    border: 1px solid #581c87;
+    background-color: #7b1fd1;
+    border-radius: 6px;
+    margin: 1em auto;
+    /*text-shadow: -1px -1px 0 rgba(250, 250, 250, 0.4);*/
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkorchid;
+}
+
+button:active {
+    background: #3b0764;
+    color: black;
+    box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    /* Darle color a tu formulario, contornos, botones, casillas, etc*/
+    /* Puede usarse FORM, en lugar de INPUT*/
+    accent-color: darkorchid;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    /* Darle color a los contornos de tu formulario */
+    border: 1px solid #9333ea;
+    outline: 2px solid darkorchid;
+}
+
+footer {
+    text-align: center;
+}
+
+.line {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #f5f7f9;
+    font-size: 12px;
+  }
+
+  /*=== MEDIA QUERYS ===*/
+
+  @media screen and (max-width: 2560px) {/*4k*/
+    /*body{ background-color: lightsalmon; }*/
+  }
+
+  @media screen and (max-width: 1440px) {/*Laptop L*/
+    /*body{ background-color: cyan; }*/
+  }
+
+  @media screen and (max-width: 1024px) {/*Laptop*/
+    /*body{ background-color: pink; }*/
+
+  }
+
+  @media screen and (max-width: 768px) {/*Tablet*/
+    /*body{ background-color: purple; }*/
+  }
+
+  @media screen and (max-width: 596px) {/*Tablet S*/
+    /*body{ background-color: orange; }*/
+
+    section .hobbies-list{
+      justify-content: center;
+    }
+
+    section .hobbies-list li{
+      width: calc((100% / 3) - 0.67em);
+    }
+}
+
+@media screen and (max-width: 425px) {/*Celular L*/
+    /*body{ background-color: green; }*/
+
+    th{
+        padding: 0.5em;
+      }
+
+    }
+
+@media screen and (max-width: 375px) {/*Celular M*/
+
+    section .hobbies-list{
+        justify-content: initial;
+      }
+
+      section .hobbies-list li{
+        width: calc((100% / 2) - .5em);
+      }
+}
+
+@media screen and (max-width: 320px) {/*Celular S*/
+    /*body{ background-color: red; }*/
+  }

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario Contacto con Bootstrap v5</title>
+  </head>
+  <body class="bg-dark text-light">
+    <main>
+      <div class="container bg-new-container">
+        <header>
+          <div class="row d-flex flex-wrap">
+            <div class="col bg-image pb-4 px-5 d-flex align-items-end" style="background-image: url(/img/header-caffa.jpg); background-repeat: no-repeat; background-size: cover; width: 100%; height: 250px;">
+              <h1 class="text-new-primary">Hola Crayola</h1>
+            </div>
+          </div>
+        </header>
+        <section class="row d-flex flex-wrap mt-5 px-5">
+          <div class="col-sm-12 px-0">
+            <h1 class="text-new-primary">Contacto</h1>
+            <p class="text-light">Utiliza el formulario de contacto para contarme todo lo que necesites y te responderé a la brevedad.</p>
+          </div>
+
+          <form class="container px-0 pb-5" action="/server" method="post">
+            <div class="col-6 mb-3">
+                <label class="form-label" for="name">Nombre *</label>
+                <input class="form-control" id="name" name="name" type="text" placeholder="Ingrese su nombre completo" required>
+            </div>
+            <div class="col-6 mb-3">
+                <label class="form-label" for="email">Email*</label>
+                <input type="email" id="email" class="form-control" name="email" placeholder="Ingrese su correo" required>
+            </div>
+            <div class="col-12 mb-3">
+                <label class="form-label" for="description">Descripción</label>
+                <textarea class="col-12 new-textarea" rows="3" name="description" placeholder="Escribe una descripción del proyecto en menos de 1500 palabras" required></textarea>
+                <p class="form-text">Utiliza este espacio para describir tu proyecto o problemática para que la solucionemos juntos.</p>
+            </div>
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" name="terms" required>
+                <label for="terms">No soy un robok🤖</label>
+            </div>
+            <button class="" type="submit"> Enviar </button>
+          </form>
+          </section>
+        </div>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

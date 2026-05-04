@@ -1,0 +1,177 @@
+/* =============================================================
+
+PALETA DE COLORES 
+
+Gris Oscuro #44414E
+Gris mas oscuro #43414E
+input text #E6E5F0
+background table #F3F3F6
+image bg A post #0000EE
+letras #0E0A1B
+letras botones #0C022F
+banner violeta principal #5333ED
+
+azul oscuro #0072FF
+azul mas claro #239AFF
+Fondo Blanco #ECEFF1
+blanco mas oscuro #FAFAFA 
+
+
+#0c0032
+#190061
+#240090
+#3500d3
+#282828
+
+2 
+#EAE2F8
+ #1D1B31
+#8C30F5
+#EA4C89
+#F5AF30
+#30F5D6
+============================================================= */
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  color: #eceff1;
+  /* background-color: #ECEFF1; */
+  background-image: url("../assets/images/backgrounddeformado2.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+h1{
+  font-size: 40px;
+}
+nav {
+  background-color: #5333ed;
+  border-radius: 0px 0px 6px 6px;
+  overflow: hidden;
+  position: fixed; /* Fija la barra de navegación en la parte superior */
+  top: 0; /* Coloca la barra de navegación en la parte superior */
+  width: 100%; /* Hace que la barra de navegación ocupe todo el ancho de la página */
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 20px;
+  min-height: 5px;
+}
+
+nav a {    
+    float: left;
+  display: block;
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 1px 20px; /* Añade un poco de espacio entre los enlaces */
+  }
+
+.menu {
+    display: flex;
+    justify-content: flex-end;  
+    padding: 10px 30px;
+    font-weight: bold;
+  }
+  
+.menu a:hover {
+    color: #b667ff;
+    text-decoration: none;
+  }
+
+.page {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 0em 1em;
+  /* padding: 0 40px; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-group {
+  /* border: 1px solid tomato; */
+  margin: 20px 0;
+}
+
+/* label, input {
+    vertical-align: middle;
+} */
+
+label,
+input:not([type="radio"], [type="checkbox"]) {
+  width: 100%;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+label,
+legend {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #eceff1;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+fieldset {
+  background: rgba(216, 150, 255, 0.5);
+  border: 1px solid #7a43b6;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #eceff1;
+}
+::placeholder {
+   color: rgba(255, 255, 255, 0.349);
+}
+.help {
+  font-size: 12px;
+  margin-top: 10px;
+  color: gray;
+}
+
+button {
+  padding: 16px 64px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid #cc83fc;
+  background: #7b45d8;
+  color: #eceff1;
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+button:hover {
+  background: #9a56f3;
+}
+
+button:active {
+  background: #7d44c7;
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.7);
+}
+
+form {
+  accent-color: #a239ca;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  border: 1px solid #a239ca;
+  outline: 1px solid #c445f7;
+}

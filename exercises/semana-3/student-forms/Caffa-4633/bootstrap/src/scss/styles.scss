@@ -1,0 +1,125 @@
+
+
+// Define your custom colors
+
+$new-primary: #fa7878;
+$new-secondary: #6c757d;
+$gris-oscuro: #272626;
+$gris-semi: #333232;
+$primario-dark: #930c0c;
+$parrafos-base: #f5f5f5;
+$text-strike: text-decoration-line-through;
+
+$custom-colors: (
+  "new-primary": $new-primary,
+  "new-secondary": $new-secondary,
+  "new-container": $gris-semi,
+  "new-p": $parrafos-base,
+);
+
+//Overrides CSS
+form {
+    accent-color: #930c0c;
+}
+
+.new-textarea {
+    /*Para que no se ajuste para todos lados*/
+    resize: vertical;
+    color: #c0bebe;
+}
+
+.new-textarea::placeholder {
+    color: #c0bebe;
+    font-size: 14px;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #c0bebe;
+    padding-bottom: 5px
+}
+
+input[type="text"], input[type="email"], .new-textarea {
+    background-color: rgb(88, 58, 58);
+    border: 1px solid #bd5b5b;
+    padding: 8px 10px;
+    border-radius: 4px;
+    color: #fddddd;
+    font-size: 15px;
+}
+.new-textarea + div{
+    font-size: 12px;
+    margin-top: 10px;
+    color: rgb(190, 190, 190);
+}
+
+/** Cambia el color del texto dentro del input al estar ENFOCADO */
+input:focus-within, 
+.new-textarea::placeholder:focus-visible {
+    color: #f08f39;
+}
+
+input:focus-visible,
+.new-textarea:focus-visible {
+    border: 1px solid #f08f39;
+    outline: 2px solid #f08f39;
+}
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #fa7878;;
+    background: #bd5b5b;
+    color: #d2d2d2;
+    text-shadow: -1px -1px 0 rgba(73, 41, 9, 0.6);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #930c0c;
+}
+
+button:active {
+    background-color: #ca8a04;
+    box-shadow: -1px -1px 0 rgba (0,0,0,.5);
+}
+
+
+
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+$theme-colors: (
+    "primary": $new-primary,
+    "secondary": $new-secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $primario-dark,
+    "danger": $danger,
+    "light": $parrafos-base,
+    "dark": $gris-oscuro
+  );
+
+
+   // Merge your custom colors with Bootstrap's theme colors
+$theme-colors: map-merge($theme-colors, $custom-colors);
+  
+  // Generate classes for each color in the map
+  @each $color, $value in $custom-colors {
+    .text-#{$color} {
+      color: $value;
+    }
+  }
+  
+    // Generate classes for each color in the map
+    @each $color, $value in $custom-colors {
+        .bg-#{$color} {
+          background-color: $value;
+        }
+      }
+

@@ -1,0 +1,48 @@
+/*-------- Media queries for Desktop ------------------------*/
+
+@media screen and (min-width:900px) {
+   
+
+    form {
+        width: 38em;
+
+    }
+
+    main {
+        margin-top: 8em;
+        margin-bottom: 3em;
+    }
+
+   
+
+  header ul {
+    margin: 0.1em 1.5em 0em;
+}
+
+header li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1em;
+    padding: 1.5em 0.5em;
+    font-weight: bold;
+}
+
+header i {
+    padding-top: 4px;
+    padding-right: 5px;
+}
+
+
+.topnav a {
+    display: flex;
+}
+
+.topnav a.icon {
+    display: none;
+}
+
+#mycloseIcon {
+    display: none;
+}
+
+}

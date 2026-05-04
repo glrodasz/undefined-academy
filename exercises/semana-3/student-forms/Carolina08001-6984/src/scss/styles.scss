@@ -1,0 +1,11 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+.content-width{
+    width: 100%;
+}
+@media screen and (min-width:767px){
+    .content-width{
+        width: 75%;
+    }
+}

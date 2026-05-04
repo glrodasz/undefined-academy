@@ -1,0 +1,62 @@
+header {
+    padding: 1rem 2rem;
+    background-color: #00bcd482;
+    height: 100vh;
+
+    .header-items {
+        height: 100%;
+
+        .navbar-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo {
+                font-size: 2.4rem;
+                text-decoration: none;
+                padding: 2rem 0;
+                color: black;
+                font-weight: 600;
+            }
+        }
+
+        .navbar-section {
+            display: grid;
+            place-items: center;
+            height: 80%;
+
+            .container-info {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                img {
+                    border-radius: 50%;
+                    height: 12rem;
+                }
+
+                h1 {
+                    font-size: 3.6rem;
+                    font-weight: 700;
+                    margin: 2rem 0 1rem 0;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                    color: #333;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.menu-desktop {
+    display: none;
+}
+
+.button-mobile {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

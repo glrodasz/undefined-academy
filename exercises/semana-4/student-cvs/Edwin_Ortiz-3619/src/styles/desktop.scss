@@ -1,0 +1,49 @@
+@media screen and (min-width: 992px) {
+
+	.foto {
+	  display: flex;
+	  height: 600px;
+	}
+	.features {
+	  display: flex;
+	}
+  
+	.feature {
+	  width: 100%;
+	}
+  
+	.feature first {
+	  width: 100%;
+	}
+  
+	.studies {
+		  display: flex;
+	  }
+  
+	  .studie {
+		  width: 100%;
+	  }
+  
+	.studie first {
+	  width: 100%;
+	}
+  
+	.perfil {
+	  width: 100%;
+	}
+  
+	.content {
+	  width: 100%;
+	}
+  
+	.footer {
+		width: 100%;
+		min-height: auto;
+	  }
+	
+	.item__contact{
+	  width: 25%;
+	  padding: 60px 0;
+	}
+  
+  }

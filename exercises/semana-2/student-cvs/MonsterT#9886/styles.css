@@ -1,0 +1,105 @@
+/* Estilos para el formulario de contacto */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  background-color: #00ba19;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  
+}
+
+input[type="submit"]:hover {
+  background-color: #188f00;
+}
+
+#error-message {
+  color: red;
+}
+
+/* Estilos para los elementos específicos del formulario */
+
+/* Estilos para el checkbox de términos y condiciones */
+#terms {
+  display: inline-block;
+  margin-right: 5px;
+  float: left;
+}
+
+label[for="terms"] {
+  display: inline-block;
+  margin-bottom: 10px;
+  float: left;
+  clear: left;
+}
+
+/* Estilos para los botones de budget */
+input[type="radio"] + label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="radio"] + label:before {
+  content: "\25cb";
+  font-size: 1.2em;
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1.2;
+}
+
+input[type="radio"]:checked + label:before {
+  content: "\2713";
+  background-color: #008CBA;
+  color: #fff;
+  border-color: #008CBA;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initialscale=1.0, maximum-scale=1.0' />
+    <title>Formularios HTML</title>
+    <link rel="stylesheet"  href="./style.css" >
+    <script type="module" src="./main.mjs"></script>
+
+</head>
+<body> 
+    <div class="container" >
+        <nav>
+          <ul>
+            <li><a href="./index.html"> Home</a> </li>
+            <li><a href="./Formulario.html"> Contacto</a> </li>
+            <li><a href="./Layouts.html"> Blog</a> </li>
+          </ul>
+          <input type="search" placeholder="Buscar">
+        </nav>
+    
+    </div>
+    <main class="page">
+        <h1>Contacto</h1>
+        <form action="/server" method="get" onsubmit="event.preventDefault()">
+            <div class="form-group">    
+                <label for="name">Nombre</label>
+                <input  id= "name" name="name" type="text"  placeholder="Escriba su nombre" required>
+            </div>
+            <div class ="form-group">
+                <label for="email">Email</label>
+                <input id= "email" name="email" type="email" placeholder="Escriba su email" required>
+            </div>
+            <div class ="form-group">
+                <label for="Telefono">Telefono</label>
+                <input id= "Telefono" name="Telefono" type="tel" placeholder="Escriba su telefono" required>
+            </div>
+           
+            <div class ="form-group">
+                <fieldset> 
+                    <legend>Como desea ser contactado</legend> 
+                    <input required type="radio" id ="Telefono1" name="tipocontacto" value="Telefono">
+                    <label for="Telefono1">Telefono</label>
+                    <input required type="radio" id ="Correo" name="tipocontacto" value="Email">
+                    <label for="Correo">Correo</label>
+                    <input required type="radio" id="Facebook" name="tipocontacto" value="Facebook">
+                    <label for="Facebook">Facebook</label>
+                </fieldset>
+            </div> 
+            <div class="form-group" >
+                <label for="type">Tema a tratar</label>
+                <select id="type" name="type" required>
+                    <option disabled selected value="" >Seleccione uno</option>
+                    <option value="Programacion">Programacion</option>
+                    <option value="Gastronomia">Gastronomia</option>
+                    <option value="Plantas">Plantas</option>
+                    <option value="Recetarios">Recetarios</option>
+                    <option value="Otro">Otro</option>
+                </select>
+             </div>
+             <div class="form-group">
+                <label for="descripcion">Descripcion</label>
+                <textarea id=" descripcion" name="descripcion" rows="7">
+                </textarea>
+                <div class="help">Escriba su problema o preguntas en este espacio</div>
+             </div>
+             <div class="form-group">
+                <label for= "terms">
+                    <input id="terms" name= "terms" type="checkbox" required>
+                    <span>Acepto terminos y condiciones</span>
+                </label>
+             </div>
+            <button>Enviar</button>
+        </form>
+
+
+    </main>
+    
+</body>
+</html>

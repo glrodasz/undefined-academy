@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My form</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+    <main class="page">
+        <form action="/server" method="get">
+            <div class="container py-4 px-3 mx-auto">
+
+                <h1>Contact me</h1>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full name</label> <br>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name"
+                        required>
+
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com"
+                        required>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Prices</legend>
+                        <input class="form-check-input" id="5000" type="radio" name="budget" value="5000" required
+                            checked>
+                        <label for="5000">$ 5.000</label>
+
+                        <input class="form-check-input" id="2500" type="radio" name="budget" value="2500" required>
+                        <label for="2500">$ 2.500</label>
+
+                        <input class="form-check-input" id="1000" type="radio" name="budget" value="1000" required>
+                        <label for="1000">$ 1.000</label>
+                        <br>
+                        <span>These are not finals prices</span>
+                    </fieldset>
+                    <br>
+                </div>
+                <div class="form-group">
+                    <label id='project' for="type">What kind of proyect do you want?</label>
+                    <select class="form-select" id="type" aria-label="project" required>
+                        <option value="1">Website</option>
+                        <option value="2">WebApp</option>
+                        <option value="3">Mobile App</option>
+                        <option value="4">Desing</option>
+                        <option value="5">Other</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="description">Description</label><br>
+                    <textarea class="form-control" name="description" id="description" required rows="3" cols="50"
+                        aria-labelledby="description">
+                    </textarea>
+
+                    <div>
+                        <span>
+                            Write a description about
+                            this project.</span>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <label for="terms">
+                        <input type="checkbox" class="form-check-label" id="terms" required>
+                        <span>I accept terms and conditions.</span>
+                    </label>
+                </div>
+                <br>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">You can drop here something that look like your proyect in
+                        mind.</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <br>
+                <button class="btn btn-primary" type="submit">Send</button>
+                <br>
+            </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

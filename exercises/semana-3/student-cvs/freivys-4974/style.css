@@ -1,0 +1,279 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+/* Custom properties */
+:root {
+  --bgColor: #f5f7f9;
+  --textColor: #566b78;
+  --subtitleColor: #333;
+  --hoverColor: #e81c4f;
+  --whiteColor: #ffff;
+  --fontFamily: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+/* Reset */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bgColor);
+  color: var(--textColor);
+  font-family: var(--fontFamily);
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 0 0 2em;
+  width: 100%;
+}
+
+hr {
+  background-image: linear-gradient(to right, #f0f0f0, var(--hoverColor), var(--textColor), #f0f0f0);
+  border: 0;
+  height: 1px;
+  margin: 10px 0;
+}
+
+/* Page Styles */
+.Header {
+  background-image: url("./header2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--whiteColor);
+  line-height: 1.2;
+  padding: 5vh .5em;
+  text-align: center;
+  max-width: 100%;
+}
+
+.Header-logo {
+  display: inline-block;
+  height: 60px;
+  vertical-align: top;
+  width: 60px;
+}
+
+.Header-title {
+  font-size: 3em;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.Header-subtitle {
+  margin: 30px 0;
+}
+
+.Header-github {
+  border: 1px solid var(--hoverColor);
+  border-radius: 20px;
+  color: var(--whiteColor);
+  font-size: .7em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+.Header-github:hover {
+  background: var(--hoverColor);
+}
+
+.Subtitle {
+  color: var(--subtitleColor);
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin: 1em auto;
+  padding: 1em 0;
+}
+
+.Main,
+.Footer {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.About {
+  line-height: 1.7;
+  min-height: 40vh;
+}
+
+.About-paragraph {
+  font-size: 1.25em;
+  line-height: 1.7;
+}
+
+.Stack-img {
+  text-align: center;
+}
+
+.Stack-logo {
+  height: 40px;
+  margin: 5px;
+}
+
+.Form {
+  border: 2px solid var(--hoverColor);
+  border-radius: 10px;
+  padding: 10px 5px;
+  width: 100%;
+}
+
+.Form-group {
+  margin: 20px 0;
+}
+
+.Form-title,
+.Form-input,
+.Form-select,
+.Form-textarea {
+  color: var(--textColor);
+  vertical-align: middle;
+  padding: 8px 4px;
+  width: 100%;
+}
+
+.Form-title {
+  color: var(--subtitleColor);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.Form-input:focus,
+.Form-select:focus,
+.Form-description:focus,
+.Form-textarea:focus {
+  border: 1px solid var(--hoverColor);
+  border-radius: 4px;
+  outline: 0 none;
+}
+
+.Form-select {
+  background: var(--whiteColor);
+}
+
+.Form-description {
+  display: block;
+  resize: vertical;
+  width: 100%;
+}
+
+.Form-textarea {
+  text-align: left;
+}
+
+.Form-help {
+  color: var(--textColor);
+  font-size: 13px;
+}
+
+.Form-btn {
+  text-align: center;
+}
+
+.Btn {
+  border: 1px solid var(--hoverColor);
+  border-radius: 8px;
+  background: none;
+  color: var(--subtitleColor);
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 64px;
+}
+
+.Btn:hover {
+  background-color: var(--hoverColor);
+  color: var(--whiteColor);
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+.Btn:active {
+  background-color: #9b0d31;
+}
+
+.Footer {
+  margin: 20px auto 5px;
+  padding: 2.5px 0;
+  text-align: center;
+}
+
+.Footer-paragraph {
+  margin: 5px 0;
+}
+
+.Footer-anchor {
+  color: var(--hoverColor);
+  padding: 2.5px;
+  text-decoration: none;
+}
+
+.Footer-anchor:hover {
+  background: var(--hoverColor);
+  border-radius: 5px;
+  color: var(--whiteColor);
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .Header {
+    padding: 5vw 2em;
+  }
+
+  .Header-logo {
+    height: 120px;
+    width: 120px;
+  }
+
+  .Header-title {
+    font-size: 2.5em;
+  }
+
+  .Header-github {
+    font-size: 0.6em;
+  }
+
+  .Main,
+  .Footer {
+    max-width: 50em;
+  }
+
+  .Form {
+    padding: 20px;
+  }
+
+  .Form-project {
+    font-size: 14px;
+  }
+
+  .Form-help {
+    font-size: 10px;
+  }
+
+  .Footer {
+    margin: 40px auto 10px;
+    padding: 5px 0;
+  }
+
+  .Footer-anchor {
+    padding: 5px;
+  }
+}

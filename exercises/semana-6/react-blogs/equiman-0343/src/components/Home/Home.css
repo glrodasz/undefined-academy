@@ -1,0 +1,34 @@
+body {
+    display: grid;
+    height: 100dvh;
+    padding: 0;
+    background: var(--sky-050);
+    color: var(--text-primary);
+    font-family: Inter, Helvetica, Arial, sans-serif;
+}
+
+#root {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+main {
+    width: 100%;
+}
+
+.header + main {
+    margin-top: 50px;
+}
+
+main > section:not(.me) {
+    max-width: 50em;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+section:not(.me) > h1 {
+    padding: 1rem 0;
+    color: var(--text-title);
+    font-size: 1.5rem;
+    font-weight: bold;
+}

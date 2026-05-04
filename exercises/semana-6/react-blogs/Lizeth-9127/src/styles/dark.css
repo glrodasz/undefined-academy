@@ -1,0 +1,35 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --caption: #6b7280;
+    --bg-color: #292727;
+    --border: #343232;
+    --hover-color: #252424;
+    --slate: #cbd5e1;
+    --primary: #475569;
+    --bg-article:#2c2a2a;
+  }
+
+  footer {
+    border-top: 1.5px solid var(--border);
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+  }
+
+  p {
+    color: var(--slate);
+  }
+  
+  a:hover {
+    color: var(--primary);
+  }
+
+  .icon{
+     filter:opacity(0.5) drop-shadow(0 0 0 white) brightness(500%); 
+  }
+
+  .article{
+    background-color:var(--bg-article);
+  }
+}

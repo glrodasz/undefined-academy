@@ -1,0 +1,69 @@
+@use "colors.scss";
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    color: colors.$emperor;
+    background-color: colors.$whiteSmoke;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(220, 220, 220, 0.829);
+    padding: 8px;
+  }
+
+div:nth-child(n+2) {
+    background-color: colors.$blanchedAlmond;
+}
+  
+
+  .logo {
+    padding: 8px 12px;
+    width: 250px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px auto auto;
+    gap: 15px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 /4;
+    grid-row: 1 / 2;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  div:last-child {
+    grid-column: 1 / 4;
+  }
+
+.fecha {
+  display:block;
+  text-align: right;
+  font-size: small;
+}

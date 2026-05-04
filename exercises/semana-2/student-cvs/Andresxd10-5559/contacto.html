@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="stylescontac.css">
+</head>
+
+<body>
+    <main class="page">
+        <h1>Contacto</h1>
+        <hr>
+        <article>
+            <section>
+
+                <form action="/server" method="get">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="name" placeholder="Ingrese su nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend>¿cual es tu presupuesto?</legend>
+                            <input type="radio" name="budget" id="1000" required>
+                            <label for="1000">$1,000</label>
+                            <input type="radio" name="budget" id="5000" required>
+                            <label for="5000">$5000</label>
+                            <input type="radio" name="budget" id="15000" required>
+                            <label for="15000">$15,000</label>
+                        </fieldset>
+                        <div class="help">Éste presupuesto es una base, no el total</div>
+                    </div>
+            </section>
+            <section>
+                <h2 class="about">Acerca de tu proyecto</h2>
+                <hr>
+                <div class="form-group">
+                    <label for="type">Tipo de projecto deseado</label>
+                    <select name="projectType" id="type" required>
+                        <option value="" disabled selected>Seleccione una opción</option>
+                        <option value="Site">Website</option>
+                        <option value="App">Web App</option>
+                        <option value="Mobile">Mobile App</option>
+                        <option value="Design">Diseño de Website</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Descripción de tu proyecto</label>
+                    <textarea name="description" id="description" cols="30" rows="8" required></textarea>
+                    <div class="help">
+                        Escribe una descripción del projecto que deseas realizar
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">¿cuando me podrias contactar?</label>
+                        <input type="datetime-local" name="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="terms">Acepto los Términos y Condiciones</label>
+                        <input type="checkbox" name="terms" id="terms" re4>
+                    </div>
+            </section>
+            <footer>
+                <button type="submit">Enviar</button>
+                <div class="help">Gracias por haber contactado con Andrés Chaverra, te contactaremos luego!.</div>
+            </footer>
+            </form>
+        </article>
+
+    </main>
+    <a href="/">Volver al Home</a>
+</body>
+
+</html>

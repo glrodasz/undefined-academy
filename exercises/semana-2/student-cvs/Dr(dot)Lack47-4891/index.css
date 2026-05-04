@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+body {
+    margin: auto 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 26px;
+    line-height: 1.5;
+    padding-top: 0px;
+    color: #616A6B;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    background: #f6f7f9;
+}
+
+.mhead {
+    background-color: antiquewhite;
+    background-image: url("/pages/imgs/back.jpg")  ;
+    background-size: cover;
+    background-position: 0px 1050px;
+    line-height: 0.3;
+    padding: 100px;
+    text-align: center;
+    font-size: 28px;
+}
+.body {
+    margin: auto;
+    max-width: 27em;
+}
+
+footer {
+    padding: 30px;
+    padding-top: 0px;
+    background-color: #d0d8e0;
+}
+
+h2,
+h3,
+h4,
+strong {
+    color: #1C2833;
+}
+
+h1{
+    font-size: 200%;
+    color: #1c5a4d;
+}
+
+img {
+    display: block;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: #16A085;
+}
+
+form{
+    accent-color: #597f9a;
+}
+
+.form{
+    padding-bottom: 7px;
+    color: #333;
+}
+
+.center{
+    text-align: center;
+    border: 3px dashed tomto;
+}
+
+legend{
+    text-align: end;
+}
+
+.txt{
+    margin-top: 0px;
+    font-size: 20px;
+    color: #616A6B;
+}
+
+textarea{   
+    display: block;
+    width: 100%;
+    resize: none;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 4px 6px;
+}
+
+label, input[type="text"], input[type="email"], input[type="tel"]{
+    width: 40%;
+}
+
+input[type="text"], input[type="email"], input[type="tel"]{
+    width: 40%;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 4px 6px;
+    display: inline;
+}
+
+input:focus-visible, textarea:focus-visible{
+    outline: 2px solid #597f9a;
+    
+}
+
+button{
+    margin-top: auto;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f6f7f9;
+    background-color: #597f9a;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 50%);
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button:hover{
+    background: #6a8ca4;
+}
+
+button:active{
+    background: #47667b;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);;
+}
+
+address{ 
+    font-style: normal;
+}

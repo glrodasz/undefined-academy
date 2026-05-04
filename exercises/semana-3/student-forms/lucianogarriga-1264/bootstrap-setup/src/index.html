@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Form</title>
+</head>
+<body>
+	<nav>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li> 
+        </ul> 
+	</nav>  
+	<header>
+		<h1>Contact Form</h1>
+	</header>
+	<main>
+		<form class="my-form" id="my-form" action="/submit-form.php"> 
+			<div class="mb-4">
+				<label for="name" class="form-label">Name</label>
+				<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name" required>
+			</div>
+			<div class="mb-4">
+				<label for="exampleFormControlInput1" class="form-label">Email address</label>
+				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+			</div>
+			
+			<div class="input-group mb-4">
+				<span class="input-group-text">$</span>
+				<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Budget amount for your project"> 
+			</div>
+			 
+			<div class="mb-4">
+				<label for="exampleFormControlTextarea1" class="form-label">Enter your request or project idea</label>
+				<textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+			</div> 
+			<button type="submit" class="btn btn-primary my-button">Submit</button>
+		</form>
+	</main>
+	<script type="module" src="./js/main.js"></script>
+</body>
+</html>

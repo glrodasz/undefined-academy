@@ -1,0 +1,108 @@
+body {
+    font-family: Arial;
+    color: #333;
+    background-color: aliceblue;
+    color: rgba(0, 40, 126, 0.882);
+  }
+
+  a {
+    color: rgba(0, 81, 255, 0.882);
+    font-weight: bold;
+}
+
+a:hover {
+    background: darkblue;
+    color: white;
+}
+  
+  div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightblue;
+    padding: 25px;
+    border-radius: 8px;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+  }
+  
+  input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid lightblue;
+    width: 400px;
+    background: rgb(228, 237, 246);
+    color: rgba(0, 81, 255, 0.882);
+  }
+
+  input::placeholder{
+    color: rgba(0, 81, 255, 0.882);
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat();
+    grid-template-rows: 50px auto  auto ;
+    gap: 1.5em;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 /4;
+    grid-row: 1 / 2;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  div .big {
+    grid-column: 1/4;
+  }
+
+  footer {
+    font-size: 12px;
+    margin-top: 3em;
+    color: rgba(0, 81, 255, 0.882);
+    font-size: 12px;
+  }
+
+  footer p {
+    border-top: 1px solid;
+    padding-top: 0.3em;
+    width: 24em;
+    text-align: right;
+
+}
+
+/*----------Responsiveness-----------*/
+/*-------- Media queries --------*/
+
+@media screen and (max-width:900px) {
+
+  nav {
+    
+    display: block;
+  }
+
+  input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid Gainsboro;
+    width: 94%;
+    background: WhiteSmoke;
+  }
+
+  div {
+    grid-column: 1/4;
+  }
+
+}

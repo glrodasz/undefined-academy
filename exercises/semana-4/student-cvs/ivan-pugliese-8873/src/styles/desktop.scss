@@ -1,0 +1,65 @@
+/* ---- Styles - MediaQuerys - DESKTOP ----*/
+  
+@media screen and (min-width: 700px) {
+  
+    .page {
+        margin: 0 auto;
+        width: 850px;
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .header {
+        position: sticky;
+        top: 0;
+        background-color: $gallery-color;
+    }
+  
+    .nav {
+       display: block;
+    }
+  
+    .nav-ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: $ripe-plum-color;
+        font-weight: bold;
+        list-style-type: none;
+        cursor: pointer;
+    }
+  
+    .nav-ul a {
+        color: $ripe-plum-color;
+    }
+  
+    .nav-ul a:hover {
+        color: $affair-color;
+    }
+  
+    .mobile-nav {
+        display: none;
+    }
+  
+    main {
+        flex-direction: row;
+    }
+  
+    .about-social {
+        padding-right: 3rem;
+    }
+  
+    .projects, .contact h2 {
+        padding-left: 1.2rem;
+    }
+  
+    .form {
+        width: 700px;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+  }

@@ -1,0 +1,100 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+li:hover{
+    text-decoration: underline;
+}
+
+.logo{  
+    width: 30%;
+    height: 30%;
+    padding: 0;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid  gainsboro;
+    padding: 10px;
+    border-radius: 5px;
+    background: whitesmoke;
+
+    margin: 50px;
+}
+
+.navbar{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    background:rgba(0, 139, 139, 0.455);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px auto auto; */
+    gap: 20px;
+    
+}
+
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    grid-column:1/4;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 100px;
+    padding-top: 15px;
+}
+
+.texto h1{
+    font-size: 3rem;
+    margin: 0;
+}
+
+.texto p{
+    font-size: 20px;
+    color: #4d4a4a;
+}
+
+h1{
+    font-size: 20px;
+}
+
+div:last-child{
+    grid-column: 1/4;
+}
+
+@media screen and (min-width:992px) {
+    .texto{
+        margin: 0 200px;
+    }
+
+    .container{display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50px auto auto;
+    gap: 5px;}
+
+    .card{
+        margin: 20px;
+
+    }
+}

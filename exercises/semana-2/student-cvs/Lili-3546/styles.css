@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.portada {
+    background-image: url(portada.jpg);
+    background-position: center top;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 6vw 2em;
+    text-align: center;
+}
+
+.portada h1 {
+    color: rgb(247, 195, 224);
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+.portada nav ul {
+    margin-right: 40px;
+}
+
+.portada nav li {
+    display: inline-block;
+    margin: 2px;
+    list-style: none;
+}
+
+.portada nav li a {
+    font-size: 1em;
+    color: rgb(244, 156, 205);
+    text-decoration: none;
+    padding: 3px 1px;
+}
+
+.portada nav li a:hover {
+    color: palevioletred;
+}
+
+main {
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 60em;
+    line-height: 1.5;
+    padding: 0 1em 4em;
+    color: #555;
+}
+
+p strong {
+    color: #333;
+}
+
+p a {
+    text-decoration: none;
+    color: rgb(195, 83, 243);
+}
+
+p a:hover {
+    color: rgb(131, 7, 188);
+}
+
+article h2 {
+    color: #555;
+}
+
+.container {
+    background-color: rgb(237, 251, 255);
+    padding: 5px;
+    margin: 2rem 0;
+    color: black;
+}
+
+.container ul li {
+    list-style-type: square;
+}
+
+form {
+    border: 1px solid #aaaaaa;
+    padding: 20px 40px;
+    background-color: rgb(255, 240, 245);
+    border-radius: 4px;
+    box-shadow: 3px 3px #d8d8d8;
+    accent-color: palevioletred;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+label, input {
+    vertical-align: middle;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
+
+label, legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #444;
+}
+
+input[type="text"], input[type="email"], textarea, fieldset, select {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #333;
+}
+
+button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid palevioletred;
+    background: rgb(255, 186, 208);
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(254, 139, 177);
+}
+
+button:active {
+    background: rgb(211, 98, 136);
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    border: 1px solid palevioletred;
+    outline: 1px solid rgb(254, 132, 173);
+}
+
+footer {
+    padding: 3rem;
+    background-color: gainsboro;
+    color: #555;
+}
+
+

@@ -1,0 +1,24 @@
+@use "tools";
+
+
+body {
+    font-family: Recursive, Poppins;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin: 0 auto;
+    padding: var(--container-padding);
+    background: var(--color-shark);
+
+    @include tools.container-width;
+
+}
+
+main {
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+
+    @include tools.container-width;
+}
+

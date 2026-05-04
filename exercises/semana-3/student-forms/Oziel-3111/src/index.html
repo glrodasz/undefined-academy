@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="display-1"><center>CONTACTO</center></h1>
+    </header>
+    <div class="container">
+        <form action="">
+            <div class="mb-3">
+                <label class="form-label" for="name">Nombre: </label>
+                <input class="form-control" name="name" required type="text" id="name" placeholder="Ingrese su nombre completo...">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="email">Email: </label>
+                <input class="form-control" name="email" required type="email" id="email" placeholder="Ingrese su E-mail...">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="description">Descripción: </label>
+                <textarea class="form-control" name="description" required id="description" cols="30" rows="10" placeholder="Escriba una descripción."></textarea>
+            </div>
+      <button class="btn btn-primary">Enviar</button>
+    </div>
+  </body>
+</html>

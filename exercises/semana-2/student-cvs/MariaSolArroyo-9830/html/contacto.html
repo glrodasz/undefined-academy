@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <header>
+        <img src="../img/IMG_4948.PNG" alt="foto perfil">
+        <h1>Hola! Soy María Sol Arroyo 👋🏽 👩🏽‍💻</h1>
+        <a href="https://solarroyoportfolio.github.io/resumeweb/" target="_blank">Portfolio Web</a>
+        <a href="../index.html">Home</a>
+
+      </header>
+
+      <section id="contacto">
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="type">Tipo de consulta</label>
+                <select name="type" id="type" required>
+                    <option disabled selected></option>
+                    <option value="presupuesto">Presupuesto</option>
+                    <option value="entrevista">Entrevista</option>
+                    <option value="consultas">Consultas Generales</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <fieldset>
+                    <div> Si seleccionó <strong>presupuesto</strong> porque medio prefiere ser contactado:</div>
+
+                    <legend> ❓</legend>
+                    <input type="radio" name="budget" id="10000" value="whatsapp">
+                    <label for="whatsapp">Whatsapp</label>
+                    <input type="tel" placeholder="Ingrese su Whatsapp">
+
+                    <input type="radio" name="budget" id="10000" value="emailcontacto">
+                    <label for="emailcontacto">Email</label>
+                    
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Consultas Generales</label>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                <div class="help">Escribe tu consulta en almenos 300 palabras...</div>
+            </div-form-group>
+            <button>Enviar</button>
+        </form>
+      </section>
+
+
+
+      <footer>
+        <p>María Sol Arroyo &copy; 2023</p>
+      </footer>
+
+      <script>
+      // Selecionamos el elemento form del html
+const formEl = document.querySelector("form");
+
+// Añadimos un manejador de eventos al elemento, de forma que el navegador permanezca "atento" a la interacción del usuario. En este caso el envío del formulario, por lo que utilizamos el evento `submit`
+
+formEl.addEventListener("submit", (event) => {
+//El argumento event es un objeto que hace referencia al evento que se está disparando
+// El método preventDefault() evita el comportamiento por defecto
+    event.preventDefault() 
+})
+
+      </script>
+</body>
+</html>

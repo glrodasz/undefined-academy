@@ -1,0 +1,49 @@
+html {
+   box-sizing: border-box;
+   height: 100%;
+   font-family: Inter, sans-serif;
+   scroll-behavior: smooth;
+}
+
+* {
+   box-sizing: inherit;
+}
+
+body {
+   height: inherit;
+   margin: 0;
+   background-color: var(--color-night-owl);
+   color: var(--color-humble-bellflower);
+   font-size: 1em;
+}
+
+a {
+   color: var(--color-links);
+   text-decoration: none;
+}
+
+h2 {
+   color: var(--color-title);
+}
+
+img {
+   width: 100%;
+}
+
+ul {
+   list-style: none;
+   padding-left: 0;
+   font-size: 1.2em;
+   margin-top: 0;
+   margin-bottom: 0;
+   width: 100%;
+}
+
+li {
+   text-align: center;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+}

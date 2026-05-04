@@ -1,0 +1,71 @@
+.banner {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  background: var(--green-vogue);
+}
+
+.banner-body {
+  position: relative;
+}
+
+.banner-title {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.banner-image {
+  display: none;
+}
+
+.badge {
+  border-radius: 50px;
+  display: inline-block;
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+  width: fit-content;
+  padding: 0.125rem 1rem;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    var(--persian-green) 0.1%,
+    var(--orient) 94.2%
+  );
+}
+
+@media screen and (min-width: 500px) {
+  .banner-image {
+    display: block;
+    position: absolute;
+    width: 160px;
+    top: 0px;
+    right: 0;
+    filter: drop-shadow(0 0 6px var(--hint-of-green));
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    height: 350px;
+  }
+
+  .banner-image {
+    width: 350px;
+    top: -125px;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}

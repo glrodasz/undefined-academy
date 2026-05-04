@@ -1,0 +1,27 @@
+@use "base.scss";
+@use "desktop.scss";
+@import "variables.scss";
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+
+html{
+  box-sizing: border-box;
+}
+
+*{
+  box-sizing: inherit;
+}
+body{
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    color: $color-fuente;
+    background: whitesmoke;
+}
+
+
+
+
+
+

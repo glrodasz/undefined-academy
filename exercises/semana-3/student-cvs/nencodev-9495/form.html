@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script type="async defer module" src="./main.mjs"></script>
+  <title>HMA | Curriculum</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <ul>
+        <li class="menu-icons me-icon"><a href="./index.html#about">Sobre mí</a></li>
+        <li class="menu-icons resume-icon"><a href="./index.html#resume">Resumen</a></li>
+        <li class="menu-icons portfolio-icon"><a href="./index.html#portfolio">Portafolio</a></li>
+        <li class="menu-icons email-icon"><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="container">
+
+      <div class="module">
+        <h2 id="contact">Contacto</h2>
+        <hr class="separator">
+
+        <section class="contact-form">
+          <form action="/server" method="get">
+            <div class="form-group">
+              <label for="name">Nombre: </label>
+              <input id="name" name="name" type="text" placeholder="Ingrese su nombre completo" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico: </label>
+              <input id="email" name="email" type="email" placeholder="Ingrese su correo electronico" required />
+            </div>
+            <!--
+              <div class="form-group">
+                <fieldset>
+                  <legend>presupuesto</legend>
+                  <input id="10000" name="budget" type="radio" value="10000" required />
+                  <label for="10000"> $10.000</label>
+                  <input id="5000" name="budget" type="radio" value="5000" required />
+                  <label for="5000"> $5.000</label>
+                  <input id="1000" name="budget" type="radio" value="1000" required />
+                  <label for="1000"> $1.000</label>
+                </fieldset>
+                <div class="help">
+                  Este presupuesto es la base no el total
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="type">Tipo de Proyecto: </label>
+                <select name="type" id="type" required>
+                  <option disabled selected value="">Seleccione uno</option>
+                  <option value="Website">Website</option>
+                  <option value="aplicacionweb">Aplicación Web</option>
+                  <option value="aplicacionmovil">Aplicación Movil</option>
+                  <option value="disenoweb">Diseño Web</option>
+                </select>
+              </div> -->
+            <div class="form-group">
+              <label for="description">Descripción: </label>
+              <textarea name="description" id="description" cols="30" rows="8" required></textarea>
+              <div class="help">
+                Escribe una descripción del proyecto en al menos 500 palabras
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="termsandconditions">
+                <input type="checkbox" name="termsandconditions" id="termsandconditions" required />
+                <span>Acepto los terminos y condiciones</span>
+              </label>
+            </div>
+            <button id="submit">Enviar</button>
+          </form>
+        </section>
+
+      </div>
+    </section>
+    </section>
+  </main>
+</body>
+
+</html>

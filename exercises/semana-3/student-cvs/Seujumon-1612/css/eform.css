@@ -1,0 +1,81 @@
+*{
+	box-sizing: border-box;
+}
+.bloque{
+	display: block;
+}
+.cien{
+	width: 100%;
+}
+.cincuenta{
+	width: 45%;
+}
+fieldset{
+	border: solid 1px pink;
+	color: #333;
+}
+legend{
+	color: #333;
+	font-weight: bold;
+	font-size: 20px;
+}
+textarea{
+	resize: vertical;
+	border: solid 1px pink;
+	background-color: rgb(138, 44, 226, .2);
+}
+label{
+	text-align: center;
+	color: #333;
+	font-weight: bold;
+	font-size: 18px;
+}
+label, input{
+	padding: 3px 0;
+	margin: 3px 0;
+	border: none;
+
+
+}
+select{
+	border: solid 1px pink;
+	background-color: rgb(138, 44, 226, .2);
+	
+}
+select:hover{
+	background-color: pink;
+	
+}
+input{
+	border-bottom: solid 1px pink;
+	border-radius: 8px;
+	text-align: center;
+	background-color: rgb(138, 44, 226, .2);
+
+}
+input, select, textarea{
+	padding: 8px;
+}
+
+form{
+	margin: 0 auto;
+    max-width: 450px;
+    padding: 5px 10px;
+    border-right: solid 1px rgb(209, 188, 188);
+    border-left: solid 1px rgb(209, 188, 188);
+    border-radius: 16px 0 16px 0;
+	accent-color: palevioletred;
+}
+
+button{
+	padding: 16px;
+	margin: 4px auto;
+	border-radius: 12px;
+	background-color: lightpink;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	cursor:pointer;
+}
+button:hover{
+	background-color: palevioletred;
+}

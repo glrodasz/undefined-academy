@@ -1,0 +1,41 @@
+@use "./style/utilidades";
+@use "./style/base";
+@use "./style/desktop";
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+* {
+  @include reset();
+}
+
+body {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  font-family: utilidades.$font-family-s;
+}
+
+p {
+  font-size: 13px;
+  line-height: 22px;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: utilidades.$gamboge;
+}
+
+h2 {
+  font-size: 13px;
+}
+.nav-checkbox {
+  display: none;
+}

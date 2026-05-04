@@ -1,0 +1,13 @@
+// SASS Variables
+$breakpoint-large: 992px;
+
+@mixin container-width {
+  width: 100%;
+  max-width: var(--container-max-width);
+}
+
+@mixin desktop {
+  @media screen and (min-width: $breakpoint-large) {
+    @content;
+  }
+}

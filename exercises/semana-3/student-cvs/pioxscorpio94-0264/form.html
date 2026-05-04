@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="/main.css">
+    <script type="module" src="/main.mjs"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="/index.html">Back</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contact Me</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+                <label for="type">Project Type:</label>
+                <select name="type" id="type">
+                    <option value="website">Website</option>
+                    <option value="webapp">Web application</option>
+                    <option value="design">Web Design</option>
+                    <option value="mobile">Mobile App</option>
+                    <option value="desktop">Desktop app</option>
+                    <option value="multi">Multiplatform</option>
+                </select>
+                <fieldset>
+                    <legend>Budget</legend>
+                    <div>
+                        <input type="radio" id="1k" name="budget">
+                        <label for="1k">1000$</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="10k" name="budget">
+                        <label for="10k">10.000$</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="50k" name="budget">
+                        <label for="50k">50.000$</label>
+                    </div>
+                </fieldset>
+                <label for="description">Description:</label>
+                <textarea cols="30" rows="10" id="description"></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>© <time datetime="2024">2024</time> Jose Valerio. All rights reserved.</footer>
+</body>
+
+</html>

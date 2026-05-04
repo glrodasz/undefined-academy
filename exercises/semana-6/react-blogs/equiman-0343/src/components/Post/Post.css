@@ -1,0 +1,43 @@
+.post > :first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid var(--sky-200);
+    border-radius: 8px;
+    background-color: var(--sky-100);
+}
+
+.post > :first-child:hover {
+    box-shadow: 1px 1px 3px rgb(0 0 0 / 50%);
+}
+
+.post a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.post header {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.post img {
+    padding: 0.5em 0;
+}
+
+.post p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.post footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 0.5rem;
+    color: var(--text-title);
+    font-size: 0.8rem;
+    font-weight: bold;
+}

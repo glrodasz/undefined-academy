@@ -1,0 +1,151 @@
+body{
+    font-size: 18px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+} 
+header, section, aside, footer{
+    margin: 0;
+    padding: 10px;  
+    color: var(--color-mine-shaft);
+}  
+.fixed{
+    position: fixed;
+    top: -15px; 
+    left: 0px;
+    right: 0px; 
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly; 
+    background: var(--color-mine-shaft);
+    list-style: none;
+    text-decoration: none; 
+    color: aliceblue; 
+    cursor: pointer;
+    font-size: 14px;
+    padding: 16px;
+}
+nav ul li a{
+    list-style: none;
+    text-decoration: none;  
+    color: var(--color-alice-blue); 
+}
+/* HEADER STYLES & BACKGROUND */
+.header{ 
+    background-image: url(/img/blog-header.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-mine-shaft);
+    line-height: 1.2;
+    padding: 10vw; 
+    text-align: center;
+}
+.content, .footer{ 
+    margin: 5px 0px;
+}  
+h1{
+    margin: 36px 16px;
+} 
+.tit1, .tit-hero{
+    padding: 2px 8px;
+    text-align: center;
+}
+.tit-hero{
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.5;
+    padding: 0.5rem; 
+}
+.sub{
+    margin-top: 1.5rem;
+}
+.tit-hero{
+    margin-bottom: 1.5rem;
+}
+.p-main{
+    line-height: 1.5;
+    text-align: justify;
+}
+ 
+
+
+/* CARDS STYLES */
+.card{
+    display: flex;
+    flex-direction: column; 
+    box-shadow: 0 1px 2px var(--color-midnight-moss);
+    border-radius: 8px; 
+    gap: 6px 0; 
+    margin: 10px;  
+}  
+.content{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    overflow: hidden;
+}
+img{
+    width: 100%; 
+}
+.paragraph-card{
+    margin: 0px 18px 10px; 
+}
+p{
+    margin: 0; 
+}
+.p-cards{ 
+    font-size: 18px; 
+    text-align: justify;
+} 
+.tit2{
+    padding: 4px 10px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.footer-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 16px 0;
+    font-size: 10px;
+ }
+
+
+.author{
+    display: flex; 
+    gap: 0 12px;
+    align-items: center;
+}
+.author img {
+    width: 100%;
+    max-width: 32px;
+    max-height: 32px;
+    border-radius: 50%;
+} 
+
+.help-text{ 
+    margin-left: 18px;
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--color-gray); 
+}
+
+/* FOOTER */
+.footer-main{
+    padding: 1em;
+    text-align: center;
+    line-height: 1; 
+    background: var(--color-mine-shaft);
+    color: var(--color-seashell);
+}
+.footer-main p, .footer-main address{
+    text-align: center;
+    margin: 20px 0px;
+}
+.footer-main a,
+a h3{
+    list-style: none; 
+    text-decoration: none;
+    color: var(--color-indigo);
+}

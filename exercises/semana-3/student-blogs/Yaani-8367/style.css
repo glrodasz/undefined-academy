@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    width: 100%;
+    height: 150px;
+}
+h1{
+    color: #ccc;
+}
+
+.section-search{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+.filter-item{   
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
+}
+.filter-item:hover{   
+    background: chocolate;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+input{
+    margin: 10px;
+    border-radius: 10px;
+    height: 25px;
+    cursor: pointer;
+    width: 250px;
+}
+input::placeholder{
+    padding-left: 5px;
+}
+
+.cards-container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.card-container{
+    width: 250px;
+    height: auto;
+    border: 1px solid #ccc;
+    margin: 10px; 
+    background: rgba(253, 253, 253, 0.541);
+    border-radius: 10px;
+    transition: 0.9;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: all .3s ease-in-out;
+}
+.card-container:hover{
+    cursor: pointer;
+    transform:translateY(-10px);
+}
+img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+h2{
+    font-size: 0.70rem;
+    text-align: center;
+    margin-left: 5px;
+    padding: 5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: chocolate;
+    text-align: left;
+}
+.sub-title-card{
+    font-size: 1rem;
+    font-weight: 600;
+    /*mostrar el titulo en 2 lineas*/
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: center;
+    padding: 5px;
+}
+.post-date{
+    display: flex;
+    font-size: 0.8rem;
+    
+    font-weight: 400;
+    margin-top: 4px;
+    padding-left: 5px;
+}
+.text-desciption{
+    font-size: 0.9rem;
+    margin: 5px;
+    text-align: center;
+}
+
+
+@media (min-width: 768px){
+   
+    .cards-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 992px){
+    .filter-item{
+        font-size: 1rem;
+    }
+    input{
+        font-size: 0.9rem;
+        padding: 5px;
+        width: 350px;
+    }
+    
+}
+

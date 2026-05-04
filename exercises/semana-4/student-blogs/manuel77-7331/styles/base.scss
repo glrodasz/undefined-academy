@@ -1,0 +1,10 @@
+@media only screen and (max-width: 992px) {
+    .container {
+      display: flex!important;
+      flex-direction: column;
+    }
+    nav{
+      display: flex;
+      flex-direction: column;
+    }
+  }

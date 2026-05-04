@@ -1,0 +1,172 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.intro {
+  background-image: url(Banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  padding: 3vw 2em;
+  border-radius:10px;
+  text-align: end;
+}
+
+a {
+  border: 1px solid lightcoral;
+  border-radius: 290486px;
+  color:gray;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+a:hover {
+  background: beige;
+  color: grey;
+}
+.foto {
+  justify-content: flex-start;
+  
+}
+
+.hv {
+  margin: 0 auto;
+  max-width: 800px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 4em 1em;
+  color: #333;
+}
+
+.hv, h2, h3 {
+  color: #566b78;
+  text-align: justify;
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+ul, li {
+
+  background: gainsboro;
+  padding: 2PX 4px;
+  vertical-align: text-bottom;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th:nth-child(4) {
+  width: 15%; /* Ajusta el ancho de la columna Ejemplo */
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e5e5e5;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.bodyform {
+  max-width: 800px;
+  margin: 100px auto;  
+  padding: 0 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: whitesmoke;
+  
+}
+
+label, input {
+ vertical-align: middle;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+  width: 100%;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+label, fieldset {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #333;
+}
+
+textarea, input, fieldset {
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  margin-top: 6px;
+  padding: 8px 10px;
+}
+
+.help {
+  color: gray;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.form-grupo {
+  margin: 30px 0;
+  
+}
+button {
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #d6cbd3;
+  color: #777;
+  background: LightSteelBlue;
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  height: 30px;
+}
+
+button:hover {
+  background:lightgray;
+}
+
+button:active {
+  background: lightslategray;
+  box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);;
+}
+
+.form-grupo{
+  accent-color: #D2B4DE;
+  
+}
+
+input :focus-visible, textarea :focus-visible {
+   border: 1px #eab308; 
+   outline: 1px solid #facc15;
+}

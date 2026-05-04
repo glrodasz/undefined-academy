@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
+@import "variables.scss";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    color-scheme: dark;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    padding: 2em 1em;
+    border-radius: 10px;
+    width: 100%;
+    min-width: 400px;
+    object-fit: cover;
+
+
+    .body-footer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: $img-body-background;
+    background-size: cover;
+    opacity: .1;
+    pointer-events: none;
+}
+
+main {
+    margin: 0 auto;
+}
+
+p {
+    text-align: justify;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border: 1px solid $color-azure;
+    border-radius: 10px;
+    background-image: $img-stars;
+    margin-bottom: 20px;
+
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: 4px;
+    width: 70%;
+}
+
+a {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: $color-azure;
+}
+
+/* #btn-github {
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    background-image: url("/img/github-logo-dark.png");
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: 9px;
+    width: 50px;
+    height: 32px;
+} */
+
+input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 15px;
+    border: 1px solid $color-azure;
+    width: 30%;
+    background-color: $color-martinique;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: flex-end;
+    justify-content: space-around;
+
+    ::placeholder {
+        color: $color-azure;
+    }
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1;
+    gap: 20px;
+}
+
+article {
+    border: 1px solid $color-azure;
+    border-radius: 10px;
+    justify-content: space-around;
+    padding: 15px;
+
+    a {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+
+    h1 {
+        font-weight: bold;
+    }
+
+    img {
+        aspect-ratio: 2/1;
+    }
+}
+
+.article-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    picture {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+
+        .autor-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+    }
+}
+
+.autor-name {
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.date-texts {
+    font-size: 15px;
+    text-align: center;
+}
+
+.main-article {
+    display: grid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: center;
+}
