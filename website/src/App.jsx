@@ -1119,6 +1119,7 @@ function Footer() {
       </div>
       <div style={{ display: "flex", gap: 24, justifyContent: "center", flexWrap: "wrap", marginBottom: 24 }}>
         {[
+          { label: "GitHub",    href: "https://github.com/glrodasz/academy" },
           { label: "Discord",   href: "https://undf.sh/discord" },
           { label: "YouTube",   href: "https://undf.sh/en-diferido" },
           { label: "Twitter",   href: "https://twitter.com/undefinedshell" },
