@@ -744,7 +744,7 @@ function CurriculumSection() {
         <p style={{ fontSize: 17, color: "#4B5563", marginBottom: 40, lineHeight: 1.6 }}>
           De cero a Full-stack en 16 semanas con un currículo estructurado y progresivo.
         </p>
-        <div className="curriculum-grid">
+        <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
           {WEEKS.map(({ week, title, topics }) => {
             const isOpen = open === week;
             return (
@@ -995,7 +995,7 @@ function FAQSection() {
         }}>
           FAQ
         </h2>
-        <div className="faq-grid">
+        <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
           {FAQ_ITEMS.map(({ q, a }, i) => {
             const isOpen = open === i;
             return (

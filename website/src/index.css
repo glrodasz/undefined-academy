@@ -30,26 +30,6 @@ button {
   width: 100%;
 }
 
-.curriculum-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-  align-items: start;
-}
-
-.faq-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  align-items: start;
-}
-
-@media (max-width: 768px) {
-  .curriculum-grid,
-  .faq-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 /* Nav responsive */
 @media (max-width: 640px) {
