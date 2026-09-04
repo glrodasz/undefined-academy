@@ -1123,8 +1123,8 @@ function Footer() {
           { label: "YouTube",   href: "https://germo.me/bootcamp-en-diferido" },
           { label: "Twitch",    href: "https://germo.me/bootcamp-en-vivo" },
           { label: "Discord",   href: "https://germo.me/bootcamp-discord" },
-          { label: "Twitter",   href: "https://twitter.com/guillermorodas" },
-          { label: "Instagram", href: "https://instagram.com/_guillermorodas" },
+          { label: "Twitter",   href: "https://twitter.com/germorodas" },
+          { label: "Instagram", href: "https://instagram.com/germorodas" },
         ].map(({ label, href }) => (
           <FooterLink key={label} href={href} label={label} />
         ))}
