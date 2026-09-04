@@ -272,14 +272,14 @@ function SignupModal({ onClose }) {
             }}>
               <li style={{ marginBottom: 10 }}>
                 Accede al Discord:{" "}
-                <a href="https://undf.sh/discord" target="_blank" rel="noopener noreferrer" style={linkStyle}>
-                  https://undf.sh/discord
+                <a href="https://germo.me/bootcamp-discord" target="_blank" rel="noopener noreferrer" style={linkStyle}>
+                  https://germo.me/bootcamp-discord
                 </a>
               </li>
               <li>
                 Empieza aquí:{" "}
-                <a href="https://undf.sh/empezar" target="_blank" rel="noopener noreferrer" style={linkStyle}>
-                  https://undf.sh/empezar
+                <a href="https://germo.me/bootcamp-empezar" target="_blank" rel="noopener noreferrer" style={linkStyle}>
+                  https://germo.me/bootcamp-empezar
                 </a>
               </li>
             </ol>
@@ -1120,11 +1120,11 @@ function Footer() {
       <div style={{ display: "flex", gap: 24, justifyContent: "center", flexWrap: "wrap", marginBottom: 24 }}>
         {[
           { label: "GitHub",    href: "https://github.com/glrodasz/academy" },
-          { label: "YouTube",   href: "https://undf.sh/en-diferido" },
-          { label: "Twitch",    href: "https://undf.sh/en-vivo" },
-          { label: "Discord",   href: "https://undf.sh/discord" },
-          { label: "Twitter",   href: "https://twitter.com/guillermorodas" },
-          { label: "Instagram", href: "https://instagram.com/_guillermorodas" },
+          { label: "YouTube",   href: "https://germo.me/bootcamp-en-diferido" },
+          { label: "Twitch",    href: "https://germo.me/bootcamp-en-vivo" },
+          { label: "Discord",   href: "https://germo.me/bootcamp-discord" },
+          { label: "Twitter",   href: "https://twitter.com/germorodas" },
+          { label: "Instagram", href: "https://instagram.com/germorodas" },
         ].map(({ label, href }) => (
           <FooterLink key={label} href={href} label={label} />
         ))}
