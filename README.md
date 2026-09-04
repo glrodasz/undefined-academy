@@ -36,15 +36,15 @@ El bootcamp es impartido por **Guillermo Rodas**, un desarrollador Full-stack en
 
 ## ▶️ Cómo Empezar
 
-Para comenzar con el bootcamp, visita [undf.sh/empezar](https://undf.sh/empezar) donde encontrarás toda la información necesaria para inscribirte y prepararte para el programa.
+Para comenzar con el bootcamp, visita [germo.me/bootcamp-empezar](https://germo.me/bootcamp-empezar) donde encontrarás toda la información necesaria para inscribirte y prepararte para el programa.
 
 ### Modalidad En Diferido
 
-Si no puedes asistir a las sesiones en vivo, puedes acceder al contenido en diferido. Visita [undf.sh/en-diferido](https://undf.sh/en-diferido) para más información sobre cómo acceder a las grabaciones de las sesiones.
+Si no puedes asistir a las sesiones en vivo, puedes acceder al contenido en diferido. Visita [germo.me/bootcamp-en-diferido](https://germo.me/bootcamp-en-diferido) para más información sobre cómo acceder a las grabaciones de las sesiones.
 
 ### Contenido Base
 
-El material base del bootcamp está disponible en [undf.sh/base](https://undf.sh/base). Aquí encontrarás los recursos fundamentales para seguir el programa.
+El material base del bootcamp está disponible en [germo.me/bootcamp-base](https://germo.me/bootcamp-base). Aquí encontrarás los recursos fundamentales para seguir el programa.
 
 ## 📚 Contenido del Programa
 
@@ -194,9 +194,9 @@ En [`exercises/`](./exercises) encontrarás los ejercicios resueltos por los est
 ## 🔗 Enlaces Importantes
 
 - [Página Principal](https://undefined.academy)
-- [Cómo Empezar](https://undf.sh/empezar)
-- [Contenido En Diferido](https://undf.sh/en-diferido)
-- [Material Base](https://undf.sh/base)
+- [Cómo Empezar](https://germo.me/bootcamp-empezar)
+- [Contenido En Diferido](https://germo.me/bootcamp-en-diferido)
+- [Material Base](https://germo.me/bootcamp-base)
 - [Blog del Instructor](https://undefined.sh)
 - [GitHub del Instructor](https://github.com/glrodasz)
 
